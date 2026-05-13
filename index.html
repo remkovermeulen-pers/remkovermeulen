@@ -250,12 +250,12 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
   justify-content:space-between; align-items:center; gap:32px;
 }
 .logo-mark {
-  font-family:var(--font-display); font-weight:500;
-  font-style:italic; font-size:18px;
-  color:var(--accent); letter-spacing:0.05em;
-  opacity:0.7; transition:opacity .25s;
+  display:block; height:28px; width:auto;
+  opacity:0.6; transition:opacity .25s;
+  color:var(--accent); fill:var(--accent);
 }
 .logo-mark:hover { opacity:1; }
+.logo-mark img { height:100%; width:auto; display:block; }
 
 /* ===== JOURNAL ===== */
 .journal { padding-top:96px; }
@@ -537,12 +537,30 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
     </div>
 
     <div class="logos">
-      <span class="logo-mark">Renault</span>
-      <span class="logo-mark">Warner&nbsp;Bros</span>
-      <span class="logo-mark">Vivo</span>
-      <span class="logo-mark">British&nbsp;Council</span>
-      <span class="logo-mark">Janssen</span>
-      <span class="logo-mark">King's&nbsp;College</span>
+      <!-- Koa Health -->
+      <span class="logo-mark">
+        <svg height="28" viewBox="0 0 80 28" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <text x="0" y="22" font-family="'Bodoni Moda','Playfair Display',Georgia,serif" font-size="22" font-style="italic" font-weight="500">Koa</text>
+        </svg>
+      </span>
+      <!-- Telefónica -->
+      <span class="logo-mark"><img src="https://cdn.simpleicons.org/telefonica/A68B77" alt="Telefónica"></span>
+      <!-- Financial Times -->
+      <span class="logo-mark"><img src="https://cdn.simpleicons.org/financialtimes/A68B77" alt="Financial Times"></span>
+      <!-- Renault -->
+      <span class="logo-mark"><img src="https://cdn.simpleicons.org/renault/A68B77" alt="Renault"></span>
+      <!-- British Council -->
+      <span class="logo-mark">
+        <svg height="28" viewBox="0 0 140 28" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <text x="0" y="22" font-family="'Hanken Grotesk','Inter',system-ui,sans-serif" font-size="13" font-weight="700" letter-spacing="2">BRITISH COUNCIL</text>
+        </svg>
+      </span>
+      <!-- Janssen -->
+      <span class="logo-mark">
+        <svg height="28" viewBox="0 0 90 28" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <text x="0" y="22" font-family="'Bodoni Moda','Playfair Display',Georgia,serif" font-size="22" font-style="italic" font-weight="500">Janssen</text>
+        </svg>
+      </span>
     </div>
   </section>
 
