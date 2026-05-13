@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Work — Remko Vermeulen</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:          #fbf9f8;
+  --bg-card:     #ffffff;
+  --bg-elev:     #efeded;
+  --primary:     #1b1c1c;
+  --on-primary:  #ffffff;
+  --muted:       #444748;
+  --muted-2:     #65645f;
+  --muted-3:     #87847a;
+  --line:        rgba(27,28,28,0.12);
+  --accent:      #A68B77;
+  --font-display:'Bodoni Moda','Playfair Display',Georgia,serif;
+  --font-body:   'Hanken Grotesk','Inter',system-ui,sans-serif;
+  --pad-desktop: 64px;
+  --pad-mobile:  20px;
+}
+*,*::before,*::after { box-sizing:border-box; }
+html,body { margin:0; padding:0; }
+body {
+  background:var(--bg); color:var(--primary);
+  font-family:var(--font-body); font-size:16px; line-height:1.6;
+  -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+}
+img { display:block; max-width:100%; }
+a { color:inherit; text-decoration:none; }
+button { font:inherit; cursor:pointer; background:none; border:0; color:inherit; }
+.container { max-width:1280px; margin:0 auto; padding:0 var(--pad-desktop); }
+@media (max-width:760px) { .container { padding:0 var(--pad-mobile); } }
+
+.accent-mark { display:inline-block; width:7px; height:7px; background:var(--accent); margin-right:12px; vertical-align:1px; }
+.metric { font-family:var(--font-body); font-weight:600; font-size:clamp(32px,4.5vw,56px); color:var(--accent); letter-spacing:-0.01em; line-height:1; display:block; margin-bottom:12px; }
+.metric-label { font-size:10px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:var(--muted-2); line-height:1.5; }
+.bw-img { filter:grayscale(100%) contrast(108%); transition:filter .6s cubic-bezier(.22,1,.36,1); }
+.bw-img:hover { filter:grayscale(0%) contrast(105%); }
+.tag { display:inline-block; padding:7px 12px; font-size:10px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:var(--accent); border:1px solid var(--accent); line-height:1; }
+.btn { display:inline-flex; align-items:center; gap:10px; padding:16px 28px; font-size:11px; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; border:1px solid var(--primary); background:var(--bg-card); color:var(--primary); transition:box-shadow .25s, transform .25s; }
+.btn:hover { box-shadow:4px 4px 0 0 var(--primary); transform:translate(-2px,-2px); }
+.btn--dark { background:var(--primary); color:var(--on-primary); }
+.btn--dark:hover { box-shadow:4px 4px 0 0 var(--accent); }
+.btn--lg { padding:22px 36px; font-size:12px; }
+
+/* NAV */
+.site-nav { position:sticky; top:0; z-index:50; background:var(--bg); border-bottom:1px solid var(--line); }
+.site-nav__inner { display:flex; align-items:center; justify-content:space-between; height:76px; }
+.site-nav__brand { font-family:var(--font-display); font-weight:700; font-size:22px; letter-spacing:-0.01em; }
+.site-nav__links { display:flex; align-items:center; gap:36px; }
+.site-nav__link { font-size:13px; font-weight:500; letter-spacing:0.14em; text-transform:uppercase; color:var(--muted-2); padding-bottom:4px; transition:color .2s; }
+.site-nav__link:hover { color:var(--primary); }
+.site-nav__link.is-active { color:var(--primary); font-weight:600; border-bottom:1px solid var(--primary); }
+.site-nav__cta { background:var(--primary); color:var(--on-primary); padding:12px 22px; font-size:11px; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; border:1px solid var(--primary); transition:box-shadow .2s, transform .2s; }
+.site-nav__cta:hover { box-shadow:4px 4px 0 0 var(--primary); transform:translate(-2px,-2px); }
+.site-nav__burger { display:none; width:36px; height:36px; align-items:center; justify-content:center; border:1px solid var(--primary); }
+.site-nav__burger span,.site-nav__burger span::before,.site-nav__burger span::after { display:block; width:16px; height:1.5px; background:var(--primary); position:relative; }
+.site-nav__burger span::before { content:''; position:absolute; top:-5px; left:0; width:100%; height:100%; background:var(--primary); }
+.site-nav__burger span::after  { content:''; position:absolute; top:5px;  left:0; width:100%; height:100%; background:var(--primary); }
+@media (max-width:760px) {
+  .site-nav__inner { height:60px; }
+  .site-nav__brand { font-size:18px; }
+  .site-nav__links { display:none; }
+  .site-nav__cta { padding:9px 14px; font-size:10px; letter-spacing:0.14em; }
+  .site-nav__burger { display:inline-flex; }
+}
+
+/* FOOTER */
+.site-footer { border-top:1px solid var(--line); margin-top:96px; }
+.site-footer__inner { display:flex; align-items:center; justify-content:space-between; padding:36px 0; gap:24px; flex-wrap:wrap; }
+.site-footer__brand { font-family:var(--font-display); font-weight:700; font-size:22px; letter-spacing:-0.01em; }
+.site-footer__copy { font-size:13px; color:var(--muted-2); font-style:italic; }
+.site-footer__links { display:flex; gap:28px; }
+.site-footer__link { font-size:11px; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:var(--muted-2); transition:color .2s; }
+.site-footer__link:hover { color:var(--primary); }
+@media (max-width:760px) {
+  .site-footer { margin-top:60px; }
+  .site-footer__inner { padding:28px 0; flex-direction:column; align-items:flex-start; gap:18px; }
+}
+
+/* WORK HERO */
+.work-hero { padding:80px 0 72px; display:grid; grid-template-columns:1.5fr 1fr; gap:56px; align-items:end; }
+.work-hero__eyebrow { font-size:11px; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color:var(--muted-2); margin:0 0 24px; display:flex; align-items:center; }
+.work-hero h1 { font-family:var(--font-display); font-weight:700; font-size:clamp(48px,7vw,92px); line-height:1.02; letter-spacing:-0.025em; margin:0; }
+.work-hero__intro { border-left:1px solid var(--line); padding:0 0 0 28px; font-size:17px; line-height:1.6; color:var(--muted); max-width:460px; }
+@media (max-width:880px) {
+  .work-hero { grid-template-columns:1fr; gap:28px; padding:40px 0 48px; }
+  .work-hero__intro { padding-left:0; border-left:none; border-top:1px solid var(--line); padding-top:20px; }
+}
+
+/* PROJECT FEED */
+.feed { display:flex; flex-direction:column; gap:128px; }
+.project { display:grid; grid-template-columns:80px 1fr; gap:32px; }
+.project__side { display:flex; flex-direction:column; justify-content:space-between; border-right:1px solid var(--line); padding:4px 16px 4px 0; }
+.project__num { font-family:var(--font-display); font-style:italic; font-weight:500; font-size:30px; color:var(--primary); }
+.project__cat { writing-mode:vertical-rl; transform:rotate(180deg); font-size:10px; font-weight:700; letter-spacing:0.24em; text-transform:uppercase; color:var(--muted-2); align-self:flex-start; }
+.project__main { display:flex; flex-direction:column; gap:32px; }
+.project__img-wrap { border:1px solid var(--primary); overflow:hidden; transition:transform .4s, box-shadow .4s; }
+.project:hover .project__img-wrap { transform:translate(-3px,-3px); box-shadow:6px 6px 0 0 var(--primary); }
+.project__img-wrap img { width:100%; height:clamp(260px,36vw,520px); object-fit:cover; }
+.project__body { display:grid; grid-template-columns:1.4fr 1fr; gap:32px; align-items:end; }
+.project h2 { margin:0 0 16px; font-family:var(--font-display); font-weight:600; font-size:clamp(28px,3.8vw,42px); line-height:1.15; letter-spacing:-0.01em; }
+.project__lede { margin:0 0 26px; font-size:17px; line-height:1.6; color:var(--muted); max-width:560px; }
+.project__stats { display:grid; grid-template-columns:1fr 1fr; gap:32px; margin-bottom:26px; }
+.project__stats--1 { grid-template-columns:1fr; max-width:280px; }
+.project__stat .metric { font-size:clamp(34px,3.6vw,44px); }
+.project__tags { display:flex; flex-wrap:wrap; gap:10px; }
+.project__cta { display:flex; justify-content:flex-end; align-items:flex-end; }
+@media (max-width:880px) {
+  .feed { gap:72px; }
+  .project { grid-template-columns:1fr; gap:16px; }
+  .project__side { flex-direction:row; justify-content:space-between; align-items:center; border-right:0; border-bottom:1px solid var(--line); padding:0 0 16px; }
+  .project__cat { writing-mode:horizontal-tb; transform:none; }
+  .project__num { font-size:22px; }
+  .project__body { grid-template-columns:1fr; gap:24px; }
+  .project__cta { justify-content:flex-start; }
+  .project__stats { gap:22px; }
+}
+
+/* CTA BLOCK */
+.cta-block { margin-top:120px; padding-top:64px; border-top:1px solid var(--primary); display:grid; grid-template-columns:1.4fr 1fr; gap:32px; align-items:center; }
+.cta-block h2 { margin:0 0 18px; font-family:var(--font-display); font-weight:600; font-size:clamp(32px,4.4vw,56px); line-height:1.1; letter-spacing:-0.01em; }
+.cta-block p { margin:0; font-size:17px; line-height:1.6; color:var(--muted); max-width:460px; }
+.cta-block__right { display:flex; justify-content:flex-end; }
+@media (max-width:880px) {
+  .cta-block { grid-template-columns:1fr; margin-top:72px; padding-top:40px; gap:24px; }
+  .cta-block__right { justify-content:flex-start; }
+}
+</style>
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="container site-nav__inner">
+    <a href="../" class="site-nav__brand">Remko Vermeulen</a>
+    <nav class="site-nav__links">
+      <a href="work.html" class="site-nav__link is-active">Work</a>
+      <a href="../#philosophy" class="site-nav__link">Philosophy</a>
+      <a href="../#journal" class="site-nav__link">Journal</a>
+      <a href="mailto:remko.vermeulen@toggl.com" class="site-nav__link">Contact</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:14px;">
+      <a href="mailto:remko.vermeulen@toggl.com" class="site-nav__cta">Get in touch</a>
+      <button class="site-nav__burger" aria-label="Menu"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="work-hero">
+    <div>
+      <p class="work-hero__eyebrow"><span class="accent-mark"></span>Selected Projects</p>
+      <h1>Building and scaling innovative products.</h1>
+    </div>
+    <p class="work-hero__intro">
+      15+ years of international experience leading product management and design for global
+      leaders in Health Tech, Telecom, Media and beyond.
+    </p>
+  </section>
+
+  <div class="feed">
+
+    <!-- 01 KOA HEALTH -->
+    <article class="project">
+      <div class="project__side">
+        <span class="project__num">01</span>
+        <span class="project__cat">Health Tech</span>
+      </div>
+      <div class="project__main">
+        <a href="case-study.html" class="project__img-wrap">
+          <img class="bw-img" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1600&q=80" alt="Koa Health">
+        </a>
+        <div class="project__body">
+          <div>
+            <h2>Koa Health</h2>
+            <p class="project__lede">
+              Revolutionising mental health through machine-learning algorithms that accurately
+              predict crises. Led the creation of digital foundations for clinical trials at
+              King's College London.
+            </p>
+            <div class="project__stats">
+              <div class="project__stat">
+                <span class="metric">80%</span>
+                <div class="metric-label">Recall for crisis prediction</div>
+              </div>
+              <div class="project__stat">
+                <span class="metric">62%</span>
+                <div class="metric-label">Increase in velocity</div>
+              </div>
+            </div>
+            <div class="project__tags">
+              <span class="tag">Product Strategy</span>
+              <span class="tag">AI / ML Integration</span>
+            </div>
+          </div>
+          <div class="project__cta">
+            <a href="case-study.html" class="btn">
+              View Case Study
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3v6" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- 02 TELEFONICA -->
+    <article class="project">
+      <div class="project__side">
+        <span class="project__num">02</span>
+        <span class="project__cat">Telecom</span>
+      </div>
+      <div class="project__main">
+        <a href="case-study.html" class="project__img-wrap">
+          <img class="bw-img" src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1600&q=80" alt="Telefónica / O2">
+        </a>
+        <div class="project__body">
+          <div>
+            <h2>Telefónica &amp; O2</h2>
+            <p class="project__lede">
+              Digitising the consumer decision journey for millions of users across Europe and
+              LATAM. Implementing Lean Startup methodologies within large-scale telecommunications
+              infrastructure.
+            </p>
+            <div class="project__stats">
+              <div class="project__stat">
+                <span class="metric">48%</span>
+                <div class="metric-label">Reduction in Lean cycle time</div>
+              </div>
+              <div class="project__stat">
+                <span class="metric">63%</span>
+                <div class="metric-label">Conversion uplift</div>
+              </div>
+            </div>
+            <div class="project__tags">
+              <span class="tag">Service Design</span>
+              <span class="tag">Scale</span>
+            </div>
+          </div>
+          <div class="project__cta">
+            <a href="case-study.html" class="btn">
+              View Case Study
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3v6" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- 03 FINANCIAL TIMES -->
+    <article class="project">
+      <div class="project__side">
+        <span class="project__num">03</span>
+        <span class="project__cat">Media Tech</span>
+      </div>
+      <div class="project__main">
+        <a href="case-study.html" class="project__img-wrap">
+          <img class="bw-img" src="https://images.unsplash.com/photo-1495020689067-958852a7765e?w=1600&q=80" alt="Financial Times">
+        </a>
+        <div class="project__body">
+          <div>
+            <h2>Financial Times</h2>
+            <p class="project__lede">
+              Developing interactive infographics and tools to visualise the customer journey to
+              online purchase. Focusing on data-driven prioritisation and revenue-generating
+              product themes.
+            </p>
+            <div class="project__stats project__stats--1">
+              <div class="project__stat">
+                <span class="metric">212%</span>
+                <div class="metric-label">Increase in conversions</div>
+              </div>
+            </div>
+            <div class="project__tags">
+              <span class="tag">Data Visualisation</span>
+              <span class="tag">Revenue Growth</span>
+            </div>
+          </div>
+          <div class="project__cta">
+            <a href="case-study.html" class="btn">
+              View Case Study
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3v6" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- 04 RENAULT -->
+    <article class="project">
+      <div class="project__side">
+        <span class="project__num">04</span>
+        <span class="project__cat">Automotive</span>
+      </div>
+      <div class="project__main">
+        <a href="case-study.html" class="project__img-wrap">
+          <img class="bw-img" src="https://images.unsplash.com/photo-1493238792000-8113da705763?w=1600&q=80" alt="Renault">
+        </a>
+        <div class="project__body">
+          <div>
+            <h2>Renault</h2>
+            <p class="project__lede">
+              Designing the next generation of connected car services. Applying user research and
+              Kano models to filter functionalities for maximum driver engagement and utility.
+            </p>
+            <div class="project__stats project__stats--1">
+              <div class="project__stat">
+                <span class="metric">75%</span>
+                <div class="metric-label">Reduction in time-to-value</div>
+              </div>
+            </div>
+            <div class="project__tags">
+              <span class="tag">Connected Services</span>
+              <span class="tag">User Research</span>
+            </div>
+          </div>
+          <div class="project__cta">
+            <a href="case-study.html" class="btn">
+              View Case Study
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3v6" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+  </div>
+
+  <section class="cta-block">
+    <div>
+      <h2>Let's discuss your next breakthrough.</h2>
+      <p>Whether it's scaling a product from zero to one, or innovating within a legacy organisation, I bring a structured, results-oriented approach.</p>
+    </div>
+    <div class="cta-block__right">
+      <a href="mailto:remko.vermeulen@toggl.com" class="btn btn--dark btn--lg">Get In Touch</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container site-footer__inner">
+    <div class="site-footer__brand">RV.</div>
+    <div class="site-footer__copy">© 2025 Remko Vermeulen. Built with intention.</div>
+    <div class="site-footer__links">
+      <a href="https://linkedin.com/in/remkovermeulen" class="site-footer__link">LinkedIn</a>
+      <a href="https://github.com/remkovermeulen-pers" class="site-footer__link">GitHub</a>
+      <a href="mailto:remko.vermeulen@toggl.com" class="site-footer__link">Email</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
