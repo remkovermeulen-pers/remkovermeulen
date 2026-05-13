@@ -589,8 +589,10 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
         var grid = document.getElementById('journal-grid');
         if (!grid) return;
         grid.innerHTML = articles.slice(0,6).map(function(a){
+          var href = a.notionId ? 'pages/article.html?id=' + a.notionId : a.url;
+          var target = a.notionId ? '' : ' target="_blank" rel="noopener"';
           var rt = a.readingTime ? '<span class="article-card__year">' + a.readingTime + ' min</span>' : '<span class="article-card__year">' + a.year + '</span>';
-          return '<a href="' + a.url + '" target="_blank" rel="noopener" class="article-card lift">'
+          return '<a href="' + href + '"' + target + ' class="article-card lift">'
             + '<div><span class="article-card__tag">' + a.category + '</span>'
             + '<h3>' + a.title + '</h3></div>'
             + rt + '</a>';

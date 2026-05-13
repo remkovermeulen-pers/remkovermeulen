@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Good Product Strategy, Bad Product Strategy — Remko Vermeulen</title>
+<title>Article — Remko Vermeulen</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -82,17 +82,12 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
 .cs-hero { padding:64px 0 48px; }
 .cs-hero__crumb { font-size:11px; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color:var(--muted-2); margin:0 0 28px; }
 .cs-hero h1 { margin:0 0 24px; font-family:var(--font-display); font-weight:700; font-size:clamp(40px,6.5vw,84px); line-height:1.04; letter-spacing:-0.025em; max-width:980px; }
-.cs-hero__lede { margin:0; font-size:clamp(17px,1.6vw,20px); line-height:1.55; color:var(--muted); max-width:720px; }
 .cs-hero__byline { margin-top:36px; padding-top:22px; border-top:1px solid var(--line); display:flex; flex-wrap:wrap; gap:56px; align-items:flex-start; }
 .cs-hero__byline-block h5 { margin:0 0 6px; font-size:10px; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color:var(--muted-2); }
 .cs-hero__byline-block p { margin:0; font-family:var(--font-display); font-weight:500; font-size:18px; line-height:1.25; color:var(--primary); }
 
-.cs-cover { margin-top:48px; border:1px solid var(--primary); overflow:hidden; position:relative; }
-.cs-cover img { width:100%; height:clamp(280px,42vw,560px); object-fit:cover; }
-.cs-cover__caption { padding:14px 20px; border-top:1px solid var(--line); font-size:12px; color:var(--muted-2); font-style:italic; background:var(--bg-card); }
-
 /* BODY GRID */
-.cs-body { margin-top:96px; display:grid; grid-template-columns:220px 1fr; gap:48px; }
+.cs-body { margin-top:72px; display:grid; grid-template-columns:220px 1fr; gap:64px; }
 .cs-aside { position:sticky; top:100px; align-self:start; }
 .cs-aside h4 { font-size:10px; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color:var(--muted-2); margin:0 0 14px; padding-bottom:14px; border-bottom:1px solid var(--line); }
 .cs-aside .chips { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:36px; }
@@ -105,47 +100,34 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
 
 .cs-aside__meta { display:flex; flex-direction:column; gap:22px; }
 .cs-aside__meta-block h5 { margin:0 0 6px; font-size:10px; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color:var(--muted-2); }
-.cs-aside__meta-block p { margin:0; font-family:var(--font-display); font-weight:500; font-size:18px; line-height:1.25; color:var(--primary); }
+.cs-aside__meta-block p { margin:0; font-size:14px; line-height:1.5; color:var(--muted); }
+.cs-aside__meta-block a { color:var(--accent); }
 
-/* CONTENT */
-.cs-content { display:flex; flex-direction:column; gap:96px; }
-.cs-section { max-width:760px; }
-.cs-section__head { display:flex; align-items:baseline; gap:18px; margin-bottom:28px; }
-.cs-section__num { font-family:var(--font-display); font-style:italic; font-weight:500; font-size:30px; color:var(--accent); }
-.cs-section h2 { margin:0; font-family:var(--font-display); font-weight:600; font-size:clamp(28px,3.6vw,42px); line-height:1.1; letter-spacing:-0.01em; }
-.cs-section p { margin:0 0 22px; font-size:17px; line-height:1.75; color:var(--muted); }
-.cs-section p:last-child { margin-bottom:0; }
-
-.cs-section--lede > p:first-child::first-letter {
+/* ARTICLE BODY */
+.art-body { max-width:760px; }
+.art-body h1 { font-family:var(--font-display); font-weight:700; font-size:clamp(32px,4.5vw,52px); line-height:1.1; letter-spacing:-0.02em; margin:56px 0 20px; }
+.art-body h2 { font-family:var(--font-display); font-weight:600; font-size:clamp(26px,3.2vw,38px); line-height:1.15; letter-spacing:-0.01em; margin:56px 0 18px; padding-top:56px; border-top:1px solid var(--line); }
+.art-body h2:first-child { margin-top:0; padding-top:0; border-top:none; }
+.art-body h3 { font-family:var(--font-display); font-weight:500; font-size:clamp(20px,2.4vw,28px); line-height:1.2; margin:36px 0 14px; }
+.art-body p { font-size:17px; line-height:1.75; color:var(--muted); margin:0 0 22px; }
+.art-body p:last-child { margin-bottom:0; }
+.art-body > p:first-child::first-letter {
   font-family:var(--font-display); font-weight:700;
   float:left; font-size:84px; line-height:0.85;
   padding:8px 14px 0 0; color:var(--primary);
 }
-
-.cs-section--quote p { border-left:2px solid var(--accent); padding-left:24px; }
-
-.pull-quote {
-  margin:36px 0; padding:32px 0 32px 32px;
-  border-left:2px solid var(--accent);
+.art-body ul, .art-body ol { padding-left:28px; margin:0 0 22px; }
+.art-body li { font-size:17px; line-height:1.75; color:var(--muted); margin-bottom:8px; }
+.art-body blockquote {
+  border-left:2px solid var(--accent); margin:36px 0; padding:4px 0 4px 28px;
   font-family:var(--font-display); font-style:italic; font-weight:500;
-  font-size:clamp(22px,2.6vw,30px); line-height:1.3;
-  color:var(--primary); letter-spacing:-0.005em;
+  font-size:clamp(18px,2vw,22px); line-height:1.4; color:var(--primary);
 }
-.pull-quote cite { display:block; margin-top:18px; font-family:var(--font-body); font-style:normal; font-size:11px; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color:var(--muted-2); }
-
-.cs-phases { display:grid; grid-template-columns:1fr 1fr; gap:18px; margin:28px 0; }
-.cs-phase { border:1px solid var(--accent); padding:22px; }
-.cs-phase h5 { margin:0 0 10px; font-size:10px; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color:var(--accent); }
-.cs-phase p { margin:0; font-size:14px; line-height:1.55; color:var(--primary); }
-
-@media (max-width:880px) {
-  .cs-body { grid-template-columns:1fr; gap:36px; margin-top:48px; }
-  .cs-aside { position:static; }
-  .cs-content { gap:60px; }
-  .cs-phases { grid-template-columns:1fr; }
-  .cs-hero__byline { gap:28px; }
-  .cs-section--lede > p:first-child::first-letter { font-size:64px; padding:6px 10px 0 0; }
-}
+.art-body code { font-family:monospace; background:var(--bg-elev); padding:2px 6px; font-size:14px; border-radius:2px; }
+.art-body hr { border:0; border-top:1px solid var(--line); margin:48px 0; }
+.art-body strong { font-weight:600; color:var(--primary); }
+.art-body a { color:var(--accent); text-decoration:underline; text-underline-offset:3px; }
+.art-body .callout { background:var(--bg-elev); border-left:3px solid var(--accent); padding:14px 20px; margin:0 0 22px; font-size:15px; }
 
 /* AUTHOR CARD */
 .author-card {
@@ -154,11 +136,13 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
   display:grid; grid-template-columns:96px 1fr auto;
   gap:28px; align-items:center;
 }
-.author-card__avatar { width:96px; height:96px; border:1px solid var(--primary); overflow:hidden; background:var(--bg-elev); }
-.author-card__avatar img { width:100%; height:100%; object-fit:cover; }
+.author-card__avatar { width:96px; height:96px; border:1px solid var(--primary); overflow:hidden; background:var(--bg-elev); display:flex; align-items:center; justify-content:center; }
+.author-card__avatar svg { width:48px; height:48px; opacity:0.3; }
 .author-card__name { margin:0 0 6px; font-family:var(--font-display); font-weight:600; font-size:22px; line-height:1.2; }
 .author-card__bio { margin:0; font-size:14px; color:var(--muted-2); line-height:1.55; max-width:520px; }
 @media (max-width:880px) {
+  .cs-body { grid-template-columns:1fr; gap:36px; margin-top:48px; }
+  .cs-aside { position:static; }
   .author-card { grid-template-columns:64px 1fr; padding:24px; }
   .author-card__avatar { width:64px; height:64px; }
   .author-card .btn { grid-column:1 / -1; justify-self:flex-start; }
@@ -167,20 +151,21 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
 /* NEXT ARTICLE */
 .next-proj { margin-top:96px; padding-top:56px; border-top:1px solid var(--primary); }
 .next-proj__eyebrow { font-size:11px; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color:var(--muted-2); margin:0 0 28px; }
-.next-proj__card { display:grid; grid-template-columns:1fr 1fr; border:1px solid var(--primary); overflow:hidden; transition:transform .3s, box-shadow .3s; }
+.next-proj__card { display:flex; align-items:center; justify-content:space-between; border:1px solid var(--primary); padding:40px 48px; gap:32px; transition:transform .3s, box-shadow .3s; }
 .next-proj__card:hover { transform:translate(-3px,-3px); box-shadow:6px 6px 0 0 var(--primary); }
-.next-proj__card img { width:100%; height:100%; aspect-ratio:16/10; object-fit:cover; }
-.next-proj__text { padding:48px; display:flex; flex-direction:column; justify-content:center; background:var(--bg); gap:14px; }
+.next-proj__text { display:flex; flex-direction:column; gap:10px; }
 .next-proj__text .tag-line { font-size:10px; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color:var(--accent); }
-.next-proj__text h3 { margin:0; font-family:var(--font-display); font-weight:600; font-size:clamp(26px,3.2vw,38px); line-height:1.15; display:flex; align-items:center; gap:16px; }
-.next-proj__text p { margin:0; font-size:14px; color:var(--muted-2); letter-spacing:0.02em; }
-.next-proj__text svg { transition:transform .3s; flex-shrink:0; }
-.next-proj__card:hover .next-proj__text svg { transform:translateX(8px); }
-@media (max-width:880px) {
+.next-proj__text h3 { margin:0; font-family:var(--font-display); font-weight:600; font-size:clamp(22px,2.8vw,34px); line-height:1.15; }
+.next-proj__text p { margin:0; font-size:14px; color:var(--muted-2); }
+.next-proj__arrow { flex-shrink:0; transition:transform .3s; }
+.next-proj__card:hover .next-proj__arrow { transform:translateX(8px); }
+@media (max-width:760px) {
   .next-proj { margin-top:72px; padding-top:36px; }
-  .next-proj__card { grid-template-columns:1fr; }
-  .next-proj__text { padding:28px; }
+  .next-proj__card { padding:24px 28px; }
 }
+
+/* LOADING STATE */
+.art-loading { padding:96px 0; text-align:center; font-size:13px; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:var(--muted-2); }
 </style>
 </head>
 <body>
@@ -201,206 +186,8 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
   </div>
 </header>
 
-<main class="container">
-
-  <section class="cs-hero">
-    <p class="cs-hero__crumb">Journal &nbsp;/&nbsp; Strategy</p>
-    <h1>Good Product Strategy,<br>Bad Product Strategy.</h1>
-    <p class="cs-hero__lede">
-      Applying Richard Rumelt's principles to navigate the complexities of modern product
-      development — and why most roadmaps fail before the first sprint begins.
-    </p>
-
-    <div class="cs-hero__byline">
-      <div class="cs-hero__byline-block">
-        <h5>Author</h5>
-        <p>Remko Vermeulen</p>
-      </div>
-      <div class="cs-hero__byline-block">
-        <h5>Published</h5>
-        <p>March 2024</p>
-      </div>
-      <div class="cs-hero__byline-block">
-        <h5>Reading time</h5>
-        <p>8 minutes</p>
-      </div>
-    </div>
-
-    <div class="cs-cover">
-      <img class="bw-img" src="https://images.unsplash.com/photo-1457369804613-52c61a468e7d?w=1800&q=80" alt="Strategy notebook on desk">
-      <div class="cs-cover__caption">
-        A working strategy is a diagnosis first and a plan second — never the other way around.
-      </div>
-    </div>
-  </section>
-
-  <div class="cs-body">
-
-    <aside class="cs-aside">
-      <h4>Topics</h4>
-      <div class="chips">
-        <span class="tag">Strategy</span>
-        <span class="tag">Leadership</span>
-        <span class="tag">Rumelt</span>
-      </div>
-
-      <h4>In this article</h4>
-      <ol class="cs-toc">
-        <li><span class="cs-toc__num">01</span><a href="#diagnosis">The Diagnosis Problem</a></li>
-        <li><span class="cs-toc__num">02</span><a href="#kernel">The Kernel of Strategy</a></li>
-        <li><span class="cs-toc__num">03</span><a href="#fluff">Recognising Bad Strategy</a></li>
-        <li><span class="cs-toc__num">04</span><a href="#practice">Putting it into Practice</a></li>
-      </ol>
-
-      <div class="cs-aside__meta">
-        <div class="cs-aside__meta-block">
-          <h5>Share</h5>
-          <p>LinkedIn &nbsp;·&nbsp; X &nbsp;·&nbsp; Email</p>
-        </div>
-      </div>
-    </aside>
-
-    <article class="cs-content">
-
-      <section class="cs-section cs-section--lede" id="diagnosis">
-        <div class="cs-section__head">
-          <span class="cs-section__num">01</span>
-          <h2>The Diagnosis Problem</h2>
-        </div>
-        <p>
-          Most product strategies fail not because the plan is wrong, but because there was never a
-          real diagnosis to begin with. Teams jump from ambition to roadmap, skipping the
-          uncomfortable work of describing the actual obstacle in front of them. The result is
-          motion without movement — quarter after quarter of velocity charts that hide a stalled
-          business.
-        </p>
-        <p>
-          Richard Rumelt's framing is useful precisely because it refuses to be inspirational. A
-          good strategy, he argues, is honest about what is hard, focused on what is decisive,
-          and ruthless about what to ignore. It looks less like a vision deck and more like a
-          piece of forensic analysis.
-        </p>
-
-        <blockquote class="pull-quote">
-          A strategy that fits on a slide is rarely a strategy. It's a wish, padded with verbs.
-          <cite>— Working note, 2024</cite>
-        </blockquote>
-
-        <p>
-          In practice, the diagnosis is the hardest artefact to produce because it forces the
-          organisation to admit constraints it would rather euphemise. The leader's job is to make
-          that admission survivable.
-        </p>
-      </section>
-
-      <section class="cs-section" id="kernel">
-        <div class="cs-section__head">
-          <span class="cs-section__num">02</span>
-          <h2>The Kernel of Strategy</h2>
-        </div>
-        <p>
-          Rumelt's kernel has three parts, and they only work together. A diagnosis names the
-          challenge. A guiding policy describes the approach to that challenge. A coherent set of
-          actions translates the policy into decisions that compound. Drop any of the three and the
-          remaining two start to drift.
-        </p>
-
-        <div class="cs-phases">
-          <div class="cs-phase">
-            <h5>Diagnosis</h5>
-            <p>A theory of the situation. What is actually getting in the way of progress, in concrete terms?</p>
-          </div>
-          <div class="cs-phase">
-            <h5>Guiding Policy</h5>
-            <p>The approach you'll take in response — broad enough to direct, specific enough to forbid alternatives.</p>
-          </div>
-        </div>
-
-        <p>
-          Coherent actions are where most teams discover that their strategy was an aspiration.
-          When the trade-offs land on a real backlog, the seams show: two squads pulling toward
-          incompatible policies, a flagship feature that violates the diagnosis, a metric chosen
-          for comfort rather than truth.
-        </p>
-      </section>
-
-      <section class="cs-section cs-section--quote" id="fluff">
-        <div class="cs-section__head">
-          <span class="cs-section__num">03</span>
-          <h2>Recognising Bad Strategy</h2>
-        </div>
-        <p>
-          Bad strategy has a vocabulary. Watch for fluff disguised as insight — "leverage AI to
-          unlock customer-centric outcomes" — and for goals stated as if they were plans:
-          "increase retention by 20%." A goal is not a strategy; it is the thing a strategy is
-          supposed to produce.
-        </p>
-        <p>
-          The second tell is the failure to confront. A document that lists ambitions without
-          naming the principal obstacle is usually political cover, not direction.
-        </p>
-        <p>
-          The third is mistaking templates for thought. A weighted impact-effort matrix can clean
-          up a list, but it cannot decide what belongs on the list in the first place.
-        </p>
-      </section>
-
-      <section class="cs-section" id="practice">
-        <div class="cs-section__head">
-          <span class="cs-section__num">04</span>
-          <h2>Putting it into Practice</h2>
-        </div>
-        <p>
-          A useful exercise: write the diagnosis on a single page, in plain language, with no
-          framework borrowed from a consulting deck. Read it aloud to a stranger in your
-          industry. If it doesn't make them say something more specific than "interesting," it's
-          not done.
-        </p>
-        <p>
-          The guiding policy should be sharp enough to make at least one stakeholder unhappy. If
-          everyone in the room nods along, you've written a values statement, not a policy.
-        </p>
-        <p>
-          Finally, list the coherent actions and look for one that you would defend in a downturn.
-          That's the one to fund first. Everything else is optionality.
-        </p>
-      </section>
-
-    </article>
-  </div>
-
-  <section class="author-card">
-    <div class="author-card__avatar">
-      <img class="bw-img" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80" alt="Remko Vermeulen">
-    </div>
-    <div>
-      <h4 class="author-card__name">Remko Vermeulen</h4>
-      <p class="author-card__bio">
-        VP &amp; Head of Product. Writes on strategy, leadership and the craft of building
-        durable software products across Health Tech, EdTech and Telecom.
-      </p>
-    </div>
-    <a href="https://linkedin.com/in/remkovermeulen" class="btn">
-      Follow
-      <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3v6" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"/></svg>
-    </a>
-  </section>
-
-  <section class="next-proj">
-    <p class="next-proj__eyebrow">Next Article</p>
-    <a href="article.html" class="next-proj__card">
-      <img class="bw-img" src="https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80" alt="Innovation is a Marathon">
-      <div class="next-proj__text">
-        <span class="tag-line">Leadership</span>
-        <h3>
-          Innovation is a Marathon
-          <svg width="22" height="14" viewBox="0 0 22 14" fill="none"><path d="M1 7h19m0 0l-6-6m6 6l-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg>
-        </h3>
-        <p>Why long-term commitment is the essential ingredient for significant ROI in corporate innovation.</p>
-      </div>
-    </a>
-  </section>
-
+<main class="container" id="main-content">
+  <div class="art-loading" id="art-loading">Loading…</div>
 </main>
 
 <footer class="site-footer">
@@ -414,6 +201,103 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
     </div>
   </div>
 </footer>
+
+<script>
+(function () {
+  var id = new URLSearchParams(location.search).get('id');
+  var main = document.getElementById('main-content');
+
+  if (!id) {
+    location.href = 'work.html#writing';
+    return;
+  }
+
+  Promise.all([
+    fetch('../data/articles/' + id + '.json').then(function(r) {
+      if (!r.ok) throw new Error('not found');
+      return r.json();
+    }),
+    fetch('../data/articles.json').then(function(r) { return r.json(); })
+  ]).then(function(results) {
+    var article = results[0];
+    var all = results[1];
+
+    document.title = article.title + ' — Remko Vermeulen';
+
+    var idx = all.findIndex(function(a) { return a.notionId === id; });
+    var next = idx >= 0 ? all[(idx + 1) % all.length] : null;
+
+    var tocItems = '';
+    var tempDiv = document.createElement('div');
+    tempDiv.innerHTML = article.content || '';
+    var headings = tempDiv.querySelectorAll('h2');
+    headings.forEach(function(h, i) {
+      var anchor = 'section-' + i;
+      h.id = anchor;
+      var num = (i + 1 < 10 ? '0' : '') + (i + 1);
+      tocItems += '<li><span class="cs-toc__num">' + num + '</span>'
+        + '<a href="#' + anchor + '">' + h.textContent + '</a></li>';
+    });
+
+    var nextHtml = '';
+    if (next) {
+      nextHtml = '<section class="next-proj">'
+        + '<p class="next-proj__eyebrow">Next Article</p>'
+        + '<a href="article.html?id=' + next.notionId + '" class="next-proj__card">'
+        + '<div class="next-proj__text">'
+        + '<span class="tag-line">' + next.category + '</span>'
+        + '<h3>' + next.title + '</h3>'
+        + '<p>' + (next.readingTime ? next.readingTime + ' min read' : next.year) + '</p>'
+        + '</div>'
+        + '<svg class="next-proj__arrow" width="22" height="14" viewBox="0 0 22 14" fill="none">'
+        + '<path d="M1 7h19m0 0l-6-6m6 6l-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/>'
+        + '</svg></a></section>';
+    }
+
+    main.innerHTML =
+      '<section class="cs-hero">'
+      + '<p class="cs-hero__crumb">Journal &nbsp;/&nbsp; ' + article.category + '</p>'
+      + '<h1>' + article.title + '</h1>'
+      + '<div class="cs-hero__byline">'
+      + '<div class="cs-hero__byline-block"><h5>Author</h5><p>Remko Vermeulen</p></div>'
+      + '<div class="cs-hero__byline-block"><h5>Published</h5><p>' + article.year + '</p></div>'
+      + (article.readingTime ? '<div class="cs-hero__byline-block"><h5>Reading time</h5><p>' + article.readingTime + ' minutes</p></div>' : '')
+      + '</div></section>'
+
+      + '<div class="cs-body">'
+      + '<aside class="cs-aside">'
+      + '<h4>Topics</h4>'
+      + '<div class="chips">'
+      + (article.tags || [article.category]).map(function(t) {
+          return '<span class="tag">' + t + '</span>';
+        }).join('')
+      + '</div>'
+      + (tocItems ? '<h4>In this article</h4><ol class="cs-toc">' + tocItems + '</ol>' : '')
+      + '<div class="cs-aside__meta">'
+      + '<div class="cs-aside__meta-block"><h5>Original source</h5>'
+      + '<p><a href="' + article.url + '" target="_blank" rel="noopener">Read original ↗</a></p></div>'
+      + '</div>'
+      + '</aside>'
+
+      + '<article class="art-body">' + tempDiv.innerHTML + '</article>'
+      + '</div>'
+
+      + '<section class="author-card">'
+      + '<div class="author-card__avatar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">'
+      + '<circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div>'
+      + '<div><h4 class="author-card__name">Remko Vermeulen</h4>'
+      + '<p class="author-card__bio">VP &amp; Head of Product. Writes on strategy, leadership and the craft of building durable software products across Health Tech, EdTech and Telecom.</p></div>'
+      + '<a href="https://linkedin.com/in/remkovermeulen" target="_blank" rel="noopener" class="btn">Follow'
+      + '<svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3v6" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"/></svg>'
+      + '</a></section>'
+
+      + nextHtml;
+
+  }).catch(function() {
+    main.innerHTML = '<div class="art-loading">Article not found. <a href="work.html#writing" style="color:var(--accent)">Back to articles</a></div>';
+  });
+})();
+</script>
 
 </body>
 </html>
