@@ -105,9 +105,9 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
 
 /* PROJECT GRID */
 .projects { padding-top:0; }
-.project-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:2px; }
+.project-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:24px; }
 
-.proj-card { display:flex; flex-direction:column; background:var(--bg-card); border:1px solid var(--primary); overflow:hidden; transition:transform .3s, box-shadow .3s; }
+.proj-card { display:flex; flex-direction:column; background:var(--bg-card); border:1px solid var(--accent); overflow:hidden; transition:transform .3s, box-shadow .3s; }
 .proj-card:hover { transform:translate(-3px,-3px); box-shadow:6px 6px 0 0 var(--primary); }
 .proj-card__img { aspect-ratio:16/10; overflow:hidden; position:relative; background:var(--bg-elev); flex-shrink:0; }
 .proj-card__img img { width:100%; height:100%; object-fit:cover; }
@@ -134,13 +134,13 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
 
 /* WRITING GRID */
 .writing { padding-top:96px; }
-.article-card { display:flex; flex-direction:column; justify-content:space-between; padding:32px; background:var(--bg-card); border:1px solid var(--primary); min-height:280px; gap:24px; transition:transform .3s, box-shadow .3s; }
+.article-card { display:flex; flex-direction:column; justify-content:space-between; padding:32px; background:var(--bg-card); border:1px solid var(--accent); min-height:280px; gap:24px; transition:transform .3s, box-shadow .3s; }
 .article-card:hover { transform:translate(-3px,-3px); box-shadow:6px 6px 0 0 var(--primary); }
 .article-card__tag { font-size:10px; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; color:var(--accent); }
 .article-card h3 { margin:14px 0; font-family:var(--font-display); font-weight:600; font-size:clamp(20px,1.8vw,26px); line-height:1.2; }
 .article-card p { margin:0; font-size:14px; color:var(--muted-2); line-height:1.6; }
 .article-card__year { align-self:flex-end; font-size:11px; font-weight:600; letter-spacing:0.18em; color:var(--muted-2); }
-.writing-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:2px; }
+.writing-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
 @media (max-width:880px) {
   .writing { padding-top:56px; }
   .writing-grid { grid-template-columns:1fr; }
