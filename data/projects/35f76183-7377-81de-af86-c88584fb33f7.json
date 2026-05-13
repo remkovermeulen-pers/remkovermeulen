@@ -1,0 +1,26 @@
+{
+  "id": "35f76183-7377-81de-af86-c88584fb33f7",
+  "title": "Financial Times",
+  "sector": "Media",
+  "status": "Archive",
+  "year": 2008,
+  "tags": ["Design", "Product"],
+  "lede": "Digitised the consumer decision journey and enhanced online purchase behaviour tracking, achieving a 212% increase in conversions.",
+  "coverImage": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1800&q=80",
+  "role": "UX Lead",
+  "timeline": "2008 – 2010",
+  "partners": [],
+  "metrics": [
+    { "value": "212%", "label": "increase in conversions" }
+  ],
+  "sections": [
+    {
+      "title": "Overview",
+      "body": "<p>Digitising the consumer decision journey and enhancing online purchase behaviour tracking for the Financial Times.</p>"
+    },
+    {
+      "title": "Key outcomes",
+      "body": "<ul><li><strong>212%</strong> increase in conversions for sign-up and landing pages</li></ul>"
+    }
+  ]
+}

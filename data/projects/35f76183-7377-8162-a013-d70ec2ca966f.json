@@ -1,0 +1,32 @@
+{
+  "id": "35f76183-7377-8162-a013-d70ec2ca966f",
+  "title": "NTRglobal",
+  "sector": "SaaS",
+  "status": "Archive",
+  "year": 2005,
+  "tags": ["Design", "Product"],
+  "lede": "Established the UX team and drove a user-centred redesign that simplified the product portfolio by 50% and increased conversions by 212%.",
+  "coverImage": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1800&q=80",
+  "role": "User Experience Manager",
+  "timeline": "September 2005 – June 2011",
+  "partners": [],
+  "metrics": [
+    { "value": "212%", "label": "increase in conversions" },
+    { "value": "50%", "label": "decrease in time on task" },
+    { "value": "50%", "label": "simplification of product portfolio" }
+  ],
+  "sections": [
+    {
+      "title": "Overview",
+      "body": "<p>Established and managed the user experience team (designers, copywriters, engineers, user researchers) for a SaaS network management product. Worked with the CEO and engineering team to change the product process to be user-centred, resulting in a 50%+ simplification of the product portfolio.</p>"
+    },
+    {
+      "title": "Key work",
+      "body": "<ul><li>Restructured product management to user-centred design — <strong>50% simplification</strong> of product portfolio</li><li>Created a new product line for SMBs</li><li>Drove <strong>212% increase</strong> in conversions for sign-up and landing pages</li><li>Achieved <strong>50% decrease</strong> in time on task for top 5 user tasks</li></ul>"
+    },
+    {
+      "title": "Key outcomes",
+      "body": "<ul><li><strong>212%</strong> increase in conversions</li><li><strong>50%</strong> decrease in time on task</li><li><strong>50%</strong> simplification of product portfolio</li><li>New SMB product line launched</li></ul>"
+    }
+  ]
+}

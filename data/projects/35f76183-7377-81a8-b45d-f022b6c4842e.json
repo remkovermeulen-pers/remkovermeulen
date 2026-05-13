@@ -1,0 +1,26 @@
+{
+  "id": "35f76183-7377-81a8-b45d-f022b6c4842e",
+  "title": "Renault",
+  "sector": "Automotive",
+  "status": "Archive",
+  "year": 2013,
+  "tags": ["Design", "Research"],
+  "lede": "Designed next-generation connected car services using Kano models to maximise driver engagement and reduce time-to-value by 75%.",
+  "coverImage": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1800&q=80",
+  "role": "UX Lead & Service Designer",
+  "timeline": "2013 – 2014",
+  "partners": [],
+  "metrics": [
+    { "value": "75%", "label": "reduction in time-to-value" }
+  ],
+  "sections": [
+    {
+      "title": "Overview",
+      "body": "<p>Designed next-generation connected car services for Renault, using Kano models to maximise driver engagement and utility.</p>"
+    },
+    {
+      "title": "Key outcomes",
+      "body": "<ul><li><strong>75%</strong> reduction in time-to-value</li><li>Connected car service framework built on Kano model prioritisation</li></ul>"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+[
+  {
+    "notionId": "35f76183-7377-81f2-9f5a-dbd1debf2fb1",
+    "title": "Toggl",
+    "sector": "SaaS",
+    "status": "In Progress",
+    "year": 2026,
+    "tags": ["Strategy", "Product"],
+    "lede": "Restructured product, design and engineering teams to drive 94% activation growth, reduce costs, and accelerate the insight-to-solution cycle.",
+    "coverImage": "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1200&q=80"
+  },
+  {
+    "notionId": "35f76183-7377-816c-8a7f-e43d868da1c7",
+    "title": "SignAssist",
+    "sector": "PropTech",
+    "status": "Live",
+    "year": 2024,
+    "tags": ["Strategy", "Product"],
+    "lede": "AI-based property and investment management platform — driving 87% user growth, 75% reduction in time-to-value, and 23% MRR growth.",
+    "coverImage": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&q=80"
+  },
+  {
+    "notionId": "35f76183-7377-8135-9dd1-d1b22dfa6da0",
+    "title": "Koa Health",
+    "sector": "Health",
+    "status": "Archive",
+    "year": 2016,
+    "tags": ["Strategy", "Product", "Research"],
+    "lede": "Co-founded and scaled a digital mental health portfolio that raised €66M, reached 3M users, and built ML-powered crisis prediction alongside the NHS.",
+    "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80"
+  },
+  {
+    "notionId": "35f76183-7377-812e-89c0-f80d125d898b",
+    "title": "Janssen / Johnson & Johnson",
+    "sector": "Health",
+    "status": "Archive",
+    "year": 2021,
+    "tags": ["Research", "Product"],
+    "lede": "Led product definition and clinical trial programme for a mental health DTx companion to Spravato, in collaboration with Janssen / Johnson & Johnson.",
+    "coverImage": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&q=80"
+  },
+  {
+    "notionId": "35f76183-7377-8167-aade-e9ceff1342ed",
+    "title": "Telefónica / O2",
+    "sector": "Telco",
+    "status": "Archive",
+    "year": 2011,
+    "tags": ["Strategy", "Design", "Research"],
+    "lede": "Led UX and product design across 5 global locations, building eHealth products that reduced chronic disease mortality and hospital readmissions.",
+    "coverImage": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&q=80"
+  },
+  {
+    "notionId": "35f76183-7377-81a8-b45d-f022b6c4842e",
+    "title": "Renault",
+    "sector": "Automotive",
+    "status": "Archive",
+    "year": 2013,
+    "tags": ["Design", "Research"],
+    "lede": "Designed next-generation connected car services using Kano models to maximise driver engagement and reduce time-to-value by 75%.",
+    "coverImage": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1200&q=80"
+  },
+  {
+    "notionId": "35f76183-7377-81de-af86-c88584fb33f7",
+    "title": "Financial Times",
+    "sector": "Media",
+    "status": "Archive",
+    "year": 2008,
+    "tags": ["Design", "Product"],
+    "lede": "Digitised the consumer decision journey and enhanced online purchase behaviour tracking, achieving a 212% increase in conversions.",
+    "coverImage": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200&q=80"
+  },
+  {
+    "notionId": "35f76183-7377-8162-a013-d70ec2ca966f",
+    "title": "NTRglobal",
+    "sector": "SaaS",
+    "status": "Archive",
+    "year": 2005,
+    "tags": ["Design", "Product"],
+    "lede": "Established the UX team and drove a user-centred redesign that simplified the product portfolio by 50% and increased conversions by 212%.",
+    "coverImage": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80"
+  },
+  {
+    "notionId": "35f76183-7377-8167-8d4f-fbcae3ef4c2d",
+    "title": "British Council",
+    "sector": "Education",
+    "status": "Archive",
+    "year": 2002,
+    "tags": ["Design", "Product"],
+    "lede": "Reimagined digital language learning platforms to reach 3M+ active learners, deploying a global teacher collaboration platform across emerging markets.",
+    "coverImage": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1200&q=80"
+  }
+]

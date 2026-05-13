@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Koa Health — Case Study — Remko Vermeulen</title>
+<title>Case Study — Remko Vermeulen</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -86,12 +86,8 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
 .cs-hero h1 { margin:0 0 24px; font-family:var(--font-display); font-weight:700; font-size:clamp(48px,8vw,96px); line-height:1.02; letter-spacing:-0.025em; }
 .cs-hero__lede { margin:0; font-size:clamp(17px,1.6vw,20px); line-height:1.55; color:var(--muted); max-width:640px; }
 
-.cs-cover { margin-top:56px; border:1px solid var(--primary); overflow:hidden; position:relative; }
+.cs-cover { margin-top:56px; border:1px solid var(--primary); overflow:hidden; }
 .cs-cover img { width:100%; height:clamp(280px,42vw,560px); object-fit:cover; }
-.cs-cover__nav { position:absolute; top:50%; transform:translateY(-50%); width:44px; height:44px; display:flex; align-items:center; justify-content:center; background:rgba(251,249,248,0.85); border:1px solid var(--accent); color:var(--accent); opacity:0; transition:opacity .25s; cursor:pointer; }
-.cs-cover:hover .cs-cover__nav { opacity:1; }
-.cs-cover__nav--left  { left:16px; }
-.cs-cover__nav--right { right:16px; }
 
 /* BODY GRID */
 .cs-body { margin-top:96px; display:grid; grid-template-columns:220px 1fr; gap:48px; }
@@ -110,25 +106,20 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
 .cs-section h2 { margin:0; font-family:var(--font-display); font-weight:600; font-size:clamp(28px,3.6vw,42px); line-height:1.1; letter-spacing:-0.01em; }
 .cs-section p { margin:0 0 22px; font-size:17px; line-height:1.7; color:var(--muted); }
 .cs-section p:last-child { margin-bottom:0; }
+.cs-section ul, .cs-section ol { margin:0 0 22px; padding-left:24px; }
+.cs-section li { font-size:17px; line-height:1.7; color:var(--muted); margin-bottom:10px; }
+.cs-section li:last-child { margin-bottom:0; }
+.cs-section strong { color:var(--primary); font-weight:600; }
 
-.cs-metrics-row { margin-top:40px; padding-top:36px; border-top:1px solid var(--line); display:flex; gap:96px; flex-wrap:wrap; }
+.cs-metrics-row { margin-top:56px; padding-top:36px; border-top:1px solid var(--line); display:flex; gap:64px; flex-wrap:wrap; }
 .cs-metric .metric { font-size:clamp(48px,5.6vw,80px); margin-bottom:16px; }
 .cs-metric p { font-size:14px; max-width:280px; margin:0; color:var(--muted-2); line-height:1.55; }
-.cs-metric h6 { margin:0 0 12px; font-size:10px; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color:var(--muted-2); }
-
-.cs-phases { display:grid; grid-template-columns:1fr 1fr; gap:18px; margin:28px 0; }
-.cs-phase { border:1px solid var(--accent); padding:22px; }
-.cs-phase h5 { margin:0 0 10px; font-size:10px; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color:var(--accent); }
-.cs-phase p { margin:0; font-size:14px; line-height:1.55; color:var(--primary); }
-
-.cs-section--quote p { border-left:2px solid var(--accent); padding-left:24px; }
 
 @media (max-width:880px) {
   .cs-body { grid-template-columns:1fr; gap:36px; margin-top:48px; }
   .cs-aside { position:static; }
   .cs-content { gap:72px; }
   .cs-metrics-row { gap:36px; flex-direction:column; }
-  .cs-phases { grid-template-columns:1fr; }
 }
 
 /* NEXT PROJECT */
@@ -147,6 +138,9 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
   .next-proj__card { grid-template-columns:1fr; }
   .next-proj__text { padding:28px; }
 }
+
+/* LOADING / ERROR */
+.cs-loading { padding:120px 0; text-align:center; font-size:14px; color:var(--muted-2); letter-spacing:0.1em; }
 </style>
 </head>
 <body>
@@ -155,7 +149,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
   <div class="container site-nav__inner">
     <a href="../" class="site-nav__brand">Remko Vermeulen</a>
     <nav class="site-nav__links">
-      <a href="work.html" class="site-nav__link">Work</a>
+      <a href="work.html" class="site-nav__link is-active">Work</a>
       <a href="../#journal" class="site-nav__link">Articles</a>
       <a href="../#philosophy" class="site-nav__link">About</a>
       <a href="mailto:remko.vermeulen@toggl.com" class="site-nav__link">Contact</a>
@@ -167,174 +161,8 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
   </div>
 </header>
 
-<main class="container">
-
-  <section class="cs-hero">
-    <p class="cs-hero__crumb">Healthcare Technology &nbsp;/&nbsp; Case Study</p>
-    <h1>Koa Health</h1>
-    <p class="cs-hero__lede">
-      Building the digital infrastructure for proactive mental wellbeing through
-      machine learning and human-centric design.
-    </p>
-
-    <div class="cs-cover">
-      <img class="bw-img" src="https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1800&q=80" alt="Koa Health">
-      <button class="cs-cover__nav cs-cover__nav--left" aria-label="Previous">
-        <svg width="14" height="12" viewBox="0 0 14 12" fill="none"><path d="M6 1L1 6m0 0l5 5M1 6h12" stroke="currentColor" stroke-width="1.4"/></svg>
-      </button>
-      <button class="cs-cover__nav cs-cover__nav--right" aria-label="Next">
-        <svg width="14" height="12" viewBox="0 0 14 12" fill="none"><path d="M8 1l5 5m0 0l-5 5m5-5H1" stroke="currentColor" stroke-width="1.4"/></svg>
-      </button>
-    </div>
-  </section>
-
-  <div class="cs-body">
-
-    <aside class="cs-aside">
-      <h4>Tech Stack</h4>
-      <div class="chips">
-        <span class="tag">Python</span>
-        <span class="tag">React</span>
-        <span class="tag">AWS</span>
-        <span class="tag">PyTorch</span>
-      </div>
-
-      <div class="cs-aside__meta">
-        <div class="cs-aside__meta-block">
-          <h5>Role</h5>
-          <p>VP &amp; Head of Product</p>
-        </div>
-        <div class="cs-aside__meta-block">
-          <h5>Timeline</h5>
-          <p>2019 — 2023</p>
-        </div>
-        <div class="cs-aside__meta-block">
-          <h5>Partners</h5>
-          <p>King's College London<br>Birmingham &amp; Solihull NHS</p>
-        </div>
-      </div>
-    </aside>
-
-    <article class="cs-content">
-
-      <section class="cs-section">
-        <div class="cs-section__head">
-          <span class="cs-section__num">01</span>
-          <h2>The Challenge</h2>
-        </div>
-        <p>
-          Mental health support is traditionally reactive. Koa Health sought to transform this
-          paradigm by leveraging large-scale data to predict crises before they occur. The
-          architectural challenge lay in designing a system that felt clinically robust yet
-          fundamentally human.
-        </p>
-        <p>
-          The primary hurdle was the ethical integration of machine learning — creating a
-          transparent interface that empowered clinicians rather than alienating them with
-          "black box" algorithms. We needed to ensure that data privacy was paramount while
-          maintaining high utility.
-        </p>
-
-        <div class="cs-metrics-row">
-          <div class="cs-metric">
-            <h6>Clinical Accuracy</h6>
-            <span class="metric">80%</span>
-            <p>Recall for mental health crisis prediction using anonymised patient data models.</p>
-          </div>
-          <div class="cs-metric">
-            <h6>Operational Growth</h6>
-            <span class="metric">62%</span>
-            <p>Increase in velocity for clinical validation cycles across international markets.</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="cs-section">
-        <div class="cs-section__head">
-          <span class="cs-section__num">02</span>
-          <h2>Methodology</h2>
-        </div>
-        <p>
-          Our approach centred on "Evidence-Based Design," a process where every UI component is
-          validated against clinical safety standards. We conducted extensive ethnographic
-          research with crisis response teams to map the high-stress decision-making journey.
-        </p>
-
-        <div class="cs-phases">
-          <div class="cs-phase">
-            <h5>Phase I &nbsp;·&nbsp; Data Audit</h5>
-            <p>Mapping over 400 unique data points from disparate clinical sources into a unified health record schema.</p>
-          </div>
-          <div class="cs-phase">
-            <h5>Phase II &nbsp;·&nbsp; Stress Testing</h5>
-            <p>Simulating high-pressure triage environments to measure cognitive load and response time latency.</p>
-          </div>
-        </div>
-
-        <p>
-          By treating the interface as a medical instrument, we moved beyond typical SaaS
-          patterns toward a highly specialised environment tailored for mental health
-          specialists.
-        </p>
-      </section>
-
-      <section class="cs-section cs-section--quote">
-        <div class="cs-section__head">
-          <span class="cs-section__num">03</span>
-          <h2>The Solution</h2>
-        </div>
-        <p>
-          We developed a multi-layered interface system that prioritises data hierarchy. By
-          utilising a "Soft Brutalist" aesthetic, we established a sense of structural permanence
-          and clinical honesty.
-        </p>
-        <p>
-          The dashboard features a modular grid that allows clinicians to customise views based
-          on patient severity scores, integrating real-time prediction markers directly into the
-          workflow.
-        </p>
-        <p>
-          Technical innovation was pushed further through the development of an
-          "Interpretability Layer" — a unique UI component that explains the 'why' behind an
-          AI-driven prediction, citing the specific clinical variables that triggered an alert.
-        </p>
-      </section>
-
-      <section class="cs-section">
-        <div class="cs-section__head">
-          <span class="cs-section__num">04</span>
-          <h2>Impact</h2>
-        </div>
-        <p>
-          Post-deployment metrics showed a significant reduction in administrative overhead for
-          practitioners, allowing for a 30% increase in patient-facing time. The predictive
-          engine maintained an 80% recall rate during the first six months of clinical trials.
-        </p>
-        <p>
-          Beyond the numbers, the project transformed the internal culture at Koa Health,
-          establishing a design-led framework for future product iterations. This project
-          successfully bridged the gap between advanced data science and practical healthcare
-          application.
-        </p>
-      </section>
-
-    </article>
-  </div>
-
-  <section class="next-proj">
-    <p class="next-proj__eyebrow">Next Project</p>
-    <a href="work.html" class="next-proj__card">
-      <img class="bw-img" src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&q=80" alt="Telefónica / O2">
-      <div class="next-proj__text">
-        <h3>
-          Telefónica / O2
-          <svg width="22" height="14" viewBox="0 0 22 14" fill="none"><path d="M1 7h19m0 0l-6-6m6 6l-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg>
-        </h3>
-        <p>Global connectivity infrastructure &amp; design systems</p>
-      </div>
-    </a>
-  </section>
-
+<main class="container" id="cs-main">
+  <div class="cs-loading">Loading…</div>
 </main>
 
 <footer class="site-footer">
@@ -348,6 +176,131 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
     </div>
   </div>
 </footer>
+
+<script>
+(function () {
+  var params = new URLSearchParams(location.search);
+  var id = params.get('id');
+  if (!id) { location.href = 'work.html'; return; }
+
+  var main = document.getElementById('cs-main');
+
+  Promise.all([
+    fetch('../data/projects/' + id + '.json').then(function(r){ return r.json(); }),
+    fetch('../data/projects.json').then(function(r){ return r.json(); })
+  ]).then(function(results) {
+    var proj = results[0];
+    var all  = results[1];
+    render(proj, all);
+  }).catch(function() {
+    main.innerHTML = '<div class="cs-loading">Project not found. <a href="work.html">Back to work</a></div>';
+  });
+
+  function render(proj, all) {
+    document.title = proj.title + ' — Case Study — Remko Vermeulen';
+
+    var nextProj = getNext(proj.id, all);
+    var sectionsHtml = buildSections(proj.sections);
+    var metricsHtml  = buildMetrics(proj.metrics);
+    var sidebarHtml  = buildSidebar(proj);
+    var nextHtml     = buildNext(nextProj);
+
+    main.innerHTML =
+      '<section class="cs-hero">' +
+        '<p class="cs-hero__crumb">' + esc(proj.sector) + ' &nbsp;/&nbsp; Case Study</p>' +
+        '<h1>' + esc(proj.title) + '</h1>' +
+        '<p class="cs-hero__lede">' + esc(proj.lede) + '</p>' +
+        '<div class="cs-cover">' +
+          '<img class="bw-img" src="' + esc(proj.coverImage) + '" alt="' + esc(proj.title) + '">' +
+        '</div>' +
+      '</section>' +
+
+      '<div class="cs-body">' +
+        '<aside class="cs-aside">' + sidebarHtml + '</aside>' +
+        '<article class="cs-content">' + sectionsHtml + metricsHtml + '</article>' +
+      '</div>' +
+
+      nextHtml;
+  }
+
+  function buildSections(sections) {
+    return sections.map(function(sec, i) {
+      var num = String(i + 1).padStart(2, '0');
+      return '<section class="cs-section">' +
+        '<div class="cs-section__head">' +
+          '<span class="cs-section__num">' + num + '</span>' +
+          '<h2>' + esc(sec.title) + '</h2>' +
+        '</div>' +
+        sec.body +
+      '</section>';
+    }).join('');
+  }
+
+  function buildMetrics(metrics) {
+    if (!metrics || !metrics.length) return '';
+    var items = metrics.map(function(m) {
+      return '<div class="cs-metric">' +
+        '<span class="metric">' + esc(m.value) + '</span>' +
+        '<p>' + esc(m.label) + '</p>' +
+      '</div>';
+    }).join('');
+    return '<div class="cs-metrics-row">' + items + '</div>';
+  }
+
+  function buildSidebar(proj) {
+    var chips = (proj.tags || []).map(function(t) {
+      return '<span class="tag">' + esc(t) + '</span>';
+    }).join('');
+
+    var meta = '';
+    if (proj.role) {
+      meta += '<div class="cs-aside__meta-block"><h5>Role</h5><p>' + esc(proj.role) + '</p></div>';
+    }
+    if (proj.timeline) {
+      meta += '<div class="cs-aside__meta-block"><h5>Timeline</h5><p>' + esc(proj.timeline) + '</p></div>';
+    }
+    if (proj.partners && proj.partners.length) {
+      var partnersText = proj.partners.join('<br>');
+      meta += '<div class="cs-aside__meta-block"><h5>Partners</h5><p>' + partnersText + '</p></div>';
+    }
+
+    return (chips ? '<h4>Tags</h4><div class="chips">' + chips + '</div>' : '') +
+           (meta ? '<div class="cs-aside__meta">' + meta + '</div>' : '');
+  }
+
+  function buildNext(next) {
+    if (!next) return '';
+    return '<section class="next-proj">' +
+      '<p class="next-proj__eyebrow">Next Project</p>' +
+      '<a href="case-study?id=' + esc(next.notionId) + '" class="next-proj__card">' +
+        '<img class="bw-img" src="' + esc(next.coverImage || 'https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1200&q=80') + '" alt="' + esc(next.title) + '">' +
+        '<div class="next-proj__text">' +
+          '<h3>' + esc(next.title) +
+            '<svg width="22" height="14" viewBox="0 0 22 14" fill="none"><path d="M1 7h19m0 0l-6-6m6 6l-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg>' +
+          '</h3>' +
+          '<p>' + esc(next.lede) + '</p>' +
+        '</div>' +
+      '</a>' +
+    '</section>';
+  }
+
+  function getNext(currentId, all) {
+    var idx = all.findIndex(function(p) { return p.notionId === currentId; });
+    if (idx === -1) return all[0] || null;
+    var next = all[(idx + 1) % all.length];
+    return next.notionId === currentId ? null : next;
+  }
+
+  function esc(str) {
+    if (str == null) return '';
+    return String(str)
+      .replace(/&/g,'&amp;')
+      .replace(/</g,'&lt;')
+      .replace(/>/g,'&gt;')
+      .replace(/"/g,'&quot;');
+  }
+})();
+</script>
 
 </body>
 </html>

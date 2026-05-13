@@ -1,0 +1,30 @@
+{
+  "id": "35f76183-7377-812e-89c0-f80d125d898b",
+  "title": "Janssen / Johnson & Johnson",
+  "sector": "Health",
+  "status": "Archive",
+  "year": 2021,
+  "tags": ["Research", "Product"],
+  "lede": "Led product definition and clinical trial programme for a mental health DTx companion to Spravato, in collaboration with Janssen / Johnson & Johnson.",
+  "coverImage": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1800&q=80",
+  "role": "Product Lead (via Koa Health)",
+  "timeline": "2021 – 2022",
+  "partners": ["Janssen", "Johnson & Johnson", "Koa Health"],
+  "metrics": [
+    { "value": "3", "label": "digital health patents filed" }
+  ],
+  "sections": [
+    {
+      "title": "Overview",
+      "body": "<p>Led product definition, design and agile development of a mental health DTx (Digital Therapeutics) product to be used in combination with Spravato (esketamine) — a treatment for treatment-resistant depression — in collaboration with Janssen / Johnson & Johnson. Included a full clinical trial programme.</p>"
+    },
+    {
+      "title": "Key work",
+      "body": "<ul><li>Product definition and roadmap for a DTx companion product</li><li>Clinical trial design and execution in collaboration with Janssen</li><li>Integration with Spravato treatment protocol for patients with treatment-resistant depression</li></ul>"
+    },
+    {
+      "title": "Outcomes",
+      "body": "<ul><li>Successful clinical trial completion</li><li><strong>3 digital health patents</strong> (System and method for enabling responsive CBT; Computer implemented method and system for scheduling moment-based medical tasks)</li></ul>"
+    }
+  ]
+}

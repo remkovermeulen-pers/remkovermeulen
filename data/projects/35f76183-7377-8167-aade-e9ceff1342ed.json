@@ -1,0 +1,33 @@
+{
+  "id": "35f76183-7377-8167-aade-e9ceff1342ed",
+  "title": "Telefónica / O2",
+  "sector": "Telco",
+  "status": "Archive",
+  "year": 2011,
+  "tags": ["Strategy", "Design", "Research"],
+  "lede": "Led UX and product design across 5 global locations, building eHealth products that reduced chronic disease mortality and hospital readmissions.",
+  "coverImage": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1800&q=80",
+  "role": "UX Lead & Head of Product & Service Design",
+  "timeline": "June 2011 – June 2016",
+  "partners": ["NHS (UK)", "WHO", "Unicef", "Harvard", "Hospital del Mar, Barcelona"],
+  "metrics": [
+    { "value": "48%", "label": "decrease in chronic disease mortality" },
+    { "value": "63%", "label": "decrease in hospital readmission" },
+    { "value": "78%", "label": "precision in Parkinson's detection" },
+    { "value": "20+", "label": "MVPs created, 5 launched" }
+  ],
+  "sections": [
+    {
+      "title": "Overview",
+      "body": "<p>Led UX, product and service design teams across 5 global locations (10–17 people), building eHealth, cloud and data privacy products at Telefonica worldwide.</p>"
+    },
+    {
+      "title": "Key work",
+      "body": "<ul><li>Led design of a chronic disease management system (COPD, heart failure) for patients, nurses and clinicians on tablet, web and mobile — <strong>48% mortality rate decrease</strong> and <strong>63% decrease in readmission</strong> across UK, Brazil and Spain</li><li>Created a service using location patterns to detect epidemic sources faster, predict spread and follow up with education — in collaboration with the WHO, Unicef and Harvard</li><li>Created a voice analysis service using a standard telephone line to detect and monitor Parkinson's disease with <strong>78% precision</strong></li><li>Healthcare educational services via SMS for the general population and mothers-to-be in Brazil</li><li>Teledermatology service with Hospital del Mar in Barcelona</li><li>Led cross-disciplinary teams creating new data security and privacy products — <strong>20+ MVPs</strong>, 5 successfully launched</li></ul>"
+    },
+    {
+      "title": "Key outcomes",
+      "body": "<ul><li><strong>48%</strong> decrease in mortality rate (chronic disease)</li><li><strong>63%</strong> decrease in hospital readmission</li><li><strong>20+</strong> MVPs created, <strong>5</strong> launched</li><li><strong>78%</strong> precision in Parkinson's detection</li></ul>"
+    }
+  ]
+}
