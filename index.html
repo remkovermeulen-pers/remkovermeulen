@@ -581,23 +581,27 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
       <!-- populated by JS from data/articles.json -->
     </div>
   </section>
+  <script id="articles-fallback" type="application/json">[{"notionId":"35f76183-7377-81c5-91df-e11937e6d0e7","title":"Innovation in Product Management","category":"Product","year":"2025","readingTime":5},{"notionId":"35f76183-7377-81e5-bdd5-ced328545bbd","title":"From Automation to Co-Creation","category":"Product","year":"2025","readingTime":6},{"notionId":"35f76183-7377-8187-bc22-fff091108594","title":"Innovation in Times of Uncertainty","category":"Strategy","year":"2024","readingTime":5},{"notionId":"35f76183-7377-8185-a1ac-d3beabbf4d6b","title":"Innovation Lessons for Product Managers: Balancing the Here and Now and the Future","category":"Strategy","year":"2023","readingTime":4},{"notionId":"35f76183-7377-818b-a162-c1fa8913b926","title":"Rethinking Healthcare for the Future","category":"Strategy","year":"2023","readingTime":4},{"notionId":"35f76183-7377-81e7-95af-e7d359d83155","title":"Machine Learning Algorithm Accurately Predicts Mental Health Crises","category":"Research","year":"2023","readingTime":3}]</script>
   <script>
   (function(){
+    function renderArticles(articles) {
+      var grid = document.getElementById('journal-grid');
+      if (!grid) return;
+      grid.innerHTML = articles.slice(0,6).map(function(a){
+        var href = a.notionId ? 'pages/article.html?id=' + a.notionId : a.url;
+        var target = a.notionId ? '' : ' target="_blank" rel="noopener"';
+        var rt = a.readingTime ? '<span class="article-card__year">' + a.readingTime + ' min</span>' : '<span class="article-card__year">' + a.year + '</span>';
+        return '<a href="' + href + '"' + target + ' class="article-card lift">'
+          + '<div><span class="article-card__tag">' + a.category + '</span>'
+          + '<h3>' + a.title + '</h3></div>'
+          + rt + '</a>';
+      }).join('');
+    }
+    var fallback = JSON.parse(document.getElementById('articles-fallback').textContent);
+    renderArticles(fallback);
     fetch('data/articles.json')
       .then(function(r){ return r.json(); })
-      .then(function(articles){
-        var grid = document.getElementById('journal-grid');
-        if (!grid) return;
-        grid.innerHTML = articles.slice(0,6).map(function(a){
-          var href = a.notionId ? 'pages/article.html?id=' + a.notionId : a.url;
-          var target = a.notionId ? '' : ' target="_blank" rel="noopener"';
-          var rt = a.readingTime ? '<span class="article-card__year">' + a.readingTime + ' min</span>' : '<span class="article-card__year">' + a.year + '</span>';
-          return '<a href="' + href + '"' + target + ' class="article-card lift">'
-            + '<div><span class="article-card__tag">' + a.category + '</span>'
-            + '<h3>' + a.title + '</h3></div>'
-            + rt + '</a>';
-        }).join('');
-      })
+      .then(function(articles){ renderArticles(articles); })
       .catch(function(){});
   })();
   </script>
