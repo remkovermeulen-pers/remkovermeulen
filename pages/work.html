@@ -334,32 +334,27 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
       </a>
     </div>
 
-    <div class="writing-grid">
-      <a href="article.html" class="article-card">
-        <div>
-          <span class="article-card__tag">Strategy</span>
-          <h3>Good Product Strategy, Bad Product Strategy</h3>
-          <p>Applying Richard Rumelt's principles to navigate the complexities of modern product development.</p>
-        </div>
-        <span class="article-card__year">2024</span>
-      </a>
-      <a href="article.html" class="article-card">
-        <div>
-          <span class="article-card__tag">Leadership</span>
-          <h3>Innovation is a Marathon</h3>
-          <p>Why long-term commitment is the essential ingredient for significant ROI in corporate innovation.</p>
-        </div>
-        <span class="article-card__year">2024</span>
-      </a>
-      <a href="article.html" class="article-card">
-        <div>
-          <span class="article-card__tag">Artificial Intelligence</span>
-          <h3>From Automation to Co-Creation</h3>
-          <p>Rethinking the type of products we build in the age of generative AI and human collaboration.</p>
-        </div>
-        <span class="article-card__year">2023</span>
-      </a>
+    <div class="writing-grid" id="writing-grid">
+      <!-- populated by JS from data/articles.json -->
     </div>
+    <script>
+    (function(){
+      fetch('../data/articles.json')
+        .then(function(r){ return r.json(); })
+        .then(function(articles){
+          var grid = document.getElementById('writing-grid');
+          if (!grid) return;
+          grid.innerHTML = articles.map(function(a){
+            var rt = a.readingTime ? '<span class="article-card__year">' + a.readingTime + ' min</span>' : '<span class="article-card__year">' + a.year + '</span>';
+            return '<a href="' + a.url + '" target="_blank" rel="noopener" class="article-card">'
+              + '<div><span class="article-card__tag">' + a.category + '</span>'
+              + '<h3>' + a.title + '</h3></div>'
+              + rt + '</a>';
+          }).join('');
+        })
+        .catch(function(){});
+    })();
+    </script>
   </section>
 
   <!-- CTA -->

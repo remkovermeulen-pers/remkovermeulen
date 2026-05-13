@@ -571,63 +571,34 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
         <span class="accent-mark"></span>
         <h2>Journal</h2>
       </div>
-      <a href="#" class="view-all">
+      <a href="pages/work.html#writing" class="view-all">
         View all articles
         <svg width="16" height="10" viewBox="0 0 16 10" fill="none"><path d="M1 5h14m0 0L11 1m4 4l-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"/></svg>
       </a>
     </div>
 
-    <div class="journal-grid">
-      <a href="pages/article.html" class="article-card lift">
-        <div>
-          <span class="article-card__tag">Strategy</span>
-          <h3>Good Product Strategy, Bad Product Strategy</h3>
-          <p>Applying Richard Rumelt's principles to navigate the complexities of modern product development.</p>
-        </div>
-        <span class="article-card__year">2024</span>
-      </a>
-      <a href="#" class="article-card lift">
-        <div>
-          <span class="article-card__tag">Leadership</span>
-          <h3>Innovation is a Marathon</h3>
-          <p>Why long-term commitment is the essential ingredient for significant ROI in corporate innovation.</p>
-        </div>
-        <span class="article-card__year">2024</span>
-      </a>
-      <a href="#" class="article-card lift">
-        <div>
-          <span class="article-card__tag">Artificial Intelligence</span>
-          <h3>From Automation to Co-Creation</h3>
-          <p>Rethinking the type of products we build in the age of generative AI and human collaboration.</p>
-        </div>
-        <span class="article-card__year">2023</span>
-      </a>
-      <a href="#" class="article-card lift">
-        <div>
-          <span class="article-card__tag">Product Management</span>
-          <h3>The Continuous Discovery Habit</h3>
-          <p>Why weekly touchpoints with customers are the most underrated competitive advantage in product development.</p>
-        </div>
-        <span class="article-card__year">2023</span>
-      </a>
-      <a href="#" class="article-card lift">
-        <div>
-          <span class="article-card__tag">Design</span>
-          <h3>Soft Brutalism in Digital Products</h3>
-          <p>How structural honesty and editorial restraint are reshaping the visual language of enterprise software.</p>
-        </div>
-        <span class="article-card__year">2023</span>
-      </a>
-      <a href="#" class="article-card lift">
-        <div>
-          <span class="article-card__tag">Leadership</span>
-          <h3>Hiring for Product Taste</h3>
-          <p>The undervalued skill that separates great product teams from those that ship features nobody uses.</p>
-        </div>
-        <span class="article-card__year">2022</span>
-      </a>
+    <div class="journal-grid" id="journal-grid">
+      <!-- populated by JS from data/articles.json -->
     </div>
   </section>
+  <script>
+  (function(){
+    fetch('data/articles.json')
+      .then(function(r){ return r.json(); })
+      .then(function(articles){
+        var grid = document.getElementById('journal-grid');
+        if (!grid) return;
+        grid.innerHTML = articles.slice(0,6).map(function(a){
+          var rt = a.readingTime ? '<span class="article-card__year">' + a.readingTime + ' min</span>' : '<span class="article-card__year">' + a.year + '</span>';
+          return '<a href="' + a.url + '" target="_blank" rel="noopener" class="article-card lift">'
+            + '<div><span class="article-card__tag">' + a.category + '</span>'
+            + '<h3>' + a.title + '</h3></div>'
+            + rt + '</a>';
+        }).join('');
+      })
+      .catch(function(){});
+  })();
+  </script>
 
   <!-- PHILOSOPHY + FEATURED STUDY -->
   <section class="philo-row" id="philosophy">
