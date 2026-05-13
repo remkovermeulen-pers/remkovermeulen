@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Remko Vermeulen — VP &amp; Head of Product</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   Design tokens & base — Bone surface · Bodoni × Hanken
+   ============================================================ */
+:root {
+  --bg:          #fbf9f8;
+  --bg-card:     #ffffff;
+  --bg-elev:     #efeded;
+  --primary:     #1b1c1c;
+  --on-primary:  #ffffff;
+  --muted:       #444748;
+  --muted-2:     #65645f;
+  --muted-3:     #87847a;
+  --line:        rgba(27,28,28,0.12);
+  --accent:      #A68B77;
+  --accent-soft: rgba(166,139,119,0.15);
+  --font-display:'Bodoni Moda','Playfair Display',Georgia,serif;
+  --font-body:   'Hanken Grotesk','Inter',system-ui,sans-serif;
+  --pad-desktop: 64px;
+  --pad-mobile:  20px;
+}
+
+*,*::before,*::after { box-sizing:border-box; }
+html,body { margin:0; padding:0; }
+body {
+  background:var(--bg);
+  color:var(--primary);
+  font-family:var(--font-body);
+  font-size:16px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+img { display:block; max-width:100%; }
+a { color:inherit; text-decoration:none; }
+button { font:inherit; cursor:pointer; background:none; border:0; color:inherit; }
+
+/* Layout */
+.container {
+  max-width:1280px;
+  margin:0 auto;
+  padding:0 var(--pad-desktop);
+}
+@media (max-width:760px) { .container { padding:0 var(--pad-mobile); } }
+
+/* Shared tokens */
+.accent-mark {
+  display:inline-block;
+  width:7px; height:7px;
+  background:var(--accent);
+  margin-right:12px;
+  vertical-align:1px;
+}
+.label-xs {
+  font-size:11px; font-weight:700;
+  letter-spacing:0.18em; text-transform:uppercase;
+  line-height:1; color:var(--muted-2);
+}
+.metric {
+  font-family:var(--font-body); font-weight:600;
+  font-size:clamp(32px,4.5vw,56px);
+  color:var(--accent); letter-spacing:-0.01em;
+  line-height:1; display:block; margin-bottom:12px;
+}
+.metric-label {
+  font-size:10px; font-weight:700;
+  letter-spacing:0.16em; text-transform:uppercase;
+  color:var(--muted-2); line-height:1.5;
+}
+.bw-img {
+  filter:grayscale(100%) contrast(108%);
+  transition:filter .6s cubic-bezier(.22,1,.36,1);
+}
+.bw-img:hover { filter:grayscale(0%) contrast(105%); }
+.lift { transition:transform .3s, box-shadow .3s; }
+.lift:hover { transform:translate(-3px,-3px); box-shadow:6px 6px 0 0 var(--primary); }
+.btn {
+  display:inline-flex; align-items:center; gap:10px;
+  padding:16px 28px; font-size:11px; font-weight:600;
+  letter-spacing:0.18em; text-transform:uppercase;
+  border:1px solid var(--primary); background:var(--bg-card); color:var(--primary);
+  transition:box-shadow .25s, transform .25s, background .25s, color .25s;
+}
+.btn:hover { box-shadow:4px 4px 0 0 var(--primary); transform:translate(-2px,-2px); }
+
+/* ===== NAV ===== */
+.site-nav {
+  position:sticky; top:0; z-index:50;
+  background:var(--bg); border-bottom:1px solid var(--line);
+}
+.site-nav__inner {
+  display:flex; align-items:center;
+  justify-content:space-between; height:76px;
+}
+.site-nav__brand {
+  font-family:var(--font-display); font-weight:700;
+  font-size:22px; letter-spacing:-0.01em; color:var(--primary);
+}
+.site-nav__links { display:flex; align-items:center; gap:36px; }
+.site-nav__link {
+  font-size:13px; font-weight:500; letter-spacing:0.14em;
+  text-transform:uppercase; color:var(--muted-2);
+  padding-bottom:4px; transition:color .2s;
+}
+.site-nav__link:hover { color:var(--primary); }
+.site-nav__link.is-active {
+  color:var(--primary); font-weight:600;
+  border-bottom:1px solid var(--primary);
+}
+.site-nav__cta {
+  background:var(--primary); color:var(--on-primary);
+  padding:12px 22px; font-size:11px; font-weight:600;
+  letter-spacing:0.18em; text-transform:uppercase;
+  border:1px solid var(--primary);
+  transition:box-shadow .2s, transform .2s;
+}
+.site-nav__cta:hover { box-shadow:4px 4px 0 0 var(--primary); transform:translate(-2px,-2px); }
+.site-nav__burger {
+  display:none; width:36px; height:36px;
+  align-items:center; justify-content:center;
+  border:1px solid var(--primary);
+}
+.site-nav__burger span,
+.site-nav__burger span::before,
+.site-nav__burger span::after {
+  display:block; width:16px; height:1.5px;
+  background:var(--primary); position:relative;
+}
+.site-nav__burger span::before { content:''; position:absolute; top:-5px; left:0; width:100%; height:100%; background:var(--primary); }
+.site-nav__burger span::after  { content:''; position:absolute; top:5px;  left:0; width:100%; height:100%; background:var(--primary); }
+@media (max-width:760px) {
+  .site-nav__inner { height:60px; }
+  .site-nav__brand { font-size:18px; }
+  .site-nav__links { display:none; }
+  .site-nav__cta   { padding:9px 14px; font-size:10px; letter-spacing:0.14em; }
+  .site-nav__burger { display:inline-flex; }
+}
+
+/* ===== HERO ===== */
+.hero {
+  padding:80px 0 24px;
+  display:grid;
+  grid-template-columns:1.4fr 1fr;
+  gap:64px;
+  align-items:end;
+}
+.hero__eyebrow { display:flex; align-items:center; margin-bottom:28px; }
+.hero__eyebrow span {
+  font-size:11px; font-weight:700; letter-spacing:0.22em;
+  text-transform:uppercase; color:var(--muted-2);
+}
+.hero h1 {
+  font-family:var(--font-display);
+  font-weight:700;
+  font-size:clamp(56px,9vw,104px);
+  line-height:0.96;
+  letter-spacing:-0.025em;
+  margin:0 0 36px;
+  text-transform:uppercase;
+}
+.hero__intro {
+  border-left:2px solid var(--accent);
+  padding:4px 0 4px 28px;
+  font-family:var(--font-display);
+  font-weight:500;
+  font-size:clamp(20px,2.3vw,26px);
+  line-height:1.4;
+  color:var(--muted);
+  max-width:540px;
+}
+.hero__portrait {
+  aspect-ratio:4/5;
+  border:1px solid var(--primary);
+  overflow:hidden;
+  background:var(--bg-elev);
+  width:100%;
+}
+.hero__portrait img { width:100%; height:100%; object-fit:cover; }
+@media (max-width:880px) {
+  .hero { grid-template-columns:1fr; gap:36px; padding:40px 0 16px; }
+  .hero__portrait { max-width:320px; }
+}
+
+/* ===== SECTION HEADER ===== */
+.sec-head {
+  display:flex; align-items:baseline;
+  justify-content:space-between;
+  border-bottom:1px solid var(--line);
+  padding-bottom:18px; margin-bottom:36px; gap:18px;
+}
+.sec-head__title { display:flex; align-items:center; }
+.sec-head__title h2 {
+  margin:0;
+  font-family:var(--font-display);
+  font-style:italic; font-weight:600;
+  font-size:clamp(22px,2.8vw,30px);
+  letter-spacing:0.02em; text-transform:uppercase;
+}
+
+/* ===== EXPERIENCE ===== */
+.experience { padding:96px 0 0; }
+.exp-grid {
+  display:grid; grid-template-columns:repeat(3,1fr); gap:32px;
+}
+.proj { display:flex; flex-direction:column; gap:22px; }
+.proj__img {
+  aspect-ratio:1/1;
+  border:1px solid var(--primary);
+  overflow:hidden; position:relative;
+  background:var(--bg-elev);
+}
+.proj__img img { width:100%; height:100%; object-fit:cover; }
+.proj__chip {
+  position:absolute; top:14px; right:14px;
+  background:var(--primary); color:var(--on-primary);
+  padding:6px 10px; font-size:9px; font-weight:700;
+  letter-spacing:0.2em; text-transform:uppercase; z-index:2;
+}
+.proj h3 {
+  margin:0; font-family:var(--font-display);
+  font-weight:500; font-size:26px; line-height:1.2;
+}
+.proj p { margin:0; font-size:14px; color:var(--muted-2); line-height:1.55; }
+.proj__metrics {
+  display:grid; grid-template-columns:1fr 1fr;
+  gap:18px; border-top:1px solid var(--line);
+  padding-top:18px; margin-top:auto;
+}
+.proj__metrics--1 { grid-template-columns:1fr; }
+.proj__metric .metric { font-size:32px; margin-bottom:6px; }
+@media (max-width:880px) {
+  .experience { padding-top:56px; }
+  .exp-grid { grid-template-columns:1fr; gap:48px; }
+}
+
+/* ===== LOGO STRIP ===== */
+.logos {
+  padding:36px 0; margin-top:56px;
+  border-top:1px solid var(--line); border-bottom:1px solid var(--line);
+  display:flex; flex-wrap:wrap;
+  justify-content:space-between; align-items:center; gap:32px;
+}
+.logo-mark {
+  font-family:var(--font-display); font-weight:500;
+  font-style:italic; font-size:18px;
+  color:var(--muted-3); letter-spacing:0.05em;
+  opacity:0.75; transition:opacity .25s;
+}
+.logo-mark:hover { opacity:1; }
+
+/* ===== JOURNAL ===== */
+.journal { padding-top:96px; }
+.journal-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+.article-card {
+  display:flex; flex-direction:column;
+  justify-content:space-between;
+  padding:32px; background:var(--bg-card);
+  border:1px solid var(--primary);
+  min-height:280px; gap:24px;
+}
+.article-card__tag {
+  font-size:10px; font-weight:700;
+  letter-spacing:0.2em; text-transform:uppercase;
+  color:var(--accent);
+}
+.article-card h3 {
+  margin:14px 0; font-family:var(--font-display);
+  font-weight:600; font-size:26px; line-height:1.2;
+}
+.article-card p { margin:0; font-size:14px; color:var(--muted-2); line-height:1.6; }
+.article-card__year {
+  align-self:flex-end; font-size:11px; font-weight:600;
+  letter-spacing:0.18em; color:var(--muted-2);
+}
+.view-all {
+  display:inline-flex; align-items:center; gap:10px;
+  font-size:11px; font-weight:600; letter-spacing:0.2em;
+  text-transform:uppercase;
+  border-bottom:1px solid var(--primary); padding-bottom:4px;
+}
+.view-all svg { transition:transform .25s; }
+.view-all:hover svg { transform:translateX(4px); }
+@media (max-width:880px) {
+  .journal { padding-top:56px; }
+  .journal-grid { grid-template-columns:1fr; }
+  .article-card { min-height:0; padding:26px; }
+}
+
+/* ===== PHILOSOPHY + FEATURED ===== */
+.philo-row {
+  margin-top:96px;
+  display:grid; grid-template-columns:1.2fr 1fr; gap:24px;
+}
+.philo, .featured {
+  padding:48px; min-height:380px;
+  display:flex; flex-direction:column;
+  justify-content:space-between; gap:36px;
+}
+.philo {
+  background:var(--bg-elev);
+  border:1px solid var(--primary);
+}
+.philo h2 {
+  margin:0; font-family:var(--font-display);
+  font-style:italic; font-weight:600;
+  font-size:28px; letter-spacing:0.02em; text-transform:uppercase;
+}
+.philo p { margin:18px 0 0; font-size:18px; line-height:1.55; color:var(--primary); }
+.philo__meta { display:grid; grid-template-columns:1fr 1fr; gap:28px; }
+.philo__meta-block h5 {
+  margin:0 0 6px; font-size:10px; font-weight:700;
+  letter-spacing:0.2em; text-transform:uppercase; color:var(--accent);
+}
+.philo__meta-block p { font-size:14px; color:var(--primary); margin:0; line-height:1.5; }
+.featured {
+  background:var(--primary); color:var(--on-primary);
+  border:1px solid var(--primary);
+  position:relative; overflow:hidden;
+}
+.featured__eyebrow {
+  font-size:10px; font-weight:700;
+  letter-spacing:0.22em; text-transform:uppercase; opacity:0.6;
+}
+.featured h3 {
+  margin:16px 0 0; font-family:var(--font-display);
+  font-style:italic; font-weight:500;
+  font-size:28px; line-height:1.2;
+}
+.featured p { margin:18px 0 0; font-size:14px; opacity:0.8; line-height:1.55; }
+.featured .btn {
+  background:transparent; color:var(--on-primary);
+  border-color:rgba(255,255,255,0.4); align-self:flex-start;
+}
+.featured .btn:hover { background:var(--on-primary); color:var(--primary); box-shadow:4px 4px 0 0 var(--accent); }
+.featured__deco {
+  position:absolute; right:-50px; bottom:-50px;
+  width:160px; height:160px;
+  border:1px solid rgba(255,255,255,0.18);
+  transform:rotate(45deg);
+}
+@media (max-width:880px) {
+  .philo-row { grid-template-columns:1fr; margin-top:56px; }
+  .philo, .featured { padding:32px; min-height:0; }
+  .philo h2, .featured h3 { font-size:24px; }
+  .philo p { font-size:16px; }
+  .philo__meta { grid-template-columns:1fr; gap:18px; }
+}
+
+/* ===== FOOTER ===== */
+.site-footer { border-top:1px solid var(--line); margin-top:96px; }
+.site-footer__inner {
+  display:flex; align-items:center;
+  justify-content:space-between;
+  padding:36px 0; gap:24px; flex-wrap:wrap;
+}
+.site-footer__brand {
+  font-family:var(--font-display); font-weight:700;
+  font-size:22px; letter-spacing:-0.01em;
+}
+.site-footer__copy { font-size:13px; color:var(--muted-2); font-style:italic; }
+.site-footer__links { display:flex; gap:28px; }
+.site-footer__link {
+  font-size:11px; font-weight:600; letter-spacing:0.16em;
+  text-transform:uppercase; color:var(--muted-2); transition:color .2s;
+}
+.site-footer__link:hover { color:var(--primary); }
+@media (max-width:760px) {
+  .site-footer { margin-top:60px; }
+  .site-footer__inner { padding:28px 0; flex-direction:column; align-items:flex-start; gap:18px; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<header class="site-nav">
+  <div class="container site-nav__inner">
+    <a href="/" class="site-nav__brand">Remko Vermeulen</a>
+    <nav class="site-nav__links">
+      <a href="#experience" class="site-nav__link is-active">Work</a>
+      <a href="#philosophy" class="site-nav__link">Philosophy</a>
+      <a href="#journal" class="site-nav__link">Journal</a>
+      <a href="mailto:remko.vermeulen@toggl.com" class="site-nav__link">Contact</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:14px;">
+      <a href="mailto:remko.vermeulen@toggl.com" class="site-nav__cta">Get in touch</a>
+      <button class="site-nav__burger" aria-label="Menu"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div>
+      <div class="hero__eyebrow">
+        <span class="accent-mark"></span>
+        <span>Executive Leader &amp; Innovator</span>
+      </div>
+      <h1>Remko<br>Vermeulen</h1>
+      <p class="hero__intro">
+        VP &amp; Head of Product. Building and scaling innovative products in
+        Health&nbsp;Tech, EdTech, Legal&nbsp;Tech &amp; Telecom.
+      </p>
+    </div>
+    <div class="hero__portrait">
+      <img class="bw-img" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=900&q=80" alt="Remko Vermeulen portrait">
+    </div>
+  </section>
+
+  <!-- SELECTED EXPERIENCE -->
+  <section class="experience" id="experience">
+    <div class="sec-head">
+      <div class="sec-head__title">
+        <span class="accent-mark"></span>
+        <h2>Selected Experience</h2>
+      </div>
+      <span class="label-xs">15+ Years of Impact</span>
+    </div>
+
+    <div class="exp-grid">
+      <article class="proj">
+        <div class="proj__img">
+          <span class="proj__chip">Health Tech</span>
+          <img class="bw-img" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&q=80" alt="Koa Health dashboard">
+        </div>
+        <h3>Koa Health</h3>
+        <p>Leading product vision and clinical effectiveness studies for digital mental health foundations.</p>
+        <div class="proj__metrics">
+          <div class="proj__metric">
+            <span class="metric">80%</span>
+            <div class="metric-label">Crisis Prediction Recall</div>
+          </div>
+          <div class="proj__metric">
+            <span class="metric">62%</span>
+            <div class="metric-label">Increase in Velocity</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="proj">
+        <div class="proj__img">
+          <span class="proj__chip">Telecom</span>
+          <img class="bw-img" src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=900&q=80" alt="Telefonica infrastructure">
+        </div>
+        <h3>Telefónica / O2</h3>
+        <p>Scaling product breakthroughs through global innovation factories and service design.</p>
+        <div class="proj__metrics">
+          <div class="proj__metric">
+            <span class="metric">48%</span>
+            <div class="metric-label">Lean Cycle Reduction</div>
+          </div>
+          <div class="proj__metric">
+            <span class="metric">63%</span>
+            <div class="metric-label">Conversion Lift</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="proj">
+        <div class="proj__img">
+          <span class="proj__chip">Media</span>
+          <img class="bw-img" src="https://images.unsplash.com/photo-1495020689067-958852a7765e?w=900&q=80" alt="Financial Times editorial">
+        </div>
+        <h3>Financial Times</h3>
+        <p>Digitising the consumer decision journey and enhancing online purchase behaviour tracking.</p>
+        <div class="proj__metrics proj__metrics--1">
+          <div class="proj__metric">
+            <span class="metric">212%</span>
+            <div class="metric-label">Increase in Conversions</div>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div class="logos">
+      <span class="logo-mark">Renault</span>
+      <span class="logo-mark">Warner&nbsp;Bros</span>
+      <span class="logo-mark">Vivo</span>
+      <span class="logo-mark">British&nbsp;Council</span>
+      <span class="logo-mark">Janssen</span>
+      <span class="logo-mark">King's&nbsp;College</span>
+    </div>
+  </section>
+
+  <!-- JOURNAL -->
+  <section class="journal" id="journal">
+    <div class="sec-head">
+      <div class="sec-head__title">
+        <span class="accent-mark"></span>
+        <h2>Journal</h2>
+      </div>
+      <a href="#" class="view-all">
+        View all articles
+        <svg width="16" height="10" viewBox="0 0 16 10" fill="none"><path d="M1 5h14m0 0L11 1m4 4l-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"/></svg>
+      </a>
+    </div>
+
+    <div class="journal-grid">
+      <a href="#" class="article-card lift">
+        <div>
+          <span class="article-card__tag">Strategy</span>
+          <h3>Good Product Strategy, Bad Product Strategy</h3>
+          <p>Applying Richard Rumelt's principles to navigate the complexities of modern product development.</p>
+        </div>
+        <span class="article-card__year">2024</span>
+      </a>
+      <a href="#" class="article-card lift">
+        <div>
+          <span class="article-card__tag">Leadership</span>
+          <h3>Innovation is a Marathon</h3>
+          <p>Why long-term commitment is the essential ingredient for significant ROI in corporate innovation.</p>
+        </div>
+        <span class="article-card__year">2024</span>
+      </a>
+      <a href="#" class="article-card lift">
+        <div>
+          <span class="article-card__tag">Artificial Intelligence</span>
+          <h3>From Automation to Co-Creation</h3>
+          <p>Rethinking the type of products we build in the age of generative AI and human collaboration.</p>
+        </div>
+        <span class="article-card__year">2023</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- PHILOSOPHY + FEATURED STUDY -->
+  <section class="philo-row" id="philosophy">
+    <div class="philo">
+      <div>
+        <h2><span class="accent-mark"></span>Philosophy</h2>
+        <p>"15+ years of international experience in leading product management, innovation, design and development of new products and services. From early ideation to commercialisation across Health&nbsp;Tech, EdTech, Legal&nbsp;Tech &amp; Telecom."</p>
+      </div>
+      <div class="philo__meta">
+        <div class="philo__meta-block">
+          <h5>Approach</h5>
+          <p>Design Thinking meets Lean Startup.</p>
+        </div>
+        <div class="philo__meta-block">
+          <h5>Focus</h5>
+          <p>Scaling product breakthroughs.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="featured">
+      <div>
+        <span class="featured__eyebrow">Featured Study</span>
+        <h3>Machine learning algorithm accurately predicts mental health crises.</h3>
+        <p>A collaboration with Birmingham and Solihull Mental Health NHS Foundation Trust.</p>
+      </div>
+      <a class="btn" href="#">Read Case Study</a>
+      <span class="featured__deco"></span>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container site-footer__inner">
+    <div class="site-footer__brand">RV.</div>
+    <div class="site-footer__copy">© 2025 Remko Vermeulen. Built with intention.</div>
+    <div class="site-footer__links">
+      <a href="https://linkedin.com/in/remkovermeulen" class="site-footer__link">LinkedIn</a>
+      <a href="https://github.com/remkovermeulen-pers" class="site-footer__link">GitHub</a>
+      <a href="mailto:remko.vermeulen@toggl.com" class="site-footer__link">Email</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
