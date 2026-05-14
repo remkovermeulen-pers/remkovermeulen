@@ -199,8 +199,8 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
   <div class="container site-nav__inner">
     <a href="/" class="site-nav__brand">Remko Vermeulen</a>
     <nav class="site-nav__links">
-      <a href="pages/work.html" class="site-nav__link">Work</a>
-      <a href="pages/articles.html" class="site-nav__link">Articles</a>
+      <a href="work.html" class="site-nav__link">Work</a>
+      <a href="articles.html" class="site-nav__link">Articles</a>
       <a href="#philosophy" class="site-nav__link">About</a>
       <a href="mailto:vermeulenremko@gmail.com" class="site-nav__link">Contact</a>
     </nav>
@@ -242,7 +242,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
         <span class="accent-mark"></span>
         <h2>Selected Experience</h2>
       </div>
-      <a href="pages/work.html" class="view-all">
+      <a href="work.html" class="view-all">
         View all projects
         <svg width="16" height="10" viewBox="0 0 16 10" fill="none"><path d="M1 5h14m0 0L11 1m4 4l-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"/></svg>
       </a>
@@ -264,7 +264,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
             var metricsHtml = metrics.map(function(m){
               return '<div><span class="metric">'+esc(m.value)+'</span><div class="metric-label">'+esc(m.label)+'</div></div>';
             }).join('');
-            return '<a href="pages/case-study?id='+esc(p.notionId)+'" class="proj lift">'
+            return '<a href="case-study?id='+esc(p.notionId)+'" class="proj lift">'
               +'<div class="proj__img">'
               +'<span class="proj__chip">'+esc(p.sector)+'</span>'
               +'<img class="bw-img" src="'+esc(p.coverImage)+'" alt="'+esc(p.title)+'" loading="lazy">'
@@ -338,7 +338,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
         <span class="accent-mark"></span>
         <h2>Journal</h2>
       </div>
-      <a href="pages/articles.html" class="view-all">
+      <a href="articles.html" class="view-all">
         View all articles
         <svg width="16" height="10" viewBox="0 0 16 10" fill="none"><path d="M1 5h14m0 0L11 1m4 4l-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"/></svg>
       </a>
@@ -355,7 +355,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
           var grid = document.getElementById('article-grid');
           if (!grid) return;
           grid.innerHTML = articles.slice(0,6).map(function(a){
-            var href = a.notionId ? 'pages/article.html?id='+esc(a.notionId) : esc(a.url||'#');
+            var href = a.notionId ? 'article.html?id='+esc(a.notionId) : esc(a.url||'#');
             var target = a.notionId ? '' : ' target="_blank" rel="noopener"';
             var rt = a.readingTime ? a.readingTime+' min read' : a.year;
             return '<a href="'+href+'"'+target+' class="article-card">'
@@ -378,7 +378,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
         <h3>Machine learning algorithm accurately predicts mental health crises.</h3>
         <p>A collaboration with Birmingham and Solihull Mental Health NHS Foundation Trust.</p>
       </div>
-      <a class="btn" href="pages/case-study?id=koa-health">Read Case Study</a>
+      <a class="btn" href="case-study?id=koa-health">Read Case Study</a>
       <span class="featured__deco"></span>
     </div>
   </section>

@@ -107,11 +107,11 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
 
 <header class="site-nav">
   <div class="container site-nav__inner">
-    <a href="../" class="site-nav__brand">Remko Vermeulen</a>
+    <a href="index.html" class="site-nav__brand">Remko Vermeulen</a>
     <nav class="site-nav__links">
       <a href="work.html" class="site-nav__link">Work</a>
       <a href="articles.html" class="site-nav__link is-active">Articles</a>
-      <a href="../#philosophy" class="site-nav__link">About</a>
+      <a href="index.html#philosophy" class="site-nav__link">About</a>
       <a href="mailto:vermeulenremko@gmail.com" class="site-nav__link">Contact</a>
     </nav>
     <div style="display:flex;align-items:center;gap:14px;">
@@ -148,7 +148,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
     <script>
     (function(){
       function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
-      fetch('../data/articles.json')
+      fetch('data/articles.json')
         .then(function(r){ return r.json(); })
         .then(function(articles){
           var grid = document.getElementById('journal-grid');
