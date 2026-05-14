@@ -308,7 +308,7 @@
     "metrics": [
       {
         "value": "90%",
-        "label": "response rate, 55% average symptom reduction (equal to best MGH therapists), 95% cost reduction. Pending FDA Class II de novo and CE mark Class 1."
+        "label": "response rate | 55% average symptom reduction | 95% cost reduction vs. traditional therapy | Pending FDA Class II de novo + CE Class I"
       }
     ]
   },
@@ -365,8 +365,8 @@
     "coverImage": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&q=80",
     "metrics": [
       {
-        "value": "",
-        "label": "Led design, product management, roadmap, and product vision."
+        "value": "87%",
+        "label": "active user growth | 75% reduction in time to value | CAC/LTV improved from 162% to 21% | 23% MRR growth"
       }
     ]
   },
@@ -480,7 +480,7 @@
     "metrics": [
       {
         "value": "48%",
-        "label": "decrease in mortality, 63% decrease in readmission rate."
+        "label": "decrease in mortality rate | 63% decrease in hospital readmission rate"
       }
     ]
   },
@@ -513,7 +513,7 @@
     "metrics": [
       {
         "value": "33",
-        "label": "scenarios and 10 future products tested online."
+        "label": "future scenarios developed | 10 future products tested online"
       }
     ]
   },
