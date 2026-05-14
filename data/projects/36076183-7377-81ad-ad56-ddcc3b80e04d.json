@@ -8,7 +8,7 @@
     "Product",
     "Research"
   ],
-  "lede": "",
+  "lede": "Mental health crises — particularly those involving self-harm or suicide — often appear sudden, but the underlying deterioration typically unfolds over weeks. If that deterioration could be detected e",
   "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
   "role": "",
   "timeline": "",
@@ -19,5 +19,30 @@
       "label": "accuracy predicting mental health crisis 4 weeks in advance."
     }
   ],
-  "sections": []
+  "sections": [
+    {
+      "title": "Overview",
+      "body": "<p>Mental health crises — particularly those involving self-harm or suicide — often appear sudden, but the underlying deterioration typically unfolds over weeks. If that deterioration could be detected early enough, clinicians could intervene before a crisis occurs rather than responding to one.</p>\n<p>This project, developed at Koa Health in collaboration with Birmingham and Solihull NHS Foundation Trust, built a machine learning model to predict mental health crises four weeks in advance, with 75% accuracy (80% recall in later iterations). It drew on Electronic Health Records from the NHS, real-time environmental factors, and continuous passive monitoring through mobile networks and sensors.</p>"
+    },
+    {
+      "title": "The Data Problem",
+      "body": "<p>Predicting crisis is a hard machine learning problem for several reasons. Crises are relatively rare events in any individual patient's history, which creates class imbalance challenges in model training. The signal is also spread across multiple data sources that are rarely combined: clinical records, prescription history, appointment attendance, and behavioural signals.</p>\n<p>The project used NHS Electronic Health Records as the primary ground truth and training signal — a rich dataset covering diagnosis history, medication, admissions, and clinical notes. This was combined with real-time environmental factors (weather, seasonality, major life events detectable at a population level) and passive sensor data from mobile devices where available.</p>"
+    },
+    {
+      "title": "My Role",
+      "body": "<p>As VP of Product &amp; Innovation at Koa Health, I led the product definition and cross-organisational collaboration for this project. Working with the NHS required navigating complex information governance requirements, establishing data sharing agreements, and maintaining trust with clinical partners who needed to understand and validate the model before acting on its outputs.</p>\n<p>I also led the design of the clinician-facing interface for the service — a separate but closely related challenge covered in the Explainable AI project.</p>"
+    },
+    {
+      "title": "Results",
+      "body": "<p>The final model achieved 75% accuracy (80% recall) in predicting mental health crisis four weeks in advance. In practical terms, this meant clinicians could be alerted to at-risk patients with enough lead time to schedule a review, adjust medication, or increase support — before the patient reached crisis point.</p>"
+    },
+    {
+      "title": "Why Four Weeks Matters",
+      "body": "<p>A four-week prediction horizon is clinically meaningful. It is long enough to allow a proactive response — scheduling a clinical review, adjusting a care plan, involving community support — but short enough that the prediction remains actionable rather than speculative. A model that predicts crisis six months out may be academically interesting but is too uncertain to drive clinical decisions. Four weeks is within the planning horizon of a mental health care team.</p>"
+    },
+    {
+      "title": "Wider Significance",
+      "body": "<p>This project was part of a broader body of work demonstrating that routinely collected NHS data, combined with passive monitoring, could significantly improve the predictive capability available to mental health clinicians. It contributed to the evidence base that helped Koa Health secure investment and partnerships with major healthcare institutions.</p>"
+    }
+  ]
 }

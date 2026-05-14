@@ -8,11 +8,32 @@
     "Product",
     "Research"
   ],
-  "lede": "",
+  "lede": "Bipolar disorder is a chronic condition characterised by cycles of mania and depression that can vary significantly in frequency, duration, and severity. For psychiatrists, monitoring a patient's curr",
   "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
   "role": "",
   "timeline": "",
   "partners": [],
   "metrics": [],
-  "sections": []
+  "sections": [
+    {
+      "title": "Overview",
+      "body": "<p>Bipolar disorder is a chronic condition characterised by cycles of mania and depression that can vary significantly in frequency, duration, and severity. For psychiatrists, monitoring a patient's current state between appointments is difficult. Patients often lack insight into their own mood state — particularly during manic episodes — and self-reporting is unreliable. For patients, the condition can feel unpredictable and difficult to manage.</p>\n<p>This project, developed at Telefonica R&amp;D in collaboration with Hospital Clinic Barcelona and O2 UK, explored whether passive behavioural data from mobile networks could provide a continuous, objective signal of a patient's bipolar status — without requiring any active input from the patient themselves.</p>"
+    },
+    {
+      "title": "The Approach",
+      "body": "<p>The core insight was that changes in bipolar state are reflected in changes in behaviour: communication patterns, location patterns, sleep-wake cycles, and social activity all shift measurably between manic, depressive, and stable phases. These behavioural signals are already captured passively by mobile networks — call records, data usage, location data — and do not require the patient to open an app or answer a questionnaire.</p>\n<p>By applying machine learning to anonymised network data, the system could identify patterns associated with different mood states and flag significant changes for clinical review.</p>"
+    },
+    {
+      "title": "Why No Smartphone Required",
+      "body": "<p>A deliberate design decision was to make the service independent of smartphones and active apps. This was driven by the patient population. Bipolar disorder affects people across all demographics, including older patients who may not own a smartphone, lower-income groups in markets like Brazil where smartphone penetration is lower, and patients who might change their device or phone number during an episode. Tying the service to a specific app would exclude these groups.</p>\n<p>By working at the network level, the service remained active regardless of what device the patient used, and required no behaviour change from the patient at all.</p>"
+    },
+    {
+      "title": "My Role",
+      "body": "<p>At Telefonica R&amp;D I led the product and service design for this project, working across data science, clinical, and engineering teams. This included defining the clinical use case with Hospital Clinic, designing the clinician-facing interface for reviewing patient status, and working with the data science team to translate model outputs into clinically meaningful information.</p>"
+    },
+    {
+      "title": "Clinical Impact",
+      "body": "<p>The service gave psychiatrists a continuous, objective picture of their patients' condition between appointments — something that had not previously been possible without expensive wearables or frequent patient-initiated check-ins. For patients, knowing the system was monitoring passively reduced the burden of self-tracking during periods when self-awareness was most compromised.</p>\n<p>The project also demonstrated a broader principle: the most accessible health monitoring tools may be the ones that require the least active participation from the user.</p>"
+    }
+  ]
 }
