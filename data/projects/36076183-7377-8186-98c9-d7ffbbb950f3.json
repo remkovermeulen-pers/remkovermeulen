@@ -8,7 +8,7 @@
     "Product",
     "Design"
   ],
-  "lede": "",
+  "lede": "After the clinical success of Perspectives, users and clinical partners began asking for a broader suite of programmes covering additional mental health conditions. The demand was clear, but the bottl",
   "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
   "role": "",
   "timeline": "",
@@ -19,5 +19,26 @@
       "label": "reduction in time to create a programme."
     }
   ],
-  "sections": []
+  "sections": [
+    {
+      "title": "Overview",
+      "body": "<p>After the clinical success of Perspectives, users and clinical partners began asking for a broader suite of programmes covering additional mental health conditions. The demand was clear, but the bottleneck was content creation. Building each new programme required significant time from clinical experts, product managers, and engineers working in sequence. At that rate, expanding the library would take years.</p>\n<p>The solution was to build a programme editor — an internal tool that allowed different clinical and content teams to create and edit therapeutic programmes in parallel, without engineering involvement at each step.</p>"
+    },
+    {
+      "title": "The Problem",
+      "body": "<p>The original Perspectives platform had a tightly coupled architecture where programme content, logic, and delivery were intertwined. Adding a new programme meant going through a full development cycle: clinical design, product specification, engineering build, QA, and clinical validation. Each new condition required the same effort as the first.</p>\n<p>This was sustainable for one product, but not for a portfolio. We needed to separate content creation from platform delivery.</p>"
+    },
+    {
+      "title": "What We Built",
+      "body": "<p>The programme editor was a content management layer that gave clinical and product teams control over programme structure, module sequencing, content, branching logic, and personalisation rules — without writing code.</p>\n<p>The editor was designed around the working patterns of the clinical teams who would use it: psychologists, content designers, and clinical programme managers. It needed to be expressive enough to capture the nuance of CBT protocols, while remaining accessible to users without a technical background.</p>\n<p>Key features included a visual module builder, a logic engine for conditional sequencing based on symptom profile and user progress, content version control, and a review and approval workflow to ensure clinical sign-off before any programme went live.</p>"
+    },
+    {
+      "title": "My Role",
+      "body": "<p>I led the product definition and design for the editor, working closely with MGH and Harvard Medical School to understand their content creation workflows and translate them into tool requirements. I also managed the engineering delivery and stakeholder alignment across clinical, product, and technical teams.</p>\n<p>One of the core design challenges was deciding how much flexibility to give clinical teams versus how much to constrain to ensure safety and consistency. Too rigid and the tool would not serve the breadth of conditions we needed to cover; too open and we risked programmes being structured in ways that compromised therapeutic integrity or created regulatory risk.</p>"
+    },
+    {
+      "title": "Results",
+      "body": "<p>The programme editor reduced time to create a new programme by 75%. This unlocked parallel development across multiple conditions, directly enabling the expansion of the Perspectives product suite. It also shifted the creative ownership of programme content closer to the clinical experts who understood it best, reducing the back-and-forth between clinical and engineering teams that had previously slowed every iteration.</p>"
+    }
+  ]
 }
