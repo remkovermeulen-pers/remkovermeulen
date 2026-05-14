@@ -8,9 +8,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <style>
-/* ============================================================
-   Design tokens & base — Bone surface · Bodoni × Hanken
-   ============================================================ */
 :root {
   --bg:          #fbf9f8;
   --bg-card:     #ffffff;
@@ -22,371 +19,164 @@
   --muted-3:     #87847a;
   --line:        rgba(27,28,28,0.12);
   --accent:      #A68B77;
-  --accent-soft: rgba(166,139,119,0.15);
   --font-display:'Bodoni Moda','Playfair Display',Georgia,serif;
   --font-body:   'Hanken Grotesk','Inter',system-ui,sans-serif;
   --pad-desktop: 64px;
   --pad-mobile:  20px;
 }
-
 *,*::before,*::after { box-sizing:border-box; }
 html,body { margin:0; padding:0; }
 body {
-  background:var(--bg);
-  color:var(--primary);
-  font-family:var(--font-body);
-  font-size:16px;
-  line-height:1.6;
-  -webkit-font-smoothing:antialiased;
-  text-rendering:optimizeLegibility;
+  background:var(--bg); color:var(--primary);
+  font-family:var(--font-body); font-size:16px; line-height:1.6;
+  -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
 }
 img { display:block; max-width:100%; }
 a { color:inherit; text-decoration:none; }
 button { font:inherit; cursor:pointer; background:none; border:0; color:inherit; }
-
-/* Layout */
-.container {
-  max-width:1280px;
-  margin:0 auto;
-  padding:0 var(--pad-desktop);
-}
+.container { max-width:1280px; margin:0 auto; padding:0 var(--pad-desktop); }
 @media (max-width:760px) { .container { padding:0 var(--pad-mobile); } }
 
-/* Shared tokens */
-.accent-mark {
-  display:inline-block;
-  width:7px; height:7px;
-  background:var(--accent);
-  margin-right:12px;
-  vertical-align:1px;
-}
-.label-xs {
-  font-size:11px; font-weight:700;
-  letter-spacing:0.18em; text-transform:uppercase;
-  line-height:1; color:var(--muted-2);
-}
-.metric {
-  font-family:var(--font-body); font-weight:600;
-  font-size:clamp(32px,4.5vw,56px);
-  color:var(--accent); letter-spacing:-0.01em;
-  line-height:1; display:block; margin-bottom:12px;
-}
-.metric-label {
-  font-size:10px; font-weight:700;
-  letter-spacing:0.16em; text-transform:uppercase;
-  color:var(--muted-2); line-height:1.5;
-}
-.bw-img {
-  filter:grayscale(100%) contrast(108%);
-  transition:filter .6s cubic-bezier(.22,1,.36,1);
-}
+.accent-mark { display:inline-block; width:7px; height:7px; background:var(--accent); margin-right:12px; vertical-align:1px; }
+.label-xs { font-size:11px; font-weight:700; letter-spacing:0.18em; text-transform:uppercase; line-height:1; color:var(--muted-2); }
+.metric { font-family:var(--font-body); font-weight:600; font-size:clamp(32px,4.5vw,56px); color:var(--accent); letter-spacing:-0.01em; line-height:1; display:block; margin-bottom:8px; }
+.metric-label { font-size:10px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:var(--muted-2); line-height:1.5; }
+.bw-img { filter:grayscale(100%) contrast(108%); transition:filter .6s cubic-bezier(.22,1,.36,1); }
 .bw-img:hover { filter:grayscale(0%) contrast(105%); }
-.lift { transition:transform .3s, box-shadow .3s; }
-.lift:hover { transform:translate(-3px,-3px); box-shadow:6px 6px 0 0 var(--primary); }
-.btn {
-  display:inline-flex; align-items:center; gap:10px;
-  padding:16px 28px; font-size:11px; font-weight:600;
-  letter-spacing:0.18em; text-transform:uppercase;
-  border:1px solid var(--primary); background:var(--bg-card); color:var(--primary);
-  transition:box-shadow .25s, transform .25s, background .25s, color .25s;
-}
+.tag { display:inline-block; padding:7px 12px; font-size:10px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:var(--accent); border:1px solid var(--accent); line-height:1; }
+.btn { display:inline-flex; align-items:center; gap:10px; padding:16px 28px; font-size:11px; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; border:1px solid var(--primary); background:var(--bg-card); color:var(--primary); transition:box-shadow .25s, transform .25s; }
 .btn:hover { box-shadow:4px 4px 0 0 var(--primary); transform:translate(-2px,-2px); }
+.btn--dark { background:var(--primary); color:var(--on-primary); }
+.btn--dark:hover { box-shadow:4px 4px 0 0 var(--accent); }
+.btn--lg { padding:22px 36px; font-size:12px; }
 
-/* ===== NAV ===== */
-.site-nav {
-  position:sticky; top:0; z-index:50;
-  background:var(--bg); border-bottom:1px solid var(--line);
-}
-.site-nav__inner {
-  display:flex; align-items:center;
-  justify-content:space-between; height:76px;
-}
-.site-nav__brand {
-  font-family:var(--font-display); font-weight:700;
-  font-size:22px; letter-spacing:-0.01em; color:var(--primary);
-}
+/* NAV */
+.site-nav { position:sticky; top:0; z-index:50; background:var(--bg); border-bottom:1px solid var(--line); }
+.site-nav__inner { display:flex; align-items:center; justify-content:space-between; height:76px; }
+.site-nav__brand { font-family:var(--font-display); font-weight:700; font-size:22px; letter-spacing:-0.01em; }
 .site-nav__links { display:flex; align-items:center; gap:36px; }
-.site-nav__link {
-  font-size:13px; font-weight:500; letter-spacing:0.14em;
-  text-transform:uppercase; color:var(--muted-2);
-  padding-bottom:4px; transition:color .2s;
-}
+.site-nav__link { font-size:13px; font-weight:500; letter-spacing:0.14em; text-transform:uppercase; color:var(--muted-2); padding-bottom:4px; transition:color .2s; }
 .site-nav__link:hover { color:var(--primary); }
-.site-nav__link.is-active {
-  color:var(--primary); font-weight:600;
-  border-bottom:1px solid var(--primary);
-}
-.site-nav__cta {
-  background:var(--primary); color:var(--on-primary);
-  padding:12px 22px; font-size:11px; font-weight:600;
-  letter-spacing:0.18em; text-transform:uppercase;
-  border:1px solid var(--primary);
-  transition:box-shadow .2s, transform .2s;
-}
+.site-nav__link.is-active { color:var(--primary); font-weight:600; border-bottom:1px solid var(--primary); }
+.site-nav__cta { background:var(--primary); color:var(--on-primary); padding:12px 22px; font-size:11px; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; border:1px solid var(--primary); transition:box-shadow .2s, transform .2s; }
 .site-nav__cta:hover { box-shadow:4px 4px 0 0 var(--primary); transform:translate(-2px,-2px); }
-.site-nav__burger {
-  display:none; width:36px; height:36px;
-  align-items:center; justify-content:center;
-  border:1px solid var(--primary);
-}
-.site-nav__burger span,
-.site-nav__burger span::before,
-.site-nav__burger span::after {
-  display:block; width:16px; height:1.5px;
-  background:var(--primary); position:relative;
-}
+.site-nav__burger { display:none; width:36px; height:36px; align-items:center; justify-content:center; border:1px solid var(--primary); }
+.site-nav__burger span,.site-nav__burger span::before,.site-nav__burger span::after { display:block; width:16px; height:1.5px; background:var(--primary); position:relative; }
 .site-nav__burger span::before { content:''; position:absolute; top:-5px; left:0; width:100%; height:100%; background:var(--primary); }
 .site-nav__burger span::after  { content:''; position:absolute; top:5px;  left:0; width:100%; height:100%; background:var(--primary); }
 @media (max-width:760px) {
   .site-nav__inner { height:60px; }
   .site-nav__brand { font-size:18px; }
   .site-nav__links { display:none; }
-  .site-nav__cta   { padding:9px 14px; font-size:10px; letter-spacing:0.14em; }
+  .site-nav__cta { padding:9px 14px; font-size:10px; letter-spacing:0.14em; }
   .site-nav__burger { display:inline-flex; }
 }
 
-/* ===== HERO ===== */
-.hero {
-  padding:80px 0 24px;
-  display:grid;
-  grid-template-columns:1.4fr 1fr;
-  gap:64px;
-  align-items:end;
-}
-.hero__eyebrow { display:flex; align-items:center; margin-bottom:28px; }
-.hero__eyebrow span {
-  font-size:11px; font-weight:700; letter-spacing:0.22em;
-  text-transform:uppercase; color:var(--muted-2);
-}
-.hero h1 {
-  font-family:var(--font-display);
-  font-weight:700;
-  font-size:clamp(56px,9vw,104px);
-  line-height:0.96;
-  letter-spacing:-0.025em;
-  margin:0 0 36px;
-  text-transform:uppercase;
-}
-.hero__intro {
-  border-left:2px solid var(--accent);
-  padding:4px 0 4px 28px;
-  font-family:var(--font-display);
-  font-weight:500;
-  font-size:clamp(20px,2.3vw,26px);
-  line-height:1.4;
-  color:var(--muted);
-  max-width:540px;
-}
-.hero__portrait {
-  aspect-ratio:4/5;
-  border:1px solid var(--primary);
-  overflow:hidden;
-  background:var(--bg-elev);
-  width:100%;
-}
-.hero__portrait img { width:100%; height:100%; object-fit:cover; }
-@media (max-width:880px) {
-  .hero { grid-template-columns:1fr; gap:36px; padding:40px 0 16px; }
-  .hero__portrait { max-width:320px; }
+/* FOOTER */
+.site-footer { border-top:1px solid var(--line); margin-top:96px; }
+.site-footer__inner { display:flex; align-items:center; justify-content:space-between; padding:36px 0; gap:24px; flex-wrap:wrap; }
+.site-footer__brand { font-family:var(--font-display); font-weight:700; font-size:22px; letter-spacing:-0.01em; }
+.site-footer__copy { font-size:13px; color:var(--muted-2); font-style:italic; }
+.site-footer__links { display:flex; gap:28px; }
+.site-footer__link { font-size:11px; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:var(--muted-2); transition:color .2s; }
+.site-footer__link:hover { color:var(--primary); }
+@media (max-width:760px) {
+  .site-footer { margin-top:60px; }
+  .site-footer__inner { padding:28px 0; flex-direction:column; align-items:flex-start; gap:18px; }
 }
 
-/* ===== SECTION HEADER ===== */
-.sec-head {
-  display:flex; align-items:baseline;
-  justify-content:space-between;
-  border-bottom:1px solid var(--line);
-  padding-bottom:18px; margin-bottom:36px; gap:18px;
+/* HERO */
+.work-hero { padding:80px 0 72px; display:grid; grid-template-columns:1.5fr 1fr; gap:56px; align-items:end; }
+.work-hero__eyebrow { font-size:11px; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color:var(--muted-2); margin:0 0 24px; display:flex; align-items:center; }
+.work-hero h1 { font-family:var(--font-display); font-weight:700; font-size:clamp(32px,4vw,56px); line-height:1.1; letter-spacing:-0.02em; margin:0; }
+.work-hero__intro { border-left:1px solid var(--line); padding:0 0 0 28px; font-size:17px; line-height:1.6; color:var(--muted); max-width:460px; }
+@media (max-width:880px) {
+  .work-hero { grid-template-columns:1fr; gap:28px; padding:40px 0 48px; }
+  .work-hero__intro { padding-left:0; border-left:none; border-top:1px solid var(--line); padding-top:20px; }
 }
+
+/* SECTION HEADER */
+.sec-head { display:flex; align-items:baseline; justify-content:space-between; border-bottom:1px solid var(--line); padding-bottom:18px; margin-bottom:36px; gap:18px; }
 .sec-head__title { display:flex; align-items:center; }
-.sec-head__title h2 {
-  margin:0;
-  font-family:var(--font-display);
-  font-style:italic; font-weight:600;
-  font-size:clamp(22px,2.8vw,30px);
-  letter-spacing:0.02em; text-transform:uppercase;
-}
-
-/* ===== EXPERIENCE ===== */
-.experience { padding:96px 0 0; }
-.exp-grid {
-  display:grid; grid-template-columns:repeat(3,1fr); gap:24px;
-}
-.proj { display:flex; flex-direction:column; gap:22px; color:inherit; text-decoration:none; }
-.proj__img {
-  aspect-ratio:1/1;
-  border:1px solid var(--accent);
-  overflow:hidden; position:relative;
-  background:var(--bg-elev);
-}
-.proj__img img { width:100%; height:100%; object-fit:cover; }
-.proj__chip {
-  position:absolute; top:14px; right:14px;
-  background:var(--primary); color:var(--on-primary);
-  padding:6px 10px; font-size:9px; font-weight:700;
-  letter-spacing:0.2em; text-transform:uppercase; z-index:2;
-}
-.proj h3 {
-  margin:0; font-family:var(--font-display);
-  font-weight:500; font-size:26px; line-height:1.2;
-}
-.proj p { margin:0; font-size:14px; color:var(--muted-2); line-height:1.55; }
-.proj__metrics {
-  display:grid; grid-template-columns:1fr 1fr;
-  gap:18px; border-top:1px solid var(--line);
-  padding-top:18px; margin-top:auto;
-}
-.proj__metrics--1 { grid-template-columns:1fr; }
-.proj__metric .metric { font-size:32px; margin-bottom:6px; }
-@media (max-width:880px) {
-  .experience { padding-top:56px; }
-  .exp-grid { grid-template-columns:1fr; gap:48px; }
-}
-
-/* ===== LOGO STRIP ===== */
-.logos {
-  padding:36px 0; margin-top:56px;
-  border-top:1px solid var(--line); border-bottom:1px solid var(--line);
-  display:flex; flex-wrap:wrap;
-  justify-content:space-between; align-items:center; gap:32px;
-}
-.logo-mark {
-  display:block; height:36px; width:auto;
-  opacity:0.6; transition:opacity .25s;
-  color:var(--accent); fill:var(--accent);
-}
-.logo-mark:hover { opacity:1; }
-.logo-mark img { height:100%; width:auto; display:block; }
-
-/* ===== JOURNAL ===== */
-.journal { padding-top:96px; }
-.journal-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
-.article-card {
-  display:flex; flex-direction:column;
-  justify-content:space-between;
-  padding:32px; background:var(--bg-card);
-  border:1px solid var(--accent);
-  min-height:280px; gap:24px;
-}
-.article-card__tag {
-  font-size:10px; font-weight:700;
-  letter-spacing:0.2em; text-transform:uppercase;
-  color:var(--accent);
-}
-.article-card h3 {
-  margin:14px 0; font-family:var(--font-display);
-  font-weight:600; font-size:26px; line-height:1.2;
-}
-.article-card p { margin:0; font-size:14px; color:var(--muted-2); line-height:1.6; }
-.article-card__year {
-  align-self:flex-end; font-size:11px; font-weight:600;
-  letter-spacing:0.18em; color:var(--muted-2);
-}
-.view-all {
-  display:inline-flex; align-items:center; gap:10px;
-  font-size:11px; font-weight:600; letter-spacing:0.2em;
-  text-transform:uppercase;
-  border-bottom:1px solid var(--primary); padding-bottom:4px;
-}
+.sec-head__title h2 { margin:0; font-family:var(--font-display); font-style:italic; font-weight:600; font-size:clamp(22px,2.8vw,30px); letter-spacing:0.02em; text-transform:uppercase; }
+.view-all { display:inline-flex; align-items:center; gap:10px; font-size:11px; font-weight:600; letter-spacing:0.2em; text-transform:uppercase; border-bottom:1px solid var(--primary); padding-bottom:4px; white-space:nowrap; }
 .view-all svg { transition:transform .25s; }
 .view-all:hover svg { transform:translateX(4px); }
+
+/* PROJECT GRID */
+.projects { padding-top:0; }
+.project-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:24px; }
+
+.proj-card { display:flex; flex-direction:column; background:var(--bg-card); border:1px solid var(--accent); overflow:hidden; transition:transform .3s, box-shadow .3s; }
+.proj-card:hover { transform:translate(-3px,-3px); box-shadow:6px 6px 0 0 var(--primary); }
+.proj-card__img { aspect-ratio:16/10; overflow:hidden; position:relative; background:var(--bg-elev); flex-shrink:0; }
+.proj-card__img img { width:100%; height:100%; object-fit:cover; }
+.proj-card__chip { position:absolute; top:14px; left:14px; background:var(--primary); color:var(--on-primary); padding:6px 10px; font-size:9px; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; }
+.proj-card__body { padding:32px; display:flex; flex-direction:column; gap:20px; flex:1; }
+.proj-card h3 { margin:0; font-family:var(--font-display); font-weight:600; font-size:clamp(22px,2.4vw,30px); line-height:1.15; letter-spacing:-0.01em; }
+.proj-card__lede { margin:0; font-size:15px; color:var(--muted-2); line-height:1.6; }
+.proj-card__footer { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px; }
+.proj-card__tags { display:flex; flex-wrap:wrap; gap:8px; }
+.proj-card__arrow { display:flex; align-items:center; gap:8px; font-size:11px; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:var(--muted-2); transition:color .25s; white-space:nowrap; }
+.proj-card:hover .proj-card__arrow { color:var(--primary); }
+.proj-card__arrow svg { transition:transform .25s; }
+.proj-card:hover .proj-card__arrow svg { transform:translateX(4px); }
+
+@media (max-width:880px) {
+  .project-grid { grid-template-columns:1fr; gap:0; }
+  .proj-card { border-bottom:0; }
+  .proj-card:last-child { border-bottom:1px solid var(--primary); }
+  .proj-card__body { padding:24px; }
+}
+
+/* JOURNAL */
+.journal { padding-top:96px; }
+.journal-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+.article-card { display:flex; flex-direction:column; justify-content:space-between; padding:32px; background:var(--bg-card); border:1px solid var(--accent); min-height:280px; gap:24px; transition:transform .3s, box-shadow .3s; }
+.article-card:hover { transform:translate(-3px,-3px); box-shadow:6px 6px 0 0 var(--primary); }
+.article-card__tag { font-size:10px; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; color:var(--accent); }
+.article-card h3 { margin:14px 0; font-family:var(--font-display); font-weight:600; font-size:clamp(20px,1.8vw,26px); line-height:1.2; }
+.article-card__year { align-self:flex-end; font-size:11px; font-weight:600; letter-spacing:0.18em; color:var(--muted-2); }
 @media (max-width:880px) {
   .journal { padding-top:56px; }
   .journal-grid { grid-template-columns:1fr; }
   .article-card { min-height:0; padding:26px; }
 }
 
-/* ===== PHILOSOPHY + FEATURED ===== */
-.philo-row {
-  margin-top:96px;
-  display:grid; grid-template-columns:1.2fr 1fr; gap:24px;
-}
-.philo, .featured {
-  padding:48px; min-height:380px;
-  display:flex; flex-direction:column;
-  justify-content:space-between; gap:36px;
-}
-.philo {
-  background:var(--bg-elev);
-  border:1px solid var(--primary);
-}
-.philo h2 {
-  margin:0; font-family:var(--font-display);
-  font-style:italic; font-weight:600;
-  font-size:28px; letter-spacing:0.02em; text-transform:uppercase;
-}
+/* PHILOSOPHY */
+.philo-row { margin-top:96px; display:grid; grid-template-columns:1.2fr 1fr; gap:24px; }
+.philo { padding:48px; min-height:380px; background:var(--bg-elev); border:1px solid var(--primary); display:flex; flex-direction:column; justify-content:space-between; gap:36px; }
+.philo h2 { margin:0; font-family:var(--font-display); font-style:italic; font-weight:600; font-size:28px; letter-spacing:0.02em; text-transform:uppercase; }
 .philo p { margin:18px 0 0; font-size:18px; line-height:1.55; color:var(--primary); }
 .philo__meta { display:grid; grid-template-columns:1fr 1fr; gap:28px; }
-.philo__meta-block h5 {
-  margin:0 0 6px; font-size:10px; font-weight:700;
-  letter-spacing:0.2em; text-transform:uppercase; color:var(--accent);
-}
+.philo__meta-block h5 { margin:0 0 6px; font-size:10px; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; color:var(--accent); }
 .philo__meta-block p { font-size:14px; color:var(--primary); margin:0; line-height:1.5; }
-.featured {
-  background:var(--primary); color:var(--on-primary);
-  border:1px solid var(--primary);
-  position:relative; overflow:hidden;
-}
-.featured__eyebrow {
-  font-size:10px; font-weight:700;
-  letter-spacing:0.22em; text-transform:uppercase; opacity:0.6;
-}
-.featured h3 {
-  margin:16px 0 0; font-family:var(--font-display);
-  font-style:italic; font-weight:500;
-  font-size:28px; line-height:1.2;
-}
-.featured p { margin:18px 0 0; font-size:14px; opacity:0.8; line-height:1.55; }
-.featured .btn {
-  background:transparent; color:var(--on-primary);
-  border-color:rgba(255,255,255,0.4); align-self:flex-start;
-}
-.featured .btn:hover { background:var(--on-primary); color:var(--primary); box-shadow:4px 4px 0 0 var(--accent); }
-.featured__deco {
-  position:absolute; right:-50px; bottom:-50px;
-  width:160px; height:160px;
-  border:1px solid rgba(255,255,255,0.18);
-  transform:rotate(45deg);
-}
 @media (max-width:880px) {
   .philo-row { grid-template-columns:1fr; margin-top:56px; }
-  .philo, .featured { padding:32px; min-height:0; }
-  .philo h2, .featured h3 { font-size:24px; }
+  .philo { padding:32px; min-height:0; }
+  .philo h2 { font-size:24px; }
   .philo p { font-size:16px; }
   .philo__meta { grid-template-columns:1fr; gap:18px; }
 }
 
-/* ===== FOOTER ===== */
-.site-footer { border-top:1px solid var(--line); margin-top:96px; }
-.site-footer__inner {
-  display:flex; align-items:center;
-  justify-content:space-between;
-  padding:36px 0; gap:24px; flex-wrap:wrap;
-}
-.site-footer__brand {
-  font-family:var(--font-display); font-weight:700;
-  font-size:22px; letter-spacing:-0.01em;
-}
-.site-footer__copy { font-size:13px; color:var(--muted-2); font-style:italic; }
-.site-footer__links { display:flex; gap:28px; }
-.site-footer__link {
-  font-size:11px; font-weight:600; letter-spacing:0.16em;
-  text-transform:uppercase; color:var(--muted-2); transition:color .2s;
-}
-.site-footer__link:hover { color:var(--primary); }
-@media (max-width:760px) {
-  .site-footer { margin-top:60px; }
-  .site-footer__inner { padding:28px 0; flex-direction:column; align-items:flex-start; gap:18px; }
+/* CTA BLOCK */
+.cta-block { margin-top:96px; padding-top:64px; border-top:1px solid var(--primary); display:grid; grid-template-columns:1.4fr 1fr; gap:32px; align-items:center; }
+.cta-block h2 { margin:0 0 18px; font-family:var(--font-display); font-weight:600; font-size:clamp(32px,4.4vw,56px); line-height:1.1; letter-spacing:-0.01em; }
+.cta-block p { margin:0; font-size:17px; line-height:1.6; color:var(--muted); max-width:460px; }
+.cta-block__right { display:flex; justify-content:flex-end; }
+@media (max-width:880px) {
+  .cta-block { grid-template-columns:1fr; margin-top:72px; padding-top:40px; gap:24px; }
+  .cta-block__right { justify-content:flex-start; }
 }
 </style>
 </head>
 <body>
 
-<!-- NAV -->
 <header class="site-nav">
   <div class="container site-nav__inner">
     <a href="/" class="site-nav__brand">Remko Vermeulen</a>
     <nav class="site-nav__links">
-      <a href="pages/work.html" class="site-nav__link is-active">Work</a>
+      <a href="pages/work.html" class="site-nav__link">Work</a>
       <a href="#journal" class="site-nav__link">Articles</a>
       <a href="#philosophy" class="site-nav__link">About</a>
       <a href="mailto:remko.vermeulen@toggl.com" class="site-nav__link">Contact</a>
@@ -401,167 +191,63 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
 <main class="container">
 
   <!-- HERO -->
-  <section class="hero">
+  <section class="work-hero">
     <div>
-      <div class="hero__eyebrow">
-        <span class="accent-mark"></span>
-        <span>Executive Leader &amp; Innovator</span>
-      </div>
-      <h1>Remko<br>Vermeulen</h1>
-      <p class="hero__intro">
-        VP &amp; Head of Product. Building and scaling innovative products in
-        Health&nbsp;Tech, EdTech, Legal&nbsp;Tech &amp; Telecom.
-      </p>
+      <p class="work-hero__eyebrow"><span class="accent-mark"></span>VP &amp; Head of Product</p>
+      <h1>Building and scaling innovative products.</h1>
     </div>
-    <div class="hero__portrait">
-      <img class="bw-img" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=900&q=80" alt="Remko Vermeulen portrait">
-    </div>
+    <p class="work-hero__intro">
+      15+ years of international experience leading product management and design for global
+      leaders in Health Tech, Telecom, Media and beyond.
+    </p>
   </section>
 
-  <!-- SELECTED EXPERIENCE -->
-  <section class="experience" id="experience">
+  <!-- PROJECTS GRID -->
+  <section class="projects">
     <div class="sec-head">
       <div class="sec-head__title">
         <span class="accent-mark"></span>
-        <h2>Selected Experience</h2>
+        <h2>Projects</h2>
       </div>
-      <span class="label-xs">15+ Years of Impact</span>
-    </div>
-
-    <div class="exp-grid">
-      <a class="proj" href="pages/case-study?id=35f76183-7377-8135-9dd1-d1b22dfa6da0">
-        <div class="proj__img">
-          <span class="proj__chip">Health Tech</span>
-          <img class="bw-img" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&q=80" alt="Koa Health dashboard">
-        </div>
-        <h3>Koa Health</h3>
-        <p>Leading product vision and clinical effectiveness studies for digital mental health foundations.</p>
-        <div class="proj__metrics">
-          <div class="proj__metric">
-            <span class="metric">80%</span>
-            <div class="metric-label">Crisis Prediction Recall</div>
-          </div>
-          <div class="proj__metric">
-            <span class="metric">62%</span>
-            <div class="metric-label">Increase in Velocity</div>
-          </div>
-        </div>
-      </a>
-
-      <a class="proj" href="pages/case-study?id=35f76183-7377-8167-aade-e9ceff1342ed">
-        <div class="proj__img">
-          <span class="proj__chip">Telecom</span>
-          <img class="bw-img" src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=900&q=80" alt="Telefonica infrastructure">
-        </div>
-        <h3>Telefónica / O2</h3>
-        <p>Scaling product breakthroughs through global innovation factories and service design.</p>
-        <div class="proj__metrics">
-          <div class="proj__metric">
-            <span class="metric">48%</span>
-            <div class="metric-label">Lean Cycle Reduction</div>
-          </div>
-          <div class="proj__metric">
-            <span class="metric">63%</span>
-            <div class="metric-label">Conversion Lift</div>
-          </div>
-        </div>
-      </a>
-
-      <a class="proj" href="pages/case-study?id=35f76183-7377-81de-af86-c88584fb33f7">
-        <div class="proj__img">
-          <span class="proj__chip">Media</span>
-          <img class="bw-img" src="https://images.unsplash.com/photo-1495020689067-958852a7765e?w=900&q=80" alt="Financial Times editorial">
-        </div>
-        <h3>Financial Times</h3>
-        <p>Digitising the consumer decision journey and enhancing online purchase behaviour tracking.</p>
-        <div class="proj__metrics proj__metrics--1">
-          <div class="proj__metric">
-            <span class="metric">212%</span>
-            <div class="metric-label">Increase in Conversions</div>
-          </div>
-        </div>
-      </a>
-
-      <a class="proj" href="pages/case-study?id=35f76183-7377-81a8-b45d-f022b6c4842e">
-        <div class="proj__img">
-          <span class="proj__chip">Automotive</span>
-          <img class="bw-img" src="https://images.unsplash.com/photo-1493238792000-8113da705763?w=900&q=80" alt="Renault connected services">
-        </div>
-        <h3>Renault</h3>
-        <p>Designing next-generation connected car services using Kano models to maximise driver engagement and utility.</p>
-        <div class="proj__metrics proj__metrics--1">
-          <div class="proj__metric">
-            <span class="metric">75%</span>
-            <div class="metric-label">Reduction in Time-to-Value</div>
-          </div>
-        </div>
-      </a>
-
-      <a class="proj" href="pages/case-study?id=35f76183-7377-8167-8d4f-fbcae3ef4c2d">
-        <div class="proj__img">
-          <span class="proj__chip">EdTech</span>
-          <img class="bw-img" src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=900&q=80" alt="British Council education">
-        </div>
-        <h3>British Council</h3>
-        <p>Reimagining digital language learning platforms to reach millions of learners across emerging markets.</p>
-        <div class="proj__metrics">
-          <div class="proj__metric">
-            <span class="metric">3M+</span>
-            <div class="metric-label">Active Learners</div>
-          </div>
-          <div class="proj__metric">
-            <span class="metric">40%</span>
-            <div class="metric-label">Engagement Uplift</div>
-          </div>
-        </div>
-      </a>
-
-      <a class="proj" href="pages/case-study?id=35f76183-7377-812e-89c0-f80d125d898b">
-        <div class="proj__img">
-          <span class="proj__chip">Pharma</span>
-          <img class="bw-img" src="https://images.unsplash.com/photo-1576086213369-97a306d36557?w=900&q=80" alt="Janssen pharmaceutical research">
-        </div>
-        <h3>Janssen</h3>
-        <p>Building patient-facing digital tools to improve adherence and clinical outcomes in complex therapy areas.</p>
-        <div class="proj__metrics">
-          <div class="proj__metric">
-            <span class="metric">58%</span>
-            <div class="metric-label">Adherence Improvement</div>
-          </div>
-          <div class="proj__metric">
-            <span class="metric">2×</span>
-            <div class="metric-label">Reporting Accuracy</div>
-          </div>
-        </div>
+      <a href="pages/work.html" class="view-all">
+        View all projects
+        <svg width="16" height="10" viewBox="0 0 16 10" fill="none"><path d="M1 5h14m0 0L11 1m4 4l-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"/></svg>
       </a>
     </div>
 
-    <div class="logos">
-      <!-- Koa Health -->
-      <span class="logo-mark">
-        <svg height="36" viewBox="0 0 80 28" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-          <text x="0" y="22" font-family="'Bodoni Moda','Playfair Display',Georgia,serif" font-size="22" font-style="italic" font-weight="500">Koa</text>
-        </svg>
-      </span>
-      <!-- Telefónica -->
-      <span class="logo-mark"><img src="https://cdn.simpleicons.org/telefonica/A68B77" alt="Telefónica"></span>
-      <!-- Financial Times -->
-      <span class="logo-mark"><img src="https://cdn.simpleicons.org/financialtimes/A68B77" alt="Financial Times"></span>
-      <!-- Renault -->
-      <span class="logo-mark"><img src="https://cdn.simpleicons.org/renault/A68B77" alt="Renault"></span>
-      <!-- British Council -->
-      <span class="logo-mark">
-        <svg height="36" viewBox="0 0 140 28" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-          <text x="0" y="22" font-family="'Hanken Grotesk','Inter',system-ui,sans-serif" font-size="13" font-weight="700" letter-spacing="2">BRITISH COUNCIL</text>
-        </svg>
-      </span>
-      <!-- Janssen -->
-      <span class="logo-mark">
-        <svg height="36" viewBox="0 0 90 28" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-          <text x="0" y="22" font-family="'Bodoni Moda','Playfair Display',Georgia,serif" font-size="22" font-style="italic" font-weight="500">Janssen</text>
-        </svg>
-      </span>
+    <div class="project-grid" id="project-grid">
+      <!-- populated by JS from data/projects.json -->
     </div>
+    <script>
+    (function(){
+      var arrow = '<svg width="14" height="10" viewBox="0 0 16 10" fill="none"><path d="M1 5h14m0 0L11 1m4 4l-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"/></svg>';
+      function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+      fetch('data/projects.json')
+        .then(function(r){ return r.json(); })
+        .then(function(projects){
+          var grid = document.getElementById('project-grid');
+          if (!grid) return;
+          grid.innerHTML = projects.slice(0,6).map(function(p){
+            var tags = (p.tags || []).map(function(t){ return '<span class="tag">' + esc(t) + '</span>'; }).join('');
+            return '<a href="pages/case-study?id=' + esc(p.notionId) + '" class="proj-card">'
+              + '<div class="proj-card__img">'
+              + '<span class="proj-card__chip">' + esc(p.sector) + '</span>'
+              + '<img class="bw-img" src="' + esc(p.coverImage) + '" alt="' + esc(p.title) + '" loading="lazy">'
+              + '</div>'
+              + '<div class="proj-card__body">'
+              + '<h3>' + esc(p.title) + '</h3>'
+              + '<p class="proj-card__lede">' + esc(p.lede) + '</p>'
+              + '<div class="proj-card__footer">'
+              + '<div class="proj-card__tags">' + tags + '</div>'
+              + '<span class="proj-card__arrow">View case study ' + arrow + '</span>'
+              + '</div>'
+              + '</div>'
+              + '</a>';
+          }).join('');
+        })
+        .catch(function(){});
+    })();
+    </script>
   </section>
 
   <!-- JOURNAL -->
@@ -569,44 +255,41 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
     <div class="sec-head">
       <div class="sec-head__title">
         <span class="accent-mark"></span>
-        <h2>Journal</h2>
+        <h2>Articles</h2>
       </div>
-      <a href="pages/work.html#writing" class="view-all">
-        View all articles
-        <svg width="16" height="10" viewBox="0 0 16 10" fill="none"><path d="M1 5h14m0 0L11 1m4 4l-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"/></svg>
-      </a>
+      <span class="label-xs" id="article-count"></span>
     </div>
 
     <div class="journal-grid" id="journal-grid">
       <!-- populated by JS from data/articles.json -->
     </div>
+    <script>
+    (function(){
+      function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+      fetch('data/articles.json')
+        .then(function(r){ return r.json(); })
+        .then(function(articles){
+          var grid = document.getElementById('journal-grid');
+          var count = document.getElementById('article-count');
+          if (!grid) return;
+          if (count) count.textContent = articles.length + ' Articles';
+          grid.innerHTML = articles.map(function(a){
+            var href = a.notionId ? 'pages/article.html?id=' + esc(a.notionId) : esc(a.url || '#');
+            var target = a.notionId ? '' : ' target="_blank" rel="noopener"';
+            var rt = a.readingTime ? a.readingTime + ' min' : a.year;
+            return '<a href="' + href + '"' + target + ' class="article-card">'
+              + '<div><span class="article-card__tag">' + esc(a.category) + '</span>'
+              + '<h3>' + esc(a.title) + '</h3></div>'
+              + '<span class="article-card__year">' + esc(String(rt)) + '</span>'
+              + '</a>';
+          }).join('');
+        })
+        .catch(function(){});
+    })();
+    </script>
   </section>
-  <script id="articles-fallback" type="application/json">[{"notionId":"35f76183-7377-81c5-91df-e11937e6d0e7","title":"Innovation in Product Management","category":"Product","year":"2025","readingTime":5},{"notionId":"35f76183-7377-81e5-bdd5-ced328545bbd","title":"From Automation to Co-Creation","category":"Product","year":"2025","readingTime":6},{"notionId":"35f76183-7377-8187-bc22-fff091108594","title":"Innovation in Times of Uncertainty","category":"Strategy","year":"2024","readingTime":5},{"notionId":"35f76183-7377-8185-a1ac-d3beabbf4d6b","title":"Innovation Lessons for Product Managers: Balancing the Here and Now and the Future","category":"Strategy","year":"2023","readingTime":4},{"notionId":"35f76183-7377-818b-a162-c1fa8913b926","title":"Rethinking Healthcare for the Future","category":"Strategy","year":"2023","readingTime":4},{"notionId":"35f76183-7377-81e7-95af-e7d359d83155","title":"Machine Learning Algorithm Accurately Predicts Mental Health Crises","category":"Research","year":"2023","readingTime":3}]</script>
-  <script>
-  (function(){
-    function renderArticles(articles) {
-      var grid = document.getElementById('journal-grid');
-      if (!grid) return;
-      grid.innerHTML = articles.slice(0,6).map(function(a){
-        var href = a.notionId ? 'pages/article.html?id=' + a.notionId : a.url;
-        var target = a.notionId ? '' : ' target="_blank" rel="noopener"';
-        var rt = a.readingTime ? '<span class="article-card__year">' + a.readingTime + ' min</span>' : '<span class="article-card__year">' + a.year + '</span>';
-        return '<a href="' + href + '"' + target + ' class="article-card lift">'
-          + '<div><span class="article-card__tag">' + a.category + '</span>'
-          + '<h3>' + a.title + '</h3></div>'
-          + rt + '</a>';
-      }).join('');
-    }
-    var fallback = JSON.parse(document.getElementById('articles-fallback').textContent);
-    renderArticles(fallback);
-    fetch('data/articles.json')
-      .then(function(r){ return r.json(); })
-      .then(function(articles){ renderArticles(articles); })
-      .catch(function(){});
-  })();
-  </script>
 
-  <!-- PHILOSOPHY + FEATURED STUDY -->
+  <!-- PHILOSOPHY -->
   <section class="philo-row" id="philosophy">
     <div class="philo">
       <div>
@@ -624,21 +307,17 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
         </div>
       </div>
     </div>
-
-    <div class="featured">
+    <div class="philo" style="background:var(--primary);color:var(--on-primary);border-color:var(--primary);">
       <div>
-        <span class="featured__eyebrow">Featured Study</span>
-        <h3>Machine learning algorithm accurately predicts mental health crises.</h3>
-        <p>A collaboration with Birmingham and Solihull Mental Health NHS Foundation Trust.</p>
+        <h2 style="color:var(--on-primary);">Get in touch</h2>
+        <p style="color:rgba(255,255,255,0.8);">Whether it's scaling a product from zero to one, or innovating within a legacy organisation, I bring a structured, results-oriented approach.</p>
       </div>
-      <a class="btn" href="pages/case-study.html">Read Case Study</a>
-      <span class="featured__deco"></span>
+      <a href="mailto:remko.vermeulen@toggl.com" class="btn" style="background:transparent;color:var(--on-primary);border-color:rgba(255,255,255,0.4);align-self:flex-start;">remko.vermeulen@toggl.com</a>
     </div>
   </section>
 
 </main>
 
-<!-- FOOTER -->
 <footer class="site-footer">
   <div class="container site-footer__inner">
     <div class="site-footer__brand">RV.</div>
