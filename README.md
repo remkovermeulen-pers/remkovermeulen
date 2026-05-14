@@ -1,12 +1,25 @@
-# Hi, I'm Remko 👋
+# Remko Vermeulen — Personal Website
 
-I'm a software engineer at [Toggl](https://toggl.com), building tools that help people work smarter.
+Source for [remkovermeulen.com](https://remkovermeulen.com) — a personal portfolio and CV site.
 
-## About me
+## About
 
-- 🏢 Working at **Toggl**
-- 📫 Reach me at **remko.vermeulen@toggl.com**
+Product leader with 15+ years scaling digital products to 5.8M users across health, education, proptech, legal tech, cloud, data privacy and productivity SaaS. Currently Head of Product at [Toggl](https://toggl.com).
 
-## Links
+## Pages
 
-- [GitHub](https://github.com/remkovermeulen-pers)
+- `/index.html` — Homepage with hero, selected experience, journal and featured case study
+- `/work.html` — Full project archive
+- `/about.html` — CV, education, skills and background
+- `/articles.html` — Writing and articles
+- `/case-study.html` — Individual case study (dynamic, driven by `data/projects/`)
+- `/article.html` — Individual article (dynamic, driven by `data/articles/`)
+
+## Stack
+
+Static HTML/CSS/JS hosted on GitHub Pages. Content loaded from JSON files in `data/`.
+
+## Contact
+
+- Email: [vermeulenremko@gmail.com](mailto:vermeulenremko@gmail.com)
+- LinkedIn: [linkedin.com/in/remkovermeulen](https://linkedin.com/in/remkovermeulen)
