@@ -8,11 +8,32 @@
     "Design",
     "Research"
   ],
-  "lede": "",
+  "lede": "Koga Miyata is a Dutch manufacturer of high-end touring and road bicycles, known for their quality construction and attention to detail. The brief for this project was to develop a brand extension — a",
   "coverImage": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1200&q=80",
   "role": "",
   "timeline": "",
   "partners": [],
   "metrics": [],
-  "sections": []
+  "sections": [
+    {
+      "title": "Overview",
+      "body": "<p>Koga Miyata is a Dutch manufacturer of high-end touring and road bicycles, known for their quality construction and attention to detail. The brief for this project was to develop a brand extension — a bicycle-mounted computer that would complement the premium positioning of the brand while adding genuine utility for touring cyclists.</p>\n<p>This was an early project in my career, completed in 2000 as part of my Industrial Design Engineering degree at Delft University of Technology, with a specialisation in Innovation Management.</p>"
+    },
+    {
+      "title": "The Brief",
+      "body": "<p>The bicycle computer market at the time was dominated by basic units showing speed, distance, and cadence. The brief asked for something more ambitious: a device that would serve touring cyclists specifically, providing navigation and contextual information about the places they were passing through.</p>\n<p>Touring cyclists have different needs from road racers or commuters. They travel at lower speeds over longer distances, often through unfamiliar territory, and they are interested in their environment — the towns they pass through, the historical sites, the recommended stops. A device that combined routing with location-aware tourist information addressed a real unmet need in this segment.</p>"
+    },
+    {
+      "title": "Research and Process",
+      "body": "<p>The project began with market research — understanding the touring cyclist segment, their routes, their information needs on the road, and how they currently solved navigation and route planning. This included analysis of competing products, interviews with touring cyclists, and review of how similar use cases were being addressed in adjacent categories (early GPS devices, PDAs).</p>\n<p>The interaction design work addressed the specific constraints of cycling: the device needed to be legible at a glance while riding, operable with gloved hands, durable enough for outdoor use, and visually consistent with Koga Miyata's premium aesthetic.</p>"
+    },
+    {
+      "title": "What I Designed",
+      "body": "<p>The output was a complete interaction design for the device, covering the information architecture, screen layouts, input mechanisms, and physical form factor. The device displayed turn-by-turn navigation with distance and estimated time, and surfaced contextual information about nearby points of interest based on the cyclist's location.</p>\n<p>The tourist information layer was designed to feel like a natural extension of the navigation experience rather than a separate feature — the kind of thing that would catch a cyclist's attention at a rest stop or town entrance without competing with safety-critical navigation information while riding.</p>"
+    },
+    {
+      "title": "Significance",
+      "body": "<p>This project established several design principles that have remained constant throughout my career: start with deep user research, design for the specific context of use rather than abstract requirements, and treat constraints (gloved hands, glare, vibration) as design inputs rather than problems to solve at the end.</p>\n<p>It was also an early example of designing a connected product in a market where connectivity was not yet taken for granted — a challenge that has become central to product design in virtually every category since.</p>"
+    }
+  ]
 }
