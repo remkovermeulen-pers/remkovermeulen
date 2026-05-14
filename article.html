@@ -174,6 +174,20 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
   .next-proj__text { padding:28px; }
 }
 
+/* PROJECT PAGER */
+.proj-pager { border-bottom:1px solid var(--line); padding:18px 0; display:grid; grid-template-columns:1fr auto 1fr; gap:24px; align-items:center; }
+.proj-pager__link { display:inline-flex; align-items:center; gap:14px; color:var(--primary); text-decoration:none; transition:color .2s; }
+.proj-pager__link:hover { color:var(--accent); }
+.proj-pager__link--next { justify-self:end; text-align:right; }
+.proj-pager__arrow { width:36px; height:36px; border:1px solid var(--primary); display:inline-flex; align-items:center; justify-content:center; flex-shrink:0; transition:background .25s, color .25s, transform .25s; }
+.proj-pager__link:hover .proj-pager__arrow { background:var(--primary); color:var(--on-primary); }
+.proj-pager__link--prev:hover .proj-pager__arrow { transform:translateX(-3px); }
+.proj-pager__link--next:hover .proj-pager__arrow { transform:translateX(3px); }
+.proj-pager__meta { display:flex; flex-direction:column; gap:4px; line-height:1.2; }
+.proj-pager__label { font-size:10px; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color:var(--muted-2); }
+.proj-pager__title { font-family:var(--font-display); font-weight:600; font-size:16px; color:var(--primary); letter-spacing:-0.01em; }
+.proj-pager__index { font-family:var(--font-display); font-style:italic; font-size:13px; color:var(--muted-2); letter-spacing:0.04em; padding:0 8px; white-space:nowrap; }
+
 /* LOADING */
 .art-loading { padding:96px 0; text-align:center; font-size:13px; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:var(--muted-2); }
 </style>
@@ -186,7 +200,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
     <nav class="site-nav__links">
       <a href="work.html" class="site-nav__link">Work</a>
       <a href="articles.html" class="site-nav__link is-active">Articles</a>
-      <a href="index.html#philosophy" class="site-nav__link">About</a>
+      <a href="about.html" class="site-nav__link">About</a>
       <a href="mailto:vermeulenremko@gmail.com" class="site-nav__link">Contact</a>
     </nav>
     <div style="display:flex;align-items:center;gap:14px;">
@@ -295,9 +309,28 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
     // Cover image
     var coverSrc = COVER_IMAGES[article.category] || DEFAULT_COVER;
 
-    // Next article
+    // Pager
     var idx = all.findIndex(function(a) { return a.notionId === id; });
+    var prev = idx > 0 ? all[idx - 1] : null;
     var next = idx >= 0 ? all[(idx + 1) % all.length] : null;
+    if (next && next.notionId === id) next = null;
+
+    var counter = idx >= 0 ? (String(idx + 1).padStart(2,'0') + ' / ' + String(all.length).padStart(2,'0')) : '';
+    var prevLink = prev
+      ? '<a href="article.html?id=' + esc(prev.notionId) + '" class="proj-pager__link proj-pager__link--prev">'
+        + '<span class="proj-pager__arrow"><svg width="16" height="12" viewBox="0 0 16 12" fill="none"><path d="M15 6H1m0 0l5-5m-5 5l5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></span>'
+        + '<span class="proj-pager__meta"><span class="proj-pager__label">Previous</span><span class="proj-pager__title">' + esc(prev.title) + '</span></span>'
+        + '</a>'
+      : '<span></span>';
+    var nextPagerLink = next
+      ? '<a href="article.html?id=' + esc(next.notionId) + '" class="proj-pager__link proj-pager__link--next">'
+        + '<span class="proj-pager__meta"><span class="proj-pager__label">Next</span><span class="proj-pager__title">' + esc(next.title) + '</span></span>'
+        + '<span class="proj-pager__arrow"><svg width="16" height="12" viewBox="0 0 16 12" fill="none"><path d="M1 6h14m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></span>'
+        + '</a>'
+      : '<span></span>';
+    var pagerHtml = '<nav class="proj-pager">' + prevLink + '<span class="proj-pager__index">' + counter + '</span>' + nextPagerLink + '</nav>';
+
+    // Next article
     var nextHtml = '';
     if (next) {
       var nextCover = COVER_IMAGES[next.category] || DEFAULT_COVER;
@@ -316,7 +349,8 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
     }
 
     main.innerHTML =
-      '<section class="cs-hero">'
+      pagerHtml
+      + '<section class="cs-hero">'
       + '<p class="cs-hero__crumb">Journal &nbsp;/&nbsp; ' + esc(article.category) + '</p>'
       + '<h1>' + esc(article.title) + '</h1>'
       + (lede ? '<p class="cs-hero__lede">' + esc(lede) + '</p>' : '')
