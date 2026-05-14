@@ -9,7 +9,7 @@
     "Design",
     "Research"
   ],
-  "lede": "Health services often focus on improving the usability of their products \u2014 making them easier to navigate, less confusing, more accessible. That is necessary, but it is not sufficient. The real goal i",
+  "lede": "Health services often focus on improving the usability of their products — making them easier to navigate, less confusing, more accessible. That is necessary, but it is not sufficient. The real goal i",
   "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
   "role": "",
   "timeline": "",
@@ -18,11 +18,11 @@
   "sections": [
     {
       "title": "Overview",
-      "body": "<p>Health services often focus on improving the usability of their products \u2014 making them easier to navigate, less confusing, more accessible. That is necessary, but it is not sufficient. The real goal is not a better user experience; it is better health outcomes. These are not the same thing.</p>\n<p>This project took a different starting point. Rather than asking how to improve the user journey, we asked how to design a journey that actually changes behaviour. The collaboration brought together Telefonica and Harvard Medical School, combining product and service design expertise with the science of behaviour change.</p>"
+      "body": "<p>Health services often focus on improving the usability of their products — making them easier to navigate, less confusing, more accessible. That is necessary, but it is not sufficient. The real goal is not a better user experience; it is better health outcomes. These are not the same thing.</p>\n<p>This project took a different starting point. Rather than asking how to improve the user journey, we asked how to design a journey that actually changes behaviour. The collaboration brought together Telefonica and Harvard Medical School, combining product and service design expertise with the science of behaviour change.</p>"
     },
     {
       "title": "The Framework",
-      "body": "<p>We drew on two bodies of work in particular: Daniel Kahneman's research on decision-making and cognitive biases, and BJ Fogg's Behaviour Model from Stanford, which frames behaviour change as a function of motivation, ability, and prompts. Both frameworks point to the same insight \u2014 that people rarely change behaviour through willpower or information alone. Change happens when the environment makes the desired behaviour easy, timely, and rewarding.</p>\n<p>This meant designing the user journey not just as a sequence of screens and steps, but as a series of carefully timed interventions. We identified moments of high motivation (after a health scare, at the start of a new treatment, following a positive result) and built the journey to meet users at those moments with low-friction actions they could complete immediately.</p>"
+      "body": "<p>We drew on two bodies of work in particular: Daniel Kahneman's research on decision-making and cognitive biases, and BJ Fogg's Behaviour Model from Stanford, which frames behaviour change as a function of motivation, ability, and prompts. Both frameworks point to the same insight — that people rarely change behaviour through willpower or information alone. Change happens when the environment makes the desired behaviour easy, timely, and rewarding.</p>\n<p>This meant designing the user journey not just as a sequence of screens and steps, but as a series of carefully timed interventions. We identified moments of high motivation (after a health scare, at the start of a new treatment, following a positive result) and built the journey to meet users at those moments with low-friction actions they could complete immediately.</p>"
     },
     {
       "title": "My Role",
@@ -36,6 +36,5 @@
       "title": "Why It Matters",
       "body": "<p>Most health apps inform users. Few change their behaviour in a lasting way. This project was an attempt to close that gap by treating behaviour change as a design problem with known, testable solutions, rather than something that happens as a side effect of good UX.</p>"
     }
-  ],
-  "logoDomain": "koahealth.com"
+  ]
 }

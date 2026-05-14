@@ -32,16 +32,15 @@
     },
     {
       "title": "My Role",
-      "body": "<p>As VP of Product at Telefonica Alpha Health (later Koa Health), I led the product from concept through to clinical trial. This covered the full scope: market research and clinical validation of the concept, product definition, roadmap, UX design, agile development, and coordination with the MGH and Harvard research teams.</p>\n<p>Managing the relationship with clinical partners at this level required translating between two very different working cultures \u2014 product development, which moves fast and iterates on uncertainty, and clinical research, which demands rigorous protocols and documented evidence. Keeping both moving in parallel without compromising either was one of the more demanding aspects of the project.</p>\n<p>The product also required regulatory thinking from the outset. With FDA Class II de novo and CE Class I submissions in progress, every design decision needed to account for how it would be documented and justified in regulatory submissions.</p>"
+      "body": "<p>As VP of Product at Telefonica Alpha Health (later Koa Health), I led the product from concept through to clinical trial. This covered the full scope: market research and clinical validation of the concept, product definition, roadmap, UX design, agile development, and coordination with the MGH and Harvard research teams.</p>\n<p>Managing the relationship with clinical partners at this level required translating between two very different working cultures — product development, which moves fast and iterates on uncertainty, and clinical research, which demands rigorous protocols and documented evidence. Keeping both moving in parallel without compromising either was one of the more demanding aspects of the project.</p>\n<p>The product also required regulatory thinking from the outset. With FDA Class II de novo and CE Class I submissions in progress, every design decision needed to account for how it would be documented and justified in regulatory submissions.</p>"
     },
     {
       "title": "Results",
-      "body": "<p>The clinical trial results were exceptional:</p>\n<ul>\n<li>90% of participants responded to treatment</li>\n<li>Average symptom reduction of 55%, on par with the best MGH therapists</li>\n<li>95% reduction in cost compared to traditional therapy</li>\n</ul>\n<p>These results positioned Perspectives as one of the most clinically validated mental health apps produced outside of a pharmaceutical context, and contributed to the \u20ac66M in investment secured by Koa Health.</p>"
+      "body": "<p>The clinical trial results were exceptional:</p>\n<ul>\n<li>90% of participants responded to treatment</li>\n<li>Average symptom reduction of 55%, on par with the best MGH therapists</li>\n<li>95% reduction in cost compared to traditional therapy</li>\n</ul>\n<p>These results positioned Perspectives as one of the most clinically validated mental health apps produced outside of a pharmaceutical context, and contributed to the €66M in investment secured by Koa Health.</p>"
     },
     {
       "title": "Status",
       "body": "<p>The product was pending FDA approval (Class II de novo) and CE mark (Class I) at the time of publication.</p>"
     }
-  ],
-  "logoDomain": "koahealth.com"
+  ]
 }

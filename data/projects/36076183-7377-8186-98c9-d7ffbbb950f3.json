@@ -1,6 +1,6 @@
 {
   "id": "36076183-7377-8186-98c9-d7ffbbb950f3",
-  "title": "Scaling Perspectives \u2014 Program Editor",
+  "title": "Scaling Perspectives — Program Editor",
   "sector": "Health",
   "status": "Archive",
   "year": null,
@@ -22,7 +22,7 @@
   "sections": [
     {
       "title": "Overview",
-      "body": "<p>After the clinical success of Perspectives, users and clinical partners began asking for a broader suite of programmes covering additional mental health conditions. The demand was clear, but the bottleneck was content creation. Building each new programme required significant time from clinical experts, product managers, and engineers working in sequence. At that rate, expanding the library would take years.</p>\n<p>The solution was to build a programme editor \u2014 an internal tool that allowed different clinical and content teams to create and edit therapeutic programmes in parallel, without engineering involvement at each step.</p>"
+      "body": "<p>After the clinical success of Perspectives, users and clinical partners began asking for a broader suite of programmes covering additional mental health conditions. The demand was clear, but the bottleneck was content creation. Building each new programme required significant time from clinical experts, product managers, and engineers working in sequence. At that rate, expanding the library would take years.</p>\n<p>The solution was to build a programme editor — an internal tool that allowed different clinical and content teams to create and edit therapeutic programmes in parallel, without engineering involvement at each step.</p>"
     },
     {
       "title": "The Problem",
@@ -30,7 +30,7 @@
     },
     {
       "title": "What We Built",
-      "body": "<p>The programme editor was a content management layer that gave clinical and product teams control over programme structure, module sequencing, content, branching logic, and personalisation rules \u2014 without writing code.</p>\n<p>The editor was designed around the working patterns of the clinical teams who would use it: psychologists, content designers, and clinical programme managers. It needed to be expressive enough to capture the nuance of CBT protocols, while remaining accessible to users without a technical background.</p>\n<p>Key features included a visual module builder, a logic engine for conditional sequencing based on symptom profile and user progress, content version control, and a review and approval workflow to ensure clinical sign-off before any programme went live.</p>"
+      "body": "<p>The programme editor was a content management layer that gave clinical and product teams control over programme structure, module sequencing, content, branching logic, and personalisation rules — without writing code.</p>\n<p>The editor was designed around the working patterns of the clinical teams who would use it: psychologists, content designers, and clinical programme managers. It needed to be expressive enough to capture the nuance of CBT protocols, while remaining accessible to users without a technical background.</p>\n<p>Key features included a visual module builder, a logic engine for conditional sequencing based on symptom profile and user progress, content version control, and a review and approval workflow to ensure clinical sign-off before any programme went live.</p>"
     },
     {
       "title": "My Role",
@@ -40,6 +40,5 @@
       "title": "Results",
       "body": "<p>The programme editor reduced time to create a new programme by 75%. This unlocked parallel development across multiple conditions, directly enabling the expansion of the Perspectives product suite. It also shifted the creative ownership of programme content closer to the clinical experts who understood it best, reducing the back-and-forth between clinical and engineering teams that had previously slowed every iteration.</p>"
     }
-  ],
-  "logoDomain": "koahealth.com"
+  ]
 }

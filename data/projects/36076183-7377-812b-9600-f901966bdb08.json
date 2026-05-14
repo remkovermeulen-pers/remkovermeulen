@@ -8,7 +8,7 @@
     "Product",
     "Research"
   ],
-  "lede": "In Brazil, private health insurance is not just a practical necessity \u2014 it is a status symbol. In homes across different income groups, it sits alongside a fridge, a television, and a laptop as one of",
+  "lede": "In Brazil, private health insurance is not just a practical necessity — it is a status symbol. In homes across different income groups, it sits alongside a fridge, a television, and a laptop as one of",
   "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
   "role": "",
   "timeline": "",
@@ -17,15 +17,15 @@
   "sections": [
     {
       "title": "Overview",
-      "body": "<p>In Brazil, private health insurance is not just a practical necessity \u2014 it is a status symbol. In homes across different income groups, it sits alongside a fridge, a television, and a laptop as one of the markers of having made it into the middle class. But for the majority of Brazilians, it remains out of reach.</p>\n<p>My Health was designed to change that. Developed by Telefonica R&amp;D for Vivo Brasil, it gave middle and lower-income households access to on-demand medical consultation \u2014 starting with SMS and phone, and evolving towards web and video.</p>"
+      "body": "<p>In Brazil, private health insurance is not just a practical necessity — it is a status symbol. In homes across different income groups, it sits alongside a fridge, a television, and a laptop as one of the markers of having made it into the middle class. But for the majority of Brazilians, it remains out of reach.</p>\n<p>My Health was designed to change that. Developed by Telefonica R&amp;D for Vivo Brasil, it gave middle and lower-income households access to on-demand medical consultation — starting with SMS and phone, and evolving towards web and video.</p>"
     },
     {
       "title": "The Research Foundation",
-      "body": "<p>The project started with ethnographic home visits across different income brackets in Brazil. These visits were essential for understanding not just what people needed from healthcare, but how they currently accessed it, what barriers they faced, and what role healthcare played in their household priorities.</p>\n<p>What we found was that access to a doctor was not primarily a financial problem at the point of use \u2014 it was an infrastructure and availability problem. Public health centres had long waiting times. Private clinics were expensive and inconvenient. In emergencies, the default was often to call a family member or do nothing.</p>\n<p>The opportunity was to put a doctor within reach at the moment someone needed one, through infrastructure they already had.</p>"
+      "body": "<p>The project started with ethnographic home visits across different income brackets in Brazil. These visits were essential for understanding not just what people needed from healthcare, but how they currently accessed it, what barriers they faced, and what role healthcare played in their household priorities.</p>\n<p>What we found was that access to a doctor was not primarily a financial problem at the point of use — it was an infrastructure and availability problem. Public health centres had long waiting times. Private clinics were expensive and inconvenient. In emergencies, the default was often to call a family member or do nothing.</p>\n<p>The opportunity was to put a doctor within reach at the moment someone needed one, through infrastructure they already had.</p>"
     },
     {
       "title": "The Service",
-      "body": "<p>My Health launched as an SMS and telephone service, requiring nothing more than a mobile phone. Users could send a symptom description by SMS and receive guidance within minutes, or call a nurse or doctor directly. This met users where they were \u2014 on devices they owned and knew how to use \u2014 without requiring a smartphone, an app download, or an internet connection.</p>\n<p>As mobile internet penetration in Brazil grew, the service extended to a web channel and eventually to video consultation, enabling visual assessment and more complex conversations.</p>"
+      "body": "<p>My Health launched as an SMS and telephone service, requiring nothing more than a mobile phone. Users could send a symptom description by SMS and receive guidance within minutes, or call a nurse or doctor directly. This met users where they were — on devices they owned and knew how to use — without requiring a smartphone, an app download, or an internet connection.</p>\n<p>As mobile internet penetration in Brazil grew, the service extended to a web channel and eventually to video consultation, enabling visual assessment and more complex conversations.</p>"
     },
     {
       "title": "My Role",
@@ -33,8 +33,7 @@
     },
     {
       "title": "Why It Mattered",
-      "body": "<p>My Health addressed a genuine equity gap in healthcare access. The populations it served had real medical needs that were going unmet \u2014 not because they did not value their health, but because the healthcare system as designed did not serve them effectively.</p>\n<p>The project also demonstrated that digital health does not require sophisticated technology to have impact. Sometimes the most effective intervention is the one that works on the phone someone already has.</p>"
+      "body": "<p>My Health addressed a genuine equity gap in healthcare access. The populations it served had real medical needs that were going unmet — not because they did not value their health, but because the healthcare system as designed did not serve them effectively.</p>\n<p>The project also demonstrated that digital health does not require sophisticated technology to have impact. Sometimes the most effective intervention is the one that works on the phone someone already has.</p>"
     }
-  ],
-  "logoDomain": "koahealth.com"
+  ]
 }

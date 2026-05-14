@@ -8,7 +8,7 @@
     "Research",
     "Product"
   ],
-  "lede": "Led product definition, design and agile development of a mental health DTx (Digital Therapeutics) product to be used in combination with Spravato (esketamine) \u2014 a treatment for treatment-resistant de",
+  "lede": "Led product definition, design and agile development of a mental health DTx (Digital Therapeutics) product to be used in combination with Spravato (esketamine) — a treatment for treatment-resistant de",
   "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
   "role": "",
   "timeline": "",
@@ -30,7 +30,7 @@
   "sections": [
     {
       "title": "Overview",
-      "body": "<p>Led product definition, design and agile development of a mental health DTx (Digital Therapeutics) product to be used in combination with Spravato (esketamine) \u2014 a treatment for treatment-resistant depression \u2014 in collaboration with Janssen / Johnson &amp; Johnson. Included a full clinical trial programme.</p>"
+      "body": "<p>Led product definition, design and agile development of a mental health DTx (Digital Therapeutics) product to be used in combination with Spravato (esketamine) — a treatment for treatment-resistant depression — in collaboration with Janssen / Johnson &amp; Johnson. Included a full clinical trial programme.</p>"
     },
     {
       "title": "Key work",
@@ -40,6 +40,5 @@
       "title": "Outcomes",
       "body": "<ul>\n<li>Successful clinical trial</li>\n<li><strong>3 digital health patents</strong> (System and method for enabling responsive CBT; Computer implemented method and system for scheduling moment-based medical tasks)</li>\n</ul>"
     }
-  ],
-  "logoDomain": "janssen.com"
+  ]
 }
