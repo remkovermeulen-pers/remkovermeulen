@@ -132,21 +132,6 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
   .proj-card__stats { gap:24px; }
 }
 
-/* WRITING GRID */
-.writing { padding-top:96px; }
-.article-card { display:flex; flex-direction:column; justify-content:space-between; padding:32px; background:var(--bg-card); border:1px solid var(--accent); min-height:280px; gap:24px; transition:transform .3s, box-shadow .3s; }
-.article-card:hover { transform:translate(-3px,-3px); box-shadow:6px 6px 0 0 var(--primary); }
-.article-card__tag { font-size:10px; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; color:var(--accent); }
-.article-card h3 { margin:14px 0; font-family:var(--font-display); font-weight:600; font-size:clamp(20px,1.8vw,26px); line-height:1.2; }
-.article-card p { margin:0; font-size:14px; color:var(--muted-2); line-height:1.6; }
-.article-card__year { align-self:flex-end; font-size:11px; font-weight:600; letter-spacing:0.18em; color:var(--muted-2); }
-.writing-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
-@media (max-width:880px) {
-  .writing { padding-top:56px; }
-  .writing-grid { grid-template-columns:1fr; }
-  .article-card { min-height:0; padding:26px; }
-}
-
 /* CTA BLOCK */
 .cta-block { margin-top:96px; padding-top:64px; border-top:1px solid var(--primary); display:grid; grid-template-columns:1.4fr 1fr; gap:32px; align-items:center; }
 .cta-block h2 { margin:0 0 18px; font-family:var(--font-display); font-weight:600; font-size:clamp(32px,4.4vw,56px); line-height:1.1; letter-spacing:-0.01em; }
@@ -197,161 +182,39 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
         <span class="accent-mark"></span>
         <h2>Projects</h2>
       </div>
-      <span class="label-xs">4 Case Studies</span>
+      <span class="label-xs" id="proj-count"></span>
     </div>
 
-    <div class="project-grid">
-
-      <a href="case-study?id=35f76183-7377-8135-9dd1-d1b22dfa6da0" class="proj-card">
-        <div class="proj-card__img">
-          <span class="proj-card__chip">Health Tech</span>
-          <img class="bw-img" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=80" alt="Koa Health">
-        </div>
-        <div class="proj-card__body">
-          <h3>Koa Health</h3>
-          <p class="proj-card__lede">Revolutionising mental health through machine-learning algorithms that accurately predict crises and support clinical trial infrastructure.</p>
-          <div class="proj-card__stats">
-            <div class="proj-card__stat">
-              <span class="metric">80%</span>
-              <div class="metric-label">Crisis prediction recall</div>
-            </div>
-            <div class="proj-card__stat">
-              <span class="metric">62%</span>
-              <div class="metric-label">Velocity increase</div>
-            </div>
-          </div>
-          <div class="proj-card__footer">
-            <div class="proj-card__tags">
-              <span class="tag">Product Strategy</span>
-              <span class="tag">AI / ML</span>
-            </div>
-            <span class="proj-card__arrow">
-              View case study
-              <svg width="14" height="10" viewBox="0 0 16 10" fill="none"><path d="M1 5h14m0 0L11 1m4 4l-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"/></svg>
-            </span>
-          </div>
-        </div>
-      </a>
-
-      <a href="case-study?id=35f76183-7377-8167-aade-e9ceff1342ed" class="proj-card">
-        <div class="proj-card__img">
-          <span class="proj-card__chip">Telecom</span>
-          <img class="bw-img" src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&q=80" alt="Telefónica / O2">
-        </div>
-        <div class="proj-card__body">
-          <h3>Telefónica &amp; O2</h3>
-          <p class="proj-card__lede">Digitising the consumer decision journey for millions of users across Europe and LATAM using Lean Startup methodologies at scale.</p>
-          <div class="proj-card__stats">
-            <div class="proj-card__stat">
-              <span class="metric">48%</span>
-              <div class="metric-label">Lean cycle reduction</div>
-            </div>
-            <div class="proj-card__stat">
-              <span class="metric">63%</span>
-              <div class="metric-label">Conversion uplift</div>
-            </div>
-          </div>
-          <div class="proj-card__footer">
-            <div class="proj-card__tags">
-              <span class="tag">Service Design</span>
-              <span class="tag">Scale</span>
-            </div>
-            <span class="proj-card__arrow">
-              View case study
-              <svg width="14" height="10" viewBox="0 0 16 10" fill="none"><path d="M1 5h14m0 0L11 1m4 4l-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"/></svg>
-            </span>
-          </div>
-        </div>
-      </a>
-
-      <a href="case-study?id=35f76183-7377-81de-af86-c88584fb33f7" class="proj-card">
-        <div class="proj-card__img">
-          <span class="proj-card__chip">Media Tech</span>
-          <img class="bw-img" src="https://images.unsplash.com/photo-1495020689067-958852a7765e?w=1200&q=80" alt="Financial Times">
-        </div>
-        <div class="proj-card__body">
-          <h3>Financial Times</h3>
-          <p class="proj-card__lede">Developing interactive tools to visualise the customer journey to online purchase with a focus on data-driven revenue growth.</p>
-          <div class="proj-card__stats">
-            <div class="proj-card__stat">
-              <span class="metric">212%</span>
-              <div class="metric-label">Increase in conversions</div>
-            </div>
-          </div>
-          <div class="proj-card__footer">
-            <div class="proj-card__tags">
-              <span class="tag">Data Visualisation</span>
-              <span class="tag">Revenue Growth</span>
-            </div>
-            <span class="proj-card__arrow">
-              View case study
-              <svg width="14" height="10" viewBox="0 0 16 10" fill="none"><path d="M1 5h14m0 0L11 1m4 4l-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"/></svg>
-            </span>
-          </div>
-        </div>
-      </a>
-
-      <a href="case-study?id=35f76183-7377-81a8-b45d-f022b6c4842e" class="proj-card">
-        <div class="proj-card__img">
-          <span class="proj-card__chip">Automotive</span>
-          <img class="bw-img" src="https://images.unsplash.com/photo-1493238792000-8113da705763?w=1200&q=80" alt="Renault">
-        </div>
-        <div class="proj-card__body">
-          <h3>Renault</h3>
-          <p class="proj-card__lede">Designing the next generation of connected car services using user research and Kano models to maximise driver engagement.</p>
-          <div class="proj-card__stats">
-            <div class="proj-card__stat">
-              <span class="metric">75%</span>
-              <div class="metric-label">Reduction in time-to-value</div>
-            </div>
-          </div>
-          <div class="proj-card__footer">
-            <div class="proj-card__tags">
-              <span class="tag">Connected Services</span>
-              <span class="tag">User Research</span>
-            </div>
-            <span class="proj-card__arrow">
-              View case study
-              <svg width="14" height="10" viewBox="0 0 16 10" fill="none"><path d="M1 5h14m0 0L11 1m4 4l-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"/></svg>
-            </span>
-          </div>
-        </div>
-      </a>
-
-    </div>
-  </section>
-
-  <!-- WRITING GRID -->
-  <section class="writing">
-    <div class="sec-head">
-      <div class="sec-head__title">
-        <span class="accent-mark"></span>
-        <h2>Writing</h2>
-      </div>
-      <a href="../#journal" class="view-all">
-        All articles
-        <svg width="16" height="10" viewBox="0 0 16 10" fill="none"><path d="M1 5h14m0 0L11 1m4 4l-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"/></svg>
-      </a>
-    </div>
-
-    <div class="writing-grid" id="writing-grid">
-      <!-- populated by JS from data/articles.json -->
+    <div class="project-grid" id="project-grid">
+      <!-- populated by JS from data/projects.json -->
     </div>
     <script>
     (function(){
-      fetch('../data/articles.json')
+      var arrow = '<svg width="14" height="10" viewBox="0 0 16 10" fill="none"><path d="M1 5h14m0 0L11 1m4 4l-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"/></svg>';
+      function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+      fetch('../data/projects.json')
         .then(function(r){ return r.json(); })
-        .then(function(articles){
-          var grid = document.getElementById('writing-grid');
+        .then(function(projects){
+          var grid = document.getElementById('project-grid');
+          var count = document.getElementById('proj-count');
           if (!grid) return;
-          grid.innerHTML = articles.map(function(a){
-            var href = a.notionId ? 'article.html?id=' + a.notionId : a.url;
-            var target = a.notionId ? '' : ' target="_blank" rel="noopener"';
-            var rt = a.readingTime ? '<span class="article-card__year">' + a.readingTime + ' min</span>' : '<span class="article-card__year">' + a.year + '</span>';
-            return '<a href="' + href + '"' + target + ' class="article-card">'
-              + '<div><span class="article-card__tag">' + a.category + '</span>'
-              + '<h3>' + a.title + '</h3></div>'
-              + rt + '</a>';
+          if (count) count.textContent = projects.length + ' Case Studies';
+          grid.innerHTML = projects.map(function(p){
+            var tags = (p.tags || []).map(function(t){ return '<span class="tag">' + esc(t) + '</span>'; }).join('');
+            return '<a href="case-study?id=' + esc(p.notionId) + '" class="proj-card">'
+              + '<div class="proj-card__img">'
+              + '<span class="proj-card__chip">' + esc(p.sector) + '</span>'
+              + '<img class="bw-img" src="' + esc(p.coverImage) + '" alt="' + esc(p.title) + '" loading="lazy">'
+              + '</div>'
+              + '<div class="proj-card__body">'
+              + '<h3>' + esc(p.title) + '</h3>'
+              + '<p class="proj-card__lede">' + esc(p.lede) + '</p>'
+              + '<div class="proj-card__footer">'
+              + '<div class="proj-card__tags">' + tags + '</div>'
+              + '<span class="proj-card__arrow">View case study ' + arrow + '</span>'
+              + '</div>'
+              + '</div>'
+              + '</a>';
           }).join('');
         })
         .catch(function(){});
