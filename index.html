@@ -85,6 +85,16 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
   .site-footer__inner { padding:28px 0; flex-direction:column; align-items:flex-start; gap:18px; }
 }
 
+/* HERO */
+.work-hero { padding:80px 0 72px; display:grid; grid-template-columns:1.5fr 1fr; gap:56px; align-items:end; }
+.work-hero__eyebrow { font-size:11px; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color:var(--muted-2); margin:0 0 24px; display:flex; align-items:center; }
+.work-hero h1 { font-family:var(--font-display); font-weight:700; font-size:clamp(32px,4vw,56px); line-height:1.1; letter-spacing:-0.02em; margin:0; }
+.work-hero__intro { border-left:1px solid var(--line); padding:0 0 0 28px; font-size:17px; line-height:1.6; color:var(--muted); max-width:460px; }
+@media (max-width:880px) {
+  .work-hero { grid-template-columns:1fr; gap:28px; padding:40px 0 48px; }
+  .work-hero__intro { padding-left:0; border-left:none; border-top:1px solid var(--line); padding-top:20px; }
+}
+
 /* ARTICLES HERO */
 .articles-hero { padding:72px 0 56px; }
 .articles-hero__eyebrow { font-size:11px; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color:var(--muted-2); margin:0 0 20px; display:flex; align-items:center; }
@@ -161,6 +171,18 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
 </header>
 
 <main class="container">
+
+  <!-- HERO -->
+  <section class="work-hero">
+    <div>
+      <p class="work-hero__eyebrow"><span class="accent-mark"></span>VP &amp; Head of Product</p>
+      <h1>Building and scaling innovative products.</h1>
+    </div>
+    <p class="work-hero__intro">
+      15+ years of international experience leading product management and design for global
+      leaders in Health Tech, Telecom, Media and beyond.
+    </p>
+  </section>
 
   <!-- ARTICLES HERO -->
   <section class="articles-hero" id="journal">
