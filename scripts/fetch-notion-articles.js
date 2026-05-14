@@ -32,19 +32,21 @@ const SECTOR_IMAGES = {
   Finance:    'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80',
 };
 
-async function notionGet(p) {
-  const res = await fetch(`https://api.notion.com/v1${p}`, { headers: HEADERS });
-  if (!res.ok) throw new Error(`Notion GET ${p} → ${res.status}: ${await res.text()}`);
+async function notionRequest(method, p, body, attempt = 0) {
+  const opts = { method, headers: HEADERS };
+  if (body) opts.body = JSON.stringify(body);
+  const res = await fetch(`https://api.notion.com/v1${p}`, opts);
+  if ((res.status === 502 || res.status === 503 || res.status === 429) && attempt < 4) {
+    const wait = (res.status === 429 ? 60 : 2 ** attempt) * 1000;
+    await new Promise(r => setTimeout(r, wait));
+    return notionRequest(method, p, body, attempt + 1);
+  }
+  if (!res.ok) throw new Error(`Notion ${method} ${p} → ${res.status}: ${await res.text()}`);
   return res.json();
 }
 
-async function notionPost(p, body) {
-  const res = await fetch(`https://api.notion.com/v1${p}`, {
-    method: 'POST', headers: HEADERS, body: JSON.stringify(body),
-  });
-  if (!res.ok) throw new Error(`Notion POST ${p} → ${res.status}: ${await res.text()}`);
-  return res.json();
-}
+async function notionGet(p)       { return notionRequest('GET',  p); }
+async function notionPost(p, body) { return notionRequest('POST', p, body); }
 
 function extractText(prop) {
   if (!prop) return '';
