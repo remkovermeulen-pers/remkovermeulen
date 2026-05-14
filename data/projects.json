@@ -308,7 +308,7 @@
     "metrics": [
       {
         "value": "90%",
-        "label": "response rate | 55% average symptom reduction | 95% cost reduction vs. traditional therapy | Pending FDA Class II de novo + CE Class I"
+        "label": "response rate | 55% symptom reduction | 95% cost reduction"
       }
     ]
   },
@@ -366,7 +366,7 @@
     "metrics": [
       {
         "value": "87%",
-        "label": "active user growth | 75% reduction in time to value | CAC/LTV improved from 162% to 21% | 23% MRR growth"
+        "label": "active user growth | 75% reduction in time to value | CAC/LTV ratio: 162% → 21% | 23% MRR growth"
       }
     ]
   },
