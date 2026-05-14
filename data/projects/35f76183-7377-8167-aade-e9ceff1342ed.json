@@ -1,6 +1,6 @@
 {
   "id": "35f76183-7377-8167-aade-e9ceff1342ed",
-  "title": "Telefónica / O2",
+  "title": "Telef\u00f3nica / O2",
   "sector": "Telco",
   "status": "Archive",
   "year": 2011,
@@ -9,10 +9,10 @@
     "Design",
     "Research"
   ],
-  "lede": "Led UX, product and service design teams across 5 global locations (10–17 people), building eHealth, cloud and data privacy products at Telefonica worldwide.",
+  "lede": "Led UX, product and service design teams across 5 global locations (10\u201317 people), building eHealth, cloud and data privacy products at Telefonica worldwide.",
   "coverImage": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&q=80",
   "role": "User Experience Lead &amp; Head of Product &amp; Service Design",
-  "timeline": "June 2011 – June 2016",
+  "timeline": "June 2011 \u2013 June 2016",
   "partners": [
     "NHS (UK)",
     "WHO",
@@ -41,15 +41,16 @@
   "sections": [
     {
       "title": "Overview",
-      "body": "<p>Led UX, product and service design teams across 5 global locations (10–17 people), building eHealth, cloud and data privacy products at Telefonica worldwide.</p>"
+      "body": "<p>Led UX, product and service design teams across 5 global locations (10\u201317 people), building eHealth, cloud and data privacy products at Telefonica worldwide.</p>"
     },
     {
       "title": "Key work",
-      "body": "<ul>\n<li>Led design of a chronic disease management system (COPD, heart failure) for patients, nurses and clinicians on tablet, web and mobile — <strong>48% mortality rate decrease</strong> and <strong>63% decrease in readmission</strong> across UK, Brazil and Spain</li>\n<li>Created a service using location patterns to detect epidemic sources faster, predict spread and follow up with education — in collaboration with the WHO, Unicef and Harvard</li>\n<li>Created a voice analysis service using a standard telephone line to detect and monitor Parkinson's disease with <strong>78% precision</strong></li>\n<li>Healthcare educational services via SMS for the general population and mothers-to-be in Brazil</li>\n<li>Teledermatology service with Hospital del Mar in Barcelona</li>\n<li>Led cross-disciplinary teams creating new data security and privacy products — <strong>20+ MVPs</strong>, 5 successfully launched</li>\n</ul>"
+      "body": "<ul>\n<li>Led design of a chronic disease management system (COPD, heart failure) for patients, nurses and clinicians on tablet, web and mobile \u2014 <strong>48% mortality rate decrease</strong> and <strong>63% decrease in readmission</strong> across UK, Brazil and Spain</li>\n<li>Created a service using location patterns to detect epidemic sources faster, predict spread and follow up with education \u2014 in collaboration with the WHO, Unicef and Harvard</li>\n<li>Created a voice analysis service using a standard telephone line to detect and monitor Parkinson's disease with <strong>78% precision</strong></li>\n<li>Healthcare educational services via SMS for the general population and mothers-to-be in Brazil</li>\n<li>Teledermatology service with Hospital del Mar in Barcelona</li>\n<li>Led cross-disciplinary teams creating new data security and privacy products \u2014 <strong>20+ MVPs</strong>, 5 successfully launched</li>\n</ul>"
     },
     {
       "title": "Key outcomes",
       "body": "<ul>\n<li><strong>48%</strong> decrease in mortality rate (chronic disease)</li>\n<li><strong>63%</strong> decrease in hospital readmission</li>\n<li><strong>20+</strong> MVPs created, <strong>5</strong> launched</li>\n<li><strong>78%</strong> precision in Parkinson's detection</li>\n</ul>"
     }
-  ]
+  ],
+  "logoDomain": "telefonica.com"
 }

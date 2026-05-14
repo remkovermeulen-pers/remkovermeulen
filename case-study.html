@@ -87,8 +87,9 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
 .cs-hero h1 { margin:0 0 24px; font-family:var(--font-display); font-weight:700; font-size:clamp(48px,8vw,96px); line-height:1.02; letter-spacing:-0.025em; }
 .cs-hero__lede { margin:0; font-size:clamp(17px,1.6vw,20px); line-height:1.55; color:var(--muted); max-width:640px; }
 
-.cs-cover { margin-top:56px; border:1px solid var(--primary); overflow:hidden; }
+.cs-cover { margin-top:56px; border:1px solid var(--primary); overflow:hidden; position:relative; }
 .cs-cover img { width:100%; height:clamp(280px,42vw,560px); object-fit:cover; }
+.cs-cover__logo { position:absolute; bottom:24px; left:32px; height:36px; max-width:160px; width:auto; object-fit:contain; filter:brightness(0) invert(1); opacity:0.9; pointer-events:none; }
 
 /* BODY GRID */
 .cs-body { margin-top:96px; display:grid; grid-template-columns:220px 1fr; gap:48px; }
@@ -213,6 +214,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
         '<p class="cs-hero__lede">' + esc(proj.lede) + '</p>' +
         '<div class="cs-cover">' +
           '<img class="bw-img" src="' + esc(proj.coverImage) + '" alt="' + esc(proj.title) + '">' +
+          (proj.logoDomain ? '<img class="cs-cover__logo" src="https://cdn.brandfetch.io/' + esc(proj.logoDomain) + '/w/400/h/200/logo?theme=dark" alt="">' : '') +
         '</div>' +
       '</section>' +
 

@@ -11,7 +11,7 @@
   "lede": "Restructured product, design and engineering teams reducing costs by 26%, while increasing team output by 13%.",
   "coverImage": "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1200&q=80",
   "role": "Head of Product",
-  "timeline": "January 2026 – Now",
+  "timeline": "January 2026 \u2013 Now",
   "partners": [],
   "metrics": [
     {
@@ -34,7 +34,8 @@
     },
     {
       "title": "Key outcomes",
-      "body": "<ul>\n<li><strong>94%</strong> increase in first-time activation</li>\n<li><strong>26%</strong> cost reduction through team restructuring</li>\n<li><strong>13%</strong> increase in team output</li>\n<li>Insight-to-validated-solution cycle: weeks → days</li>\n</ul>"
+      "body": "<ul>\n<li><strong>94%</strong> increase in first-time activation</li>\n<li><strong>26%</strong> cost reduction through team restructuring</li>\n<li><strong>13%</strong> increase in team output</li>\n<li>Insight-to-validated-solution cycle: weeks \u2192 days</li>\n</ul>"
     }
-  ]
+  ],
+  "logoDomain": "toggl.com"
 }

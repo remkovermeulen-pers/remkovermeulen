@@ -23,11 +23,11 @@
   "sections": [
     {
       "title": "Overview",
-      "body": "<p>Telefonica and O2 offered cloud computing services to business customers, but the service design had not kept pace with the complexity of the product. Customers were struggling to get started, sales teams were losing deals they should have won, and support volumes were high. The root cause was that nobody had mapped the full experience from a customer's perspective — from first awareness through to live usage and renewal.</p>\n<p>This project set out to fix that by building a complete, end-to-end user journey for the cloud computing service.</p>"
+      "body": "<p>Telefonica and O2 offered cloud computing services to business customers, but the service design had not kept pace with the complexity of the product. Customers were struggling to get started, sales teams were losing deals they should have won, and support volumes were high. The root cause was that nobody had mapped the full experience from a customer's perspective \u2014 from first awareness through to live usage and renewal.</p>\n<p>This project set out to fix that by building a complete, end-to-end user journey for the cloud computing service.</p>"
     },
     {
       "title": "Approach",
-      "body": "<p>The work started with research. We interviewed customers at different stages of the journey — those who had just signed up, those actively using the service, and those who had churned or decided not to buy. We also ran sessions with internal stakeholders: sales teams, customer support agents, technical onboarding staff, and account managers.</p>\n<p>From this research we mapped the full journey across every touchpoint: marketing and discovery, sales conversations, contract and setup, onboarding, day-to-day usage, support interactions, and renewal. For each stage we identified what customers needed, what they were actually experiencing, and where the gaps were.</p>"
+      "body": "<p>The work started with research. We interviewed customers at different stages of the journey \u2014 those who had just signed up, those actively using the service, and those who had churned or decided not to buy. We also ran sessions with internal stakeholders: sales teams, customer support agents, technical onboarding staff, and account managers.</p>\n<p>From this research we mapped the full journey across every touchpoint: marketing and discovery, sales conversations, contract and setup, onboarding, day-to-day usage, support interactions, and renewal. For each stage we identified what customers needed, what they were actually experiencing, and where the gaps were.</p>"
     },
     {
       "title": "What We Found",
@@ -41,5 +41,6 @@
       "title": "Results",
       "body": "<p>The improvements that followed the user journey work had measurable commercial impact. Sales conversion rates increased as the buying experience became clearer and the sales materials were updated to reflect actual customer concerns. Churn decreased as onboarding improved and customers reached value faster.</p>\n<p>The project illustrated a broader principle: service design is not just a UX exercise. When you map the full customer journey and involve sales, support, and product teams in understanding it together, you create alignment that has direct commercial consequences.</p>"
     }
-  ]
+  ],
+  "logoDomain": "telefonica.com"
 }

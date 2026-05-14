@@ -21,11 +21,11 @@
     },
     {
       "title": "The Technical Approach",
-      "body": "<p>Mobile networks generate a continuous, anonymised record of where people are and how they move. This data — call detail records at scale — can reveal mobility patterns that are invisible to traditional epidemiological surveillance.</p>\n<p>For source detection, movement data can be traced back in time to identify where infected individuals were before symptoms appeared and before they were identified as cases. This retrospective analysis can locate an outbreak's origin in hours rather than weeks.</p>\n<p>For spread prediction, the same mobility data can model how the virus is likely to move next. People travel in patterns — between home and work, along transport corridors, between urban and rural areas — and these patterns predict where the next case clusters are likely to emerge before they appear in clinical data.</p>"
+      "body": "<p>Mobile networks generate a continuous, anonymised record of where people are and how they move. This data \u2014 call detail records at scale \u2014 can reveal mobility patterns that are invisible to traditional epidemiological surveillance.</p>\n<p>For source detection, movement data can be traced back in time to identify where infected individuals were before symptoms appeared and before they were identified as cases. This retrospective analysis can locate an outbreak's origin in hours rather than weeks.</p>\n<p>For spread prediction, the same mobility data can model how the virus is likely to move next. People travel in patterns \u2014 between home and work, along transport corridors, between urban and rural areas \u2014 and these patterns predict where the next case clusters are likely to emerge before they appear in clinical data.</p>"
     },
     {
       "title": "Using Mobile Networks for Education",
-      "body": "<p>Beyond detection and prediction, the project also demonstrated how mobile infrastructure could deliver targeted health education. Once high-risk locations were identified, SMS messages could be sent to people in those areas with specific, actionable guidance — without requiring them to have smartphones, internet access, or any prior awareness of the outbreak.</p>\n<p>This was particularly valuable in Guinea and the affected parts of Brazil, where infrastructure was limited but mobile penetration was high.</p>"
+      "body": "<p>Beyond detection and prediction, the project also demonstrated how mobile infrastructure could deliver targeted health education. Once high-risk locations were identified, SMS messages could be sent to people in those areas with specific, actionable guidance \u2014 without requiring them to have smartphones, internet access, or any prior awareness of the outbreak.</p>\n<p>This was particularly valuable in Guinea and the affected parts of Brazil, where infrastructure was limited but mobile penetration was high.</p>"
     },
     {
       "title": "My Role",
@@ -33,7 +33,8 @@
     },
     {
       "title": "Impact and Significance",
-      "body": "<p>The project was developed and tested in the context of both Ebola and Zika, demonstrating that the same underlying approach could be adapted to different disease transmission models with different predictive requirements.</p>\n<p>The collaboration with WHO, UNICEF, Harvard, and the Data Pop Alliance positioned Telefonica as a meaningful contributor to global health infrastructure — demonstrating that telecommunications companies hold data assets with genuine public health value, and that this value can be realised responsibly.</p>"
+      "body": "<p>The project was developed and tested in the context of both Ebola and Zika, demonstrating that the same underlying approach could be adapted to different disease transmission models with different predictive requirements.</p>\n<p>The collaboration with WHO, UNICEF, Harvard, and the Data Pop Alliance positioned Telefonica as a meaningful contributor to global health infrastructure \u2014 demonstrating that telecommunications companies hold data assets with genuine public health value, and that this value can be realised responsibly.</p>"
     }
-  ]
+  ],
+  "logoDomain": "telefonica.com"
 }

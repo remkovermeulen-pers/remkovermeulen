@@ -1,6 +1,6 @@
 {
   "id": "36076183-7377-81c6-9ab7-c49d505b389a",
-  "title": "Health at Home — Chronic Disease Management",
+  "title": "Health at Home \u2014 Chronic Disease Management",
   "sector": "Health",
   "status": "Archive",
   "year": null,
@@ -23,11 +23,11 @@
   "sections": [
     {
       "title": "Overview",
-      "body": "<p>Health at Home was a chronic disease management service built for Telefonica, operating across O2 (UK), Movistar (Spain), and Vivo (Brazil). It was designed for patients managing long-term conditions — primarily heart failure, COPD, and diabetes — who needed regular monitoring but could not or should not be in hospital for routine check-ups.</p>\n<p>The service connected patients' home medical devices — scales, blood pressure monitors, heart rate monitors, pulse oximeters, and glucose meters — to a clinical platform that nurses and doctors could access remotely. Patients took their own measurements at home; clinicians reviewed the data, flagged anomalies, and contacted patients when readings required follow-up.</p>"
+      "body": "<p>Health at Home was a chronic disease management service built for Telefonica, operating across O2 (UK), Movistar (Spain), and Vivo (Brazil). It was designed for patients managing long-term conditions \u2014 primarily heart failure, COPD, and diabetes \u2014 who needed regular monitoring but could not or should not be in hospital for routine check-ups.</p>\n<p>The service connected patients' home medical devices \u2014 scales, blood pressure monitors, heart rate monitors, pulse oximeters, and glucose meters \u2014 to a clinical platform that nurses and doctors could access remotely. Patients took their own measurements at home; clinicians reviewed the data, flagged anomalies, and contacted patients when readings required follow-up.</p>"
     },
     {
       "title": "The Role of Ethnographic Research",
-      "body": "<p>The design was grounded in deep ethnographic research with patients, family members, nurses, and doctors. Home visits with patients revealed something that surveys would not have surfaced: the nurse was the emotional core of the service. Patients did not talk about the technology or the measurements. They talked about their nurse.</p>\n<p>As one family member of an 82-year-old heart failure patient put it: \"Dad is all happy after talking to nurse Anna.\" The weekly call was the anchor of the service. Everything else — the measurements, the alerts, the data — was infrastructure that supported that human relationship.</p>"
+      "body": "<p>The design was grounded in deep ethnographic research with patients, family members, nurses, and doctors. Home visits with patients revealed something that surveys would not have surfaced: the nurse was the emotional core of the service. Patients did not talk about the technology or the measurements. They talked about their nurse.</p>\n<p>As one family member of an 82-year-old heart failure patient put it: \"Dad is all happy after talking to nurse Anna.\" The weekly call was the anchor of the service. Everything else \u2014 the measurements, the alerts, the data \u2014 was infrastructure that supported that human relationship.</p>"
     },
     {
       "title": "Designing Around the Nurse",
@@ -41,5 +41,6 @@
       "title": "Results",
       "body": "<ul>\n<li>48% decrease in mortality rate among enrolled patients</li>\n<li>63% decrease in hospital readmission rate</li>\n</ul>\n<p>These are outcomes that most healthcare products never achieve at scale. They are a direct result of designing the service around the clinical and human reality of chronic disease management, rather than around technological possibility alone.</p>"
     }
-  ]
+  ],
+  "logoDomain": "telefonica.com"
 }

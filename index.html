@@ -110,6 +110,11 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
   position:relative; background:var(--bg-elev); flex-shrink:0;
 }
 .proj__img img { width:100%; height:100%; object-fit:cover; }
+.proj__logo {
+  position:absolute; bottom:14px; left:14px; z-index:3;
+  height:24px; max-width:90px; width:auto; object-fit:contain;
+  filter:brightness(0) invert(1); opacity:0.9; pointer-events:none;
+}
 .proj__chip {
   position:absolute; top:14px; right:14px;
   background:var(--primary); color:var(--on-primary);
@@ -265,10 +270,12 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
             var metricsHtml = metrics.map(function(m){
               return '<div><span class="metric">'+esc(m.value)+'</span><div class="metric-label">'+esc(m.label)+'</div></div>';
             }).join('');
+            var logoHtml = p.logoDomain ? '<img class="proj__logo" src="https://cdn.brandfetch.io/'+esc(p.logoDomain)+'/w/300/h/150/logo?theme=dark" alt="">' : '';
             return '<a href="case-study?id='+esc(p.notionId)+'" class="proj lift">'
               +'<div class="proj__img">'
               +'<span class="proj__chip">'+esc(p.sector)+'</span>'
               +'<img class="bw-img" src="'+esc(p.coverImage)+'" alt="'+esc(p.title)+'" loading="lazy">'
+              +logoHtml
               +'</div>'
               +'<h3>'+esc(p.title)+'</h3>'
               +(p.lede ? '<p class="proj__lede">'+esc(p.lede)+'</p>' : '')
@@ -284,13 +291,15 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
   <!-- LOGO STRIP -->
   <div class="logos-outer" id="logos-outer">
     <div class="logos" id="logos-track">
+      <span class="logo-mark"><img src="https://cdn.brandfetch.io/toggl.com/w/512/h/512/logo?theme=dark" alt="Toggl"></span>
+      <span class="logo-mark"><img src="https://cdn.brandfetch.io/signassist.com/w/512/h/512/logo?theme=dark" alt="SignAssist"></span>
       <span class="logo-mark"><img src="https://cdn.brandfetch.io/koahealth.com/w/512/h/512/logo?theme=dark" alt="Koa Health"></span>
+      <span class="logo-mark"><img src="https://cdn.brandfetch.io/janssen.com/w/512/h/512/logo?theme=dark" alt="Janssen"></span>
       <span class="logo-mark"><img src="https://cdn.brandfetch.io/telefonica.com/w/512/h/512/logo?theme=dark" alt="Telefónica"></span>
       <span class="logo-mark"><img src="https://cdn.brandfetch.io/ft.com/w/512/h/512/logo?theme=dark" alt="Financial Times"></span>
       <span class="logo-mark"><img src="https://cdn.brandfetch.io/renault.com/w/512/h/512/logo?theme=dark" alt="Renault"></span>
+      <span class="logo-mark"><img src="https://cdn.brandfetch.io/ntrglobal.com/w/512/h/512/logo?theme=dark" alt="NTRglobal"></span>
       <span class="logo-mark"><img src="https://cdn.brandfetch.io/britishcouncil.org/w/512/h/512/logo?theme=dark" alt="British Council"></span>
-      <span class="logo-mark"><img src="https://cdn.brandfetch.io/janssen.com/w/512/h/512/logo?theme=dark" alt="Janssen"></span>
-      <span class="logo-mark"><img src="https://cdn.brandfetch.io/toggl.com/w/512/h/512/logo?theme=dark" alt="Toggl"></span>
     </div>
   </div>
   <script>

@@ -17,11 +17,11 @@
   "sections": [
     {
       "title": "Overview",
-      "body": "<p>Bipolar disorder is a chronic condition characterised by cycles of mania and depression that can vary significantly in frequency, duration, and severity. For psychiatrists, monitoring a patient's current state between appointments is difficult. Patients often lack insight into their own mood state — particularly during manic episodes — and self-reporting is unreliable. For patients, the condition can feel unpredictable and difficult to manage.</p>\n<p>This project, developed at Telefonica R&amp;D in collaboration with Hospital Clinic Barcelona and O2 UK, explored whether passive behavioural data from mobile networks could provide a continuous, objective signal of a patient's bipolar status — without requiring any active input from the patient themselves.</p>"
+      "body": "<p>Bipolar disorder is a chronic condition characterised by cycles of mania and depression that can vary significantly in frequency, duration, and severity. For psychiatrists, monitoring a patient's current state between appointments is difficult. Patients often lack insight into their own mood state \u2014 particularly during manic episodes \u2014 and self-reporting is unreliable. For patients, the condition can feel unpredictable and difficult to manage.</p>\n<p>This project, developed at Telefonica R&amp;D in collaboration with Hospital Clinic Barcelona and O2 UK, explored whether passive behavioural data from mobile networks could provide a continuous, objective signal of a patient's bipolar status \u2014 without requiring any active input from the patient themselves.</p>"
     },
     {
       "title": "The Approach",
-      "body": "<p>The core insight was that changes in bipolar state are reflected in changes in behaviour: communication patterns, location patterns, sleep-wake cycles, and social activity all shift measurably between manic, depressive, and stable phases. These behavioural signals are already captured passively by mobile networks — call records, data usage, location data — and do not require the patient to open an app or answer a questionnaire.</p>\n<p>By applying machine learning to anonymised network data, the system could identify patterns associated with different mood states and flag significant changes for clinical review.</p>"
+      "body": "<p>The core insight was that changes in bipolar state are reflected in changes in behaviour: communication patterns, location patterns, sleep-wake cycles, and social activity all shift measurably between manic, depressive, and stable phases. These behavioural signals are already captured passively by mobile networks \u2014 call records, data usage, location data \u2014 and do not require the patient to open an app or answer a questionnaire.</p>\n<p>By applying machine learning to anonymised network data, the system could identify patterns associated with different mood states and flag significant changes for clinical review.</p>"
     },
     {
       "title": "Why No Smartphone Required",
@@ -33,7 +33,8 @@
     },
     {
       "title": "Clinical Impact",
-      "body": "<p>The service gave psychiatrists a continuous, objective picture of their patients' condition between appointments — something that had not previously been possible without expensive wearables or frequent patient-initiated check-ins. For patients, knowing the system was monitoring passively reduced the burden of self-tracking during periods when self-awareness was most compromised.</p>\n<p>The project also demonstrated a broader principle: the most accessible health monitoring tools may be the ones that require the least active participation from the user.</p>"
+      "body": "<p>The service gave psychiatrists a continuous, objective picture of their patients' condition between appointments \u2014 something that had not previously been possible without expensive wearables or frequent patient-initiated check-ins. For patients, knowing the system was monitoring passively reduced the burden of self-tracking during periods when self-awareness was most compromised.</p>\n<p>The project also demonstrated a broader principle: the most accessible health monitoring tools may be the ones that require the least active participation from the user.</p>"
     }
-  ]
+  ],
+  "logoDomain": "koahealth.com"
 }

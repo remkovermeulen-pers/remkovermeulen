@@ -17,15 +17,15 @@
   "sections": [
     {
       "title": "Overview",
-      "body": "<p>Machine learning models are increasingly capable of making accurate predictions in clinical settings. But accuracy alone does not drive adoption. Clinicians are trained to reason from evidence: they want to understand why a prediction was made, not just what the prediction is. A model that says \"this patient is at elevated risk\" without explaining the basis for that conclusion will be ignored — or worse, followed blindly without appropriate clinical judgement.</p>\n<p>This project, developed at Telefonica Alpha, addressed the trust gap between ML model outputs and clinical users. The goal was to make the reasoning behind predictions transparent, interpretable, and trustworthy enough to support real clinical decision-making.</p>"
+      "body": "<p>Machine learning models are increasingly capable of making accurate predictions in clinical settings. But accuracy alone does not drive adoption. Clinicians are trained to reason from evidence: they want to understand why a prediction was made, not just what the prediction is. A model that says \"this patient is at elevated risk\" without explaining the basis for that conclusion will be ignored \u2014 or worse, followed blindly without appropriate clinical judgement.</p>\n<p>This project, developed at Telefonica Alpha, addressed the trust gap between ML model outputs and clinical users. The goal was to make the reasoning behind predictions transparent, interpretable, and trustworthy enough to support real clinical decision-making.</p>"
     },
     {
       "title": "The Problem with Black Boxes",
-      "body": "<p>The models underlying clinical predictions — gradient boosting, neural networks, ensemble methods — are mathematically opaque. A trained model can output a risk score with high accuracy, but the internal mechanics that produced it are not legible to a human reviewer. For clinicians, this opacity is a barrier. For regulators, it is a compliance issue. For patients, it raises questions about accountability.</p>"
+      "body": "<p>The models underlying clinical predictions \u2014 gradient boosting, neural networks, ensemble methods \u2014 are mathematically opaque. A trained model can output a risk score with high accuracy, but the internal mechanics that produced it are not legible to a human reviewer. For clinicians, this opacity is a barrier. For regulators, it is a compliance issue. For patients, it raises questions about accountability.</p>"
     },
     {
       "title": "The Approach",
-      "body": "<p>The team explored methods for converting complex model outputs into more interpretable representations. A core technique used was Trepan — an approach that extracts a decision tree from a trained model, approximating its behaviour in a form that can be read and followed by a human reviewer.</p>\n<p>Rather than replacing the underlying model with a simpler one (which would sacrifice accuracy), Trepan generates a companion representation that explains the model's behaviour in terms of feature importance and decision logic. Clinicians could see which factors most influenced a risk prediction — for example, \"appointment non-attendance in the last 6 weeks\" or \"recent prescription change\" — and weigh these against their own clinical knowledge.</p>"
+      "body": "<p>The team explored methods for converting complex model outputs into more interpretable representations. A core technique used was Trepan \u2014 an approach that extracts a decision tree from a trained model, approximating its behaviour in a form that can be read and followed by a human reviewer.</p>\n<p>Rather than replacing the underlying model with a simpler one (which would sacrifice accuracy), Trepan generates a companion representation that explains the model's behaviour in terms of feature importance and decision logic. Clinicians could see which factors most influenced a risk prediction \u2014 for example, \"appointment non-attendance in the last 6 weeks\" or \"recent prescription change\" \u2014 and weigh these against their own clinical knowledge.</p>"
     },
     {
       "title": "My Role",
@@ -35,5 +35,6 @@
       "title": "Results and Impact",
       "body": "<p>The explainable AI work was closely linked to the mental health crisis prediction service. Clinicians who were given access to the prediction plus an explanation of the contributing factors were significantly more willing to act on the output than those who received a risk score alone.</p>\n<p>This reinforced a broader finding: the adoption of AI in clinical settings is not primarily a technical problem. It is a trust and communication problem. Building tools that help clinicians understand and interrogate model outputs is as important as improving model accuracy.</p>"
     }
-  ]
+  ],
+  "logoDomain": "koahealth.com"
 }

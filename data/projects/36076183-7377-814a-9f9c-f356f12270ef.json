@@ -1,6 +1,6 @@
 {
   "id": "36076183-7377-814a-9f9c-f356f12270ef",
-  "title": "Brain Training — Cognitive Bias Modification",
+  "title": "Brain Training \u2014 Cognitive Bias Modification",
   "sector": "Health",
   "status": "Archive",
   "year": null,
@@ -8,7 +8,7 @@
     "Product",
     "Research"
   ],
-  "lede": "Alcohol consumption is one of the most significant and most preventable contributors to poor health outcomes in the UK. Existing behaviour change approaches — information campaigns, counselling, GP re",
+  "lede": "Alcohol consumption is one of the most significant and most preventable contributors to poor health outcomes in the UK. Existing behaviour change approaches \u2014 information campaigns, counselling, GP re",
   "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
   "role": "",
   "timeline": "",
@@ -22,7 +22,7 @@
   "sections": [
     {
       "title": "Overview",
-      "body": "<p>Alcohol consumption is one of the most significant and most preventable contributors to poor health outcomes in the UK. Existing behaviour change approaches — information campaigns, counselling, GP referrals — reach a small proportion of the people who would benefit, and produce modest results in those they do reach.</p>\n<p>This project took a different approach. Rather than trying to persuade people to drink less through information or willpower, it used Cognitive Bias Modification (CBM) to shift the underlying automatic responses that drive drinking behaviour.</p>"
+      "body": "<p>Alcohol consumption is one of the most significant and most preventable contributors to poor health outcomes in the UK. Existing behaviour change approaches \u2014 information campaigns, counselling, GP referrals \u2014 reach a small proportion of the people who would benefit, and produce modest results in those they do reach.</p>\n<p>This project took a different approach. Rather than trying to persuade people to drink less through information or willpower, it used Cognitive Bias Modification (CBM) to shift the underlying automatic responses that drive drinking behaviour.</p>"
     },
     {
       "title": "The Science",
@@ -30,7 +30,7 @@
     },
     {
       "title": "What We Built",
-      "body": "<p>The service was delivered digitally, making it accessible to large numbers of people without clinical contact. Users completed short CBM tasks — typically five to ten minutes — that modified their attentional and approach responses to alcohol-related stimuli over time.</p>\n<p>The design had to make something inherently repetitive and effortful feel manageable and worth continuing. This required careful attention to session length, feedback mechanisms, and the framing of the activity in a way that felt meaningful to users rather than arbitrary.</p>"
+      "body": "<p>The service was delivered digitally, making it accessible to large numbers of people without clinical contact. Users completed short CBM tasks \u2014 typically five to ten minutes \u2014 that modified their attentional and approach responses to alcohol-related stimuli over time.</p>\n<p>The design had to make something inherently repetitive and effortful feel manageable and worth continuing. This required careful attention to session length, feedback mechanisms, and the framing of the activity in a way that felt meaningful to users rather than arbitrary.</p>"
     },
     {
       "title": "The Research Study",
@@ -40,5 +40,6 @@
       "title": "My Role",
       "body": "<p>I led the product and design work at Telefonica Alpha, working with Professor Dolan's team at LSE on translating the clinical CBM protocols into a consumer digital product, and coordinating the BBC partnership for the research study.</p>\n<p>The translation from clinical protocol to consumer product was the central design challenge. CBM in a clinical setting is administered by a practitioner who can motivate and monitor a patient. In a self-directed digital context, the product design has to carry all of that weight.</p>"
     }
-  ]
+  ],
+  "logoDomain": "koahealth.com"
 }

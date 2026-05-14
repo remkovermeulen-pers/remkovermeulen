@@ -26,11 +26,11 @@
     },
     {
       "title": "Why This Work Mattered",
-      "body": "<p>Product teams operating inside a company are necessarily focused on near-term delivery. Roadmaps, quarterly targets, and user feedback loops all pull attention towards incremental improvement. Futures work creates space for a different kind of thinking — one that is not constrained by current technology, business models, or user expectations.</p>\n<p>For Koa Health, this was strategically important. Digital mental health was a fast-moving space with significant uncertainty about where regulation, clinical practice, and consumer behaviour were heading. Having a clearer view of plausible futures helped inform longer-term product strategy and investment decisions.</p>"
+      "body": "<p>Product teams operating inside a company are necessarily focused on near-term delivery. Roadmaps, quarterly targets, and user feedback loops all pull attention towards incremental improvement. Futures work creates space for a different kind of thinking \u2014 one that is not constrained by current technology, business models, or user expectations.</p>\n<p>For Koa Health, this was strategically important. Digital mental health was a fast-moving space with significant uncertainty about where regulation, clinical practice, and consumer behaviour were heading. Having a clearer view of plausible futures helped inform longer-term product strategy and investment decisions.</p>"
     },
     {
       "title": "The Process",
-      "body": "<p>Working with researchers and designers from the Royal College of Art, we ran a structured futures exploration process. This combined horizon scanning (tracking weak signals and emerging trends across technology, culture, healthcare policy, and social behaviour), expert interviews, and speculative design methods.</p>\n<p>From this work we developed 33 distinct future scenarios, each describing a plausible context in which mental health and wellbeing services might operate. The scenarios varied widely — from near-future extensions of current trends to more speculative futures involving significant shifts in how society understands and manages mental health.</p>\n<p>From these scenarios we then developed 10 future product concepts, each grounded in one or more of the scenarios. These ranged from passive monitoring systems that integrated into everyday environments, to new models for peer support and community-based care, to tools for preventative mental health management built into life transitions.</p>"
+      "body": "<p>Working with researchers and designers from the Royal College of Art, we ran a structured futures exploration process. This combined horizon scanning (tracking weak signals and emerging trends across technology, culture, healthcare policy, and social behaviour), expert interviews, and speculative design methods.</p>\n<p>From this work we developed 33 distinct future scenarios, each describing a plausible context in which mental health and wellbeing services might operate. The scenarios varied widely \u2014 from near-future extensions of current trends to more speculative futures involving significant shifts in how society understands and manages mental health.</p>\n<p>From these scenarios we then developed 10 future product concepts, each grounded in one or more of the scenarios. These ranged from passive monitoring systems that integrated into everyday environments, to new models for peer support and community-based care, to tools for preventative mental health management built into life transitions.</p>"
     },
     {
       "title": "Testing and Validation",
@@ -40,5 +40,6 @@
       "title": "My Role",
       "body": "<p>As VP of Product &amp; Innovation at Koa Health, I initiated and oversaw the Xploratory programme, managed the collaboration with the Royal College of Art, and ensured the outputs were connected back to strategic decisions within the company. The work was published via the Xploratory website and contributed to Koa Health's positioning as a thought leader in the digital mental health space.</p>"
     }
-  ]
+  ],
+  "logoDomain": "telefonica.com"
 }

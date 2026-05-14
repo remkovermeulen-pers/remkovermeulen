@@ -22,7 +22,7 @@
   "sections": [
     {
       "title": "Overview",
-      "body": "<p>Parkinson's disease is notoriously difficult to diagnose in its early stages. By the time a formal diagnosis is made, the disease has often been progressing for years. During that window, early intervention could significantly slow deterioration and improve quality of life — but only if the condition is detected in time.</p>\n<p>This project, developed in collaboration between Telefonica R&amp;D and Hospital Clinic Barcelona, explored whether voice analysis could serve as an accessible, low-cost early detection method. The hypothesis was that subtle changes in speech patterns — tremor, altered rhythm, reduced volume — appear before other visible symptoms and can be captured through a standard telephone call.</p>"
+      "body": "<p>Parkinson's disease is notoriously difficult to diagnose in its early stages. By the time a formal diagnosis is made, the disease has often been progressing for years. During that window, early intervention could significantly slow deterioration and improve quality of life \u2014 but only if the condition is detected in time.</p>\n<p>This project, developed in collaboration between Telefonica R&amp;D and Hospital Clinic Barcelona, explored whether voice analysis could serve as an accessible, low-cost early detection method. The hypothesis was that subtle changes in speech patterns \u2014 tremor, altered rhythm, reduced volume \u2014 appear before other visible symptoms and can be captured through a standard telephone call.</p>"
     },
     {
       "title": "What We Built",
@@ -38,7 +38,8 @@
     },
     {
       "title": "Why It Matters",
-      "body": "<p>The scale of the opportunity is significant. Early Parkinson's detection changes the clinical calculus: treatment begun years earlier can meaningfully slow decline. A tool that works over a phone call — requiring no hospital visit, no specialist referral, no wearable device — removes almost all barriers to access. This matters especially for older populations and those in areas with limited healthcare infrastructure.</p>\n<p>The project demonstrated that passive, low-friction health monitoring does not require expensive hardware or complex user behaviour change. A phone call is something almost anyone can make.</p>"
+      "body": "<p>The scale of the opportunity is significant. Early Parkinson's detection changes the clinical calculus: treatment begun years earlier can meaningfully slow decline. A tool that works over a phone call \u2014 requiring no hospital visit, no specialist referral, no wearable device \u2014 removes almost all barriers to access. This matters especially for older populations and those in areas with limited healthcare infrastructure.</p>\n<p>The project demonstrated that passive, low-friction health monitoring does not require expensive hardware or complex user behaviour change. A phone call is something almost anyone can make.</p>"
     }
-  ]
+  ],
+  "logoDomain": "telefonica.com"
 }
