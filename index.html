@@ -110,7 +110,9 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
 .proj-card__body { padding:32px; display:flex; flex-direction:column; gap:20px; flex:1; }
 .proj-card h3 { margin:0; font-family:var(--font-display); font-weight:600; font-size:clamp(22px,2.4vw,30px); line-height:1.15; letter-spacing:-0.01em; }
 .proj-card__lede { margin:0; font-size:15px; color:var(--muted-2); line-height:1.6; }
-.proj-card__footer { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px; margin-top:auto; }
+.proj-card__stats { display:flex; gap:32px; padding-top:20px; border-top:1px solid var(--line); margin-top:auto; }
+.proj-card__stat .metric { font-size:clamp(26px,2.6vw,36px); margin-bottom:4px; }
+.proj-card__footer { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px; }
 .proj-card__tags { display:flex; flex-wrap:wrap; gap:8px; }
 .proj-card__arrow { display:flex; align-items:center; gap:8px; font-size:11px; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:var(--muted-2); transition:color .25s; white-space:nowrap; }
 .proj-card:hover .proj-card__arrow { color:var(--primary); }
@@ -240,6 +242,8 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
           if (!grid) return;
           grid.innerHTML = projects.slice(0,4).map(function(p){
             var tags = (p.tags||[]).map(function(t){ return '<span class="tag">'+esc(t)+'</span>'; }).join('');
+            var metrics = (p.metrics||[]).filter(function(m){ return m.value; }).slice(0,2)
+              .map(function(m){ return '<div class="proj-card__stat"><span class="metric">'+esc(m.value)+'</span><div class="metric-label">'+esc(m.label)+'</div></div>'; }).join('');
             return '<a href="pages/case-study?id='+esc(p.notionId)+'" class="proj-card">'
               +'<div class="proj-card__img">'
               +'<span class="proj-card__chip">'+esc(p.sector)+'</span>'
@@ -248,6 +252,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
               +'<div class="proj-card__body">'
               +'<h3>'+esc(p.title)+'</h3>'
               +'<p class="proj-card__lede">'+esc(p.lede)+'</p>'
+              +(metrics ? '<div class="proj-card__stats">'+metrics+'</div>' : '')
               +'<div class="proj-card__footer"><div class="proj-card__tags">'+tags+'</div>'
               +'<span class="proj-card__arrow">View case study '+arrow+'</span></div>'
               +'</div></a>';

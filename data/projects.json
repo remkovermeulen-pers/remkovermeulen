@@ -10,7 +10,21 @@
       "Product"
     ],
     "lede": "Restructured product, design and engineering teams reducing costs by 26%, while increasing team output by 13%.",
-    "coverImage": "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1200&q=80"
+    "coverImage": "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1200&q=80",
+    "metrics": [
+      {
+        "value": "94%",
+        "label": "increase in first-time activation"
+      },
+      {
+        "value": "26%",
+        "label": "cost reduction"
+      },
+      {
+        "value": "13%",
+        "label": "increase in team output"
+      }
+    ]
   },
   {
     "notionId": "35f76183-7377-816c-8a7f-e43d868da1c7",
@@ -23,7 +37,25 @@
       "Product"
     ],
     "lede": "AI-based property and investment management platform. Defined the product vision, strategy and roadmap, managed stakeholder relationships (investors), and established product operations and analytics ",
-    "coverImage": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&q=80"
+    "coverImage": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&q=80",
+    "metrics": [
+      {
+        "value": "87%",
+        "label": "increase in active users"
+      },
+      {
+        "value": "75%",
+        "label": "reduction in time-to-value"
+      },
+      {
+        "value": "",
+        "label": "CAC/LTV from 162% to 21%"
+      },
+      {
+        "value": "23%",
+        "label": "MRR growth"
+      }
+    ]
   },
   {
     "notionId": "35f76183-7377-812e-89c0-f80d125d898b",
@@ -36,7 +68,17 @@
       "Product"
     ],
     "lede": "Led product definition, design and agile development of a mental health DTx (Digital Therapeutics) product to be used in combination with Spravato (esketamine) — a treatment for treatment-resistant de",
-    "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80"
+    "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
+    "metrics": [
+      {
+        "value": "",
+        "label": "Clinical DTx companion to Spravato for treatment-resistant depression"
+      },
+      {
+        "value": "3",
+        "label": "digital health patents"
+      }
+    ]
   },
   {
     "notionId": "35f76183-7377-8135-9dd1-d1b22dfa6da0",
@@ -50,7 +92,33 @@
       "Research"
     ],
     "lede": "Co-founded Telefonica Alpha Health (later Koa Health) and grew the product and design team from 1 to 40 people. Built a portfolio of digital mental health products that raised €66M in investment and r",
-    "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80"
+    "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
+    "metrics": [
+      {
+        "value": "$66M",
+        "label": "investment raised"
+      },
+      {
+        "value": "80%",
+        "label": "recall on ML crisis prediction"
+      },
+      {
+        "value": "3M",
+        "label": "users in 70+ countries"
+      },
+      {
+        "value": "62%",
+        "label": "increase in velocity"
+      },
+      {
+        "value": "82%",
+        "label": "decrease in cost per investigation"
+      },
+      {
+        "value": "55%",
+        "label": "reduction in symptoms (clinical trial)"
+      }
+    ]
   },
   {
     "notionId": "35f76183-7377-81a8-b45d-f022b6c4842e",
@@ -63,7 +131,17 @@
       "Research"
     ],
     "lede": "Designed next-generation connected car services for Renault, using Kano models to maximise driver engagement and utility.",
-    "coverImage": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1200&q=80"
+    "coverImage": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1200&q=80",
+    "metrics": [
+      {
+        "value": "75%",
+        "label": "reduction in time-to-value"
+      },
+      {
+        "value": "",
+        "label": "connected car service framework using Kano model prioritisation"
+      }
+    ]
   },
   {
     "notionId": "35f76183-7377-8167-aade-e9ceff1342ed",
@@ -77,7 +155,25 @@
       "Research"
     ],
     "lede": "Led UX, product and service design teams across 5 global locations (10–17 people), building eHealth, cloud and data privacy products at Telefonica worldwide.",
-    "coverImage": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&q=80"
+    "coverImage": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&q=80",
+    "metrics": [
+      {
+        "value": "48%",
+        "label": "decrease in chronic disease mortality rate"
+      },
+      {
+        "value": "63%",
+        "label": "decrease in hospital readmission"
+      },
+      {
+        "value": "20+",
+        "label": "MVPs, 5 launched"
+      },
+      {
+        "value": "78%",
+        "label": "precision in Parkinson's voice detection"
+      }
+    ]
   },
   {
     "notionId": "35f76183-7377-81de-af86-c88584fb33f7",
@@ -90,7 +186,13 @@
       "Product"
     ],
     "lede": "Digitising the consumer decision journey and enhancing online purchase behaviour tracking for the Financial Times.",
-    "coverImage": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200&q=80"
+    "coverImage": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200&q=80",
+    "metrics": [
+      {
+        "value": "212%",
+        "label": "increase in conversions for sign-up and landing pages"
+      }
+    ]
   },
   {
     "notionId": "35f76183-7377-8162-a013-d70ec2ca966f",
@@ -103,7 +205,21 @@
       "Product"
     ],
     "lede": "Established and managed the user experience team (designers, copywriters, engineers, user researchers) for a SaaS network management product. Worked with the CEO and engineering team to change the pro",
-    "coverImage": "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1200&q=80"
+    "coverImage": "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1200&q=80",
+    "metrics": [
+      {
+        "value": "212%",
+        "label": "increase in conversions"
+      },
+      {
+        "value": "50%",
+        "label": "decrease in time on task (top 5 tasks)"
+      },
+      {
+        "value": "50%",
+        "label": "simplification of product portfolio"
+      }
+    ]
   },
   {
     "notionId": "35f76183-7377-8167-8d4f-fbcae3ef4c2d",
@@ -116,7 +232,21 @@
       "Product"
     ],
     "lede": "Reimagining digital language learning platforms to reach millions of learners across emerging markets. Designed a global teacher collaboration platform for the British Council, with reach across India",
-    "coverImage": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1200&q=80"
+    "coverImage": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1200&q=80",
+    "metrics": [
+      {
+        "value": "3M+",
+        "label": "active learners"
+      },
+      {
+        "value": "40%",
+        "label": "engagement uplift"
+      },
+      {
+        "value": "",
+        "label": "global teacher collaboration platform"
+      }
+    ]
   },
   {
     "notionId": "36076183-7377-8182-aee2-fed62d9b4268",
@@ -129,7 +259,8 @@
       "Research"
     ],
     "lede": "",
-    "coverImage": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1200&q=80"
+    "coverImage": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1200&q=80",
+    "metrics": []
   },
   {
     "notionId": "36076183-7377-8114-881b-d864ffc34948",
@@ -143,7 +274,8 @@
       "Research"
     ],
     "lede": "",
-    "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80"
+    "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
+    "metrics": []
   },
   {
     "notionId": "36076183-7377-812b-9600-f901966bdb08",
@@ -156,7 +288,8 @@
       "Research"
     ],
     "lede": "",
-    "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80"
+    "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
+    "metrics": []
   },
   {
     "notionId": "36076183-7377-812d-9aec-f4697182cf9d",
@@ -171,7 +304,13 @@
       "Research"
     ],
     "lede": "",
-    "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80"
+    "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
+    "metrics": [
+      {
+        "value": "90%",
+        "label": "response rate, 55% average symptom reduction (equal to best MGH therapists), 95% cost reduction. Pending FDA Class II de novo and CE mark Class 1."
+      }
+    ]
   },
   {
     "notionId": "36076183-7377-814a-9f9c-f356f12270ef",
@@ -184,7 +323,13 @@
       "Research"
     ],
     "lede": "",
-    "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80"
+    "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
+    "metrics": [
+      {
+        "value": "",
+        "label": "Research study launched with over 25,000 participants in the UK."
+      }
+    ]
   },
   {
     "notionId": "36076183-7377-816c-9a63-e4952bd248d0",
@@ -197,7 +342,13 @@
       "Research"
     ],
     "lede": "",
-    "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80"
+    "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
+    "metrics": [
+      {
+        "value": "78%",
+        "label": "detection accuracy."
+      }
+    ]
   },
   {
     "notionId": "36076183-7377-8179-9794-f4047d45ffba",
@@ -211,7 +362,13 @@
       "Product"
     ],
     "lede": "",
-    "coverImage": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&q=80"
+    "coverImage": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&q=80",
+    "metrics": [
+      {
+        "value": "",
+        "label": "Led design, product management, roadmap, and product vision."
+      }
+    ]
   },
   {
     "notionId": "36076183-7377-8181-a326-c925904d52f8",
@@ -224,7 +381,8 @@
       "Research"
     ],
     "lede": "",
-    "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80"
+    "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
+    "metrics": []
   },
   {
     "notionId": "36076183-7377-8186-98c9-d7ffbbb950f3",
@@ -237,7 +395,13 @@
       "Design"
     ],
     "lede": "",
-    "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80"
+    "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
+    "metrics": [
+      {
+        "value": "75%",
+        "label": "reduction in time to create a programme."
+      }
+    ]
   },
   {
     "notionId": "36076183-7377-8191-b686-ee42ad8574d4",
@@ -250,7 +414,8 @@
       "Research"
     ],
     "lede": "",
-    "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80"
+    "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
+    "metrics": []
   },
   {
     "notionId": "36076183-7377-8195-b39a-cfa1657491db",
@@ -263,7 +428,8 @@
       "Research"
     ],
     "lede": "",
-    "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80"
+    "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
+    "metrics": []
   },
   {
     "notionId": "36076183-7377-81ad-ad56-ddcc3b80e04d",
@@ -276,7 +442,13 @@
       "Research"
     ],
     "lede": "",
-    "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80"
+    "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
+    "metrics": [
+      {
+        "value": "75%",
+        "label": "accuracy predicting mental health crisis 4 weeks in advance."
+      }
+    ]
   },
   {
     "notionId": "36076183-7377-81ae-9453-ebb3a48a1cf3",
@@ -289,7 +461,8 @@
       "Research"
     ],
     "lede": "",
-    "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80"
+    "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
+    "metrics": []
   },
   {
     "notionId": "36076183-7377-81c6-9ab7-c49d505b389a",
@@ -303,7 +476,13 @@
       "Research"
     ],
     "lede": "",
-    "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80"
+    "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
+    "metrics": [
+      {
+        "value": "48%",
+        "label": "decrease in mortality, 63% decrease in readmission rate."
+      }
+    ]
   },
   {
     "notionId": "36076183-7377-81c8-85aa-d341a65cf2b5",
@@ -316,7 +495,8 @@
       "Research"
     ],
     "lede": "",
-    "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80"
+    "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
+    "metrics": []
   },
   {
     "notionId": "36076183-7377-81ce-92bc-caa57a662ca6",
@@ -329,7 +509,13 @@
       "Research"
     ],
     "lede": "",
-    "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80"
+    "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
+    "metrics": [
+      {
+        "value": "33",
+        "label": "scenarios and 10 future products tested online."
+      }
+    ]
   },
   {
     "notionId": "36076183-7377-81d6-bf9a-f4abfd8e8c2c",
@@ -343,7 +529,8 @@
       "Research"
     ],
     "lede": "",
-    "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80"
+    "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
+    "metrics": []
   },
   {
     "notionId": "36076183-7377-81ec-ab0d-cb34f758bbcf",
@@ -357,6 +544,12 @@
       "Research"
     ],
     "lede": "",
-    "coverImage": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&q=80"
+    "coverImage": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&q=80",
+    "metrics": [
+      {
+        "value": "",
+        "label": "Improved sales conversion rates and lowered churn."
+      }
+    ]
   }
 ]

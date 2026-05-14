@@ -272,7 +272,7 @@ async function fetchProjects() {
     // Filter out Role/Partners from displayed sections (they live in sidebar)
     const displaySections = sections.filter(s => s.title !== 'Role' && s.title !== 'Partners');
 
-    const meta = { notionId: page.id, title, sector, status, year, tags, lede, coverImage };
+    const meta = { notionId: page.id, title, sector, status, year, tags, lede, coverImage, metrics };
     metaList.push(meta);
 
     fs.writeFileSync(

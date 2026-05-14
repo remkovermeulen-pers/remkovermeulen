@@ -201,6 +201,8 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
           if (count) count.textContent = projects.length + ' Case Studies';
           grid.innerHTML = projects.map(function(p){
             var tags = (p.tags || []).map(function(t){ return '<span class="tag">' + esc(t) + '</span>'; }).join('');
+            var metrics = (p.metrics || []).filter(function(m){ return m.value; }).slice(0,2)
+              .map(function(m){ return '<div class="proj-card__stat"><span class="metric">'+esc(m.value)+'</span><div class="metric-label">'+esc(m.label)+'</div></div>'; }).join('');
             return '<a href="case-study?id=' + esc(p.notionId) + '" class="proj-card">'
               + '<div class="proj-card__img">'
               + '<span class="proj-card__chip">' + esc(p.sector) + '</span>'
@@ -209,6 +211,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
               + '<div class="proj-card__body">'
               + '<h3>' + esc(p.title) + '</h3>'
               + '<p class="proj-card__lede">' + esc(p.lede) + '</p>'
+              + (metrics ? '<div class="proj-card__stats">' + metrics + '</div>' : '')
               + '<div class="proj-card__footer">'
               + '<div class="proj-card__tags">' + tags + '</div>'
               + '<span class="proj-card__arrow">View case study ' + arrow + '</span>'
