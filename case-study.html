@@ -239,7 +239,6 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
     var nextProj    = getNext(proj.id, all);
     var prevProj    = getPrev(proj.id, all);
     var sectionsHtml = buildSections(proj.sections);
-    var metricsHtml  = buildMetrics(proj.metrics);
     var sidebarHtml  = buildSidebar(proj);
     var nextHtml     = buildNext(nextProj);
     var pagerHtml    = buildPager(proj, prevProj, nextProj, all);
@@ -262,7 +261,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
 
       '<div class="cs-body">' +
         '<aside class="cs-aside">' + sidebarHtml + '</aside>' +
-        '<article class="cs-content">' + sectionsHtml + metricsHtml + '</article>' +
+        '<article class="cs-content">' + sectionsHtml + '</article>' +
       '</div>' +
 
       nextHtml;
