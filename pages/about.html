@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Remko Vermeulen</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:          #fbf9f8;
+  --bg-card:     #ffffff;
+  --bg-elev:     #efeded;
+  --primary:     #1b1c1c;
+  --on-primary:  #ffffff;
+  --muted:       #444748;
+  --muted-2:     #65645f;
+  --muted-3:     #87847a;
+  --line:        rgba(27,28,28,0.12);
+  --accent:      #A68B77;
+  --font-display:'DM Serif Display','Playfair Display',Georgia,serif;
+  --font-body:   'Hanken Grotesk','Inter',system-ui,sans-serif;
+  --pad-desktop: 64px;
+  --pad-mobile:  20px;
+}
+*,*::before,*::after { box-sizing:border-box; }
+html,body { margin:0; padding:0; }
+body { background:var(--bg); color:var(--primary); font-family:var(--font-body); font-size:16px; line-height:1.6; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility; }
+img { display:block; max-width:100%; }
+a { color:inherit; text-decoration:none; }
+button { font:inherit; cursor:pointer; background:none; border:0; color:inherit; }
+.container { max-width:1280px; margin:0 auto; padding:0 var(--pad-desktop); }
+@media (max-width:760px) { .container { padding:0 var(--pad-mobile); } }
+
+.accent-mark { display:inline-block; width:7px; height:7px; background:var(--accent); margin-right:12px; vertical-align:1px; }
+.label-xs { font-size:11px; font-weight:700; letter-spacing:0.18em; text-transform:uppercase; line-height:1; color:var(--muted-2); }
+.label-sm { font-size:12px; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; line-height:1; color:var(--primary); }
+.bw-img { filter:grayscale(100%) contrast(108%); transition:filter .6s cubic-bezier(.22,1,.36,1); }
+.bw-img:hover { filter:grayscale(0%) contrast(105%); }
+.btn { display:inline-flex; align-items:center; gap:10px; padding:16px 28px; font-size:11px; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; border:1px solid var(--primary); background:var(--bg-card); color:var(--primary); transition:box-shadow .25s, transform .25s; }
+.btn:hover { box-shadow:4px 4px 0 0 var(--primary); transform:translate(-2px,-2px); }
+.metric { font-family:var(--font-body); font-weight:600; font-size:clamp(28px,3.5vw,40px); color:var(--accent); letter-spacing:-0.01em; line-height:1; display:block; margin-bottom:6px; }
+
+/* NAV */
+.site-nav { position:sticky; top:0; z-index:50; background:var(--bg); border-bottom:1px solid var(--line); }
+.site-nav__inner { display:flex; align-items:center; justify-content:space-between; height:76px; }
+.site-nav__brand { font-family:var(--font-display); font-weight:700; font-size:22px; letter-spacing:-0.01em; }
+.site-nav__links { display:flex; align-items:center; gap:36px; }
+.site-nav__link { font-size:13px; font-weight:500; letter-spacing:0.14em; text-transform:uppercase; color:var(--muted-2); padding-bottom:4px; transition:color .2s; }
+.site-nav__link:hover { color:var(--primary); }
+.site-nav__link.is-active { color:var(--primary); font-weight:600; border-bottom:1px solid var(--primary); }
+.site-nav__cta { background:var(--primary); color:var(--on-primary); padding:12px 22px; font-size:11px; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; border:1px solid var(--primary); transition:box-shadow .2s, transform .2s; }
+.site-nav__cta:hover { box-shadow:4px 4px 0 0 var(--primary); transform:translate(-2px,-2px); }
+.site-nav__burger { display:none; width:36px; height:36px; align-items:center; justify-content:center; border:1px solid var(--primary); }
+.site-nav__burger span,.site-nav__burger span::before,.site-nav__burger span::after { display:block; width:16px; height:1.5px; background:var(--primary); position:relative; }
+.site-nav__burger span::before { content:''; position:absolute; top:-5px; left:0; width:100%; height:100%; background:var(--primary); }
+.site-nav__burger span::after  { content:''; position:absolute; top:5px;  left:0; width:100%; height:100%; background:var(--primary); }
+@media (max-width:760px) {
+  .site-nav__inner { height:60px; }
+  .site-nav__brand { font-size:18px; }
+  .site-nav__links { display:none; }
+  .site-nav__cta { padding:9px 14px; font-size:10px; letter-spacing:0.14em; }
+  .site-nav__burger { display:inline-flex; }
+}
+
+/* HERO */
+.ab-hero { padding:64px 0 48px; display:grid; grid-template-columns:1fr 380px; gap:64px; align-items:end; }
+.ab-hero__crumb { font-size:11px; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color:var(--muted-2); margin:0 0 28px; }
+.ab-hero h1 { margin:0 0 24px; font-family:var(--font-display); font-weight:700; font-size:clamp(48px,7.5vw,92px); line-height:1.02; letter-spacing:-0.025em; }
+.ab-hero__lede { margin:0; font-size:clamp(16px,1.4vw,18px); line-height:1.7; color:var(--muted); max-width:640px; border-left:2px solid var(--accent); padding-left:24px; }
+.ab-hero__portrait { aspect-ratio:4/5; border:1px solid var(--primary); overflow:hidden; background:var(--bg-elev); }
+.ab-hero__portrait img { width:100%; height:100%; object-fit:cover; }
+@media (max-width:880px) {
+  .ab-hero { grid-template-columns:1fr; gap:32px; padding:40px 0 32px; }
+  .ab-hero__portrait { max-width:280px; }
+}
+
+/* FACTS STRIP */
+.facts { margin-top:56px; padding:32px 0; border-top:1px solid var(--primary); border-bottom:1px solid var(--primary); display:grid; grid-template-columns:repeat(4,1fr); gap:32px; }
+.fact .metric { font-size:clamp(36px,4vw,52px); margin-bottom:10px; }
+.fact h6 { margin:0; font-size:10px; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color:var(--muted-2); line-height:1.4; }
+@media (max-width:760px) { .facts { grid-template-columns:1fr 1fr; gap:24px; } }
+
+/* SECTION HEADER */
+.ab-sec { margin-top:96px; }
+.ab-sec__head { display:flex; align-items:baseline; justify-content:space-between; border-bottom:1px solid var(--line); padding-bottom:18px; margin-bottom:48px; gap:18px; }
+.ab-sec__head h2 { margin:0; font-family:var(--font-display); font-style:italic; font-weight:600; font-size:clamp(22px,2.8vw,30px); letter-spacing:0.02em; text-transform:uppercase; display:flex; align-items:center; }
+
+/* CV ENTRIES */
+.cv-entry { display:grid; grid-template-columns:220px 1fr; gap:56px; padding:40px 0; border-top:1px solid var(--line); }
+.cv-entry:first-of-type { border-top:0; padding-top:0; }
+.cv-entry__meta { display:flex; flex-direction:column; gap:14px; }
+.cv-entry__dates { font-family:var(--font-display); font-style:italic; font-weight:500; font-size:20px; line-height:1.2; color:var(--primary); }
+.cv-entry__company { font-size:11px; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; color:var(--accent); line-height:1.5; }
+.cv-entry__body h3 { margin:0 0 6px; font-family:var(--font-display); font-weight:600; font-size:clamp(24px,2.6vw,30px); line-height:1.2; letter-spacing:-0.01em; }
+.cv-entry__sub { margin:0 0 22px; font-size:14px; color:var(--muted-2); font-style:italic; }
+.cv-entry__body ul { margin:0; padding:0; list-style:none; display:flex; flex-direction:column; gap:14px; }
+.cv-entry__body li { position:relative; padding-left:22px; font-size:16px; line-height:1.6; color:var(--muted); }
+.cv-entry__body li::before { content:""; position:absolute; left:0; top:11px; width:8px; height:1px; background:var(--accent); }
+.cv-entry__body strong { color:var(--primary); font-weight:600; font-style:italic; font-family:var(--font-display); font-size:1.05em; }
+@media (max-width:880px) {
+  .cv-entry { grid-template-columns:1fr; gap:16px; padding:32px 0; }
+  .cv-entry__meta { flex-direction:column; gap:4px; }
+}
+
+/* EDUCATION + SKILLS */
+.two-up { display:grid; grid-template-columns:1fr 1fr; gap:56px; }
+.edu-list { display:flex; flex-direction:column; gap:32px; }
+.edu-item { padding-bottom:24px; border-bottom:1px solid var(--line); }
+.edu-item:last-child { border-bottom:0; }
+.edu-item h4 { margin:0 0 6px; font-family:var(--font-display); font-weight:600; font-size:22px; line-height:1.2; }
+.edu-item p { margin:0; font-size:14px; color:var(--muted-2); line-height:1.6; }
+.edu-item__inst { font-size:11px; font-weight:700; letter-spacing:0.18em; text-transform:uppercase; color:var(--accent); margin-bottom:8px; display:block; }
+.skill-group { padding-bottom:24px; border-bottom:1px solid var(--line); margin-bottom:24px; }
+.skill-group:last-child { border-bottom:0; margin-bottom:0; }
+.skill-group h5 { margin:0 0 12px; font-size:10px; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color:var(--muted-2); }
+.skill-group p { margin:0; font-size:15px; line-height:1.65; color:var(--primary); }
+@media (max-width:880px) { .two-up { grid-template-columns:1fr; gap:48px; } }
+
+/* CLOSING */
+.ab-close { margin-top:96px; padding:56px; background:var(--primary); color:var(--on-primary); border:1px solid var(--primary); display:grid; grid-template-columns:1.4fr 1fr; gap:48px; align-items:center; position:relative; overflow:hidden; }
+.ab-close__eyebrow { font-size:11px; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; opacity:0.6; margin:0 0 18px; }
+.ab-close h2 { margin:0 0 16px; font-family:var(--font-display); font-style:italic; font-weight:500; font-size:clamp(28px,3.6vw,42px); line-height:1.15; }
+.ab-close p { margin:0; font-size:16px; line-height:1.6; opacity:0.8; max-width:520px; }
+.ab-close .btn { background:transparent; color:var(--on-primary); border-color:rgba(255,255,255,0.4); justify-self:flex-end; }
+.ab-close .btn:hover { background:var(--on-primary); color:var(--primary); box-shadow:4px 4px 0 0 var(--accent); transform:translate(-2px,-2px); }
+.ab-close__deco { position:absolute; right:-50px; bottom:-50px; width:200px; height:200px; border:1px solid rgba(255,255,255,0.18); transform:rotate(45deg); pointer-events:none; }
+@media (max-width:880px) { .ab-close { grid-template-columns:1fr; padding:36px; } .ab-close .btn { justify-self:flex-start; } }
+
+/* FOOTER */
+.site-footer { background:var(--primary); color:var(--on-primary); margin-top:96px; }
+.site-footer__inner { display:flex; align-items:center; justify-content:space-between; padding:40px 0; gap:24px; flex-wrap:wrap; }
+.site-footer__brand { font-family:var(--font-display); font-weight:700; font-size:22px; letter-spacing:-0.01em; }
+.site-footer__copy { font-size:13px; color:rgba(255,255,255,0.5); font-style:italic; }
+.site-footer__links { display:flex; gap:28px; }
+.site-footer__link { font-size:11px; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:rgba(255,255,255,0.5); transition:color .2s; }
+.site-footer__link:hover { color:var(--on-primary); }
+@media (max-width:760px) {
+  .site-footer { margin-top:60px; }
+  .site-footer__inner { padding:28px 0; flex-direction:column; align-items:flex-start; gap:18px; }
+}
+</style>
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="container site-nav__inner">
+    <a href="../index.html" class="site-nav__brand">Remko Vermeulen</a>
+    <nav class="site-nav__links">
+      <a href="work.html" class="site-nav__link">Work</a>
+      <a href="articles.html" class="site-nav__link">Articles</a>
+      <a href="about.html" class="site-nav__link is-active">About</a>
+      <a href="mailto:vermeulenremko@gmail.com" class="site-nav__link">Contact</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:14px;">
+      <a href="mailto:vermeulenremko@gmail.com" class="site-nav__cta">Get in touch</a>
+      <button class="site-nav__burger" aria-label="Menu"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="ab-hero">
+    <div>
+      <p class="ab-hero__crumb"><span class="accent-mark"></span>About</p>
+      <h1>Remko<br>Vermeulen.</h1>
+      <p class="ab-hero__lede">
+        Product leader with 15+ years scaling digital products to 5.8M users across health,
+        education, proptech, legal tech, cloud, data privacy and productivity SaaS. Built and
+        led product and design orgs of up to 90 people at Toggl, Telefónica, O2 and Koa Health,
+        and led the AI transformation of product, design and engineering teams.
+      </p>
+    </div>
+    <div class="ab-hero__portrait">
+      <img class="bw-img" src="../assets/remko.jpg" alt="Remko Vermeulen">
+    </div>
+  </section>
+
+  <div class="facts">
+    <div class="fact"><span class="metric">5.8M</span><h6>Users Reached</h6></div>
+    <div class="fact"><span class="metric">$66M</span><h6>In Funding Secured</h6></div>
+    <div class="fact"><span class="metric">90</span><h6>People Led</h6></div>
+    <div class="fact"><span class="metric">15+</span><h6>Years Building Products</h6></div>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <section class="ab-sec" id="experience">
+    <div class="ab-sec__head">
+      <h2><span class="accent-mark"></span>Experience</h2>
+      <span class="label-xs">2000 — Present</span>
+    </div>
+
+    <div class="cv-entry">
+      <div class="cv-entry__meta">
+        <div class="cv-entry__dates">Jan 2026<br>— Present</div>
+        <div class="cv-entry__company">Toggl &nbsp;·&nbsp; Time tracking &amp; planning</div>
+      </div>
+      <div class="cv-entry__body">
+        <h3>Head of Product</h3>
+        <p class="cv-entry__sub">Productivity SaaS · Remote</p>
+        <ul>
+          <li>Restructured product, design and engineering teams reducing costs by <strong>26%</strong> while increasing team output by <strong>13%</strong>.</li>
+          <li>Increased first-time activation by <strong>94%</strong> by focusing the team on time-to-value and removing friction in the early user journey.</li>
+          <li>Introduced AI-powered prototyping and user-insights collection, reducing the insight-to-validated-solution cycle from weeks to days.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="cv-entry">
+      <div class="cv-entry__meta">
+        <div class="cv-entry__dates">Jan 2024<br>— Dec 2025</div>
+        <div class="cv-entry__company">SignAssist &nbsp;·&nbsp; PropTech, Legal &amp; FinTech</div>
+      </div>
+      <div class="cv-entry__body">
+        <h3>Head of Product</h3>
+        <p class="cv-entry__sub">AI-based property &amp; investment management</p>
+        <ul>
+          <li>Defined product vision, strategy and roadmap; managed stakeholder relationships with investors and established a regular analytics review cadence.</li>
+          <li>Led design and launch of an AI module that transforms contracts and real-estate documents into structured data and compliance warnings.</li>
+          <li>Increased active users by <strong>87%</strong> through improved in-product onboarding and messaging.</li>
+          <li>Reduced time-to-value by <strong>75%</strong> via regular pre/prototype testing and analytics reviews.</li>
+          <li>Lowered CAC / LTV ratio from <strong>162%</strong> to <strong>21%</strong>.</li>
+          <li>Developed a pricing strategy resulting in <strong>23% MRR growth</strong>.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="cv-entry">
+      <div class="cv-entry__meta">
+        <div class="cv-entry__dates">Nov 2020<br>— Jan 2023</div>
+        <div class="cv-entry__company">Koa Health &nbsp;·&nbsp; Digital Mental Health</div>
+      </div>
+      <div class="cv-entry__body">
+        <h3>VP of Product &amp; Innovation</h3>
+        <p class="cv-entry__sub">Clinical-grade DTx · Barcelona</p>
+        <ul>
+          <li>Led market &amp; user research, product definition, roadmap, design and agile development through a clinical trial of a mental-health DTx product used alongside Spravato, in collaboration with Janssen / Johnson &amp; Johnson.</li>
+          <li>Designed, tested and launched a mental-health crisis prediction service based on an ML model with the NHS, achieving <strong>80% recall</strong>.</li>
+          <li>Launched a company-wide innovation programme across data science, AI, development and design — driving a <strong>62% velocity increase</strong> and <strong>82% reduction in cost per investigation</strong>.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="cv-entry">
+      <div class="cv-entry__meta">
+        <div class="cv-entry__dates">Jun 2016<br>— Oct 2021</div>
+        <div class="cv-entry__company">Telefónica Alpha Health</div>
+      </div>
+      <div class="cv-entry__body">
+        <h3>VP of Product</h3>
+        <p class="cv-entry__sub">Co-founder · later spun out as Koa Health</p>
+        <ul>
+          <li>As co-founder, established, led and grew the product and design team from <strong>1 to 40</strong>.</li>
+          <li>Ideated, prototyped, developed and launched multiple digital-health products, generating <strong>€66M</strong> in investment and partnerships with Harvard, the NHS and Massachusetts General Hospital.</li>
+          <li>Owned product vision, direction, portfolio and a product-led way of working — including company-wide OKRs and KPIs for products available to <strong>3M users in 70+ countries</strong>.</li>
+          <li>Developed and implemented the GTM strategy for a wellness app and service in collaboration with marketing.</li>
+          <li>Launched a mental-health and wellbeing product with Harvard Medical School and Massachusetts Hospital that achieved a <strong>55% symptom reduction</strong> and <strong>95% cost reduction</strong> for end-users in clinical trial.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="cv-entry">
+      <div class="cv-entry__meta">
+        <div class="cv-entry__dates">Apr 2015<br>— Jun 2016</div>
+        <div class="cv-entry__company">Telefónica Innovation</div>
+      </div>
+      <div class="cv-entry__body">
+        <h3>Head of Product &amp; Service Design</h3>
+        <p class="cv-entry__sub">Cloud · Data privacy · Digital health</p>
+        <ul>
+          <li>Led product, service-design and UX teams creating new products in cloud, data privacy and digital health — resulting in <strong>20+ MVPs</strong>, of which <strong>5 launched to market</strong>.</li>
+          <li>Set up and led entrepreneurial cross-functional teams (product, design, engineering, computer science) building new data security and privacy products.</li>
+          <li>Defined product requirements, lifecycle, user stories and KPIs.</li>
+          <li>Created a service using location patterns to detect the source of an epidemic faster — in collaboration with the WHO, UNICEF and Harvard.</li>
+          <li>Built a voice-analysis service over a normal telephone line that detects and monitors Parkinson's disease with <strong>78% precision</strong>.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="cv-entry">
+      <div class="cv-entry__meta">
+        <div class="cv-entry__dates">Jun 2011<br>— Apr 2015</div>
+        <div class="cv-entry__company">Telefónica Digital / O2</div>
+      </div>
+      <div class="cv-entry__body">
+        <h3>User Experience Lead</h3>
+        <p class="cv-entry__sub">eHealth &amp; cloud · 5 locations worldwide</p>
+        <ul>
+          <li>Led the user-experience team (10–17 people across 5 locations) and innovation for all eHealth and cloud products at Telefónica worldwide.</li>
+          <li>Led design of a chronic-disease management system (COPD, heart failure, etc.) for patients, nurses and clinicians on tablet, web and mobile in the UK, Brazil and Spain — resulting in a <strong>48% mortality-rate decrease</strong> and <strong>63% reduction in readmissions</strong>.</li>
+          <li>Created a healthcare educational service via SMS for the general population and mothers-to-be in Brazil.</li>
+          <li>Designed and developed a teledermatology service with Hospital del Mar in Barcelona.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="cv-entry">
+      <div class="cv-entry__meta">
+        <div class="cv-entry__dates">Sep 2005<br>— Jun 2011</div>
+        <div class="cv-entry__company">NTRglobal &nbsp;·&nbsp; SaaS network management</div>
+      </div>
+      <div class="cv-entry__body">
+        <h3>User Experience Manager</h3>
+        <p class="cv-entry__sub">B2B SaaS · Barcelona</p>
+        <ul>
+          <li>Established and managed the UX team (designers, copywriters, engineers, researchers) for a SaaS network-management product. With the CEO and product team, shifted product management to a user-focused approach, simplifying the portfolio by <strong>over 50%</strong>.</li>
+          <li>Created a new product line for SMBs.</li>
+          <li><strong>212% increase</strong> in conversions for sign-up and landing pages.</li>
+          <li><strong>50% decrease</strong> in time-on-task for the top 5 user tasks.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="cv-entry">
+      <div class="cv-entry__meta">
+        <div class="cv-entry__dates">Feb 2000<br>— Sep 2005</div>
+        <div class="cv-entry__company">Electrolux · British Council · I-D Media · others</div>
+      </div>
+      <div class="cv-entry__body">
+        <h3>Senior Interaction &amp; Strategic Designer</h3>
+        <p class="cv-entry__sub">London · Italy · India</p>
+        <ul>
+          <li>Held senior and strategic design roles at Electrolux Zanussi, I-D Media, Minale Tattersfield Design Strategy, Delsey and the British Council across London, Italy and India.</li>
+          <li>Notable projects: brand strategy for State Bank of India, viral marketing for Warner Brothers, global teacher collaboration for the British Council, and concepts for internet-connected appliances at Electrolux.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION + SKILLS -->
+  <section class="ab-sec" id="education">
+    <div class="ab-sec__head">
+      <h2><span class="accent-mark"></span>Education &amp; Skills</h2>
+    </div>
+
+    <div class="two-up">
+      <div>
+        <h4 class="label-sm" style="margin:0 0 24px;letter-spacing:.18em;">Education</h4>
+        <div class="edu-list">
+          <div class="edu-item">
+            <span class="edu-item__inst">Delft University of Technology · 2000</span>
+            <h4>MSc Industrial Design Engineering</h4>
+            <p>Specialisation in Innovation Management. Netherlands.</p>
+          </div>
+          <div class="edu-item">
+            <span class="edu-item__inst">University of Leiden · 2000</span>
+            <h4>Psychology</h4>
+            <p>Change management, visual perception, human-computer interaction.</p>
+          </div>
+          <div class="edu-item">
+            <span class="edu-item__inst">Stanford University · Online</span>
+            <h4>Machine Learning &amp; AI in Healthcare</h4>
+            <p>Specialisation. Applied focus on clinical ML applications and DTx.</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="label-sm" style="margin:0 0 24px;letter-spacing:.18em;">Skills</h4>
+        <div class="skill-group">
+          <h5>Leadership</h5>
+          <p>Team restructuring across product, design &amp; engineering. Stakeholder management, cross-functional leadership, agile delivery, AI-enabled transformation.</p>
+        </div>
+        <div class="skill-group">
+          <h5>Product Strategy</h5>
+          <p>Strategy, roadmap, portfolio management, product-led growth, 0→1, GTM, OKRs &amp; KPIs.</p>
+        </div>
+        <div class="skill-group">
+          <h5>Research &amp; Discovery</h5>
+          <p>User research, market &amp; competitive analysis, usability testing, A/B testing, data-driven decisions.</p>
+        </div>
+        <div class="skill-group">
+          <h5>Analytics &amp; Growth</h5>
+          <p>Product analytics, funnel optimisation, activation &amp; retention, CAC / LTV, pricing, MRR growth.</p>
+        </div>
+        <div class="skill-group">
+          <h5>AI &amp; Data</h5>
+          <p>AI product development, ML applications, prototyping, data privacy, clinical AI (DTx).</p>
+        </div>
+        <div class="skill-group">
+          <h5>Languages</h5>
+          <p>English, Dutch, Spanish (fluent) · French, German (basic).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BEYOND WORK -->
+  <section class="ab-sec" id="beyond">
+    <div class="ab-sec__head">
+      <h2><span class="accent-mark"></span>Beyond Work</h2>
+    </div>
+
+    <div class="two-up">
+      <div class="skill-group" style="border:0;margin:0;padding:0;">
+        <h5>Mentoring</h5>
+        <p style="font-size:16px;line-height:1.7;color:var(--muted);">
+          Mentor at Imperial College, Elisava design school, Healthbox London and the Wayra startup accelerator.
+        </p>
+      </div>
+      <div class="skill-group" style="border:0;margin:0;padding:0;">
+        <h5>Patents</h5>
+        <p style="font-size:16px;line-height:1.7;color:var(--muted);">
+          Holding 3 patents in digital health, covering responsive cognitive behavioural therapy systems and moment-based task scheduling for medical treatments.
+        </p>
+      </div>
+      <div class="skill-group" style="border:0;margin:0;padding:0;">
+        <h5>Outside the screen</h5>
+        <p style="font-size:16px;line-height:1.7;color:var(--muted);">
+          Continuous learning, kitesurfing and sailing. Based in Barcelona.
+        </p>
+      </div>
+      <div class="skill-group" style="border:0;margin:0;padding:0;">
+        <h5>Currently looking for</h5>
+        <p style="font-size:16px;line-height:1.7;color:var(--muted);">
+          CPO, VP of Product, Director of Product or Head of Product roles.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLOSING -->
+  <section class="ab-close">
+    <div>
+      <p class="ab-close__eyebrow">Let's talk</p>
+      <h2>Building durable products, from 0-to-1 and beyond.</h2>
+      <p>Open to conversations about product leadership roles, advisory work and partnerships across health, AI and SaaS.</p>
+    </div>
+    <a href="mailto:vermeulenremko@gmail.com" class="btn">Get in touch
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3v6" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"/></svg>
+    </a>
+    <span class="ab-close__deco"></span>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container site-footer__inner">
+    <div class="site-footer__brand">RV.</div>
+    <div class="site-footer__copy">© 2025 Remko Vermeulen. Built with intention.</div>
+    <div class="site-footer__links">
+      <a href="https://linkedin.com/in/remkovermeulen" class="site-footer__link">LinkedIn</a>
+      <a href="https://github.com/remkovermeulen-pers" class="site-footer__link">GitHub</a>
+      <a href="mailto:vermeulenremko@gmail.com" class="site-footer__link">Email</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
