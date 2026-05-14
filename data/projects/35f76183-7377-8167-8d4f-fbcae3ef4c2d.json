@@ -4,15 +4,28 @@
   "sector": "Education",
   "status": "Archive",
   "year": 2002,
-  "tags": ["Design", "Product"],
-  "lede": "Reimagined digital language learning platforms to reach 3M+ active learners, deploying a global teacher collaboration platform across emerging markets.",
-  "coverImage": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1800&q=80",
-  "role": "UX Designer & Product Designer",
-  "timeline": "2002 – 2005",
+  "tags": [
+    "Design",
+    "Product"
+  ],
+  "lede": "Reimagining digital language learning platforms to reach millions of learners across emerging markets. Designed a global teacher collaboration platform for the British Council, with reach across India",
+  "coverImage": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1200&q=80",
+  "role": "",
+  "timeline": "",
   "partners": [],
   "metrics": [
-    { "value": "3M+", "label": "active learners" },
-    { "value": "40%", "label": "engagement uplift" }
+    {
+      "value": "3M+",
+      "label": "active learners"
+    },
+    {
+      "value": "40%",
+      "label": "engagement uplift"
+    },
+    {
+      "value": "",
+      "label": "global teacher collaboration platform"
+    }
   ],
   "sections": [
     {
@@ -21,7 +34,7 @@
     },
     {
       "title": "Key outcomes",
-      "body": "<ul><li><strong>3M+</strong> active learners</li><li><strong>40%</strong> engagement uplift</li><li>Global teacher collaboration platform deployed across multiple countries</li></ul>"
+      "body": "<ul>\n<li><strong>3M+</strong> active learners</li>\n<li><strong>40%</strong> engagement uplift</li>\n<li>Global teacher collaboration platform deployed across multiple countries</li>\n</ul>"
     }
   ]
 }

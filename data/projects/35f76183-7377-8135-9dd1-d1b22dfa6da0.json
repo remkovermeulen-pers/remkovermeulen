@@ -4,17 +4,47 @@
   "sector": "Health",
   "status": "Archive",
   "year": 2016,
-  "tags": ["Strategy", "Product", "Research"],
-  "lede": "Co-founded and scaled a digital mental health portfolio that raised €66M, reached 3M users, and built ML-powered crisis prediction alongside the NHS.",
-  "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1800&q=80",
-  "role": "Co-Founder & VP of Product",
+  "tags": [
+    "Strategy",
+    "Product",
+    "Research"
+  ],
+  "lede": "Co-founded Telefonica Alpha Health (later Koa Health) and grew the product and design team from 1 to 40 people. Built a portfolio of digital mental health products that raised €66M in investment and r",
+  "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
+  "role": "Co-Founder &amp; VP of Product",
   "timeline": "June 2016 – January 2023",
-  "partners": ["NHS", "Harvard Medical School", "Massachusetts General Hospital", "Janssen / Johnson & Johnson", "Birmingham and Solihull NHS Foundation Trust"],
+  "partners": [
+    "NHS",
+    "Harvard Medical School",
+    "Massachusetts General Hospital",
+    "Janssen / Johnson &amp; Johnson",
+    "Birmingham and Solihull NHS Foundation Trust"
+  ],
   "metrics": [
-    { "value": "€66M", "label": "investment raised" },
-    { "value": "3M", "label": "users in 70+ countries" },
-    { "value": "80%", "label": "recall on ML crisis prediction" },
-    { "value": "55%", "label": "reduction in symptoms (Harvard trial)" }
+    {
+      "value": "$66M",
+      "label": "investment raised"
+    },
+    {
+      "value": "80%",
+      "label": "recall on ML crisis prediction"
+    },
+    {
+      "value": "3M",
+      "label": "users in 70+ countries"
+    },
+    {
+      "value": "62%",
+      "label": "increase in velocity"
+    },
+    {
+      "value": "82%",
+      "label": "decrease in cost per investigation"
+    },
+    {
+      "value": "55%",
+      "label": "reduction in symptoms (clinical trial)"
+    }
   ],
   "sections": [
     {
@@ -23,11 +53,11 @@
     },
     {
       "title": "Key work",
-      "body": "<ul><li>Designed, tested and launched a mental health crisis prediction service based on an ML model with the NHS — <strong>80% recall</strong>, 28 days in advance</li><li>Launched a mental health and wellbeing product in collaboration with Harvard Medical School and Massachusetts General Hospital — <strong>55% reduction in symptoms</strong>, 95% cost reduction in clinical trial</li><li>Led clinical trial of a DTx product used alongside Spravato (Janssen/J&J)</li><li>Launched company-wide innovation program across data science, AI, development and design — <strong>62% increase in velocity</strong>, <strong>82% decrease in cost per investigation</strong></li><li>Created and managed product vision, portfolio and OKRs/KPIs across 70+ countries</li></ul>"
+      "body": "<ul>\n<li>Designed, tested and launched a mental health crisis prediction service based on an ML model with the NHS — <strong>80% recall</strong>, 28 days in advance</li>\n<li>Launched a mental health and wellbeing product in collaboration with Harvard Medical School and Massachusetts General Hospital — <strong>55% reduction in symptoms</strong>, 95% cost reduction in clinical trial</li>\n<li>Led clinical trial of a DTx product used alongside Spravato (Janssen/J&amp;J)</li>\n<li>Launched company-wide innovation program across data science, AI, development and design — <strong>62% increase in velocity</strong>, <strong>82% decrease in cost per investigation</strong></li>\n<li>Created and managed product vision, portfolio and OKRs/KPIs across 70+ countries</li>\n</ul>"
     },
     {
       "title": "Key outcomes",
-      "body": "<ul><li><strong>€66M</strong> investment raised</li><li><strong>3M</strong> users in <strong>70+</strong> countries</li><li><strong>80%</strong> recall on ML-based crisis prediction</li><li><strong>62%</strong> increase in velocity</li><li><strong>82%</strong> decrease in cost per investigation</li><li><strong>55%</strong> reduction in symptoms (Harvard clinical trial)</li></ul>"
+      "body": "<ul>\n<li><strong>€66M</strong> investment raised</li>\n<li><strong>3M</strong> users in <strong>70+</strong> countries</li>\n<li><strong>80%</strong> recall on ML-based crisis prediction</li>\n<li><strong>62%</strong> increase in velocity</li>\n<li><strong>82%</strong> decrease in cost per investigation</li>\n<li><strong>55%</strong> reduction in symptoms (Harvard clinical trial)</li>\n</ul>"
     }
   ]
 }

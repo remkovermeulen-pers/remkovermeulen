@@ -5,8 +5,11 @@
     "sector": "SaaS",
     "status": "In Progress",
     "year": 2026,
-    "tags": ["Strategy", "Product"],
-    "lede": "Restructured product, design and engineering teams to drive 94% activation growth, reduce costs, and accelerate the insight-to-solution cycle.",
+    "tags": [
+      "Strategy",
+      "Product"
+    ],
+    "lede": "Restructured product, design and engineering teams reducing costs by 26%, while increasing team output by 13%.",
     "coverImage": "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1200&q=80"
   },
   {
@@ -15,19 +18,12 @@
     "sector": "PropTech",
     "status": "Live",
     "year": 2024,
-    "tags": ["Strategy", "Product"],
-    "lede": "AI-based property and investment management platform — driving 87% user growth, 75% reduction in time-to-value, and 23% MRR growth.",
+    "tags": [
+      "Strategy",
+      "Product"
+    ],
+    "lede": "AI-based property and investment management platform. Defined the product vision, strategy and roadmap, managed stakeholder relationships (investors), and established product operations and analytics ",
     "coverImage": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&q=80"
-  },
-  {
-    "notionId": "35f76183-7377-8135-9dd1-d1b22dfa6da0",
-    "title": "Koa Health",
-    "sector": "Health",
-    "status": "Archive",
-    "year": 2016,
-    "tags": ["Strategy", "Product", "Research"],
-    "lede": "Co-founded and scaled a digital mental health portfolio that raised €66M, reached 3M users, and built ML-powered crisis prediction alongside the NHS.",
-    "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80"
   },
   {
     "notionId": "35f76183-7377-812e-89c0-f80d125d898b",
@@ -35,19 +31,26 @@
     "sector": "Health",
     "status": "Archive",
     "year": 2021,
-    "tags": ["Research", "Product"],
-    "lede": "Led product definition and clinical trial programme for a mental health DTx companion to Spravato, in collaboration with Janssen / Johnson & Johnson.",
-    "coverImage": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&q=80"
+    "tags": [
+      "Research",
+      "Product"
+    ],
+    "lede": "Led product definition, design and agile development of a mental health DTx (Digital Therapeutics) product to be used in combination with Spravato (esketamine) — a treatment for treatment-resistant de",
+    "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80"
   },
   {
-    "notionId": "35f76183-7377-8167-aade-e9ceff1342ed",
-    "title": "Telefónica / O2",
-    "sector": "Telco",
+    "notionId": "35f76183-7377-8135-9dd1-d1b22dfa6da0",
+    "title": "Koa Health",
+    "sector": "Health",
     "status": "Archive",
-    "year": 2011,
-    "tags": ["Strategy", "Design", "Research"],
-    "lede": "Led UX and product design across 5 global locations, building eHealth products that reduced chronic disease mortality and hospital readmissions.",
-    "coverImage": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&q=80"
+    "year": 2016,
+    "tags": [
+      "Strategy",
+      "Product",
+      "Research"
+    ],
+    "lede": "Co-founded Telefonica Alpha Health (later Koa Health) and grew the product and design team from 1 to 40 people. Built a portfolio of digital mental health products that raised €66M in investment and r",
+    "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80"
   },
   {
     "notionId": "35f76183-7377-81a8-b45d-f022b6c4842e",
@@ -55,9 +58,26 @@
     "sector": "Automotive",
     "status": "Archive",
     "year": 2013,
-    "tags": ["Design", "Research"],
-    "lede": "Designed next-generation connected car services using Kano models to maximise driver engagement and reduce time-to-value by 75%.",
+    "tags": [
+      "Design",
+      "Research"
+    ],
+    "lede": "Designed next-generation connected car services for Renault, using Kano models to maximise driver engagement and utility.",
     "coverImage": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1200&q=80"
+  },
+  {
+    "notionId": "35f76183-7377-8167-aade-e9ceff1342ed",
+    "title": "Telefónica / O2",
+    "sector": "Telco",
+    "status": "Archive",
+    "year": 2011,
+    "tags": [
+      "Strategy",
+      "Design",
+      "Research"
+    ],
+    "lede": "Led UX, product and service design teams across 5 global locations (10–17 people), building eHealth, cloud and data privacy products at Telefonica worldwide.",
+    "coverImage": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&q=80"
   },
   {
     "notionId": "35f76183-7377-81de-af86-c88584fb33f7",
@@ -65,8 +85,11 @@
     "sector": "Media",
     "status": "Archive",
     "year": 2008,
-    "tags": ["Design", "Product"],
-    "lede": "Digitised the consumer decision journey and enhanced online purchase behaviour tracking, achieving a 212% increase in conversions.",
+    "tags": [
+      "Design",
+      "Product"
+    ],
+    "lede": "Digitising the consumer decision journey and enhancing online purchase behaviour tracking for the Financial Times.",
     "coverImage": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200&q=80"
   },
   {
@@ -75,9 +98,12 @@
     "sector": "SaaS",
     "status": "Archive",
     "year": 2005,
-    "tags": ["Design", "Product"],
-    "lede": "Established the UX team and drove a user-centred redesign that simplified the product portfolio by 50% and increased conversions by 212%.",
-    "coverImage": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80"
+    "tags": [
+      "Design",
+      "Product"
+    ],
+    "lede": "Established and managed the user experience team (designers, copywriters, engineers, user researchers) for a SaaS network management product. Worked with the CEO and engineering team to change the pro",
+    "coverImage": "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1200&q=80"
   },
   {
     "notionId": "35f76183-7377-8167-8d4f-fbcae3ef4c2d",
@@ -85,8 +111,252 @@
     "sector": "Education",
     "status": "Archive",
     "year": 2002,
-    "tags": ["Design", "Product"],
-    "lede": "Reimagined digital language learning platforms to reach 3M+ active learners, deploying a global teacher collaboration platform across emerging markets.",
+    "tags": [
+      "Design",
+      "Product"
+    ],
+    "lede": "Reimagining digital language learning platforms to reach millions of learners across emerging markets. Designed a global teacher collaboration platform for the British Council, with reach across India",
     "coverImage": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1200&q=80"
+  },
+  {
+    "notionId": "36076183-7377-8182-aee2-fed62d9b4268",
+    "title": "Koga Miyata Bicycle Computer",
+    "sector": "Automotive",
+    "status": "Archive",
+    "year": 2000,
+    "tags": [
+      "Design",
+      "Research"
+    ],
+    "lede": "",
+    "coverImage": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1200&q=80"
+  },
+  {
+    "notionId": "36076183-7377-8114-881b-d864ffc34948",
+    "title": "Fluid",
+    "sector": "Health",
+    "status": "Archive",
+    "year": null,
+    "tags": [
+      "Design",
+      "Product",
+      "Research"
+    ],
+    "lede": "",
+    "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80"
+  },
+  {
+    "notionId": "36076183-7377-812b-9600-f901966bdb08",
+    "title": "My Health",
+    "sector": "Health",
+    "status": "Archive",
+    "year": null,
+    "tags": [
+      "Product",
+      "Research"
+    ],
+    "lede": "",
+    "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80"
+  },
+  {
+    "notionId": "36076183-7377-812d-9aec-f4697182cf9d",
+    "title": "Perspectives",
+    "sector": "Health",
+    "status": "Archive",
+    "year": null,
+    "tags": [
+      "Strategy",
+      "Design",
+      "Product",
+      "Research"
+    ],
+    "lede": "",
+    "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80"
+  },
+  {
+    "notionId": "36076183-7377-814a-9f9c-f356f12270ef",
+    "title": "Brain Training — Cognitive Bias Modification",
+    "sector": "Health",
+    "status": "Archive",
+    "year": null,
+    "tags": [
+      "Product",
+      "Research"
+    ],
+    "lede": "",
+    "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80"
+  },
+  {
+    "notionId": "36076183-7377-816c-9a63-e4952bd248d0",
+    "title": "Parkinson Voice Detection",
+    "sector": "Health",
+    "status": "Archive",
+    "year": null,
+    "tags": [
+      "Product",
+      "Research"
+    ],
+    "lede": "",
+    "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80"
+  },
+  {
+    "notionId": "36076183-7377-8179-9794-f4047d45ffba",
+    "title": "Property Management System (SignAssist)",
+    "sector": "PropTech",
+    "status": "Archive",
+    "year": null,
+    "tags": [
+      "Strategy",
+      "Design",
+      "Product"
+    ],
+    "lede": "",
+    "coverImage": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&q=80"
+  },
+  {
+    "notionId": "36076183-7377-8181-a326-c925904d52f8",
+    "title": "Explainable AI",
+    "sector": "Health",
+    "status": "Archive",
+    "year": null,
+    "tags": [
+      "Product",
+      "Research"
+    ],
+    "lede": "",
+    "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80"
+  },
+  {
+    "notionId": "36076183-7377-8186-98c9-d7ffbbb950f3",
+    "title": "Scaling Perspectives — Program Editor",
+    "sector": "Health",
+    "status": "Archive",
+    "year": null,
+    "tags": [
+      "Product",
+      "Design"
+    ],
+    "lede": "",
+    "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80"
+  },
+  {
+    "notionId": "36076183-7377-8191-b686-ee42ad8574d4",
+    "title": "Ting Happy Moments",
+    "sector": "Health",
+    "status": "Archive",
+    "year": null,
+    "tags": [
+      "Design",
+      "Research"
+    ],
+    "lede": "",
+    "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80"
+  },
+  {
+    "notionId": "36076183-7377-8195-b39a-cfa1657491db",
+    "title": "Pandemic Prediction (Zika/Ebola)",
+    "sector": "Health",
+    "status": "Archive",
+    "year": null,
+    "tags": [
+      "Strategy",
+      "Research"
+    ],
+    "lede": "",
+    "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80"
+  },
+  {
+    "notionId": "36076183-7377-81ad-ad56-ddcc3b80e04d",
+    "title": "Mental Crisis Prediction",
+    "sector": "Health",
+    "status": "Archive",
+    "year": null,
+    "tags": [
+      "Product",
+      "Research"
+    ],
+    "lede": "",
+    "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80"
+  },
+  {
+    "notionId": "36076183-7377-81ae-9453-ebb3a48a1cf3",
+    "title": "TATU — Interactive Tattoo Concept",
+    "sector": "Health",
+    "status": "Archive",
+    "year": null,
+    "tags": [
+      "Design",
+      "Research"
+    ],
+    "lede": "",
+    "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80"
+  },
+  {
+    "notionId": "36076183-7377-81c6-9ab7-c49d505b389a",
+    "title": "Health at Home — Chronic Disease Management",
+    "sector": "Health",
+    "status": "Archive",
+    "year": null,
+    "tags": [
+      "Design",
+      "Product",
+      "Research"
+    ],
+    "lede": "",
+    "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80"
+  },
+  {
+    "notionId": "36076183-7377-81c8-85aa-d341a65cf2b5",
+    "title": "Bipolar Detection",
+    "sector": "Health",
+    "status": "Archive",
+    "year": null,
+    "tags": [
+      "Product",
+      "Research"
+    ],
+    "lede": "",
+    "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80"
+  },
+  {
+    "notionId": "36076183-7377-81ce-92bc-caa57a662ca6",
+    "title": "Future Ideation (Xploratory)",
+    "sector": "Health",
+    "status": "Archive",
+    "year": null,
+    "tags": [
+      "Strategy",
+      "Research"
+    ],
+    "lede": "",
+    "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80"
+  },
+  {
+    "notionId": "36076183-7377-81d6-bf9a-f4abfd8e8c2c",
+    "title": "Behaviour Change Journey",
+    "sector": "Health",
+    "status": "Archive",
+    "year": null,
+    "tags": [
+      "Strategy",
+      "Design",
+      "Research"
+    ],
+    "lede": "",
+    "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80"
+  },
+  {
+    "notionId": "36076183-7377-81ec-ab0d-cb34f758bbcf",
+    "title": "Cloud Computing User Journey",
+    "sector": "Telco",
+    "status": "Archive",
+    "year": null,
+    "tags": [
+      "Strategy",
+      "Design",
+      "Research"
+    ],
+    "lede": "",
+    "coverImage": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&q=80"
   }
 ]

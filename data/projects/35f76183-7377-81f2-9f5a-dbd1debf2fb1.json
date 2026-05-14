@@ -4,25 +4,37 @@
   "sector": "SaaS",
   "status": "In Progress",
   "year": 2026,
-  "tags": ["Strategy", "Product"],
-  "lede": "Restructured product, design and engineering teams to drive 94% activation growth, reduce costs, and accelerate the insight-to-solution cycle.",
-  "coverImage": "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1800&q=80",
+  "tags": [
+    "Strategy",
+    "Product"
+  ],
+  "lede": "Restructured product, design and engineering teams reducing costs by 26%, while increasing team output by 13%.",
+  "coverImage": "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1200&q=80",
   "role": "Head of Product",
   "timeline": "January 2026 – Now",
   "partners": [],
   "metrics": [
-    { "value": "94%", "label": "increase in first-time activation" },
-    { "value": "26%", "label": "cost reduction" },
-    { "value": "13%", "label": "increase in team output" }
+    {
+      "value": "94%",
+      "label": "increase in first-time activation"
+    },
+    {
+      "value": "26%",
+      "label": "cost reduction"
+    },
+    {
+      "value": "13%",
+      "label": "increase in team output"
+    }
   ],
   "sections": [
     {
       "title": "Overview",
-      "body": "<p>Restructured product, design and engineering teams reducing costs by 26%, while increasing team output by 13%.</p><p>Increased first-time activation by 94% by focusing the team on time-to-value and removing friction in the early user journey.</p><p>Introduced AI-powered prototyping and user insights collection, reducing the insight-to-validated-solution cycle from weeks to days.</p>"
+      "body": "<p>Restructured product, design and engineering teams reducing costs by 26%, while increasing team output by 13%.</p>\n<p>Increased first-time activation by 94% by focusing the team on time-to-value and removing friction in the early user journey.</p>\n<p>Introduced AI-powered prototyping and user insights collection, reducing the insight-to-validated-solution cycle from weeks to days.</p>"
     },
     {
       "title": "Key outcomes",
-      "body": "<ul><li><strong>94%</strong> increase in first-time activation</li><li><strong>26%</strong> cost reduction through team restructuring</li><li><strong>13%</strong> increase in team output</li><li>Insight-to-validated-solution cycle: weeks → days</li></ul>"
+      "body": "<ul>\n<li><strong>94%</strong> increase in first-time activation</li>\n<li><strong>26%</strong> cost reduction through team restructuring</li>\n<li><strong>13%</strong> increase in team output</li>\n<li>Insight-to-validated-solution cycle: weeks → days</li>\n</ul>"
     }
   ]
 }

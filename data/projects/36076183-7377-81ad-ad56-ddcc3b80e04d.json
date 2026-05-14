@@ -1,0 +1,23 @@
+{
+  "id": "36076183-7377-81ad-ad56-ddcc3b80e04d",
+  "title": "Mental Crisis Prediction",
+  "sector": "Health",
+  "status": "Archive",
+  "year": null,
+  "tags": [
+    "Product",
+    "Research"
+  ],
+  "lede": "",
+  "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
+  "role": "",
+  "timeline": "",
+  "partners": [],
+  "metrics": [
+    {
+      "value": "75%",
+      "label": "accuracy predicting mental health crisis 4 weeks in advance."
+    }
+  ],
+  "sections": []
+}

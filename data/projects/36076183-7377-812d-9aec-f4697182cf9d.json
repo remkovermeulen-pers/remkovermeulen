@@ -1,0 +1,25 @@
+{
+  "id": "36076183-7377-812d-9aec-f4697182cf9d",
+  "title": "Perspectives",
+  "sector": "Health",
+  "status": "Archive",
+  "year": null,
+  "tags": [
+    "Strategy",
+    "Design",
+    "Product",
+    "Research"
+  ],
+  "lede": "",
+  "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
+  "role": "",
+  "timeline": "",
+  "partners": [],
+  "metrics": [
+    {
+      "value": "90%",
+      "label": "response rate, 55% average symptom reduction (equal to best MGH therapists), 95% cost reduction. Pending FDA Class II de novo and CE mark Class 1."
+    }
+  ],
+  "sections": []
+}

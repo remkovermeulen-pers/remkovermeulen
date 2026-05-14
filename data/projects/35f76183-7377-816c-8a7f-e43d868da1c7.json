@@ -4,16 +4,32 @@
   "sector": "PropTech",
   "status": "Live",
   "year": 2024,
-  "tags": ["Strategy", "Product"],
-  "lede": "AI-based property and investment management platform — driving 87% user growth, 75% reduction in time-to-value, and 23% MRR growth.",
-  "coverImage": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1800&q=80",
+  "tags": [
+    "Strategy",
+    "Product"
+  ],
+  "lede": "AI-based property and investment management platform. Defined the product vision, strategy and roadmap, managed stakeholder relationships (investors), and established product operations and analytics ",
+  "coverImage": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&q=80",
   "role": "Head of Product",
   "timeline": "January 2024 – December 2025",
   "partners": [],
   "metrics": [
-    { "value": "87%", "label": "increase in active users" },
-    { "value": "75%", "label": "reduction in time-to-value" },
-    { "value": "23%", "label": "MRR growth" }
+    {
+      "value": "87%",
+      "label": "increase in active users"
+    },
+    {
+      "value": "75%",
+      "label": "reduction in time-to-value"
+    },
+    {
+      "value": "",
+      "label": "CAC/LTV from 162% to 21%"
+    },
+    {
+      "value": "23%",
+      "label": "MRR growth"
+    }
   ],
   "sections": [
     {
@@ -22,11 +38,11 @@
     },
     {
       "title": "Key work",
-      "body": "<ul><li>Led design and launch of an AI module that transforms contracts and real estate documents into structured data and compliance warnings</li><li>Increased active users by <strong>87%</strong> through improved in-product onboarding and messaging</li><li>Implemented regular pre/prototype testing, data analysis and analytics reviews, reducing time to value by <strong>75%</strong></li><li>Developed a pricing strategy resulting in <strong>23% MRR growth</strong></li><li>Lowered CAC/LTV ratio from <strong>162% to 21%</strong></li></ul>"
+      "body": "<ul>\n<li>Led design and launch of an AI module that transforms contracts and real estate documents into structured data and compliance warnings</li>\n<li>Increased active users by 87% through improved in-product onboarding and messaging</li>\n<li>Implemented regular pre/prototype testing, data analysis and analytics reviews, reducing time to value by 75%</li>\n<li>Developed a pricing strategy resulting in 23% MRR growth</li>\n<li>Lowered CAC/LTV ratio from 162% to 21%</li>\n</ul>"
     },
     {
       "title": "Key outcomes",
-      "body": "<ul><li><strong>87%</strong> increase in active users</li><li><strong>75%</strong> reduction in time-to-value</li><li>CAC/LTV ratio: <strong>162% → 21%</strong></li><li><strong>23%</strong> MRR growth</li></ul>"
+      "body": "<ul>\n<li><strong>87%</strong> increase in active users</li>\n<li><strong>75%</strong> reduction in time-to-value</li>\n<li>CAC/LTV ratio: <strong>162% → 21%</strong></li>\n<li><strong>23%</strong> MRR growth</li>\n</ul>"
     }
   ]
 }
