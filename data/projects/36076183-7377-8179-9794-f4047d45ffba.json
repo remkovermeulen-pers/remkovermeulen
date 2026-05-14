@@ -9,9 +9,9 @@
     "Design",
     "Product"
   ],
-  "lede": "",
+  "lede": "Real estate agents and property investors deal with a high volume of manual, repetitive work: listing properties, screening tenants, coordinating viewings, managing contracts, and tracking portfolio p",
   "coverImage": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&q=80",
-  "role": "",
+  "role": "As Head of Product at SignAssist from January 2024 to December 2025, I owned the product vision, strategy, and roadmap end-to-end. This included stakeholder management with investors, managing product operations, running regular analytics reviews, and leading the design and cross-functional delivery of new features.",
   "timeline": "",
   "partners": [],
   "metrics": [
@@ -20,5 +20,26 @@
       "label": "Led design, product management, roadmap, and product vision."
     }
   ],
-  "sections": []
+  "sections": [
+    {
+      "title": "Overview",
+      "body": "<p>Real estate agents and property investors deal with a high volume of manual, repetitive work: listing properties, screening tenants, coordinating viewings, managing contracts, and tracking portfolio performance. SignAssist was built to automate and connect these steps into a single SaaS platform, covering the full rental lifecycle from initial listing to signed contract and ongoing portfolio analytics.</p>"
+    },
+    {
+      "title": "What We Built",
+      "body": "<p>The core product was an AI-based property and investment management platform. One of the most impactful features I led was an AI module that parses contracts and real estate documents, transforming unstructured legal text into structured data with compliance warnings. This removed a significant manual overhead for agents who previously had to read and cross-reference documents by hand.</p>\n<p>Beyond the AI module, I redesigned the in-product onboarding and messaging flows to reduce friction in the early user journey. This was informed by regular prototype testing sessions and funnel analysis, which allowed the team to identify and remove blockers before they reached production.</p>\n<p>On the commercial side, I developed a pricing strategy based on usage data and customer segmentation, and established a recurring analytics review cadence to keep the team aligned on KPIs and growth levers.</p>"
+    },
+    {
+      "title": "Results",
+      "body": "<ul>\n<li>Active users grew by 87% through improved onboarding and in-product messaging</li>\n<li>Time to value reduced by 75% through regular pre/prototype testing and data-driven iteration</li>\n<li>CAC/LTV ratio improved from 162% to 21%, significantly improving unit economics</li>\n<li>Revenue grew by 23% MRR following the new pricing strategy</li>\n<li>Successfully managed investor stakeholder relationships throughout the product build</li>\n</ul>"
+    },
+    {
+      "title": "Approach",
+      "body": "<p>The project was run as a product-led operation. Decisions were grounded in user research, analytics, and rapid testing cycles rather than assumptions or feature requests alone. I set up the product operations infrastructure from scratch, including the analytics stack, review cadences, and roadmap processes.</p>\n<p>Working closely with the engineering and design teams, we moved quickly from validated ideas to shipped features. The AI document module in particular required tight coordination between legal domain experts, engineers, and UX to get the output format right for busy agents who needed results they could act on immediately.</p>"
+    },
+    {
+      "title": "Context",
+      "body": "<p>SignAssist operates in the Dutch and broader European proptech market, where fragmented tooling and paper-based workflows are still common. The opportunity was to consolidate the agent's workflow into one platform rather than forcing them to switch between listing portals, email, PDF readers, and spreadsheets. The product addressed a real operational pain point, which is why adoption metrics moved as sharply as they did once onboarding friction was removed.</p>"
+    }
+  ]
 }

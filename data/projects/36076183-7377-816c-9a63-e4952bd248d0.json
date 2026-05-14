@@ -8,7 +8,7 @@
     "Product",
     "Research"
   ],
-  "lede": "",
+  "lede": "Parkinson's disease is notoriously difficult to diagnose in its early stages. By the time a formal diagnosis is made, the disease has often been progressing for years. During that window, early interv",
   "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
   "role": "",
   "timeline": "",
@@ -19,5 +19,26 @@
       "label": "detection accuracy."
     }
   ],
-  "sections": []
+  "sections": [
+    {
+      "title": "Overview",
+      "body": "<p>Parkinson's disease is notoriously difficult to diagnose in its early stages. By the time a formal diagnosis is made, the disease has often been progressing for years. During that window, early intervention could significantly slow deterioration and improve quality of life — but only if the condition is detected in time.</p>\n<p>This project, developed in collaboration between Telefonica R&amp;D and Hospital Clinic Barcelona, explored whether voice analysis could serve as an accessible, low-cost early detection method. The hypothesis was that subtle changes in speech patterns — tremor, altered rhythm, reduced volume — appear before other visible symptoms and can be captured through a standard telephone call.</p>"
+    },
+    {
+      "title": "What We Built",
+      "body": "<p>The service used a simple telephone number that patients could call, combined with a companion app. The call recorded a voice sample, which was then processed by a machine learning model trained to detect acoustic biomarkers associated with Parkinson's disease. No specialist equipment was required. Any landline or mobile phone was sufficient, making the tool accessible across demographics and geographies.</p>\n<p>The model was developed and validated in collaboration with Hospital Clinic, one of Spain's leading clinical institutions, which provided both the clinical expertise and the patient data needed to train and test the system. Telefonica R&amp;D contributed the infrastructure, telephony integration, and data science capability.</p>"
+    },
+    {
+      "title": "My Role",
+      "body": "<p>As part of the Telefonica Innovation team, I led the product and service design for this project. This involved defining the user journey for both patients and clinicians, working with data scientists to understand model outputs and translate them into actionable clinical information, and coordinating with Hospital Clinic on how the service would fit into existing diagnostic workflows.</p>\n<p>A key design challenge was making the interaction feel natural and non-clinical for patients, while ensuring the captured audio was of sufficient quality for the model. We also had to consider how clinicians would receive and act on results without being overwhelmed or creating false urgency.</p>"
+    },
+    {
+      "title": "Results",
+      "body": "<p>The model achieved 78% detection accuracy, a strong result for a passive, telephone-based diagnostic tool. This level of precision is meaningful in a screening context, where the goal is to flag individuals for further assessment rather than deliver a definitive diagnosis.</p>"
+    },
+    {
+      "title": "Why It Matters",
+      "body": "<p>The scale of the opportunity is significant. Early Parkinson's detection changes the clinical calculus: treatment begun years earlier can meaningfully slow decline. A tool that works over a phone call — requiring no hospital visit, no specialist referral, no wearable device — removes almost all barriers to access. This matters especially for older populations and those in areas with limited healthcare infrastructure.</p>\n<p>The project demonstrated that passive, low-friction health monitoring does not require expensive hardware or complex user behaviour change. A phone call is something almost anyone can make.</p>"
+    }
+  ]
 }

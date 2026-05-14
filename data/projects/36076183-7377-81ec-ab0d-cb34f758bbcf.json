@@ -9,7 +9,7 @@
     "Design",
     "Research"
   ],
-  "lede": "",
+  "lede": "Telefonica and O2 offered cloud computing services to business customers, but the service design had not kept pace with the complexity of the product. Customers were struggling to get started, sales t",
   "coverImage": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&q=80",
   "role": "",
   "timeline": "",
@@ -20,5 +20,26 @@
       "label": "Improved sales conversion rates and lowered churn."
     }
   ],
-  "sections": []
+  "sections": [
+    {
+      "title": "Overview",
+      "body": "<p>Telefonica and O2 offered cloud computing services to business customers, but the service design had not kept pace with the complexity of the product. Customers were struggling to get started, sales teams were losing deals they should have won, and support volumes were high. The root cause was that nobody had mapped the full experience from a customer's perspective — from first awareness through to live usage and renewal.</p>\n<p>This project set out to fix that by building a complete, end-to-end user journey for the cloud computing service.</p>"
+    },
+    {
+      "title": "Approach",
+      "body": "<p>The work started with research. We interviewed customers at different stages of the journey — those who had just signed up, those actively using the service, and those who had churned or decided not to buy. We also ran sessions with internal stakeholders: sales teams, customer support agents, technical onboarding staff, and account managers.</p>\n<p>From this research we mapped the full journey across every touchpoint: marketing and discovery, sales conversations, contract and setup, onboarding, day-to-day usage, support interactions, and renewal. For each stage we identified what customers needed, what they were actually experiencing, and where the gaps were.</p>"
+    },
+    {
+      "title": "What We Found",
+      "body": "<p>Several friction points stood out. The onboarding process assumed a level of technical knowledge that many buyers did not have, particularly in SMEs where the person signing the contract was not always the person setting up the service. Sales materials did not address the questions customers were actually asking. Support was handling queries that good documentation or better UI copy would have prevented.</p>"
+    },
+    {
+      "title": "My Role",
+      "body": "<p>I led the user journey work from research through to stakeholder workshops. This involved facilitating co-creation sessions with sales and support teams, presenting findings to leadership, and working with product and design to prioritise improvements based on impact and effort.</p>\n<p>The cross-functional workshops were particularly valuable. Sales and support staff rarely had visibility of each other's pain points, and bringing them together to look at the same journey map surfaced shared problems that had previously been solved in isolation, or not solved at all.</p>"
+    },
+    {
+      "title": "Results",
+      "body": "<p>The improvements that followed the user journey work had measurable commercial impact. Sales conversion rates increased as the buying experience became clearer and the sales materials were updated to reflect actual customer concerns. Churn decreased as onboarding improved and customers reached value faster.</p>\n<p>The project illustrated a broader principle: service design is not just a UX exercise. When you map the full customer journey and involve sales, support, and product teams in understanding it together, you create alignment that has direct commercial consequences.</p>"
+    }
+  ]
 }
