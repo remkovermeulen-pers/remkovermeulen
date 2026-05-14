@@ -9,11 +9,32 @@
     "Product",
     "Research"
   ],
-  "lede": "",
+  "lede": "Fluid was a mobile wellbeing app developed at Telefonica Alpha, targeting 16 to 24 year olds. The central idea was simple: the way young people spend their time has a direct effect on how they feel. F",
   "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
   "role": "",
   "timeline": "",
   "partners": [],
   "metrics": [],
-  "sections": []
+  "sections": [
+    {
+      "title": "Overview",
+      "body": "<p>Fluid was a mobile wellbeing app developed at Telefonica Alpha, targeting 16 to 24 year olds. The central idea was simple: the way young people spend their time has a direct effect on how they feel. Fluid helped users become more aware of that connection and make small, practical changes.</p>\n<p>Unlike clinical mental health tools, Fluid was not designed for people in crisis. It was designed for the much larger population of young people who feel vaguely dissatisfied, low-energy, or socially disconnected — and who might benefit from a lightweight intervention before these feelings become something more serious.</p>"
+    },
+    {
+      "title": "The Design Challenge",
+      "body": "<p>Designing for 16 to 24 year olds is difficult. This age group is extremely sensitive to anything that feels patronising, clinical, or like homework. They are also highly attuned to authenticity — they will quickly dismiss products that feel designed by people who do not understand them.</p>\n<p>The design had to be engaging without being gamified in a way that felt hollow. It had to prompt reflection without demanding journalling. It had to give feedback without lecturing. And it had to work within the fragmented attention patterns of people who are simultaneously managing school or work, social lives, and digital consumption.</p>"
+    },
+    {
+      "title": "What We Built",
+      "body": "<p>Fluid combined a graphic visual interface with a conversational layer. The visual interface allowed users to see patterns in how they spent their time and how they reported feeling on those days — making the time-mood connection concrete and personal. The conversational interface provided context, suggestions, and prompts in a tone of voice calibrated to feel peer-like rather than clinical.</p>\n<p>The app drew on behavioural science to surface low-effort suggestions aligned with activities the user already valued. Rather than telling users to \"exercise more\" or \"spend less time on your phone\", Fluid worked with existing habits and preferences to identify where small shifts might have the most impact on mood.</p>"
+    },
+    {
+      "title": "My Role",
+      "body": "<p>I led the cross-functional team across the full product lifecycle: from initial user research and concept development, through design and prototyping, to development and launch. The team spanned UX, visual design, product, and engineering.</p>\n<p>User research with the target age group was central throughout. We ran co-design workshops with young people, tested prototypes iteratively, and paid close attention to the language and tone of every piece of copy in the product. The conversational interface in particular went through many rounds of revision based on how users responded to different phrasings and registers.</p>"
+    },
+    {
+      "title": "Why It Mattered",
+      "body": "<p>Fluid addressed a gap in the mental health product landscape. Most digital mental health tools are either very clinical (designed for diagnosed conditions) or very generic (generic mindfulness apps with limited personalisation). Fluid was designed specifically for the preventative middle ground — a space that is arguably where the greatest population-level impact is available.</p>"
+    }
+  ]
 }

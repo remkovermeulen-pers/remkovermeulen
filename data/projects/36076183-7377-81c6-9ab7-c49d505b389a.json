@@ -9,7 +9,7 @@
     "Product",
     "Research"
   ],
-  "lede": "",
+  "lede": "Health at Home was a chronic disease management service built for Telefonica, operating across O2 (UK), Movistar (Spain), and Vivo (Brazil). It was designed for patients managing long-term conditions ",
   "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
   "role": "",
   "timeline": "",
@@ -20,5 +20,26 @@
       "label": "decrease in mortality, 63% decrease in readmission rate."
     }
   ],
-  "sections": []
+  "sections": [
+    {
+      "title": "Overview",
+      "body": "<p>Health at Home was a chronic disease management service built for Telefonica, operating across O2 (UK), Movistar (Spain), and Vivo (Brazil). It was designed for patients managing long-term conditions — primarily heart failure, COPD, and diabetes — who needed regular monitoring but could not or should not be in hospital for routine check-ups.</p>\n<p>The service connected patients' home medical devices — scales, blood pressure monitors, heart rate monitors, pulse oximeters, and glucose meters — to a clinical platform that nurses and doctors could access remotely. Patients took their own measurements at home; clinicians reviewed the data, flagged anomalies, and contacted patients when readings required follow-up.</p>"
+    },
+    {
+      "title": "The Role of Ethnographic Research",
+      "body": "<p>The design was grounded in deep ethnographic research with patients, family members, nurses, and doctors. Home visits with patients revealed something that surveys would not have surfaced: the nurse was the emotional core of the service. Patients did not talk about the technology or the measurements. They talked about their nurse.</p>\n<p>As one family member of an 82-year-old heart failure patient put it: \"Dad is all happy after talking to nurse Anna.\" The weekly call was the anchor of the service. Everything else — the measurements, the alerts, the data — was infrastructure that supported that human relationship.</p>"
+    },
+    {
+      "title": "Designing Around the Nurse",
+      "body": "<p>This insight fundamentally shaped the service design. Rather than designing for maximum automation and minimal human contact, we designed a system that optimised the nurse's time so they could focus on the conversations that mattered.</p>\n<p>The clinical dashboard was designed specifically around nursing workflows after co-creation sessions with nurses, cardiologists, and heads of department. Nurses handled the day-to-day monitoring, reviewing measurements and responding to alerts. Doctors were brought in only when a nurse flagged something requiring medical judgement. This division of responsibility reflected how the service actually operated, and the design supported it rather than fighting it.</p>"
+    },
+    {
+      "title": "My Role",
+      "body": "<p>As User Experience Lead at Telefonica Digital/O2, I led the UX team across this project covering five locations and up to 17 people. I oversaw the ethnographic research programme, the co-creation workshops with clinical staff, and the design and delivery of both the patient-facing mobile interface and the clinical dashboard.</p>\n<p>The patient journey map we produced from the ethnographic research became a reference tool used across product, clinical, and operational teams to align decisions about service design and implementation.</p>"
+    },
+    {
+      "title": "Results",
+      "body": "<ul>\n<li>48% decrease in mortality rate among enrolled patients</li>\n<li>63% decrease in hospital readmission rate</li>\n</ul>\n<p>These are outcomes that most healthcare products never achieve at scale. They are a direct result of designing the service around the clinical and human reality of chronic disease management, rather than around technological possibility alone.</p>"
+    }
+  ]
 }

@@ -8,11 +8,32 @@
     "Strategy",
     "Research"
   ],
-  "lede": "",
+  "lede": "During the 2014-2016 Ebola outbreak in Guinea, it took six weeks to identify the source of the epidemic. By that point the virus had already reached Conakry, the capital, with a population of over two",
   "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
   "role": "",
   "timeline": "",
   "partners": [],
   "metrics": [],
-  "sections": []
+  "sections": [
+    {
+      "title": "Overview",
+      "body": "<p>During the 2014-2016 Ebola outbreak in Guinea, it took six weeks to identify the source of the epidemic. By that point the virus had already reached Conakry, the capital, with a population of over two million people. Six weeks is an eternity in outbreak response. The same challenge applied to the Zika outbreak spreading through Latin America.</p>\n<p>This project, developed at Telefonica R&amp;D in collaboration with the United Nations, Harvard University, and the Data Pop Alliance, explored whether mobile network data could dramatically shorten that detection window and enable more targeted, effective public health responses.</p>"
+    },
+    {
+      "title": "The Technical Approach",
+      "body": "<p>Mobile networks generate a continuous, anonymised record of where people are and how they move. This data — call detail records at scale — can reveal mobility patterns that are invisible to traditional epidemiological surveillance.</p>\n<p>For source detection, movement data can be traced back in time to identify where infected individuals were before symptoms appeared and before they were identified as cases. This retrospective analysis can locate an outbreak's origin in hours rather than weeks.</p>\n<p>For spread prediction, the same mobility data can model how the virus is likely to move next. People travel in patterns — between home and work, along transport corridors, between urban and rural areas — and these patterns predict where the next case clusters are likely to emerge before they appear in clinical data.</p>"
+    },
+    {
+      "title": "Using Mobile Networks for Education",
+      "body": "<p>Beyond detection and prediction, the project also demonstrated how mobile infrastructure could deliver targeted health education. Once high-risk locations were identified, SMS messages could be sent to people in those areas with specific, actionable guidance — without requiring them to have smartphones, internet access, or any prior awareness of the outbreak.</p>\n<p>This was particularly valuable in Guinea and the affected parts of Brazil, where infrastructure was limited but mobile penetration was high.</p>"
+    },
+    {
+      "title": "My Role",
+      "body": "<p>At Telefonica R&amp;D and later Telefonica Innovation, I led the product and service design for this initiative, working with data scientists, epidemiologists at Harvard, and public health partners at the United Nations. The work required translating complex mobility modelling outputs into tools and communications that public health officials could actually use in real-time outbreak situations.</p>"
+    },
+    {
+      "title": "Impact and Significance",
+      "body": "<p>The project was developed and tested in the context of both Ebola and Zika, demonstrating that the same underlying approach could be adapted to different disease transmission models with different predictive requirements.</p>\n<p>The collaboration with WHO, UNICEF, Harvard, and the Data Pop Alliance positioned Telefonica as a meaningful contributor to global health infrastructure — demonstrating that telecommunications companies hold data assets with genuine public health value, and that this value can be realised responsibly.</p>"
+    }
+  ]
 }

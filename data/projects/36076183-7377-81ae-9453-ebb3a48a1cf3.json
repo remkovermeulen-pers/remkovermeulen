@@ -8,11 +8,36 @@
     "Design",
     "Research"
   ],
-  "lede": "",
+  "lede": "TATU was a speculative design and research project exploring whether interactive tattoos could become a medium for communicating emotional state — to oneself and to others. The project came out of Tel",
   "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
   "role": "",
   "timeline": "",
   "partners": [],
   "metrics": [],
-  "sections": []
+  "sections": [
+    {
+      "title": "Overview",
+      "body": "<p>TATU was a speculative design and research project exploring whether interactive tattoos could become a medium for communicating emotional state — to oneself and to others. The project came out of Telefonica Alpha's broader research into passive mood detection using mobile sensor data, and asked a different kind of question: if we can detect mood, what is the most intimate and natural way to surface that information?</p>"
+    },
+    {
+      "title": "The Research Context",
+      "body": "<p>The Telefonica Alpha research team was working on detecting mood state using passive sensor data collected from a user's mobile phone — accelerometer patterns, communication frequency, location changes, and other behavioural signals. The technical work was advancing, but a separate question remained: how should a person receive and interact with information about their own emotional state?</p>\n<p>Screen-based notifications and dashboards felt too clinical and too interruptive for something as continuous and personal as mood. The team wanted to explore more ambient, embodied forms of communication.</p>"
+    },
+    {
+      "title": "The Concept",
+      "body": "<p>TATU imagined a near-future in which skin-surface displays — interactive, colour-changing tattoos — could reflect a person's detected mood state in real time. The display would be visible to the wearer and, where chosen, to others nearby. This created possibilities for both self-awareness and social communication.</p>\n<p>The concept was not about broadcasting emotion to a public audience. It was about creating a peripheral, ambient awareness — a subtle visual cue that might prompt reflection or signal openness to those close to you, without requiring a conversation.</p>"
+    },
+    {
+      "title": "The Prototype and Testing",
+      "body": "<p>Rather than building actual interactive tattoos — which remain a speculative technology — the team used a Wizard of Oz prototype: a setup in which a researcher manually controlled the display in real time to simulate what the system would do autonomously.</p>\n<p>The prototype was tested with couples, chosen because the inter-personal communication dimension of the concept was most relevant in close relationships. We explored how each partner responded to seeing a visual representation of their partner's mood, how it affected conversation, and whether it felt intrusive or useful.</p>"
+    },
+    {
+      "title": "My Role",
+      "body": "<p>I led the product and interaction design for TATU at Telefonica Alpha, from concept development through to prototype testing. This involved working with the research team on the mood detection model, designing the interaction model for the tattoo display, and facilitating the user testing sessions.</p>"
+    },
+    {
+      "title": "What We Learned",
+      "body": "<p>The testing surfaced genuine tension between transparency and privacy that any ambient mood communication system would need to resolve. Participants valued the idea of greater mutual understanding, but were uncomfortable with the idea of continuous, involuntary visibility of their emotional state. The opt-in, opt-out design became central to any viable version of the concept.</p>\n<p>TATU was not a product ready for market. It was a research vehicle for exploring questions that are increasingly relevant as mood detection technology improves.</p>"
+    }
+  ]
 }
