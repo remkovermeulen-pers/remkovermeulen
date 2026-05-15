@@ -359,27 +359,6 @@
     "logoDomain": ""
   },
   {
-    "notionId": "36076183-7377-8186-98c9-d7ffbbb950f3",
-    "title": "Scaling Perspectives — Program Editor",
-    "sector": "Health",
-    "status": "Not live",
-    "year": null,
-    "tags": [
-      "Product",
-      "Design"
-    ],
-    "lede": "",
-    "description": "Built an internal programme editor that let clinical teams create new therapeutic programmes without engineering involvement, cutting creation time by 75% and enabling parallel development across conditions.",
-    "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
-    "metrics": [
-      {
-        "value": "75%",
-        "label": "reduction in time to create a programme."
-      }
-    ],
-    "logoDomain": ""
-  },
-  {
     "notionId": "36076183-7377-8191-b686-ee42ad8574d4",
     "title": "Ting Happy Moments",
     "sector": "Health",
