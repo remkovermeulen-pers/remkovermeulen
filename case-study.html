@@ -233,16 +233,23 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
 
   Promise.all([
     fetch('data/projects/' + id + '.json').then(function(r){ return r.json(); }),
-    fetch('data/projects.json').then(function(r){ return r.json(); })
+    fetch('data/projects.json').then(function(r){ return r.json(); }),
+    fetch('data/config.json').then(function(r){ return r.json(); }).catch(function(){ return {}; })
   ]).then(function(results) {
     var proj = results[0];
     var all  = results[1];
-    render(proj, all);
+    var cfg  = results[2];
+    render(proj, all, cfg.brandfetchKey || '');
   }).catch(function() {
     main.innerHTML = '<div class="cs-loading">Project not found. <a href="work.html">Back to work</a></div>';
   });
 
-  function render(proj, all) {
+  function logoUrl(domain, key) {
+    if (key) return 'https://cdn.brandfetch.io/' + encodeURIComponent(domain) + '?c=' + encodeURIComponent(key);
+    return 'assets/logos/' + domain + '.svg';
+  }
+
+  function render(proj, all, brandfetchKey) {
     document.title = proj.title + ' — Case Study — Remko Vermeulen';
 
     var nextProj    = getNext(proj.id, all);
@@ -269,7 +276,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
         '<p class="cs-hero__crumb">' + esc(proj.sector) + ' &nbsp;/&nbsp; Case Study</p>' +
         (proj.logoDomain
           ? '<div class="hero-lockup">' +
-              '<img class="hero-lockup__logo" src="assets/logos/' + esc(proj.logoDomain) + '.svg" alt="' + esc(proj.title) + ' logo" onerror="this.closest(\'.hero-lockup\').outerHTML=\'<h1>' + esc(proj.title).replace(/'/g,'&#39;') + '</h1>\'">' +
+              '<img class="hero-lockup__logo" src="' + logoUrl(proj.logoDomain, brandfetchKey) + '" alt="' + esc(proj.title) + ' logo" onerror="this.closest(\'.hero-lockup\').outerHTML=\'<h1>' + esc(proj.title).replace(/'/g,'&#39;') + '</h1>\'">' +
               '<span class="hero-lockup__rule" aria-hidden="true"></span>' +
               '<h1>' + esc(proj.title) + '</h1>' +
             '</div>'
@@ -278,7 +285,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
         bylineHtml +
         '<div class="cs-cover">' +
           '<img class="bw-img" src="' + esc(proj.coverImage) + '" alt="' + esc(proj.title) + '">' +
-          (proj.logoDomain ? '<img class="cs-cover__logo" src="assets/logos/' + esc(proj.logoDomain) + '.svg" alt="" onerror="this.remove()">' : '') +
+          (proj.logoDomain ? '<img class="cs-cover__logo" src="' + logoUrl(proj.logoDomain, brandfetchKey) + '" alt="" onerror="this.remove()">' : '') +
           (proj.coverCaption ? '<div class="cs-cover__caption">' + esc(proj.coverCaption) + '</div>' : '') +
         '</div>' +
       '</section>' +

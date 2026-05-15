@@ -4,6 +4,7 @@
 //   data/articles/{id}.json     — full content per article
 //   data/projects.json          — metadata list for project grids
 //   data/projects/{id}.json     — full content per project
+//   data/config.json            — runtime config (Brandfetch key etc.)
 // Requires NOTION_TOKEN env var and Node 18+
 
 const fs = require('fs');
@@ -12,6 +13,7 @@ const path = require('path');
 const ARTICLES_DB = 'f04c2f670a3f4239accf95486aa5336d';
 const PROJECTS_DB = 'cdc9f0e38efc478ab9bc6bd562c82454';
 const TOKEN = process.env.NOTION_TOKEN;
+const BRANDFETCH_KEY = process.env.BRANDFETCH_KEY || '';
 
 if (!TOKEN) { console.error('NOTION_TOKEN is not set'); process.exit(1); }
 
@@ -205,6 +207,7 @@ async function fetchProjects() {
   let cursor;
   do {
     const body = {
+      filter: { property: 'Status', select: { equals: 'Live' } },
       sorts: [{ property: 'Year', direction: 'descending' }],
       page_size: 100,
     };
@@ -297,6 +300,13 @@ async function fetchProjects() {
 async function main() {
   await fetchArticles();
   await fetchProjects();
+
+  // Write runtime config for the static site
+  fs.writeFileSync(
+    path.join(__dirname, '..', 'data', 'config.json'),
+    JSON.stringify({ brandfetchKey: BRANDFETCH_KEY }, null, 2)
+  );
+  console.log('\nWrote data/config.json');
 }
 
 main().catch(err => { console.error(err); process.exit(1); });
