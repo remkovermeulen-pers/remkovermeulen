@@ -269,7 +269,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
         '<p class="cs-hero__crumb">' + esc(proj.sector) + ' &nbsp;/&nbsp; Case Study</p>' +
         (proj.logoDomain
           ? '<div class="hero-lockup">' +
-              '<img class="hero-lockup__logo" src="https://cdn.brandfetch.io/' + esc(proj.logoDomain) + '/w/400/h/200/logo?theme=light" alt="' + esc(proj.title) + ' logo">' +
+              '<img class="hero-lockup__logo" src="assets/logos/' + esc(proj.logoDomain) + '.svg" alt="' + esc(proj.title) + ' logo" onerror="this.closest(\'.hero-lockup\').outerHTML=\'<h1>' + esc(proj.title).replace(/'/g,'&#39;') + '</h1>\'">' +
               '<span class="hero-lockup__rule" aria-hidden="true"></span>' +
               '<h1>' + esc(proj.title) + '</h1>' +
             '</div>'
@@ -278,7 +278,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
         bylineHtml +
         '<div class="cs-cover">' +
           '<img class="bw-img" src="' + esc(proj.coverImage) + '" alt="' + esc(proj.title) + '">' +
-          (proj.logoDomain ? '<img class="cs-cover__logo" src="https://cdn.brandfetch.io/' + esc(proj.logoDomain) + '/w/400/h/200/logo?theme=dark" alt="">' : '') +
+          (proj.logoDomain ? '<img class="cs-cover__logo" src="assets/logos/' + esc(proj.logoDomain) + '.svg" alt="" onerror="this.remove()">' : '') +
           (proj.coverCaption ? '<div class="cs-cover__caption">' + esc(proj.coverCaption) + '</div>' : '') +
         '</div>' +
       '</section>' +

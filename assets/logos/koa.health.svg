@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 40" fill="none">
+  <circle cx="20" cy="20" r="18" stroke="#2B5C8A" stroke-width="1.5"/>
+  <text x="20" y="26" font-family="Georgia,serif" font-size="14" font-weight="700" fill="#2B5C8A" text-anchor="middle">Koa</text>
+  <text x="50" y="26" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#2B5C8A">Health</text>
+</svg>
