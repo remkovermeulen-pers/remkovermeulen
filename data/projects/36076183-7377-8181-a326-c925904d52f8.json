@@ -9,6 +9,7 @@
     "Research"
   ],
   "lede": "",
+  "description": "Designed an explainability layer for clinical ML models that translated opaque risk scores into readable clinical reasoning, significantly increasing clinician willingness to act on model outputs.",
   "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
   "role": "",
   "timeline": "",

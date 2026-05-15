@@ -10,6 +10,7 @@
       "Product"
     ],
     "lede": "",
+    "description": "Restructured product, design and engineering teams at a profitable SaaS company, cutting costs by 26% while increasing output. Drove a 94% increase in first-time activation by removing friction from the early user journey.",
     "coverImage": "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1200&q=80",
     "metrics": [
       {
@@ -37,6 +38,7 @@
       "Product"
     ],
     "lede": "",
+    "description": "Led product end-to-end at a PropTech SaaS startup, improving unit economics from 162% to 21% CAC/LTV and growing active users by 87% through better onboarding and AI-powered document tooling.",
     "coverImage": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&q=80",
     "metrics": [
       {
@@ -68,6 +70,7 @@
       "Product"
     ],
     "lede": "",
+    "description": "Led product definition and clinical trial for a digital therapeutic companion to Spravato (esketamine) for treatment-resistant depression, developed in partnership with Janssen / Johnson & Johnson.",
     "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
     "metrics": [
       {
@@ -92,6 +95,7 @@
       "Research"
     ],
     "lede": "",
+    "description": "Co-founded and scaled a digital mental health company from 1 to 40 people, raising €66M and reaching 3M users. Built a portfolio of clinically validated products in partnership with the NHS, Harvard, and Janssen.",
     "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
     "metrics": [
       {
@@ -132,6 +136,7 @@
       "Research"
     ],
     "lede": "",
+    "description": "Led UX, product and service design across 5 locations for Telefonica's global health and digital portfolio. Delivered a chronic disease service reducing mortality by 48%, Parkinson's voice detection at 78% precision, and pandemic prediction tools with WHO and Harvard.",
     "coverImage": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&q=80",
     "metrics": [
       {
@@ -163,6 +168,7 @@
       "Product"
     ],
     "lede": "",
+    "description": "Built and led the UX function at a B2B SaaS company, shifting the product to user-centred design. Drove a 212% increase in conversions and 50% reduction in time on task, while simplifying the product portfolio by half.",
     "coverImage": "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1200&q=80",
     "metrics": [
       {
@@ -190,6 +196,7 @@
       "Product"
     ],
     "lede": "",
+    "description": "Redesigned a digital language learning platform for emerging markets and built a global teacher collaboration tool for the British Council, reaching 3M+ active learners with a 40% uplift in engagement.",
     "coverImage": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1200&q=80",
     "metrics": [
       {
@@ -217,6 +224,7 @@
       "Research"
     ],
     "lede": "",
+    "description": "Designed a bicycle-mounted computer for Koga Miyata combining turn-by-turn navigation with location-aware tourist information, purpose-built for touring cyclists through dedicated user research.",
     "coverImage": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1200&q=80",
     "metrics": []
   },
@@ -232,6 +240,7 @@
       "Research"
     ],
     "lede": "",
+    "description": "Built a preventative wellbeing app for 16-24 year olds that used behavioural science to surface low-effort habit changes, designed to feel peer-like rather than clinical through extensive co-design with the target age group.",
     "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
     "metrics": []
   },
@@ -246,6 +255,7 @@
       "Research"
     ],
     "lede": "",
+    "description": "Designed an SMS and phone-based medical consultation service for Vivo Brasil, giving middle and lower-income households access to a doctor through infrastructure they already owned.",
     "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
     "metrics": []
   },
@@ -262,6 +272,7 @@
       "Research"
     ],
     "lede": "",
+    "description": "Led a digital CBT product from concept through clinical trial with MGH and Harvard, achieving 90% treatment response, 55% symptom reduction, and 95% cost reduction versus traditional therapy.",
     "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
     "metrics": [
       {
@@ -289,6 +300,7 @@
       "Research"
     ],
     "lede": "",
+    "description": "Translated a clinically validated Cognitive Bias Modification technique into a consumer digital product with the BBC and LSE, running one of the largest CBM studies ever conducted outside a clinical setting with 25,000+ participants.",
     "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
     "metrics": [
       {
@@ -308,6 +320,7 @@
       "Research"
     ],
     "lede": "",
+    "description": "Developed a telephone-based Parkinson's detection service using voice analysis, achieving 78% accuracy with no specialist equipment — accessible to any patient with a mobile or landline phone.",
     "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
     "metrics": [
       {
@@ -327,6 +340,7 @@
       "Research"
     ],
     "lede": "",
+    "description": "Designed an explainability layer for clinical ML models that translated opaque risk scores into readable clinical reasoning, significantly increasing clinician willingness to act on model outputs.",
     "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
     "metrics": []
   },
@@ -341,6 +355,7 @@
       "Design"
     ],
     "lede": "",
+    "description": "Built an internal programme editor that let clinical teams create new therapeutic programmes without engineering involvement, cutting creation time by 75% and enabling parallel development across conditions.",
     "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
     "metrics": [
       {
@@ -360,6 +375,7 @@
       "Research"
     ],
     "lede": "",
+    "description": "Prototyped a concept that maps a person's emotional patterns to the places they frequent, testing whether spatial visualisation of mood data prompts more useful reflection than traditional self-report tools.",
     "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
     "metrics": []
   },
@@ -374,6 +390,7 @@
       "Research"
     ],
     "lede": "",
+    "description": "Used mobile network mobility data to cut epidemic source detection from weeks to hours, and predict outbreak spread before clinical data surfaced — validated across Ebola and Zika in collaboration with WHO and Harvard.",
     "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
     "metrics": []
   },
@@ -388,6 +405,7 @@
       "Research"
     ],
     "lede": "",
+    "description": "Built an ML model with NHS Birmingham predicting mental health crises four weeks in advance at 80% recall, giving clinicians enough lead time to intervene before patients reached crisis point.",
     "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
     "metrics": [
       {
@@ -407,6 +425,7 @@
       "Research"
     ],
     "lede": "",
+    "description": "Explored whether interactive skin-surface displays could communicate detected mood state ambientally, using a Wizard of Oz prototype tested with couples to surface the privacy and transparency tensions any such system would face.",
     "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
     "metrics": []
   },
@@ -422,6 +441,7 @@
       "Research"
     ],
     "lede": "",
+    "description": "Designed a remote chronic disease management service across UK, Spain, and Brazil, grounded in ethnographic research with patients and nurses. Achieved a 48% reduction in mortality and 63% reduction in hospital readmissions.",
     "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
     "metrics": [
       {
@@ -445,6 +465,7 @@
       "Research"
     ],
     "lede": "",
+    "description": "Designed a passive bipolar monitoring service using anonymised mobile network data, giving psychiatrists a continuous view of patient state between appointments without requiring any active input from patients.",
     "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
     "metrics": []
   },
@@ -459,6 +480,7 @@
       "Research"
     ],
     "lede": "",
+    "description": "Initiated a futures research programme with the Royal College of Art to explore what mental health services could look like in 10-20 years, producing 33 scenarios and 10 user-tested product concepts.",
     "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
     "metrics": [
       {
@@ -483,6 +505,7 @@
       "Research"
     ],
     "lede": "",
+    "description": "Applied Kahneman and Fogg's behaviour change frameworks with Harvard Medical School to redesign a health service user journey around moments of high motivation and low-friction actions, rather than usability improvements alone.",
     "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
     "metrics": []
   },
@@ -498,6 +521,7 @@
       "Research"
     ],
     "lede": "",
+    "description": "Mapped the full customer journey for Telefonica's cloud computing service, aligning sales, support, and product teams around shared pain points to improve conversion and reduce churn.",
     "coverImage": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&q=80",
     "metrics": [
       {
