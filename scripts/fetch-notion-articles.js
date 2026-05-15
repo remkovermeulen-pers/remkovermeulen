@@ -148,7 +148,43 @@ async function fetchAllBlocks(pageId) {
   return all;
 }
 
+const YOUTUBE_CHANNEL_ID = 'UCsCKDRichUBYXNLAnWFugdw';
+
+async function fetchYouTubeVideos() {
+  try {
+    const res = await fetch(`https://www.youtube.com/feeds/videos.xml?channel_id=${YOUTUBE_CHANNEL_ID}`);
+    const xml = await res.text();
+    const ids    = [...xml.matchAll(/<yt:videoId>([^<]+)<\/yt:videoId>/g)].map(m => m[1]);
+    const titles = [...xml.matchAll(/<title>([^<]+)<\/title>/g)].map(m => m[1]).slice(1); // skip channel title
+    return ids.map((id, i) => ({ id, title: titles[i] || '' }));
+  } catch (e) {
+    console.warn('  YouTube RSS fetch failed:', e.message);
+    return [];
+  }
+}
+
+function normalizeTitle(str) {
+  return str.toLowerCase().replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, ' ').trim();
+}
+
+function matchVideo(articleTitle, videos) {
+  const na = normalizeTitle(articleTitle);
+  for (const v of videos) {
+    const nv = normalizeTitle(v.title);
+    if (na === nv || na.includes(nv) || nv.includes(na)) return v;
+    // Jaccard word overlap ≥ 0.5
+    const wa = new Set(na.split(' ').filter(w => w.length > 3));
+    const wv = new Set(nv.split(' ').filter(w => w.length > 3));
+    const overlap = [...wa].filter(w => wv.has(w)).length;
+    if (overlap / (new Set([...wa, ...wv]).size) >= 0.5) return v;
+  }
+  return null;
+}
+
 async function fetchArticles() {
+  console.log('\nFetching YouTube videos…');
+  const videos = await fetchYouTubeVideos();
+  console.log(`  Found ${videos.length} videos`);
   console.log('\nFetching articles…');
   const allPages = [];
   let cursor;
@@ -183,6 +219,12 @@ async function fetchArticles() {
       url: p['Article URL']?.url ?? page.url,
     };
     if (!meta.title) continue;
+
+    const matched = matchVideo(meta.title, videos);
+    if (matched) {
+      meta.youtubeVideoId = matched.id;
+      console.log(`  🎬 Matched "${meta.title}" → ${matched.id}`);
+    }
     metaList.push(meta);
 
     const blocks = await fetchAllBlocks(page.id);

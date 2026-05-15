@@ -92,6 +92,8 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
 .cs-cover { margin-top:48px; border:1px solid var(--primary); overflow:hidden; position:relative; }
 .cs-cover img { width:100%; height:clamp(280px,38vw,520px); object-fit:cover; display:block; }
 .cs-cover__caption { padding:14px 20px; border-top:1px solid var(--line); font-size:12px; color:var(--muted-2); font-style:italic; background:var(--bg-card); }
+.cs-cover__video { position:relative; width:100%; aspect-ratio:16/9; }
+.cs-cover__video iframe { position:absolute; inset:0; width:100%; height:100%; border:0; display:block; }
 
 /* ===== BODY GRID ===== */
 .cs-body { margin-top:96px; display:grid; grid-template-columns:220px 1fr; gap:64px; }
@@ -360,7 +362,9 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
       + (article.readingTime ? '<div class="cs-hero__byline-block"><h5>Reading time</h5><p>' + article.readingTime + ' minutes</p></div>' : '')
       + '</div>'
       + '<div class="cs-cover">'
-      + '<img class="bw-img" src="' + coverSrc + '" alt="' + esc(article.title) + '">'
+      + (article.youtubeVideoId
+          ? '<div class="cs-cover__video"><iframe src="https://www.youtube.com/embed/' + esc(article.youtubeVideoId) + '?rel=0" title="' + esc(article.title) + '" allowfullscreen loading="lazy"></iframe></div>'
+          : '<img class="bw-img" src="' + coverSrc + '" alt="' + esc(article.title) + '">')
       + '</div>'
       + '</section>'
 
