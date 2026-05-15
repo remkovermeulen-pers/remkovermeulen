@@ -10,7 +10,7 @@
     "Product",
     "Research"
   ],
-  "lede": "Perspectives was a digital therapeutic (DTx) product developed in collaboration with Massachusetts General Hospital (MGH) and Harvard Medical School, targeting four mental health conditions: Body Dysmorphic Disorder, Depression, Anxiety, and OCD. It combined early symptom detection with a personalised Cognitive Behavioural Therapy (CBT) programme, supported by a human therapist. The product was built on the clinical insight that CBT is highly effective for these conditions, but access to qualified therapists is severely limited by cost and availability. Perspectives was designed to deliver the therapeutic benefit of CBT at a fraction of the cost, at scale, without compromising clinical outcomes.",
+  "lede": "",
   "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
   "role": "",
   "timeline": "",
@@ -31,24 +31,24 @@
   ],
   "sections": [
     {
-      "title": "Overview",
-      "body": "<p>Perspectives was a digital therapeutic (DTx) product developed in collaboration with Massachusetts General Hospital (MGH) and Harvard Medical School, targeting four mental health conditions: Body Dysmorphic Disorder, Depression, Anxiety, and OCD. It combined early symptom detection with a personalised Cognitive Behavioural Therapy (CBT) programme, supported by a human therapist.</p>\n<p>The product was built on the clinical insight that CBT is highly effective for these conditions, but access to qualified therapists is severely limited by cost and availability. Perspectives was designed to deliver the therapeutic benefit of CBT at a fraction of the cost, at scale, without compromising clinical outcomes.</p>"
+      "title": "Context",
+      "body": "<p>Telefonica Alpha Health (later Koa Health), in collaboration with Massachusetts General Hospital (MGH) and Harvard Medical School. The product targeted four conditions: Body Dysmorphic Disorder, Depression, Anxiety, and OCD. As VP of Product, I led the product from concept through to clinical trial. The cross-functional team included product, UX, engineering, and clinical research partners. The company secured €66M in investment.</p>"
     },
     {
-      "title": "How It Worked",
-      "body": "<p>The mobile app assessed users for early symptoms using validated clinical instruments. Where symptoms were detected, it initiated a personalised programme based on the user's specific symptom profile. The programme structure followed CBT protocols established and validated by MGH, with module content and sequencing adapted to the individual.</p>\n<p>Therapist involvement was integrated into the experience rather than bolted on. Therapists monitored user progress through a clinician dashboard, stepped in at key moments in the programme, and were available for direct contact when the system flagged elevated risk. This hybrid model kept human oversight central while reducing the per-user therapist time required.</p>"
+      "title": "Problem",
+      "body": "<p>CBT is one of the most effective treatments for these conditions, but access is severely limited by therapist availability and cost. NHS waiting times for therapy could stretch to 12+ months. Private therapy was unaffordable for the majority. The business problem was demonstrating clinical equivalence to traditional therapy at a fraction of the cost — the evidence base required for NHS contracts, FDA submission, and investor confidence.</p>"
     },
     {
-      "title": "My Role",
-      "body": "<p>As VP of Product at Telefonica Alpha Health (later Koa Health), I led the product from concept through to clinical trial. This covered the full scope: market research and clinical validation of the concept, product definition, roadmap, UX design, agile development, and coordination with the MGH and Harvard research teams.</p>\n<p>Managing the relationship with clinical partners at this level required translating between two very different working cultures — product development, which moves fast and iterates on uncertainty, and clinical research, which demands rigorous protocols and documented evidence. Keeping both moving in parallel without compromising either was one of the more demanding aspects of the project.</p>\n<p>The product also required regulatory thinking from the outset. With FDA Class II de novo and CE Class I submissions in progress, every design decision needed to account for how it would be documented and justified in regulatory submissions.</p>"
+      "title": "My role",
+      "body": "<p>I owned the product end-to-end: market research, clinical concept validation, product definition, roadmap, UX design, agile development, and coordination with the MGH and Harvard research teams. Managing the relationship between product development culture (fast, iterative, tolerant of uncertainty) and clinical research culture (rigorous, protocol-driven, documented) was a significant part of the role. Regulatory strategy (FDA Class II de novo, CE Class I) was shaped in collaboration with a regulatory consultant, but every design decision had to account for regulatory documentation requirements.</p>"
     },
     {
-      "title": "Results",
-      "body": "<p>The clinical trial results were exceptional:</p>\n<ul>\n<li>90% of participants responded to treatment</li>\n<li>Average symptom reduction of 55%, on par with the best MGH therapists</li>\n<li>95% reduction in cost compared to traditional therapy</li>\n</ul>\n<p>These results positioned Perspectives as one of the most clinically validated mental health apps produced outside of a pharmaceutical context, and contributed to the €66M in investment secured by Koa Health.</p>"
+      "title": "Approach",
+      "body": "<p>The product assessed users for early symptoms using validated clinical instruments, then initiated a personalised CBT programme based on their symptom profile. Therapist involvement was integrated — clinicians monitored progress via a dashboard, stepped in at key moments, and were available when the system flagged elevated risk. The hybrid model kept human oversight central while dramatically reducing per-user therapist time. Clinical protocols were designed and validated by MGH; my team's job was to make them work as a consumer digital product without compromising therapeutic integrity.</p>"
     },
     {
-      "title": "Status",
-      "body": "<p>The product was pending FDA approval (Class II de novo) and CE mark (Class I) at the time of publication.</p>"
+      "title": "Outcome",
+      "body": "<ul>\n<li>90% of participants responded to treatment</li>\n<li>Average symptom reduction of 55%, on par with results from the best MGH therapists</li>\n<li>95% reduction in cost compared to traditional therapy</li>\n<li>Results contributed directly to Koa Health's €66M investment round</li>\n<li>Product pending FDA Class II de novo approval and CE Class I mark at time of publication</li>\n</ul>"
     }
   ]
 }

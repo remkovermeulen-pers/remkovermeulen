@@ -8,7 +8,7 @@
     "Design",
     "Research"
   ],
-  "lede": "TATU was a speculative design and research project exploring whether interactive tattoos could become a medium for communicating emotional state — to oneself and to others. The project came out of Telefonica Alpha's broader research into passive mood detection using mobile sensor data, and asked a different kind of question: if we can detect mood, what is the most intimate and natural way to surface that information?",
+  "lede": "",
   "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
   "role": "",
   "timeline": "",
@@ -16,28 +16,24 @@
   "metrics": [],
   "sections": [
     {
-      "title": "Overview",
-      "body": "<p>TATU was a speculative design and research project exploring whether interactive tattoos could become a medium for communicating emotional state — to oneself and to others. The project came out of Telefonica Alpha's broader research into passive mood detection using mobile sensor data, and asked a different kind of question: if we can detect mood, what is the most intimate and natural way to surface that information?</p>"
+      "title": "Context",
+      "body": "<p>Telefonica Alpha, speculative design and research project. The team comprised product, research, and design. I led product and interaction design.</p>"
     },
     {
-      "title": "The Research Context",
-      "body": "<p>The Telefonica Alpha research team was working on detecting mood state using passive sensor data collected from a user's mobile phone — accelerometer patterns, communication frequency, location changes, and other behavioural signals. The technical work was advancing, but a separate question remained: how should a person receive and interact with information about their own emotional state?</p>\n<p>Screen-based notifications and dashboards felt too clinical and too interruptive for something as continuous and personal as mood. The team wanted to explore more ambient, embodied forms of communication.</p>"
+      "title": "Problem",
+      "body": "<p>The Alpha team was making technical progress on mood detection from mobile sensor data. The product question was separate: how should a person interact with real-time information about their own emotional state in a way that is ambient and natural rather than intrusive and screen-mediated? This was a research question, not a product brief — the goal was to generate testable hypotheses about a future interaction model.</p>"
     },
     {
-      "title": "The Concept",
-      "body": "<p>TATU imagined a near-future in which skin-surface displays — interactive, colour-changing tattoos — could reflect a person's detected mood state in real time. The display would be visible to the wearer and, where chosen, to others nearby. This created possibilities for both self-awareness and social communication.</p>\n<p>The concept was not about broadcasting emotion to a public audience. It was about creating a peripheral, ambient awareness — a subtle visual cue that might prompt reflection or signal openness to those close to you, without requiring a conversation.</p>"
+      "title": "My role",
+      "body": "<p>I led the concept development, interaction design, and user testing. Working with the research team on the mood detection model, I designed the interaction model for the tattoo display and facilitated the testing sessions.</p>"
     },
     {
-      "title": "The Prototype and Testing",
-      "body": "<p>Rather than building actual interactive tattoos — which remain a speculative technology — the team used a Wizard of Oz prototype: a setup in which a researcher manually controlled the display in real time to simulate what the system would do autonomously.</p>\n<p>The prototype was tested with couples, chosen because the inter-personal communication dimension of the concept was most relevant in close relationships. We explored how each partner responded to seeing a visual representation of their partner's mood, how it affected conversation, and whether it felt intrusive or useful.</p>"
+      "title": "Approach",
+      "body": "<p>TATU imagined interactive skin-surface displays that reflected detected mood state — visible to the wearer and, optionally, to others nearby. The concept was about peripheral, ambient awareness rather than broadcasting. Since actual interactive tattoos are not a current technology, we used a Wizard of Oz prototype: a researcher manually controlled the display in real time. Testing was done with couples, where mutual emotional awareness was most relevant.</p>"
     },
     {
-      "title": "My Role",
-      "body": "<p>I led the product and interaction design for TATU at Telefonica Alpha, from concept development through to prototype testing. This involved working with the research team on the mood detection model, designing the interaction model for the tattoo display, and facilitating the user testing sessions.</p>"
-    },
-    {
-      "title": "What We Learned",
-      "body": "<p>The testing surfaced genuine tension between transparency and privacy that any ambient mood communication system would need to resolve. Participants valued the idea of greater mutual understanding, but were uncomfortable with the idea of continuous, involuntary visibility of their emotional state. The opt-in, opt-out design became central to any viable version of the concept.</p>\n<p>TATU was not a product ready for market. It was a research vehicle for exploring questions that are increasingly relevant as mood detection technology improves.</p>"
+      "title": "Outcome",
+      "body": "<ul>\n<li>Testing surfaced a genuine tension between transparency and privacy that any ambient mood communication system would need to resolve</li>\n<li>Participants valued the idea of greater mutual understanding but were uncomfortable with continuous, involuntary visibility of emotional state</li>\n<li>Opt-in/opt-out design was identified as essential to any viable version</li>\n<li>Findings contributed to Telefonica Alpha's body of work on passive mood monitoring and informed how subsequent products (Fluid, Perspectives) handled emotional data sensitivity</li>\n</ul>"
     }
   ]
 }

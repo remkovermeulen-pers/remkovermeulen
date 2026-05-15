@@ -8,7 +8,7 @@
     "Product",
     "Research"
   ],
-  "lede": "Machine learning models are increasingly capable of making accurate predictions in clinical settings. But accuracy alone does not drive adoption. Clinicians are trained to reason from evidence: they want to understand why a prediction was made, not just what the prediction is. A model that says \"this patient is at elevated risk\" without explaining the basis for that conclusion will be ignored — or worse, followed blindly without appropriate clinical judgement. This project, developed at Telefonica Alpha, addressed the trust gap between ML model outputs and clinical users. The goal was to make the reasoning behind predictions transparent, interpretable, and trustworthy enough to support real clinical decision-making.",
+  "lede": "",
   "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
   "role": "",
   "timeline": "",
@@ -16,24 +16,24 @@
   "metrics": [],
   "sections": [
     {
-      "title": "Overview",
-      "body": "<p>Machine learning models are increasingly capable of making accurate predictions in clinical settings. But accuracy alone does not drive adoption. Clinicians are trained to reason from evidence: they want to understand why a prediction was made, not just what the prediction is. A model that says \"this patient is at elevated risk\" without explaining the basis for that conclusion will be ignored — or worse, followed blindly without appropriate clinical judgement.</p>\n<p>This project, developed at Telefonica Alpha, addressed the trust gap between ML model outputs and clinical users. The goal was to make the reasoning behind predictions transparent, interpretable, and trustworthy enough to support real clinical decision-making.</p>"
+      "title": "Context",
+      "body": "<p>Koa Health / Telefonica Alpha, clinical AI product development. This project ran in parallel with the Mental Crisis Prediction work and was a direct dependency on its adoption. Team comprised product, AI/data science, and clinical UX. I led product and UX design.</p>"
     },
     {
-      "title": "The Problem with Black Boxes",
-      "body": "<p>The models underlying clinical predictions — gradient boosting, neural networks, ensemble methods — are mathematically opaque. A trained model can output a risk score with high accuracy, but the internal mechanics that produced it are not legible to a human reviewer. For clinicians, this opacity is a barrier. For regulators, it is a compliance issue. For patients, it raises questions about accountability.</p>"
+      "title": "Problem",
+      "body": "<p>The mental health crisis prediction model was technically strong but not being acted on by clinicians. NHS staff were trained to reason from evidence — they wanted to understand <em>why</em> a risk score was generated, not just what it said. A model that output a score without explaining its basis would either be ignored or followed without appropriate clinical judgement. This was both an adoption problem and a regulatory risk.</p>"
     },
     {
-      "title": "The Approach",
-      "body": "<p>The team explored methods for converting complex model outputs into more interpretable representations. A core technique used was Trepan — an approach that extracts a decision tree from a trained model, approximating its behaviour in a form that can be read and followed by a human reviewer.</p>\n<p>Rather than replacing the underlying model with a simpler one (which would sacrifice accuracy), Trepan generates a companion representation that explains the model's behaviour in terms of feature importance and decision logic. Clinicians could see which factors most influenced a risk prediction — for example, \"appointment non-attendance in the last 6 weeks\" or \"recent prescription change\" — and weigh these against their own clinical knowledge.</p>"
+      "title": "My role",
+      "body": "<p>I owned the product and UX design of the explainability layer. I personally led the user research with clinicians to understand their reasoning process, and translated the AI team's technical approaches into interfaces calibrated to clinical decision-making. The AI team's selection of the Trepan method was delegated; my job was to design around it.</p>"
     },
     {
-      "title": "My Role",
-      "body": "<p>I led the product and UX design for the explainability layer, working with the AI team to understand the technical approaches available and translate them into interfaces that were useful for clinical users. This involved extensive user research with clinicians to understand how they reason, what level of detail was useful versus overwhelming, and how they wanted to act on risk information.</p>"
+      "title": "Approach",
+      "body": "<p>I ran user research with psychiatrists and nurses to understand how they reason about risk, what level of detail was useful versus overwhelming, and what would make them willing to act on a model output. The core technical approach used was Trepan — a method that extracts a decision tree from the trained model to explain its behaviour in human-readable terms. I designed the interface to surface the top contributing factors in plain language (e.g., \"appointment non-attendance in the last 6 weeks\", \"recent prescription change\") alongside the risk score, so clinicians could weigh model reasoning against their own knowledge.</p>"
     },
     {
-      "title": "Results and Impact",
-      "body": "<p>The explainable AI work was closely linked to the mental health crisis prediction service. Clinicians who were given access to the prediction plus an explanation of the contributing factors were significantly more willing to act on the output than those who received a risk score alone.</p>\n<p>This reinforced a broader finding: the adoption of AI in clinical settings is not primarily a technical problem. It is a trust and communication problem. Building tools that help clinicians understand and interrogate model outputs is as important as improving model accuracy.</p>"
+      "title": "Outcome",
+      "body": "<p>Clinicians given access to predictions plus explanations were significantly more willing to act on model outputs than those who received a risk score alone. The explainability layer was a condition of clinical adoption and directly enabled the rollout of the crisis prediction service in NHS Birmingham. The project reinforced a key finding: AI adoption in clinical settings is primarily a trust problem, not a technical one.</p>"
     }
   ]
 }

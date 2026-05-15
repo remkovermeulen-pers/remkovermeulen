@@ -216,7 +216,7 @@
       "Design",
       "Research"
     ],
-    "lede": "Koga Miyata is a Dutch manufacturer of high-end touring and road bicycles, known for their quality construction and attention to detail. The brief for this project was to develop a brand extension — a bicycle-mounted computer that would complement the premium positioning of the brand while adding genuine utility for touring cyclists. This was an early project in my career, completed in 2000 as part of my Industrial Design Engineering degree at Delft University of Technology, with a specialisation in Innovation Management.",
+    "lede": "",
     "coverImage": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1200&q=80",
     "metrics": []
   },
@@ -231,7 +231,7 @@
       "Product",
       "Research"
     ],
-    "lede": "Fluid was a mobile wellbeing app developed at Telefonica Alpha, targeting 16 to 24 year olds. The central idea was simple: the way young people spend their time has a direct effect on how they feel. Fluid helped users become more aware of that connection and make small, practical changes. Unlike clinical mental health tools, Fluid was not designed for people in crisis. It was designed for the much larger population of young people who feel vaguely dissatisfied, low-energy, or socially disconnected — and who might benefit from a lightweight intervention before these feelings become something more serious.",
+    "lede": "",
     "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
     "metrics": []
   },
@@ -245,7 +245,7 @@
       "Product",
       "Research"
     ],
-    "lede": "In Brazil, private health insurance is not just a practical necessity — it is a status symbol. In homes across different income groups, it sits alongside a fridge, a television, and a laptop as one of the markers of having made it into the middle class. But for the majority of Brazilians, it remains out of reach. My Health was designed to change that. Developed by Telefonica R&amp;D for Vivo Brasil, it gave middle and lower-income households access to on-demand medical consultation — starting with SMS and phone, and evolving towards web and video.",
+    "lede": "",
     "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
     "metrics": []
   },
@@ -261,7 +261,7 @@
       "Product",
       "Research"
     ],
-    "lede": "Perspectives was a digital therapeutic (DTx) product developed in collaboration with Massachusetts General Hospital (MGH) and Harvard Medical School, targeting four mental health conditions: Body Dysmorphic Disorder, Depression, Anxiety, and OCD. It combined early symptom detection with a personalised Cognitive Behavioural Therapy (CBT) programme, supported by a human therapist. The product was built on the clinical insight that CBT is highly effective for these conditions, but access to qualified therapists is severely limited by cost and availability. Perspectives was designed to deliver the therapeutic benefit of CBT at a fraction of the cost, at scale, without compromising clinical outcomes.",
+    "lede": "",
     "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
     "metrics": [
       {
@@ -288,7 +288,7 @@
       "Product",
       "Research"
     ],
-    "lede": "Alcohol consumption is one of the most significant and most preventable contributors to poor health outcomes in the UK. Existing behaviour change approaches — information campaigns, counselling, GP referrals — reach a small proportion of the people who would benefit, and produce modest results in those they do reach. This project took a different approach. Rather than trying to persuade people to drink less through information or willpower, it used Cognitive Bias Modification (CBM) to shift the underlying automatic responses that drive drinking behaviour.",
+    "lede": "",
     "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
     "metrics": [
       {
@@ -307,7 +307,7 @@
       "Product",
       "Research"
     ],
-    "lede": "Parkinson's disease is notoriously difficult to diagnose in its early stages. By the time a formal diagnosis is made, the disease has often been progressing for years. During that window, early intervention could significantly slow deterioration and improve quality of life — but only if the condition is detected in time. This project, developed in collaboration between Telefonica R&amp;D and Hospital Clinic Barcelona, explored whether voice analysis could serve as an accessible, low-cost early detection method. The hypothesis was that subtle changes in speech patterns — tremor, altered rhythm, reduced volume — appear before other visible symptoms and can be captured through a standard telephone call.",
+    "lede": "",
     "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
     "metrics": [
       {
@@ -327,7 +327,7 @@
       "Design",
       "Product"
     ],
-    "lede": "Real estate agents and property investors deal with a high volume of manual, repetitive work: listing properties, screening tenants, coordinating viewings, managing contracts, and tracking portfolio performance. SignAssist was built to automate and connect these steps into a single SaaS platform, covering the full rental lifecycle from initial listing to signed contract and ongoing portfolio analytics.",
+    "lede": "",
     "coverImage": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&q=80",
     "metrics": [
       {
@@ -358,7 +358,7 @@
       "Product",
       "Research"
     ],
-    "lede": "Machine learning models are increasingly capable of making accurate predictions in clinical settings. But accuracy alone does not drive adoption. Clinicians are trained to reason from evidence: they want to understand why a prediction was made, not just what the prediction is. A model that says \"this patient is at elevated risk\" without explaining the basis for that conclusion will be ignored — or worse, followed blindly without appropriate clinical judgement. This project, developed at Telefonica Alpha, addressed the trust gap between ML model outputs and clinical users. The goal was to make the reasoning behind predictions transparent, interpretable, and trustworthy enough to support real clinical decision-making.",
+    "lede": "",
     "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
     "metrics": []
   },
@@ -372,7 +372,7 @@
       "Product",
       "Design"
     ],
-    "lede": "After the clinical success of Perspectives, users and clinical partners began asking for a broader suite of programmes covering additional mental health conditions. The demand was clear, but the bottleneck was content creation. Building each new programme required significant time from clinical experts, product managers, and engineers working in sequence. At that rate, expanding the library would take years. The solution was to build a programme editor — an internal tool that allowed different clinical and content teams to create and edit therapeutic programmes in parallel, without engineering involvement at each step.",
+    "lede": "",
     "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
     "metrics": [
       {
@@ -391,7 +391,7 @@
       "Design",
       "Research"
     ],
-    "lede": "Ting Happy Moments was a concept prototype developed at Telefonica Alpha to test a specific hypothesis: could showing people a map of where they had been when they felt happiest or least happy help them understand and improve their own wellbeing? The premise was that our emotional states are not random — they are tied to places, routines, and social contexts in ways we often do not notice consciously. A regular commute might consistently produce low mood. A particular coffee shop or park might reliably produce positive feelings. If you could see these patterns mapped out spatially, you might make different decisions about how you spend your time and where.",
+    "lede": "",
     "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
     "metrics": []
   },
@@ -405,7 +405,7 @@
       "Strategy",
       "Research"
     ],
-    "lede": "During the 2014-2016 Ebola outbreak in Guinea, it took six weeks to identify the source of the epidemic. By that point the virus had already reached Conakry, the capital, with a population of over two million people. Six weeks is an eternity in outbreak response. The same challenge applied to the Zika outbreak spreading through Latin America. This project, developed at Telefonica R&amp;D in collaboration with the United Nations, Harvard University, and the Data Pop Alliance, explored whether mobile network data could dramatically shorten that detection window and enable more targeted, effective public health responses.",
+    "lede": "",
     "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
     "metrics": []
   },
@@ -419,7 +419,7 @@
       "Product",
       "Research"
     ],
-    "lede": "Mental health crises — particularly those involving self-harm or suicide — often appear sudden, but the underlying deterioration typically unfolds over weeks. If that deterioration could be detected early enough, clinicians could intervene before a crisis occurs rather than responding to one. This project, developed at Koa Health in collaboration with Birmingham and Solihull NHS Foundation Trust, built a machine learning model to predict mental health crises four weeks in advance, with 75% accuracy (80% recall in later iterations). It drew on Electronic Health Records from the NHS, real-time environmental factors, and continuous passive monitoring through mobile networks and sensors.",
+    "lede": "",
     "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
     "metrics": [
       {
@@ -438,7 +438,7 @@
       "Design",
       "Research"
     ],
-    "lede": "TATU was a speculative design and research project exploring whether interactive tattoos could become a medium for communicating emotional state — to oneself and to others. The project came out of Telefonica Alpha's broader research into passive mood detection using mobile sensor data, and asked a different kind of question: if we can detect mood, what is the most intimate and natural way to surface that information?",
+    "lede": "",
     "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
     "metrics": []
   },
@@ -453,7 +453,7 @@
       "Product",
       "Research"
     ],
-    "lede": "Health at Home was a chronic disease management service built for Telefonica, operating across O2 (UK), Movistar (Spain), and Vivo (Brazil). It was designed for patients managing long-term conditions — primarily heart failure, COPD, and diabetes — who needed regular monitoring but could not or should not be in hospital for routine check-ups. The service connected patients' home medical devices — scales, blood pressure monitors, heart rate monitors, pulse oximeters, and glucose meters — to a clinical platform that nurses and doctors could access remotely. Patients took their own measurements at home; clinicians reviewed the data, flagged anomalies, and contacted patients when readings required follow-up.",
+    "lede": "",
     "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
     "metrics": [
       {
@@ -476,7 +476,7 @@
       "Product",
       "Research"
     ],
-    "lede": "Bipolar disorder is a chronic condition characterised by cycles of mania and depression that can vary significantly in frequency, duration, and severity. For psychiatrists, monitoring a patient's current state between appointments is difficult. Patients often lack insight into their own mood state — particularly during manic episodes — and self-reporting is unreliable. For patients, the condition can feel unpredictable and difficult to manage. This project, developed at Telefonica R&amp;D in collaboration with Hospital Clinic Barcelona and O2 UK, explored whether passive behavioural data from mobile networks could provide a continuous, objective signal of a patient's bipolar status — without requiring any active input from the patient themselves.",
+    "lede": "",
     "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
     "metrics": []
   },
@@ -490,7 +490,7 @@
       "Strategy",
       "Research"
     ],
-    "lede": "Xploratory was a futures research initiative set up jointly by Koa Health and the Royal College of Art (RCA). The aim was to look beyond current product development and explore what mental wellbeing services and technologies could look like in 10 to 20 years. Rather than optimising existing products, the project asked more open questions: how will people's relationship with mental health change, what new contexts and behaviours will emerge, and what entirely new kinds of products might serve them?",
+    "lede": "",
     "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
     "metrics": [
       {
@@ -514,7 +514,7 @@
       "Design",
       "Research"
     ],
-    "lede": "Health services often focus on improving the usability of their products — making them easier to navigate, less confusing, more accessible. That is necessary, but it is not sufficient. The real goal is not a better user experience; it is better health outcomes. These are not the same thing. This project took a different starting point. Rather than asking how to improve the user journey, we asked how to design a journey that actually changes behaviour. The collaboration brought together Telefonica and Harvard Medical School, combining product and service design expertise with the science of behaviour change.",
+    "lede": "",
     "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
     "metrics": []
   },
@@ -529,7 +529,7 @@
       "Design",
       "Research"
     ],
-    "lede": "Telefonica and O2 offered cloud computing services to business customers, but the service design had not kept pace with the complexity of the product. Customers were struggling to get started, sales teams were losing deals they should have won, and support volumes were high. The root cause was that nobody had mapped the full experience from a customer's perspective — from first awareness through to live usage and renewal. This project set out to fix that by building a complete, end-to-end user journey for the cloud computing service.",
+    "lede": "",
     "coverImage": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&q=80",
     "metrics": [
       {

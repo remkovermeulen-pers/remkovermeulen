@@ -8,7 +8,7 @@
     "Product",
     "Research"
   ],
-  "lede": "Alcohol consumption is one of the most significant and most preventable contributors to poor health outcomes in the UK. Existing behaviour change approaches — information campaigns, counselling, GP referrals — reach a small proportion of the people who would benefit, and produce modest results in those they do reach. This project took a different approach. Rather than trying to persuade people to drink less through information or willpower, it used Cognitive Bias Modification (CBM) to shift the underlying automatic responses that drive drinking behaviour.",
+  "lede": "",
   "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
   "role": "",
   "timeline": "",
@@ -21,24 +21,24 @@
   ],
   "sections": [
     {
-      "title": "Overview",
-      "body": "<p>Alcohol consumption is one of the most significant and most preventable contributors to poor health outcomes in the UK. Existing behaviour change approaches — information campaigns, counselling, GP referrals — reach a small proportion of the people who would benefit, and produce modest results in those they do reach.</p>\n<p>This project took a different approach. Rather than trying to persuade people to drink less through information or willpower, it used Cognitive Bias Modification (CBM) to shift the underlying automatic responses that drive drinking behaviour.</p>"
+      "title": "Context",
+      "body": "<p>Telefonica Alpha, in collaboration with Professor Paul Dolan (London School of Economics) and the BBC. The BBC's programme \"Weight for Love\" provided both research context and initial audience. I led product and design at Telefonica Alpha.</p>"
     },
     {
-      "title": "The Science",
-      "body": "<p>CBM is a clinically validated technique that retrains attentional and approach biases associated with a target substance. Heavy drinkers tend to automatically attend to alcohol cues (a glass, a pub sign, a social situation involving drink) and to have approach motivations triggered by those cues. CBM uses computer-based tasks to retrain these automatic responses at a pre-conscious level, reducing the pull of alcohol cues without requiring sustained conscious effort.</p>\n<p>The approach was developed by Professor Paul Dolan at the London School of Economics, one of the world's leading authorities on behavioural science and wellbeing. The project brought together Telefonica Alpha, the LSE, and the BBC, whose programme \"Weight for Love\" provided both the research context and the initial audience.</p>"
+      "title": "Problem",
+      "body": "<p>Alcohol misuse is a significant preventable health problem. Existing behaviour change approaches — information campaigns, GP referrals, counselling — reached a small proportion of people who would benefit and produced modest results. The business problem was testing whether a scaled digital intervention could achieve clinically meaningful behaviour change without requiring clinical contact — validating a new product model for Telefonica Alpha's health portfolio.</p>"
     },
     {
-      "title": "What We Built",
-      "body": "<p>The service was delivered digitally, making it accessible to large numbers of people without clinical contact. Users completed short CBM tasks — typically five to ten minutes — that modified their attentional and approach responses to alcohol-related stimuli over time.</p>\n<p>The design had to make something inherently repetitive and effortful feel manageable and worth continuing. This required careful attention to session length, feedback mechanisms, and the framing of the activity in a way that felt meaningful to users rather than arbitrary.</p>"
+      "title": "My role",
+      "body": "<p>I led the product and design work: translating CBM clinical protocols into a consumer digital product, and coordinating the BBC partnership for the research study. The clinical science was led by Professor Dolan's team at LSE. My job was to make something clinically effective work at consumer scale.</p>"
     },
     {
-      "title": "The Research Study",
-      "body": "<p>The collaboration with the BBC enabled us to launch a large-scale research study with over 25,000 participants in the UK. This was one of the largest CBM studies conducted outside a clinical setting, and provided significant data on effectiveness, drop-off patterns, and the characteristics of users who benefited most.</p>"
+      "title": "Approach",
+      "body": "<p>Cognitive Bias Modification (CBM) retrains automatic attentional responses to alcohol cues at a pre-conscious level, without requiring sustained willpower. The challenge was that CBM in a clinical setting is delivered by a practitioner who can motivate and monitor — in a consumer digital product, the design has to carry that weight entirely. I focused on session length, feedback mechanisms, and framing to make inherently repetitive tasks feel worthwhile. The BBC partnership enabled us to recruit directly from their audience, reaching a far larger and more diverse cohort than a clinical study could access.</p>"
     },
     {
-      "title": "My Role",
-      "body": "<p>I led the product and design work at Telefonica Alpha, working with Professor Dolan's team at LSE on translating the clinical CBM protocols into a consumer digital product, and coordinating the BBC partnership for the research study.</p>\n<p>The translation from clinical protocol to consumer product was the central design challenge. CBM in a clinical setting is administered by a practitioner who can motivate and monitor a patient. In a self-directed digital context, the product design has to carry all of that weight.</p>"
+      "title": "Outcome",
+      "body": "<ul>\n<li>Research study launched with over 25,000 participants — one of the largest CBM studies conducted outside a clinical setting</li>\n<li>Significant data collected on effectiveness, drop-off patterns, and which user segments benefited most</li>\n<li>Results informed subsequent product decisions around engagement design for behaviour change programmes at Koa Health</li>\n</ul>"
     }
   ]
 }

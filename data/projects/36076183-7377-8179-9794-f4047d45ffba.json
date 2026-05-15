@@ -9,9 +9,9 @@
     "Design",
     "Product"
   ],
-  "lede": "Real estate agents and property investors deal with a high volume of manual, repetitive work: listing properties, screening tenants, coordinating viewings, managing contracts, and tracking portfolio performance. SignAssist was built to automate and connect these steps into a single SaaS platform, covering the full rental lifecycle from initial listing to signed contract and ongoing portfolio analytics.",
+  "lede": "",
   "coverImage": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&q=80",
-  "role": "As Head of Product at SignAssist from January 2024 to December 2025, I owned the product vision, strategy, and roadmap end-to-end. This included stakeholder management with investors, managing product operations, running regular analytics reviews, and leading the design and cross-functional delivery of new features.",
+  "role": "",
   "timeline": "",
   "partners": [],
   "metrics": [
@@ -34,24 +34,24 @@
   ],
   "sections": [
     {
-      "title": "Overview",
-      "body": "<p>Real estate agents and property investors deal with a high volume of manual, repetitive work: listing properties, screening tenants, coordinating viewings, managing contracts, and tracking portfolio performance. SignAssist was built to automate and connect these steps into a single SaaS platform, covering the full rental lifecycle from initial listing to signed contract and ongoing portfolio analytics.</p>"
+      "title": "Context",
+      "body": "<p>SignAssist is a PropTech SaaS startup targeting real estate agents and property investors in the Dutch and broader European market. The company was at an early growth stage, operating in a fragmented market where paper-based workflows are still common. As Head of Product (January 2024 to December 2025), I owned the full product scope: vision, strategy, roadmap, analytics, and investor stakeholder management. The engineering and design team numbered around 6 people.</p>"
     },
     {
-      "title": "What We Built",
-      "body": "<p>The core product was an AI-based property and investment management platform. One of the most impactful features I led was an AI module that parses contracts and real estate documents, transforming unstructured legal text into structured data with compliance warnings. This removed a significant manual overhead for agents who previously had to read and cross-reference documents by hand.</p>\n<p>Beyond the AI module, I redesigned the in-product onboarding and messaging flows to reduce friction in the early user journey. This was informed by regular prototype testing sessions and funnel analysis, which allowed the team to identify and remove blockers before they reached production.</p>\n<p>On the commercial side, I developed a pricing strategy based on usage data and customer segmentation, and established a recurring analytics review cadence to keep the team aligned on KPIs and growth levers.</p>"
+      "title": "Problem",
+      "body": "<p>Agents were managing the full rental lifecycle — listing, tenant screening, viewings, contracts, portfolio tracking — across disconnected tools. The business problem was poor unit economics: CAC/LTV was running at 162%, retention was too low to sustain growth, and revenue was not scaling with user acquisition.</p>"
     },
     {
-      "title": "Results",
-      "body": "<ul>\n<li>Active users grew by 87% through improved onboarding and in-product messaging</li>\n<li>Time to value reduced by 75% through regular pre/prototype testing and data-driven iteration</li>\n<li>CAC/LTV ratio improved from 162% to 21%, significantly improving unit economics</li>\n<li>Revenue grew by 23% MRR following the new pricing strategy</li>\n<li>Successfully managed investor stakeholder relationships throughout the product build</li>\n</ul>"
+      "title": "My role",
+      "body": "<p>I owned the product entirely. I set the strategy, defined and prioritised the roadmap, led design and cross-functional delivery, and built the analytics infrastructure from scratch. I also managed investor relationships throughout. Engineering and design execution were delegated; all product decisions were mine.</p>"
     },
     {
       "title": "Approach",
-      "body": "<p>The project was run as a product-led operation. Decisions were grounded in user research, analytics, and rapid testing cycles rather than assumptions or feature requests alone. I set up the product operations infrastructure from scratch, including the analytics stack, review cadences, and roadmap processes.</p>\n<p>Working closely with the engineering and design teams, we moved quickly from validated ideas to shipped features. The AI document module in particular required tight coordination between legal domain experts, engineers, and UX to get the output format right for busy agents who needed results they could act on immediately.</p>"
+      "body": "<p>Funnel analysis and prototype testing identified onboarding friction as the primary retention driver. I redesigned the onboarding and in-product messaging flows, testing iteratively before shipping. In parallel, I led development of an AI module that parsed contracts and legal documents into structured data with compliance flags — removing a significant manual step for agents. I also ran a pricing strategy exercise grounded in usage data and customer segmentation, and set up a recurring analytics review cadence to keep the team aligned on KPIs and growth levers.</p>"
     },
     {
-      "title": "Context",
-      "body": "<p>SignAssist operates in the Dutch and broader European proptech market, where fragmented tooling and paper-based workflows are still common. The opportunity was to consolidate the agent's workflow into one platform rather than forcing them to switch between listing portals, email, PDF readers, and spreadsheets. The product addressed a real operational pain point, which is why adoption metrics moved as sharply as they did once onboarding friction was removed.</p>"
+      "title": "Outcome",
+      "body": "<ul>\n<li>Active users grew 87% through improved onboarding and messaging</li>\n<li>Time to value reduced 75% through iterative pre-launch testing</li>\n<li>CAC/LTV improved from 162% to 21%</li>\n<li>MRR grew 23% following the new pricing strategy</li>\n</ul>"
     }
   ]
 }

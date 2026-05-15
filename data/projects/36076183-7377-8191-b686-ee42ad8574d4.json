@@ -8,7 +8,7 @@
     "Design",
     "Research"
   ],
-  "lede": "Ting Happy Moments was a concept prototype developed at Telefonica Alpha to test a specific hypothesis: could showing people a map of where they had been when they felt happiest or least happy help them understand and improve their own wellbeing? The premise was that our emotional states are not random — they are tied to places, routines, and social contexts in ways we often do not notice consciously. A regular commute might consistently produce low mood. A particular coffee shop or park might reliably produce positive feelings. If you could see these patterns mapped out spatially, you might make different decisions about how you spend your time and where.",
+  "lede": "",
   "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
   "role": "",
   "timeline": "",
@@ -16,24 +16,24 @@
   "metrics": [],
   "sections": [
     {
-      "title": "Overview",
-      "body": "<p>Ting Happy Moments was a concept prototype developed at Telefonica Alpha to test a specific hypothesis: could showing people a map of where they had been when they felt happiest or least happy help them understand and improve their own wellbeing?</p>\n<p>The premise was that our emotional states are not random — they are tied to places, routines, and social contexts in ways we often do not notice consciously. A regular commute might consistently produce low mood. A particular coffee shop or park might reliably produce positive feelings. If you could see these patterns mapped out spatially, you might make different decisions about how you spend your time and where.</p>"
+      "title": "Context",
+      "body": "<p>Telefonica Alpha, concept prototype stage. The project came out of the Alpha team's broader research into passive mood detection using mobile sensor data. I led concept development and prototype design.</p>"
     },
     {
-      "title": "The Concept",
-      "body": "<p>Ting used passive data — location history and mood self-reports — to build a personal emotional geography. This was visualised in two ways: an AR mode that overlaid emotional tags onto the user's current environment, and a map view that showed the distribution of positive and negative moments across the places they frequented.</p>\n<p>The name came from the moment of recognition when you see a pattern you had not noticed before — a small, satisfying realisation.</p>\n<p>The idea connected to a broader body of environmental psychology research showing that physical environment significantly influences emotional state. Ting was an attempt to make that influence visible and personally meaningful.</p>"
+      "title": "Problem",
+      "body": "<p>The technical team was developing passive mood detection using phone sensor data. The open question was: if you can detect mood, how should you surface that information to the person in a way that is useful rather than intrusive or clinical? Screen-based notifications felt mismatched to something as continuous and personal as mood state. The business purpose was to explore new product territory around ambient wellbeing, not to ship a market-ready product.</p>"
     },
     {
-      "title": "The Prototype",
-      "body": "<p>This was a concept prototype rather than a fully developed product. The goal was to test the core interaction and the emotional response to seeing your wellbeing mapped spatially — before investing in full development.</p>\n<p>We tested the prototype with a small group of users, exploring how they responded to seeing their emotional patterns on a map, whether the information felt useful or unsettling, and what actions (if any) it prompted.</p>"
+      "title": "My role",
+      "body": "<p>I led the concept development and prototype design, working with the research and design team to define the experience and run the initial user testing. This was a concept prototype, not a production product — the goal was to generate design insight, not ship.</p>"
     },
     {
-      "title": "My Role",
-      "body": "<p>I led the concept development and prototype design at Telefonica Alpha, working with the research and design team to define the experience and run the initial testing.</p>"
+      "title": "Approach",
+      "body": "<p>The concept used passive data — location history and mood self-reports — to build a personal emotional geography, visualised as an AR overlay and a map view. I designed the prototype to test the core question: does seeing your emotional patterns mapped spatially prompt useful reflection? To simulate the autonomous system, we used a Wizard of Oz prototype — a researcher manually controlling the display in real time. Testing focused on couples, where the interpersonal communication dimension was most relevant.</p>"
     },
     {
-      "title": "What We Learned",
-      "body": "<p>Users found the concept genuinely interesting — the spatial representation of emotional patterns was novel and prompted reflection that self-report diaries or mood trackers typically do not. The AR layer was seen as potentially intrusive in public settings, while the map view was seen as more useful for retrospective reflection.</p>\n<p>The main concern was data sensitivity. Emotional data tied to specific locations is highly personal, and users were careful about who might have access to it. Any product development beyond the prototype stage would need to put strong data control and privacy mechanisms at the centre of the design.</p>\n<p>Ting remained a concept prototype. Its value was in surfacing design questions and testing user responses to a novel interaction model rather than in building a market-ready product.</p>"
+      "title": "Outcome",
+      "body": "<ul>\n<li>Users found the spatial representation of emotional patterns novel and reflective in a way that mood diaries typically did not achieve</li>\n<li>Key finding: continuous, involuntary visibility of emotional state felt uncomfortable; opt-in/opt-out control was essential for any viable version</li>\n<li>The AR layer was seen as intrusive in public; the map view was preferred for retrospective use</li>\n<li>Findings fed directly into product design principles applied in subsequent wellbeing products (Fluid, Perspectives)</li>\n</ul>"
     }
   ]
 }
