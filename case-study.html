@@ -244,6 +244,23 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
     main.innerHTML = '<div class="cs-loading">Project not found. <a href="work.html">Back to work</a></div>';
   });
 
+  // Fallback mapping: project title → domain (used when Notion 'Logo Domain' property isn't set)
+  var LOGO_DOMAINS = {
+    'Toggl':                             'toggl.com',
+    'Janssen / Johnson & Johnson':       'janssen.com',
+    'Koa Health':                        'koa.health',
+    'Financial Times':                   'ft.com',
+    'Telefónica / O2':                   'telefonica.com',
+    'Renault':                           'renault.com',
+    'British Council':                   'britishcouncil.org',
+    'NTRglobal':                         'ntrglobal.com',
+    'Koga Miyata Bicycle Computer':      'koga.com',
+  };
+
+  function getLogoDomain(proj) {
+    return proj.logoDomain || LOGO_DOMAINS[proj.title] || '';
+  }
+
   function logoUrl(domain, key) {
     if (key) return 'https://cdn.brandfetch.io/' + encodeURIComponent(domain) + '?c=' + encodeURIComponent(key);
     return 'assets/logos/' + domain + '.svg';
@@ -274,9 +291,9 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
 
       '<section class="cs-hero">' +
         '<p class="cs-hero__crumb">' + esc(proj.sector) + ' &nbsp;/&nbsp; Case Study</p>' +
-        (proj.logoDomain
+        (getLogoDomain(proj)
           ? '<div class="hero-lockup">' +
-              '<img class="hero-lockup__logo" src="' + logoUrl(proj.logoDomain, brandfetchKey) + '" alt="' + esc(proj.title) + ' logo" onerror="this.closest(\'.hero-lockup\').outerHTML=\'<h1>' + esc(proj.title).replace(/'/g,'&#39;') + '</h1>\'">' +
+              '<img class="hero-lockup__logo" src="' + logoUrl(getLogoDomain(proj), brandfetchKey) + '" alt="' + esc(proj.title) + ' logo" onerror="this.closest(\'.hero-lockup\').outerHTML=\'<h1>' + esc(proj.title).replace(/'/g,'&#39;') + '</h1>\'">' +
               '<span class="hero-lockup__rule" aria-hidden="true"></span>' +
               '<h1>' + esc(proj.title) + '</h1>' +
             '</div>'
@@ -285,7 +302,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
         bylineHtml +
         '<div class="cs-cover">' +
           '<img class="bw-img" src="' + esc(proj.coverImage) + '" alt="' + esc(proj.title) + '">' +
-          (proj.logoDomain ? '<img class="cs-cover__logo" src="' + logoUrl(proj.logoDomain, brandfetchKey) + '" alt="" onerror="this.remove()">' : '') +
+          (getLogoDomain(proj) ? '<img class="cs-cover__logo" src="' + logoUrl(getLogoDomain(proj), brandfetchKey) + '" alt="" onerror="this.remove()">' : '') +
           (proj.coverCaption ? '<div class="cs-cover__caption">' + esc(proj.coverCaption) + '</div>' : '') +
         '</div>' +
       '</section>' +
