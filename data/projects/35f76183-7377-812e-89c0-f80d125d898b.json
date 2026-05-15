@@ -24,14 +24,15 @@
       "label": "digital health patents"
     }
   ],
+  "logoDomain": "",
   "sections": [
     {
       "title": "Context",
-      "body": "<p>Koa Health was a Series B digital mental health company. Janssen / Johnson &amp; Johnson approached Koa to develop a digital therapeutic (DTx) companion product to be used alongside Spravato (esketamine) \u2014 an FDA-approved treatment for treatment-resistant depression. The collaboration combined Janssen's clinical and pharmaceutical expertise with Koa's digital therapeutic development capability.</p>"
+      "body": "<p>Koa Health was a Series B digital mental health company. Janssen / Johnson &amp; Johnson approached Koa to develop a digital therapeutic (DTx) companion product to be used alongside Spravato (esketamine) — an FDA-approved treatment for treatment-resistant depression. The collaboration combined Janssen's clinical and pharmaceutical expertise with Koa's digital therapeutic development capability.</p>"
     },
     {
       "title": "Problem",
-      "body": "<p>Spravato is administered in a clinical setting and has a specific treatment protocol: patients must be monitored for a period after each dose. This created a structured window of clinical contact that was underutilised for therapeutic support. The business problem was demonstrating that a digital companion could improve treatment outcomes \u2014 a prerequisite for Janssen to integrate a DTx product into its commercial offering.</p>"
+      "body": "<p>Spravato is administered in a clinical setting and has a specific treatment protocol: patients must be monitored for a period after each dose. This created a structured window of clinical contact that was underutilised for therapeutic support. The business problem was demonstrating that a digital companion could improve treatment outcomes — a prerequisite for Janssen to integrate a DTx product into its commercial offering.</p>"
     },
     {
       "title": "My role",
@@ -39,12 +40,11 @@
     },
     {
       "title": "Approach",
-      "body": "<p>The product was designed to fit within Spravato's existing treatment protocol, delivering CBT-based therapeutic content during and between treatment sessions. Clinical trial design required close coordination with Janssen's medical and regulatory teams to agree on endpoints, measurement instruments, and compliance requirements. The design had to balance clinical rigour with usability \u2014 patients with treatment-resistant depression are a vulnerable population and the product had to work reliably in a clinical setting.</p>"
+      "body": "<p>The product was designed to fit within Spravato's existing treatment protocol, delivering CBT-based therapeutic content during and between treatment sessions. Clinical trial design required close coordination with Janssen's medical and regulatory teams to agree on endpoints, measurement instruments, and compliance requirements. The design had to balance clinical rigour with usability — patients with treatment-resistant depression are a vulnerable population and the product had to work reliably in a clinical setting.</p>"
     },
     {
       "title": "Outcome",
       "body": "<ul>\n<li>Successful clinical trial completed</li>\n<li>3 digital health patents filed: system and method for enabling responsive CBT; computer-implemented method and system for scheduling moment-based medical tasks</li>\n</ul>"
     }
-  ],
-  "logoDomain": "janssen.com"
+  ]
 }

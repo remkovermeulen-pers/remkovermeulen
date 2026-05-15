@@ -41,18 +41,19 @@
       "label": "reduction in symptoms (clinical trial)"
     }
   ],
+  "logoDomain": "",
   "sections": [
     {
       "title": "Context",
-      "body": "<p>Koa Health was a digital mental health company spun out of Telefonica Alpha. I co-founded the product function and grew the product and design team from 1 to 40 people over seven years. The company raised \u20ac66M and reached 3 million users across 70+ countries. Partners included the NHS, Harvard Medical School, Massachusetts General Hospital, and Janssen / Johnson &amp; Johnson.</p>"
+      "body": "<p>Koa Health was a digital mental health company spun out of Telefonica Alpha. I co-founded the product function and grew the product and design team from 1 to 40 people over seven years. The company raised €66M and reached 3 million users across 70+ countries. Partners included the NHS, Harvard Medical School, Massachusetts General Hospital, and Janssen / Johnson &amp; Johnson.</p>"
     },
     {
       "title": "Problem",
-      "body": "<p>Mental health conditions are among the most prevalent and most underserved in healthcare. The core business problem was two-sided: demonstrating clinical outcomes strong enough to satisfy NHS and pharma partners, while building a consumer product that people would actually use and retain. Cost and access were the structural barriers \u2014 qualified therapist time was expensive and scarce; most people who needed support couldn't get it in time.</p>"
+      "body": "<p>Mental health conditions are among the most prevalent and most underserved in healthcare. The core business problem was two-sided: demonstrating clinical outcomes strong enough to satisfy NHS and pharma partners, while building a consumer product that people would actually use and retain. Cost and access were the structural barriers — qualified therapist time was expensive and scarce; most people who needed support couldn't get it in time.</p>"
     },
     {
       "title": "My role",
-      "body": "<p>I co-founded the company and owned the full product function: vision, portfolio strategy, roadmap, team structure, OKRs, and clinical partner relationships. I was personally involved in the most critical product decisions \u2014 the crisis prediction model's clinical design, the Perspectives clinical trial structure, and the Janssen partnership scope. Day-to-day delivery across the team of 40 was managed by the team leads I hired.</p>"
+      "body": "<p>I co-founded the company and owned the full product function: vision, portfolio strategy, roadmap, team structure, OKRs, and clinical partner relationships. I was personally involved in the most critical product decisions — the crisis prediction model's clinical design, the Perspectives clinical trial structure, and the Janssen partnership scope. Day-to-day delivery across the team of 40 was managed by the team leads I hired.</p>"
     },
     {
       "title": "Approach",
@@ -60,8 +61,7 @@
     },
     {
       "title": "Outcome",
-      "body": "<ul>\n<li>\u20ac66M investment raised</li>\n<li>3M users across 70+ countries</li>\n<li>80% recall on ML-based mental health crisis prediction (NHS, 28 days in advance)</li>\n<li>55% reduction in symptoms and 95% cost reduction in Perspectives clinical trial (vs. traditional therapy)</li>\n<li>62% increase in delivery velocity</li>\n<li>82% decrease in cost per investigation</li>\n<li>3 digital health patents filed</li>\n</ul>"
+      "body": "<ul>\n<li>€66M investment raised</li>\n<li>3M users across 70+ countries</li>\n<li>80% recall on ML-based mental health crisis prediction (NHS, 28 days in advance)</li>\n<li>55% reduction in symptoms and 95% cost reduction in Perspectives clinical trial (vs. traditional therapy)</li>\n<li>62% increase in delivery velocity</li>\n<li>82% decrease in cost per investigation</li>\n<li>3 digital health patents filed</li>\n</ul>"
     }
-  ],
-  "logoDomain": "koa.health"
+  ]
 }

@@ -21,6 +21,7 @@
       "label": "Improved sales conversion rates and lowered churn."
     }
   ],
+  "logoDomain": "",
   "sections": [
     {
       "title": "Context",
@@ -28,7 +29,7 @@
     },
     {
       "title": "Problem",
-      "body": "<p>Sales teams were losing deals they should have won. Support volumes were high. Customers \u2014 particularly in SMEs \u2014 were struggling to get started. Nobody had mapped the full experience from a customer's perspective, so problems were being solved in isolation by separate teams who had no visibility of each other's pain points. The commercial impact was measurable: conversion and churn were moving in the wrong direction.</p>"
+      "body": "<p>Sales teams were losing deals they should have won. Support volumes were high. Customers — particularly in SMEs — were struggling to get started. Nobody had mapped the full experience from a customer's perspective, so problems were being solved in isolation by separate teams who had no visibility of each other's pain points. The commercial impact was measurable: conversion and churn were moving in the wrong direction.</p>"
     },
     {
       "title": "My role",
@@ -36,12 +37,11 @@
     },
     {
       "title": "Approach",
-      "body": "<p>Research covered customers at different stages \u2014 recent sign-ups, active users, churned accounts \u2014 and internal stakeholders across sales, support, onboarding, and account management. From this I mapped the full journey across every touchpoint, identifying gaps between what customers needed and what they were experiencing. Several friction points stood out: onboarding assumed technical knowledge many SME buyers didn't have; sales materials didn't address actual customer questions; support was handling queries that better documentation would have prevented. I facilitated cross-functional workshops to align sales and support teams \u2014 who rarely had visibility of each other's problems \u2014 around the same journey map.</p>"
+      "body": "<p>Research covered customers at different stages — recent sign-ups, active users, churned accounts — and internal stakeholders across sales, support, onboarding, and account management. From this I mapped the full journey across every touchpoint, identifying gaps between what customers needed and what they were experiencing. Several friction points stood out: onboarding assumed technical knowledge many SME buyers didn't have; sales materials didn't address actual customer questions; support was handling queries that better documentation would have prevented. I facilitated cross-functional workshops to align sales and support teams — who rarely had visibility of each other's problems — around the same journey map.</p>"
     },
     {
       "title": "Outcome",
       "body": "<ul>\n<li>Sales conversion rates increased following sales material updates aligned to actual customer questions</li>\n<li>Churn decreased as onboarding improved and customers reached value faster</li>\n<li>The cross-functional workshop format became a repeatable model used for subsequent service reviews</li>\n</ul>"
     }
-  ],
-  "logoDomain": ""
+  ]
 }

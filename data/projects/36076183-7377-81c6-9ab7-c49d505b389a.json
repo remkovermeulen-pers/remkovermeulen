@@ -1,6 +1,6 @@
 {
   "id": "36076183-7377-81c6-9ab7-c49d505b389a",
-  "title": "Health at Home \u2014 Chronic Disease Management",
+  "title": "Health at Home — Chronic Disease Management",
   "sector": "Health",
   "status": "Archive",
   "year": null,
@@ -25,27 +25,27 @@
       "label": "decrease in hospital readmission rate"
     }
   ],
+  "logoDomain": "",
   "sections": [
     {
       "title": "Context",
-      "body": "<p>Telefonica Digital / O2, across three markets: O2 UK, Movistar Spain, Vivo Brazil. UX team of up to 17 people across 5 locations.</p>"
+      "body": "<p>Telefonica Digital / O2, across three markets: O2 UK, Movistar Spain, Vivo Brazil. Cross-functional team of up to 17 people across 5 locations.</p>"
     },
     {
       "title": "Problem",
-      "body": "<p>Patients with chronic conditions required regular monitoring but hospital visits for routine check-ins were costly and, for many patients, neither feasible nor necessary. Hospital readmission rates were high and preventable. For Telefonica, the business case was proving that health services built on telecoms infrastructure could achieve measurable clinical outcomes \u2014 justifying continued investment and commercial rollout.</p>"
+      "body": "<p>Patients with chronic conditions required regular monitoring but hospital visits for routine check-ins were costly and, for many patients, neither feasible nor necessary. Hospital readmission rates were high and preventable. For Telefonica, the business case was proving that health services built on telecoms infrastructure could achieve measurable clinical outcomes — justifying continued investment and commercial rollout.</p>"
     },
     {
       "title": "My role",
-      "body": "<p>I led the UX team across the full project: ethnographic research programme, co-creation workshops with clinical staff, and design and delivery of both the patient-facing mobile interface and the clinical dashboard. Team management and delivery oversight were mine. Fieldwork in 5 locations, up to 17 people reporting into my function.</p>"
+      "body": "<p>I led the product and service across the full project: defining the service model, owning the research programme, managing clinical partner relationships, and driving delivery across a cross-functional team of up to 17 people in 5 locations. I was accountable for the product decisions that shaped what the service was and how it operated — not just how it looked.</p>"
     },
     {
       "title": "Approach",
-      "body": "<p>The project started with ethnographic home visits across multiple patient groups. The critical insight was that patients didn't talk about the technology \u2014 they talked about their nurse. The weekly nurse call was the emotional anchor of the service. This shaped the design completely: instead of designing for automation and minimal human contact, I designed a system that optimised nurse time so they could focus on the conversations that mattered. The clinical dashboard was co-designed with nurses, cardiologists, and heads of department. Nurses owned day-to-day monitoring; doctors were involved only when escalated.</p>"
+      "body": "<p>The project started with ethnographic home visits across multiple patient groups. The critical insight was that patients didn't talk about the technology — they talked about their nurse. The weekly nurse call was the emotional anchor of the service. This shaped the service model completely: rather than optimising for automation and minimal human contact, I structured the service to protect nurse time for the conversations that mattered most. The clinical workflow was defined with nurses, cardiologists, and heads of department through co-creation sessions. Nurses owned day-to-day monitoring; doctors were brought in only on escalation — a deliberate product decision, not a default.</p>"
     },
     {
       "title": "Outcome",
       "body": "<ul>\n<li>48% decrease in mortality rate among enrolled patients</li>\n<li>63% decrease in hospital readmission rate</li>\n<li>The patient journey map produced from ethnographic research became a cross-functional reference tool used by product, clinical, and operational teams across all four markets</li>\n</ul>"
     }
-  ],
-  "logoDomain": ""
+  ]
 }

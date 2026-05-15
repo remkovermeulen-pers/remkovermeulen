@@ -1,6 +1,6 @@
 {
   "id": "36076183-7377-8186-98c9-d7ffbbb950f3",
-  "title": "Scaling Perspectives \u2014 Program Editor",
+  "title": "Scaling Perspectives — Program Editor",
   "sector": "Health",
   "status": "Archive",
   "year": null,
@@ -20,6 +20,7 @@
       "label": "reduction in time to create a programme."
     }
   ],
+  "logoDomain": "",
   "sections": [
     {
       "title": "Context",
@@ -27,7 +28,7 @@
     },
     {
       "title": "Problem",
-      "body": "<p>The bottleneck to expanding the Perspectives programme library was content creation. Each new programme required clinical design, product specification, engineering build, QA, and clinical validation \u2014 a full development cycle per condition. At that rate, expanding from 4 conditions to 10+ would take years. The business problem was time-to-market: competitors were moving and clinical partners were waiting.</p>"
+      "body": "<p>The bottleneck to expanding the Perspectives programme library was content creation. Each new programme required clinical design, product specification, engineering build, QA, and clinical validation — a full development cycle per condition. At that rate, expanding from 4 conditions to 10+ would take years. The business problem was time-to-market: competitors were moving and clinical partners were waiting.</p>"
     },
     {
       "title": "My role",
@@ -35,12 +36,11 @@
     },
     {
       "title": "Approach",
-      "body": "<p>The core architectural decision was to separate content creation from platform delivery \u2014 building a CMS layer that gave clinical and content teams control over programme structure, module sequencing, content, branching logic, and personalisation rules without code changes. I ran research with MGH and Harvard clinical teams to understand how they actually worked and translated that into tool requirements. The hardest design decision was calibrating how much flexibility to give clinical teams: too rigid and the tool couldn't handle the breadth of conditions needed; too open and there was regulatory and therapeutic integrity risk. I designed a constrained editor with a structured review and sign-off workflow to balance both.</p>"
+      "body": "<p>The core architectural decision was to separate content creation from platform delivery — building a CMS layer that gave clinical and content teams control over programme structure, module sequencing, content, branching logic, and personalisation rules without code changes. I ran research with MGH and Harvard clinical teams to understand how they actually worked and translated that into tool requirements. The hardest design decision was calibrating how much flexibility to give clinical teams: too rigid and the tool couldn't handle the breadth of conditions needed; too open and there was regulatory and therapeutic integrity risk. I designed a constrained editor with a structured review and sign-off workflow to balance both.</p>"
     },
     {
       "title": "Outcome",
       "body": "<ul>\n<li>Programme creation time reduced by 75%</li>\n<li>Parallel development across multiple conditions became possible for the first time</li>\n<li>Clinical teams took creative ownership of programme content, reducing back-and-forth with engineering on every iteration</li>\n</ul>"
     }
-  ],
-  "logoDomain": ""
+  ]
 }

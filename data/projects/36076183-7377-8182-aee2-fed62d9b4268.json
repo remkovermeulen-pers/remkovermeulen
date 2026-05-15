@@ -15,27 +15,27 @@
   "timeline": "",
   "partners": [],
   "metrics": [],
+  "logoDomain": "",
   "sections": [
     {
       "title": "Context",
-      "body": "<p>Koga Miyata (Dutch bicycle manufacturer), client project completed in 2000 as part of an Industrial Design Engineering degree at TU Delft.</p>"
+      "body": "<p>Koga Miyata (Dutch bicycle manufacturer), early-career project completed in 2000 as part of an Industrial Design Engineering degree at TU Delft. This is included as an example of early product thinking, not as a product management case study.</p>"
     },
     {
       "title": "Problem",
-      "body": "<p>The bicycle computer market was dominated by basic units covering speed, distance, and cadence. Koga Miyata wanted a brand extension \u2014 a device that would complement the premium positioning of the brand and serve the specific needs of touring cyclists, who travel long distances through unfamiliar territory and are interested in their environment, not just their speed. No existing product served this segment well.</p>"
+      "body": "<p>The bicycle computer market served road racers and commuters. Touring cyclists — who travel long distances through unfamiliar territory and are interested in their environment — had no product built for their specific needs. Koga Miyata wanted a brand extension that served this segment and matched their premium positioning.</p>"
     },
     {
       "title": "My role",
-      "body": "<p>I owned the full project: market research, user research, concept development, interaction design, and physical form factor design.</p>"
+      "body": "<p>I owned the full project scope: market research, user research, concept definition, and interaction design. This was an individual academic project with a real client brief.</p>"
     },
     {
       "title": "Approach",
-      "body": "<p>Research covered the touring cyclist segment specifically \u2014 their routes, information needs on the road, and how they solved navigation and route planning at the time. I analysed competing products, interviewed touring cyclists, and reviewed adjacent categories (early GPS devices, PDAs). The key design constraints were specific to context: the device needed to be legible at a glance while riding, operable with gloved hands, durable for outdoor use, and visually consistent with Koga Miyata's premium aesthetic. I designed the interaction around these constraints rather than treating them as problems to solve at the end.</p>"
+      "body": "<p>Research focused on the touring cyclist segment specifically: routes, information needs on the road, and how they solved navigation at the time. I analysed competing products, interviewed touring cyclists, and reviewed adjacent categories including early GPS devices and PDAs. The product concept combined turn-by-turn navigation with location-aware tourist information — addressing the segment's actual context rather than adapting a commuter product.</p>"
     },
     {
       "title": "Outcome",
-      "body": "<p>The output was a complete interaction design covering information architecture, screen layouts, input mechanisms, and physical form factor \u2014 combining turn-by-turn navigation with location-aware tourist information. The tourist information layer was designed as a natural extension of navigation rather than a separate feature. The project established core design principles around context-specific user research and constraint-led design that have remained constant throughout my career.</p>"
+      "body": "<p>A complete product concept covering information architecture, interaction model, and physical form factor. The tourist information layer was positioned as a natural extension of navigation rather than a separate feature. The project established a discipline of segment-specific research before product definition that has informed my approach throughout my career.</p>"
     }
-  ],
-  "logoDomain": "koga.com"
+  ]
 }

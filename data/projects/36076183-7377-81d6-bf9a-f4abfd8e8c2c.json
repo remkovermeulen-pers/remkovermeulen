@@ -16,6 +16,7 @@
   "timeline": "",
   "partners": [],
   "metrics": [],
+  "logoDomain": "",
   "sections": [
     {
       "title": "Context",
@@ -23,20 +24,19 @@
     },
     {
       "title": "Problem",
-      "body": "<p>Health services were improving usability without improving outcomes. A smoother screen flow does not change whether someone takes their medication, attends their appointment, or follows through on a health programme. The business problem was that products were being measured on engagement metrics that didn't track to clinical outcomes \u2014 and investment was going into UX improvements that made little difference at the health outcome level.</p>"
+      "body": "<p>Health products were being built and measured on the wrong thing. Teams were optimising for usability and engagement metrics while clinical outcomes barely moved. The product problem was strategic: investment was going into screen-level improvements that had no meaningful impact on whether patients actually changed behaviour. For Telefonica Alpha and later Koa Health, this mattered commercially — NHS and pharma partners cared about health outcomes, not app ratings.</p>"
     },
     {
       "title": "My role",
-      "body": "<p>I led the design work: running workshops with Harvard Medical School researchers to translate behaviour change principles into practical journey design, then working with product and engineering teams to implement these at specific touchpoints. The theoretical framework was provided by Harvard; the translation into product decisions was mine.</p>"
+      "body": "<p>I owned the product strategy for how behaviour change would be embedded into the service. I ran workshops with Harvard Medical School to identify which frameworks applied to our patient populations, then translated those into product requirements and specific touchpoint decisions. This was a product direction call, not a design task — it determined what the service did and when, not how it looked.</p>"
     },
     {
       "title": "Approach",
-      "body": "<p>The framework drew on Kahneman's research on cognitive biases and BJ Fogg's Behaviour Model (behaviour = motivation + ability + prompt). The insight is that behaviour change happens when the environment makes the desired behaviour easy, timely, and rewarding \u2014 not through information or willpower. I designed the journey to identify moments of high motivation (after a health scare, at the start of a new treatment, following a positive result) and meet users at those moments with low-friction actions. Specific techniques embedded included commitment devices at enrolment, progress visualisation, social norms at drop-off risk points, and individually calibrated reminders rather than fixed schedules.</p>"
+      "body": "<p>The framework drew on Kahneman's research on cognitive biases and BJ Fogg's Behaviour Model (behaviour = motivation + ability + prompt). The product decision was to identify moments of high motivation in the patient journey — after a health scare, at the start of a new treatment, following a positive result — and build the service to act at those moments with low-friction prompts. I defined specific intervention types for each stage: commitment devices at enrolment, progress indicators during use, social norms at drop-off risk points, and individually timed reminders rather than fixed schedules. These became product requirements, not design recommendations.</p>"
     },
     {
       "title": "Outcome",
       "body": "<p>The journey design framework was adopted as a standard approach for health product design at Telefonica Alpha and subsequently at Koa Health. It directly influenced the design of the Perspectives programme structure and the engagement approach in Fluid, where the time-mood connection was designed as a behaviour change tool rather than a tracking feature.</p>"
     }
-  ],
-  "logoDomain": ""
+  ]
 }

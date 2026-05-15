@@ -25,7 +25,8 @@
         "value": "13%",
         "label": "increase in team output"
       }
-    ]
+    ],
+    "logoDomain": ""
   },
   {
     "notionId": "35f76183-7377-816c-8a7f-e43d868da1c7",
@@ -57,7 +58,8 @@
         "value": "23%",
         "label": "MRR growth"
       }
-    ]
+    ],
+    "logoDomain": ""
   },
   {
     "notionId": "35f76183-7377-812e-89c0-f80d125d898b",
@@ -81,7 +83,8 @@
         "value": "3",
         "label": "digital health patents"
       }
-    ]
+    ],
+    "logoDomain": ""
   },
   {
     "notionId": "35f76183-7377-8135-9dd1-d1b22dfa6da0",
@@ -122,7 +125,8 @@
         "value": "55%",
         "label": "reduction in symptoms (clinical trial)"
       }
-    ]
+    ],
+    "logoDomain": ""
   },
   {
     "notionId": "35f76183-7377-8167-aade-e9ceff1342ed",
@@ -155,7 +159,8 @@
         "value": "78%",
         "label": "precision in Parkinson's voice detection"
       }
-    ]
+    ],
+    "logoDomain": ""
   },
   {
     "notionId": "35f76183-7377-8162-a013-d70ec2ca966f",
@@ -183,7 +188,8 @@
         "value": "50%",
         "label": "simplification of product portfolio"
       }
-    ]
+    ],
+    "logoDomain": ""
   },
   {
     "notionId": "35f76183-7377-8167-8d4f-fbcae3ef4c2d",
@@ -211,7 +217,8 @@
         "value": "",
         "label": "global teacher collaboration platform"
       }
-    ]
+    ],
+    "logoDomain": ""
   },
   {
     "notionId": "36076183-7377-8182-aee2-fed62d9b4268",
@@ -226,7 +233,8 @@
     "lede": "",
     "description": "Designed a bicycle-mounted computer for Koga Miyata combining turn-by-turn navigation with location-aware tourist information, purpose-built for touring cyclists through dedicated user research.",
     "coverImage": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1200&q=80",
-    "metrics": []
+    "metrics": [],
+    "logoDomain": ""
   },
   {
     "notionId": "36076183-7377-8114-881b-d864ffc34948",
@@ -242,7 +250,8 @@
     "lede": "",
     "description": "Built a preventative wellbeing app for 16-24 year olds that used behavioural science to surface low-effort habit changes, designed to feel peer-like rather than clinical through extensive co-design with the target age group.",
     "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
-    "metrics": []
+    "metrics": [],
+    "logoDomain": ""
   },
   {
     "notionId": "36076183-7377-812b-9600-f901966bdb08",
@@ -257,7 +266,8 @@
     "lede": "",
     "description": "Designed an SMS and phone-based medical consultation service for Vivo Brasil, giving middle and lower-income households access to a doctor through infrastructure they already owned.",
     "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
-    "metrics": []
+    "metrics": [],
+    "logoDomain": ""
   },
   {
     "notionId": "36076183-7377-812d-9aec-f4697182cf9d",
@@ -287,7 +297,8 @@
         "value": "95%",
         "label": "cost reduction"
       }
-    ]
+    ],
+    "logoDomain": ""
   },
   {
     "notionId": "36076183-7377-814a-9f9c-f356f12270ef",
@@ -307,7 +318,8 @@
         "value": "",
         "label": "Research study launched with over 25,000 participants in the UK."
       }
-    ]
+    ],
+    "logoDomain": ""
   },
   {
     "notionId": "36076183-7377-816c-9a63-e4952bd248d0",
@@ -327,7 +339,8 @@
         "value": "78%",
         "label": "detection accuracy."
       }
-    ]
+    ],
+    "logoDomain": ""
   },
   {
     "notionId": "36076183-7377-8181-a326-c925904d52f8",
@@ -342,7 +355,8 @@
     "lede": "",
     "description": "Designed an explainability layer for clinical ML models that translated opaque risk scores into readable clinical reasoning, significantly increasing clinician willingness to act on model outputs.",
     "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
-    "metrics": []
+    "metrics": [],
+    "logoDomain": ""
   },
   {
     "notionId": "36076183-7377-8186-98c9-d7ffbbb950f3",
@@ -362,7 +376,8 @@
         "value": "75%",
         "label": "reduction in time to create a programme."
       }
-    ]
+    ],
+    "logoDomain": ""
   },
   {
     "notionId": "36076183-7377-8191-b686-ee42ad8574d4",
@@ -377,7 +392,8 @@
     "lede": "",
     "description": "Prototyped a concept that maps a person's emotional patterns to the places they frequent, testing whether spatial visualisation of mood data prompts more useful reflection than traditional self-report tools.",
     "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
-    "metrics": []
+    "metrics": [],
+    "logoDomain": ""
   },
   {
     "notionId": "36076183-7377-8195-b39a-cfa1657491db",
@@ -392,7 +408,8 @@
     "lede": "",
     "description": "Used mobile network mobility data to cut epidemic source detection from weeks to hours, and predict outbreak spread before clinical data surfaced — validated across Ebola and Zika in collaboration with WHO and Harvard.",
     "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
-    "metrics": []
+    "metrics": [],
+    "logoDomain": ""
   },
   {
     "notionId": "36076183-7377-81ad-ad56-ddcc3b80e04d",
@@ -412,7 +429,8 @@
         "value": "75%",
         "label": "accuracy predicting mental health crisis 4 weeks ahead"
       }
-    ]
+    ],
+    "logoDomain": ""
   },
   {
     "notionId": "36076183-7377-81ae-9453-ebb3a48a1cf3",
@@ -427,7 +445,8 @@
     "lede": "",
     "description": "Explored whether interactive skin-surface displays could communicate detected mood state ambientally, using a Wizard of Oz prototype tested with couples to surface the privacy and transparency tensions any such system would face.",
     "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
-    "metrics": []
+    "metrics": [],
+    "logoDomain": ""
   },
   {
     "notionId": "36076183-7377-81c6-9ab7-c49d505b389a",
@@ -452,7 +471,8 @@
         "value": "63%",
         "label": "decrease in hospital readmission rate"
       }
-    ]
+    ],
+    "logoDomain": ""
   },
   {
     "notionId": "36076183-7377-81c8-85aa-d341a65cf2b5",
@@ -467,7 +487,8 @@
     "lede": "",
     "description": "Designed a passive bipolar monitoring service using anonymised mobile network data, giving psychiatrists a continuous view of patient state between appointments without requiring any active input from patients.",
     "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
-    "metrics": []
+    "metrics": [],
+    "logoDomain": ""
   },
   {
     "notionId": "36076183-7377-81ce-92bc-caa57a662ca6",
@@ -491,7 +512,8 @@
         "value": "10",
         "label": "future products tested online"
       }
-    ]
+    ],
+    "logoDomain": ""
   },
   {
     "notionId": "36076183-7377-81d6-bf9a-f4abfd8e8c2c",
@@ -507,7 +529,8 @@
     "lede": "",
     "description": "Applied Kahneman and Fogg's behaviour change frameworks with Harvard Medical School to redesign a health service user journey around moments of high motivation and low-friction actions, rather than usability improvements alone.",
     "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
-    "metrics": []
+    "metrics": [],
+    "logoDomain": ""
   },
   {
     "notionId": "36076183-7377-81ec-ab0d-cb34f758bbcf",
@@ -528,6 +551,7 @@
         "value": "",
         "label": "Improved sales conversion rates and lowered churn."
       }
-    ]
+    ],
+    "logoDomain": ""
   }
 ]

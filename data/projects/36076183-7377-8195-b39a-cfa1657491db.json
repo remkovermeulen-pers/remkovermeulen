@@ -15,6 +15,7 @@
   "timeline": "",
   "partners": [],
   "metrics": [],
+  "logoDomain": "",
   "sections": [
     {
       "title": "Context",
@@ -22,7 +23,7 @@
     },
     {
       "title": "Problem",
-      "body": "<p>During the Ebola outbreak, it took six weeks to identify the source of the epidemic. By that point, the virus had already reached Conakry, a city of over two million people. Existing epidemiological surveillance relied on clinical reports, which only emerged after symptoms appeared and patients sought care \u2014 systematically too late to contain early spread. The business problem for Telefonica was demonstrating that its network data assets had real public health value, building the case for health partnerships with governments and international organisations.</p>"
+      "body": "<p>During the Ebola outbreak, it took six weeks to identify the source of the epidemic. By that point, the virus had already reached Conakry, a city of over two million people. Existing epidemiological surveillance relied on clinical reports, which only emerged after symptoms appeared and patients sought care — systematically too late to contain early spread. The business problem for Telefonica was demonstrating that its network data assets had real public health value, building the case for health partnerships with governments and international organisations.</p>"
     },
     {
       "title": "My role",
@@ -30,12 +31,11 @@
     },
     {
       "title": "Approach",
-      "body": "<p>Mobile networks generate a continuous, anonymised record of where people are and how they move. Call detail records at scale reveal mobility patterns that are invisible to clinical surveillance. I worked with epidemiologists to design two applications: retrospective source detection (tracing movement patterns back to identify outbreak origin, cutting detection time from weeks to hours) and forward spread prediction (modelling likely case cluster locations before they appeared in clinical data). A third application used the same infrastructure to deliver targeted SMS health guidance to people in identified high-risk areas \u2014 without requiring smartphones or internet access.</p>"
+      "body": "<p>Mobile networks generate a continuous, anonymised record of where people are and how they move. Call detail records at scale reveal mobility patterns that are invisible to clinical surveillance. I worked with epidemiologists to design two applications: retrospective source detection (tracing movement patterns back to identify outbreak origin, cutting detection time from weeks to hours) and forward spread prediction (modelling likely case cluster locations before they appeared in clinical data). A third application used the same infrastructure to deliver targeted SMS health guidance to people in identified high-risk areas — without requiring smartphones or internet access.</p>"
     },
     {
       "title": "Outcome",
       "body": "<ul>\n<li>Outbreak source detection time reduced from weeks to hours in modelling validation</li>\n<li>Spread prediction models validated against both Ebola and Zika transmission data</li>\n<li>Collaboration with WHO, UNICEF, Harvard, and the Data Pop Alliance positioned Telefonica as a contributor to global health infrastructure</li>\n<li>Project directly informed Telefonica's health data partnership strategy</li>\n</ul>"
     }
-  ],
-  "logoDomain": ""
+  ]
 }

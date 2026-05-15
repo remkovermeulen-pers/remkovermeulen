@@ -16,6 +16,7 @@
   "timeline": "",
   "partners": [],
   "metrics": [],
+  "logoDomain": "",
   "sections": [
     {
       "title": "Context",
@@ -23,7 +24,7 @@
     },
     {
       "title": "Problem",
-      "body": "<p>Most digital mental health tools at the time were either clinical (designed for diagnosed conditions) or generic (mindfulness apps with minimal personalisation). Neither served the large population of young people experiencing low-level dissatisfaction, low energy, or social disconnection \u2014 the preventative middle ground where early intervention might avoid more serious problems later. For Telefonica Alpha, the business case was proving consumer demand for a non-clinical wellbeing product.</p>"
+      "body": "<p>Most digital mental health tools at the time were either clinical (designed for diagnosed conditions) or generic (mindfulness apps with minimal personalisation). Neither served the large population of young people experiencing low-level dissatisfaction, low energy, or social disconnection — the preventative middle ground where early intervention might avoid more serious problems later. For Telefonica Alpha, the business case was proving consumer demand for a non-clinical wellbeing product.</p>"
     },
     {
       "title": "My role",
@@ -31,12 +32,11 @@
     },
     {
       "title": "Approach",
-      "body": "<p>User research with 16-24 year olds was central throughout \u2014 co-design workshops, iterative prototype testing, and close attention to language and tone. This age group is highly sensitive to anything that feels patronising or clinical. The product combined a visual interface showing time-mood patterns with a conversational layer calibrated to feel peer-like rather than advisory. Rather than telling users what they should do, Fluid used behavioural science to surface low-effort suggestions aligned with activities the user already valued. The conversational interface went through many rounds of revision based on user response to different registers and phrasings.</p>"
+      "body": "<p>User research with 16-24 year olds was central throughout — co-design workshops, iterative prototype testing, and close attention to language and tone. This age group is highly sensitive to anything that feels patronising or clinical. The product combined a visual interface showing time-mood patterns with a conversational layer calibrated to feel peer-like rather than advisory. Rather than telling users what they should do, Fluid used behavioural science to surface low-effort suggestions aligned with activities the user already valued. The conversational interface went through many rounds of revision based on user response to different registers and phrasings.</p>"
     },
     {
       "title": "Outcome",
       "body": "<p>Fluid launched and was used by young people in the UK. The project demonstrated consumer demand for preventative wellbeing tools for young people and informed the product approach at Koa Health, where similar design principles were applied in the Perspectives programme.</p>\n<p><em>Public user metrics were not released for this product.</em></p>"
     }
-  ],
-  "logoDomain": ""
+  ]
 }
