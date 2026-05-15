@@ -304,8 +304,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
 
     // Extract lede from first paragraph in content
     var ledeEl = tempDiv.querySelector('p');
-    var lede = ledeEl ? ledeEl.textContent.slice(0, 240).trim() : '';
-    if (lede.length === 240) lede += '…';
+    var lede = ledeEl ? ledeEl.textContent.trim() : '';
 
     // Cover image
     var coverSrc = COVER_IMAGES[article.category] || DEFAULT_COVER;

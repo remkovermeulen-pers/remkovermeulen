@@ -245,13 +245,22 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
     var pagerHtml    = buildPager(proj, prevProj, nextProj, all);
     var bylineHtml   = buildByline(proj.metrics);
 
+    // Derive full lede from first section body (strips HTML), fallback to stored lede
+    var ledeText = proj.lede;
+    if (proj.sections && proj.sections.length) {
+      var tmpDiv = document.createElement('div');
+      tmpDiv.innerHTML = proj.sections[0].body;
+      var fullText = tmpDiv.textContent.trim();
+      if (fullText) ledeText = fullText;
+    }
+
     main.innerHTML =
       pagerHtml +
 
       '<section class="cs-hero">' +
         '<p class="cs-hero__crumb">' + esc(proj.sector) + ' &nbsp;/&nbsp; Case Study</p>' +
         '<h1>' + esc(proj.title) + '</h1>' +
-        '<p class="cs-hero__lede">' + esc(proj.lede) + '</p>' +
+        '<p class="cs-hero__lede">' + esc(ledeText) + '</p>' +
         bylineHtml +
         '<div class="cs-cover">' +
           '<img class="bw-img" src="' + esc(proj.coverImage) + '" alt="' + esc(proj.title) + '">' +

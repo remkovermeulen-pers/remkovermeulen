@@ -266,7 +266,7 @@ async function fetchProjects() {
     // Use first non-Role, non-Partners section as lede source
     const overviewSec = sections.find(s => s.title === 'Overview');
     const lede = overviewSec
-      ? plainFromBody(overviewSec.body).split('\n')[0].slice(0, 200)
+      ? plainFromBody(overviewSec.body).replace(/\n+/g, ' ').trim()
       : '';
 
     // Filter out Role/Partners from displayed sections (they live in sidebar)
