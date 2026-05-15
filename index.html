@@ -278,7 +278,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
               +logoHtml
               +'</div>'
               +'<h3>'+esc(p.title)+'</h3>'
-              +(p.lede ? '<p class="proj__lede">'+esc(p.lede)+'</p>' : '')
+              +((p.description||p.lede) ? '<p class="proj__lede">'+esc(p.description||p.lede)+'</p>' : '')
               +(metricsHtml ? '<div class="'+metricsClass+'">'+metricsHtml+'</div>' : '')
               +'</a>';
           }).join('');

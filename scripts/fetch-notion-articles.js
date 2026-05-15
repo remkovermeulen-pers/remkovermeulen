@@ -223,11 +223,12 @@ async function fetchProjects() {
     const title = extractText(p['Name']);
     if (!title) continue;
 
-    const sector = p['Sector']?.select?.name ?? '';
-    const status = p['Status']?.select?.name ?? '';
-    const year   = p['Year']?.number ?? null;
-    const tags   = (p['Tags']?.multi_select || []).map(t => t.name);
-    const metricsRaw = extractText(p['Metrics']);
+    const sector      = p['Sector']?.select?.name ?? '';
+    const status      = p['Status']?.select?.name ?? '';
+    const year        = p['Year']?.number ?? null;
+    const tags        = (p['Tags']?.multi_select || []).map(t => t.name);
+    const metricsRaw  = extractText(p['Metrics']);
+    const description = extractText(p['Description']);
     const coverImage = SECTOR_IMAGES[sector] || SECTOR_IMAGES.SaaS;
 
     // Fetch page blocks and split into sections
@@ -272,13 +273,13 @@ async function fetchProjects() {
     // Filter out Role/Partners from displayed sections (they live in sidebar)
     const displaySections = sections.filter(s => s.title !== 'Role' && s.title !== 'Partners');
 
-    const meta = { notionId: page.id, title, sector, status, year, tags, lede, coverImage, metrics };
+    const meta = { notionId: page.id, title, sector, status, year, tags, lede, description, coverImage, metrics };
     metaList.push(meta);
 
     fs.writeFileSync(
       path.join(projectsDir, `${page.id}.json`),
       JSON.stringify({
-        id: page.id, title, sector, status, year, tags, lede, coverImage,
+        id: page.id, title, sector, status, year, tags, lede, description, coverImage,
         role, timeline, partners, metrics, sections: displaySections,
       }, null, 2)
     );

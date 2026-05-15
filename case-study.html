@@ -245,14 +245,14 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
     var pagerHtml    = buildPager(proj, prevProj, nextProj, all);
     var bylineHtml   = buildByline(proj.metrics);
 
-    // Derive full lede from first section body (strips HTML), fallback to stored lede
-    var ledeText = proj.lede;
-    if (proj.sections && proj.sections.length) {
+    // Use Description field if set, otherwise derive full lede from first section body
+    var ledeText = proj.description || '';
+    if (!ledeText && proj.sections && proj.sections.length) {
       var tmpDiv = document.createElement('div');
       tmpDiv.innerHTML = proj.sections[0].body;
-      var fullText = tmpDiv.textContent.trim();
-      if (fullText) ledeText = fullText;
+      ledeText = tmpDiv.textContent.trim();
     }
+    if (!ledeText) ledeText = proj.lede;
 
     main.innerHTML =
       pagerHtml +

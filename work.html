@@ -211,7 +211,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
               + '</div>'
               + '<div class="proj-card__body">'
               + '<h3>' + esc(p.title) + '</h3>'
-              + '<p class="proj-card__lede">' + esc(p.lede) + '</p>'
+              + '<p class="proj-card__lede">' + esc(p.description||p.lede) + '</p>'
               + (metrics ? '<div class="proj-card__stats">' + metrics + '</div>' : '')
               + '<div class="proj-card__footer">'
               + '<div class="proj-card__tags">' + tags + '</div>'
