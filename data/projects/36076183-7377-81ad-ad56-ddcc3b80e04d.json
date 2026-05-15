@@ -27,7 +27,7 @@
     },
     {
       "title": "Problem",
-      "body": "<p>Mental health crises are costly and traumatic — for patients and the health system. An unplanned hospital admission for a mental health crisis costs multiples of planned care. Clinicians had no early warning signal: by the time deterioration was visible, it was often too late for low-cost intervention. The business need was to demonstrate clinical and commercial value to NHS partners to secure ongoing contracts and investment.</p>"
+      "body": "<p>Mental health crises are costly and traumatic \u2014 for patients and the health system. An unplanned hospital admission for a mental health crisis costs multiples of planned care. Clinicians had no early warning signal: by the time deterioration was visible, it was often too late for low-cost intervention. The business need was to demonstrate clinical and commercial value to NHS partners to secure ongoing contracts and investment.</p>"
     },
     {
       "title": "My role",
@@ -35,11 +35,12 @@
     },
     {
       "title": "Approach",
-      "body": "<p>The model used de-identified NHS Electronic Health Records (178 features, 1 million patients over 6 years, 20,000 mental health patients) as the primary training signal, combined with real-time environmental factors and passive mobile sensor data. The four-week prediction horizon was a deliberate clinical decision — long enough to enable a proactive response, short enough to be actionable. I worked with NHS clinicians to define the alert logic so that outputs were filtered to patients not already on an active crisis plan, avoiding alert fatigue.</p>"
+      "body": "<p>The model used de-identified NHS Electronic Health Records (178 features, 1 million patients over 6 years, 20,000 mental health patients) as the primary training signal, combined with real-time environmental factors and passive mobile sensor data. The four-week prediction horizon was a deliberate clinical decision \u2014 long enough to enable a proactive response, short enough to be actionable. I worked with NHS clinicians to define the alert logic so that outputs were filtered to patients not already on an active crisis plan, avoiding alert fatigue.</p>"
     },
     {
       "title": "Outcome",
       "body": "<ul>\n<li>Model achieved 75% accuracy (80% recall) predicting mental health crisis four weeks in advance</li>\n<li>Clinicians could schedule reviews, adjust medication, or increase support before patients reached crisis point</li>\n<li>The project contributed to the evidence base that helped Koa Health secure investment and NHS partnerships, including a subsequent contract with Janssen</li>\n</ul>"
     }
-  ]
+  ],
+  "logoDomain": ""
 }

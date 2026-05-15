@@ -22,7 +22,7 @@
     },
     {
       "title": "Problem",
-      "body": "<p>The bicycle computer market was dominated by basic units covering speed, distance, and cadence. Koga Miyata wanted a brand extension — a device that would complement the premium positioning of the brand and serve the specific needs of touring cyclists, who travel long distances through unfamiliar territory and are interested in their environment, not just their speed. No existing product served this segment well.</p>"
+      "body": "<p>The bicycle computer market was dominated by basic units covering speed, distance, and cadence. Koga Miyata wanted a brand extension \u2014 a device that would complement the premium positioning of the brand and serve the specific needs of touring cyclists, who travel long distances through unfamiliar territory and are interested in their environment, not just their speed. No existing product served this segment well.</p>"
     },
     {
       "title": "My role",
@@ -30,11 +30,12 @@
     },
     {
       "title": "Approach",
-      "body": "<p>Research covered the touring cyclist segment specifically — their routes, information needs on the road, and how they solved navigation and route planning at the time. I analysed competing products, interviewed touring cyclists, and reviewed adjacent categories (early GPS devices, PDAs). The key design constraints were specific to context: the device needed to be legible at a glance while riding, operable with gloved hands, durable for outdoor use, and visually consistent with Koga Miyata's premium aesthetic. I designed the interaction around these constraints rather than treating them as problems to solve at the end.</p>"
+      "body": "<p>Research covered the touring cyclist segment specifically \u2014 their routes, information needs on the road, and how they solved navigation and route planning at the time. I analysed competing products, interviewed touring cyclists, and reviewed adjacent categories (early GPS devices, PDAs). The key design constraints were specific to context: the device needed to be legible at a glance while riding, operable with gloved hands, durable for outdoor use, and visually consistent with Koga Miyata's premium aesthetic. I designed the interaction around these constraints rather than treating them as problems to solve at the end.</p>"
     },
     {
       "title": "Outcome",
-      "body": "<p>The output was a complete interaction design covering information architecture, screen layouts, input mechanisms, and physical form factor — combining turn-by-turn navigation with location-aware tourist information. The tourist information layer was designed as a natural extension of navigation rather than a separate feature. The project established core design principles around context-specific user research and constraint-led design that have remained constant throughout my career.</p>"
+      "body": "<p>The output was a complete interaction design covering information architecture, screen layouts, input mechanisms, and physical form factor \u2014 combining turn-by-turn navigation with location-aware tourist information. The tourist information layer was designed as a natural extension of navigation rather than a separate feature. The project established core design principles around context-specific user research and constraint-led design that have remained constant throughout my career.</p>"
     }
-  ]
+  ],
+  "logoDomain": "koga.com"
 }

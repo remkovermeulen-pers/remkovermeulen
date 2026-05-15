@@ -22,7 +22,7 @@
     },
     {
       "title": "Problem",
-      "body": "<p>Psychiatrists had no reliable way to monitor patients between appointments. Patients with bipolar disorder often lack insight into their own mood state — particularly during manic episodes — making self-reporting unreliable. Clinicians were flying blind between clinical contacts, and deteriorations were only caught when they became crises. The business problem was demonstrating clinical utility to unlock commercial partnerships with health systems.</p>"
+      "body": "<p>Psychiatrists had no reliable way to monitor patients between appointments. Patients with bipolar disorder often lack insight into their own mood state \u2014 particularly during manic episodes \u2014 making self-reporting unreliable. Clinicians were flying blind between clinical contacts, and deteriorations were only caught when they became crises. The business problem was demonstrating clinical utility to unlock commercial partnerships with health systems.</p>"
     },
     {
       "title": "My role",
@@ -30,11 +30,12 @@
     },
     {
       "title": "Approach",
-      "body": "<p>The core insight was that changes in bipolar state are reflected in behavioural signals already passively captured by mobile networks: call patterns, data usage, location history, sleep-wake cycles. I worked with data scientists to identify which signals tracked reliably with clinical mood state, then designed the clinician dashboard around nursing and psychiatric workflows rather than the raw model output. A deliberate decision was made to operate at the network level — not via a smartphone app — to ensure coverage across the full patient population, including older patients and those who might change devices during an episode.</p>"
+      "body": "<p>The core insight was that changes in bipolar state are reflected in behavioural signals already passively captured by mobile networks: call patterns, data usage, location history, sleep-wake cycles. I worked with data scientists to identify which signals tracked reliably with clinical mood state, then designed the clinician dashboard around nursing and psychiatric workflows rather than the raw model output. A deliberate decision was made to operate at the network level \u2014 not via a smartphone app \u2014 to ensure coverage across the full patient population, including older patients and those who might change devices during an episode.</p>"
     },
     {
       "title": "Outcome",
       "body": "<p>The service gave psychiatrists a continuous, objective view of patient state between appointments, replacing a gap that previously required expensive wearables or frequent patient-initiated check-ins. Clinical partners at Hospital Clinic validated the approach. The project contributed to Telefonica's health portfolio and informed subsequent work on bipolar-related monitoring at Koa Health.</p>\n<p><em>Quantified clinical outcome metrics were not published externally for this project.</em></p>"
     }
-  ]
+  ],
+  "logoDomain": ""
 }

@@ -22,7 +22,7 @@
     },
     {
       "title": "Problem",
-      "body": "<p>The mental health crisis prediction model was technically strong but not being acted on by clinicians. NHS staff were trained to reason from evidence — they wanted to understand <em>why</em> a risk score was generated, not just what it said. A model that output a score without explaining its basis would either be ignored or followed without appropriate clinical judgement. This was both an adoption problem and a regulatory risk.</p>"
+      "body": "<p>The mental health crisis prediction model was technically strong but not being acted on by clinicians. NHS staff were trained to reason from evidence \u2014 they wanted to understand <em>why</em> a risk score was generated, not just what it said. A model that output a score without explaining its basis would either be ignored or followed without appropriate clinical judgement. This was both an adoption problem and a regulatory risk.</p>"
     },
     {
       "title": "My role",
@@ -30,11 +30,12 @@
     },
     {
       "title": "Approach",
-      "body": "<p>I ran user research with psychiatrists and nurses to understand how they reason about risk, what level of detail was useful versus overwhelming, and what would make them willing to act on a model output. The core technical approach used was Trepan — a method that extracts a decision tree from the trained model to explain its behaviour in human-readable terms. I designed the interface to surface the top contributing factors in plain language (e.g., \"appointment non-attendance in the last 6 weeks\", \"recent prescription change\") alongside the risk score, so clinicians could weigh model reasoning against their own knowledge.</p>"
+      "body": "<p>I ran user research with psychiatrists and nurses to understand how they reason about risk, what level of detail was useful versus overwhelming, and what would make them willing to act on a model output. The core technical approach used was Trepan \u2014 a method that extracts a decision tree from the trained model to explain its behaviour in human-readable terms. I designed the interface to surface the top contributing factors in plain language (e.g., \"appointment non-attendance in the last 6 weeks\", \"recent prescription change\") alongside the risk score, so clinicians could weigh model reasoning against their own knowledge.</p>"
     },
     {
       "title": "Outcome",
       "body": "<p>Clinicians given access to predictions plus explanations were significantly more willing to act on model outputs than those who received a risk score alone. The explainability layer was a condition of clinical adoption and directly enabled the rollout of the crisis prediction service in NHS Birmingham. The project reinforced a key finding: AI adoption in clinical settings is primarily a trust problem, not a technical one.</p>"
     }
-  ]
+  ],
+  "logoDomain": ""
 }

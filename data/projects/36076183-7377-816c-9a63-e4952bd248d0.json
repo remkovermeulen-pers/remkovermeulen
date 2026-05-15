@@ -27,7 +27,7 @@
     },
     {
       "title": "Problem",
-      "body": "<p>Parkinson's disease is typically diagnosed years after symptoms begin. By the time a formal diagnosis is made, the disease has often been progressing for 3+ years. Early intervention could slow deterioration, but the diagnostic pathway was too slow, expensive, and inaccessible. The business problem was demonstrating that Telefonica's network assets had real clinical value — creating a platform for health partnerships.</p>"
+      "body": "<p>Parkinson's disease is typically diagnosed years after symptoms begin. By the time a formal diagnosis is made, the disease has often been progressing for 3+ years. Early intervention could slow deterioration, but the diagnostic pathway was too slow, expensive, and inaccessible. The business problem was demonstrating that Telefonica's network assets had real clinical value \u2014 creating a platform for health partnerships.</p>"
     },
     {
       "title": "My role",
@@ -35,11 +35,12 @@
     },
     {
       "title": "Approach",
-      "body": "<p>The hypothesis was that subtle voice changes — tremor, rhythm, volume — appear before visible symptoms and can be detected from a standard phone call. I designed the service around a telephone number patients could call from any device, recording a voice sample which was processed by the ML model. The key design constraint was making the interaction feel natural for patients while ensuring audio quality sufficient for the model. I worked with Hospital Clinic on how results would fit into existing diagnostic workflows, and designed the clinician output to frame detections as screening flags rather than diagnoses — appropriate given the 78% accuracy level.</p>"
+      "body": "<p>The hypothesis was that subtle voice changes \u2014 tremor, rhythm, volume \u2014 appear before visible symptoms and can be detected from a standard phone call. I designed the service around a telephone number patients could call from any device, recording a voice sample which was processed by the ML model. The key design constraint was making the interaction feel natural for patients while ensuring audio quality sufficient for the model. I worked with Hospital Clinic on how results would fit into existing diagnostic workflows, and designed the clinician output to frame detections as screening flags rather than diagnoses \u2014 appropriate given the 78% accuracy level.</p>"
     },
     {
       "title": "Outcome",
-      "body": "<ul>\n<li>Model achieved 78% detection accuracy — clinically meaningful for a screening context</li>\n<li>No specialist equipment or smartphone required — accessible across age and geography</li>\n<li>Project demonstrated Telefonica's network data as a health asset, underpinning subsequent health partnership strategy</li>\n</ul>\n<p><em>The product was shelved pending a pharmaceutical treatment for Parkinson's — no cure meant limited clinical demand for early detection at the time.</em></p>"
+      "body": "<ul>\n<li>Model achieved 78% detection accuracy \u2014 clinically meaningful for a screening context</li>\n<li>No specialist equipment or smartphone required \u2014 accessible across age and geography</li>\n<li>Project demonstrated Telefonica's network data as a health asset, underpinning subsequent health partnership strategy</li>\n</ul>\n<p><em>The product was shelved pending a pharmaceutical treatment for Parkinson's \u2014 no cure meant limited clinical demand for early detection at the time.</em></p>"
     }
-  ]
+  ],
+  "logoDomain": ""
 }

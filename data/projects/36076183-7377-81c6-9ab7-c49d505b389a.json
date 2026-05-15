@@ -1,6 +1,6 @@
 {
   "id": "36076183-7377-81c6-9ab7-c49d505b389a",
-  "title": "Health at Home — Chronic Disease Management",
+  "title": "Health at Home \u2014 Chronic Disease Management",
   "sector": "Health",
   "status": "Archive",
   "year": null,
@@ -32,7 +32,7 @@
     },
     {
       "title": "Problem",
-      "body": "<p>Patients with chronic conditions required regular monitoring but hospital visits for routine check-ins were costly and, for many patients, neither feasible nor necessary. Hospital readmission rates were high and preventable. For Telefonica, the business case was proving that health services built on telecoms infrastructure could achieve measurable clinical outcomes — justifying continued investment and commercial rollout.</p>"
+      "body": "<p>Patients with chronic conditions required regular monitoring but hospital visits for routine check-ins were costly and, for many patients, neither feasible nor necessary. Hospital readmission rates were high and preventable. For Telefonica, the business case was proving that health services built on telecoms infrastructure could achieve measurable clinical outcomes \u2014 justifying continued investment and commercial rollout.</p>"
     },
     {
       "title": "My role",
@@ -40,11 +40,12 @@
     },
     {
       "title": "Approach",
-      "body": "<p>The project started with ethnographic home visits across multiple patient groups. The critical insight was that patients didn't talk about the technology — they talked about their nurse. The weekly nurse call was the emotional anchor of the service. This shaped the design completely: instead of designing for automation and minimal human contact, I designed a system that optimised nurse time so they could focus on the conversations that mattered. The clinical dashboard was co-designed with nurses, cardiologists, and heads of department. Nurses owned day-to-day monitoring; doctors were involved only when escalated.</p>"
+      "body": "<p>The project started with ethnographic home visits across multiple patient groups. The critical insight was that patients didn't talk about the technology \u2014 they talked about their nurse. The weekly nurse call was the emotional anchor of the service. This shaped the design completely: instead of designing for automation and minimal human contact, I designed a system that optimised nurse time so they could focus on the conversations that mattered. The clinical dashboard was co-designed with nurses, cardiologists, and heads of department. Nurses owned day-to-day monitoring; doctors were involved only when escalated.</p>"
     },
     {
       "title": "Outcome",
       "body": "<ul>\n<li>48% decrease in mortality rate among enrolled patients</li>\n<li>63% decrease in hospital readmission rate</li>\n<li>The patient journey map produced from ethnographic research became a cross-functional reference tool used by product, clinical, and operational teams across all four markets</li>\n</ul>"
     }
-  ]
+  ],
+  "logoDomain": ""
 }

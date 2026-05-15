@@ -22,7 +22,7 @@
     },
     {
       "title": "Problem",
-      "body": "<p>Access to a doctor in Brazil was not primarily a financial problem at point of use — it was an infrastructure and availability problem. Public health centres had long waiting times; private clinics were expensive and inconvenient. For the majority of Brazilians, the default in a health concern was to call a family member or do nothing. For Telefonica/Vivo, the business opportunity was demonstrating that their mobile network could deliver health access at scale, strengthening subscriber loyalty and enabling new service revenue.</p>"
+      "body": "<p>Access to a doctor in Brazil was not primarily a financial problem at point of use \u2014 it was an infrastructure and availability problem. Public health centres had long waiting times; private clinics were expensive and inconvenient. For the majority of Brazilians, the default in a health concern was to call a family member or do nothing. For Telefonica/Vivo, the business opportunity was demonstrating that their mobile network could deliver health access at scale, strengthening subscriber loyalty and enabling new service revenue.</p>"
     },
     {
       "title": "My role",
@@ -30,11 +30,12 @@
     },
     {
       "title": "Approach",
-      "body": "<p>The project started with ethnographic home visits across income brackets to understand how people actually accessed healthcare and what barriers they faced. The key finding was that the network was the most inclusive infrastructure available — not smartphones or broadband. I designed the service to launch on SMS and voice, requiring nothing beyond a basic mobile phone. Users could send a symptom description by SMS and receive guidance within minutes, or call a nurse or doctor directly. As smartphone penetration grew, the service extended to web and then video consultation.</p>"
+      "body": "<p>The project started with ethnographic home visits across income brackets to understand how people actually accessed healthcare and what barriers they faced. The key finding was that the network was the most inclusive infrastructure available \u2014 not smartphones or broadband. I designed the service to launch on SMS and voice, requiring nothing beyond a basic mobile phone. Users could send a symptom description by SMS and receive guidance within minutes, or call a nurse or doctor directly. As smartphone penetration grew, the service extended to web and then video consultation.</p>"
     },
     {
       "title": "Outcome",
       "body": "<p>My Health launched as one of the first digital health services in Brazil built explicitly for the non-smartphone majority. As mobile internet penetration grew, the service scaled through multiple channels. The project established Vivo as a credible health services operator and informed Telefonica's broader digital health strategy in emerging markets.</p>\n<p><em>Revenue and user metrics for this project were not published externally.</em></p>"
     }
-  ]
+  ],
+  "logoDomain": ""
 }

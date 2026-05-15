@@ -31,7 +31,7 @@
   "sections": [
     {
       "title": "Context",
-      "body": "<p>NTRglobal was a SaaS company providing network management and remote access products. The company served both enterprise and SMB customers. I established and managed the UX team — designers, copywriters, engineers, and user researchers — and worked directly with the CEO and engineering leadership to shift the product process towards user-centred design.</p>"
+      "body": "<p>NTRglobal was a SaaS company providing network management and remote access products. The company served both enterprise and SMB customers. I established and managed the UX team \u2014 designers, copywriters, engineers, and user researchers \u2014 and worked directly with the CEO and engineering leadership to shift the product process towards user-centred design.</p>"
     },
     {
       "title": "Problem",
@@ -43,11 +43,12 @@
     },
     {
       "title": "Approach",
-      "body": "<p>I introduced a user-centred product process: regular usability testing, task analysis, and research feeding directly into roadmap decisions. The first priority was simplification — the product portfolio was rationalised based on actual usage patterns and user needs rather than internal feature preferences. I redesigned sign-up and landing pages using conversion data and user testing. For SMBs, I identified an underserved segment and led the product definition and design of a dedicated product line.</p>"
+      "body": "<p>I introduced a user-centred product process: regular usability testing, task analysis, and research feeding directly into roadmap decisions. The first priority was simplification \u2014 the product portfolio was rationalised based on actual usage patterns and user needs rather than internal feature preferences. I redesigned sign-up and landing pages using conversion data and user testing. For SMBs, I identified an underserved segment and led the product definition and design of a dedicated product line.</p>"
     },
     {
       "title": "Outcome",
       "body": "<ul>\n<li>212% increase in conversions on sign-up and landing pages</li>\n<li>50% decrease in time on task for the top 5 user tasks</li>\n<li>50%+ simplification of the product portfolio</li>\n<li>New SMB product line launched</li>\n</ul>"
     }
-  ]
+  ],
+  "logoDomain": "ntrglobal.com"
 }

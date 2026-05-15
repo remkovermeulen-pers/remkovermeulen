@@ -26,15 +26,16 @@
     },
     {
       "title": "My role",
-      "body": "<p>I led the concept development and prototype design, working with the research and design team to define the experience and run the initial user testing. This was a concept prototype, not a production product — the goal was to generate design insight, not ship.</p>"
+      "body": "<p>I led the concept development and prototype design, working with the research and design team to define the experience and run the initial user testing. This was a concept prototype, not a production product \u2014 the goal was to generate design insight, not ship.</p>"
     },
     {
       "title": "Approach",
-      "body": "<p>The concept used passive data — location history and mood self-reports — to build a personal emotional geography, visualised as an AR overlay and a map view. I designed the prototype to test the core question: does seeing your emotional patterns mapped spatially prompt useful reflection? To simulate the autonomous system, we used a Wizard of Oz prototype — a researcher manually controlling the display in real time. Testing focused on couples, where the interpersonal communication dimension was most relevant.</p>"
+      "body": "<p>The concept used passive data \u2014 location history and mood self-reports \u2014 to build a personal emotional geography, visualised as an AR overlay and a map view. I designed the prototype to test the core question: does seeing your emotional patterns mapped spatially prompt useful reflection? To simulate the autonomous system, we used a Wizard of Oz prototype \u2014 a researcher manually controlling the display in real time. Testing focused on couples, where the interpersonal communication dimension was most relevant.</p>"
     },
     {
       "title": "Outcome",
       "body": "<ul>\n<li>Users found the spatial representation of emotional patterns novel and reflective in a way that mood diaries typically did not achieve</li>\n<li>Key finding: continuous, involuntary visibility of emotional state felt uncomfortable; opt-in/opt-out control was essential for any viable version</li>\n<li>The AR layer was seen as intrusive in public; the map view was preferred for retrospective use</li>\n<li>Findings fed directly into product design principles applied in subsequent wellbeing products (Fluid, Perspectives)</li>\n</ul>"
     }
-  ]
+  ],
+  "logoDomain": ""
 }

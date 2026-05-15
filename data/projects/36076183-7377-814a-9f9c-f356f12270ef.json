@@ -1,6 +1,6 @@
 {
   "id": "36076183-7377-814a-9f9c-f356f12270ef",
-  "title": "Brain Training — Cognitive Bias Modification",
+  "title": "Brain Training \u2014 Cognitive Bias Modification",
   "sector": "Health",
   "status": "Archive",
   "year": null,
@@ -27,7 +27,7 @@
     },
     {
       "title": "Problem",
-      "body": "<p>Alcohol misuse is a significant preventable health problem. Existing behaviour change approaches — information campaigns, GP referrals, counselling — reached a small proportion of people who would benefit and produced modest results. The business problem was testing whether a scaled digital intervention could achieve clinically meaningful behaviour change without requiring clinical contact — validating a new product model for Telefonica Alpha's health portfolio.</p>"
+      "body": "<p>Alcohol misuse is a significant preventable health problem. Existing behaviour change approaches \u2014 information campaigns, GP referrals, counselling \u2014 reached a small proportion of people who would benefit and produced modest results. The business problem was testing whether a scaled digital intervention could achieve clinically meaningful behaviour change without requiring clinical contact \u2014 validating a new product model for Telefonica Alpha's health portfolio.</p>"
     },
     {
       "title": "My role",
@@ -35,11 +35,12 @@
     },
     {
       "title": "Approach",
-      "body": "<p>Cognitive Bias Modification (CBM) retrains automatic attentional responses to alcohol cues at a pre-conscious level, without requiring sustained willpower. The challenge was that CBM in a clinical setting is delivered by a practitioner who can motivate and monitor — in a consumer digital product, the design has to carry that weight entirely. I focused on session length, feedback mechanisms, and framing to make inherently repetitive tasks feel worthwhile. The BBC partnership enabled us to recruit directly from their audience, reaching a far larger and more diverse cohort than a clinical study could access.</p>"
+      "body": "<p>Cognitive Bias Modification (CBM) retrains automatic attentional responses to alcohol cues at a pre-conscious level, without requiring sustained willpower. The challenge was that CBM in a clinical setting is delivered by a practitioner who can motivate and monitor \u2014 in a consumer digital product, the design has to carry that weight entirely. I focused on session length, feedback mechanisms, and framing to make inherently repetitive tasks feel worthwhile. The BBC partnership enabled us to recruit directly from their audience, reaching a far larger and more diverse cohort than a clinical study could access.</p>"
     },
     {
       "title": "Outcome",
-      "body": "<ul>\n<li>Research study launched with over 25,000 participants — one of the largest CBM studies conducted outside a clinical setting</li>\n<li>Significant data collected on effectiveness, drop-off patterns, and which user segments benefited most</li>\n<li>Results informed subsequent product decisions around engagement design for behaviour change programmes at Koa Health</li>\n</ul>"
+      "body": "<ul>\n<li>Research study launched with over 25,000 participants \u2014 one of the largest CBM studies conducted outside a clinical setting</li>\n<li>Significant data collected on effectiveness, drop-off patterns, and which user segments benefited most</li>\n<li>Results informed subsequent product decisions around engagement design for behaviour change programmes at Koa Health</li>\n</ul>"
     }
-  ]
+  ],
+  "logoDomain": ""
 }

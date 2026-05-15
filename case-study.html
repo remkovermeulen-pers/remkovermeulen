@@ -107,6 +107,14 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
 .cs-hero { padding:64px 0 48px; }
 .cs-hero__crumb { font-size:11px; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color:var(--muted-2); margin:0 0 28px; }
 .cs-hero h1 { margin:0 0 24px; font-family:var(--font-display); font-weight:700; font-size:clamp(40px,6.5vw,84px); line-height:1.04; letter-spacing:-0.025em; max-width:980px; }
+.hero-lockup { display:flex; align-items:center; gap:28px; margin:0 0 24px; }
+.hero-lockup__logo { height:clamp(40px,5vw,60px); width:auto; display:block; flex-shrink:0; }
+.hero-lockup__rule { width:1px; align-self:stretch; background:var(--line); flex-shrink:0; }
+.hero-lockup h1 { margin:0; font-family:var(--font-display); font-weight:700; font-size:clamp(36px,5.4vw,64px); line-height:1; letter-spacing:-0.025em; }
+@media (max-width:760px) {
+  .hero-lockup { flex-direction:column; align-items:flex-start; gap:14px; }
+  .hero-lockup__rule { width:32px; height:1px; align-self:flex-start; }
+}
 .cs-hero__lede { margin:0; font-size:clamp(17px,1.6vw,20px); line-height:1.55; color:var(--muted); max-width:720px; }
 .cs-hero__byline { margin-top:36px; padding-top:28px; border-top:1px solid var(--line); display:grid; grid-template-columns:repeat(3,1fr); gap:40px; align-items:flex-start; max-width:880px; }
 .cs-hero__byline-block h5 { margin:0 0 14px; font-size:10px; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color:var(--muted-2); }
@@ -259,7 +267,13 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
 
       '<section class="cs-hero">' +
         '<p class="cs-hero__crumb">' + esc(proj.sector) + ' &nbsp;/&nbsp; Case Study</p>' +
-        '<h1>' + esc(proj.title) + '</h1>' +
+        (proj.logoDomain
+          ? '<div class="hero-lockup">' +
+              '<img class="hero-lockup__logo" src="https://cdn.brandfetch.io/' + esc(proj.logoDomain) + '/w/400/h/200/logo?theme=light" alt="' + esc(proj.title) + ' logo">' +
+              '<span class="hero-lockup__rule" aria-hidden="true"></span>' +
+              '<h1>' + esc(proj.title) + '</h1>' +
+            '</div>'
+          : '<h1>' + esc(proj.title) + '</h1>') +
         '<p class="cs-hero__lede">' + esc(ledeText) + '</p>' +
         bylineHtml +
         '<div class="cs-cover">' +
