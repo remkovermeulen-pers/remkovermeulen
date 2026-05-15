@@ -308,7 +308,15 @@
     "metrics": [
       {
         "value": "90%",
-        "label": "response rate | 55% symptom reduction | 95% cost reduction"
+        "label": "response rate"
+      },
+      {
+        "value": "55%",
+        "label": "symptom reduction"
+      },
+      {
+        "value": "95%",
+        "label": "cost reduction"
       }
     ]
   },
@@ -366,7 +374,19 @@
     "metrics": [
       {
         "value": "87%",
-        "label": "active user growth | 75% reduction in time to value | CAC/LTV ratio: 162% → 21% | 23% MRR growth"
+        "label": "active user growth"
+      },
+      {
+        "value": "75%",
+        "label": "reduction in time to value"
+      },
+      {
+        "value": "",
+        "label": "CAC/LTV ratio: 162% → 21%"
+      },
+      {
+        "value": "23%",
+        "label": "MRR growth"
       }
     ]
   },
@@ -480,7 +500,11 @@
     "metrics": [
       {
         "value": "48%",
-        "label": "decrease in mortality rate | 63% decrease in hospital readmission rate"
+        "label": "decrease in mortality rate"
+      },
+      {
+        "value": "63%",
+        "label": "decrease in hospital readmission rate"
       }
     ]
   },
@@ -513,7 +537,11 @@
     "metrics": [
       {
         "value": "33",
-        "label": "future scenarios developed | 10 future products tested online"
+        "label": "future scenarios developed"
+      },
+      {
+        "value": "10",
+        "label": "future products tested online"
       }
     ]
   },

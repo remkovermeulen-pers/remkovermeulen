@@ -18,7 +18,15 @@
   "metrics": [
     {
       "value": "90%",
-      "label": "response rate | 55% symptom reduction | 95% cost reduction"
+      "label": "response rate"
+    },
+    {
+      "value": "55%",
+      "label": "symptom reduction"
+    },
+    {
+      "value": "95%",
+      "label": "cost reduction"
     }
   ],
   "sections": [

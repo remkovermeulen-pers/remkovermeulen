@@ -16,7 +16,11 @@
   "metrics": [
     {
       "value": "33",
-      "label": "future scenarios developed | 10 future products tested online"
+      "label": "future scenarios developed"
+    },
+    {
+      "value": "10",
+      "label": "future products tested online"
     }
   ],
   "sections": [

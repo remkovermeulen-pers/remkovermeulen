@@ -17,7 +17,11 @@
   "metrics": [
     {
       "value": "48%",
-      "label": "decrease in mortality rate | 63% decrease in hospital readmission rate"
+      "label": "decrease in mortality rate"
+    },
+    {
+      "value": "63%",
+      "label": "decrease in hospital readmission rate"
     }
   ],
   "sections": [

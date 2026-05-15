@@ -17,7 +17,19 @@
   "metrics": [
     {
       "value": "87%",
-      "label": "active user growth | 75% reduction in time to value | CAC/LTV ratio: 162% → 21% | 23% MRR growth"
+      "label": "active user growth"
+    },
+    {
+      "value": "75%",
+      "label": "reduction in time to value"
+    },
+    {
+      "value": "",
+      "label": "CAC/LTV ratio: 162% → 21%"
+    },
+    {
+      "value": "23%",
+      "label": "MRR growth"
     }
   ],
   "sections": [
