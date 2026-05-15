@@ -3,7 +3,7 @@
     "notionId": "35f76183-7377-81f2-9f5a-dbd1debf2fb1",
     "title": "Toggl",
     "sector": "SaaS",
-    "status": "In Progress",
+    "status": "Live",
     "year": 2026,
     "tags": [
       "Strategy",
@@ -63,9 +63,9 @@
   },
   {
     "notionId": "35f76183-7377-812e-89c0-f80d125d898b",
-    "title": "Janssen / Johnson & Johnson",
+    "title": "Johnson & Johnson",
     "sector": "Health",
-    "status": "Archive",
+    "status": "Live",
     "year": 2021,
     "tags": [
       "Research",
@@ -90,7 +90,7 @@
     "notionId": "35f76183-7377-8135-9dd1-d1b22dfa6da0",
     "title": "Koa Health",
     "sector": "Health",
-    "status": "Archive",
+    "status": "Live",
     "year": 2016,
     "tags": [
       "Strategy",
@@ -132,7 +132,7 @@
     "notionId": "35f76183-7377-8167-aade-e9ceff1342ed",
     "title": "Telefónica / O2",
     "sector": "Telco",
-    "status": "Archive",
+    "status": "Live",
     "year": 2011,
     "tags": [
       "Strategy",
@@ -166,7 +166,7 @@
     "notionId": "35f76183-7377-8162-a013-d70ec2ca966f",
     "title": "NTRglobal",
     "sector": "SaaS",
-    "status": "Archive",
+    "status": "Live",
     "year": 2005,
     "tags": [
       "Design",
@@ -195,7 +195,7 @@
     "notionId": "35f76183-7377-8167-8d4f-fbcae3ef4c2d",
     "title": "British Council",
     "sector": "Education",
-    "status": "Archive",
+    "status": "Live",
     "year": 2002,
     "tags": [
       "Design",
@@ -224,7 +224,7 @@
     "notionId": "36076183-7377-8182-aee2-fed62d9b4268",
     "title": "Koga Miyata Bicycle Computer",
     "sector": "Automotive",
-    "status": "Archive",
+    "status": "Live",
     "year": 2000,
     "tags": [
       "Design",
@@ -240,7 +240,7 @@
     "notionId": "36076183-7377-8114-881b-d864ffc34948",
     "title": "Fluid",
     "sector": "Health",
-    "status": "Archive",
+    "status": "Live",
     "year": null,
     "tags": [
       "Design",
@@ -257,7 +257,7 @@
     "notionId": "36076183-7377-812b-9600-f901966bdb08",
     "title": "My Health",
     "sector": "Health",
-    "status": "Archive",
+    "status": "Live",
     "year": null,
     "tags": [
       "Product",
@@ -273,7 +273,7 @@
     "notionId": "36076183-7377-812d-9aec-f4697182cf9d",
     "title": "Perspectives",
     "sector": "Health",
-    "status": "Archive",
+    "status": "Live",
     "year": null,
     "tags": [
       "Strategy",
@@ -302,9 +302,9 @@
   },
   {
     "notionId": "36076183-7377-814a-9f9c-f356f12270ef",
-    "title": "Brain Training — Cognitive Bias Modification",
+    "title": "Brain Training",
     "sector": "Health",
-    "status": "Archive",
+    "status": "Live",
     "year": null,
     "tags": [
       "Product",
@@ -325,7 +325,7 @@
     "notionId": "36076183-7377-816c-9a63-e4952bd248d0",
     "title": "Parkinson Voice Detection",
     "sector": "Health",
-    "status": "Archive",
+    "status": "Live",
     "year": null,
     "tags": [
       "Product",
@@ -346,7 +346,7 @@
     "notionId": "36076183-7377-8181-a326-c925904d52f8",
     "title": "Explainable AI",
     "sector": "Health",
-    "status": "Archive",
+    "status": "Live",
     "year": null,
     "tags": [
       "Product",
@@ -362,7 +362,7 @@
     "notionId": "36076183-7377-8186-98c9-d7ffbbb950f3",
     "title": "Scaling Perspectives — Program Editor",
     "sector": "Health",
-    "status": "Archive",
+    "status": "Not live",
     "year": null,
     "tags": [
       "Product",
@@ -383,7 +383,7 @@
     "notionId": "36076183-7377-8191-b686-ee42ad8574d4",
     "title": "Ting Happy Moments",
     "sector": "Health",
-    "status": "Archive",
+    "status": "Live",
     "year": null,
     "tags": [
       "Design",
@@ -399,7 +399,7 @@
     "notionId": "36076183-7377-8195-b39a-cfa1657491db",
     "title": "Pandemic Prediction (Zika/Ebola)",
     "sector": "Health",
-    "status": "Archive",
+    "status": "Live",
     "year": null,
     "tags": [
       "Strategy",
@@ -415,7 +415,7 @@
     "notionId": "36076183-7377-81ad-ad56-ddcc3b80e04d",
     "title": "Mental Crisis Prediction",
     "sector": "Health",
-    "status": "Archive",
+    "status": "Live",
     "year": null,
     "tags": [
       "Product",
@@ -436,7 +436,7 @@
     "notionId": "36076183-7377-81ae-9453-ebb3a48a1cf3",
     "title": "TATU — Interactive Tattoo Concept",
     "sector": "Health",
-    "status": "Archive",
+    "status": "Live",
     "year": null,
     "tags": [
       "Design",
@@ -452,7 +452,7 @@
     "notionId": "36076183-7377-81c6-9ab7-c49d505b389a",
     "title": "Health at Home — Chronic Disease Management",
     "sector": "Health",
-    "status": "Archive",
+    "status": "Live",
     "year": null,
     "tags": [
       "Design",
@@ -478,7 +478,7 @@
     "notionId": "36076183-7377-81c8-85aa-d341a65cf2b5",
     "title": "Bipolar Detection",
     "sector": "Health",
-    "status": "Archive",
+    "status": "Live",
     "year": null,
     "tags": [
       "Product",
@@ -492,9 +492,9 @@
   },
   {
     "notionId": "36076183-7377-81ce-92bc-caa57a662ca6",
-    "title": "Future Ideation (Xploratory)",
+    "title": "Xploratory Future ideation",
     "sector": "Health",
-    "status": "Archive",
+    "status": "Live",
     "year": null,
     "tags": [
       "Strategy",
@@ -519,7 +519,7 @@
     "notionId": "36076183-7377-81d6-bf9a-f4abfd8e8c2c",
     "title": "Behaviour Change Journey",
     "sector": "Health",
-    "status": "Archive",
+    "status": "Live",
     "year": null,
     "tags": [
       "Strategy",
@@ -536,7 +536,7 @@
     "notionId": "36076183-7377-81ec-ab0d-cb34f758bbcf",
     "title": "Cloud Computing User Journey",
     "sector": "Telco",
-    "status": "Archive",
+    "status": "Live",
     "year": null,
     "tags": [
       "Strategy",
