@@ -8,7 +8,7 @@
     "Product",
     "Research"
   ],
-  "lede": "Machine learning models are increasingly capable of making accurate predictions in clinical settings. But accuracy alone does not drive adoption. Clinicians are trained to reason from evidence: they w",
+  "lede": "Machine learning models are increasingly capable of making accurate predictions in clinical settings. But accuracy alone does not drive adoption. Clinicians are trained to reason from evidence: they want to understand why a prediction was made, not just what the prediction is. A model that says \"this patient is at elevated risk\" without explaining the basis for that conclusion will be ignored — or worse, followed blindly without appropriate clinical judgement. This project, developed at Telefonica Alpha, addressed the trust gap between ML model outputs and clinical users. The goal was to make the reasoning behind predictions transparent, interpretable, and trustworthy enough to support real clinical decision-making.",
   "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
   "role": "",
   "timeline": "",

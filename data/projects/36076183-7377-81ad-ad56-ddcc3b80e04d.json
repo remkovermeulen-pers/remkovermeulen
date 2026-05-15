@@ -8,7 +8,7 @@
     "Product",
     "Research"
   ],
-  "lede": "Mental health crises — particularly those involving self-harm or suicide — often appear sudden, but the underlying deterioration typically unfolds over weeks. If that deterioration could be detected e",
+  "lede": "Mental health crises — particularly those involving self-harm or suicide — often appear sudden, but the underlying deterioration typically unfolds over weeks. If that deterioration could be detected early enough, clinicians could intervene before a crisis occurs rather than responding to one. This project, developed at Koa Health in collaboration with Birmingham and Solihull NHS Foundation Trust, built a machine learning model to predict mental health crises four weeks in advance, with 75% accuracy (80% recall in later iterations). It drew on Electronic Health Records from the NHS, real-time environmental factors, and continuous passive monitoring through mobile networks and sensors.",
   "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
   "role": "",
   "timeline": "",

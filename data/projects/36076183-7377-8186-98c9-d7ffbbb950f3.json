@@ -8,7 +8,7 @@
     "Product",
     "Design"
   ],
-  "lede": "After the clinical success of Perspectives, users and clinical partners began asking for a broader suite of programmes covering additional mental health conditions. The demand was clear, but the bottl",
+  "lede": "After the clinical success of Perspectives, users and clinical partners began asking for a broader suite of programmes covering additional mental health conditions. The demand was clear, but the bottleneck was content creation. Building each new programme required significant time from clinical experts, product managers, and engineers working in sequence. At that rate, expanding the library would take years. The solution was to build a programme editor — an internal tool that allowed different clinical and content teams to create and edit therapeutic programmes in parallel, without engineering involvement at each step.",
   "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
   "role": "",
   "timeline": "",

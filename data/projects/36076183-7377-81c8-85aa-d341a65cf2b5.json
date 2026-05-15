@@ -8,7 +8,7 @@
     "Product",
     "Research"
   ],
-  "lede": "Bipolar disorder is a chronic condition characterised by cycles of mania and depression that can vary significantly in frequency, duration, and severity. For psychiatrists, monitoring a patient's curr",
+  "lede": "Bipolar disorder is a chronic condition characterised by cycles of mania and depression that can vary significantly in frequency, duration, and severity. For psychiatrists, monitoring a patient's current state between appointments is difficult. Patients often lack insight into their own mood state — particularly during manic episodes — and self-reporting is unreliable. For patients, the condition can feel unpredictable and difficult to manage. This project, developed at Telefonica R&amp;D in collaboration with Hospital Clinic Barcelona and O2 UK, explored whether passive behavioural data from mobile networks could provide a continuous, objective signal of a patient's bipolar status — without requiring any active input from the patient themselves.",
   "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
   "role": "",
   "timeline": "",

@@ -9,7 +9,7 @@
     "Product",
     "Research"
   ],
-  "lede": "Health at Home was a chronic disease management service built for Telefonica, operating across O2 (UK), Movistar (Spain), and Vivo (Brazil). It was designed for patients managing long-term conditions ",
+  "lede": "Health at Home was a chronic disease management service built for Telefonica, operating across O2 (UK), Movistar (Spain), and Vivo (Brazil). It was designed for patients managing long-term conditions — primarily heart failure, COPD, and diabetes — who needed regular monitoring but could not or should not be in hospital for routine check-ups. The service connected patients' home medical devices — scales, blood pressure monitors, heart rate monitors, pulse oximeters, and glucose meters — to a clinical platform that nurses and doctors could access remotely. Patients took their own measurements at home; clinicians reviewed the data, flagged anomalies, and contacted patients when readings required follow-up.",
   "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
   "role": "",
   "timeline": "",
