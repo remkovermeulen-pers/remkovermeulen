@@ -121,29 +121,6 @@
     ]
   },
   {
-    "notionId": "35f76183-7377-81a8-b45d-f022b6c4842e",
-    "title": "Renault",
-    "sector": "Automotive",
-    "status": "Archive",
-    "year": 2013,
-    "tags": [
-      "Design",
-      "Research"
-    ],
-    "lede": "Designed next-generation connected car services for Renault, using Kano models to maximise driver engagement and utility.",
-    "coverImage": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1200&q=80",
-    "metrics": [
-      {
-        "value": "75%",
-        "label": "reduction in time-to-value"
-      },
-      {
-        "value": "",
-        "label": "connected car service framework using Kano model prioritisation"
-      }
-    ]
-  },
-  {
     "notionId": "35f76183-7377-8167-aade-e9ceff1342ed",
     "title": "Telefónica / O2",
     "sector": "Telco",
@@ -172,25 +149,6 @@
       {
         "value": "78%",
         "label": "precision in Parkinson's voice detection"
-      }
-    ]
-  },
-  {
-    "notionId": "35f76183-7377-81de-af86-c88584fb33f7",
-    "title": "Financial Times",
-    "sector": "Media",
-    "status": "Archive",
-    "year": 2008,
-    "tags": [
-      "Design",
-      "Product"
-    ],
-    "lede": "Digitising the consumer decision journey and enhancing online purchase behaviour tracking for the Financial Times.",
-    "coverImage": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200&q=80",
-    "metrics": [
-      {
-        "value": "212%",
-        "label": "increase in conversions for sign-up and landing pages"
       }
     ]
   },
