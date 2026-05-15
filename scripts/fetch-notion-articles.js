@@ -155,11 +155,57 @@ async function fetchYouTubeVideos() {
     const res = await fetch(`https://www.youtube.com/feeds/videos.xml?channel_id=${YOUTUBE_CHANNEL_ID}`);
     const xml = await res.text();
     const ids    = [...xml.matchAll(/<yt:videoId>([^<]+)<\/yt:videoId>/g)].map(m => m[1]);
-    const titles = [...xml.matchAll(/<title>([^<]+)<\/title>/g)].map(m => m[1]).slice(1); // skip channel title
+    const titles = [...xml.matchAll(/<title>([^<]+)<\/title>/g)].map(m => m[1]).slice(1);
     return ids.map((id, i) => ({ id, title: titles[i] || '' }));
   } catch (e) {
     console.warn('  YouTube RSS fetch failed:', e.message);
     return [];
+  }
+}
+
+async function fetchTranscript(videoId) {
+  try {
+    // Fetch video page to get caption track URL
+    const page = await fetch(`https://www.youtube.com/watch?v=${videoId}`, {
+      headers: { 'User-Agent': 'Mozilla/5.0 (compatible)' }
+    }).then(r => r.text());
+
+    const m = page.match(/"baseUrl":"(https:\/\/www\.youtube\.com\/api\/timedtext[^"]*)"/);
+    if (!m) return null;
+    const captionUrl = m[1].replace(/\\u0026/g, '&') + '&fmt=json3';
+
+    const data = await fetch(captionUrl).then(r => r.json()).catch(() => null);
+    if (!data?.events) return null;
+
+    // Extract text segments and group into ~80-word paragraphs
+    const segments = data.events
+      .filter(e => e.segs)
+      .map(e => e.segs.map(s => s.utf8 || '').join('').replace(/\[.*?\]/g, '').trim())
+      .filter(Boolean);
+
+    const paragraphs = [];
+    let current = [], wordCount = 0;
+    for (const seg of segments) {
+      const words = seg.split(/\s+/);
+      current.push(...words);
+      wordCount += words.length;
+      if (wordCount >= 80 && /[.!?]$/.test(seg)) {
+        paragraphs.push(current.join(' '));
+        current = []; wordCount = 0;
+      }
+    }
+    if (current.length) paragraphs.push(current.join(' '));
+
+    // Build HTML: group 3 paragraphs per block
+    const esc = s => s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+    const blocks = [];
+    for (let i = 0; i < paragraphs.length; i += 3) {
+      blocks.push(paragraphs.slice(i, i+3).map(p => `<p>${esc(p)}</p>`).join('\n'));
+    }
+    return blocks.join('\n');
+  } catch (e) {
+    console.warn(`  Transcript fetch failed for ${videoId}:`, e.message);
+    return null;
   }
 }
 
@@ -228,10 +274,22 @@ async function fetchArticles() {
     metaList.push(meta);
 
     const blocks = await fetchAllBlocks(page.id);
-    const content = blocksToHtml(blocks);
+    let content = blocksToHtml(blocks);
+    let contentSource = 'notion';
+
+    // If a YouTube video matched, use its transcript as content
+    if (matched) {
+      const transcript = await fetchTranscript(matched.id);
+      if (transcript) {
+        content = transcript;
+        contentSource = 'youtube-transcript';
+        console.log(`    📝 Using transcript as content`);
+      }
+    }
+
     fs.writeFileSync(
       path.join(articlesDir, `${page.id}.json`),
-      JSON.stringify({ ...meta, tags, content }, null, 2)
+      JSON.stringify({ ...meta, tags, content, contentSource }, null, 2)
     );
     console.log(`  ✓ ${meta.title}`);
   }
