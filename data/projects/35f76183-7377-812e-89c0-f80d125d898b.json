@@ -8,15 +8,11 @@
     "Research",
     "Product"
   ],
-  "lede": "Led product definition, design and agile development of a mental health DTx (Digital Therapeutics) product to be used in combination with Spravato (esketamine) — a treatment for treatment-resistant depression — in collaboration with Janssen / Johnson &amp; Johnson. Included a full clinical trial programme.",
+  "lede": "",
   "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
   "role": "",
   "timeline": "",
-  "partners": [
-    "Janssen",
-    "Johnson &amp; Johnson",
-    "Koa Health"
-  ],
+  "partners": [],
   "metrics": [
     {
       "value": "",
@@ -29,16 +25,24 @@
   ],
   "sections": [
     {
-      "title": "Overview",
-      "body": "<p>Led product definition, design and agile development of a mental health DTx (Digital Therapeutics) product to be used in combination with Spravato (esketamine) — a treatment for treatment-resistant depression — in collaboration with Janssen / Johnson &amp; Johnson. Included a full clinical trial programme.</p>"
+      "title": "Context",
+      "body": "<p>Koa Health was a Series B digital mental health company. Janssen / Johnson &amp; Johnson approached Koa to develop a digital therapeutic (DTx) companion product to be used alongside Spravato (esketamine) — an FDA-approved treatment for treatment-resistant depression. The collaboration combined Janssen's clinical and pharmaceutical expertise with Koa's digital therapeutic development capability.</p>"
     },
     {
-      "title": "Key work",
-      "body": "<ul>\n<li>Product definition and roadmap for a DTx companion product</li>\n<li>Clinical trial design and execution in collaboration with Janssen</li>\n<li>Integration with Spravato treatment protocol for patients with treatment-resistant depression</li>\n</ul>"
+      "title": "Problem",
+      "body": "<p>Spravato is administered in a clinical setting and has a specific treatment protocol: patients must be monitored for a period after each dose. This created a structured window of clinical contact that was underutilised for therapeutic support. The business problem was demonstrating that a digital companion could improve treatment outcomes — a prerequisite for Janssen to integrate a DTx product into its commercial offering.</p>"
     },
     {
-      "title": "Outcomes",
-      "body": "<ul>\n<li>Successful clinical trial</li>\n<li><strong>3 digital health patents</strong> (System and method for enabling responsive CBT; Computer implemented method and system for scheduling moment-based medical tasks)</li>\n</ul>"
+      "title": "My role",
+      "body": "<p>I led product definition, roadmap, and clinical trial design on the Koa side. I managed the partner relationship with Janssen, negotiating scope and ensuring the product design met both clinical trial requirements and real-world usability needs. Day-to-day delivery was managed by the product team.</p>"
+    },
+    {
+      "title": "Approach",
+      "body": "<p>The product was designed to fit within Spravato's existing treatment protocol, delivering CBT-based therapeutic content during and between treatment sessions. Clinical trial design required close coordination with Janssen's medical and regulatory teams to agree on endpoints, measurement instruments, and compliance requirements. The design had to balance clinical rigour with usability — patients with treatment-resistant depression are a vulnerable population and the product had to work reliably in a clinical setting.</p>"
+    },
+    {
+      "title": "Outcome",
+      "body": "<ul>\n<li>Successful clinical trial completed</li>\n<li>3 digital health patents filed: system and method for enabling responsive CBT; computer-implemented method and system for scheduling moment-based medical tasks</li>\n</ul>"
     }
   ]
 }

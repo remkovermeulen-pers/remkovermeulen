@@ -8,10 +8,10 @@
     "Strategy",
     "Product"
   ],
-  "lede": "Restructured product, design and engineering teams reducing costs by 26%, while increasing team output by 13%. Increased first-time activation by 94% by focusing the team on time-to-value and removing friction in the early user journey. Introduced AI-powered prototyping and user insights collection, reducing the insight-to-validated-solution cycle from weeks to days.",
+  "lede": "",
   "coverImage": "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1200&q=80",
-  "role": "Head of Product",
-  "timeline": "January 2026 – Now",
+  "role": "",
+  "timeline": "",
   "partners": [],
   "metrics": [
     {
@@ -29,12 +29,24 @@
   ],
   "sections": [
     {
-      "title": "Overview",
-      "body": "<p>Restructured product, design and engineering teams reducing costs by 26%, while increasing team output by 13%.</p>\n<p>Increased first-time activation by 94% by focusing the team on time-to-value and removing friction in the early user journey.</p>\n<p>Introduced AI-powered prototyping and user insights collection, reducing the insight-to-validated-solution cycle from weeks to days.</p>"
+      "title": "Context",
+      "body": "<p>Toggl is a profitable, bootstrapped SaaS company with a mature time-tracking product used by individuals and teams globally. As Head of Product since January 2026, I own the product strategy, roadmap, and team structure across product, design, and engineering.</p>"
     },
     {
-      "title": "Key outcomes",
-      "body": "<ul>\n<li><strong>94%</strong> increase in first-time activation</li>\n<li><strong>26%</strong> cost reduction through team restructuring</li>\n<li><strong>13%</strong> increase in team output</li>\n<li>Insight-to-validated-solution cycle: weeks → days</li>\n</ul>"
+      "title": "Problem",
+      "body": "<p>First-time activation was low, meaning users who signed up were not reaching the point where the product demonstrated value. Team structure and process had created overhead that was slowing output without improving quality. The business problem was growth efficiency: the company needed to improve conversion from sign-up to active user without increasing acquisition spend.</p>"
+    },
+    {
+      "title": "My role",
+      "body": "<p>I own the product strategy and team structure end-to-end. I made the restructuring decisions, defined the activation improvement programme, and introduced the AI-assisted prototyping and insight process. Execution is delegated across the product, design, and engineering teams.</p>"
+    },
+    {
+      "title": "Approach",
+      "body": "<p>I diagnosed the activation problem through funnel analysis and user research, identifying friction in the early user journey as the primary drop-off driver. I restructured the product, design, and engineering teams to remove redundant overhead, consolidate responsibilities, and improve delivery speed. In parallel, I introduced AI-powered prototyping and user insight collection tools, compressing the cycle from insight to validated solution from weeks to days.</p>"
+    },
+    {
+      "title": "Outcome",
+      "body": "<ul>\n<li>First-time activation increased 94%</li>\n<li>Team costs reduced 26% through restructuring</li>\n<li>Team output increased 13%</li>\n<li>Insight-to-validated-solution cycle reduced from weeks to days</li>\n</ul>"
     }
   ]
 }

@@ -17,11 +17,7 @@
   "metrics": [
     {
       "value": "87%",
-      "label": "active user growth"
-    },
-    {
-      "value": "75%",
-      "label": "reduction in time to value"
+      "label": "user growth"
     },
     {
       "value": "",
@@ -35,7 +31,7 @@
   "sections": [
     {
       "title": "Context",
-      "body": "<p>SignAssist is a PropTech SaaS startup targeting real estate agents and property investors in the Dutch and broader European market. The company was at an early growth stage, operating in a fragmented market where paper-based workflows are still common. As Head of Product (January 2024 to December 2025), I owned the full product scope: vision, strategy, roadmap, analytics, and investor stakeholder management. The engineering and design team numbered around 6 people.</p>"
+      "body": "<p>Head of Product at SignAssist, a PropTech SaaS startup for real estate agents. Early growth stage, team of ~6, Dutch and European market.</p>"
     },
     {
       "title": "Problem",

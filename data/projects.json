@@ -9,7 +9,7 @@
       "Strategy",
       "Product"
     ],
-    "lede": "Restructured product, design and engineering teams reducing costs by 26%, while increasing team output by 13%. Increased first-time activation by 94% by focusing the team on time-to-value and removing friction in the early user journey. Introduced AI-powered prototyping and user insights collection, reducing the insight-to-validated-solution cycle from weeks to days.",
+    "lede": "",
     "coverImage": "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1200&q=80",
     "metrics": [
       {
@@ -36,7 +36,7 @@
       "Strategy",
       "Product"
     ],
-    "lede": "AI-based property and investment management platform. Defined the product vision, strategy and roadmap, managed stakeholder relationships (investors), and established product operations and analytics reviews.",
+    "lede": "",
     "coverImage": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&q=80",
     "metrics": [
       {
@@ -67,7 +67,7 @@
       "Research",
       "Product"
     ],
-    "lede": "Led product definition, design and agile development of a mental health DTx (Digital Therapeutics) product to be used in combination with Spravato (esketamine) — a treatment for treatment-resistant depression — in collaboration with Janssen / Johnson &amp; Johnson. Included a full clinical trial programme.",
+    "lede": "",
     "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
     "metrics": [
       {
@@ -91,7 +91,7 @@
       "Product",
       "Research"
     ],
-    "lede": "Co-founded Telefonica Alpha Health (later Koa Health) and grew the product and design team from 1 to 40 people. Built a portfolio of digital mental health products that raised €66M in investment and reached 3 million users across 70+ countries.",
+    "lede": "",
     "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
     "metrics": [
       {
@@ -131,7 +131,7 @@
       "Design",
       "Research"
     ],
-    "lede": "Led UX, product and service design teams across 5 global locations (10–17 people), building eHealth, cloud and data privacy products at Telefonica worldwide.",
+    "lede": "",
     "coverImage": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&q=80",
     "metrics": [
       {
@@ -162,7 +162,7 @@
       "Design",
       "Product"
     ],
-    "lede": "Established and managed the user experience team (designers, copywriters, engineers, user researchers) for a SaaS network management product. Worked with the CEO and engineering team to change the product process to be user-centred, resulting in a 50%+ simplification of the product portfolio.",
+    "lede": "",
     "coverImage": "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1200&q=80",
     "metrics": [
       {
@@ -189,7 +189,7 @@
       "Design",
       "Product"
     ],
-    "lede": "Reimagining digital language learning platforms to reach millions of learners across emerging markets. Designed a global teacher collaboration platform for the British Council, with reach across India and emerging markets.",
+    "lede": "",
     "coverImage": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1200&q=80",
     "metrics": [
       {
@@ -332,11 +332,7 @@
     "metrics": [
       {
         "value": "87%",
-        "label": "active user growth"
-      },
-      {
-        "value": "75%",
-        "label": "reduction in time to value"
+        "label": "user growth"
       },
       {
         "value": "",
@@ -424,7 +420,7 @@
     "metrics": [
       {
         "value": "75%",
-        "label": "accuracy predicting mental health crisis 4 weeks in advance."
+        "label": "accuracy predicting mental health crisis 4 weeks ahead"
       }
     ]
   },

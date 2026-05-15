@@ -8,10 +8,10 @@
     "Strategy",
     "Product"
   ],
-  "lede": "AI-based property and investment management platform. Defined the product vision, strategy and roadmap, managed stakeholder relationships (investors), and established product operations and analytics reviews.",
+  "lede": "",
   "coverImage": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&q=80",
-  "role": "Head of Product",
-  "timeline": "January 2024 – December 2025",
+  "role": "",
+  "timeline": "",
   "partners": [],
   "metrics": [
     {
@@ -33,16 +33,24 @@
   ],
   "sections": [
     {
-      "title": "Overview",
-      "body": "<p>AI-based property and investment management platform. Defined the product vision, strategy and roadmap, managed stakeholder relationships (investors), and established product operations and analytics reviews.</p>"
+      "title": "Context",
+      "body": "<p>SignAssist is a PropTech SaaS startup building an AI-based property and investment management platform for real estate agents. Early growth stage, team of ~6, operating in a market still heavily reliant on fragmented tools and manual workflows.</p>"
     },
     {
-      "title": "Key work",
-      "body": "<ul>\n<li>Led design and launch of an AI module that transforms contracts and real estate documents into structured data and compliance warnings</li>\n<li>Increased active users by 87% through improved in-product onboarding and messaging</li>\n<li>Implemented regular pre/prototype testing, data analysis and analytics reviews, reducing time to value by 75%</li>\n<li>Developed a pricing strategy resulting in 23% MRR growth</li>\n<li>Lowered CAC/LTV ratio from 162% to 21%</li>\n</ul>"
+      "title": "Problem",
+      "body": "<p>Agents were managing the full rental lifecycle — listings, tenant screening, contracts, portfolio tracking — across disconnected tools. Retention was low and unit economics were poor: CAC/LTV was running at 162%, blocking sustainable growth. The business needed to fix activation and retention before scaling acquisition.</p>"
     },
     {
-      "title": "Key outcomes",
-      "body": "<ul>\n<li><strong>87%</strong> increase in active users</li>\n<li><strong>75%</strong> reduction in time-to-value</li>\n<li>CAC/LTV ratio: <strong>162% → 21%</strong></li>\n<li><strong>23%</strong> MRR growth</li>\n</ul>"
+      "title": "My role",
+      "body": "<p>I owned the product end-to-end: strategy, roadmap, design direction, analytics infrastructure, and investor relationships. Engineering and design execution were delegated; all product and commercial decisions were mine.</p>"
+    },
+    {
+      "title": "Approach",
+      "body": "<p>Funnel analysis and prototype testing identified onboarding friction as the primary drop-off driver. I redesigned onboarding and in-product messaging flows, testing iteratively before shipping. In parallel, I led development of an AI document parsing module that converted unstructured legal and contract text into structured data with compliance flags — removing significant manual overhead for agents. I also built a pricing strategy from usage data and customer segmentation, and set up a recurring analytics review cadence to keep the team aligned on growth levers.</p>"
+    },
+    {
+      "title": "Outcome",
+      "body": "<ul>\n<li>Active users grew 87%</li>\n<li>Time to value reduced 75%</li>\n<li>CAC/LTV improved from 162% to 21%</li>\n<li>MRR grew 23% following the new pricing strategy</li>\n</ul>"
     }
   ]
 }

@@ -8,7 +8,7 @@
     "Design",
     "Product"
   ],
-  "lede": "Reimagining digital language learning platforms to reach millions of learners across emerging markets. Designed a global teacher collaboration platform for the British Council, with reach across India and emerging markets.",
+  "lede": "",
   "coverImage": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1200&q=80",
   "role": "",
   "timeline": "",
@@ -29,12 +29,24 @@
   ],
   "sections": [
     {
-      "title": "Overview",
-      "body": "<p>Reimagining digital language learning platforms to reach millions of learners across emerging markets. Designed a global teacher collaboration platform for the British Council, with reach across India and emerging markets.</p>"
+      "title": "Context",
+      "body": "<p>The British Council is a global organisation promoting English language learning and cultural exchange. This project involved redesigning their digital learning platform to reach learners across India and other emerging markets at scale, and building a teacher collaboration platform to support their global educator network.</p>"
     },
     {
-      "title": "Key outcomes",
-      "body": "<ul>\n<li><strong>3M+</strong> active learners</li>\n<li><strong>40%</strong> engagement uplift</li>\n<li>Global teacher collaboration platform deployed across multiple countries</li>\n</ul>"
+      "title": "Problem",
+      "body": "<p>The existing digital learning offer was not reaching the volume or breadth of learners the British Council needed to serve. Engagement on existing platforms was low, and teachers had no shared digital infrastructure for collaboration across markets. The business problem was scale: extending reach without proportionally increasing cost.</p>"
+    },
+    {
+      "title": "My role",
+      "body": "<p>I led the product and design work, including user research, platform design, and the teacher collaboration tool. Delivery was a joint effort with the engineering team; product and UX decisions were mine.</p>"
+    },
+    {
+      "title": "Approach",
+      "body": "<p>User research focused on the specific constraints of learners in emerging markets: device availability, connectivity, and the role of the teacher in a learner's experience. The platform was designed around low-bandwidth usage patterns and teacher-led learning pathways. The teacher collaboration platform was built to allow educators across markets to share lesson materials, adapt content, and coordinate programmes without central coordination overhead.</p>"
+    },
+    {
+      "title": "Outcome",
+      "body": "<ul>\n<li>3M+ active learners on the platform</li>\n<li>40% engagement uplift</li>\n<li>Teacher collaboration platform deployed across multiple countries including India</li>\n</ul>"
     }
   ]
 }

@@ -8,10 +8,10 @@
     "Design",
     "Product"
   ],
-  "lede": "Established and managed the user experience team (designers, copywriters, engineers, user researchers) for a SaaS network management product. Worked with the CEO and engineering team to change the product process to be user-centred, resulting in a 50%+ simplification of the product portfolio.",
+  "lede": "",
   "coverImage": "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1200&q=80",
-  "role": "User Experience Manager",
-  "timeline": "September 2005 – June 2011",
+  "role": "",
+  "timeline": "",
   "partners": [],
   "metrics": [
     {
@@ -29,16 +29,24 @@
   ],
   "sections": [
     {
-      "title": "Overview",
-      "body": "<p>Established and managed the user experience team (designers, copywriters, engineers, user researchers) for a SaaS network management product. Worked with the CEO and engineering team to change the product process to be user-centred, resulting in a 50%+ simplification of the product portfolio.</p>"
+      "title": "Context",
+      "body": "<p>NTRglobal was a SaaS company providing network management and remote access products. The company served both enterprise and SMB customers. I established and managed the UX team — designers, copywriters, engineers, and user researchers — and worked directly with the CEO and engineering leadership to shift the product process towards user-centred design.</p>"
     },
     {
-      "title": "Key work",
-      "body": "<ul>\n<li>Restructured product management to user-centred design — 50% simplification of product portfolio</li>\n<li>Created a new product line for SMBs</li>\n<li>Drove 212% increase in conversions for sign-up and landing pages</li>\n<li>Achieved 50% decrease in time on task for top 5 user tasks</li>\n</ul>"
+      "title": "Problem",
+      "body": "<p>The product portfolio had grown complex and difficult to use. Conversion on sign-up and landing pages was poor. Users were taking too long to complete core tasks, generating high support load. The business problem was competitiveness: the product needed to be simpler and faster to adopt to compete in an increasingly crowded SaaS market.</p>"
     },
     {
-      "title": "Key outcomes",
-      "body": "<ul>\n<li><strong>212%</strong> increase in conversions</li>\n<li><strong>50%</strong> decrease in time on task</li>\n<li><strong>50%</strong> simplification of product portfolio</li>\n<li>New SMB product line launched</li>\n</ul>"
+      "title": "My role",
+      "body": "<p>I built the UX team from scratch and owned the end-to-end UX function: hiring, process, research, and delivery. I also drove the strategic shift from feature-driven to user-centred product development, working directly with the CEO to change how product decisions were made. The SMB product line was my initiative.</p>"
+    },
+    {
+      "title": "Approach",
+      "body": "<p>I introduced a user-centred product process: regular usability testing, task analysis, and research feeding directly into roadmap decisions. The first priority was simplification — the product portfolio was rationalised based on actual usage patterns and user needs rather than internal feature preferences. I redesigned sign-up and landing pages using conversion data and user testing. For SMBs, I identified an underserved segment and led the product definition and design of a dedicated product line.</p>"
+    },
+    {
+      "title": "Outcome",
+      "body": "<ul>\n<li>212% increase in conversions on sign-up and landing pages</li>\n<li>50% decrease in time on task for the top 5 user tasks</li>\n<li>50%+ simplification of the product portfolio</li>\n<li>New SMB product line launched</li>\n</ul>"
     }
   ]
 }

@@ -16,13 +16,13 @@
   "metrics": [
     {
       "value": "75%",
-      "label": "accuracy predicting mental health crisis 4 weeks in advance."
+      "label": "accuracy predicting mental health crisis 4 weeks ahead"
     }
   ],
   "sections": [
     {
       "title": "Context",
-      "body": "<p>Koa Health was a Series B digital mental health company (~150 people) with a clinical product portfolio. This project was developed in collaboration with Birmingham and Solihull NHS Foundation Trust, covering a patient population of approximately 1.2 million people, including 140,000 active mental health patients. As VP of Product &amp; Innovation, I led product definition and cross-organisational collaboration.</p>"
+      "body": "<p>VP of Product &amp; Innovation at Koa Health (Series B), in collaboration with Birmingham and Solihull NHS Foundation Trust. 1.2M patients covered.</p>"
     },
     {
       "title": "Problem",

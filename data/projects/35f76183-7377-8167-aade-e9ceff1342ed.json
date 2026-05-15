@@ -9,17 +9,11 @@
     "Design",
     "Research"
   ],
-  "lede": "Led UX, product and service design teams across 5 global locations (10–17 people), building eHealth, cloud and data privacy products at Telefonica worldwide.",
+  "lede": "",
   "coverImage": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&q=80",
-  "role": "User Experience Lead &amp; Head of Product &amp; Service Design",
-  "timeline": "June 2011 – June 2016",
-  "partners": [
-    "NHS (UK)",
-    "WHO",
-    "Unicef",
-    "Harvard",
-    "Hospital del Mar, Barcelona"
-  ],
+  "role": "",
+  "timeline": "",
+  "partners": [],
   "metrics": [
     {
       "value": "48%",
@@ -40,16 +34,24 @@
   ],
   "sections": [
     {
-      "title": "Overview",
-      "body": "<p>Led UX, product and service design teams across 5 global locations (10–17 people), building eHealth, cloud and data privacy products at Telefonica worldwide.</p>"
+      "title": "Context",
+      "body": "<p>Telefonica is one of the world's largest telecoms operators, with major consumer brands including O2 (UK), Movistar (Spain and Latin America), and Vivo (Brazil). Over five years, I led UX, product, and service design teams across 5 global locations, building a portfolio of eHealth, cloud, and data privacy products. Teams ranged from 10 to 17 people.</p>"
     },
     {
-      "title": "Key work",
-      "body": "<ul>\n<li>Led design of a chronic disease management system (COPD, heart failure) for patients, nurses and clinicians on tablet, web and mobile — <strong>48% mortality rate decrease</strong> and <strong>63% decrease in readmission</strong> across UK, Brazil and Spain</li>\n<li>Created a service using location patterns to detect epidemic sources faster, predict spread and follow up with education — in collaboration with the WHO, Unicef and Harvard</li>\n<li>Created a voice analysis service using a standard telephone line to detect and monitor Parkinson's disease with <strong>78% precision</strong></li>\n<li>Healthcare educational services via SMS for the general population and mothers-to-be in Brazil</li>\n<li>Teledermatology service with Hospital del Mar in Barcelona</li>\n<li>Led cross-disciplinary teams creating new data security and privacy products — <strong>20+ MVPs</strong>, 5 successfully launched</li>\n</ul>"
+      "title": "Problem",
+      "body": "<p>Telefonica was investing in health and digital services as a strategic growth area adjacent to core telecoms. The challenge was demonstrating that a telecoms company could build products with genuine clinical and commercial value — not just technology prototypes. Each product area had a distinct business problem: chronic disease management had high healthcare costs and readmission rates; Parkinson's detection had no accessible early screening pathway; epidemic tracking had weeks-long detection lag times.</p>"
     },
     {
-      "title": "Key outcomes",
-      "body": "<ul>\n<li><strong>48%</strong> decrease in mortality rate (chronic disease)</li>\n<li><strong>63%</strong> decrease in hospital readmission</li>\n<li><strong>20+</strong> MVPs created, <strong>5</strong> launched</li>\n<li><strong>78%</strong> precision in Parkinson's detection</li>\n</ul>"
+      "title": "My role",
+      "body": "<p>I personally led product and service design across the full portfolio. This included setting direction, leading user research programmes, designing clinical and consumer-facing interfaces, managing cross-functional teams, and maintaining relationships with clinical and institutional partners (NHS, WHO, UNICEF, Harvard). Team management and budgeting were mine; technical implementation was delegated.</p>"
+    },
+    {
+      "title": "Approach",
+      "body": "<p>Each product was grounded in field research before design began — ethnographic home visits for chronic disease, clinical workflow research for Parkinson's, mobility data analysis for pandemic prediction. I ran co-design workshops with clinical staff, facilitated cross-functional delivery, and managed the tension between the pace of a commercial product team and the rigour required by clinical and regulatory partners. Across 20+ MVPs, the selection of which 5 to launch was driven by validated demand and commercial viability, not technical interest.</p>"
+    },
+    {
+      "title": "Outcome",
+      "body": "<ul>\n<li>48% decrease in mortality rate for patients on the chronic disease management service</li>\n<li>63% decrease in hospital readmission rate</li>\n<li>78% precision in Parkinson's voice detection</li>\n<li>20+ MVPs developed, 5 successfully launched</li>\n<li>Pandemic prediction tools validated in collaboration with WHO, UNICEF, and Harvard across Ebola and Zika outbreaks</li>\n</ul>"
     }
   ]
 }
