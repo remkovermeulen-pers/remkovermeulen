@@ -89,7 +89,7 @@ async function main() {
     try { article = JSON.parse(fs.readFileSync(fpath, 'utf8')); }
     catch { continue; }
 
-    if (article.contentSource !== 'youtube-transcript') continue;
+    if (article.contentSource !== 'youtube-transcript' && article.contentSource !== 'claude-written') continue;
 
     console.log(`\nUpdating Notion for: ${article.title}`);
     console.log(`  Page ID: ${article.notionId}`);
