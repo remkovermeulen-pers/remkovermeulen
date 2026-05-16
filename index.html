@@ -271,7 +271,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
               return '<div><span class="metric">'+esc(m.value)+'</span><div class="metric-label">'+esc(m.label)+'</div></div>';
             }).join('');
             var logoHtml = p.logoDomain ? '<img class="proj__logo" src="https://cdn.brandfetch.io/'+esc(p.logoDomain)+'/w/300/h/150/logo?theme=dark" alt="">' : '';
-            return '<a href="case-study?id='+esc(p.notionId)+'" class="proj lift">'
+            return '<a href="case-study?id='+esc(p.notionId)+'" class="proj">'
               +'<div class="proj__img">'
               +'<span class="proj__chip">'+esc(p.sector)+'</span>'
               +'<img class="bw-img" src="'+esc(p.coverImage)+'" alt="'+esc(p.title)+'" loading="lazy">'
