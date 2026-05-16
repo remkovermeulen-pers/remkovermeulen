@@ -16,17 +16,6 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-
-      - name: Install Python dependencies
-        run: pip install youtube-transcript-api
-
-      - name: Enrich articles with YouTube transcripts
-        run: python3 scripts/enrich-transcripts.py
-
       - name: Push transcript content to Notion
         env:
           NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
