@@ -428,8 +428,8 @@
     "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
     "metrics": [
       {
-        "value": "",
-        "label": "Participants 25,000"
+        "value": "25.000",
+        "label": "Participants"
       }
     ],
     "logoDomain": "",
