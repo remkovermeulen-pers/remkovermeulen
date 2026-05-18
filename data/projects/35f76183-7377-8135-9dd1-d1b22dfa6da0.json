@@ -21,24 +21,8 @@
       "label": "investment raised"
     },
     {
-      "value": "80%",
-      "label": "recall on ML crisis prediction"
-    },
-    {
       "value": "3M",
       "label": "users in 70+ countries"
-    },
-    {
-      "value": "62%",
-      "label": "increase in velocity"
-    },
-    {
-      "value": "82%",
-      "label": "decrease in cost per investigation"
-    },
-    {
-      "value": "55%",
-      "label": "reduction in symptoms (clinical trial)"
     }
   ],
   "logoDomain": "",
