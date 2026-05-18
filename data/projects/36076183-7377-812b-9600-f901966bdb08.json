@@ -16,6 +16,7 @@
   "partners": [],
   "metrics": [],
   "logoDomain": "",
+  "organisations": [],
   "sections": [
     {
       "title": "Context",
@@ -36,12 +37,6 @@
     {
       "title": "Outcome",
       "body": "<p>My Health launched as one of the first digital health services in Brazil built explicitly for the non-smartphone majority. As mobile internet penetration grew, the service scaled through multiple channels. The project established Vivo as a credible health services operator and informed Telefonica's broader digital health strategy in emerging markets.</p>\n<p><em>Revenue and user metrics for this project were not published externally.</em></p>"
-    }
-  ],
-  "organisations": [
-    {
-      "name": "Vivo",
-      "logo": "vivo.svg"
     }
   ]
 }

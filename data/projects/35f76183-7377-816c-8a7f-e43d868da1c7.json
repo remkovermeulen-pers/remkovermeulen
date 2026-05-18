@@ -33,6 +33,7 @@
     }
   ],
   "logoDomain": "",
+  "organisations": [],
   "sections": [
     {
       "title": "Context",
@@ -53,12 +54,6 @@
     {
       "title": "Outcome",
       "body": "<ul>\n<li>Active users grew 87%</li>\n<li>Time to value reduced 75%</li>\n<li>CAC/LTV improved from 162% to 21%</li>\n<li>MRR grew 23% following the new pricing strategy</li>\n</ul>"
-    }
-  ],
-  "organisations": [
-    {
-      "name": "SignAssist",
-      "logo": ""
     }
   ]
 }

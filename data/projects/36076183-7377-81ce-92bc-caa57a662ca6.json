@@ -25,6 +25,7 @@
     }
   ],
   "logoDomain": "",
+  "organisations": [],
   "sections": [
     {
       "title": "Context",
@@ -45,20 +46,6 @@
     {
       "title": "Outcome",
       "body": "<ul>\n<li>33 future scenarios developed, covering a range of plausible mental health contexts over a 10-20 year horizon</li>\n<li>10 future product concepts tested with users online</li>\n<li>Outputs published via the Xploratory website, contributing to Koa Health's positioning in the digital mental health space</li>\n<li>Work directly informed longer-term product strategy and supported investor conversations about where the company was heading</li>\n</ul>"
-    }
-  ],
-  "organisations": [
-    {
-      "name": "Royal College of Art",
-      "logo": "royal-college-art.webp"
-    },
-    {
-      "name": "Xploratory",
-      "logo": ""
-    },
-    {
-      "name": "Telefonica Alpha",
-      "logo": "telefonica-alpha.jpg"
     }
   ]
 }

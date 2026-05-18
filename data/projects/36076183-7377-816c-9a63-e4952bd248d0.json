@@ -21,6 +21,7 @@
     }
   ],
   "logoDomain": "",
+  "organisations": [],
   "sections": [
     {
       "title": "Context",
@@ -41,16 +42,6 @@
     {
       "title": "Outcome",
       "body": "<ul>\n<li>Model achieved 78% detection accuracy — clinically meaningful for a screening context</li>\n<li>No specialist equipment or smartphone required — accessible across age and geography</li>\n<li>Project demonstrated Telefonica's network data as a health asset, underpinning subsequent health partnership strategy</li>\n</ul>\n<p><em>The product was shelved pending a pharmaceutical treatment for Parkinson's — no cure meant limited clinical demand for early detection at the time.</em></p>"
-    }
-  ],
-  "organisations": [
-    {
-      "name": "Telefónica",
-      "logo": "telefonica.com.svg"
-    },
-    {
-      "name": "Hospital Sant Pau",
-      "logo": "hospital-sant-pau.svg"
     }
   ]
 }

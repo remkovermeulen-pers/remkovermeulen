@@ -29,6 +29,7 @@
     }
   ],
   "logoDomain": "",
+  "organisations": [],
   "sections": [
     {
       "title": "Context",
@@ -49,12 +50,6 @@
     {
       "title": "Outcome",
       "body": "<ul>\n<li>3M+ active learners on the platform</li>\n<li>40% engagement uplift</li>\n<li>Teacher collaboration platform deployed across multiple countries including India</li>\n</ul>"
-    }
-  ],
-  "organisations": [
-    {
-      "name": "British Council",
-      "logo": "british-council.svg"
     }
   ]
 }
