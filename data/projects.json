@@ -320,16 +320,7 @@
     "lede": "",
     "description": "Led product definition and clinical trial for a digital therapeutic companion to Spravato (esketamine) for treatment-resistant depression, developed in partnership with Janssen / Johnson & Johnson.",
     "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
-    "metrics": [
-      {
-        "value": "",
-        "label": "Clinical DTx companion to Spravato for treatment-resistant depression"
-      },
-      {
-        "value": "3",
-        "label": "digital health patents"
-      }
-    ],
+    "metrics": [],
     "logoDomain": "",
     "organisations": [
       {
@@ -438,7 +429,7 @@
     "metrics": [
       {
         "value": "",
-        "label": "Research study launched with over 25,000 participants in the UK."
+        "label": "Participants 25,000"
       }
     ],
     "logoDomain": "",
@@ -646,42 +637,6 @@
       {
         "name": "NTRglobal",
         "logo": "https://raw.githubusercontent.com/VermeulenCastellon/portfolio-website/main/public/logos/ntrglobal.svg"
-      }
-    ]
-  },
-  {
-    "notionId": "35f76183-7377-8167-8d4f-fbcae3ef4c2d",
-    "title": "British Council",
-    "sector": "Education",
-    "status": "Live",
-    "year": 2002,
-    "priority": 999,
-    "tags": [
-      "Design",
-      "Product"
-    ],
-    "lede": "",
-    "description": "Redesigned a digital language learning platform for emerging markets and built a global teacher collaboration tool for the British Council, reaching 3M+ active learners with a 40% uplift in engagement.",
-    "coverImage": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1200&q=80",
-    "metrics": [
-      {
-        "value": "3M+",
-        "label": "active learners"
-      },
-      {
-        "value": "40%",
-        "label": "engagement uplift"
-      },
-      {
-        "value": "",
-        "label": "global teacher collaboration platform"
-      }
-    ],
-    "logoDomain": "",
-    "organisations": [
-      {
-        "name": "British Council",
-        "logo": "british-council.svg"
       }
     ]
   }
