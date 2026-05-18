@@ -237,35 +237,31 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
   ]).then(function(results) {
     var proj = results[0];
     var all  = results[1];
-    var cfg  = results[2];
-    render(proj, all, cfg.brandfetchKey || '');
+    render(proj, all);
   }).catch(function() {
     main.innerHTML = '<div class="cs-loading">Project not found. <a href="work.html">Back to work</a></div>';
   });
 
   // Fallback mapping: project title → domain (used when Notion 'Logo Domain' property isn't set)
-  var LOGO_DOMAINS = {
-    'Toggl':                             'toggl.com',
-    'Janssen / Johnson & Johnson':       'janssen.com',
-    'Koa Health':                        'koa.health',
-    'Financial Times':                   'ft.com',
-    'Telefónica / O2':                   'telefonica.com',
-    'Renault':                           'renault.com',
-    'British Council':                   'britishcouncil.org',
-    'NTRglobal':                         'ntrglobal.com',
-    'Koga Miyata Bicycle Computer':      'koga.com',
+  var LOGO_FILES = {
+    'Toggl':                        'toggl.com.svg',
+    'Johnson & Johnson':            'jandj.com.svg',
+    'Koa Health':                   'koa.health.com.png',
+    'Financial Times':              'ft.com.svg',
+    'Telefónica / O2':              'telefonica.com.svg',
+    'Renault':                      'renault.com.svg',
+    'British Council':              'british-council.svg',
   };
 
-  function getLogoDomain(proj) {
-    return proj.logoDomain || LOGO_DOMAINS[proj.title] || '';
+  function getLogoFile(proj) {
+    return LOGO_FILES[proj.title] || '';
   }
 
-  function logoUrl(domain, key) {
-    if (key) return 'https://cdn.brandfetch.io/' + encodeURIComponent(domain) + '?c=' + encodeURIComponent(key);
-    return 'assets/logos/' + domain + '.svg';
+  function logoUrl(filename) {
+    return 'assets/logos/' + filename;
   }
 
-  function render(proj, all, brandfetchKey) {
+  function render(proj, all) {
     document.title = proj.title + ' — Case Study — Remko Vermeulen';
 
     var nextProj    = getNext(proj.id, all);
@@ -290,9 +286,9 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
 
       '<section class="cs-hero">' +
         '<p class="cs-hero__crumb">' + esc(proj.sector) + ' &nbsp;/&nbsp; Case Study</p>' +
-        (getLogoDomain(proj)
+        (getLogoFile(proj)
           ? '<div class="hero-lockup">' +
-              '<img class="hero-lockup__logo" src="' + logoUrl(getLogoDomain(proj), brandfetchKey) + '" alt="' + esc(proj.title) + ' logo" onerror="this.closest(\'.hero-lockup\').outerHTML=\'<h1>' + esc(proj.title).replace(/'/g,'&#39;') + '</h1>\'">' +
+              '<img class="hero-lockup__logo" src="' + logoUrl(getLogoFile(proj)) + '" alt="' + esc(proj.title) + ' logo" onerror="this.closest(\'.hero-lockup\').outerHTML=\'<h1>' + esc(proj.title).replace(/'/g,'&#39;') + '</h1>\'">' +
               '<span class="hero-lockup__rule" aria-hidden="true"></span>' +
               '<h1>' + esc(proj.title) + '</h1>' +
             '</div>'
@@ -301,7 +297,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
         bylineHtml +
         '<div class="cs-cover">' +
           '<img class="bw-img" src="' + esc(proj.coverImage) + '" alt="' + esc(proj.title) + '">' +
-          (getLogoDomain(proj) ? '<img class="cs-cover__logo" src="' + logoUrl(getLogoDomain(proj), brandfetchKey) + '" alt="" onerror="this.remove()">' : '') +
+          (getLogoFile(proj) ? '<img class="cs-cover__logo" src="' + logoUrl(getLogoFile(proj)) + '" alt="" onerror="this.remove()">' : '') +
           (proj.coverCaption ? '<div class="cs-cover__caption">' + esc(proj.coverCaption) + '</div>' : '') +
         '</div>' +
       '</section>' +

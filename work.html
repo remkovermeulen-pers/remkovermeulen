@@ -113,6 +113,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
 .proj-card__img { aspect-ratio:16/10; overflow:hidden; position:relative; background:var(--bg-elev); flex-shrink:0; }
 .proj-card__img img { width:100%; height:100%; object-fit:cover; }
 .proj-card__chip { position:absolute; top:14px; left:14px; background:var(--primary); color:var(--on-primary); padding:6px 10px; font-size:9px; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; }
+.proj-card__logo { position:absolute; bottom:14px; left:16px; height:22px; max-width:100px; width:auto; object-fit:contain; filter:brightness(0) invert(1); opacity:0.9; pointer-events:none; }
 .proj-card__body { padding:24px; display:flex; flex-direction:column; gap:16px; flex:1; }
 .proj-card h3 { margin:0; font-family:var(--font-display); font-weight:600; font-size:clamp(22px,2.4vw,30px); line-height:1.15; letter-spacing:-0.01em; }
 .proj-card__lede { margin:0; font-size:15px; color:var(--muted-2); line-height:1.6; }
@@ -192,6 +193,15 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
     (function(){
       var arrow = '<svg width="14" height="10" viewBox="0 0 16 10" fill="none"><path d="M1 5h14m0 0L11 1m4 4l-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"/></svg>';
       function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+      var LOGO_FILES = {
+        'Toggl':            'toggl.com.svg',
+        'Johnson & Johnson':'jandj.com.svg',
+        'Koa Health':       'koa.health.com.png',
+        'Financial Times':  'ft.com.svg',
+        'Telefónica / O2':  'telefonica.com.svg',
+        'Renault':          'renault.com.svg',
+        'British Council':  'british-council.svg',
+      };
       fetch('data/projects.json')
         .then(function(r){ return r.json(); })
         .then(function(projects){
@@ -209,10 +219,12 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
             var tags = (p.tags || []).map(function(t){ return '<span class="tag">' + esc(t) + '</span>'; }).join('');
             var metrics = (p.metrics || []).filter(function(m){ return m.value; }).slice(0,2)
               .map(function(m){ return '<div class="proj-card__stat"><span class="metric">'+esc(m.value)+'</span><div class="metric-label">'+esc(m.label)+'</div></div>'; }).join('');
+            var logoFile = LOGO_FILES[p.title] || '';
             return '<a href="case-study?id=' + esc(p.notionId) + '" class="proj-card">'
               + '<div class="proj-card__img">'
               + '<span class="proj-card__chip">' + esc(p.sector) + '</span>'
               + '<img class="bw-img" src="' + esc(p.coverImage) + '" alt="' + esc(p.title) + '" loading="lazy">'
+              + (logoFile ? '<img class="proj-card__logo" src="assets/logos/' + esc(logoFile) + '" alt="" onerror="this.remove()">' : '')
               + '</div>'
               + '<div class="proj-card__body">'
               + '<h3>' + esc(p.title) + '</h3>'
