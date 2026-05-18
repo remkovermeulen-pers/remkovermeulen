@@ -68,7 +68,7 @@
       },
       {
         "name": "Harvard",
-        "logo": "harvard.png"
+        "logo": "harvard.svg"
       },
       {
         "name": "Massachusetts General Hospital",
@@ -223,7 +223,7 @@
     "organisations": [
       {
         "name": "Harvard",
-        "logo": "harvard.png"
+        "logo": "harvard.svg"
       },
       {
         "name": "Massachusetts General Hospital",
@@ -258,7 +258,7 @@
       },
       {
         "name": "Harvard",
-        "logo": "harvard.png"
+        "logo": "harvard.svg"
       }
     ]
   },
