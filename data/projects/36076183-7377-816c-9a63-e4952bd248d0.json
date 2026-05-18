@@ -21,7 +21,16 @@
     }
   ],
   "logoDomain": "",
-  "organisations": [],
+  "organisations": [
+    {
+      "name": "Telefónica",
+      "logo": "telefonica.com.svg"
+    },
+    {
+      "name": "Hospital Sant Pau",
+      "logo": "hospital-sant-pau.svg"
+    }
+  ],
   "sections": [
     {
       "title": "Context",

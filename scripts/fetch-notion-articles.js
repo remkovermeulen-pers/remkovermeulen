@@ -325,7 +325,9 @@ async function fetchOrgData() {
         const titleProp = p['Name'] || p['Organisation'] || Object.values(p).find(x => x.type === 'title');
         const name = extractText(titleProp);
         const logo = extractText(p['Logo']);
-        if (name) map[page.id] = { name, logo };
+        // Store under both hyphenated and plain-UUID keys to handle both formats
+        const plainId = page.id.replace(/-/g, '');
+        if (name) { map[page.id] = { name, logo }; map[plainId] = { name, logo }; }
       }
       cursor = data.has_more ? data.next_cursor : null;
     } while (cursor);

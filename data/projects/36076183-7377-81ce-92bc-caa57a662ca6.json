@@ -25,7 +25,20 @@
     }
   ],
   "logoDomain": "",
-  "organisations": [],
+  "organisations": [
+    {
+      "name": "Royal College of Art",
+      "logo": "royal-college-art.webp"
+    },
+    {
+      "name": "Xploratory",
+      "logo": ""
+    },
+    {
+      "name": "Telefonica Alpha",
+      "logo": "telefonica-alpha.jpg"
+    }
+  ],
   "sections": [
     {
       "title": "Context",

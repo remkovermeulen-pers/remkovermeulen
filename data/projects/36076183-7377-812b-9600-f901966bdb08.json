@@ -16,7 +16,12 @@
   "partners": [],
   "metrics": [],
   "logoDomain": "",
-  "organisations": [],
+  "organisations": [
+    {
+      "name": "Vivo",
+      "logo": "vivo.svg"
+    }
+  ],
   "sections": [
     {
       "title": "Context",

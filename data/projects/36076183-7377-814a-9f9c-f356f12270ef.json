@@ -21,7 +21,16 @@
     }
   ],
   "logoDomain": "",
-  "organisations": [],
+  "organisations": [
+    {
+      "name": "BBC",
+      "logo": "bbc.svg"
+    },
+    {
+      "name": "Telefonica Alpha",
+      "logo": "telefonica-alpha.jpg"
+    }
+  ],
   "sections": [
     {
       "title": "Context",

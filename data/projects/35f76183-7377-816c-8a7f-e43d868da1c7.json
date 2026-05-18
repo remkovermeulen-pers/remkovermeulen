@@ -33,7 +33,12 @@
     }
   ],
   "logoDomain": "",
-  "organisations": [],
+  "organisations": [
+    {
+      "name": "SignAssist",
+      "logo": ""
+    }
+  ],
   "sections": [
     {
       "title": "Context",

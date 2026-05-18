@@ -42,7 +42,24 @@
     }
   ],
   "logoDomain": "",
-  "organisations": [],
+  "organisations": [
+    {
+      "name": "Koa Health",
+      "logo": "koa.health.com.png"
+    },
+    {
+      "name": "Harvard",
+      "logo": "harvard.png"
+    },
+    {
+      "name": "Massachusetts General Hospital",
+      "logo": "mgh.svg"
+    },
+    {
+      "name": "Janssen",
+      "logo": "jandj.com.svg"
+    }
+  ],
   "sections": [
     {
       "title": "Context",

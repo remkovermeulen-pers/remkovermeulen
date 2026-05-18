@@ -29,7 +29,12 @@
     }
   ],
   "logoDomain": "",
-  "organisations": [],
+  "organisations": [
+    {
+      "name": "NTRglobal",
+      "logo": ""
+    }
+  ],
   "sections": [
     {
       "title": "Context",

@@ -34,5 +34,10 @@
     }
   ],
   "logoDomain": "renault.com",
-  "organisations": []
+  "organisations": [
+    {
+      "name": "Renault",
+      "logo": ""
+    }
+  ]
 }
