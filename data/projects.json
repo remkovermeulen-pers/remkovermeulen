@@ -31,7 +31,7 @@
     "organisations": [
       {
         "name": "Toggl",
-        "logo": "toggl.com.svg"
+        "logo": "toggl.svg"
       }
     ]
   },
@@ -175,12 +175,7 @@
     "lede": "",
     "description": "Mapped the full customer journey for Telefonica's cloud computing service, aligning sales, support, and product teams around shared pain points to improve conversion and reduce churn.",
     "coverImage": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&q=80",
-    "metrics": [
-      {
-        "value": "",
-        "label": "Improved sales conversion rates and lowered churn."
-      }
-    ],
+    "metrics": [],
     "logoDomain": "",
     "organisations": [
       {
