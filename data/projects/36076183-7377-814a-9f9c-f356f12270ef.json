@@ -29,6 +29,10 @@
     {
       "name": "Telefonica Alpha",
       "logo": "telefonica-alpha.jpg"
+    },
+    {
+      "name": "London School of Economics",
+      "logo": "lse.svg"
     }
   ],
   "sections": [
