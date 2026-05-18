@@ -39,6 +39,9 @@
     }
   ],
   "organisations": [
-    "Koga Miyata"
+    {
+      "name": "Koga Miyata",
+      "logo": ""
+    }
   ]
 }

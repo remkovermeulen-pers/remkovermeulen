@@ -256,40 +256,13 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
     'British Council':              'british-council.svg',
   };
 
-  // Maps organisation name (from Notion) → local logo filename
-  var ORG_LOGOS = {
-    'Toggl':                          'toggl.com.svg',
-    'Johnson & Johnson':              'jandj.com.svg',
-    'Janssen':                        'jandj.com.svg',
-    'Koa Health':                     'koa.health.com.png',
-    'Financial Times':                'ft.com.svg',
-    'Telefónica':                     'telefonica.com.svg',
-    'Telefonica Alpha':               'telefonica-alpha.jpg',
-    'O2':                             '02.svg',
-    'Vivo':                           'vivo.svg',
-    'Renault':                        'renault.com.svg',
-    'British Council':                'british-council.svg',
-    'NHS':                            'nhs.svg',
-    'Harvard':                        'harvard.png',
-    'Massachusetts General Hospital': 'mgh.svg',
-    'Hospital Clinic':                'hospital-clinic.svg',
-    'Hospital Sant Pau':              'hospital-sant-pau.svg',
-    'Royal College of Art':           'royal-college-art.webp',
-    'BBC':                            'bbc.svg',
-    'United Nations':                 'un.svg',
-    'SignAssist':                     null,
-    'NTRglobal':                      null,
-    'Xploratory':                     null,
-    'Koga Miyata':                    null,
-  };
-
   function getLogoFile(proj) {
     return LOGO_FILES[proj.title] || '';
   }
 
   function buildLogos(proj) {
     var orgs = proj.organisations || [];
-    var files = orgs.map(function(o) { return ORG_LOGOS[o]; }).filter(Boolean);
+    var files = orgs.map(function(o) { return o.logo || o; }).filter(Boolean);
     if (!files.length) return '';
     return '<div class="cs-hero__logos">'
       + files.map(function(f) {

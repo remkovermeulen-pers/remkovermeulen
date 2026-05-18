@@ -29,7 +29,6 @@
     }
   ],
   "logoDomain": "",
-  "organisations": [],
   "sections": [
     {
       "title": "Context",
@@ -50,6 +49,12 @@
     {
       "title": "Outcome",
       "body": "<ul>\n<li>212% increase in conversions on sign-up and landing pages</li>\n<li>50% decrease in time on task for the top 5 user tasks</li>\n<li>50%+ simplification of the product portfolio</li>\n<li>New SMB product line launched</li>\n</ul>"
+    }
+  ],
+  "organisations": [
+    {
+      "name": "NTRglobal",
+      "logo": ""
     }
   ]
 }

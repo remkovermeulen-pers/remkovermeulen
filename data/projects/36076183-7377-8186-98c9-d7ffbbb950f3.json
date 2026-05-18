@@ -44,7 +44,13 @@
     }
   ],
   "organisations": [
-    "Harvard",
-    "Massachusetts General Hospital"
+    {
+      "name": "Harvard",
+      "logo": "harvard.png"
+    },
+    {
+      "name": "Massachusetts General Hospital",
+      "logo": "mgh.svg"
+    }
   ]
 }

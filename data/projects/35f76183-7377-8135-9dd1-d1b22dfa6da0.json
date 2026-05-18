@@ -42,7 +42,6 @@
     }
   ],
   "logoDomain": "",
-  "organisations": [],
   "sections": [
     {
       "title": "Context",
@@ -63,6 +62,24 @@
     {
       "title": "Outcome",
       "body": "<ul>\n<li>€66M investment raised</li>\n<li>3M users across 70+ countries</li>\n<li>80% recall on ML-based mental health crisis prediction (NHS, 28 days in advance)</li>\n<li>55% reduction in symptoms and 95% cost reduction in Perspectives clinical trial (vs. traditional therapy)</li>\n<li>62% increase in delivery velocity</li>\n<li>82% decrease in cost per investigation</li>\n<li>3 digital health patents filed</li>\n</ul>"
+    }
+  ],
+  "organisations": [
+    {
+      "name": "Koa Health",
+      "logo": "koa.health.com.png"
+    },
+    {
+      "name": "Harvard",
+      "logo": "harvard.png"
+    },
+    {
+      "name": "Massachusetts General Hospital",
+      "logo": "mgh.svg"
+    },
+    {
+      "name": "Janssen",
+      "logo": "jandj.com.svg"
     }
   ]
 }

@@ -29,7 +29,6 @@
     }
   ],
   "logoDomain": "",
-  "organisations": [],
   "sections": [
     {
       "title": "Context",
@@ -50,6 +49,12 @@
     {
       "title": "Outcome",
       "body": "<ul>\n<li>First-time activation increased 94%</li>\n<li>Team costs reduced 26% through restructuring</li>\n<li>Team output increased 13%</li>\n<li>Insight-to-validated-solution cycle reduced from weeks to days</li>\n</ul>"
+    }
+  ],
+  "organisations": [
+    {
+      "name": "Toggl",
+      "logo": "toggl.com.svg"
     }
   ]
 }

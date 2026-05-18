@@ -22,7 +22,6 @@
     }
   ],
   "logoDomain": "",
-  "organisations": [],
   "sections": [
     {
       "title": "Context",
@@ -43,6 +42,12 @@
     {
       "title": "Outcome",
       "body": "<ul>\n<li>Sales conversion rates increased following sales material updates aligned to actual customer questions</li>\n<li>Churn decreased as onboarding improved and customers reached value faster</li>\n<li>The cross-functional workshop format became a repeatable model used for subsequent service reviews</li>\n</ul>"
+    }
+  ],
+  "organisations": [
+    {
+      "name": "Telefónica",
+      "logo": "telefonica.com.svg"
     }
   ]
 }

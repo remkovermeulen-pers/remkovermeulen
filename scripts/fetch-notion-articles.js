@@ -310,8 +310,8 @@ async function fetchArticles() {
   console.log(`\nWrote ${metaList.length} articles`);
 }
 
-async function fetchOrgNames() {
-  // Fetch all pages from the Organisations database to build an id→name map
+async function fetchOrgData() {
+  // Fetch all pages from the Organisations database to build an id→{name,logo} map
   const ORGS_DB = 'baa2e63432d54d548807ecaafb56fb3f';
   const map = {};
   let cursor;
@@ -321,8 +321,11 @@ async function fetchOrgNames() {
       if (cursor) body.start_cursor = cursor;
       const data = await notionPost(`/databases/${ORGS_DB}/query`, body);
       for (const page of data.results) {
-        const name = extractText(page.properties['Name'] || page.properties['Organisation'] || Object.values(page.properties).find(p => p.type === 'title'));
-        if (name) map[page.id] = name;
+        const p = page.properties;
+        const titleProp = p['Name'] || p['Organisation'] || Object.values(p).find(x => x.type === 'title');
+        const name = extractText(titleProp);
+        const logo = extractText(p['Logo']);
+        if (name) map[page.id] = { name, logo };
       }
       cursor = data.has_more ? data.next_cursor : null;
     } while (cursor);
@@ -334,8 +337,8 @@ async function fetchOrgNames() {
 
 async function fetchProjects() {
   console.log('\nFetching projects…');
-  const orgNames = await fetchOrgNames();
-  console.log(`  Loaded ${Object.keys(orgNames).length} organisation names`);
+  const orgData = await fetchOrgData();
+  console.log(`  Loaded ${Object.keys(orgData).length} organisations`);
   const allPages = [];
   let cursor;
   do {
@@ -370,8 +373,9 @@ async function fetchProjects() {
     const metricsRaw    = extractText(p['Metrics']);
     const logoDomain    = extractText(p['Logo Domain']);
     const organisations = (p['Organisation']?.relation || [])
-                            .map(r => orgNames[r.id])
-                            .filter(Boolean);
+                            .map(r => orgData[r.id])
+                            .filter(Boolean)
+                            .map(o => ({ name: o.name, logo: o.logo || '' }));
     const description = extractText(p['Description']);
     const coverImage = SECTOR_IMAGES[sector] || SECTOR_IMAGES.SaaS;
 

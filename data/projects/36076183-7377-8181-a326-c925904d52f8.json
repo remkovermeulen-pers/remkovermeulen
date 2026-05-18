@@ -16,7 +16,6 @@
   "partners": [],
   "metrics": [],
   "logoDomain": "",
-  "organisations": [],
   "sections": [
     {
       "title": "Context",
@@ -37,6 +36,12 @@
     {
       "title": "Outcome",
       "body": "<p>Clinicians given access to predictions plus explanations were significantly more willing to act on model outputs than those who received a risk score alone. The explainability layer was a condition of clinical adoption and directly enabled the rollout of the crisis prediction service in NHS Birmingham. The project reinforced a key finding: AI adoption in clinical settings is primarily a trust problem, not a technical one.</p>"
+    }
+  ],
+  "organisations": [
+    {
+      "name": "Telefónica",
+      "logo": "telefonica.com.svg"
     }
   ]
 }
