@@ -312,7 +312,7 @@ async function fetchArticles() {
 
 async function fetchOrgData() {
   // Fetch all pages from the Organisations database to build an id→{name,logo} map
-  const ORGS_DB = 'baa2e63432d54d548807ecaafb56fb3f';
+  const ORGS_DB = '1ac1832bfd5b4f2ca15ada299623208b';
   const map = {};
   let cursor;
   try {
