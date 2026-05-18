@@ -263,6 +263,12 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
         .then(function(projects){
           var grid = document.getElementById('exp-grid');
           if (!grid) return;
+          projects.sort(function(a,b){
+            var pa = a.priority != null ? a.priority : 999;
+            var pb = b.priority != null ? b.priority : 999;
+            if (pa !== pb) return pa - pb;
+            return (b.year || 0) - (a.year || 0);
+          });
           grid.innerHTML = projects.slice(0,3).map(function(p){
             var metrics = (p.metrics||[]).filter(function(m){ return m.value; }).slice(0,2);
             var metricsClass = metrics.length === 1 ? 'proj__metrics proj__metrics--1' : 'proj__metrics';

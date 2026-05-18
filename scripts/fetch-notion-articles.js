@@ -317,7 +317,10 @@ async function fetchProjects() {
   do {
     const body = {
       filter: { property: 'Status', select: { equals: 'Live' } },
-      sorts: [{ property: 'Year', direction: 'descending' }],
+      sorts: [
+        { property: 'Priority', direction: 'ascending' },
+        { property: 'Year', direction: 'descending' },
+      ],
       page_size: 100,
     };
     if (cursor) body.start_cursor = cursor;
@@ -338,6 +341,7 @@ async function fetchProjects() {
     const sector      = p['Sector']?.select?.name ?? '';
     const status      = p['Status']?.select?.name ?? '';
     const year        = p['Year']?.number ?? null;
+    const priority    = p['Priority']?.number ?? 999;
     const tags        = (p['Tags']?.multi_select || []).map(t => t.name);
     const metricsRaw  = extractText(p['Metrics']);
     const logoDomain  = extractText(p['Logo Domain']);
@@ -386,7 +390,7 @@ async function fetchProjects() {
     // Filter out Role/Partners from displayed sections (they live in sidebar)
     const displaySections = sections.filter(s => s.title !== 'Role' && s.title !== 'Partners');
 
-    const meta = { notionId: page.id, title, sector, status, year, tags, lede, description, coverImage, metrics, logoDomain };
+    const meta = { notionId: page.id, title, sector, status, year, priority, tags, lede, description, coverImage, metrics, logoDomain };
     metaList.push(meta);
 
     fs.writeFileSync(

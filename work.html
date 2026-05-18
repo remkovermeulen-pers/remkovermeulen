@@ -198,6 +198,12 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
           var grid = document.getElementById('project-grid');
           var count = document.getElementById('proj-count');
           if (!grid) return;
+          projects.sort(function(a,b){
+            var pa = a.priority != null ? a.priority : 999;
+            var pb = b.priority != null ? b.priority : 999;
+            if (pa !== pb) return pa - pb;
+            return (b.year || 0) - (a.year || 0);
+          });
           if (count) count.textContent = projects.length + ' Case Studies';
           grid.innerHTML = projects.map(function(p){
             var tags = (p.tags || []).map(function(t){ return '<span class="tag">' + esc(t) + '</span>'; }).join('');
