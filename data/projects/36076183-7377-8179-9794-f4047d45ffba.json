@@ -35,7 +35,7 @@
     },
     {
       "title": "Problem",
-      "body": "<p>Agents were managing the full rental lifecycle \u2014 listing, tenant screening, viewings, contracts, portfolio tracking \u2014 across disconnected tools. The business problem was poor unit economics: CAC/LTV was running at 162%, retention was too low to sustain growth, and revenue was not scaling with user acquisition.</p>"
+      "body": "<p>Agents were managing the full rental lifecycle — listing, tenant screening, viewings, contracts, portfolio tracking — across disconnected tools. The business problem was poor unit economics: CAC/LTV was running at 162%, retention was too low to sustain growth, and revenue was not scaling with user acquisition.</p>"
     },
     {
       "title": "My role",
@@ -43,12 +43,13 @@
     },
     {
       "title": "Approach",
-      "body": "<p>Funnel analysis and prototype testing identified onboarding friction as the primary retention driver. I redesigned the onboarding and in-product messaging flows, testing iteratively before shipping. In parallel, I led development of an AI module that parsed contracts and legal documents into structured data with compliance flags \u2014 removing a significant manual step for agents. I also ran a pricing strategy exercise grounded in usage data and customer segmentation, and set up a recurring analytics review cadence to keep the team aligned on KPIs and growth levers.</p>"
+      "body": "<p>Funnel analysis and prototype testing identified onboarding friction as the primary retention driver. I redesigned the onboarding and in-product messaging flows, testing iteratively before shipping. In parallel, I led development of an AI module that parsed contracts and legal documents into structured data with compliance flags — removing a significant manual step for agents. I also ran a pricing strategy exercise grounded in usage data and customer segmentation, and set up a recurring analytics review cadence to keep the team aligned on KPIs and growth levers.</p>"
     },
     {
       "title": "Outcome",
       "body": "<ul>\n<li>Active users grew 87% through improved onboarding and messaging</li>\n<li>Time to value reduced 75% through iterative pre-launch testing</li>\n<li>CAC/LTV improved from 162% to 21%</li>\n<li>MRR grew 23% following the new pricing strategy</li>\n</ul>"
     }
   ],
-  "logoDomain": ""
+  "logoDomain": "",
+  "organisations": []
 }

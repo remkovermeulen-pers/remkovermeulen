@@ -310,8 +310,32 @@ async function fetchArticles() {
   console.log(`\nWrote ${metaList.length} articles`);
 }
 
+async function fetchOrgNames() {
+  // Fetch all pages from the Organisations database to build an id→name map
+  const ORGS_DB = 'baa2e63432d54d548807ecaafb56fb3f';
+  const map = {};
+  let cursor;
+  try {
+    do {
+      const body = { page_size: 100 };
+      if (cursor) body.start_cursor = cursor;
+      const data = await notionPost(`/databases/${ORGS_DB}/query`, body);
+      for (const page of data.results) {
+        const name = extractText(page.properties['Name'] || page.properties['Organisation'] || Object.values(page.properties).find(p => p.type === 'title'));
+        if (name) map[page.id] = name;
+      }
+      cursor = data.has_more ? data.next_cursor : null;
+    } while (cursor);
+  } catch (e) {
+    console.warn('  Could not fetch Organisations DB:', e.message);
+  }
+  return map;
+}
+
 async function fetchProjects() {
   console.log('\nFetching projects…');
+  const orgNames = await fetchOrgNames();
+  console.log(`  Loaded ${Object.keys(orgNames).length} organisation names`);
   const allPages = [];
   let cursor;
   do {
@@ -338,13 +362,16 @@ async function fetchProjects() {
     const title = extractText(p['Name']);
     if (!title) continue;
 
-    const sector      = p['Sector']?.select?.name ?? '';
-    const status      = p['Status']?.select?.name ?? '';
-    const year        = p['Year']?.number ?? null;
-    const priority    = p['Priority']?.number ?? 999;
-    const tags        = (p['Tags']?.multi_select || []).map(t => t.name);
-    const metricsRaw  = extractText(p['Metrics']);
-    const logoDomain  = extractText(p['Logo Domain']);
+    const sector        = p['Sector']?.select?.name ?? '';
+    const status        = p['Status']?.select?.name ?? '';
+    const year          = p['Year']?.number ?? null;
+    const priority      = p['Priority']?.number ?? 999;
+    const tags          = (p['Tags']?.multi_select || []).map(t => t.name);
+    const metricsRaw    = extractText(p['Metrics']);
+    const logoDomain    = extractText(p['Logo Domain']);
+    const organisations = (p['Organisation']?.relation || [])
+                            .map(r => orgNames[r.id])
+                            .filter(Boolean);
     const description = extractText(p['Description']);
     const coverImage = SECTOR_IMAGES[sector] || SECTOR_IMAGES.SaaS;
 
@@ -390,14 +417,14 @@ async function fetchProjects() {
     // Filter out Role/Partners from displayed sections (they live in sidebar)
     const displaySections = sections.filter(s => s.title !== 'Role' && s.title !== 'Partners');
 
-    const meta = { notionId: page.id, title, sector, status, year, priority, tags, lede, description, coverImage, metrics, logoDomain };
+    const meta = { notionId: page.id, title, sector, status, year, priority, tags, lede, description, coverImage, metrics, logoDomain, organisations };
     metaList.push(meta);
 
     fs.writeFileSync(
       path.join(projectsDir, `${page.id}.json`),
       JSON.stringify({
         id: page.id, title, sector, status, year, tags, lede, description, coverImage,
-        role, timeline, partners, metrics, logoDomain, sections: displaySections,
+        role, timeline, partners, metrics, logoDomain, organisations, sections: displaySections,
       }, null, 2)
     );
     console.log(`  ✓ ${title}`);

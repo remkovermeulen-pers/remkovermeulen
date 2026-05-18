@@ -42,5 +42,9 @@
       "title": "Outcome",
       "body": "<ul>\n<li>Programme creation time reduced by 75%</li>\n<li>Parallel development across multiple conditions became possible for the first time</li>\n<li>Clinical teams took creative ownership of programme content, reducing back-and-forth with engineering on every iteration</li>\n</ul>"
     }
+  ],
+  "organisations": [
+    "Harvard",
+    "Massachusetts General Hospital"
   ]
 }
