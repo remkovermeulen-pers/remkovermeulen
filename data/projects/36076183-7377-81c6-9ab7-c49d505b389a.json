@@ -26,12 +26,7 @@
     }
   ],
   "logoDomain": "",
-  "organisations": [
-    {
-      "name": "O2",
-      "logo": "02.svg"
-    }
-  ],
+  "organisations": [],
   "sections": [
     {
       "title": "Context",

@@ -21,12 +21,7 @@
     }
   ],
   "logoDomain": "",
-  "organisations": [
-    {
-      "name": "NHS",
-      "logo": "nhs.svg"
-    }
-  ],
+  "organisations": [],
   "sections": [
     {
       "title": "Context",
