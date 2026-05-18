@@ -266,7 +266,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
 
   function buildLogos(proj, noMetrics) {
     var orgs = proj.organisations || [];
-    var files = orgs.map(function(o) { return o.logo || o; }).filter(Boolean);
+    var files = orgs.map(function(o) { return typeof o === 'string' ? o : o.logo; }).filter(Boolean);
     if (!files.length) return '';
     return '<div class="cs-hero__byline-logos' + (noMetrics ? ' cs-hero__byline-logos--first' : '') + '">'
       + '<h5>Organisations</h5>'
