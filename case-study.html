@@ -122,6 +122,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
 .cs-hero__byline-block p { margin:0; font-size:13px; line-height:1.55; color:var(--muted-2); max-width:260px; }
 .cs-hero__logos { display:flex; align-items:center; gap:32px; flex-wrap:wrap; margin-top:28px; padding-top:24px; border-top:1px solid var(--line); }
 .cs-hero__logos img { height:26px; max-width:110px; width:auto; object-fit:contain; filter:grayscale(100%); opacity:0.55; transition:opacity .2s; }
+.cs-hero__logos img.logo-raster { mix-blend-mode:multiply; }
 .cs-hero__logos img:hover { opacity:0.9; }
 @media (max-width:760px) { .cs-hero__byline { grid-template-columns:1fr; gap:28px; } }
 
@@ -266,7 +267,8 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
     if (!files.length) return '';
     return '<div class="cs-hero__logos">'
       + files.map(function(f) {
-          return '<img src="assets/logos/' + esc(f) + '" alt="" onerror="this.remove()">';
+          var raster = /\.(png|webp|jpe?g)$/i.test(f);
+          return '<img' + (raster ? ' class="logo-raster"' : '') + ' src="assets/logos/' + esc(f) + '" alt="" onerror="this.remove()">';
         }).join('')
       + '</div>';
   }
