@@ -302,13 +302,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
 
       '<section class="cs-hero">' +
         '<p class="cs-hero__crumb">' + esc(proj.sector) + ' &nbsp;/&nbsp; Case Study</p>' +
-        (getLogoFile(proj)
-          ? '<div class="hero-lockup">' +
-              '<img class="hero-lockup__logo" src="' + logoUrl(getLogoFile(proj)) + '" alt="' + esc(proj.title) + ' logo" onerror="this.closest(\'.hero-lockup\').outerHTML=\'<h1>' + esc(proj.title).replace(/'/g,'&#39;') + '</h1>\'">' +
-              '<span class="hero-lockup__rule" aria-hidden="true"></span>' +
-              '<h1>' + esc(proj.title) + '</h1>' +
-            '</div>'
-          : '<h1>' + esc(proj.title) + '</h1>') +
+        '<h1>' + esc(proj.title) + '</h1>' +
         '<p class="cs-hero__lede">' + esc(ledeText) + '</p>' +
         bylineHtml +
         buildLogos(proj) +
