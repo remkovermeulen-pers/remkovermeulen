@@ -120,6 +120,9 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
 .cs-hero__byline-block h5 { margin:0 0 14px; font-size:10px; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color:var(--muted-2); }
 .cs-hero__byline-block .metric { font-size:clamp(36px,4.4vw,56px); margin-bottom:10px; }
 .cs-hero__byline-block p { margin:0; font-size:13px; line-height:1.55; color:var(--muted-2); max-width:260px; }
+.cs-hero__logos { display:flex; align-items:center; gap:32px; flex-wrap:wrap; margin-top:28px; padding-top:24px; border-top:1px solid var(--line); }
+.cs-hero__logos img { height:26px; max-width:110px; width:auto; object-fit:contain; filter:grayscale(100%); opacity:0.55; transition:opacity .2s; }
+.cs-hero__logos img:hover { opacity:0.9; }
 @media (max-width:760px) { .cs-hero__byline { grid-template-columns:1fr; gap:28px; } }
 
 .cs-cover { margin-top:32px; border:1px solid var(--primary); overflow:hidden; position:relative; }
@@ -253,8 +256,28 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
     'British Council':              'british-council.svg',
   };
 
+  var PROJECT_LOGOS = {
+    'Toggl':              ['toggl.com.svg'],
+    'Johnson & Johnson':  ['jandj.com.svg'],
+    'Koa Health':         ['koa.health.com.png', 'nhs.svg', 'hospital-clinic.svg', 'hospital-sant-pau.svg', 'harvard.png', 'mgh.svg'],
+    'Financial Times':    ['ft.com.svg'],
+    'Telefónica / O2':    ['telefonica.com.svg', '02.svg', 'vivo.svg'],
+    'Renault':            ['renault.com.svg'],
+    'British Council':    ['british-council.svg', 'un.svg'],
+  };
+
   function getLogoFile(proj) {
     return LOGO_FILES[proj.title] || '';
+  }
+
+  function buildLogos(title) {
+    var files = PROJECT_LOGOS[title];
+    if (!files || !files.length) return '';
+    return '<div class="cs-hero__logos">'
+      + files.map(function(f) {
+          return '<img src="assets/logos/' + esc(f) + '" alt="" onerror="this.remove()">';
+        }).join('')
+      + '</div>';
   }
 
   function logoUrl(filename) {
@@ -295,6 +318,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
           : '<h1>' + esc(proj.title) + '</h1>') +
         '<p class="cs-hero__lede">' + esc(ledeText) + '</p>' +
         bylineHtml +
+        buildLogos(proj.title) +
         '<div class="cs-cover">' +
           '<img class="bw-img" src="' + esc(proj.coverImage) + '" alt="' + esc(proj.title) + '">' +
           (getLogoFile(proj) ? '<img class="cs-cover__logo" src="' + logoUrl(getLogoFile(proj)) + '" alt="" onerror="this.remove()">' : '') +
