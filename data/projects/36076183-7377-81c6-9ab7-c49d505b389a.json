@@ -26,6 +26,7 @@
     }
   ],
   "logoDomain": "",
+  "organisations": [],
   "sections": [
     {
       "title": "Context",
@@ -47,8 +48,5 @@
       "title": "Outcome",
       "body": "<ul>\n<li>48% decrease in mortality rate among enrolled patients</li>\n<li>63% decrease in hospital readmission rate</li>\n<li>The patient journey map produced from ethnographic research became a cross-functional reference tool used by product, clinical, and operational teams across all four markets</li>\n</ul>"
     }
-  ],
-  "organisations": [
-    "O2"
   ]
 }

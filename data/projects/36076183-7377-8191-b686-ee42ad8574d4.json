@@ -16,6 +16,7 @@
   "partners": [],
   "metrics": [],
   "logoDomain": "",
+  "organisations": [],
   "sections": [
     {
       "title": "Context",
@@ -37,6 +38,5 @@
       "title": "Outcome",
       "body": "<ul>\n<li>Users found the spatial representation of emotional patterns novel and reflective in a way that mood diaries typically did not achieve</li>\n<li>Key finding: continuous, involuntary visibility of emotional state felt uncomfortable; opt-in/opt-out control was essential for any viable version</li>\n<li>The AR layer was seen as intrusive in public; the map view was preferred for retrospective use</li>\n<li>Findings fed directly into product design principles applied in subsequent wellbeing products (Fluid, Perspectives)</li>\n</ul>"
     }
-  ],
-  "organisations": []
+  ]
 }

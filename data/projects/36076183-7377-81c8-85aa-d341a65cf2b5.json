@@ -16,6 +16,7 @@
   "partners": [],
   "metrics": [],
   "logoDomain": "",
+  "organisations": [],
   "sections": [
     {
       "title": "Context",
@@ -37,9 +38,5 @@
       "title": "Outcome",
       "body": "<p>The service gave psychiatrists a continuous, objective view of patient state between appointments, replacing a gap that previously required expensive wearables or frequent patient-initiated check-ins. Clinical partners at Hospital Clinic validated the approach. The project contributed to Telefonica's health portfolio and informed subsequent work on bipolar-related monitoring at Koa Health.</p>\n<p><em>Quantified clinical outcome metrics were not published externally for this project.</em></p>"
     }
-  ],
-  "organisations": [
-    "Telefónica",
-    "Hospital Clinic"
   ]
 }

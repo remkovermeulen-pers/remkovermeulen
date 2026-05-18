@@ -21,6 +21,7 @@
     }
   ],
   "logoDomain": "",
+  "organisations": [],
   "sections": [
     {
       "title": "Context",
@@ -42,9 +43,5 @@
       "title": "Outcome",
       "body": "<ul>\n<li>Research study launched with over 25,000 participants — one of the largest CBM studies conducted outside a clinical setting</li>\n<li>Significant data collected on effectiveness, drop-off patterns, and which user segments benefited most</li>\n<li>Results informed subsequent product decisions around engagement design for behaviour change programmes at Koa Health</li>\n</ul>"
     }
-  ],
-  "organisations": [
-    "BBC",
-    "Telefonica Alpha"
   ]
 }

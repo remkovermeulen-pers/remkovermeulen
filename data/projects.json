@@ -27,7 +27,8 @@
         "label": "increase in team output"
       }
     ],
-    "logoDomain": ""
+    "logoDomain": "",
+    "organisations": []
   },
   {
     "notionId": "35f76183-7377-8135-9dd1-d1b22dfa6da0",
@@ -70,7 +71,8 @@
         "label": "reduction in symptoms (clinical trial)"
       }
     ],
-    "logoDomain": ""
+    "logoDomain": "",
+    "organisations": []
   },
   {
     "notionId": "35f76183-7377-816c-8a7f-e43d868da1c7",
@@ -104,7 +106,8 @@
         "label": "MRR growth"
       }
     ],
-    "logoDomain": ""
+    "logoDomain": "",
+    "organisations": []
   },
   {
     "notionId": "36076183-7377-81ce-92bc-caa57a662ca6",
@@ -130,7 +133,8 @@
         "label": "future products tested online"
       }
     ],
-    "logoDomain": ""
+    "logoDomain": "",
+    "organisations": []
   },
   {
     "notionId": "36076183-7377-81ec-ab0d-cb34f758bbcf",
@@ -153,7 +157,8 @@
         "label": "Improved sales conversion rates and lowered churn."
       }
     ],
-    "logoDomain": ""
+    "logoDomain": "",
+    "organisations": []
   },
   {
     "notionId": "36076183-7377-812d-9aec-f4697182cf9d",
@@ -185,7 +190,8 @@
         "label": "cost reduction"
       }
     ],
-    "logoDomain": ""
+    "logoDomain": "",
+    "organisations": []
   },
   {
     "notionId": "36076183-7377-8195-b39a-cfa1657491db",
@@ -202,7 +208,8 @@
     "description": "Used mobile network mobility data to cut epidemic source detection from weeks to hours, and predict outbreak spread before clinical data surfaced — validated across Ebola and Zika in collaboration with WHO and Harvard.",
     "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
     "metrics": [],
-    "logoDomain": ""
+    "logoDomain": "",
+    "organisations": []
   },
   {
     "notionId": "36076183-7377-81ad-ad56-ddcc3b80e04d",
@@ -224,7 +231,8 @@
         "label": "accuracy predicting mental health crisis 4 weeks ahead"
       }
     ],
-    "logoDomain": ""
+    "logoDomain": "",
+    "organisations": []
   },
   {
     "notionId": "35f76183-7377-812e-89c0-f80d125d898b",
@@ -250,7 +258,8 @@
         "label": "digital health patents"
       }
     ],
-    "logoDomain": ""
+    "logoDomain": "",
+    "organisations": []
   },
   {
     "notionId": "36076183-7377-8181-a326-c925904d52f8",
@@ -267,7 +276,8 @@
     "description": "Designed an explainability layer for clinical ML models that translated opaque risk scores into readable clinical reasoning, significantly increasing clinician willingness to act on model outputs.",
     "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
     "metrics": [],
-    "logoDomain": ""
+    "logoDomain": "",
+    "organisations": []
   },
   {
     "notionId": "36076183-7377-8114-881b-d864ffc34948",
@@ -285,7 +295,8 @@
     "description": "Built a preventative wellbeing app for 16-24 year olds that used behavioural science to surface low-effort habit changes, designed to feel peer-like rather than clinical through extensive co-design with the target age group.",
     "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
     "metrics": [],
-    "logoDomain": ""
+    "logoDomain": "",
+    "organisations": []
   },
   {
     "notionId": "36076183-7377-8191-b686-ee42ad8574d4",
@@ -302,7 +313,8 @@
     "description": "Prototyped a concept that maps a person's emotional patterns to the places they frequent, testing whether spatial visualisation of mood data prompts more useful reflection than traditional self-report tools.",
     "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
     "metrics": [],
-    "logoDomain": ""
+    "logoDomain": "",
+    "organisations": []
   },
   {
     "notionId": "36076183-7377-81ae-9453-ebb3a48a1cf3",
@@ -319,7 +331,8 @@
     "description": "Explored whether interactive skin-surface displays could communicate detected mood state ambientally, using a Wizard of Oz prototype tested with couples to surface the privacy and transparency tensions any such system would face.",
     "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
     "metrics": [],
-    "logoDomain": ""
+    "logoDomain": "",
+    "organisations": []
   },
   {
     "notionId": "36076183-7377-814a-9f9c-f356f12270ef",
@@ -341,7 +354,8 @@
         "label": "Research study launched with over 25,000 participants in the UK."
       }
     ],
-    "logoDomain": ""
+    "logoDomain": "",
+    "organisations": []
   },
   {
     "notionId": "36076183-7377-816c-9a63-e4952bd248d0",
@@ -363,7 +377,8 @@
         "label": "detection accuracy."
       }
     ],
-    "logoDomain": ""
+    "logoDomain": "",
+    "organisations": []
   },
   {
     "notionId": "36076183-7377-81c8-85aa-d341a65cf2b5",
@@ -380,7 +395,8 @@
     "description": "Designed a passive bipolar monitoring service using anonymised mobile network data, giving psychiatrists a continuous view of patient state between appointments without requiring any active input from patients.",
     "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
     "metrics": [],
-    "logoDomain": ""
+    "logoDomain": "",
+    "organisations": []
   },
   {
     "notionId": "36076183-7377-81c6-9ab7-c49d505b389a",
@@ -407,7 +423,8 @@
         "label": "decrease in hospital readmission rate"
       }
     ],
-    "logoDomain": ""
+    "logoDomain": "",
+    "organisations": []
   },
   {
     "notionId": "36076183-7377-812b-9600-f901966bdb08",
@@ -424,7 +441,8 @@
     "description": "Designed an SMS and phone-based medical consultation service for Vivo Brasil, giving middle and lower-income households access to a doctor through infrastructure they already owned.",
     "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
     "metrics": [],
-    "logoDomain": ""
+    "logoDomain": "",
+    "organisations": []
   },
   {
     "notionId": "35f76183-7377-8167-aade-e9ceff1342ed",
@@ -459,7 +477,8 @@
         "label": "precision in Parkinson's voice detection"
       }
     ],
-    "logoDomain": ""
+    "logoDomain": "",
+    "organisations": []
   },
   {
     "notionId": "35f76183-7377-8162-a013-d70ec2ca966f",
@@ -489,7 +508,8 @@
         "label": "simplification of product portfolio"
       }
     ],
-    "logoDomain": ""
+    "logoDomain": "",
+    "organisations": []
   },
   {
     "notionId": "35f76183-7377-8167-8d4f-fbcae3ef4c2d",
@@ -519,6 +539,7 @@
         "label": "global teacher collaboration platform"
       }
     ],
-    "logoDomain": ""
+    "logoDomain": "",
+    "organisations": []
   }
 ]

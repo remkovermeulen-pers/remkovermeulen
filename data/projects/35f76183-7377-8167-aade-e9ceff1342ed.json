@@ -34,6 +34,7 @@
     }
   ],
   "logoDomain": "",
+  "organisations": [],
   "sections": [
     {
       "title": "Context",
@@ -55,9 +56,5 @@
       "title": "Outcome",
       "body": "<ul>\n<li>48% decrease in mortality rate for patients on the chronic disease management service</li>\n<li>63% decrease in hospital readmission rate</li>\n<li>78% precision in Parkinson's voice detection</li>\n<li>20+ MVPs developed, 5 successfully launched</li>\n<li>Pandemic prediction tools validated in collaboration with WHO, UNICEF, and Harvard across Ebola and Zika outbreaks</li>\n</ul>"
     }
-  ],
-  "organisations": [
-    "Telefónica",
-    "O2"
   ]
 }

@@ -16,6 +16,7 @@
   "partners": [],
   "metrics": [],
   "logoDomain": "",
+  "organisations": [],
   "sections": [
     {
       "title": "Context",
@@ -37,9 +38,5 @@
       "title": "Outcome",
       "body": "<ul>\n<li>Outbreak source detection time reduced from weeks to hours in modelling validation</li>\n<li>Spread prediction models validated against both Ebola and Zika transmission data</li>\n<li>Collaboration with WHO, UNICEF, Harvard, and the Data Pop Alliance positioned Telefonica as a contributor to global health infrastructure</li>\n<li>Project directly informed Telefonica's health data partnership strategy</li>\n</ul>"
     }
-  ],
-  "organisations": [
-    "United Nations",
-    "Harvard"
   ]
 }

@@ -31,6 +31,7 @@
     }
   ],
   "logoDomain": "",
+  "organisations": [],
   "sections": [
     {
       "title": "Context",
@@ -52,10 +53,5 @@
       "title": "Outcome",
       "body": "<ul>\n<li>90% of participants responded to treatment</li>\n<li>Average symptom reduction of 55%, on par with results from the best MGH therapists</li>\n<li>95% reduction in cost compared to traditional therapy</li>\n<li>Results contributed directly to Koa Health's €66M investment round</li>\n<li>Product pending FDA Class II de novo approval and CE Class I mark at time of publication</li>\n</ul>"
     }
-  ],
-  "organisations": [
-    "Koa Health",
-    "Harvard",
-    "Massachusetts General Hospital"
   ]
 }
