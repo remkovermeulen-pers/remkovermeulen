@@ -16,7 +16,16 @@
   "partners": [],
   "metrics": [],
   "logoDomain": "",
-  "organisations": [],
+  "organisations": [
+    {
+      "name": "United Nations",
+      "logo": "un.svg"
+    },
+    {
+      "name": "Harvard",
+      "logo": "harvard.png"
+    }
+  ],
   "sections": [
     {
       "title": "Context",

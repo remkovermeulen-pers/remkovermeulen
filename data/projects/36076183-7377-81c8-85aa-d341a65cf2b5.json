@@ -16,7 +16,16 @@
   "partners": [],
   "metrics": [],
   "logoDomain": "",
-  "organisations": [],
+  "organisations": [
+    {
+      "name": "Telefónica",
+      "logo": "telefonica.com.svg"
+    },
+    {
+      "name": "Hospital Clinic",
+      "logo": "hospital-clinic.svg"
+    }
+  ],
   "sections": [
     {
       "title": "Context",

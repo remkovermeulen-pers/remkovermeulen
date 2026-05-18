@@ -22,7 +22,12 @@
     }
   ],
   "logoDomain": "",
-  "organisations": [],
+  "organisations": [
+    {
+      "name": "Telefónica",
+      "logo": "telefonica.com.svg"
+    }
+  ],
   "sections": [
     {
       "title": "Context",

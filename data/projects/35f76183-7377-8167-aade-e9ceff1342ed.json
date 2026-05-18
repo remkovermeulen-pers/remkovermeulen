@@ -34,7 +34,16 @@
     }
   ],
   "logoDomain": "",
-  "organisations": [],
+  "organisations": [
+    {
+      "name": "Telefónica",
+      "logo": "telefonica.com.svg"
+    },
+    {
+      "name": "O2",
+      "logo": "02.svg"
+    }
+  ],
   "sections": [
     {
       "title": "Context",

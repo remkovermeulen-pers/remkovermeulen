@@ -33,7 +33,12 @@
     }
   ],
   "logoDomain": "",
-  "organisations": [],
+  "organisations": [
+    {
+      "name": "SignAssist",
+      "logo": "https://raw.githubusercontent.com/VermeulenCastellon/portfolio-website/main/public/logos/signassist.svg"
+    }
+  ],
   "sections": [
     {
       "title": "Context",

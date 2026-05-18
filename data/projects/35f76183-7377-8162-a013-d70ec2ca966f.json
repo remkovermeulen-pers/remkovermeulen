@@ -29,7 +29,12 @@
     }
   ],
   "logoDomain": "",
-  "organisations": [],
+  "organisations": [
+    {
+      "name": "NTRglobal",
+      "logo": "https://raw.githubusercontent.com/VermeulenCastellon/portfolio-website/main/public/logos/ntrglobal.svg"
+    }
+  ],
   "sections": [
     {
       "title": "Context",

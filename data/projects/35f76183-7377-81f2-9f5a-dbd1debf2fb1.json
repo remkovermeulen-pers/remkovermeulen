@@ -29,7 +29,12 @@
     }
   ],
   "logoDomain": "",
-  "organisations": [],
+  "organisations": [
+    {
+      "name": "Toggl",
+      "logo": "toggl.com.svg"
+    }
+  ],
   "sections": [
     {
       "title": "Context",

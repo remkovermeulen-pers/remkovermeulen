@@ -31,7 +31,20 @@
     }
   ],
   "logoDomain": "",
-  "organisations": [],
+  "organisations": [
+    {
+      "name": "Harvard",
+      "logo": "harvard.png"
+    },
+    {
+      "name": "Massachusetts General Hospital",
+      "logo": "mgh.svg"
+    },
+    {
+      "name": "Koa Health",
+      "logo": "koa.health.com.png"
+    }
+  ],
   "sections": [
     {
       "title": "Context",

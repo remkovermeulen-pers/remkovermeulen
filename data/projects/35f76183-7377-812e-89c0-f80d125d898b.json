@@ -25,7 +25,12 @@
     }
   ],
   "logoDomain": "",
-  "organisations": [],
+  "organisations": [
+    {
+      "name": "Johnson & Johnson",
+      "logo": "jandj.com.svg"
+    }
+  ],
   "sections": [
     {
       "title": "Context",

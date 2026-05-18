@@ -29,7 +29,12 @@
     }
   ],
   "logoDomain": "",
-  "organisations": [],
+  "organisations": [
+    {
+      "name": "British Council",
+      "logo": "british-council.svg"
+    }
+  ],
   "sections": [
     {
       "title": "Context",

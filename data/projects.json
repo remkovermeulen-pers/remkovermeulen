@@ -28,7 +28,12 @@
       }
     ],
     "logoDomain": "",
-    "organisations": []
+    "organisations": [
+      {
+        "name": "Toggl",
+        "logo": "toggl.com.svg"
+      }
+    ]
   },
   {
     "notionId": "35f76183-7377-8135-9dd1-d1b22dfa6da0",
@@ -72,7 +77,24 @@
       }
     ],
     "logoDomain": "",
-    "organisations": []
+    "organisations": [
+      {
+        "name": "Koa Health",
+        "logo": "koa.health.com.png"
+      },
+      {
+        "name": "Harvard",
+        "logo": "harvard.png"
+      },
+      {
+        "name": "Massachusetts General Hospital",
+        "logo": "mgh.svg"
+      },
+      {
+        "name": "Janssen",
+        "logo": "jandj.com.svg"
+      }
+    ]
   },
   {
     "notionId": "35f76183-7377-816c-8a7f-e43d868da1c7",
@@ -107,7 +129,12 @@
       }
     ],
     "logoDomain": "",
-    "organisations": []
+    "organisations": [
+      {
+        "name": "SignAssist",
+        "logo": "https://raw.githubusercontent.com/VermeulenCastellon/portfolio-website/main/public/logos/signassist.svg"
+      }
+    ]
   },
   {
     "notionId": "36076183-7377-81ce-92bc-caa57a662ca6",
@@ -134,7 +161,20 @@
       }
     ],
     "logoDomain": "",
-    "organisations": []
+    "organisations": [
+      {
+        "name": "Royal College of Art",
+        "logo": "royal-college-art.webp"
+      },
+      {
+        "name": "Xploratory",
+        "logo": "https://raw.githubusercontent.com/VermeulenCastellon/portfolio-website/main/public/logos/xploratory.svg"
+      },
+      {
+        "name": "Telefonica Alpha",
+        "logo": "telefonica-alpha.jpg"
+      }
+    ]
   },
   {
     "notionId": "36076183-7377-81ec-ab0d-cb34f758bbcf",
@@ -158,7 +198,12 @@
       }
     ],
     "logoDomain": "",
-    "organisations": []
+    "organisations": [
+      {
+        "name": "Telefónica",
+        "logo": "telefonica.com.svg"
+      }
+    ]
   },
   {
     "notionId": "36076183-7377-812d-9aec-f4697182cf9d",
@@ -191,7 +236,20 @@
       }
     ],
     "logoDomain": "",
-    "organisations": []
+    "organisations": [
+      {
+        "name": "Harvard",
+        "logo": "harvard.png"
+      },
+      {
+        "name": "Massachusetts General Hospital",
+        "logo": "mgh.svg"
+      },
+      {
+        "name": "Koa Health",
+        "logo": "koa.health.com.png"
+      }
+    ]
   },
   {
     "notionId": "36076183-7377-8195-b39a-cfa1657491db",
@@ -209,7 +267,16 @@
     "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
     "metrics": [],
     "logoDomain": "",
-    "organisations": []
+    "organisations": [
+      {
+        "name": "United Nations",
+        "logo": "un.svg"
+      },
+      {
+        "name": "Harvard",
+        "logo": "harvard.png"
+      }
+    ]
   },
   {
     "notionId": "36076183-7377-81ad-ad56-ddcc3b80e04d",
@@ -232,7 +299,12 @@
       }
     ],
     "logoDomain": "",
-    "organisations": []
+    "organisations": [
+      {
+        "name": "NHS",
+        "logo": "nhs.svg"
+      }
+    ]
   },
   {
     "notionId": "35f76183-7377-812e-89c0-f80d125d898b",
@@ -259,7 +331,12 @@
       }
     ],
     "logoDomain": "",
-    "organisations": []
+    "organisations": [
+      {
+        "name": "Johnson & Johnson",
+        "logo": "jandj.com.svg"
+      }
+    ]
   },
   {
     "notionId": "36076183-7377-8181-a326-c925904d52f8",
@@ -277,7 +354,12 @@
     "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
     "metrics": [],
     "logoDomain": "",
-    "organisations": []
+    "organisations": [
+      {
+        "name": "Telefónica",
+        "logo": "telefonica.com.svg"
+      }
+    ]
   },
   {
     "notionId": "36076183-7377-8114-881b-d864ffc34948",
@@ -296,7 +378,12 @@
     "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
     "metrics": [],
     "logoDomain": "",
-    "organisations": []
+    "organisations": [
+      {
+        "name": "Telefonica Alpha",
+        "logo": "telefonica-alpha.jpg"
+      }
+    ]
   },
   {
     "notionId": "36076183-7377-8191-b686-ee42ad8574d4",
@@ -355,7 +442,16 @@
       }
     ],
     "logoDomain": "",
-    "organisations": []
+    "organisations": [
+      {
+        "name": "BBC",
+        "logo": "bbc.svg"
+      },
+      {
+        "name": "Telefonica Alpha",
+        "logo": "telefonica-alpha.jpg"
+      }
+    ]
   },
   {
     "notionId": "36076183-7377-816c-9a63-e4952bd248d0",
@@ -378,7 +474,16 @@
       }
     ],
     "logoDomain": "",
-    "organisations": []
+    "organisations": [
+      {
+        "name": "Telefónica",
+        "logo": "telefonica.com.svg"
+      },
+      {
+        "name": "Hospital Sant Pau",
+        "logo": "hospital-sant-pau.svg"
+      }
+    ]
   },
   {
     "notionId": "36076183-7377-81c8-85aa-d341a65cf2b5",
@@ -396,7 +501,16 @@
     "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
     "metrics": [],
     "logoDomain": "",
-    "organisations": []
+    "organisations": [
+      {
+        "name": "Telefónica",
+        "logo": "telefonica.com.svg"
+      },
+      {
+        "name": "Hospital Clinic",
+        "logo": "hospital-clinic.svg"
+      }
+    ]
   },
   {
     "notionId": "36076183-7377-81c6-9ab7-c49d505b389a",
@@ -424,7 +538,12 @@
       }
     ],
     "logoDomain": "",
-    "organisations": []
+    "organisations": [
+      {
+        "name": "O2",
+        "logo": "02.svg"
+      }
+    ]
   },
   {
     "notionId": "36076183-7377-812b-9600-f901966bdb08",
@@ -442,7 +561,12 @@
     "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
     "metrics": [],
     "logoDomain": "",
-    "organisations": []
+    "organisations": [
+      {
+        "name": "Vivo",
+        "logo": "vivo.svg"
+      }
+    ]
   },
   {
     "notionId": "35f76183-7377-8167-aade-e9ceff1342ed",
@@ -478,7 +602,16 @@
       }
     ],
     "logoDomain": "",
-    "organisations": []
+    "organisations": [
+      {
+        "name": "Telefónica",
+        "logo": "telefonica.com.svg"
+      },
+      {
+        "name": "O2",
+        "logo": "02.svg"
+      }
+    ]
   },
   {
     "notionId": "35f76183-7377-8162-a013-d70ec2ca966f",
@@ -509,7 +642,12 @@
       }
     ],
     "logoDomain": "",
-    "organisations": []
+    "organisations": [
+      {
+        "name": "NTRglobal",
+        "logo": "https://raw.githubusercontent.com/VermeulenCastellon/portfolio-website/main/public/logos/ntrglobal.svg"
+      }
+    ]
   },
   {
     "notionId": "35f76183-7377-8167-8d4f-fbcae3ef4c2d",
@@ -540,6 +678,11 @@
       }
     ],
     "logoDomain": "",
-    "organisations": []
+    "organisations": [
+      {
+        "name": "British Council",
+        "logo": "british-council.svg"
+      }
+    ]
   }
 ]
