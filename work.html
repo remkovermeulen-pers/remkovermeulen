@@ -219,12 +219,10 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
             var tags = (p.tags || []).map(function(t){ return '<span class="tag">' + esc(t) + '</span>'; }).join('');
             var metrics = (p.metrics || []).filter(function(m){ return m.value; }).slice(0,2)
               .map(function(m){ return '<div class="proj-card__stat"><span class="metric">'+esc(m.value)+'</span><div class="metric-label">'+esc(m.label)+'</div></div>'; }).join('');
-            var logoFile = LOGO_FILES[p.title] || '';
             return '<a href="case-study?id=' + esc(p.notionId) + '" class="proj-card">'
               + '<div class="proj-card__img">'
               + '<span class="proj-card__chip">' + esc(p.sector) + '</span>'
               + '<img class="bw-img" src="' + esc(p.coverImage) + '" alt="' + esc(p.title) + '" loading="lazy">'
-              + (logoFile ? '<img class="proj-card__logo" src="assets/logos/' + esc(logoFile) + '" alt="" onerror="this.remove()">' : '')
               + '</div>'
               + '<div class="proj-card__body">'
               + '<h3>' + esc(p.title) + '</h3>'
