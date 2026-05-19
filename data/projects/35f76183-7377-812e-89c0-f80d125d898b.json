@@ -11,9 +11,6 @@
   "lede": "",
   "description": "Led product definition and clinical trial for a digital therapeutic companion to Spravato (esketamine) for treatment-resistant depression, developed in partnership with Janssen / Johnson & Johnson.",
   "coverImage": "assets/projects/35f76183-7377-812e-89c0-f80d125d898b--johnson-johnson/01.jpg",
-  "gallery": [
-    "assets/projects/35f76183-7377-812e-89c0-f80d125d898b--johnson-johnson/01.jpg"
-  ],
   "role": "",
   "timeline": "",
   "partners": [],
@@ -46,5 +43,8 @@
       "title": "Outcome",
       "body": "<ul>\n<li>Successful clinical trial completed</li>\n</ul>"
     }
+  ],
+  "gallery": [
+    "assets/projects/35f76183-7377-812e-89c0-f80d125d898b--johnson-johnson/01.jpg"
   ]
 }
