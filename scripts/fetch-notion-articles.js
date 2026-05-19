@@ -379,7 +379,14 @@ async function fetchProjects() {
                             .filter(Boolean)
                             .map(o => ({ name: o.name, logo: o.logo || '' }));
     const description = extractText(p['Description']);
-    const coverImage = SECTOR_IMAGES[sector] || SECTOR_IMAGES.SaaS;
+
+    // Preserve locally-set cover/gallery if already stored as assets/ paths
+    const existingProjPath = path.join(projectsDir, `${page.id}.json`);
+    const existingProj = fs.existsSync(existingProjPath) ? JSON.parse(fs.readFileSync(existingProjPath, 'utf8')) : null;
+    const coverImage = (existingProj?.coverImage?.startsWith('assets/'))
+      ? existingProj.coverImage
+      : (SECTOR_IMAGES[sector] || SECTOR_IMAGES.SaaS);
+    const gallery = existingProj?.gallery || null;
 
     // Fetch page blocks and split into sections
     const blocks = await fetchAllBlocks(page.id);
@@ -426,12 +433,15 @@ async function fetchProjects() {
     const meta = { notionId: page.id, title, sector, status, year, priority, tags, lede, description, coverImage, metrics, logoDomain, organisations };
     metaList.push(meta);
 
+    const projData = {
+      id: page.id, title, sector, status, year, tags, lede, description, coverImage,
+      role, timeline, partners, metrics, logoDomain, organisations, sections: displaySections,
+    };
+    if (gallery) projData.gallery = gallery;
+
     fs.writeFileSync(
       path.join(projectsDir, `${page.id}.json`),
-      JSON.stringify({
-        id: page.id, title, sector, status, year, tags, lede, description, coverImage,
-        role, timeline, partners, metrics, logoDomain, organisations, sections: displaySections,
-      }, null, 2)
+      JSON.stringify(projData, null, 2)
     );
     console.log(`  ✓ ${title}`);
   }

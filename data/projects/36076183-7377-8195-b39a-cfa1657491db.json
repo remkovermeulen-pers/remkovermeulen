@@ -10,7 +10,7 @@
   ],
   "lede": "",
   "description": "Used mobile network mobility data to cut epidemic source detection from weeks to hours, and predict outbreak spread before clinical data surfaced — validated across Ebola and Zika in collaboration with WHO and Harvard.",
-  "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
+  "coverImage": "assets/projects/36076183-7377-8195-b39a-cfa1657491db/01.png",
   "role": "",
   "timeline": "",
   "partners": [],
@@ -47,5 +47,11 @@
       "title": "Outcome",
       "body": "<ul>\n<li>Outbreak source detection time reduced from weeks to hours in modelling validation</li>\n<li>Spread prediction models validated against both Ebola and Zika transmission data</li>\n<li>Collaboration with WHO, UNICEF, Harvard, and the Data Pop Alliance positioned Telefonica as a contributor to global health infrastructure</li>\n<li>Project directly informed Telefonica's health data partnership strategy</li>\n</ul>"
     }
+  ],
+  "gallery": [
+    "assets/projects/36076183-7377-8195-b39a-cfa1657491db/01.png",
+    "assets/projects/36076183-7377-8195-b39a-cfa1657491db/02.png",
+    "assets/projects/36076183-7377-8195-b39a-cfa1657491db/03.png",
+    "assets/projects/36076183-7377-8195-b39a-cfa1657491db/04.png"
   ]
 }

@@ -10,7 +10,7 @@
   ],
   "lede": "",
   "description": "Translated a clinically validated Cognitive Bias Modification technique into a consumer digital product with the BBC and LSE, running one of the largest CBM studies ever conducted outside a clinical setting with 25,000+ participants.",
-  "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
+  "coverImage": "assets/projects/36076183-7377-814a-9f9c-f356f12270ef/01.png",
   "role": "",
   "timeline": "",
   "partners": [],
@@ -56,5 +56,8 @@
       "title": "Outcome",
       "body": "<ul>\n<li>Research study launched with over 25,000 participants — one of the largest CBM studies conducted outside a clinical setting</li>\n<li>Significant data collected on effectiveness, drop-off patterns, and which user segments benefited most</li>\n<li>Results informed subsequent product decisions around engagement design for behaviour change programmes at Koa Health</li>\n</ul>"
     }
+  ],
+  "gallery": [
+    "assets/projects/36076183-7377-814a-9f9c-f356f12270ef/01.png"
   ]
 }
