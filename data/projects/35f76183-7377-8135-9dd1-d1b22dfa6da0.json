@@ -11,7 +11,13 @@
   ],
   "lede": "",
   "description": "Co-founded and scaled a digital mental health company from 1 to 40 people, raising €66M and reaching 3M users. Built a portfolio of clinically validated products in partnership with the NHS, Harvard, and Janssen.",
-  "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
+  "coverImage": "assets/projects/35f76183-7377-8135-9dd1-d1b22dfa6da0--koa-health/01.jpg",
+  "gallery": [
+    "assets/projects/35f76183-7377-8135-9dd1-d1b22dfa6da0--koa-health/01.jpg",
+    "assets/projects/35f76183-7377-8135-9dd1-d1b22dfa6da0--koa-health/02.png",
+    "assets/projects/35f76183-7377-8135-9dd1-d1b22dfa6da0--koa-health/03.JPG",
+    "assets/projects/35f76183-7377-8135-9dd1-d1b22dfa6da0--koa-health/04.jpg"
+  ],
   "role": "",
   "timeline": "",
   "partners": [],
