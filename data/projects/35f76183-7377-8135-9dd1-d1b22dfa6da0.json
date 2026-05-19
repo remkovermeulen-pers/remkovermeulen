@@ -47,7 +47,7 @@
   "sections": [
     {
       "title": "Context",
-      "body": "<p>Koa Health was a digital mental health company spun out of Telefonica Alpha. I co-founded the product function and grew the product and design team from 1 to 40 people over seven years. The company raised €66M and reached 3 million users across 70+ countries. Partners included the NHS, Harvard Medical School, Massachusetts General Hospital, and Janssen / Johnson &amp; Johnson.</p>"
+      "body": "<p>Koa Health is a digital mental health company spun out of Telefonica Alpha. I co-founded the product  and team and grew the product and design team from 1 to 40 people over seven years. The company raised €66M and reached 3 million users across 70+ countries. Partners included the NHS, Harvard Medical School, Massachusetts General Hospital, and Janssen / Johnson &amp; Johnson.</p>"
     },
     {
       "title": "Problem",
@@ -55,11 +55,11 @@
     },
     {
       "title": "My role",
-      "body": "<p>I co-founded the company and owned the full product function: vision, portfolio strategy, roadmap, team structure, OKRs, and clinical partner relationships. I was personally involved in the most critical product decisions — the crisis prediction model's clinical design, the Perspectives clinical trial structure, and the Janssen partnership scope. Day-to-day delivery across the team of 40 was managed by the team leads I hired.</p>"
+      "body": "<p>I co-founded the company and owned the full product function: vision, portfolio strategy, roadmap, team structure, OKRs, and clinical partner relationships. I was personally involved in the most critical product decisions — the crisis prediction model's solution design, the Perspectives product and clinical trial structure, and the Janssen partnership scope. Day-to-day delivery across the team of 40 was managed by the team leads I hired.</p>"
     },
     {
       "title": "Approach",
-      "body": "<p>The portfolio was built around three distinct product bets: a clinically validated DTx app (Perspectives, with MGH and Harvard), an ML-based crisis prediction service (with NHS Birmingham), and a Janssen-partnered DTx companion to Spravato for treatment-resistant depression. Across all three, the design challenge was the same: make clinically rigorous interventions work as consumer or clinical products without compromising therapeutic integrity. I introduced a company-wide innovation programme to increase velocity and reduce cost of investigation, using structured experimentation across data science, AI, design, and engineering.</p>"
+      "body": "<p>The portfolio was built around three distinct product bets: a clinically validated DTx app (Perspectives, with MGH and Harvard Medical School), an ML-based crisis prediction service (with NHS Birmingham), and a Janssen-partnered DTx companion to Spravato for treatment-resistant depression. Across all three, the design challenge was the same: make clinically rigorous interventions work as consumer or clinical products without compromising therapeutic integrity. I introduced a company-wide innovation programme to increase velocity and reduce cost of investigation, using structured experimentation across data science, AI, design, and engineering.</p>"
     },
     {
       "title": "Outcome",
