@@ -13,6 +13,10 @@
     "lede": "",
     "description": "Restructured product, design and engineering teams at a profitable SaaS company, cutting costs by 26% while increasing output by implementing an AI-based user insights and prototyping flow. Drove a 94% increase in first-time activation by removing friction from the early user journey.",
     "coverImage": "assets/projects/35f76183-7377-81f2-9f5a-dbd1debf2fb1--toggl/01.png",
+    "gallery": [
+      "assets/projects/35f76183-7377-81f2-9f5a-dbd1debf2fb1--toggl/01.png",
+      "assets/projects/35f76183-7377-81f2-9f5a-dbd1debf2fb1--toggl/02.png"
+    ],
     "metrics": [
       {
         "value": "26%",
@@ -50,6 +54,12 @@
     "lede": "",
     "description": "Co-founded and scaled a digital mental health company from 1 to 40 people, raising €66M and reaching 3M users. Built a portfolio of clinically validated products in partnership with the NHS, Harvard, and Janssen.",
     "coverImage": "assets/projects/35f76183-7377-8135-9dd1-d1b22dfa6da0--koa-health/01.jpg",
+    "gallery": [
+      "assets/projects/35f76183-7377-8135-9dd1-d1b22dfa6da0--koa-health/01.jpg",
+      "assets/projects/35f76183-7377-8135-9dd1-d1b22dfa6da0--koa-health/02.png",
+      "assets/projects/35f76183-7377-8135-9dd1-d1b22dfa6da0--koa-health/03.JPG",
+      "assets/projects/35f76183-7377-8135-9dd1-d1b22dfa6da0--koa-health/04.jpg"
+    ],
     "metrics": [
       {
         "value": "€66M",
