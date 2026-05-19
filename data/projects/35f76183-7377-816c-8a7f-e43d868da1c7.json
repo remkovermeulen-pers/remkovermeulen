@@ -36,7 +36,7 @@
   "organisations": [
     {
       "name": "SignAssist",
-      "logo": "signassist.svg"
+      "logo": "https://raw.githubusercontent.com/VermeulenCastellon/portfolio-website/main/public/logos/signassist.svg"
     }
   ],
   "sections": [
