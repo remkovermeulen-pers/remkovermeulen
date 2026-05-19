@@ -16,16 +16,16 @@
   "partners": [],
   "metrics": [
     {
-      "value": "94%",
-      "label": "increase in first-time activation"
-    },
-    {
       "value": "26%",
       "label": "cost reduction"
     },
     {
       "value": "13%",
       "label": "increase in team output"
+    },
+    {
+      "value": "94%",
+      "label": "increase in first-time activation"
     }
   ],
   "logoDomain": "",
@@ -38,23 +38,23 @@
   "sections": [
     {
       "title": "Context",
-      "body": "<p>Toggl is a profitable, bootstrapped SaaS company with a mature time-tracking product used by individuals and teams like Meta globally. As Head of Product since January 2026, I own the product strategy, roadmap, and team structure across product, design, and engineering.</p>"
+      "body": "<p>Toggl is a profitable, bootstrapped SaaS company with a mature time-tracking product used by individuals and teams globally, including organisations like Meta. After 20 years of organic growth, the company decided to consolidate its multi-product portfolio into a single integrated product. I joined as Head of Product in January 2026, owning product strategy, roadmap, and team structure across product, design, and engineering.</p>"
     },
     {
       "title": "Problem",
-      "body": "<p>After 20 years of growing the team, product and design teams were not as focused on customer inisghts and feedback as needed. Going from a multi product portfolio to an integrated one product strategy and the possibilities to use AI automated work on user inisghts collection, design and prototyping we reviewed the possibilities to restructure the team to align more witrh this new way of working. With bringing simple task focused tools into one unified product, the first-time activation of the new product was low, meaning users who signed up were not reaching the point where the product demonstrated an increased value to them compared to the existing product in their first visit.</p>"
+      "body": "<p>The consolidation created two compounding problems. First, the product and design teams had grown process-heavy and internally focused — decisions were driven by opinion rather than direct customer insight, and the distance between customer feedback and product decisions was too wide. Second, the new unified product had low first-time activation: users who signed up were not reaching the point where the product demonstrated its value compared to what they had before. Both problems had the same root cause — teams lacked direct, structured access to what customers actually needed.</p>"
     },
     {
       "title": "My role",
-      "body": "<p>I own the product strategy and team structure end-to-end. Togher with the CTO the structure, roles, implementtion plan and training plan to use AI in design, user insights collection, prototyping and development was defined and agreed with the leadership team..  and defined the activation improvement programme, and introduced the AI-assisted prototyping and insight process. Execution is delegated across the product, design, and engineering teams.</p>"
+      "body": "<p>I owned the diagnosis, the restructuring plan, and the activation improvement programme end-to-end. Working with the CTO, I defined the new team structure, roles, implementation plan, and AI tooling strategy, then presented and agreed it with the leadership team. I ran the activation analysis myself and led the four-week implementation of the new ways of working.</p>"
     },
     {
       "title": "Approach",
-      "body": "<p>I diagnosed the activation problem through funnel analysis and user research, identifying friction in the early user journey as the primary drop-off driver. I restructured the product, design, and engineering teams to remove redundant overhead, consolidate responsibilities, and improve delivery speed. In parallel, I introduced AI-powered prototyping and user insight collection tools, compressing the cycle from insight to validated solution from weeks to days.</p>"
+      "body": "<p>The analysis made two things clear: AI could significantly compress the distance between customer signal and product decision, and the team structure was not set up to act on that signal quickly enough.</p>\n<p>On structure, I reorganised teams around customer types — one team per segment — and gave each team direct ownership of their customer outcomes, with OKRs and KPIs aligned accordingly. This replaced a centralised model where product decisions filtered through multiple layers before reaching engineering.</p>\n<p>On insight, I implemented an AI workflow that aggregated customer signals from across the business — Hubspot, support tickets, review sites, community forums, user research sessions, and recorded calls — and made the output accessible company-wide. Anyone could see the top customer issues, the MRR impact of each issue, verbatim customer quotes, and proposed solutions. This removed the dependency on ad hoc research cycles and gave teams a continuous, shared view of what customers needed.</p>\n<p>I also introduced regular and automated user testing as a standard practice for product managers and designers, replacing internal review with direct customer validation as the default input to decisions.</p>\n<p>To address activation specifically, I directed 65% of the team towards the early user journey, using funnel analysis and user research to identify where users were dropping off and what was blocking them from reaching value.</p>"
     },
     {
       "title": "Outcome",
-      "body": "<ul>\n<li>First-time activation increased 94%</li>\n<li>Team costs reduced 26% through restructuring</li>\n<li>Team output increased 13%</li>\n<li>Insight-to-validated-solution cycle reduced from weeks to days</li>\n</ul>"
+      "body": "<ul>\n<li>First-time activation increased 94%</li>\n<li>Team costs reduced 26% through restructuring</li>\n<li>Team output increased 13% with a smaller team</li>\n<li>Insight-to-validated-solution cycle reduced from weeks to days</li>\n</ul>"
     }
   ]
 }
