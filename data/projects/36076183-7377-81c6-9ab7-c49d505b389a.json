@@ -11,7 +11,7 @@
   ],
   "lede": "",
   "description": "Designed a remote chronic disease management service across UK, Spain, and Brazil, grounded in ethnographic research with patients and nurses. Achieved a 48% reduction in mortality and 63% reduction in hospital readmissions.",
-  "coverImage": "assets/projects/36076183-7377-81c6-9ab7-c49d505b389a/01.jpg",
+  "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
   "role": "",
   "timeline": "",
   "partners": [],
@@ -53,12 +53,5 @@
       "title": "Outcome",
       "body": "<ul>\n<li>48% decrease in mortality rate among enrolled patients</li>\n<li>63% decrease in hospital readmission rate</li>\n<li>The patient journey map produced from ethnographic research became a cross-functional reference tool used by product, clinical, and operational teams across all four markets</li>\n</ul>"
     }
-  ],
-  "gallery": [
-    "assets/projects/36076183-7377-81c6-9ab7-c49d505b389a/01.jpg",
-    "assets/projects/36076183-7377-81c6-9ab7-c49d505b389a/02.png",
-    "assets/projects/36076183-7377-81c6-9ab7-c49d505b389a/03.png",
-    "assets/projects/36076183-7377-81c6-9ab7-c49d505b389a/04.png",
-    "assets/projects/36076183-7377-81c6-9ab7-c49d505b389a/05.png"
   ]
 }

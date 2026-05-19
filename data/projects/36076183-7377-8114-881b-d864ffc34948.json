@@ -11,7 +11,7 @@
   ],
   "lede": "",
   "description": "Built a preventative wellbeing app for 16-24 year olds that used behavioural science to surface low-effort habit changes, designed to feel peer-like rather than clinical through extensive co-design with the target age group.",
-  "coverImage": "assets/projects/36076183-7377-8114-881b-d864ffc34948/01.png",
+  "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
   "role": "",
   "timeline": "",
   "partners": [],
@@ -44,8 +44,5 @@
       "title": "Outcome",
       "body": "<p>Fluid launched and was used by young people in the UK. The project demonstrated consumer demand for preventative wellbeing tools for young people and informed the product approach at Koa Health, where similar design principles were applied in the Perspectives programme.</p>\n<p><em>Public user metrics were not released for this product.</em></p>"
     }
-  ],
-  "gallery": [
-    "assets/projects/36076183-7377-8114-881b-d864ffc34948/01.png"
   ]
 }

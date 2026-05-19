@@ -10,7 +10,7 @@
   ],
   "lede": "",
   "description": "Designed a passive bipolar monitoring service using anonymised mobile network data, giving psychiatrists a continuous view of patient state between appointments without requiring any active input from patients.",
-  "coverImage": "assets/projects/36076183-7377-81c8-85aa-d341a65cf2b5/01.png",
+  "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
   "role": "",
   "timeline": "",
   "partners": [],
@@ -47,9 +47,5 @@
       "title": "Outcome",
       "body": "<p>The service gave psychiatrists a continuous, objective view of patient state between appointments, replacing a gap that previously required expensive wearables or frequent patient-initiated check-ins. Clinical partners at Hospital Clinic validated the approach. The project contributed to Telefonica's health portfolio and informed subsequent work on bipolar-related monitoring at Koa Health.</p>\n<p><em>Quantified clinical outcome metrics were not published externally for this project.</em></p>"
     }
-  ],
-  "gallery": [
-    "assets/projects/36076183-7377-81c8-85aa-d341a65cf2b5/01.png",
-    "assets/projects/36076183-7377-81c8-85aa-d341a65cf2b5/02.png"
   ]
 }

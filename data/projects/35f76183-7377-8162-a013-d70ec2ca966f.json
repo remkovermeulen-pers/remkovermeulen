@@ -10,7 +10,7 @@
   ],
   "lede": "",
   "description": "Built and led the UX function at a B2B SaaS company, shifting the product to user-centred design. Drove a 212% increase in conversions and 50% reduction in time on task, while simplifying the product portfolio by half.",
-  "coverImage": "assets/projects/35f76183-7377-8162-a013-d70ec2ca966f/01.jpg",
+  "coverImage": "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1200&q=80",
   "role": "",
   "timeline": "",
   "partners": [],
@@ -56,12 +56,5 @@
       "title": "Outcome",
       "body": "<ul>\n<li>212% increase in conversions on sign-up and landing pages</li>\n<li>50% decrease in time on task for the top 5 user tasks</li>\n<li>50%+ simplification of the product portfolio</li>\n<li>New SMB product line launched</li>\n</ul>"
     }
-  ],
-  "gallery": [
-    "assets/projects/35f76183-7377-8162-a013-d70ec2ca966f/01.jpg",
-    "assets/projects/35f76183-7377-8162-a013-d70ec2ca966f/02.jpg",
-    "assets/projects/35f76183-7377-8162-a013-d70ec2ca966f/03.jpg",
-    "assets/projects/35f76183-7377-8162-a013-d70ec2ca966f/04.jpg",
-    "assets/projects/35f76183-7377-8162-a013-d70ec2ca966f/05.jpg"
   ]
 }
