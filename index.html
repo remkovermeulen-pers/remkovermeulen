@@ -296,27 +296,23 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
   <!-- LOGO STRIP -->
   <div class="logos-outer" id="logos-outer">
     <div class="logos" id="logos-track">
-      <span class="logo-mark"><img src="https://cdn.brandfetch.io/toggl.com/w/512/h/512/logo?theme=dark" alt="Toggl"></span>
-      <span class="logo-mark"><img src="https://cdn.brandfetch.io/signassist.com/w/512/h/512/logo?theme=dark" alt="SignAssist"></span>
-      <span class="logo-mark"><img src="https://cdn.brandfetch.io/koahealth.com/w/512/h/512/logo?theme=dark" alt="Koa Health"></span>
-      <span class="logo-mark"><img src="https://cdn.brandfetch.io/janssen.com/w/512/h/512/logo?theme=dark" alt="Janssen"></span>
-      <span class="logo-mark"><img src="https://cdn.brandfetch.io/telefonica.com/w/512/h/512/logo?theme=dark" alt="Telefónica"></span>
-      <span class="logo-mark"><img src="https://cdn.brandfetch.io/ft.com/w/512/h/512/logo?theme=dark" alt="Financial Times"></span>
-      <span class="logo-mark"><img src="https://cdn.brandfetch.io/renault.com/w/512/h/512/logo?theme=dark" alt="Renault"></span>
-      <span class="logo-mark"><img src="https://cdn.brandfetch.io/ntrglobal.com/w/512/h/512/logo?theme=dark" alt="NTRglobal"></span>
-      <span class="logo-mark"><img src="https://cdn.brandfetch.io/britishcouncil.org/w/512/h/512/logo?theme=dark" alt="British Council"></span>
+      <span class="logo-mark"><img src="assets/logos/toggl.svg" alt="Toggl"></span>
+      <span class="logo-mark"><img src="assets/logos/koa.health.com.png" alt="Koa Health"></span>
+      <span class="logo-mark"><img src="assets/logos/signassist.svg" alt="SignAssist"></span>
+      <span class="logo-mark"><img src="assets/logos/royal-college-art.webp" alt="Royal College of Art"></span>
+      <span class="logo-mark"><img src="assets/logos/harvard.svg" alt="Harvard"></span>
+      <span class="logo-mark"><img src="assets/logos/un.svg" alt="United Nations"></span>
+      <span class="logo-mark"><img src="assets/logos/nhs.svg" alt="NHS"></span>
+      <span class="logo-mark"><img src="assets/logos/jandj.com.svg" alt="Johnson & Johnson"></span>
+      <span class="logo-mark"><img src="assets/logos/telefonica.com.svg" alt="Telefónica"></span>
+      <span class="logo-mark"><img src="assets/logos/telefonica-alpha.svg" alt="Telefónica Alpha"></span>
+      <span class="logo-mark"><img src="assets/logos/bbc.svg" alt="BBC"></span>
+      <span class="logo-mark"><img src="assets/logos/02.svg" alt="O2"></span>
+      <span class="logo-mark"><img src="assets/logos/vivo.svg" alt="Vivo"></span>
     </div>
   </div>
   <script>
   (function(){
-    document.querySelectorAll('.logo-mark img').forEach(function(img){
-      function check(){
-        if(img.naturalWidth > img.naturalHeight * 5){
-          img.src = img.src.replace('/logo','/symbol');
-        }
-      }
-      if(img.complete && img.naturalWidth) check(); else img.addEventListener('load', check);
-    });
 
     var outer = document.getElementById('logos-outer');
     var track = document.getElementById('logos-track');
