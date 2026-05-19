@@ -243,7 +243,7 @@
     ],
     "lede": "",
     "description": "Used mobile network mobility data to cut epidemic source detection from weeks to hours, and predict outbreak spread before clinical data surfaced — validated across Ebola and Zika in collaboration with WHO and Harvard.",
-    "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
+    "coverImage": "assets/projects/36076183-7377-8195-b39a-cfa1657491db/01.png",
     "metrics": [],
     "logoDomain": "",
     "organisations": [
@@ -321,7 +321,7 @@
     ],
     "lede": "",
     "description": "Designed an explainability layer for clinical ML models that translated opaque risk scores into readable clinical reasoning, significantly increasing clinician willingness to act on model outputs.",
-    "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
+    "coverImage": "assets/projects/36076183-7377-8181-a326-c925904d52f8/01.png",
     "metrics": [],
     "logoDomain": "",
     "organisations": [
@@ -345,7 +345,7 @@
     ],
     "lede": "",
     "description": "Built a preventative wellbeing app for 16-24 year olds that used behavioural science to surface low-effort habit changes, designed to feel peer-like rather than clinical through extensive co-design with the target age group.",
-    "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
+    "coverImage": "assets/projects/36076183-7377-8114-881b-d864ffc34948/01.png",
     "metrics": [],
     "logoDomain": "",
     "organisations": [
@@ -368,7 +368,7 @@
     ],
     "lede": "",
     "description": "Prototyped a concept that maps a person's emotional patterns to the places they frequent, testing whether spatial visualisation of mood data prompts more useful reflection than traditional self-report tools.",
-    "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
+    "coverImage": "assets/projects/36076183-7377-8191-b686-ee42ad8574d4/01.png",
     "metrics": [],
     "logoDomain": "",
     "organisations": []
@@ -404,7 +404,7 @@
     ],
     "lede": "",
     "description": "Translated a clinically validated Cognitive Bias Modification technique into a consumer digital product with the BBC and LSE, running one of the largest CBM studies ever conducted outside a clinical setting with 25,000+ participants.",
-    "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
+    "coverImage": "assets/projects/36076183-7377-814a-9f9c-f356f12270ef/01.png",
     "metrics": [
       {
         "value": "25.000",
@@ -472,7 +472,7 @@
     ],
     "lede": "",
     "description": "Designed a passive bipolar monitoring service using anonymised mobile network data, giving psychiatrists a continuous view of patient state between appointments without requiring any active input from patients.",
-    "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
+    "coverImage": "assets/projects/36076183-7377-81c8-85aa-d341a65cf2b5/01.png",
     "metrics": [],
     "logoDomain": "",
     "organisations": [
@@ -500,7 +500,7 @@
     ],
     "lede": "",
     "description": "Designed a remote chronic disease management service across UK, Spain, and Brazil, grounded in ethnographic research with patients and nurses. Achieved a 48% reduction in mortality and 63% reduction in hospital readmissions.",
-    "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
+    "coverImage": "assets/projects/36076183-7377-81c6-9ab7-c49d505b389a/01.jpg",
     "metrics": [
       {
         "value": "48%",
@@ -532,7 +532,7 @@
     ],
     "lede": "",
     "description": "Designed an SMS and phone-based medical consultation service for Vivo Brasil, giving middle and lower-income households access to a doctor through infrastructure they already owned.",
-    "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
+    "coverImage": "assets/projects/36076183-7377-812b-9600-f901966bdb08/01.png",
     "metrics": [],
     "logoDomain": "",
     "organisations": [
@@ -556,7 +556,7 @@
     ],
     "lede": "",
     "description": "Led UX, product and service design across 5 locations for Telefonica's global health and digital portfolio. Delivered a chronic disease service reducing mortality by 48%, Parkinson's voice detection at 78% precision, and pandemic prediction tools with WHO and Harvard.",
-    "coverImage": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&q=80",
+    "coverImage": "assets/projects/35f76183-7377-8167-aade-e9ceff1342ed/01.png",
     "metrics": [
       {
         "value": "48%",
@@ -600,7 +600,7 @@
     ],
     "lede": "",
     "description": "Built and led the UX function at a B2B SaaS company, shifting the product to user-centred design. Drove a 212% increase in conversions and 50% reduction in time on task, while simplifying the product portfolio by half.",
-    "coverImage": "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1200&q=80",
+    "coverImage": "assets/projects/35f76183-7377-8162-a013-d70ec2ca966f/01.jpg",
     "metrics": [
       {
         "value": "212%",
