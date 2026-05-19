@@ -586,41 +586,5 @@
         "logo": "02.svg"
       }
     ]
-  },
-  {
-    "notionId": "35f76183-7377-8162-a013-d70ec2ca966f",
-    "title": "NTRglobal",
-    "sector": "SaaS",
-    "status": "Live",
-    "year": 2005,
-    "priority": 999,
-    "tags": [
-      "Design",
-      "Product"
-    ],
-    "lede": "",
-    "description": "Built and led the UX function at a B2B SaaS company, shifting the product to user-centred design. Drove a 212% increase in conversions and 50% reduction in time on task, while simplifying the product portfolio by half.",
-    "coverImage": "assets/projects/35f76183-7377-8162-a013-d70ec2ca966f--ntrglobal/01.jpg",
-    "metrics": [
-      {
-        "value": "212%",
-        "label": "increase in conversions"
-      },
-      {
-        "value": "50%",
-        "label": "decrease in time on task (top 5 tasks)"
-      },
-      {
-        "value": "50%",
-        "label": "simplification of product portfolio"
-      }
-    ],
-    "logoDomain": "",
-    "organisations": [
-      {
-        "name": "NTRglobal",
-        "logo": "https://raw.githubusercontent.com/VermeulenCastellon/portfolio-website/main/public/logos/ntrglobal.svg"
-      }
-    ]
   }
 ]
