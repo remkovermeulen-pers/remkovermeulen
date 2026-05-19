@@ -11,10 +11,6 @@
   "lede": "",
   "description": "Restructured product, design and engineering teams at a profitable SaaS company, cutting costs by 26% while increasing output by implementing an AI-based user insights and prototyping flow. Drove a 94% increase in first-time activation by removing friction from the early user journey.",
   "coverImage": "assets/projects/35f76183-7377-81f2-9f5a-dbd1debf2fb1--toggl/01.png",
-  "gallery": [
-    "assets/projects/35f76183-7377-81f2-9f5a-dbd1debf2fb1--toggl/01.png",
-    "assets/projects/35f76183-7377-81f2-9f5a-dbd1debf2fb1--toggl/02.png"
-  ],
   "role": "",
   "timeline": "",
   "partners": [],
@@ -60,5 +56,9 @@
       "title": "Outcome",
       "body": "<ul>\n<li>First-time activation increased 94%</li>\n<li>Team costs reduced 26% through restructuring</li>\n<li>Team output increased 13% with a smaller team</li>\n<li>Insight-to-validated-solution cycle reduced from weeks to days</li>\n</ul>"
     }
+  ],
+  "gallery": [
+    "assets/projects/35f76183-7377-81f2-9f5a-dbd1debf2fb1--toggl/01.png",
+    "assets/projects/35f76183-7377-81f2-9f5a-dbd1debf2fb1--toggl/02.png"
   ]
 }
