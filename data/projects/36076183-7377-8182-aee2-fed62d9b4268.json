@@ -10,7 +10,7 @@
   ],
   "lede": "",
   "description": "Designed a bicycle-mounted computer for Koga Miyata combining turn-by-turn navigation with location-aware tourist information, purpose-built for touring cyclists through dedicated user research.",
-  "coverImage": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1200&q=80",
+  "coverImage": "assets/projects/36076183-7377-8182-aee2-fed62d9b4268/01.jpg",
   "role": "",
   "timeline": "",
   "partners": [],
@@ -43,5 +43,11 @@
       "name": "Koga Miyata",
       "logo": ""
     }
+  ],
+  "gallery": [
+    "assets/projects/36076183-7377-8182-aee2-fed62d9b4268/01.jpg",
+    "assets/projects/36076183-7377-8182-aee2-fed62d9b4268/02.jpg",
+    "assets/projects/36076183-7377-8182-aee2-fed62d9b4268/03.jpg",
+    "assets/projects/36076183-7377-8182-aee2-fed62d9b4268/04.jpg"
   ]
 }

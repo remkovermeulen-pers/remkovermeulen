@@ -134,6 +134,27 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
 .cs-cover__logo { position:absolute; bottom:24px; left:32px; height:36px; max-width:160px; width:auto; object-fit:contain; filter:brightness(0) invert(1); opacity:0.9; pointer-events:none; }
 .cs-cover__caption { padding:14px 20px; border-top:1px solid var(--line); font-size:12px; color:var(--muted-2); font-style:italic; background:var(--bg-card); }
 
+/* GALLERY */
+.cs-gallery { margin-top:12px; display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
+.cs-gallery--2up { grid-template-columns:repeat(2,1fr); }
+.cs-gallery--4up { grid-template-columns:repeat(4,1fr); }
+.cs-gallery__item { border:1px solid var(--line); overflow:hidden; cursor:zoom-in; aspect-ratio:16/10; background:var(--bg-elev); transition:border-color .2s; }
+.cs-gallery__item:hover { border-color:var(--primary); }
+.cs-gallery__item img { width:100%; height:100%; object-fit:cover; object-position:top; display:block; transition:transform .4s cubic-bezier(.22,1,.36,1); }
+.cs-gallery__item:hover img { transform:scale(1.03); }
+@media (max-width:760px) { .cs-gallery,.cs-gallery--4up { grid-template-columns:repeat(2,1fr); gap:8px; } }
+
+/* LIGHTBOX */
+.cs-lightbox { display:none; position:fixed; inset:0; z-index:200; background:rgba(0,0,0,.88); align-items:center; justify-content:center; padding:20px; }
+.cs-lightbox.is-open { display:flex; }
+.cs-lightbox__img { max-width:100%; max-height:90vh; object-fit:contain; box-shadow:0 24px 80px rgba(0,0,0,.5); }
+.cs-lightbox__close { position:fixed; top:20px; right:24px; color:#fff; font-size:28px; cursor:pointer; line-height:1; opacity:.7; transition:opacity .2s; background:none; border:none; }
+.cs-lightbox__close:hover { opacity:1; }
+.cs-lightbox__prev,.cs-lightbox__next { position:fixed; top:50%; transform:translateY(-50%); color:#fff; font-size:28px; cursor:pointer; opacity:.6; transition:opacity .2s; background:none; border:none; padding:16px; }
+.cs-lightbox__prev { left:12px; }
+.cs-lightbox__next { right:12px; }
+.cs-lightbox__prev:hover,.cs-lightbox__next:hover { opacity:1; }
+
 /* BODY GRID */
 .cs-body { margin-top:64px; display:grid; grid-template-columns:220px 1fr; gap:48px; }
 .cs-aside { position:sticky; top:100px; align-self:start; }
@@ -216,6 +237,14 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
 <main class="container" id="cs-main">
   <div class="cs-loading">Loading…</div>
 </main>
+
+<!-- Lightbox -->
+<div class="cs-lightbox" id="cs-lightbox" role="dialog" aria-modal="true">
+  <button class="cs-lightbox__close" id="lb-close" aria-label="Close">&#x2715;</button>
+  <button class="cs-lightbox__prev" id="lb-prev" aria-label="Previous">&#x2039;</button>
+  <img class="cs-lightbox__img" id="lb-img" src="" alt="">
+  <button class="cs-lightbox__next" id="lb-next" aria-label="Next">&#x203A;</button>
+</div>
 
 <footer class="site-footer">
   <div class="container site-footer__inner">
@@ -302,6 +331,8 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
     }
     if (!ledeText) ledeText = proj.lede;
 
+    var galleryHtml = buildGallery(proj);
+
     main.innerHTML =
       pagerHtml +
 
@@ -311,10 +342,11 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
         '<p class="cs-hero__lede">' + esc(ledeText) + '</p>' +
         bylineHtml +
         '<div class="cs-cover">' +
-          '<img class="bw-img" src="' + esc(proj.coverImage) + '" alt="' + esc(proj.title) + '">' +
+          '<img src="' + esc(proj.coverImage) + '" alt="' + esc(proj.title) + '">' +
           (getLogoFile(proj) ? '<img class="cs-cover__logo" src="' + logoUrl(getLogoFile(proj)) + '" alt="" onerror="this.remove()">' : '') +
           (proj.coverCaption ? '<div class="cs-cover__caption">' + esc(proj.coverCaption) + '</div>' : '') +
         '</div>' +
+        galleryHtml +
       '</section>' +
 
       '<div class="cs-body">' +
@@ -455,6 +487,61 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
     if (idx === 0) return null;
     return all[idx - 1];
   }
+
+  function buildGallery(proj) {
+    var imgs = (proj.gallery || []).slice(1); // skip first — already the cover
+    if (!imgs.length) return '';
+    var mod = imgs.length === 2 ? ' cs-gallery--2up' : imgs.length >= 4 ? ' cs-gallery--4up' : '';
+    var items = imgs.map(function(src, i) {
+      return '<div class="cs-gallery__item" data-lb-src="' + esc(src) + '" data-lb-idx="' + i + '">' +
+        '<img src="' + esc(src) + '" alt="" loading="lazy">' +
+      '</div>';
+    }).join('');
+    return '<div class="cs-gallery' + mod + '" id="cs-gallery">' + items + '</div>';
+  }
+
+  // Lightbox
+  (function() {
+    var lb = document.getElementById('cs-lightbox');
+    var lbImg = document.getElementById('lb-img');
+    var lbClose = document.getElementById('lb-close');
+    var lbPrev = document.getElementById('lb-prev');
+    var lbNext = document.getElementById('lb-next');
+    var srcs = [];
+    var cur = 0;
+
+    function open(idx) {
+      cur = idx;
+      lbImg.src = srcs[cur];
+      lb.classList.add('is-open');
+      document.body.style.overflow = 'hidden';
+      lbPrev.style.display = srcs.length < 2 ? 'none' : '';
+      lbNext.style.display = srcs.length < 2 ? 'none' : '';
+    }
+    function close() { lb.classList.remove('is-open'); document.body.style.overflow = ''; }
+    function step(d) { cur = (cur + d + srcs.length) % srcs.length; lbImg.src = srcs[cur]; }
+
+    document.addEventListener('click', function(e) {
+      var item = e.target.closest('.cs-gallery__item');
+      if (item) {
+        // Rebuild srcs from current gallery
+        srcs = Array.from(document.querySelectorAll('.cs-gallery__item')).map(function(el) {
+          return el.dataset.lbSrc;
+        });
+        open(parseInt(item.dataset.lbIdx, 10));
+      }
+    });
+    lbClose.addEventListener('click', close);
+    lbPrev.addEventListener('click', function() { step(-1); });
+    lbNext.addEventListener('click', function() { step(1); });
+    lb.addEventListener('click', function(e) { if (e.target === lb) close(); });
+    document.addEventListener('keydown', function(e) {
+      if (!lb.classList.contains('is-open')) return;
+      if (e.key === 'Escape') close();
+      if (e.key === 'ArrowLeft') step(-1);
+      if (e.key === 'ArrowRight') step(1);
+    });
+  })();
 
   function esc(str) {
     if (str == null) return '';

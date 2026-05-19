@@ -9,7 +9,7 @@
     "Research"
   ],
   "lede": "Designed next-generation connected car services for Renault, using Kano models to maximise driver engagement and utility.",
-  "coverImage": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1200&q=80",
+  "coverImage": "assets/projects/35f76183-7377-81a8-b45d-f022b6c4842e/01.jpg",
   "role": "",
   "timeline": "",
   "partners": [],
@@ -39,5 +39,9 @@
       "name": "Renault",
       "logo": ""
     }
+  ],
+  "gallery": [
+    "assets/projects/35f76183-7377-81a8-b45d-f022b6c4842e/01.jpg",
+    "assets/projects/35f76183-7377-81a8-b45d-f022b6c4842e/02.jpg"
   ]
 }
