@@ -11,7 +11,7 @@
       "Product"
     ],
     "lede": "",
-    "description": "Restructured product, design and engineering teams at a profitable SaaS company, cutting costs by 26% while increasing output implementing an AI based user inights and prototyping flow. Drove a 94% increase in first-time activation by removing friction from the early user journey.",
+    "description": "Restructured product, design and engineering teams at a profitable SaaS company, cutting costs by 26% while increasing output by implementing an AI-based user insights and prototyping flow. Drove a 94% increase in first-time activation by removing friction from the early user journey.",
     "coverImage": "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1200&q=80",
     "metrics": [
       {
@@ -52,7 +52,7 @@
     "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
     "metrics": [
       {
-        "value": "$66M",
+        "value": "€66M",
         "label": "investment raised"
       },
       {
@@ -162,7 +162,7 @@
   },
   {
     "notionId": "36076183-7377-81ec-ab0d-cb34f758bbcf",
-    "title": "Cloud Computing User Journey",
+    "title": "Cloud Computing Services",
     "sector": "Telco",
     "status": "Live",
     "year": 2015,
@@ -320,7 +320,7 @@
       "Research"
     ],
     "lede": "",
-    "description": "Designed an explainability layer for clinical ML models that translated opaque risk scores into readable clinical reasoning, significantly increasing clinician willingness to act on model outputs.",
+    "description": "Designed an explainability layer for (clinical) ML models that translated opaque risk scores into readable reasoning, significantly increasing willingness to act on model outputs.",
     "coverImage": "assets/projects/36076183-7377-8181-a326-c925904d52f8/01.png",
     "metrics": [],
     "logoDomain": "",
@@ -375,7 +375,7 @@
   },
   {
     "notionId": "36076183-7377-81ae-9453-ebb3a48a1cf3",
-    "title": "TATU — Interactive Tattoo Concept",
+    "title": "TATU — Interactive Tattoo",
     "sector": "Health",
     "status": "Live",
     "year": 2018,

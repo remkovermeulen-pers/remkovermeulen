@@ -17,7 +17,7 @@
   "partners": [],
   "metrics": [
     {
-      "value": "$66M",
+      "value": "€66M",
       "label": "investment raised"
     },
     {
@@ -47,7 +47,7 @@
   "sections": [
     {
       "title": "Context",
-      "body": "<p>Koa Health is a digital mental health company spun out of Telefonica Alpha. I co-founded the product  and team and grew the product and design team from 1 to 40 people over seven years. The company raised €66M and reached 3 million users across 70+ countries. Partners included the NHS, Harvard Medical School, Massachusetts General Hospital, and Janssen / Johnson &amp; Johnson.</p>"
+      "body": "<p>Koa Health is a digital mental health company spun out of Telefonica Alpha. I co-founded the product and team and grew the product and design team from 1 to 40 people over seven years. The company raised €66M and reached 3 million users across 70+ countries. Partners included the NHS, Harvard Medical School, Massachusetts General Hospital, and Janssen / Johnson &amp; Johnson.</p>"
     },
     {
       "title": "Problem",

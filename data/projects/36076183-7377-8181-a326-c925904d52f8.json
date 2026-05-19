@@ -9,7 +9,7 @@
     "Research"
   ],
   "lede": "",
-  "description": "Designed an explainability layer for clinical ML models that translated opaque risk scores into readable clinical reasoning, significantly increasing clinician willingness to act on model outputs.",
+  "description": "Designed an explainability layer for (clinical) ML models that translated opaque risk scores into readable reasoning, significantly increasing willingness to act on model outputs.",
   "coverImage": "assets/projects/36076183-7377-8181-a326-c925904d52f8/01.png",
   "role": "",
   "timeline": "",
@@ -37,7 +37,7 @@
     },
     {
       "title": "Approach",
-      "body": "<p>I ran user research with psychiatrists and nurses to understand how they reason about risk, what level of detail was useful versus overwhelming, and what would make them willing to act on a model output. The core technical approach used was Trepan — a method that extracts a decision tree from the trained model to explain its behaviour in human-readable terms. I designed the interface to surface the top contributing factors in plain language (e.g., \"appointment non-attendance in the last 6 weeks\", \"recent prescription change\") alongside the risk score, so clinicians could weigh model reasoning against their own knowledge.</p>"
+      "body": "<p>I ran user research with psychiatrists and nurses to understand how they reason about risk, what level of detail was useful versus overwhelming, and what would make them willing to act on a model output. I designed the interface to surface the top contributing factors in plain language (e.g., \"appointment non-attendance in the last 6 weeks\", \"recent prescription change\") alongside the risk score, so clinicians could weigh model reasoning against their own knowledge.</p>"
     },
     {
       "title": "Outcome",

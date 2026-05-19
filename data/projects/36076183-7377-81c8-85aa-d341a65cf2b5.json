@@ -33,15 +33,15 @@
     },
     {
       "title": "Problem",
-      "body": "<p>Psychiatrists had no reliable way to monitor patients between appointments. Patients with bipolar disorder often lack insight into their own mood state — particularly during manic episodes — making self-reporting unreliable. Clinicians were flying blind between clinical contacts, and deteriorations were only caught when they became crises. The business problem was demonstrating clinical utility to unlock commercial partnerships with health systems.</p>"
+      "body": "<p>Psychiatrists had no reliable way to monitor patients between appointments. Patients with bipolar disorder often lack insight into their own mood state, particularly during manic episodes, making self-reporting unreliable. Clinicians were flying blind between clinical contacts, and deteriorations were only caught when they became crises. The business problem was demonstrating clinical utility to unlock commercial partnerships with health systems.</p>"
     },
     {
       "title": "My role",
-      "body": "<p>I owned the product definition and clinical partnership. I personally scoped the use case with Hospital Clinic, decided the network-level (non-app) architecture as a product constraint, set the requirements for the data science team, and managed the commercial relationship. The clinician-facing output was shaped by me in terms of what information was surfaced and how it mapped to clinical decision-making — execution of interfaces was handled by the design team.</p>"
+      "body": "<p>I owned the product definition and clinical partnership. I personally scoped the use case with Hospital Clinic, decided the network-level (non-app) architecture as a product constraint, set the requirements for the data science team, and managed the commercial relationship. The clinician-facing output was shaped by me in terms of what information was surfaced and how it mapped to clinical decision-making; execution of interfaces was handled by the design team.</p>"
     },
     {
       "title": "Approach",
-      "body": "<p>The core product decision was to operate at the network level rather than via an app — ensuring the service worked regardless of what device a patient used, and requiring no behaviour change from patients at all. I worked with data scientists to determine which passively captured signals (call patterns, data usage, location history, sleep-wake cycles) tracked reliably with clinical mood state, then defined the alert logic and clinical output structure in collaboration with psychiatric partners at Hospital Clinic.</p>"
+      "body": "<p>The core product decision was to operate at the network level rather than via an app, ensuring the service worked regardless of what device a patient used and requiring no behaviour change from patients at all. I worked with data scientists to determine which passively captured signals (call patterns, data usage, location history, sleep-wake cycles) tracked reliably with clinical mood state, then defined the alert logic and clinical output structure in collaboration with psychiatric partners at Hospital Clinic.</p>"
     },
     {
       "title": "Outcome",
