@@ -380,13 +380,24 @@ async function fetchProjects() {
                             .map(o => ({ name: o.name, logo: o.logo || '' }));
     const description = extractText(p['Description']);
 
-    // Preserve locally-set cover/gallery if already stored as assets/ paths
+    // Read existing JSON to preserve local asset paths as fallback
     const existingProjPath = path.join(projectsDir, `${page.id}.json`);
     const existingProj = fs.existsSync(existingProjPath) ? JSON.parse(fs.readFileSync(existingProjPath, 'utf8')) : null;
-    const coverImage = (existingProj?.coverImage?.startsWith('assets/'))
-      ? existingProj.coverImage
-      : (SECTOR_IMAGES[sector] || SECTOR_IMAGES.SaaS);
-    const gallery = existingProj?.gallery || null;
+
+    // Gallery: prefer Notion "Gallery" property (comma-separated filenames),
+    // fall back to whatever is already stored in the JSON.
+    const galleryRaw = extractText(p['Gallery']).trim();
+    const gallery = galleryRaw
+      ? galleryRaw.split(',').map(f => `assets/projects/${page.id}/${f.trim()}`).filter(Boolean)
+      : (existingProj?.gallery || null);
+
+    // Cover: first gallery image if available, otherwise preserve existing local path,
+    // otherwise fall back to sector stock image.
+    const coverImage = (gallery && gallery.length)
+      ? gallery[0]
+      : (existingProj?.coverImage?.startsWith('assets/'))
+        ? existingProj.coverImage
+        : (SECTOR_IMAGES[sector] || SECTOR_IMAGES.SaaS);
 
     // Fetch page blocks and split into sections
     const blocks = await fetchAllBlocks(page.id);
