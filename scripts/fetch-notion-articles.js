@@ -384,15 +384,22 @@ async function fetchProjects() {
     const existingProjPath = path.join(projectsDir, `${page.id}.json`);
     const existingProj = fs.existsSync(existingProjPath) ? JSON.parse(fs.readFileSync(existingProjPath, 'utf8')) : null;
 
+    // Folder name = {id}--{slug} so it's human-readable on disk
+    function slugify(str) {
+      return str.normalize('NFKD').replace(/[̀-ͯ]/g, '')
+        .toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+    }
+    const projFolder = `${page.id}--${slugify(title)}`;
+
     // Gallery: prefer Notion "Gallery" property (comma-separated filenames),
     // fall back to whatever is already stored in the JSON.
     const galleryRaw = extractText(p['Gallery']).trim();
     const gallery = galleryRaw
-      ? galleryRaw.split(',').map(f => `assets/projects/${page.id}/${f.trim()}`).filter(Boolean)
+      ? galleryRaw.split(',').map(f => `assets/projects/${projFolder}/${f.trim()}`).filter(Boolean)
       : (existingProj?.gallery || null);
 
-    // Cover: first gallery image if available, otherwise preserve existing local path,
-    // otherwise fall back to sector stock image.
+    // Cover: first gallery image if available, otherwise preserve any existing local
+    // assets/ path (covers the folder-rename case), otherwise fall back to stock image.
     const coverImage = (gallery && gallery.length)
       ? gallery[0]
       : (existingProj?.coverImage?.startsWith('assets/'))

@@ -10,7 +10,7 @@
   ],
   "lede": "",
   "description": "Used mobile network mobility data to cut epidemic source detection from weeks to hours, and predict outbreak spread before clinical data surfaced — validated across Ebola and Zika in collaboration with WHO and Harvard.",
-  "coverImage": "assets/projects/36076183-7377-8195-b39a-cfa1657491db/01.png",
+  "coverImage": "assets/projects/36076183-7377-8195-b39a-cfa1657491db--pandemic-prediction-zika-ebola/01.png",
   "role": "",
   "timeline": "",
   "partners": [],
@@ -49,9 +49,9 @@
     }
   ],
   "gallery": [
-    "assets/projects/36076183-7377-8195-b39a-cfa1657491db/01.png",
-    "assets/projects/36076183-7377-8195-b39a-cfa1657491db/02.png",
-    "assets/projects/36076183-7377-8195-b39a-cfa1657491db/03.png",
-    "assets/projects/36076183-7377-8195-b39a-cfa1657491db/04.png"
+    "assets/projects/36076183-7377-8195-b39a-cfa1657491db--pandemic-prediction-zika-ebola/01.png",
+    "assets/projects/36076183-7377-8195-b39a-cfa1657491db--pandemic-prediction-zika-ebola/02.png",
+    "assets/projects/36076183-7377-8195-b39a-cfa1657491db--pandemic-prediction-zika-ebola/03.png",
+    "assets/projects/36076183-7377-8195-b39a-cfa1657491db--pandemic-prediction-zika-ebola/04.png"
   ]
 }
