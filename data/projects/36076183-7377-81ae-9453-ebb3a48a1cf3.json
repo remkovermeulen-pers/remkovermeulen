@@ -10,7 +10,7 @@
   ],
   "lede": "",
   "description": "Explored whether interactive skin-surface displays could communicate detected mood state ambientally, using a Wizard of Oz prototype tested with couples to surface the privacy and transparency tensions any such system would face.",
-  "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
+  "coverImage": "assets/projects/36076183-7377-81ae-9453-ebb3a48a1cf3--tatu-interactive-tattoo/01.png",
   "role": "",
   "timeline": "",
   "partners": [],
@@ -38,5 +38,8 @@
       "title": "Outcome",
       "body": "<ul>\n<li>Testing surfaced a genuine tension between transparency and privacy that any ambient mood communication system would need to resolve</li>\n<li>Participants valued the idea of greater mutual understanding but were uncomfortable with continuous, involuntary visibility of emotional state</li>\n<li>Opt-in/opt-out design was identified as essential to any viable version</li>\n<li>Findings contributed to Telefonica Alpha's body of work on passive mood monitoring and informed how subsequent products (Fluid, Perspectives) handled emotional data sensitivity</li>\n</ul>"
     }
+  ],
+  "gallery": [
+    "assets/projects/36076183-7377-81ae-9453-ebb3a48a1cf3--tatu-interactive-tattoo/01.png"
   ]
 }

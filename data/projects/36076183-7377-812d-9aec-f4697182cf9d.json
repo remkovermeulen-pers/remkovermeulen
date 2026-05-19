@@ -12,7 +12,7 @@
   ],
   "lede": "",
   "description": "Led a digital CBT product from concept through clinical trial with MGH and Harvard, achieving 90% treatment response, 55% symptom reduction, and 95% cost reduction versus traditional therapy.",
-  "coverImage": "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80",
+  "coverImage": "assets/projects/36076183-7377-812d-9aec-f4697182cf9d--perspectives/01.png",
   "role": "",
   "timeline": "",
   "partners": [],
@@ -66,5 +66,9 @@
       "title": "Outcome",
       "body": "<ul>\n<li>90% of participants responded to treatment</li>\n<li>Average symptom reduction of 55%, on par with results from the best MGH therapists</li>\n<li>95% reduction in cost compared to traditional therapy</li>\n<li>Results contributed directly to Koa Health's €66M investment round</li>\n<li>Product pending FDA Class II de novo approval and CE Class I mark at time of publication</li>\n</ul>"
     }
+  ],
+  "gallery": [
+    "assets/projects/36076183-7377-812d-9aec-f4697182cf9d--perspectives/01.png",
+    "assets/projects/36076183-7377-812d-9aec-f4697182cf9d--perspectives/02.png"
   ]
 }

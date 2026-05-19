@@ -10,7 +10,7 @@
   ],
   "lede": "",
   "description": "Led product end-to-end at a PropTech SaaS startup, improving unit economics from 162% to 21% CAC/LTV and growing active users by 87% through better onboarding and AI-powered document tooling.",
-  "coverImage": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&q=80",
+  "coverImage": "assets/projects/35f76183-7377-816c-8a7f-e43d868da1c7--signassist/01.jpeg",
   "role": "",
   "timeline": "",
   "partners": [],
@@ -60,5 +60,8 @@
       "title": "Outcome",
       "body": "<ul>\n<li>Active users grew 87%</li>\n<li>Time to value reduced 75%</li>\n<li>CAC/LTV improved from 162% to 21%</li>\n<li>MRR grew 23% following the new pricing strategy</li>\n</ul>"
     }
+  ],
+  "gallery": [
+    "assets/projects/35f76183-7377-816c-8a7f-e43d868da1c7--signassist/01.jpeg"
   ]
 }
