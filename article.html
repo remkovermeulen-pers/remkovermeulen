@@ -372,7 +372,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
     // Next article
     var nextHtml = '';
     if (next) {
-      var nextCover = COVER_IMAGES[next.category] || DEFAULT_COVER;
+      var nextCover = next.coverImage || COVER_IMAGES[next.category] || DEFAULT_COVER;
       nextHtml = '<section class="next-proj">'
         + '<p class="next-proj__eyebrow">Next Article</p>'
         + '<a href="article.html?id=' + esc(next.notionId) + '" class="next-proj__card">'
