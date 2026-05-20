@@ -266,16 +266,24 @@ async function fetchArticles() {
     };
     if (!meta.title) continue;
 
+    // Read existing JSON early so we can preserve custom fields in meta (and articles.json)
+    const existingPath = path.join(articlesDir, `${page.id}.json`);
+    const existing = fs.existsSync(existingPath) ? JSON.parse(fs.readFileSync(existingPath, 'utf8')) : null;
+
+    // Preserve coverImage — not a Notion property, always manually curated
+    if (existing?.coverImage) meta.coverImage = existing.coverImage;
+
     const matched = matchVideo(meta.title, videos);
     if (matched) {
       meta.youtubeVideoId = matched.id;
       console.log(`  🎬 Matched "${meta.title}" → ${matched.id}`);
+    } else if (existing?.youtubeVideoId) {
+      // Preserve explicit youtubeVideoId when title-based auto-match fails
+      meta.youtubeVideoId = existing.youtubeVideoId;
     }
     metaList.push(meta);
 
     // Preserve content for articles already written by Claude
-    const existingPath = path.join(articlesDir, `${page.id}.json`);
-    const existing = fs.existsSync(existingPath) ? JSON.parse(fs.readFileSync(existingPath, 'utf8')) : null;
     if (existing?.contentSource === 'claude-written') {
       fs.writeFileSync(existingPath, JSON.stringify({ ...existing, ...meta, tags }, null, 2));
       console.log(`  ✓ ${meta.title} (preserved claude-written content)`);
