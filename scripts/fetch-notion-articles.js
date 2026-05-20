@@ -270,8 +270,9 @@ async function fetchArticles() {
     const existingPath = path.join(articlesDir, `${page.id}.json`);
     const existing = fs.existsSync(existingPath) ? JSON.parse(fs.readFileSync(existingPath, 'utf8')) : null;
 
-    // Preserve coverImage — not a Notion property, always manually curated
+    // Preserve coverImage and coverImagePosition — not Notion properties, always manually curated
     if (existing?.coverImage) meta.coverImage = existing.coverImage;
+    if (existing?.coverImagePosition) meta.coverImagePosition = existing.coverImagePosition;
 
     const matched = matchVideo(meta.title, videos);
     if (matched) {
