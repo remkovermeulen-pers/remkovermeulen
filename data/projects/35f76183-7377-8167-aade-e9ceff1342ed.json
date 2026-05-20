@@ -25,12 +25,8 @@
       "label": "decrease in hospital readmission"
     },
     {
-      "value": "20+",
-      "label": "MVPs, 5 launched"
-    },
-    {
-      "value": "78%",
-      "label": "precision in Parkinson's voice detection"
+      "value": "30+",
+      "label": "MVPs launched"
     }
   ],
   "logoDomain": "",
