@@ -1,6 +1,6 @@
 {
   "id": "35f76183-7377-8167-aade-e9ceff1342ed",
-  "title": "Telefónica / O2",
+  "title": "Telef\u00f3nica / O2",
   "sector": "Telco",
   "status": "Live",
   "year": 2011,
@@ -11,7 +11,7 @@
   ],
   "lede": "",
   "description": "Led UX, product and service design across 5 locations for Telefonica's global health and digital portfolio. Delivered a chronic disease service reducing mortality by 48%, Parkinson's voice detection at 78% precision, and pandemic prediction tools with WHO and Harvard.",
-  "coverImage": "assets/projects/35f76183-7377-8167-aade-e9ceff1342ed--telefonica-o2/01.mov",
+  "coverImage": "assets/projects/35f76183-7377-8167-aade-e9ceff1342ed--telefonica-o2/03.jpg",
   "role": "",
   "timeline": "",
   "partners": [],
@@ -36,7 +36,7 @@
   "logoDomain": "",
   "organisations": [
     {
-      "name": "Telefónica",
+      "name": "Telef\u00f3nica",
       "logo": "telefonica.com.svg"
     },
     {
@@ -51,7 +51,7 @@
     },
     {
       "title": "Problem",
-      "body": "<p>Telefonica was investing in health and digital services as a strategic growth area adjacent to core telecoms. The challenge was demonstrating that a telecoms company could build products with genuine clinical and commercial value — not just technology prototypes. Each product area had a distinct business problem: chronic disease management had high healthcare costs and readmission rates; Parkinson's detection had no accessible early screening pathway; epidemic tracking had weeks-long detection lag times.</p>"
+      "body": "<p>Telefonica was investing in health and digital services as a strategic growth area adjacent to core telecoms. The challenge was demonstrating that a telecoms company could build products with genuine clinical and commercial value \u2014 not just technology prototypes. Each product area had a distinct business problem: chronic disease management had high healthcare costs and readmission rates; Parkinson's detection had no accessible early screening pathway; epidemic tracking had weeks-long detection lag times.</p>"
     },
     {
       "title": "My role",
@@ -59,7 +59,7 @@
     },
     {
       "title": "Approach",
-      "body": "<p>Each product was grounded in field research before design began — ethnographic home visits for chronic disease, clinical workflow research for Parkinson's, mobility data analysis for pandemic prediction. I ran co-design workshops with clinical staff, facilitated cross-functional delivery, and managed the tension between the pace of a commercial product team and the rigour required by clinical and regulatory partners. Across 20+ MVPs, the selection of which 5 to launch was driven by validated demand and commercial viability, not technical interest.</p>"
+      "body": "<p>Each product was grounded in field research before design began \u2014 ethnographic home visits for chronic disease, clinical workflow research for Parkinson's, mobility data analysis for pandemic prediction. I ran co-design workshops with clinical staff, facilitated cross-functional delivery, and managed the tension between the pace of a commercial product team and the rigour required by clinical and regulatory partners. Across 20+ MVPs, the selection of which 5 to launch was driven by validated demand and commercial viability, not technical interest.</p>"
     },
     {
       "title": "Outcome",
@@ -68,8 +68,7 @@
   ],
   "gallery": [
     "assets/projects/35f76183-7377-8167-aade-e9ceff1342ed--telefonica-o2/01.mov",
-    "assets/projects/35f76183-7377-8167-aade-e9ceff1342ed--telefonica-o2/02.jpg",
-    "assets/projects/35f76183-7377-8167-aade-e9ceff1342ed--telefonica-o2/03.mov",
-    "assets/projects/35f76183-7377-8167-aade-e9ceff1342ed--telefonica-o2/04.jpg"
+    "assets/projects/35f76183-7377-8167-aade-e9ceff1342ed--telefonica-o2/02.mov",
+    "assets/projects/35f76183-7377-8167-aade-e9ceff1342ed--telefonica-o2/03.jpg"
   ]
 }
