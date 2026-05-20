@@ -523,6 +523,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
       setTimeout(function() {
         var needsVideo = isVideo(src);
         var isCurrentlyVideo = el.tagName === 'VIDEO';
+        if (isCurrentlyVideo && !needsVideo) el.pause();
         if (needsVideo !== isCurrentlyVideo) {
           var next = needsVideo
             ? Object.assign(document.createElement('video'), { className:'cs-cover__img', autoplay:true, muted:true, loop:true })
@@ -531,7 +532,6 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
           el.parentNode.replaceChild(next, el);
           el = next;
         }
-        if (isCurrentlyVideo && !needsVideo) el.pause();
         if (loader) loader.classList.add('is-loading');
         showReady(el, loader, cover);
         el.src = src;
