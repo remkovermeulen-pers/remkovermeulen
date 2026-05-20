@@ -1,14 +1,5 @@
 [
   {
-    "notionId": "36076183-7377-81aa-96b0-ffe2ed832cad",
-    "title": "When AI becomes your product team's sixth sense",
-    "category": "Product",
-    "year": "2026",
-    "readingTime": 5,
-    "url": "https://www.notion.so/When-AI-becomes-your-product-team-s-sixth-sense-36076183737781aa96b0ffe2ed832cad",
-    "coverImage": "https://images.unsplash.com/photo-1750969185331-e03829f72c7d?w=1800&q=80"
-  },
-  {
     "notionId": "36076183-7377-81d5-a77a-fde091ba3bd2",
     "title": "The flat organisation is already here",
     "category": "Strategy",
@@ -18,14 +9,13 @@
     "coverImage": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1800&q=80"
   },
   {
-    "notionId": "35f76183-7377-81c5-91df-e11937e6d0e7",
-    "title": "Innovation in product management",
+    "notionId": "36076183-7377-81aa-96b0-ffe2ed832cad",
+    "title": "When AI becomes your product team's sixth sense",
     "category": "Product",
-    "year": "2025",
+    "year": "2026",
     "readingTime": 5,
-    "url": "https://remkovermeulen.com/post/797567523473260544/innovation-in-product-management",
-    "coverImage": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1800&q=80",
-    "youtubeVideoId": "BcC6DGljJyc"
+    "url": "https://www.notion.so/When-AI-becomes-your-product-team-s-sixth-sense-36076183737781aa96b0ffe2ed832cad",
+    "coverImage": "https://images.unsplash.com/photo-1750969185331-e03829f72c7d?w=1800&q=80"
   },
   {
     "notionId": "35f76183-7377-81e5-bdd5-ced328545bbd",
@@ -38,6 +28,16 @@
     "youtubeVideoId": "2TgZEUm-xqE"
   },
   {
+    "notionId": "35f76183-7377-81c5-91df-e11937e6d0e7",
+    "title": "Innovation in product management",
+    "category": "Product",
+    "year": "2025",
+    "readingTime": 5,
+    "url": "https://remkovermeulen.com/post/797567523473260544/innovation-in-product-management",
+    "coverImage": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1800&q=80",
+    "youtubeVideoId": "BcC6DGljJyc"
+  },
+  {
     "notionId": "35f76183-7377-8187-bc22-fff091108594",
     "title": "Uncertain times as drivers of innovation",
     "category": "Strategy",
@@ -46,45 +46,6 @@
     "url": "https://youtu.be/_Q12lV3EW8U",
     "coverImage": "https://images.unsplash.com/photo-1519120944692-1a8d8cfc107f?w=1800&q=80",
     "youtubeVideoId": "_Q12lV3EW8U"
-  },
-  {
-    "notionId": "35f76183-7377-8185-a1ac-d3beabbf4d6b",
-    "title": "Innovation lessons for product managers",
-    "category": "Strategy",
-    "year": "2023",
-    "readingTime": 4,
-    "url": "https://remkovermeulen.com/post/695178620623273984/innovation-lessons-for-product-managers-balancing",
-    "coverImage": "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=1800&q=80",
-    "youtubeVideoId": "HQxD8d_QXGw"
-  },
-  {
-    "notionId": "35f76183-7377-818b-a162-c1fa8913b926",
-    "title": "Rethinking healthcare for the future",
-    "category": "Strategy",
-    "year": "2023",
-    "readingTime": 4,
-    "url": "https://remkovermeulen.com/post/695177632870957056/rethinking-healthcare-for-the-future-a-while-ago-i",
-    "coverImage": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1800&q=80",
-    "youtubeVideoId": "nA8r9nEDVAo"
-  },
-  {
-    "notionId": "35f76183-7377-81b1-b765-ce23d6147863",
-    "title": "NHS trial at King's College London of Koa Health Foundations",
-    "category": "Research",
-    "year": "2023",
-    "readingTime": 3,
-    "url": "https://koahealth.com/blog-post/landmark-trial-of-nhs-staff-reveals-promising-solution-to-improve-mental-health",
-    "coverImage": "assets/articles/35f76183-7377-81b1-b765-ce23d6147863.jpeg"
-  },
-  {
-    "notionId": "35f76183-7377-81e7-95af-e7d359d83155",
-    "title": "Machine learning algorithm accurately predicts mental health crises",
-    "category": "Research",
-    "year": "2023",
-    "readingTime": 3,
-    "url": "https://remkovermeulen.com/post/695181928055373824/machine-learning-algorithm-accurately-predicts",
-    "coverImage": "https://raw.githubusercontent.com/remkovermeulen-pers/remkovermeulen/main/assets/articles/machine-learning-algorithm-accurately-predicts-mental-health-crises.jpg",
-    "coverImagePosition": "top"
   },
   {
     "notionId": "bfd0935f-64ef-430b-9d50-ccdcfe537ee2",
@@ -100,13 +61,52 @@
     ]
   },
   {
-    "notionId": "35f76183-7377-8100-abf3-f3126c737e3e",
-    "title": "Product management and design of future products",
-    "category": "Product",
+    "notionId": "35f76183-7377-81e7-95af-e7d359d83155",
+    "title": "Machine learning algorithm accurately predicts mental health crises",
+    "category": "Research",
+    "year": "2023",
+    "readingTime": 3,
+    "url": "https://remkovermeulen.com/post/695181928055373824/machine-learning-algorithm-accurately-predicts",
+    "coverImage": "https://raw.githubusercontent.com/remkovermeulen-pers/remkovermeulen/main/assets/articles/machine-learning-algorithm-accurately-predicts-mental-health-crises.jpg",
+    "coverImagePosition": "top"
+  },
+  {
+    "notionId": "35f76183-7377-81b1-b765-ce23d6147863",
+    "title": "NHS trial at King's College London of Koa Health Foundations",
+    "category": "Research",
+    "year": "2023",
+    "readingTime": 3,
+    "url": "https://koahealth.com/blog-post/landmark-trial-of-nhs-staff-reveals-promising-solution-to-improve-mental-health",
+    "coverImage": "assets/articles/35f76183-7377-81b1-b765-ce23d6147863.jpeg"
+  },
+  {
+    "notionId": "35f76183-7377-818b-a162-c1fa8913b926",
+    "title": "Rethinking healthcare for the future",
+    "category": "Strategy",
+    "year": "2023",
+    "readingTime": 4,
+    "url": "https://remkovermeulen.com/post/695177632870957056/rethinking-healthcare-for-the-future-a-while-ago-i",
+    "coverImage": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1800&q=80",
+    "youtubeVideoId": "nA8r9nEDVAo"
+  },
+  {
+    "notionId": "35f76183-7377-8185-a1ac-d3beabbf4d6b",
+    "title": "Innovation lessons for product managers",
+    "category": "Strategy",
+    "year": "2023",
+    "readingTime": 4,
+    "url": "https://remkovermeulen.com/post/695178620623273984/innovation-lessons-for-product-managers-balancing",
+    "coverImage": "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=1800&q=80",
+    "youtubeVideoId": "HQxD8d_QXGw"
+  },
+  {
+    "notionId": "35f76183-7377-81ff-99f2-ffde409f0387",
+    "title": "Good product strategy, bad product strategy",
+    "category": "Strategy",
     "year": "2022",
     "readingTime": 3,
-    "url": "https://remkovermeulen.com/post/695185190500302848/product-management-and-design-of-future-products",
-    "coverImage": "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?w=1800&q=80"
+    "url": "https://remkovermeulen.com/post/695286185377103872/good-product-strategy-bad-product-strategy",
+    "coverImage": "https://images.unsplash.com/photo-1529699211952-734e80c4d42b?w=1800&q=80"
   },
   {
     "notionId": "35f76183-7377-813e-b3aa-e36a07f1b991",
@@ -118,12 +118,12 @@
     "coverImage": "https://images.unsplash.com/photo-1571008887538-b36bb32f4571?w=1800&q=80"
   },
   {
-    "notionId": "35f76183-7377-81ff-99f2-ffde409f0387",
-    "title": "Good product strategy, bad product strategy",
-    "category": "Strategy",
+    "notionId": "35f76183-7377-8100-abf3-f3126c737e3e",
+    "title": "Product management and design of future products",
+    "category": "Product",
     "year": "2022",
     "readingTime": 3,
-    "url": "https://remkovermeulen.com/post/695286185377103872/good-product-strategy-bad-product-strategy",
-    "coverImage": "https://images.unsplash.com/photo-1529699211952-734e80c4d42b?w=1800&q=80"
+    "url": "https://remkovermeulen.com/post/695185190500302848/product-management-and-design-of-future-products",
+    "coverImage": "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?w=1800&q=80"
   }
 ]
