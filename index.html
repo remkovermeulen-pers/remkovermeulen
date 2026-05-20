@@ -127,6 +127,11 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
   height:24px; max-width:90px; width:auto; object-fit:contain;
   filter:brightness(0) invert(1); opacity:0.9; pointer-events:none;
 }
+.proj__org-name {
+  position:absolute; bottom:14px; left:14px; z-index:3;
+  font-size:10px; font-weight:700; letter-spacing:0.12em; text-transform:uppercase;
+  color:rgba(255,255,255,0.85); pointer-events:none;
+}
 .proj__chip {
   position:absolute; top:14px; right:14px;
   background:var(--primary); color:var(--on-primary);
@@ -134,7 +139,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
   letter-spacing:0.2em; text-transform:uppercase; z-index:2;
 }
 .proj h3 { margin:0; font-family:var(--font-display); font-weight:500; font-size:26px; line-height:1.2; }
-.proj__lede { margin:0; font-size:14px; color:var(--muted-2); line-height:1.55; }
+.proj__lede { margin:0; font-size:14px; color:var(--muted-2); line-height:1.55; flex-grow:1; }
 .proj__metrics {
   display:grid; grid-template-columns:1fr 1fr; gap:18px;
   border-top:1px solid var(--line); padding-top:18px; margin-top:auto;
@@ -304,7 +309,14 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
             var metricsHtml = metrics.map(function(m){
               return '<div><span class="metric">'+esc(m.value)+'</span><div class="metric-label">'+esc(m.label)+'</div></div>';
             }).join('');
-            var logoHtml = p.logoDomain ? '<img class="proj__logo" src="https://cdn.brandfetch.io/'+esc(p.logoDomain)+'/w/300/h/150/logo?theme=dark" alt="">' : '';
+            var org = (p.organisations||[])[0];
+            var logoHtml = p.logoDomain
+              ? '<img class="proj__logo" src="https://cdn.brandfetch.io/'+esc(p.logoDomain)+'/w/300/h/150/logo?theme=dark" alt="">'
+              : org && org.logo
+                ? '<img class="proj__logo" src="assets/logos/'+esc(org.logo)+'" alt="'+esc(org.name||'')+'">'
+                : org && org.name
+                  ? '<span class="proj__org-name">'+esc(org.name)+'</span>'
+                  : '';
             return '<a href="case-study?id='+esc(p.notionId)+'" class="proj">'
               +'<div class="proj__img">'
               +'<span class="proj__chip">'+esc(p.sector)+'</span>'
