@@ -140,6 +140,10 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
 .cs-cover__dots { position:absolute; bottom:16px; right:20px; display:flex; gap:6px; z-index:2; }
 .cs-cover__dot { width:6px; height:6px; border-radius:50%; background:rgba(255,255,255,0.5); border:1px solid rgba(0,0,0,.2); cursor:pointer; transition:background .2s; }
 .cs-cover__dot.is-active { background:#fff; }
+.cs-cover__loader { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:32px; height:32px; opacity:0; pointer-events:none; transition:opacity .2s; z-index:3; }
+.cs-cover__loader.is-loading { opacity:1; }
+.cs-cover__loader::before { content:''; display:block; width:32px; height:32px; border-radius:50%; border:2px solid rgba(255,255,255,0.25); border-top-color:#fff; animation:cs-spin .7s linear infinite; }
+@keyframes cs-spin { to { transform:rotate(360deg); } }
 
 /* BODY GRID */
 .cs-body { margin-top:64px; display:grid; grid-template-columns:220px 1fr; gap:48px; }
@@ -325,6 +329,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
         '<p class="cs-hero__lede">' + esc(ledeText) + '</p>' +
         bylineHtml +
         '<div class="cs-cover"' + slideData + '>' +
+          '<div class="cs-cover__loader"></div>' +
           prevBtn +
           buildMediaEl(proj.coverImage, proj.title) +
           (getLogoFile(proj) ? '<img class="cs-cover__logo" src="' + logoUrl(getLogoFile(proj)) + '" alt="" onerror="this.remove()">' : '') +
@@ -475,7 +480,21 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
 
   // Cover slideshow
   (function() {
+    function showReady(el, loader) {
+      var readyEvent = el.tagName === 'VIDEO' ? 'canplay' : 'load';
+      var fallback;
+      function onReady() {
+        clearTimeout(fallback);
+        el.removeEventListener(readyEvent, onReady);
+        if (loader) loader.classList.remove('is-loading');
+        el.style.opacity = '1';
+      }
+      el.addEventListener(readyEvent, onReady);
+      fallback = setTimeout(onReady, 4000);
+    }
+
     function goTo(cover, slides, idx) {
+      var loader = cover.querySelector('.cs-cover__loader');
       var cur = (idx + slides.length) % slides.length;
       cover.dataset.cur = cur;
       var src = slides[cur];
@@ -493,8 +512,9 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
           el = next;
         }
         if (isCurrentlyVideo && !needsVideo) el.pause();
+        if (loader) loader.classList.add('is-loading');
+        showReady(el, loader);
         el.src = src;
-        el.style.opacity = '1';
         cover.querySelectorAll('.cs-cover__dot').forEach(function(d, i) {
           d.classList.toggle('is-active', i === cur);
         });
@@ -519,6 +539,20 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
       var cur = parseInt(cover.dataset.cur || '0', 10);
       if (e.key === 'ArrowLeft') goTo(cover, slides, cur - 1);
       if (e.key === 'ArrowRight') goTo(cover, slides, cur + 1);
+    });
+
+    // Attach loader to the initial media element (covers first-load of videos)
+    document.addEventListener('DOMContentLoaded', function() {
+      var cover = document.querySelector('.cs-cover');
+      if (!cover) return;
+      var el = cover.querySelector('.cs-cover__img');
+      var loader = cover.querySelector('.cs-cover__loader');
+      if (!el || !loader) return;
+      var ready = (el.tagName === 'VIDEO') ? el.readyState >= 3 : el.complete;
+      if (!ready) {
+        loader.classList.add('is-loading');
+        showReady(el, loader);
+      }
     });
   })();
 
