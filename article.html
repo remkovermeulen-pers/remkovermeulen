@@ -273,7 +273,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
     document.title = article.title + ' — Remko Vermeulen';
     var artDesc = article.summary || article.lede || '';
     var artUrl = 'https://remkovermeulen.com/article?id=' + (article.notionId || article.id || '');
-    var artImg = article.coverImage ? 'https://remkovermeulen.com/' + article.coverImage : 'https://remkovermeulen.com/assets/remko.jpg';
+    var artImg = article.coverImage || 'https://remkovermeulen.com/assets/remko.jpg';
     function setMeta(sel, attr, val) { var el = document.querySelector(sel); if (el && val) el.setAttribute(attr, val); }
     setMeta('meta[name="description"]', 'content', artDesc);
     setMeta('meta[property="og:title"]', 'content', article.title + ' — Remko Vermeulen');
@@ -346,7 +346,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
     var lede = ledeEl ? ledeEl.textContent.trim() : '';
 
     // Cover image
-    var coverSrc = COVER_IMAGES[article.category] || DEFAULT_COVER;
+    var coverSrc = article.coverImage || COVER_IMAGES[article.category] || DEFAULT_COVER;
 
     // Pager
     var idx = all.findIndex(function(a) { return a.notionId === id; });
