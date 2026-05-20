@@ -125,7 +125,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
 .proj__logo {
   position:absolute; bottom:14px; left:14px; z-index:3;
   height:24px; max-width:90px; width:auto; object-fit:contain;
-  filter:brightness(0) invert(1); opacity:0.9; pointer-events:none;
+  filter:brightness(0) invert(1) drop-shadow(0 1px 4px rgba(0,0,0,0.7)); opacity:0.95; pointer-events:none;
 }
 .proj__org-name {
   position:absolute; bottom:14px; left:14px; z-index:3;
@@ -142,7 +142,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
 .proj__lede { margin:0; font-size:14px; color:var(--muted-2); line-height:1.55; flex-grow:1; }
 .proj__metrics {
   display:grid; grid-template-columns:1fr 1fr; gap:18px;
-  border-top:1px solid var(--line); padding-top:18px; margin-top:auto;
+  border-top:1px solid var(--line); padding-top:18px; margin-top:auto; min-height:95px;
 }
 .proj__metrics--1 { grid-template-columns:1fr; }
 @media (max-width:880px) {
