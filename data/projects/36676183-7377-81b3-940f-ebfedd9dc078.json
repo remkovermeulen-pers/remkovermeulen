@@ -23,10 +23,6 @@
       "logo": "mercedes-benz.svg"
     }
   ],
-  "gallery": [
-    "assets/projects/36676183-7377-81b3-940f-ebfedd9dc078--mercedes-benz/01.avif",
-    "assets/projects/36676183-7377-81b3-940f-ebfedd9dc078--mercedes-benz/02.avif"
-  ],
   "sections": [
     {
       "title": "Context",
@@ -48,5 +44,9 @@
       "title": "Outcome",
       "body": "<ul>\n<li>3 teams developed concrete 2035 initiatives pitched to Mercedes management</li>\n<li>Live voting produced a prioritised shortlist of disruptive concepts across all three horizons</li>\n<li>Each team delivered a landing page, prototype, and explainer video built with AI tools within the session</li>\n<li>Large majority of participants had no prior AI experience yet produced tangible, presentable outputs on the day</li>\n<li>Positive reception from client; full-day format ran to schedule across 9.5 hours</li>\n</ul>"
     }
+  ],
+  "gallery": [
+    "assets/projects/36676183-7377-81b3-940f-ebfedd9dc078--mercedes-benz/01.avif",
+    "assets/projects/36676183-7377-81b3-940f-ebfedd9dc078--mercedes-benz/02.avif"
   ]
 }
