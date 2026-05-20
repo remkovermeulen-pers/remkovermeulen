@@ -92,7 +92,7 @@
       "Product"
     ],
     "lede": "",
-    "description": "Led product end-to-end at a PropTech SaaS startup, improving unit economics from 162% to 21% CAC/LTV and growing active users by 87% through better onboarding and AI-powered document tooling.",
+    "description": "Led product end-to-end at a PropTech SaaS startup, improving unit economics from 162% to 21% CAC/LTV and growing active users by 87% through better onboarding and increase of customer value including an AI-powered document data extraction tool.",
     "coverImage": "assets/projects/35f76183-7377-816c-8a7f-e43d868da1c7--signassist/01.jpeg",
     "metrics": [
       {
@@ -122,7 +122,7 @@
   },
   {
     "notionId": "36076183-7377-81ce-92bc-caa57a662ca6",
-    "title": "Xploratory Future ideation",
+    "title": "Xploratory future ideation",
     "sector": "Health",
     "status": "Live",
     "year": 2018,
@@ -208,7 +208,7 @@
   },
   {
     "notionId": "36076183-7377-8195-b39a-cfa1657491db",
-    "title": "Pandemic Prediction (Zika/Ebola)",
+    "title": "Pandemic prediction (Zika/Ebola)",
     "sector": "Health",
     "status": "Live",
     "year": 2021,
@@ -235,7 +235,7 @@
   },
   {
     "notionId": "36076183-7377-81ad-ad56-ddcc3b80e04d",
-    "title": "Mental Crisis Prediction",
+    "title": "Mental crisis prediction",
     "sector": "Health",
     "status": "Live",
     "year": 2021,
@@ -333,7 +333,7 @@
   },
   {
     "notionId": "36076183-7377-8191-b686-ee42ad8574d4",
-    "title": "Ting Happy Moments",
+    "title": "Ting happy moments",
     "sector": "Health",
     "status": "Live",
     "year": 2019,
@@ -351,7 +351,7 @@
   },
   {
     "notionId": "36076183-7377-81ae-9453-ebb3a48a1cf3",
-    "title": "TATU — Interactive Tattoo",
+    "title": "TATU — interactive tattoo",
     "sector": "Health",
     "status": "Live",
     "year": 2018,
@@ -369,7 +369,7 @@
   },
   {
     "notionId": "36076183-7377-814a-9f9c-f356f12270ef",
-    "title": "Brain Training",
+    "title": "Brain training",
     "sector": "Health",
     "status": "Live",
     "year": 2017,
@@ -405,7 +405,7 @@
   },
   {
     "notionId": "36076183-7377-816c-9a63-e4952bd248d0",
-    "title": "Parkinson Voice Detection",
+    "title": "Parkinson voice detection",
     "sector": "Health",
     "status": "Live",
     "year": 2016,
@@ -437,7 +437,7 @@
   },
   {
     "notionId": "36076183-7377-81c8-85aa-d341a65cf2b5",
-    "title": "Bipolar Detection",
+    "title": "Bipolar detection",
     "sector": "Health",
     "status": "Live",
     "year": 2016,
@@ -464,7 +464,7 @@
   },
   {
     "notionId": "36076183-7377-81c6-9ab7-c49d505b389a",
-    "title": "Health at Home",
+    "title": "Health at home",
     "sector": "Health",
     "status": "Live",
     "year": 2014,
@@ -497,7 +497,7 @@
   },
   {
     "notionId": "36076183-7377-812b-9600-f901966bdb08",
-    "title": "My Health",
+    "title": "My health",
     "sector": "Health",
     "status": "Live",
     "year": 2013,
