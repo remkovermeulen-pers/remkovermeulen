@@ -269,25 +269,36 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
   var DEFAULT_COVER = 'https://images.unsplash.com/photo-1457369804613-52c61a468e7d?w=1800&q=80';
 
   function esc(s) { return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+  function slugify(s) { return String(s).toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,''); }
+  function articleUrl(a) { return 'article.html?slug=' + slugify(a.title); }
 
-  var id = new URLSearchParams(location.search).get('id');
+  var params = new URLSearchParams(location.search);
+  var slug = params.get('slug');
+  var idParam = params.get('id');
   var main = document.getElementById('main-content');
 
-  if (!id) { location.href = 'articles.html'; return; }
+  if (!slug && !idParam) { location.href = 'articles.html'; return; }
 
-  Promise.all([
-    fetch('data/articles/' + id + '.json').then(function(r) {
+  fetch('data/articles.json').then(function(r) { return r.json(); }).then(function(all) {
+    var meta;
+    if (slug) {
+      meta = all.find(function(a) { return slugify(a.title) === slug; });
+    } else {
+      meta = all.find(function(a) { return a.notionId === idParam; });
+      if (meta) history.replaceState(null, '', 'article.html?slug=' + slugify(meta.title));
+    }
+    if (!meta) throw new Error('not found');
+    return fetch('data/articles/' + meta.notionId + '.json').then(function(r) {
       if (!r.ok) throw new Error('not found');
       return r.json();
-    }),
-    fetch('data/articles.json').then(function(r) { return r.json(); })
-  ]).then(function(results) {
+    }).then(function(article) { return [article, all]; });
+  }).then(function(results) {
     var article = results[0];
     var all = results[1];
 
     document.title = article.title + ' — Remko Vermeulen';
     var artDesc = article.summary || article.lede || '';
-    var artUrl = 'https://remkovermeulen.com/article?id=' + (article.notionId || article.id || '');
+    var artUrl = 'https://remkovermeulen.com/article.html?slug=' + slugify(article.title);
     var artImg = article.coverImage || 'https://remkovermeulen.com/assets/remko.jpg';
     function setMeta(sel, attr, val) { var el = document.querySelector(sel); if (el && val) el.setAttribute(attr, val); }
     setMeta('meta[name="description"]', 'content', artDesc);
@@ -364,20 +375,20 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
     var coverSrc = article.coverImage || COVER_IMAGES[article.category] || DEFAULT_COVER;
 
     // Pager
-    var idx = all.findIndex(function(a) { return a.notionId === id; });
+    var idx = all.findIndex(function(a) { return a.notionId === article.notionId; });
     var prev = idx > 0 ? all[idx - 1] : null;
     var next = idx >= 0 ? all[(idx + 1) % all.length] : null;
-    if (next && next.notionId === id) next = null;
+    if (next && next.notionId === article.notionId) next = null;
 
     var counter = idx >= 0 ? (String(idx + 1).padStart(2,'0') + ' / ' + String(all.length).padStart(2,'0')) : '';
     var prevLink = prev
-      ? '<a href="article.html?id=' + esc(prev.notionId) + '" class="proj-pager__link proj-pager__link--prev">'
+      ? '<a href="' + articleUrl(prev) + '" class="proj-pager__link proj-pager__link--prev">'
         + '<span class="proj-pager__arrow"><svg width="16" height="12" viewBox="0 0 16 12" fill="none"><path d="M15 6H1m0 0l5-5m-5 5l5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></span>'
         + '<span class="proj-pager__meta"><span class="proj-pager__label">Previous</span><span class="proj-pager__title">' + esc(prev.title) + '</span></span>'
         + '</a>'
       : '<span></span>';
     var nextPagerLink = next
-      ? '<a href="article.html?id=' + esc(next.notionId) + '" class="proj-pager__link proj-pager__link--next">'
+      ? '<a href="' + articleUrl(next) + '" class="proj-pager__link proj-pager__link--next">'
         + '<span class="proj-pager__meta"><span class="proj-pager__label">Next</span><span class="proj-pager__title">' + esc(next.title) + '</span></span>'
         + '<span class="proj-pager__arrow"><svg width="16" height="12" viewBox="0 0 16 12" fill="none"><path d="M1 6h14m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></span>'
         + '</a>'
@@ -390,7 +401,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
       var nextCover = next.coverImage || COVER_IMAGES[next.category] || DEFAULT_COVER;
       nextHtml = '<section class="next-proj">'
         + '<p class="next-proj__eyebrow">Next Article</p>'
-        + '<a href="article.html?id=' + esc(next.notionId) + '" class="next-proj__card">'
+        + '<a href="' + articleUrl(next) + '" class="next-proj__card">'
         + '<img class="bw-img" src="' + nextCover + '" alt="' + esc(next.title) + '">'
         + '<div class="next-proj__text">'
         + '<span class="tag-line">' + esc(next.category) + '</span>'
