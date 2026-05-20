@@ -76,6 +76,13 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
   .site-nav__inner { height:60px; }
   .site-nav__brand { font-size:18px; }
   .site-nav__links { display:none; }
+  .site-nav__links.is-open {
+    display:flex; flex-direction:column; gap:20px;
+    position:absolute; top:60px; left:0; right:0;
+    background:var(--bg); border-bottom:1px solid var(--line);
+    padding:20px var(--pad-mobile); z-index:49;
+  }
+
   .site-nav__cta { padding:9px 14px; font-size:10px; letter-spacing:0.14em; }
   .site-nav__burger { display:inline-flex; }
 }
