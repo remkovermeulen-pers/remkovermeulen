@@ -312,6 +312,22 @@ async function fetchArticles() {
     console.log(`  ✓ ${meta.title}`);
   }
 
+  // Append any manually-created articles (contentSource: 'manual') not in Notion
+  const notionIds = new Set(metaList.map(m => m.notionId));
+  for (const file of fs.readdirSync(articlesDir).sort()) {
+    if (!file.endsWith('.json')) continue;
+    try {
+      const data = JSON.parse(fs.readFileSync(path.join(articlesDir, file), 'utf8'));
+      if (data.contentSource === 'manual' && !notionIds.has(data.notionId)) {
+        const { content, contentSource, ...meta } = data;
+        metaList.push(meta);
+        console.log(`  + Manual article: ${data.title}`);
+      }
+    } catch (e) { /* skip malformed files */ }
+  }
+  // Re-sort by year descending so manual articles appear in the right position
+  metaList.sort((a, b) => (b.year || '') > (a.year || '') ? 1 : -1);
+
   fs.writeFileSync(
     path.join(__dirname, '..', 'data', 'articles.json'),
     JSON.stringify(metaList, null, 2)
