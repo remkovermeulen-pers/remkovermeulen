@@ -122,16 +122,6 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
   position:relative; background:var(--bg-elev); flex-shrink:0;
 }
 .proj__img img { width:100%; height:100%; object-fit:cover; }
-.proj__logo {
-  position:absolute; bottom:14px; left:14px; z-index:3;
-  height:24px; max-width:90px; width:auto; object-fit:contain;
-  filter:brightness(0) invert(1) drop-shadow(0 1px 4px rgba(0,0,0,0.7)); opacity:0.95; pointer-events:none;
-}
-.proj__org-name {
-  position:absolute; bottom:14px; left:14px; z-index:3;
-  font-size:10px; font-weight:700; letter-spacing:0.12em; text-transform:uppercase;
-  color:rgba(255,255,255,0.85); pointer-events:none;
-}
 .proj__chip {
   position:absolute; top:14px; right:14px;
   background:var(--primary); color:var(--on-primary);
@@ -309,19 +299,10 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
             var metricsHtml = metrics.map(function(m){
               return '<div><span class="metric">'+esc(m.value)+'</span><div class="metric-label">'+esc(m.label)+'</div></div>';
             }).join('');
-            var org = (p.organisations||[])[0];
-            var logoHtml = p.logoDomain
-              ? '<img class="proj__logo" src="https://cdn.brandfetch.io/'+esc(p.logoDomain)+'/w/300/h/150/logo?theme=dark" alt="">'
-              : org && org.logo
-                ? '<img class="proj__logo" src="assets/logos/'+esc(org.logo)+'" alt="'+esc(org.name||'')+'">'
-                : org && org.name
-                  ? '<span class="proj__org-name">'+esc(org.name)+'</span>'
-                  : '';
             return '<a href="case-study?id='+esc(p.notionId)+'" class="proj">'
               +'<div class="proj__img">'
               +'<span class="proj__chip">'+esc(p.sector)+'</span>'
               +'<img class="bw-img" src="'+esc(p.coverImage)+'" alt="'+esc(p.title)+'" loading="lazy">'
-              +logoHtml
               +'</div>'
               +'<h3>'+esc(p.title)+'</h3>'
               +((p.description||p.lede) ? '<p class="proj__lede">'+esc(p.description||p.lede)+'</p>' : '')
