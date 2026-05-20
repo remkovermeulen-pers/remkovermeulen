@@ -161,6 +161,30 @@
     ]
   },
   {
+    "notionId": "36676183-7377-81b3-940f-ebfedd9dc078",
+    "title": "Mercedes-Benz Innovation Day",
+    "sector": "Automotive",
+    "status": "Live",
+    "year": 2025,
+    "priority": 999,
+    "tags": [
+      "Strategy",
+      "Design",
+      "Product"
+    ],
+    "lede": "",
+    "description": "Full-day innovation workshop for Mercedes-Benz focused on the 2035 customer journey. Theme: How Transformative Forces Will Shape Our Customers' Journeys.",
+    "coverImage": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1200&q=80",
+    "metrics": [],
+    "logoDomain": "",
+    "organisations": [
+      {
+        "name": "Mercedes Benz",
+        "logo": "mercedes-benz.svg"
+      }
+    ]
+  },
+  {
     "notionId": "36076183-7377-812d-9aec-f4697182cf9d",
     "title": "Perspectives",
     "sector": "Health",

@@ -1,0 +1,48 @@
+{
+  "id": "36676183-7377-81b3-940f-ebfedd9dc078",
+  "title": "Mercedes-Benz Innovation Day",
+  "sector": "Automotive",
+  "status": "Live",
+  "year": 2025,
+  "tags": [
+    "Strategy",
+    "Design",
+    "Product"
+  ],
+  "lede": "",
+  "description": "Full-day innovation workshop for Mercedes-Benz focused on the 2035 customer journey. Theme: How Transformative Forces Will Shape Our Customers' Journeys.",
+  "coverImage": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1200&q=80",
+  "role": "",
+  "timeline": "",
+  "partners": [],
+  "metrics": [],
+  "logoDomain": "",
+  "organisations": [
+    {
+      "name": "Mercedes Benz",
+      "logo": "mercedes-benz.svg"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Context",
+      "body": "<p>Mercedes-Benz commissioned a full-day innovation workshop for their leadership and product team in Spain, focused on the 2035 customer journey. The brief came through The Bridge School. The day brought together ~20 participants from across the organisation to explore how transformative forces — autonomous driving, electrification, platform models, sustainability — would reshape the way customers discover, buy, use, and end ownership of a car.</p>"
+    },
+    {
+      "title": "Problem",
+      "body": "<p>The automotive industry is facing simultaneous disruption across hardware, software, and services. Mercedes-Benz needed to move their team beyond incremental thinking and get concrete about what the customer journey looks like in 2035 — and what that means for the business today. The challenge was not just inspiration but actionable output: teams needed to leave with a concrete initiative they could take forward.</p>"
+    },
+    {
+      "title": "My role",
+      "body": "<p>I designed and led the full day as lead facilitator, working with sector experts in mobility, energy, and sustainability. I structured the agenda, developed the frameworks used in the workshop, ran the morning keynote session, and facilitated the afternoon design sprint and Shark Tank-style pitch session. I also developed the supporting materials including the Journey Canvas 2035 and the Horizons Framework.</p>"
+    },
+    {
+      "title": "Approach",
+      "body": "<p>The day was split into two halves. The morning built a shared foundation: projecting the current Mercedes customer journey, presenting cases of industries that had reinvented theirs (Netflix, Spotify, Airbnb), then unpacking five disruptive forces through external examples — Power Shift, Code on Wheels, Beyond Ownership, Freedom on Demand, and Green Loop. A live-voting session on the 2035 customer profile closed the morning with a shared point of view.</p>\n<p>The afternoon shifted to creation. Teams were divided across three work horizons — Car-as-a-Product, Car-as-a-Platform, and Car-as-a-Service — and worked through a structured design sprint to build a Journey Canvas 2035, then develop a single moonshot initiative. Teams pitched Shark Tank-style to a panel of Mercedes management, with live audience voting on the most audacious, most viable, and most customer-centric concepts.</p>"
+    },
+    {
+      "title": "Outcome",
+      "body": "<ul>\n<li>3 teams developed concrete 2035 initiatives pitched to Mercedes management</li>\n<li>Live voting produced a prioritised shortlist of disruptive concepts across all three horizons</li>\n<li>Positive reception from client; full-day format ran to schedule across 9.5 hours</li>\n</ul>"
+    }
+  ]
+}
