@@ -48,11 +48,11 @@
       "Research"
     ],
     "lede": "",
-    "description": "Co-founded and scaled a digital mental health company from 1 to 40 people, raising \u20ac66M and reaching 3M users. Built a portfolio of clinically validated products in partnership with the NHS, Harvard, and Janssen.",
+    "description": "Co-founded and scaled a digital mental health company from 1 to 40 people, raising €66M and reaching 3M users. Built a portfolio of clinically validated products in partnership with the NHS, Harvard, and Janssen.",
     "coverImage": "assets/projects/35f76183-7377-8135-9dd1-d1b22dfa6da0--koa-health/01.jpg",
     "metrics": [
       {
-        "value": "\u20ac66M",
+        "value": "€66M",
         "label": "investment raised"
       },
       {
@@ -218,7 +218,7 @@
       "Research"
     ],
     "lede": "",
-    "description": "Used mobile network mobility data to cut epidemic source detection from weeks to hours, and predict outbreak spread before clinical data surfaced \u2014 validated across Ebola and Zika in collaboration with WHO and Harvard.",
+    "description": "Used mobile network mobility data to cut epidemic source detection from weeks to hours, and predict outbreak spread before clinical data surfaced — validated across Ebola and Zika in collaboration with WHO and Harvard.",
     "coverImage": "assets/projects/36076183-7377-8195-b39a-cfa1657491db--pandemic-prediction-zika-ebola/01.png",
     "metrics": [],
     "logoDomain": "",
@@ -302,7 +302,7 @@
     "logoDomain": "",
     "organisations": [
       {
-        "name": "Telef\u00f3nica",
+        "name": "Telefónica",
         "logo": "telefonica.com.svg"
       }
     ]
@@ -351,7 +351,7 @@
   },
   {
     "notionId": "36076183-7377-81ae-9453-ebb3a48a1cf3",
-    "title": "TATU \u2014 Interactive Tattoo",
+    "title": "TATU — Interactive Tattoo",
     "sector": "Health",
     "status": "Live",
     "year": 2018,
@@ -415,7 +415,7 @@
       "Research"
     ],
     "lede": "",
-    "description": "Developed a telephone-based Parkinson's detection service using voice analysis, achieving 78% accuracy with no specialist equipment \u2014 accessible to any patient with a mobile or landline phone.",
+    "description": "Developed a telephone-based Parkinson's detection service using voice analysis, achieving 78% accuracy with no specialist equipment — accessible to any patient with a mobile or landline phone.",
     "coverImage": "assets/projects/36076183-7377-816c-9a63-e4952bd248d0--parkinson-voice-detection/01.png",
     "metrics": [
       {
@@ -426,7 +426,7 @@
     "logoDomain": "",
     "organisations": [
       {
-        "name": "Telef\u00f3nica",
+        "name": "Telefónica",
         "logo": "telefonica.com.svg"
       },
       {
@@ -453,7 +453,7 @@
     "logoDomain": "",
     "organisations": [
       {
-        "name": "Telef\u00f3nica",
+        "name": "Telefónica",
         "logo": "telefonica.com.svg"
       },
       {
@@ -520,7 +520,7 @@
   },
   {
     "notionId": "35f76183-7377-8167-aade-e9ceff1342ed",
-    "title": "Telef\u00f3nica / O2",
+    "title": "Telefónica / O2",
     "sector": "Telco",
     "status": "Live",
     "year": 2011,
@@ -532,7 +532,7 @@
     ],
     "lede": "",
     "description": "Led UX, product and service design across 5 locations for Telefonica's global health and digital portfolio. Delivered a chronic disease service reducing mortality by 48%, Parkinson's voice detection at 78% precision, and pandemic prediction tools with WHO and Harvard.",
-    "coverImage": "assets/projects/35f76183-7377-8167-aade-e9ceff1342ed--telefonica-o2/03.jpg",
+    "coverImage": "assets/projects/35f76183-7377-8167-aade-e9ceff1342ed--telefonica-o2/01.mov",
     "metrics": [
       {
         "value": "48%",
@@ -554,7 +554,7 @@
     "logoDomain": "",
     "organisations": [
       {
-        "name": "Telef\u00f3nica",
+        "name": "Telefónica",
         "logo": "telefonica.com.svg"
       },
       {
