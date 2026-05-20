@@ -395,13 +395,14 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
     <script>
     (function(){
       function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+      function slugify(s){ return String(s).toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,''); }
       fetch('data/articles.json')
         .then(function(r){ return r.json(); })
         .then(function(articles){
           var grid = document.getElementById('article-grid');
           if (!grid) return;
           grid.innerHTML = articles.slice(0,6).map(function(a){
-            var href = a.notionId ? 'article.html?id='+esc(a.notionId) : esc(a.url||'#');
+            var href = a.notionId ? 'article.html?slug='+slugify(a.title) : esc(a.url||'#');
             var target = a.notionId ? '' : ' target="_blank" rel="noopener"';
             var rt = a.readingTime ? a.readingTime+' min read' : a.year;
             return '<a href="'+href+'"'+target+' class="article-card">'
