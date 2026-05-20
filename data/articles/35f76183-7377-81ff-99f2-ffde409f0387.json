@@ -5,11 +5,11 @@
   "year": "2022",
   "readingTime": 3,
   "url": "https://remkovermeulen.com/post/695286185377103872/good-product-strategy-bad-product-strategy",
+  "coverImage": "https://images.unsplash.com/photo-1529699211952-734e80c4d42b?w=1800&q=80",
   "tags": [
     "Strategy",
     "Product"
   ],
   "content": "<p>Once every while, every company will create or review their strategy again. An often taken route is that each department goes out and creates their own strategy: the Technology strategy, the Product strategy, the AI strategy, and the Sales strategy.</p>\n<p>Although the main strategy needs to be worked out into actions for each team, this approach often leads to a non-consistent and not-aligned strategy. Each team goes their own way until the next review.</p>\n<h2>The Rumelt lens</h2>\n<p>This week I was re-reading the book <em>Good Strategy, Bad Strategy</em> by Richard Rumelt. Although nearly a classic, the basic thoughts are 100% applicable to any product strategy.</p>\n<p>Rumelt's central argument is deceptively simple: a good strategy has a kernel made up of three elements:</p>\n<ol>\n<li><strong>A diagnosis</strong> — defining or explaining the nature of the challenge</li>\n<li><strong>A guiding policy</strong> — an overall approach to coping with or overcoming the obstacles identified in the diagnosis</li>\n<li><strong>Coherent actions</strong> — coordinated set of steps, resource commitments, and practical moves that carry out the guiding policy</li>\n</ol>\n<p>Bad strategy, by contrast, tends to be characterised by fluff (high-sounding words that say nothing), a failure to face the challenge, mistaking goals for strategy, and listing objectives without any real plan.</p>\n<h2>Applied to product</h2>\n<p>Start with the overarching company strategy. If it's solid, work it into plans for different teams — not the other way around. A product strategy that isn't derived from a genuine company-level diagnosis and guiding policy isn't a strategy; it's a wishlist.</p>\n<blockquote>A more hands-on guide on how to translate your strategy into a product strategy is written by Shreyas Doshi on Medium.</blockquote>",
-  "contentSource": "notion",
-  "coverImage": "https://images.unsplash.com/photo-1529699211952-734e80c4d42b?w=1800&q=80"
+  "contentSource": "notion"
 }
