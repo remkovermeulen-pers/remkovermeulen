@@ -10,7 +10,7 @@
   ],
   "lede": "",
   "description": "Designed a passive bipolar monitoring service using anonymised mobile network data, giving psychiatrists a continuous view of patient state between appointments without requiring any active input from patients.",
-  "coverImage": "assets/projects/36076183-7377-81c8-85aa-d341a65cf2b5--bipolar-detection/01.png",
+  "coverImage": "assets/projects/36076183-7377-81c8-85aa-d341a65cf2b5--bipolar-detection/01.svg",
   "role": "",
   "timeline": "",
   "partners": [],
@@ -18,7 +18,7 @@
   "logoDomain": "",
   "organisations": [
     {
-      "name": "Telefónica",
+      "name": "Telef\u00f3nica",
       "logo": "telefonica.com.svg"
     },
     {
@@ -49,10 +49,10 @@
     }
   ],
   "gallery": [
-    "assets/projects/36076183-7377-81c8-85aa-d341a65cf2b5--bipolar-detection/01.png",
-    "assets/projects/36076183-7377-81c8-85aa-d341a65cf2b5--bipolar-detection/02.png",
-    "assets/projects/36076183-7377-81c8-85aa-d341a65cf2b5--bipolar-detection/03.png",
-    "assets/projects/36076183-7377-81c8-85aa-d341a65cf2b5--bipolar-detection/04.png",
+    "assets/projects/36076183-7377-81c8-85aa-d341a65cf2b5--bipolar-detection/01.svg",
+    "assets/projects/36076183-7377-81c8-85aa-d341a65cf2b5--bipolar-detection/02.svg",
+    "assets/projects/36076183-7377-81c8-85aa-d341a65cf2b5--bipolar-detection/03.svg",
+    "assets/projects/36076183-7377-81c8-85aa-d341a65cf2b5--bipolar-detection/04.svg",
     "assets/projects/36076183-7377-81c8-85aa-d341a65cf2b5--bipolar-detection/05.png"
   ]
 }

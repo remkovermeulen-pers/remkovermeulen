@@ -9,7 +9,7 @@
     "Research"
   ],
   "lede": "",
-  "description": "Developed a telephone-based Parkinson's detection service using voice analysis, achieving 78% accuracy with no specialist equipment — accessible to any patient with a mobile or landline phone.",
+  "description": "Developed a telephone-based Parkinson's detection service using voice analysis, achieving 78% accuracy with no specialist equipment \u2014 accessible to any patient with a mobile or landline phone.",
   "coverImage": "assets/projects/36076183-7377-816c-9a63-e4952bd248d0--parkinson-voice-detection/01.png",
   "role": "",
   "timeline": "",
@@ -23,7 +23,7 @@
   "logoDomain": "",
   "organisations": [
     {
-      "name": "Telefónica",
+      "name": "Telef\u00f3nica",
       "logo": "telefonica.com.svg"
     },
     {
@@ -38,7 +38,7 @@
     },
     {
       "title": "Problem",
-      "body": "<p>Parkinson's disease is typically diagnosed years after symptoms begin. By the time a formal diagnosis is made, the disease has often been progressing for 3+ years. Early intervention could slow deterioration, but the diagnostic pathway was too slow, expensive, and inaccessible. The business problem was demonstrating that Telefonica's network assets had real clinical value — creating a platform for health partnerships.</p>"
+      "body": "<p>Parkinson's disease is typically diagnosed years after symptoms begin. By the time a formal diagnosis is made, the disease has often been progressing for 3+ years. Early intervention could slow deterioration, but the diagnostic pathway was too slow, expensive, and inaccessible. The business problem was demonstrating that Telefonica's network assets had real clinical value \u2014 creating a platform for health partnerships.</p>"
     },
     {
       "title": "My role",
@@ -46,16 +46,16 @@
     },
     {
       "title": "Approach",
-      "body": "<p>The core product decision was accessibility: making the service work over a standard phone call rather than a smartphone app, which kept it viable for the full patient population regardless of device or age. I defined the clinical framing — outputs as screening flags, not diagnoses — which was the right position given 78% accuracy and shaped how Hospital Clinic integrated results into their workflows. I worked with data scientists on the input requirements and with clinical staff on what a clinically useful output actually looked like in practice.</p>"
+      "body": "<p>The core product decision was accessibility: making the service work over a standard phone call rather than a smartphone app, which kept it viable for the full patient population regardless of device or age. I defined the clinical framing \u2014 outputs as screening flags, not diagnoses \u2014 which was the right position given 78% accuracy and shaped how Hospital Clinic integrated results into their workflows. I worked with data scientists on the input requirements and with clinical staff on what a clinically useful output actually looked like in practice.</p>"
     },
     {
       "title": "Outcome",
-      "body": "<ul>\n<li>Model achieved 78% detection accuracy — clinically meaningful for a screening context</li>\n<li>No specialist equipment or smartphone required — accessible across age and geography</li>\n<li>Project demonstrated Telefonica's network data as a health asset, underpinning subsequent health partnership strategy</li>\n</ul>\n<p><em>The product was shelved pending a pharmaceutical treatment for Parkinson's — no cure meant limited clinical demand for early detection at the time.</em></p>"
+      "body": "<ul>\n<li>Model achieved 78% detection accuracy \u2014 clinically meaningful for a screening context</li>\n<li>No specialist equipment or smartphone required \u2014 accessible across age and geography</li>\n<li>Project demonstrated Telefonica's network data as a health asset, underpinning subsequent health partnership strategy</li>\n</ul>\n<p><em>The product was shelved pending a pharmaceutical treatment for Parkinson's \u2014 no cure meant limited clinical demand for early detection at the time.</em></p>"
     }
   ],
   "gallery": [
     "assets/projects/36076183-7377-816c-9a63-e4952bd248d0--parkinson-voice-detection/01.png",
-    "assets/projects/36076183-7377-816c-9a63-e4952bd248d0--parkinson-voice-detection/02.png",
+    "assets/projects/36076183-7377-816c-9a63-e4952bd248d0--parkinson-voice-detection/02.svg",
     "assets/projects/36076183-7377-816c-9a63-e4952bd248d0--parkinson-voice-detection/03.png"
   ]
 }

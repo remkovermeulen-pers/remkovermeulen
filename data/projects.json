@@ -48,11 +48,11 @@
       "Research"
     ],
     "lede": "",
-    "description": "Co-founded and scaled a digital mental health company from 1 to 40 people, raising €66M and reaching 3M users. Built a portfolio of clinically validated products in partnership with the NHS, Harvard, and Janssen.",
+    "description": "Co-founded and scaled a digital mental health company from 1 to 40 people, raising \u20ac66M and reaching 3M users. Built a portfolio of clinically validated products in partnership with the NHS, Harvard, and Janssen.",
     "coverImage": "assets/projects/35f76183-7377-8135-9dd1-d1b22dfa6da0--koa-health/01.jpg",
     "metrics": [
       {
-        "value": "€66M",
+        "value": "\u20ac66M",
         "label": "investment raised"
       },
       {
@@ -133,7 +133,7 @@
     ],
     "lede": "",
     "description": "Initiated a futures research programme with the Royal College of Art to explore what mental health services could look like in 10-20 years, producing 33 scenarios and 10 user-tested product concepts.",
-    "coverImage": "assets/projects/36076183-7377-81ce-92bc-caa57a662ca6--xploratory-future-ideation/01.png",
+    "coverImage": "assets/projects/36076183-7377-81ce-92bc-caa57a662ca6--xploratory-future-ideation/01.svg",
     "metrics": [
       {
         "value": "33",
@@ -175,7 +175,7 @@
     ],
     "lede": "",
     "description": "Led a digital CBT product from concept through clinical trial with MGH and Harvard, achieving 90% treatment response, 55% symptom reduction, and 95% cost reduction versus traditional therapy.",
-    "coverImage": "assets/projects/36076183-7377-812d-9aec-f4697182cf9d--perspectives/01.png",
+    "coverImage": "assets/projects/36076183-7377-812d-9aec-f4697182cf9d--perspectives/01.svg",
     "metrics": [
       {
         "value": "90%",
@@ -218,7 +218,7 @@
       "Research"
     ],
     "lede": "",
-    "description": "Used mobile network mobility data to cut epidemic source detection from weeks to hours, and predict outbreak spread before clinical data surfaced — validated across Ebola and Zika in collaboration with WHO and Harvard.",
+    "description": "Used mobile network mobility data to cut epidemic source detection from weeks to hours, and predict outbreak spread before clinical data surfaced \u2014 validated across Ebola and Zika in collaboration with WHO and Harvard.",
     "coverImage": "assets/projects/36076183-7377-8195-b39a-cfa1657491db--pandemic-prediction-zika-ebola/01.png",
     "metrics": [],
     "logoDomain": "",
@@ -246,7 +246,7 @@
     ],
     "lede": "",
     "description": "Built an ML model with NHS Birmingham predicting mental health crises four weeks in advance at 80% recall, giving clinicians enough lead time to intervene before patients reached crisis point.",
-    "coverImage": "assets/projects/36076183-7377-81ad-ad56-ddcc3b80e04d--mental-crisis-prediction/01.png",
+    "coverImage": "assets/projects/36076183-7377-81ad-ad56-ddcc3b80e04d--mental-crisis-prediction/01.svg",
     "metrics": [
       {
         "value": "75%",
@@ -302,7 +302,7 @@
     "logoDomain": "",
     "organisations": [
       {
-        "name": "Telefónica",
+        "name": "Telef\u00f3nica",
         "logo": "telefonica.com.svg"
       }
     ]
@@ -351,7 +351,7 @@
   },
   {
     "notionId": "36076183-7377-81ae-9453-ebb3a48a1cf3",
-    "title": "TATU — Interactive Tattoo",
+    "title": "TATU \u2014 Interactive Tattoo",
     "sector": "Health",
     "status": "Live",
     "year": 2018,
@@ -415,7 +415,7 @@
       "Research"
     ],
     "lede": "",
-    "description": "Developed a telephone-based Parkinson's detection service using voice analysis, achieving 78% accuracy with no specialist equipment — accessible to any patient with a mobile or landline phone.",
+    "description": "Developed a telephone-based Parkinson's detection service using voice analysis, achieving 78% accuracy with no specialist equipment \u2014 accessible to any patient with a mobile or landline phone.",
     "coverImage": "assets/projects/36076183-7377-816c-9a63-e4952bd248d0--parkinson-voice-detection/01.png",
     "metrics": [
       {
@@ -426,7 +426,7 @@
     "logoDomain": "",
     "organisations": [
       {
-        "name": "Telefónica",
+        "name": "Telef\u00f3nica",
         "logo": "telefonica.com.svg"
       },
       {
@@ -448,12 +448,12 @@
     ],
     "lede": "",
     "description": "Designed a passive bipolar monitoring service using anonymised mobile network data, giving psychiatrists a continuous view of patient state between appointments without requiring any active input from patients.",
-    "coverImage": "assets/projects/36076183-7377-81c8-85aa-d341a65cf2b5--bipolar-detection/01.png",
+    "coverImage": "assets/projects/36076183-7377-81c8-85aa-d341a65cf2b5--bipolar-detection/01.svg",
     "metrics": [],
     "logoDomain": "",
     "organisations": [
       {
-        "name": "Telefónica",
+        "name": "Telef\u00f3nica",
         "logo": "telefonica.com.svg"
       },
       {
@@ -476,7 +476,7 @@
     ],
     "lede": "",
     "description": "Designed a remote chronic disease management service across UK, Spain, and Brazil, grounded in ethnographic research with patients and nurses. Achieved a 48% reduction in mortality and 63% reduction in hospital readmissions.",
-    "coverImage": "assets/projects/36076183-7377-81c6-9ab7-c49d505b389a--health-at-home/01.jpg",
+    "coverImage": "assets/projects/36076183-7377-81c6-9ab7-c49d505b389a--health-at-home/01.svg",
     "metrics": [
       {
         "value": "48%",
@@ -520,7 +520,7 @@
   },
   {
     "notionId": "35f76183-7377-8167-aade-e9ceff1342ed",
-    "title": "Telefónica / O2",
+    "title": "Telef\u00f3nica / O2",
     "sector": "Telco",
     "status": "Live",
     "year": 2011,
@@ -532,7 +532,7 @@
     ],
     "lede": "",
     "description": "Led UX, product and service design across 5 locations for Telefonica's global health and digital portfolio. Delivered a chronic disease service reducing mortality by 48%, Parkinson's voice detection at 78% precision, and pandemic prediction tools with WHO and Harvard.",
-    "coverImage": "assets/projects/35f76183-7377-8167-aade-e9ceff1342ed--telefonica-o2/01.png",
+    "coverImage": "assets/projects/35f76183-7377-8167-aade-e9ceff1342ed--telefonica-o2/02.jpg",
     "metrics": [
       {
         "value": "48%",
@@ -554,7 +554,7 @@
     "logoDomain": "",
     "organisations": [
       {
-        "name": "Telefónica",
+        "name": "Telef\u00f3nica",
         "logo": "telefonica.com.svg"
       },
       {

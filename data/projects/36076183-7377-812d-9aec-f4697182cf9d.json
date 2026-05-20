@@ -12,7 +12,7 @@
   ],
   "lede": "",
   "description": "Led a digital CBT product from concept through clinical trial with MGH and Harvard, achieving 90% treatment response, 55% symptom reduction, and 95% cost reduction versus traditional therapy.",
-  "coverImage": "assets/projects/36076183-7377-812d-9aec-f4697182cf9d--perspectives/01.png",
+  "coverImage": "assets/projects/36076183-7377-812d-9aec-f4697182cf9d--perspectives/01.svg",
   "role": "",
   "timeline": "",
   "partners": [],
@@ -48,11 +48,11 @@
   "sections": [
     {
       "title": "Context",
-      "body": "<p>VP of Product at Telefonica Alpha Health / Koa Health, in collaboration with MGH and Harvard Medical School. Company raised €66M.</p>"
+      "body": "<p>VP of Product at Telefonica Alpha Health / Koa Health, in collaboration with MGH and Harvard Medical School. Company raised \u20ac66M.</p>"
     },
     {
       "title": "Problem",
-      "body": "<p>CBT is one of the most effective treatments for these conditions, but access is severely limited by therapist availability and cost. NHS waiting times for therapy could stretch to 12+ months. Private therapy was unaffordable for the majority. The business problem was demonstrating clinical equivalence to traditional therapy at a fraction of the cost — the evidence base required for NHS contracts, FDA submission, and investor confidence.</p>"
+      "body": "<p>CBT is one of the most effective treatments for these conditions, but access is severely limited by therapist availability and cost. NHS waiting times for therapy could stretch to 12+ months. Private therapy was unaffordable for the majority. The business problem was demonstrating clinical equivalence to traditional therapy at a fraction of the cost \u2014 the evidence base required for NHS contracts, FDA submission, and investor confidence.</p>"
     },
     {
       "title": "My role",
@@ -60,15 +60,15 @@
     },
     {
       "title": "Approach",
-      "body": "<p>The product assessed users for early symptoms using validated clinical instruments, then initiated a personalised CBT programme based on their symptom profile. Therapist involvement was integrated — clinicians monitored progress via a dashboard, stepped in at key moments, and were available when the system flagged elevated risk. The hybrid model kept human oversight central while dramatically reducing per-user therapist time. Clinical protocols were designed and validated by MGH; my team's job was to make them work as a consumer digital product without compromising therapeutic integrity.</p>"
+      "body": "<p>The product assessed users for early symptoms using validated clinical instruments, then initiated a personalised CBT programme based on their symptom profile. Therapist involvement was integrated \u2014 clinicians monitored progress via a dashboard, stepped in at key moments, and were available when the system flagged elevated risk. The hybrid model kept human oversight central while dramatically reducing per-user therapist time. Clinical protocols were designed and validated by MGH; my team's job was to make them work as a consumer digital product without compromising therapeutic integrity.</p>"
     },
     {
       "title": "Outcome",
-      "body": "<ul>\n<li>90% of participants responded to treatment</li>\n<li>Average symptom reduction of 55%, on par with results from the best MGH therapists</li>\n<li>95% reduction in cost compared to traditional therapy</li>\n<li>Results contributed directly to Koa Health's €66M investment round</li>\n<li>Product pending FDA Class II de novo approval and CE Class I mark at time of publication</li>\n</ul>"
+      "body": "<ul>\n<li>90% of participants responded to treatment</li>\n<li>Average symptom reduction of 55%, on par with results from the best MGH therapists</li>\n<li>95% reduction in cost compared to traditional therapy</li>\n<li>Results contributed directly to Koa Health's \u20ac66M investment round</li>\n<li>Product pending FDA Class II de novo approval and CE Class I mark at time of publication</li>\n</ul>"
     }
   ],
   "gallery": [
-    "assets/projects/36076183-7377-812d-9aec-f4697182cf9d--perspectives/01.png",
-    "assets/projects/36076183-7377-812d-9aec-f4697182cf9d--perspectives/02.png"
+    "assets/projects/36076183-7377-812d-9aec-f4697182cf9d--perspectives/01.svg",
+    "assets/projects/36076183-7377-812d-9aec-f4697182cf9d--perspectives/02.mp4"
   ]
 }
