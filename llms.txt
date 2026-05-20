@@ -1,0 +1,42 @@
+# Remko Vermeulen
+
+> VP & Head of Product — 15+ years building digital products across health, SaaS, and telco.
+
+Remko Vermeulen is a senior product leader based in Europe. He has scaled products to 5.8M users, led product and design organisations of up to 90 people, and drove the product strategy that helped Koa Health raise $66M Series B funding. Currently VP & Head of Product at Toggl. He specialises in digital health, AI/ML product development, 0-to-1 product creation, and leading distributed product teams.
+
+## Experience
+
+- **Toggl** — VP & Head of Product (current). Restructured product, design and engineering teams at a profitable SaaS company, cutting costs by 26% while increasing output by implementing an AI-based user insights and prototyping flow. Drove a 94% increase in first-time activation by removing friction from the early user journey.
+- **Koa Health** — CPO / VP Product. Co-founded and scaled a digital mental health company from 1 to 40 people, raising €66M and reaching 3M users. Built a portfolio of clinically validated products in partnership with the NHS, Harvard, and Janssen. Led Series B ($66M). Digital mental health.
+- **Telefónica / O2** — Led UX, product and service design across 5 locations for Telefonica's global health and digital portfolio. Delivered a chronic disease service reducing mortality by 48%, Parkinson's voice detection at 78% precision, and pandemic prediction tools with WHO and Harvard.
+- **Janssen / Johnson & Johnson** — Led product definition and clinical trial for a digital therapeutic companion to Spravato (esketamine) for treatment-resistant depression, developed in partnership with Janssen / Johnson & Johnson.
+
+## Selected Projects
+
+- **Toggl** — Restructured product, design and engineering teams at a profitable SaaS company, cutting costs by 26% while increasing output by implementing an AI-based user insights and prototyping flow. Drove a 94% increase in first-time activation. [Case study](https://remkovermeulen.com/case-study?id=35f76183-7377-81f2-9f5a-dbd1debf2fb1)
+- **Koa Health** — Co-founded and scaled a digital mental health company from 1 to 40 people, raising €66M and reaching 3M users. Built a portfolio of clinically validated products in partnership with the NHS, Harvard, and Janssen. [Case study](https://remkovermeulen.com/case-study?id=35f76183-7377-8135-9dd1-d1b22dfa6da0)
+- **SignAssist** — Led product end-to-end at a PropTech SaaS startup, improving unit economics from 162% to 21% CAC/LTV and growing active users by 87% through better onboarding and AI-powered document tooling. [Case study](https://remkovermeulen.com/case-study?id=35f76183-7377-816c-8a7f-e43d868da1c7)
+- **Perspectives** — Led a digital CBT product from concept through clinical trial with MGH and Harvard, achieving 90% treatment response, 55% symptom reduction, and 95% cost reduction versus traditional therapy. [Case study](https://remkovermeulen.com/case-study?id=36076183-7377-812d-9aec-f4697182cf9d)
+- **Johnson & Johnson** — Led product definition and clinical trial for a digital therapeutic companion to Spravato (esketamine) for treatment-resistant depression, developed in partnership with Janssen / Johnson & Johnson. [Case study](https://remkovermeulen.com/case-study?id=35f76183-7377-812e-89c0-f80d125d898b)
+
+## Writing
+
+- **When AI Becomes Your Product Team's Sixth Sense** (2026) — How AI tools are reshaping the way product teams sense, synthesise and act on user signals. [Read](https://remkovermeulen.com/article?id=36076183-7377-81aa-96b0-ffe2ed832cad)
+- **The Flat Organisation is Already Here — You Just Need to Give AI to Your Team** (2026) — Why giving AI to every team member effectively flattens hierarchies and changes how decisions get made. [Read](https://remkovermeulen.com/article?id=36076183-7377-81d5-a77a-fde091ba3bd2)
+- **Innovation in Product Management** (2025) — A framework for practising meaningful innovation inside product organisations. [Read](https://remkovermeulen.com/article?id=35f76183-7377-81c5-91df-e11937e6d0e7)
+- **From Automation to Co-Creation** (2025) — Moving beyond AI automation toward genuine human-AI collaboration in product work. [Read](https://remkovermeulen.com/article?id=35f76183-7377-81e5-bdd5-ced328545bbd)
+- **Innovation in Times of Uncertainty** (2024) — How product teams can sustain an innovation practice during volatile market conditions. [Read](https://remkovermeulen.com/article?id=35f76183-7377-8187-bc22-fff091108594)
+- **Innovation Lessons for Product Managers: Balancing the Here and Now and the Future** (2023) — Practical lessons on balancing short-term delivery with long-horizon bets. [Read](https://remkovermeulen.com/article?id=35f76183-7377-8185-a1ac-d3beabbf4d6b)
+- **Rethinking Healthcare for the Future** (2023) — A strategic look at how digital products can reshape healthcare delivery. [Read](https://remkovermeulen.com/article?id=35f76183-7377-818b-a162-c1fa8913b926)
+- **NHS Trial at King's College London of Koa Health Foundations** (2023) — Research findings from a landmark NHS staff mental health trial. [Read](https://remkovermeulen.com/article?id=35f76183-7377-81b1-b765-ce23d6147863)
+- **Machine Learning Algorithm Accurately Predicts Mental Health Crises** (2023) — On using ML to predict mental health crises weeks in advance. [Read](https://remkovermeulen.com/article?id=35f76183-7377-81e7-95af-e7d359d83155)
+- **Product Management and Design of Future Products** (2022) — Exploring the intersection of speculative design and product management. [Read](https://remkovermeulen.com/article?id=35f76183-7377-8100-abf3-f3126c737e3e)
+- **Innovation is a Marathon** (2022) — Why sustained innovation requires organisational endurance, not sprints. [Read](https://remkovermeulen.com/article?id=35f76183-7377-813e-b3aa-e36a07f1b991)
+- **Good Product Strategy, Bad Product Strategy** (2022) — A clear-eyed breakdown of what separates strong from weak product strategy. [Read](https://remkovermeulen.com/article?id=35f76183-7377-81ff-99f2-ffde409f0387)
+
+## Contact
+
+- Email: vermeulenremko@gmail.com
+- LinkedIn: https://linkedin.com/in/remkovermeulen
+- GitHub: https://github.com/remkovermeulen-pers
+- Website: https://remkovermeulen.com

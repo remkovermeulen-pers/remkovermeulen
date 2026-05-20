@@ -4,10 +4,22 @@
 <meta charset="UTF-8">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Remko Vermeulen">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:image" content="https://remkovermeulen.com/assets/remko.jpg">
+<meta property="og:url" content="">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="https://remkovermeulen.com/assets/remko.jpg">
+<link rel="canonical" href="">
 <title>Case Study — Remko Vermeulen</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" referrerpolicy="no-referrer">
 <style>
 :root {
   --bg:          #fbf9f8;
@@ -297,6 +309,33 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
 
   function render(proj, all) {
     document.title = proj.title + ' — Case Study — Remko Vermeulen';
+    var projDesc = proj.description || (proj.sections && proj.sections[0] ? proj.sections[0].body.replace(/<[^>]+>/g,'').trim().slice(0,160) : '');
+    var projImg = proj.coverImage ? 'https://remkovermeulen.com/' + proj.coverImage : 'https://remkovermeulen.com/assets/remko.jpg';
+    var projUrl = 'https://remkovermeulen.com/case-study?id=' + (proj.id || proj.notionId || '');
+    function setMeta(sel, attr, val) { var el = document.querySelector(sel); if (el && val) el.setAttribute(attr, val); }
+    setMeta('meta[name="description"]', 'content', projDesc);
+    setMeta('meta[property="og:title"]', 'content', proj.title + ' — Remko Vermeulen');
+    setMeta('meta[property="og:description"]', 'content', projDesc);
+    setMeta('meta[property="og:image"]', 'content', projImg);
+    setMeta('meta[property="og:url"]', 'content', projUrl);
+    setMeta('meta[name="twitter:title"]', 'content', proj.title + ' — Remko Vermeulen');
+    setMeta('meta[name="twitter:description"]', 'content', projDesc);
+    setMeta('meta[name="twitter:image"]', 'content', projImg);
+    setMeta('link[rel="canonical"]', 'href', projUrl);
+    var ldScript = document.createElement('script');
+    ldScript.type = 'application/ld+json';
+    ldScript.text = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": proj.title,
+      "description": projDesc,
+      "image": projImg,
+      "url": projUrl,
+      "author": { "@type": "Person", "name": "Remko Vermeulen", "url": "https://remkovermeulen.com" },
+      "publisher": { "@type": "Person", "name": "Remko Vermeulen" },
+      "datePublished": proj.year ? proj.year + '-01-01' : undefined
+    });
+    document.head.appendChild(ldScript);
 
     var nextProj    = getNext(proj.id, all);
     var prevProj    = getPrev(proj.id, all);

@@ -4,10 +4,22 @@
 <meta charset="UTF-8">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Remko Vermeulen">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:image" content="https://remkovermeulen.com/assets/remko.jpg">
+<meta property="og:url" content="">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="https://remkovermeulen.com/assets/remko.jpg">
+<link rel="canonical" href="">
 <title>Article — Remko Vermeulen</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" referrerpolicy="no-referrer">
 <style>
 :root {
   --bg:          #fbf9f8;
@@ -259,6 +271,32 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
     var all = results[1];
 
     document.title = article.title + ' — Remko Vermeulen';
+    var artDesc = article.summary || article.lede || '';
+    var artUrl = 'https://remkovermeulen.com/article?id=' + (article.notionId || article.id || '');
+    var artImg = article.coverImage ? 'https://remkovermeulen.com/' + article.coverImage : 'https://remkovermeulen.com/assets/remko.jpg';
+    function setMeta(sel, attr, val) { var el = document.querySelector(sel); if (el && val) el.setAttribute(attr, val); }
+    setMeta('meta[name="description"]', 'content', artDesc);
+    setMeta('meta[property="og:title"]', 'content', article.title + ' — Remko Vermeulen');
+    setMeta('meta[property="og:description"]', 'content', artDesc);
+    setMeta('meta[property="og:image"]', 'content', artImg);
+    setMeta('meta[property="og:url"]', 'content', artUrl);
+    setMeta('meta[name="twitter:title"]', 'content', article.title + ' — Remko Vermeulen');
+    setMeta('meta[name="twitter:description"]', 'content', artDesc);
+    setMeta('meta[name="twitter:image"]', 'content', artImg);
+    setMeta('link[rel="canonical"]', 'href', artUrl);
+    var ldScript = document.createElement('script');
+    ldScript.type = 'application/ld+json';
+    ldScript.text = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": article.title,
+      "description": artDesc,
+      "image": artImg,
+      "url": artUrl,
+      "author": { "@type": "Person", "name": "Remko Vermeulen", "url": "https://remkovermeulen.com" },
+      "publisher": { "@type": "Person", "name": "Remko Vermeulen" }
+    });
+    document.head.appendChild(ldScript);
 
     // Parse content into DOM for TOC extraction + section wrapping
     var tempDiv = document.createElement('div');
