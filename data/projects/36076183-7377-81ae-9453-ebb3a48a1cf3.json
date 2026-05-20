@@ -16,7 +16,12 @@
   "partners": [],
   "metrics": [],
   "logoDomain": "",
-  "organisations": [],
+  "organisations": [
+    {
+      "name": "Telefonica Alpha",
+      "logo": "telefonica-alpha.svg"
+    }
+  ],
   "sections": [
     {
       "title": "Context",

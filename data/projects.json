@@ -371,7 +371,12 @@
     "coverImage": "assets/projects/36076183-7377-8191-b686-ee42ad8574d4--ting-happy-moments/01.png",
     "metrics": [],
     "logoDomain": "",
-    "organisations": []
+    "organisations": [
+      {
+        "name": "Telefonica Alpha",
+        "logo": "telefonica-alpha.svg"
+      }
+    ]
   },
   {
     "notionId": "36076183-7377-81ae-9453-ebb3a48a1cf3",
@@ -389,7 +394,12 @@
     "coverImage": "assets/projects/36076183-7377-81ae-9453-ebb3a48a1cf3--tatu-interactive-tattoo/01.png",
     "metrics": [],
     "logoDomain": "",
-    "organisations": []
+    "organisations": [
+      {
+        "name": "Telefonica Alpha",
+        "logo": "telefonica-alpha.svg"
+      }
+    ]
   },
   {
     "notionId": "36076183-7377-814a-9f9c-f356f12270ef",
