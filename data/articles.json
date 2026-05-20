@@ -48,36 +48,14 @@
     "youtubeVideoId": "_Q12lV3EW8U"
   },
   {
-    "notionId": "bfd0935f-64ef-430b-9d50-ccdcfe537ee2",
-    "title": "Stakeholder management through uncertainty",
-    "category": "Talk",
+    "notionId": "35f76183-7377-8185-a1ac-d3beabbf4d6b",
+    "title": "Innovation lessons for product managers",
+    "category": "Strategy",
     "year": "2023",
     "readingTime": 4,
-    "url": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7056257123071971328/",
-    "coverImage": "",
-    "tags": [
-      "Leadership",
-      "Product"
-    ]
-  },
-  {
-    "notionId": "35f76183-7377-81e7-95af-e7d359d83155",
-    "title": "Machine learning algorithm accurately predicts mental health crises",
-    "category": "Research",
-    "year": "2023",
-    "readingTime": 3,
-    "url": "https://remkovermeulen.com/post/695181928055373824/machine-learning-algorithm-accurately-predicts",
-    "coverImage": "https://raw.githubusercontent.com/remkovermeulen-pers/remkovermeulen/main/assets/articles/machine-learning-algorithm-accurately-predicts-mental-health-crises.jpg",
-    "coverImagePosition": "top"
-  },
-  {
-    "notionId": "35f76183-7377-81b1-b765-ce23d6147863",
-    "title": "NHS trial at King's College London of Koa Health Foundations",
-    "category": "Research",
-    "year": "2023",
-    "readingTime": 3,
-    "url": "https://koahealth.com/blog-post/landmark-trial-of-nhs-staff-reveals-promising-solution-to-improve-mental-health",
-    "coverImage": "assets/articles/35f76183-7377-81b1-b765-ce23d6147863.jpeg"
+    "url": "https://remkovermeulen.com/post/695178620623273984/innovation-lessons-for-product-managers-balancing",
+    "coverImage": "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=1800&q=80",
+    "youtubeVideoId": "HQxD8d_QXGw"
   },
   {
     "notionId": "35f76183-7377-818b-a162-c1fa8913b926",
@@ -90,14 +68,36 @@
     "youtubeVideoId": "nA8r9nEDVAo"
   },
   {
-    "notionId": "35f76183-7377-8185-a1ac-d3beabbf4d6b",
-    "title": "Innovation lessons for product managers",
-    "category": "Strategy",
+    "notionId": "35f76183-7377-81b1-b765-ce23d6147863",
+    "title": "NHS trial at King's College London of Koa Health Foundations",
+    "category": "Research",
+    "year": "2023",
+    "readingTime": 3,
+    "url": "https://koahealth.com/blog-post/landmark-trial-of-nhs-staff-reveals-promising-solution-to-improve-mental-health",
+    "coverImage": "assets/articles/35f76183-7377-81b1-b765-ce23d6147863.jpeg"
+  },
+  {
+    "notionId": "35f76183-7377-81e7-95af-e7d359d83155",
+    "title": "Machine learning algorithm accurately predicts mental health crises",
+    "category": "Research",
+    "year": "2023",
+    "readingTime": 3,
+    "url": "https://remkovermeulen.com/post/695181928055373824/machine-learning-algorithm-accurately-predicts",
+    "coverImage": "https://raw.githubusercontent.com/remkovermeulen-pers/remkovermeulen/main/assets/articles/machine-learning-algorithm-accurately-predicts-mental-health-crises.jpg",
+    "coverImagePosition": "top"
+  },
+  {
+    "notionId": "36676183-7377-819b-93a3-de88dbd8aa39",
+    "title": "Stakeholder management through uncertainty",
+    "category": "Product",
     "year": "2023",
     "readingTime": 4,
-    "url": "https://remkovermeulen.com/post/695178620623273984/innovation-lessons-for-product-managers-balancing",
-    "coverImage": "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=1800&q=80",
-    "youtubeVideoId": "HQxD8d_QXGw"
+    "url": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7056257123071971328/",
+    "coverImage": "",
+    "tags": [
+      "Leadership",
+      "Product"
+    ]
   },
   {
     "notionId": "35f76183-7377-81ff-99f2-ffde409f0387",
