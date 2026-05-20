@@ -400,7 +400,9 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
       + '<div class="cs-cover">'
       + (article.youtubeVideoId
           ? '<div class="cs-cover__video"><iframe src="https://www.youtube.com/embed/' + esc(article.youtubeVideoId) + '?rel=0" title="' + esc(article.title) + '" allowfullscreen loading="lazy"></iframe></div>'
-          : '<img class="bw-img" src="' + coverSrc + '" alt="' + esc(article.title) + '"' + (article.coverImagePosition ? ' style="object-position:' + esc(article.coverImagePosition) + '"' : '') + '>')
+          : article.linkedInEmbedUrl
+            ? '<div class="cs-cover__video"><iframe src="' + esc(article.linkedInEmbedUrl) + '" title="' + esc(article.title) + '" allowfullscreen loading="lazy"></iframe></div>'
+            : '<img class="bw-img" src="' + coverSrc + '" alt="' + esc(article.title) + '"' + (article.coverImagePosition ? ' style="object-position:' + esc(article.coverImagePosition) + '"' : '') + '>')
       + '</div>'
       + '</section>'
 
@@ -413,10 +415,6 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
         }).join('')
       + '</div>'
       + (tocItems ? '<h4>In this article</h4><ol class="cs-toc">' + tocItems + '</ol>' : '')
-      + '<div class="cs-aside__meta">'
-      + '<div class="cs-aside__meta-block"><h5>Original source</h5>'
-      + '<p><a href="' + esc(article.url) + '" target="_blank" rel="noopener">Read original ↗</a></p></div>'
-      + '</div>'
       + '</aside>'
 
       + '<div class="cs-content">' + sectionsHtml + '</div>'
