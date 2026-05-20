@@ -133,10 +133,11 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
 .cs-cover__img { width:100%; height:clamp(280px,42vw,560px); object-fit:cover; object-position:top; display:block; transition:opacity .3s ease; }
 .cs-cover__logo { position:absolute; bottom:24px; left:32px; height:36px; max-width:160px; width:auto; object-fit:contain; filter:brightness(0) invert(1); opacity:0.9; pointer-events:none; }
 .cs-cover__caption { padding:14px 20px; border-top:1px solid var(--line); font-size:12px; color:var(--muted-2); font-style:italic; background:var(--bg-card); }
-.cs-cover__prev, .cs-cover__next { position:absolute; top:50%; transform:translateY(-50%); width:44px; height:44px; background:transparent; border:none; color:#fff; display:flex; align-items:center; justify-content:center; cursor:pointer; opacity:0; transition:opacity .2s; z-index:2; }
+.cs-cover__prev, .cs-cover__next { position:absolute; top:50%; transform:translateY(-50%); width:44px; height:44px; background:transparent; border:none; color:#fff; display:flex; align-items:center; justify-content:center; cursor:pointer; opacity:0; transition:opacity .2s, color .3s; z-index:2; }
 .cs-cover__prev { left:20px; }
 .cs-cover__next { right:20px; }
 .cs-cover:hover .cs-cover__prev, .cs-cover:hover .cs-cover__next { opacity:1; }
+.cs-cover--light-bg .cs-cover__prev, .cs-cover--light-bg .cs-cover__next { color:#1a1a1a; }
 .cs-cover__dots { position:absolute; bottom:16px; right:20px; display:flex; gap:6px; z-index:2; }
 .cs-cover__dot { width:6px; height:6px; border-radius:50%; background:rgba(255,255,255,0.5); border:1px solid rgba(0,0,0,.2); cursor:pointer; transition:background .2s; }
 .cs-cover__dot.is-active { background:#fff; }
@@ -480,7 +481,25 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
 
   // Cover slideshow
   (function() {
-    function showReady(el, loader) {
+    function sampleLuminance(el) {
+      try {
+        var canvas = document.createElement('canvas');
+        canvas.width = 40; canvas.height = 22;
+        canvas.getContext('2d').drawImage(el, 0, 0, 40, 22);
+        var data = canvas.getContext('2d').getImageData(0, 0, 40, 22).data;
+        var sum = 0;
+        for (var i = 0; i < data.length; i += 4) {
+          sum += (0.2126 * data[i] + 0.7152 * data[i+1] + 0.0722 * data[i+2]) / 255;
+        }
+        return sum / (data.length / 4);
+      } catch(e) { return 0; }
+    }
+
+    function updateArrowColor(cover, el) {
+      cover.classList.toggle('cs-cover--light-bg', sampleLuminance(el) > 0.45);
+    }
+
+    function showReady(el, loader, cover) {
       var readyEvent = el.tagName === 'VIDEO' ? 'canplay' : 'load';
       var fallback;
       function onReady() {
@@ -488,6 +507,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
         el.removeEventListener(readyEvent, onReady);
         if (loader) loader.classList.remove('is-loading');
         el.style.opacity = '1';
+        if (cover) updateArrowColor(cover, el);
       }
       el.addEventListener(readyEvent, onReady);
       fallback = setTimeout(onReady, 4000);
@@ -513,7 +533,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
         }
         if (isCurrentlyVideo && !needsVideo) el.pause();
         if (loader) loader.classList.add('is-loading');
-        showReady(el, loader);
+        showReady(el, loader, cover);
         el.src = src;
         cover.querySelectorAll('.cs-cover__dot').forEach(function(d, i) {
           d.classList.toggle('is-active', i === cur);
@@ -549,9 +569,11 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
       var loader = cover.querySelector('.cs-cover__loader');
       if (!el || !loader) return;
       var ready = (el.tagName === 'VIDEO') ? el.readyState >= 3 : el.complete;
-      if (!ready) {
+      if (ready) {
+        updateArrowColor(cover, el);
+      } else {
         loader.classList.add('is-loading');
-        showReady(el, loader);
+        showReady(el, loader, cover);
       }
     });
   })();
