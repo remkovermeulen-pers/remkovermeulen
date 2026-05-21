@@ -561,12 +561,12 @@
     "logoDomain": "",
     "organisations": [
       {
-        "name": "El Bulli",
-        "logo": ""
-      },
-      {
         "name": "Telefónica",
         "logo": "telefonica.com.svg"
+      },
+      {
+        "name": "El Bulli",
+        "logo": ""
       }
     ]
   },
