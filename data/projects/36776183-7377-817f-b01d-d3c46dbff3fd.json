@@ -25,15 +25,15 @@
       "label": "volumes published"
     },
     {
-      "value": "",
-      "label": "17,500 pages of content"
+      "value": "17,500",
+      "label": "pages of content"
     }
   ],
   "logoDomain": "",
   "organisations": [
     {
       "name": "El Bulli",
-      "logo": ""
+      "logo": "bullipedia.svg"
     },
     {
       "name": "Telefónica",
