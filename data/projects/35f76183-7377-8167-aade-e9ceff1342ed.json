@@ -51,15 +51,15 @@
     },
     {
       "title": "My role",
-      "body": "<p>I personally led product and service design across the full portfolio. This included setting direction, leading user research programmes, designing clinical and consumer-facing interfaces, managing cross-functional teams, and maintaining relationships with clinical and institutional partners (NHS, WHO, UNICEF, Harvard). Team management and budgeting were mine; technical implementation was delegated.</p>"
+      "body": "<p>I personally led product and service design across the full portfolio. This included setting direction, leading user research programmes, designing clinical and consumer-facing product, managing cross-functional teams, and maintaining relationships with clinical and institutional partners (NHS, WHO, UNICEF, Harvard). Team management and budgeting were mine; technical implementation was delegated.</p>"
     },
     {
       "title": "Approach",
-      "body": "<p>Each product was grounded in field research before design began — ethnographic home visits for chronic disease, clinical workflow research for Parkinson's, mobility data analysis for pandemic prediction. I ran co-design workshops with clinical staff, facilitated cross-functional delivery, and managed the tension between the pace of a commercial product team and the rigour required by clinical and regulatory partners. Across 20+ MVPs, the selection of which 5 to launch was driven by validated demand and commercial viability, not technical interest.</p>"
+      "body": "<p>Each product was grounded in field research before design began — home visits for chronic disease, clinical workflow research for Parkinson's, mobility data analysis for pandemic prediction. I ran co-design workshops with clinical staff, facilitated cross-functional delivery, and managed the tension between the pace of a commercial product team and the rigour required by clinical and regulatory partners. Across 20+ MVPs, the selection of which 5 to launch was driven by validated demand and commercial viability, not technical interest.</p>"
     },
     {
       "title": "Outcome",
-      "body": "<ul>\n<li>48% decrease in mortality rate for patients on the chronic disease management service</li>\n<li>63% decrease in hospital readmission rate</li>\n<li>78% precision in Parkinson's voice detection</li>\n<li>20+ MVPs developed, 5 successfully launched</li>\n<li>Pandemic prediction tools validated in collaboration with WHO, UNICEF, and Harvard across Ebola and Zika outbreaks</li>\n</ul>"
+      "body": "<ul>\n<li>48% decrease in mortality rate for patients on the chronic disease management service</li>\n<li>63% decrease in hospital readmission rate</li>\n<li>78% precision in Parkinson's voice detection</li>\n<li>20+ MVPs developed, 5 successfully launched</li>\n</ul>"
     }
   ],
   "gallery": [
