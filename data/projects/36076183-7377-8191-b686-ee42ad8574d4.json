@@ -24,10 +24,6 @@
   ],
   "sections": [
     {
-      "title": "Context",
-      "body": "<p>Telefonica Alpha, concept prototype stage. Team: product, research, and design.</p>"
-    },
-    {
       "title": "Problem",
       "body": "<p>The technical team was developing passive mood detection using phone sensor data. The open question was: if you can detect mood, how should you surface that information to the person in a way that is useful rather than intrusive or clinical? Screen-based notifications felt mismatched to something as continuous and personal as mood state. The business purpose was to explore new product territory around ambient wellbeing, not to ship a market-ready product.</p>"
     },

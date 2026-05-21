@@ -25,11 +25,11 @@
   "sections": [
     {
       "title": "Context",
-      "body": "<p>Koa Health / Telefonica Alpha, clinical AI product development. Team: product, AI/data science, and clinical UX.</p>"
+      "body": "<p>We had a collaboration with the NHS Trust in Birmingham and Solihull to predict mental health crisis in patients. After a first round of deployment, we found that the value the system delivered was not in line with what the technology made possible.</p>"
     },
     {
       "title": "Problem",
-      "body": "<p>The mental health crisis prediction model was technically strong but not being acted on by clinicians. NHS staff were trained to reason from evidence — they wanted to understand <em>why</em> a risk score was generated, not just what it said. A model that output a score without explaining its basis would either be ignored or followed without appropriate clinical judgement. This was both an adoption problem and a regulatory risk.</p>"
+      "body": "<p>The mental health crisis prediction model was technically strong but not being acted on by clinicians. NHS staff were trained to reason from evidence — they wanted to understand <em>why</em> a risk score was generated, not just what it said. A model that output a score without explaining its basis would either be ignored or followed without appropriate clinical judgement. This was both an adoption problem and a regulatory risk.</p>\n<p>In practice, clinicians went through the list of model outputs and manually scored each patient and situation against their own set of understood criteria, because the reasoning behind why someone had been flagged at risk was not clear to them. This created additional manual work and placed extra responsibility on the clinicians — the opposite of the intended outcome. It got in the way of saving them time and prevented them from trusting the system. Based on clinician feedback, we redesigned how results were presented so that clinicians could understand the reasoning of the ML model in their own language and within their existing clinical protocols.</p>"
     },
     {
       "title": "My role",
@@ -41,7 +41,7 @@
     },
     {
       "title": "Outcome",
-      "body": "<p>Clinicians given access to predictions plus explanations were significantly more willing to act on model outputs than those who received a risk score alone. The explainability layer was a condition of clinical adoption and directly enabled the rollout of the crisis prediction service in NHS Birmingham. The project reinforced a key finding: AI adoption in clinical settings is primarily a trust problem, not a technical one.</p>"
+      "body": "<p>In user research with clinicians, we found that those given access to predictions plus explanations were significantly more willing to act on model outputs than those who received a risk score alone. The explainability layer was a condition of clinical adoption and directly enabled the rollout of the crisis prediction service in NHS Birmingham. The project reinforced a key finding: AI adoption in clinical settings is primarily a trust problem, not a technical one.</p>"
     }
   ],
   "gallery": [

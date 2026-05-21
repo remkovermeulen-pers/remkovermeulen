@@ -30,7 +30,7 @@
   "sections": [
     {
       "title": "Context",
-      "body": "<p>VP of Product &amp; Innovation at Koa Health (Series B), in collaboration with Birmingham and Solihull NHS Foundation Trust. 1.2M patients covered.</p>"
+      "body": "<p>Koa Health (Series B), in collaboration with Birmingham and Solihull NHS Foundation Trust. 1.2M patients covered. The project was part of the NHS Testbeds programme.</p>"
     },
     {
       "title": "Problem",
@@ -38,15 +38,15 @@
     },
     {
       "title": "My role",
-      "body": "<p>I led the product definition, data partnership structuring, and NHS relationship. I personally owned the information governance negotiation, the data sharing agreements, and the clinical validation process with NHS partners. I also led the design of the clinician-facing interface. Data science modelling was delegated to the technical team.</p>"
+      "body": "<p>I directed the product team and the product manager responsible for this project, setting direction and overseeing delivery. My direct personal involvement was in the explainable AI layer — specifically how model outputs were surfaced to clinicians in a way they could understand and act on. Data science modelling was led by the technical team; information governance, data sharing agreements, and NHS relationship management were handled by the product and research team.</p>"
     },
     {
       "title": "Approach",
-      "body": "<p>The model used de-identified NHS Electronic Health Records (178 features, 1 million patients over 6 years, 20,000 mental health patients) as the primary training signal, combined with real-time environmental factors and passive mobile sensor data. The four-week prediction horizon was a deliberate clinical decision — long enough to enable a proactive response, short enough to be actionable. I worked with NHS clinicians to define the alert logic so that outputs were filtered to patients not already on an active crisis plan, avoiding alert fatigue.</p>"
+      "body": "<p>The team began by researching how clinicians currently worked: their existing workflows, what a successful outcome looked like to them, and how they valued a tool like this. This informed both where the product could add the most meaningful improvement and how the alert logic should be designed to fit into clinical practice.</p>\n<p>The model used de-identified NHS Electronic Health Records (178 features, 1 million patients over 6 years, 20,000 mental health patients) as the primary training signal. The four-week prediction horizon was a deliberate clinical decision — long enough to enable a proactive response, short enough to be actionable. The alert logic was designed so that outputs were filtered to patients not already on an active crisis plan, avoiding alert fatigue.</p>"
     },
     {
       "title": "Outcome",
-      "body": "<ul>\n<li>Model achieved 75% accuracy (80% recall) predicting mental health crisis four weeks in advance</li>\n<li>Clinicians could schedule reviews, adjust medication, or increase support before patients reached crisis point</li>\n<li>The project contributed to the evidence base that helped Koa Health secure investment and NHS partnerships, including a subsequent contract with Janssen</li>\n</ul>"
+      "body": "<ul>\n<li>Model achieved 75% accuracy (80% recall) predicting mental health crisis four weeks in advance</li>\n<li>Clinicians could schedule reviews, adjust medication, or increase support before patients reached crisis point</li>\n<li>The project contributed to the evidence base that helped Koa Health secure investment and NHS partnerships, including a subsequent contract with Janssen</li>\n<li>Findings were published in <a href=\"https://remkovermeulen.com/article.html?slug=machine-learning-algorithm-accurately-predicts-mental-health-crises\" target=\"_blank\" rel=\"noopener\">Nature Medicine</a></li>\n</ul>"
     }
   ],
   "gallery": [

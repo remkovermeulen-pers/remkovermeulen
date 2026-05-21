@@ -38,7 +38,7 @@
   "sections": [
     {
       "title": "Context",
-      "body": "<p>Telefonica Alpha, in collaboration with LSE (Prof. Paul Dolan) and the BBC. Large-scale digital behaviour change study.</p>"
+      "body": "<p>Telefonica Alpha, in collaboration with <a href=\"https://www.lse.ac.uk/people/paul-dolan\" target=\"_blank\" rel=\"noopener\">Professor Paul Dolan</a> at LSE and the BBC. Large-scale digital behaviour change study.</p>\n<p><a href=\"https://www.lse.ac.uk/people/paul-dolan\" target=\"_blank\" rel=\"noopener\">Professor Paul Dolan</a>, known for his work in health economics and behavioural science, was investigating cognitive bias modification to explore whether automatic behaviours can be changed at scale using this technique. He was collaborating with the BBC programme \"Lose Weight for Love\", which provided both the platform and the audience to run one of the largest studies of its kind outside a clinical setting.</p>"
     },
     {
       "title": "Problem",

@@ -47,10 +47,6 @@
   ],
   "sections": [
     {
-      "title": "Context",
-      "body": "<p>VP of Product at Telefonica Alpha Health / Koa Health, in collaboration with MGH and Harvard Medical School. Company raised €66M.</p>"
-    },
-    {
       "title": "Problem",
       "body": "<p>CBT is one of the most effective treatments for these conditions, but access is severely limited by therapist availability and cost. NHS waiting times for therapy could stretch to 12+ months. Private therapy was unaffordable for the majority. The business problem was demonstrating clinical equivalence to traditional therapy at a fraction of the cost — the evidence base required for NHS contracts, FDA submission, and investor confidence.</p>"
     },

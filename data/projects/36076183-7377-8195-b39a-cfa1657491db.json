@@ -29,7 +29,7 @@
   "sections": [
     {
       "title": "Context",
-      "body": "<p>Telefonica R&amp;D, in collaboration with the UN, Harvard University, and the Data Pop Alliance. Context: Ebola (Guinea) and Zika (Latin America) outbreaks.</p>"
+      "body": "<p>Telefonica R&amp;D, in collaboration with the UN, Harvard University, and the Data Pop Alliance.</p>\n<p>The project was initially developed in response to the Zika outbreak, in collaboration with Harvard, the WHO, and the United Nations. It was subsequently adapted for the Ebola outbreak, and later revisited as a potential tool during Covid-19. Although the system was technically feasible across all three, a decision was made not to pursue it further due to privacy concerns around the use of mobile network data at scale.</p>\n<p>Not all countries reached the same conclusion. Taiwan, for example, went ahead and implemented a comparable system during the Zika outbreak.</p>"
     },
     {
       "title": "Problem",
@@ -37,7 +37,7 @@
     },
     {
       "title": "My role",
-      "body": "<p>I led the product and service design: translating complex mobility modelling outputs into tools that public health officials could act on in real-time outbreak situations. I worked with epidemiologists at Harvard and public health partners at the UN. Data science modelling was led by the technical team.</p>"
+      "body": "<p>I led the product and service design: translating complex mobility modelling outputs into tools that public health officials could act on in real-time outbreak situations and worked together with the Telefonica R&amp;D research team who worked together with epidemiologists at Harvard and public health partners at the UN. </p>"
     },
     {
       "title": "Approach",
@@ -45,7 +45,7 @@
     },
     {
       "title": "Outcome",
-      "body": "<ul>\n<li>Outbreak source detection time reduced from weeks to hours in modelling validation</li>\n<li>Spread prediction models validated against both Ebola and Zika transmission data</li>\n<li>Collaboration with WHO, UNICEF, Harvard, and the Data Pop Alliance positioned Telefonica as a contributor to global health infrastructure</li>\n<li>Project directly informed Telefonica's health data partnership strategy</li>\n</ul>"
+      "body": "<ul>\n<li>Possible outbreak source detection time reduced from weeks to hours</li>\n<li>Collaboration with WHO, UNICEF, Harvard, and the Data Pop Alliance positioned Telefonica as a contributor to global health infrastructure</li>\n<li>Most effective in early-stage outbreaks where infection is still contained to a small proportion of the population. At high prevalence, as seen with Covid-19, broad public health measures become more effective than mobility-based targeting.</li>\n</ul>"
     }
   ],
   "gallery": [
