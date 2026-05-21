@@ -384,15 +384,20 @@ async function fetchProjects() {
     const tags          = (p['Tags']?.multi_select || []).map(t => t.name);
     const metricsRaw    = extractText(p['Metrics']);
     const logoDomain    = extractText(p['Logo Domain']);
-    const organisations = (p['Organisation']?.relation || [])
-                            .map(r => orgData[r.id])
-                            .filter(Boolean)
-                            .map(o => ({ name: o.name, logo: o.logo || '' }));
     const description = extractText(p['Description']);
 
     // Read existing JSON to preserve local asset paths as fallback
     const existingProjPath = path.join(projectsDir, `${page.id}.json`);
     const existingProj = fs.existsSync(existingProjPath) ? JSON.parse(fs.readFileSync(existingProjPath, 'utf8')) : null;
+
+    const organisations = (p['Organisation']?.relation || [])
+                            .map(r => orgData[r.id])
+                            .filter(Boolean)
+                            .map(o => {
+                              // Preserve any locally-set logo when Notion's Organisations DB has none
+                              const existingOrg = existingProj?.organisations?.find(e => e.name === o.name);
+                              return { name: o.name, logo: o.logo || existingOrg?.logo || '' };
+                            });
 
     // Folder name = {id}--{slug} so it's human-readable on disk
     function slugify(str) {
@@ -442,7 +447,7 @@ async function fetchProjects() {
     const metrics = metricsRaw
       ? metricsRaw.split(';').map(m => {
           const clean = m.trim();
-          const match = clean.match(/^([\d€$£%+×.M+]+)\s+(.+)$/);
+          const match = clean.match(/^([\d,€$£%+×.M+]+)\s+(.+)$/);
           return match
             ? { value: match[1], label: match[2] }
             : { value: '', label: clean };
