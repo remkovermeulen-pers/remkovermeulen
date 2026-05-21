@@ -530,6 +530,43 @@
     ]
   },
   {
+    "notionId": "36776183-7377-817f-b01d-d3c46dbff3fd",
+    "title": "BulliPedia",
+    "sector": "Media",
+    "status": "Live",
+    "year": 2013,
+    "priority": 999,
+    "tags": [
+      "Strategy",
+      "Design",
+      "Research"
+    ],
+    "lede": "",
+    "description": "Co-designed and built the world's first digital encyclopedia of gastronomy, creativity and innovation, in collaboration with the elBulli Foundation and Ferran Adrià — translating the Sapiens methodology into a navigable digital knowledge platform.",
+    "coverImage": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200&q=80",
+    "metrics": [
+      {
+        "value": "50+",
+        "label": "volumes planned"
+      },
+      {
+        "value": "23",
+        "label": "volumes published"
+      },
+      {
+        "value": "",
+        "label": "17,500+ pages of content"
+      }
+    ],
+    "logoDomain": "",
+    "organisations": [
+      {
+        "name": "El Bulli",
+        "logo": ""
+      }
+    ]
+  },
+  {
     "notionId": "36076183-7377-812b-9600-f901966bdb08",
     "title": "My health",
     "sector": "Health",

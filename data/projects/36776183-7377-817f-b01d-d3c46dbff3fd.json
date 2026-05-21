@@ -1,0 +1,61 @@
+{
+  "id": "36776183-7377-817f-b01d-d3c46dbff3fd",
+  "title": "BulliPedia",
+  "sector": "Media",
+  "status": "Live",
+  "year": 2013,
+  "tags": [
+    "Strategy",
+    "Design",
+    "Research"
+  ],
+  "lede": "",
+  "description": "Co-designed and built the world's first digital encyclopedia of gastronomy, creativity and innovation, in collaboration with the elBulli Foundation and Ferran Adrià — translating the Sapiens methodology into a navigable digital knowledge platform.",
+  "coverImage": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200&q=80",
+  "role": "",
+  "timeline": "",
+  "partners": [],
+  "metrics": [
+    {
+      "value": "50+",
+      "label": "volumes planned"
+    },
+    {
+      "value": "23",
+      "label": "volumes published"
+    },
+    {
+      "value": "",
+      "label": "17,500+ pages of content"
+    }
+  ],
+  "logoDomain": "",
+  "organisations": [
+    {
+      "name": "El Bulli",
+      "logo": ""
+    }
+  ],
+  "sections": [
+    {
+      "title": "Context",
+      "body": "<p>BulliPedia is the world's first encyclopedia of gastronomy, creativity and innovation, created by Ferran Adrià and the elBulli Foundation. Built on the Sapiens methodology — a framework for structured, interdisciplinary knowledge that deconstructs complex domains before reassembling them — the project spans 50+ volumes of 500 pages each, published across print, digital, and app formats. Telefónica partnered with the Foundation to develop the digital platform and knowledge architecture underpinning the project.</p>"
+    },
+    {
+      "title": "Problem",
+      "body": "<p>The elBulli Foundation needed a technology partner to realise an extraordinarily ambitious digital knowledge structure: classifying and encoding the entire history and practice of fine dining gastronomy in a navigable, scalable digital form. The challenge was how to design the taxonomy, data models, and user experience for a body of knowledge with no existing precedent. The Sapiens methodology gave the intellectual framework, but the digital translation required product and design expertise to execute.</p>"
+    },
+    {
+      "title": "My role",
+      "body": "<p>I directed the design and led the collaboration between Telefónica's technical teams and the elBulli Foundation. Working directly with Ferran Adrià's team, I was responsible for translating the Foundation's Sapiens methodology into a viable digital product — bridging the gap between the Foundation's knowledge curation work and the technical teams delivering the platform. Team management and partner relationships were mine; engineering execution was delegated.</p>"
+    },
+    {
+      "title": "Approach",
+      "body": "<p>The work involved co-designing the information architecture with the Foundation, developing the taxonomy and classification architecture. Design decisions had to honour both the rigour of the Sapiens methodology and the practical constraints of building a scalable digital system across multiple output formats.</p>"
+    },
+    {
+      "title": "Outcome",
+      "body": "<ul>\n<li>Digital platform architecture and taxonomy system delivered in collaboration with the elBulli Foundation</li>\n<li>Foundation laid for a 50-volume, 25,000+ page encyclopedia in digital form</li>\n<li>Interactive relationship mapping tool delivered, enabling users to explore the connections between gastronomic concepts, techniques, and ingredients across the BulliPedia knowledge base</li>\n</ul>"
+    }
+  ]
+}
