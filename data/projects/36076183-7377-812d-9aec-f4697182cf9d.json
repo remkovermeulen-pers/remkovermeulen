@@ -66,5 +66,10 @@
   "gallery": [
     "assets/projects/36076183-7377-812d-9aec-f4697182cf9d--perspectives/01.svg",
     "assets/projects/36076183-7377-812d-9aec-f4697182cf9d--perspectives/02.mp4"
+  ],
+  "relatedProjects": [
+    "35f76183-7377-8135-9dd1-d1b22dfa6da0",
+    "36076183-7377-8195-b39a-cfa1657491db",
+    "36076183-7377-8186-98c9-d7ffbbb950f3"
   ]
 }
