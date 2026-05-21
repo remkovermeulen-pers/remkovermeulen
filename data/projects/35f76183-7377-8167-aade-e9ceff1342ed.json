@@ -38,6 +38,10 @@
     {
       "name": "O2",
       "logo": "02.svg"
+    },
+    {
+      "name": "El Bulli",
+      "logo": ""
     }
   ],
   "sections": [
@@ -55,11 +59,11 @@
     },
     {
       "title": "Approach",
-      "body": "<p>Each product was grounded in field research before design began — home visits for chronic disease, clinical workflow research for Parkinson's, mobility data analysis for pandemic prediction. I ran co-design workshops with clinical staff, facilitated cross-functional delivery, and managed the tension between the pace of a commercial product team and the rigour required by clinical and regulatory partners. Across 20+ MVPs, the selection of which 5 to launch was driven by validated demand and commercial viability, not technical interest.</p>"
+      "body": "<p>Each product was grounded in field research before design began — home visits for chronic disease, clinical workflow research for Parkinson's, mobility data analysis for pandemic prediction. I ran co-design workshops with clinical staff, facilitated cross-functional delivery, and managed the tension between the pace of a commercial product team and the rigour required by clinical and regulatory partners. Across 20+ MVPs, the selection of which 5 to launch was driven by validated demand and commercial viability, not technical interest. Collaboration extended beyond healthcare: we worked with <strong>El Bulli Labs</strong>, the innovation foundation created by Ferran Adrià, applying their methodology to digital service design. One of the launched products was <a href=\"http://radio.me/\" target=\"_blank\" rel=\"noopener\"><strong>Radio.me</strong></a>, a service that enabled elderly people to communicate via WhatsApp without owning or operating a smartphone — addressing digital exclusion in a population with high reliance on voice communication.</p>"
     },
     {
       "title": "Outcome",
-      "body": "<ul>\n<li>48% decrease in mortality rate for patients on the chronic disease management service</li>\n<li>63% decrease in hospital readmission rate</li>\n<li>78% precision in Parkinson's voice detection</li>\n<li>20+ MVPs developed, 5 successfully launched</li>\n</ul>"
+      "body": "<ul>\n<li>48% decrease in mortality rate for patients on the chronic disease management service</li>\n<li>63% decrease in hospital readmission rate</li>\n<li>78% precision in Parkinson's voice detection</li>\n<li>20+ MVPs developed, 5 successfully launched</li>\n<li><a href=\"http://radio.me/\" target=\"_blank\" rel=\"noopener\">Radio.me</a> launched — enabling elderly users to send and receive WhatsApp messages via voice call, no smartphone required</li>\n</ul>"
     }
   ],
   "gallery": [
