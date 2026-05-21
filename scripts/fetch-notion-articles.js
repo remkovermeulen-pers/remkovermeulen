@@ -335,9 +335,10 @@ async function fetchOrgData() {
         const titleProp = p['Name'] || p['Organisation'] || Object.values(p).find(x => x.type === 'title');
         const name = extractText(titleProp);
         const logo = extractText(p['Logo']);
+        const projects = (p['Projects']?.relation || []).map(r => r.id);
         // Store under both hyphenated and plain-UUID keys to handle both formats
         const plainId = page.id.replace(/-/g, '');
-        if (name) { map[page.id] = { name, logo }; map[plainId] = { name, logo }; }
+        if (name) { map[page.id] = { name, logo, projects }; map[plainId] = { name, logo, projects }; }
       }
       cursor = data.has_more ? data.next_cursor : null;
     } while (cursor);
@@ -398,6 +399,16 @@ async function fetchProjects() {
                               const existingOrg = existingProj?.organisations?.find(e => e.name === o.name);
                               return { name: o.name, logo: o.logo || existingOrg?.logo || '' };
                             });
+
+    // Compute relatedProjects: union of sibling project IDs across all linked orgs, excluding self
+    const relatedProjects = [...new Set(
+      (p['Organisation']?.relation || [])
+        .flatMap(r => {
+          const org = orgData[r.id] || orgData[r.id.replace(/-/g, '')];
+          return org?.projects || [];
+        })
+        .filter(id => id !== page.id && id !== page.id.replace(/-/g, ''))
+    )];
 
     // Folder name = {id}--{slug} so it's human-readable on disk
     function slugify(str) {
@@ -471,6 +482,7 @@ async function fetchProjects() {
       role, timeline, partners, metrics, logoDomain, organisations, sections: displaySections,
     };
     if (gallery) projData.gallery = gallery;
+    if (relatedProjects.length) projData.relatedProjects = relatedProjects;
 
     fs.writeFileSync(
       path.join(projectsDir, `${page.id}.json`),
