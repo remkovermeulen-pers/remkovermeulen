@@ -227,25 +227,16 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
 /* LOADING / ERROR */
 .cs-loading { padding:120px 0; text-align:center; font-size:14px; color:var(--muted-2); letter-spacing:0.1em; }
 
-/* RELATED PROJECTS */
-.cs-related { margin-top:64px; padding-top:48px; border-top:1px solid var(--line); }
-.cs-related > h2 { font-family:var(--font-display); font-weight:600; font-size:clamp(22px,2.4vw,30px); letter-spacing:-0.01em; margin:0 0 32px; }
-.cs-related-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:2px; }
-.proj-card { display:flex; flex-direction:column; background:var(--bg-card); border:1px solid var(--accent); overflow:hidden; transition:transform .3s,box-shadow .3s; text-decoration:none; color:inherit; }
-.proj-card:hover { transform:translate(-3px,-3px); box-shadow:6px 6px 0 0 var(--primary); }
-.proj-card__img { aspect-ratio:16/10; overflow:hidden; position:relative; background:var(--bg-elev); flex-shrink:0; }
-.proj-card__img img,.proj-card__img video { width:100%; height:100%; object-fit:cover; }
-.proj-card__chip { position:absolute; top:14px; left:14px; background:var(--primary); color:var(--on-primary); padding:6px 10px; font-size:9px; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; }
-.proj-card__body { padding:20px; display:flex; flex-direction:column; gap:12px; flex:1; }
-.proj-card h3 { margin:0; font-family:var(--font-display); font-weight:600; font-size:clamp(16px,1.6vw,20px); line-height:1.2; letter-spacing:-0.01em; }
-.proj-card__lede { margin:0; font-size:13px; color:var(--muted-2); line-height:1.55; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
-.proj-card__footer { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:8px; margin-top:auto; padding-top:12px; border-top:1px solid var(--line); }
-.proj-card__tags { display:flex; flex-wrap:wrap; gap:6px; }
-.proj-card__arrow { display:flex; align-items:center; gap:6px; font-size:10px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:var(--muted-2); transition:color .25s; white-space:nowrap; }
-.proj-card:hover .proj-card__arrow { color:var(--primary); }
-.proj-card__arrow svg { transition:transform .25s; }
-.proj-card:hover .proj-card__arrow svg { transform:translateX(4px); }
-@media (max-width:600px) { .cs-related-grid { grid-template-columns:1fr; } }
+/* RELATED PROJECTS (sidebar) */
+.cs-related { margin-top:32px; padding-top:24px; border-top:1px solid var(--line); }
+.cs-related h5 { margin:0 0 14px; font-size:10px; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color:var(--muted-2); }
+.cs-related-list { display:flex; flex-direction:column; gap:10px; }
+.cs-related-item { display:grid; grid-template-columns:68px 1fr; gap:10px; align-items:start; text-decoration:none; color:inherit; }
+.cs-related-item__thumb { aspect-ratio:16/10; overflow:hidden; background:var(--bg-elev); flex-shrink:0; }
+.cs-related-item__thumb img,.cs-related-item__thumb video { width:100%; height:100%; object-fit:cover; display:block; pointer-events:none; }
+.cs-related-item__title { font-size:12px; font-weight:600; line-height:1.35; transition:color .2s; }
+.cs-related-item:hover .cs-related-item__title { color:var(--accent); }
+.cs-related-item__year { font-size:10px; color:var(--muted-2); margin-top:3px; letter-spacing:0.06em; }
 </style>
 <script>
   !function(){var i="analytics",analytics=window[i]=window[i]||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","screen","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware","register"];analytics.factory=function(e){return function(){if(window[i].initialized)return window[i][e].apply(window[i],arguments);var n=Array.prototype.slice.call(arguments);if(["track","screen","alias","group","page","identify"].indexOf(e)>-1){var c=document.querySelector("link[rel='canonical']");n.push({__t:"bpc",c:c&&c.getAttribute("href")||void 0,p:location.pathname,u:location.href,s:location.search,t:document.title,r:document.referrer})}n.unshift(e);analytics.push(n);return analytics}};for(var n=0;n<analytics.methods.length;n++){var key=analytics.methods[n];analytics[key]=analytics.factory(key)}analytics.load=function(key,n){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.setAttribute("data-global-segment-analytics-key",i);t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var r=document.getElementsByTagName("script")[0];r.parentNode.insertBefore(t,r);analytics._loadOptions=n};analytics._writeKey="CdQKoupxHnGYLIABbryRWUM9BnI3p8t6";;analytics.SNIPPET_VERSION="5.2.0";
@@ -414,11 +405,9 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
       '</section>' +
 
       '<div class="cs-body">' +
-        '<aside class="cs-aside">' + sidebarHtml + '</aside>' +
+        '<aside class="cs-aside">' + sidebarHtml + buildRelatedProjects(proj, all) + '</aside>' +
         '<article class="cs-content">' + sectionsHtml + '</article>' +
       '</div>' +
-
-      buildRelatedProjects(proj, all) +
 
       nextHtml;
   }
@@ -487,37 +476,26 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
       return all.find(function(p) { return p.notionId === id || p.id === id; });
     }).filter(Boolean);
     if (!projs.length) return '';
-    var cards = projs.map(function(p) {
+    var items = projs.map(function(p) {
       var cover = p.coverImage || '';
       var isVideo = /\.(mp4|mov|webm)$/i.test(cover);
-      var imgHtml = cover
+      var thumbHtml = cover
         ? (isVideo
-            ? '<video src="' + esc(cover) + '" muted playsinline loop autoplay style="width:100%;height:100%;object-fit:cover;pointer-events:none;"></video>'
+            ? '<video src="' + esc(cover) + '" muted playsinline loop autoplay></video>'
             : '<img src="' + esc(cover) + '" alt="" loading="lazy">')
         : '';
-      var tags = (p.tags || []).slice(0, 3).map(function(t) {
-        return '<span class="tag">' + esc(t) + '</span>';
-      }).join('');
-      var arrow = '<span class="proj-card__arrow">View<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="square"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>';
-      return '<a href="case-study?id=' + esc(p.notionId || p.id) + '" class="proj-card">'
-        + '<div class="proj-card__img">'
-        + (p.sector ? '<span class="proj-card__chip">' + esc(p.sector) + '</span>' : '')
-        + imgHtml
-        + '</div>'
-        + '<div class="proj-card__body">'
-        + '<h3>' + esc(p.title) + '</h3>'
-        + (p.description ? '<p class="proj-card__lede">' + esc(p.description) + '</p>' : '')
-        + '<div class="proj-card__footer">'
-        + '<div class="proj-card__tags">' + tags + '</div>'
-        + arrow
-        + '</div>'
+      return '<a href="case-study?id=' + esc(p.notionId || p.id) + '" class="cs-related-item">'
+        + '<div class="cs-related-item__thumb">' + thumbHtml + '</div>'
+        + '<div>'
+        + '<div class="cs-related-item__title">' + esc(p.title) + '</div>'
+        + (p.year ? '<div class="cs-related-item__year">' + esc(String(p.year)) + '</div>' : '')
         + '</div>'
         + '</a>';
     }).join('');
-    return '<section class="cs-related">'
-      + '<h2>Projects &amp; work</h2>'
-      + '<div class="cs-related-grid">' + cards + '</div>'
-      + '</section>';
+    return '<div class="cs-related">'
+      + '<h5>Projects</h5>'
+      + '<div class="cs-related-list">' + items + '</div>'
+      + '</div>';
   }
 
   function buildNext(next) {
