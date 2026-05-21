@@ -38,11 +38,20 @@
     {
       "name": "O2",
       "logo": "02.svg"
-    },
-    {
-      "name": "El Bulli",
-      "logo": ""
     }
+  ],
+  "relatedProjects": [
+    "36076183-7377-81c6-9ab7-c49d505b389a",
+    "36076183-7377-81ec-ab0d-cb34f758bbcf",
+    "36076183-7377-816c-9a63-e4952bd248d0",
+    "36076183-7377-81c8-85aa-d341a65cf2b5",
+    "36076183-7377-814a-9f9c-f356f12270ef",
+    "36076183-7377-81ae-9453-ebb3a48a1cf3",
+    "36076183-7377-81ce-92bc-caa57a662ca6",
+    "36076183-7377-8114-881b-d864ffc34948",
+    "36076183-7377-8191-b686-ee42ad8574d4",
+    "36076183-7377-8181-a326-c925904d52f8",
+    "36776183-7377-817f-b01d-d3c46dbff3fd"
   ],
   "sections": [
     {
@@ -67,7 +76,6 @@
     }
   ],
   "gallery": [
-    "assets/projects/35f76183-7377-8167-aade-e9ceff1342ed--telefonica-o2/01.mov",
     "https://www.youtube.com/watch?v=wYgzbqLfuVI",
     "assets/projects/35f76183-7377-8167-aade-e9ceff1342ed--telefonica-o2/02.mov",
     "assets/projects/35f76183-7377-8167-aade-e9ceff1342ed--telefonica-o2/03.jpg"
