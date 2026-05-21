@@ -25,8 +25,8 @@
       "label": "volumes published"
     },
     {
-      "value": "",
-      "label": "17,500 pages of content"
+      "value": "17,500",
+      "label": "pages of content"
     }
   ],
   "logoDomain": "",
@@ -37,7 +37,7 @@
     },
     {
       "name": "El Bulli",
-      "logo": ""
+      "logo": "bullipedia.svg"
     }
   ],
   "sections": [
