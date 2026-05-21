@@ -18,8 +18,8 @@
   "logoDomain": "",
   "organisations": [
     {
-      "name": "Telefónica",
-      "logo": "telefonica.com.svg"
+      "name": "Koa Health",
+      "logo": "koa.health.com.png"
     }
   ],
   "sections": [
@@ -49,10 +49,7 @@
     "assets/projects/36076183-7377-8181-a326-c925904d52f8--explainable-ai/02.png"
   ],
   "relatedProjects": [
-    "35f76183-7377-8167-aade-e9ceff1342ed",
-    "36076183-7377-81ec-ab0d-cb34f758bbcf",
-    "36076183-7377-81c8-85aa-d341a65cf2b5",
-    "36076183-7377-816c-9a63-e4952bd248d0",
-    "36776183-7377-817f-b01d-d3c46dbff3fd"
+    "35f76183-7377-8135-9dd1-d1b22dfa6da0",
+    "36076183-7377-812d-9aec-f4697182cf9d"
   ]
 }

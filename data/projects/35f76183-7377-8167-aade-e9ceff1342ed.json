@@ -59,11 +59,11 @@
     },
     {
       "title": "Approach",
-      "body": "<p>Each product was grounded in field research before design began — home visits for chronic disease, clinical workflow research for Parkinson's, mobility data analysis for pandemic prediction. I ran co-design workshops with clinical staff, facilitated cross-functional delivery, and managed the tension between the pace of a commercial product team and the rigour required by clinical and regulatory partners. Across 20+ MVPs, the selection of which 5 to launch was driven by validated demand and commercial viability, not technical interest. Collaboration extended beyond healthcare: we worked with <strong>El Bulli Labs</strong>, the innovation foundation created by Ferran Adrià, applying their methodology to digital service design. One of the launched products was <a href=\"http://radio.me/\" target=\"_blank\" rel=\"noopener\"><strong>Radio.me</strong></a>, a service that enabled elderly people to communicate via WhatsApp without owning or operating a smartphone — addressing digital exclusion in a population with high reliance on voice communication.</p>"
+      "body": "<p>Each product was grounded in field research before design began — home visits for chronic disease, clinical workflow research for Parkinson's, mobility data analysis for pandemic prediction. I ran co-design workshops with clinical staff, facilitated cross-functional delivery, and managed the tension between the pace of a commercial product team and the rigour required by clinical and regulatory partners. Across 20+ MVPs, the selection of which 5 to launch was driven by validated demand and commercial viability, not technical interest. Collaboration extended beyond healthcare: we worked with the <strong>elBulli Foundation</strong>, applying the Sapiens methodology to digital service design — a collaboration that also led to BulliPedia. One of the launched products was <a href=\"http://radio.me/\" target=\"_blank\" rel=\"noopener\"><strong>Radio.me</strong></a>, enabling elderly users to send and receive WhatsApp messages via voice call, with no smartphone required.</p>"
     },
     {
       "title": "Outcome",
-      "body": "<ul>\n<li>48% decrease in mortality rate for patients on the chronic disease management service</li>\n<li>63% decrease in hospital readmission rate</li>\n<li>78% precision in Parkinson's voice detection</li>\n<li>20+ MVPs developed, 5 successfully launched</li>\n<li><a href=\"http://radio.me/\" target=\"_blank\" rel=\"noopener\">Radio.me</a> launched — enabling elderly users to send and receive WhatsApp messages via voice call, no smartphone required</li>\n</ul>"
+      "body": "<p>The portfolio demonstrated that a telecoms company could deliver genuine clinical and commercial impact. The chronic disease service reduced mortality by 48% and hospital readmissions by 63%. Parkinson's voice detection reached 78% precision. Of 20+ MVPs developed, five reached launch — each selected on validated demand, not technical ambition. <a href=\"http://radio.me/\" target=\"_blank\" rel=\"noopener\">Radio.me</a> went on to serve elderly users across Spain, giving them access to WhatsApp without ever touching a smartphone.</p>"
     }
   ],
   "gallery": [
@@ -74,7 +74,6 @@
   "relatedProjects": [
     "36076183-7377-81ec-ab0d-cb34f758bbcf",
     "36076183-7377-81c8-85aa-d341a65cf2b5",
-    "36076183-7377-8181-a326-c925904d52f8",
     "36076183-7377-816c-9a63-e4952bd248d0",
     "36776183-7377-817f-b01d-d3c46dbff3fd",
     "36076183-7377-81c6-9ab7-c49d505b389a"
