@@ -11,7 +11,7 @@
   ],
   "lede": "",
   "description": "Co-designed and built the world's first digital encyclopedia of gastronomy, creativity and innovation, in collaboration with the elBulli Foundation and Ferran Adrià — translating the Sapiens methodology into a navigable digital knowledge platform.",
-  "coverImage": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200&q=80",
+  "coverImage": "assets/projects/36776183-7377-817f-b01d-d3c46dbff3fd--bullipedia/01.jpg",
   "role": "",
   "timeline": "",
   "partners": [],
@@ -36,11 +36,6 @@
       "logo": ""
     }
   ],
-  "gallery": [
-    "assets/projects/36776183-7377-817f-b01d-d3c46dbff3fd--bullipedia/01.jpg",
-    "assets/projects/36776183-7377-817f-b01d-d3c46dbff3fd--bullipedia/02.mov",
-    "https://www.youtube.com/watch?v=IuZrrSoRh7k"
-  ],
   "sections": [
     {
       "title": "Context",
@@ -62,5 +57,10 @@
       "title": "Outcome",
       "body": "<ul>\n<li>Digital platform architecture and taxonomy system delivered in collaboration with the elBulli Foundation</li>\n<li>Foundation laid for a 50-volume, 25,000+ page encyclopedia in digital form</li>\n<li>Interactive relationship mapping tool delivered, enabling users to explore the connections between gastronomic concepts, techniques, and ingredients across the BulliPedia knowledge base</li>\n</ul>"
     }
+  ],
+  "gallery": [
+    "assets/projects/36776183-7377-817f-b01d-d3c46dbff3fd--bullipedia/01.jpg",
+    "assets/projects/36776183-7377-817f-b01d-d3c46dbff3fd--bullipedia/02.mov",
+    "https://www.youtube.com/watch?v=IuZrrSoRh7k"
   ]
 }
