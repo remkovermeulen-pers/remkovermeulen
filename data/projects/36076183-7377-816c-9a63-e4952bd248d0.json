@@ -1,12 +1,13 @@
 {
   "id": "36076183-7377-816c-9a63-e4952bd248d0",
   "title": "Parkinson voice detection",
-  "sector": "",
   "status": "Live",
   "year": 2016,
   "tags": [
     "Product",
-    "Research"
+    "Research",
+    "Health",
+    "AI"
   ],
   "lede": "",
   "description": "Developed a telephone-based Parkinson's detection service using voice analysis, achieving 78% accuracy with no specialist equipment — accessible to any patient with a mobile or landline phone.",

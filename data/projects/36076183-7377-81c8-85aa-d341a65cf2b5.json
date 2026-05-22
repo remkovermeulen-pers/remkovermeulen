@@ -1,12 +1,13 @@
 {
   "id": "36076183-7377-81c8-85aa-d341a65cf2b5",
   "title": "Bipolar detection",
-  "sector": "",
   "status": "Live",
   "year": 2016,
   "tags": [
     "Product",
-    "Research"
+    "Research",
+    "Health",
+    "AI"
   ],
   "lede": "",
   "description": "Designed a passive bipolar monitoring service using anonymised mobile network data, giving psychiatrists a continuous view of patient state between appointments without requiring any active input from patients.",

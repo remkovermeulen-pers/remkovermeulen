@@ -1,12 +1,13 @@
 {
   "id": "36076183-7377-8195-b39a-cfa1657491db",
   "title": "Pandemic prediction using telephone data",
-  "sector": "",
   "status": "Live",
   "year": 2021,
   "tags": [
     "Strategy",
-    "Research"
+    "Research",
+    "Health",
+    "AI"
   ],
   "lede": "",
   "description": "Used mobile network mobility data to cut epidemic source detection from weeks to hours, and predict outbreak spread before clinical data surfaced — validated across Ebola and Zika in collaboration with WHO and Harvard.",

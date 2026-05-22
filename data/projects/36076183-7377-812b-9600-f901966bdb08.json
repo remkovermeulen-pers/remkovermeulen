@@ -1,12 +1,12 @@
 {
   "id": "36076183-7377-812b-9600-f901966bdb08",
   "title": "My health",
-  "sector": "",
   "status": "Live",
   "year": 2013,
   "tags": [
     "Product",
-    "Research"
+    "Research",
+    "Health"
   ],
   "lede": "",
   "description": "Designed an SMS and phone-based medical consultation service for Vivo Brasil, giving middle and lower-income households access to a doctor through infrastructure they already owned.",
