@@ -23,16 +23,6 @@ const HEADERS = {
   'Content-Type': 'application/json',
 };
 
-const SECTOR_IMAGES = {
-  SaaS:       'https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1200&q=80',
-  PropTech:   'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&q=80',
-  Health:     'https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1200&q=80',
-  Telco:      'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&q=80',
-  Media:      'https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200&q=80',
-  Automotive: 'https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1200&q=80',
-  Education:  'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1200&q=80',
-  Finance:    'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80',
-};
 
 async function notionRequest(method, p, body, attempt = 0) {
   const opts = { method, headers: HEADERS };
@@ -378,7 +368,6 @@ async function fetchProjects() {
     const title = extractText(p['Name']);
     if (!title) continue;
 
-    const sector        = p['Sector']?.select?.name ?? '';
     const status        = p['Status']?.select?.name ?? '';
     const year          = p['Year']?.number ?? null;
     const priority      = p['Priority']?.number ?? 999;
@@ -430,7 +419,7 @@ async function fetchProjects() {
       ? gallery[0]
       : (existingProj?.coverImage?.startsWith('assets/'))
         ? existingProj.coverImage
-        : (SECTOR_IMAGES[sector] || SECTOR_IMAGES.SaaS);
+        : '';
 
     // Fetch page blocks and split into sections
     const blocks = await fetchAllBlocks(page.id);
@@ -474,11 +463,11 @@ async function fetchProjects() {
     // Filter out Role/Partners from displayed sections (they live in sidebar)
     const displaySections = sections.filter(s => s.title !== 'Role' && s.title !== 'Partners');
 
-    const meta = { notionId: page.id, title, sector, status, year, priority, tags, lede, description, coverImage, metrics, logoDomain, organisations };
+    const meta = { notionId: page.id, title, status, year, priority, tags, lede, description, coverImage, metrics, logoDomain, organisations };
     metaList.push(meta);
 
     const projData = {
-      id: page.id, title, sector, status, year, tags, lede, description, coverImage,
+      id: page.id, title, status, year, tags, lede, description, coverImage,
       role, timeline, partners, metrics, logoDomain, organisations, sections: displaySections,
     };
     if (gallery) projData.gallery = gallery;

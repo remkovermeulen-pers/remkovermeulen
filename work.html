@@ -252,7 +252,6 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
               .map(function(m){ return '<div class="proj-card__stat"><span class="metric">'+esc(m.value)+'</span><div class="metric-label">'+esc(m.label)+'</div></div>'; }).join('');
             return '<a href="case-study?id=' + esc(p.notionId) + '" class="proj-card" data-tags="' + esc(JSON.stringify(p.tags || [])) + '">'
               + '<div class="proj-card__img">'
-              + '<span class="proj-card__chip">' + esc(p.sector) + '</span>'
               + '<img class="bw-img" src="' + esc(ytThumb(p.coverImage)) + '" alt="' + esc(p.title) + '" loading="lazy">'
               + '</div>'
               + '<div class="proj-card__body">'
