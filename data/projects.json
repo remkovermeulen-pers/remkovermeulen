@@ -2,7 +2,7 @@
   {
     "notionId": "35f76183-7377-81f2-9f5a-dbd1debf2fb1",
     "title": "Toggl",
-    "sector": "SaaS",
+    "sector": "",
     "status": "Live",
     "year": 2026,
     "priority": 1,
@@ -38,7 +38,7 @@
   {
     "notionId": "35f76183-7377-8135-9dd1-d1b22dfa6da0",
     "title": "Koa Health",
-    "sector": "Health",
+    "sector": "",
     "status": "Live",
     "year": 2016,
     "priority": 2,
@@ -83,7 +83,7 @@
   {
     "notionId": "35f76183-7377-816c-8a7f-e43d868da1c7",
     "title": "SignAssist",
-    "sector": "PropTech",
+    "sector": "",
     "status": "Live",
     "year": 2024,
     "priority": 3,
@@ -123,7 +123,7 @@
   {
     "notionId": "36076183-7377-81ce-92bc-caa57a662ca6",
     "title": "Xploratory future ideation",
-    "sector": "Health",
+    "sector": "",
     "status": "Live",
     "year": 2018,
     "priority": 4,
@@ -163,7 +163,7 @@
   {
     "notionId": "36076183-7377-8181-a326-c925904d52f8",
     "title": "Explainable AI",
-    "sector": "Health",
+    "sector": "",
     "status": "Live",
     "year": 2020,
     "priority": 5,
@@ -186,7 +186,7 @@
   {
     "notionId": "36076183-7377-812d-9aec-f4697182cf9d",
     "title": "Perspectives",
-    "sector": "Health",
+    "sector": "",
     "status": "Live",
     "year": 2021,
     "priority": 6,
@@ -232,7 +232,7 @@
   {
     "notionId": "36676183-7377-81b3-940f-ebfedd9dc078",
     "title": "Mercedes-Benz Innovation",
-    "sector": "Automotive",
+    "sector": "",
     "status": "Live",
     "year": 2025,
     "priority": 8,
@@ -256,7 +256,7 @@
   {
     "notionId": "36076183-7377-8195-b39a-cfa1657491db",
     "title": "Pandemic prediction using telephone data",
-    "sector": "Health",
+    "sector": "",
     "status": "Live",
     "year": 2021,
     "priority": 999,
@@ -283,7 +283,7 @@
   {
     "notionId": "36076183-7377-81ad-ad56-ddcc3b80e04d",
     "title": "Mental crisis prediction",
-    "sector": "Health",
+    "sector": "",
     "status": "Live",
     "year": 2021,
     "priority": 999,
@@ -311,7 +311,7 @@
   {
     "notionId": "35f76183-7377-812e-89c0-f80d125d898b",
     "title": "Johnson & Johnson",
-    "sector": "Health",
+    "sector": "",
     "status": "Live",
     "year": 2021,
     "priority": 999,
@@ -334,7 +334,7 @@
   {
     "notionId": "36076183-7377-8114-881b-d864ffc34948",
     "title": "Fluid",
-    "sector": "Health",
+    "sector": "",
     "status": "Live",
     "year": 2019,
     "priority": 999,
@@ -358,7 +358,7 @@
   {
     "notionId": "36076183-7377-8191-b686-ee42ad8574d4",
     "title": "Ting happy moments",
-    "sector": "Health",
+    "sector": "",
     "status": "Live",
     "year": 2019,
     "priority": 999,
@@ -381,7 +381,7 @@
   {
     "notionId": "36076183-7377-81ae-9453-ebb3a48a1cf3",
     "title": "TATU interactive tattoo",
-    "sector": "Health",
+    "sector": "",
     "status": "Live",
     "year": 2018,
     "priority": 999,
@@ -404,7 +404,7 @@
   {
     "notionId": "36076183-7377-814a-9f9c-f356f12270ef",
     "title": "Brain training",
-    "sector": "Health",
+    "sector": "",
     "status": "Live",
     "year": 2017,
     "priority": 999,
@@ -440,7 +440,7 @@
   {
     "notionId": "36076183-7377-816c-9a63-e4952bd248d0",
     "title": "Parkinson voice detection",
-    "sector": "Health",
+    "sector": "",
     "status": "Live",
     "year": 2016,
     "priority": 999,
@@ -472,7 +472,7 @@
   {
     "notionId": "36076183-7377-81c8-85aa-d341a65cf2b5",
     "title": "Bipolar detection",
-    "sector": "Health",
+    "sector": "",
     "status": "Live",
     "year": 2016,
     "priority": 999,
@@ -499,7 +499,7 @@
   {
     "notionId": "36076183-7377-81c6-9ab7-c49d505b389a",
     "title": "Health at home",
-    "sector": "Health",
+    "sector": "",
     "status": "Live",
     "year": 2014,
     "priority": 999,
@@ -532,7 +532,7 @@
   {
     "notionId": "36776183-7377-817f-b01d-d3c46dbff3fd",
     "title": "BulliPedia",
-    "sector": "Media",
+    "sector": "",
     "status": "Live",
     "year": 2013,
     "priority": 999,
@@ -573,7 +573,7 @@
   {
     "notionId": "36076183-7377-812b-9600-f901966bdb08",
     "title": "My health",
-    "sector": "Health",
+    "sector": "",
     "status": "Live",
     "year": 2013,
     "priority": 999,
@@ -596,7 +596,7 @@
   {
     "notionId": "35f76183-7377-8167-aade-e9ceff1342ed",
     "title": "Telefónica / O2",
-    "sector": "Telco",
+    "sector": "",
     "status": "Live",
     "year": 2011,
     "priority": 999,
