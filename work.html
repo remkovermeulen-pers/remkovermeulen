@@ -151,6 +151,12 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
   .proj-card__stats { gap:24px; }
 }
 
+/* FILTER BAR */
+.filter-bar { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:24px; }
+.filter-chip { display:inline-block; padding:7px 14px; font-size:10px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:var(--muted-2); border:1px solid var(--line); line-height:1; cursor:pointer; background:none; transition:color .2s, border-color .2s, background .2s; }
+.filter-chip:hover { color:var(--accent); border-color:var(--accent); }
+.filter-chip.is-active { color:var(--on-primary); background:var(--primary); border-color:var(--primary); }
+
 /* CTA BLOCK */
 .cta-block { margin-top:72px; padding-top:48px; border-top:1px solid var(--primary); display:grid; grid-template-columns:1.4fr 1fr; gap:32px; align-items:center; }
 .cta-block h2 { margin:0 0 18px; font-family:var(--font-display); font-weight:600; font-size:clamp(32px,4.4vw,56px); line-height:1.1; letter-spacing:-0.01em; }
@@ -209,6 +215,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
       <span class="label-xs" id="proj-count"></span>
     </div>
 
+    <div class="filter-bar" id="filter-bar"></div>
     <div class="project-grid" id="project-grid">
       <!-- populated by JS from data/projects.json -->
     </div>
@@ -233,6 +240,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
         .then(function(r){ return r.json(); })
         .then(function(projects){
           var grid = document.getElementById('project-grid');
+          var filterBar = document.getElementById('filter-bar');
           var count = document.getElementById('proj-count');
           if (!grid) return;
           projects.sort(function(a,b){
@@ -241,12 +249,12 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
             if (pa !== pb) return pa - pb;
             return (b.year || 0) - (a.year || 0);
           });
-          if (count) count.textContent = projects.length + ' Case Studies';
+
           grid.innerHTML = projects.map(function(p){
             var tags = (p.tags || []).map(function(t){ return '<span class="tag">' + esc(t) + '</span>'; }).join('');
             var metrics = (p.metrics || []).filter(function(m){ return m.value; }).slice(0,2)
               .map(function(m){ return '<div class="proj-card__stat"><span class="metric">'+esc(m.value)+'</span><div class="metric-label">'+esc(m.label)+'</div></div>'; }).join('');
-            return '<a href="case-study?id=' + esc(p.notionId) + '" class="proj-card">'
+            return '<a href="case-study?id=' + esc(p.notionId) + '" class="proj-card" data-tags="' + esc(JSON.stringify(p.tags || [])) + '">'
               + '<div class="proj-card__img">'
               + '<span class="proj-card__chip">' + esc(p.sector) + '</span>'
               + '<img class="bw-img" src="' + esc(ytThumb(p.coverImage)) + '" alt="' + esc(p.title) + '" loading="lazy">'
@@ -262,6 +270,45 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
               + '</div>'
               + '</a>';
           }).join('');
+
+          // Collect unique tags in order of first appearance
+          var allTags = [];
+          projects.forEach(function(p){
+            (p.tags || []).forEach(function(t){
+              if (allTags.indexOf(t) === -1) allTags.push(t);
+            });
+          });
+
+          // Render filter chips
+          if (filterBar && allTags.length) {
+            filterBar.innerHTML = ['All'].concat(allTags).map(function(tag){
+              return '<button class="filter-chip' + (tag === 'All' ? ' is-active' : '') + '" data-tag="' + esc(tag) + '">' + esc(tag) + '</button>';
+            }).join('');
+
+            function applyFilter(tag) {
+              filterBar.querySelectorAll('.filter-chip').forEach(function(chip){
+                chip.classList.toggle('is-active', chip.dataset.tag === tag);
+              });
+              var cards = grid.querySelectorAll('.proj-card');
+              var shown = 0;
+              cards.forEach(function(card){
+                var cardTags = JSON.parse(card.dataset.tags || '[]');
+                var show = tag === 'All' || cardTags.indexOf(tag) !== -1;
+                card.style.display = show ? '' : 'none';
+                if (show) shown++;
+              });
+              if (count) count.textContent = tag === 'All'
+                ? projects.length + ' Case Studies'
+                : shown + ' of ' + projects.length + ' Case Studies';
+            }
+
+            filterBar.addEventListener('click', function(e){
+              var chip = e.target.closest('.filter-chip');
+              if (chip) applyFilter(chip.dataset.tag);
+            });
+          }
+
+          if (count) count.textContent = projects.length + ' Case Studies';
         })
         .catch(function(){});
     })();
