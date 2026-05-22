@@ -4,7 +4,8 @@
   "status": "Live",
   "year": 2019,
   "tags": [
-    "Health"
+    "Health",
+    "SaaS"
   ],
   "lede": "",
   "description": "Prototyped a concept that maps a person's emotional patterns to the places they frequent, testing whether spatial visualisation of mood data prompts more useful reflection than traditional self-report tools.",

@@ -45,7 +45,8 @@
     "tags": [
       "Strategy",
       "Health",
-      "AI"
+      "AI",
+      "SaaS"
     ],
     "lede": "",
     "description": "Co-founded and scaled a digital mental health company from 1 to 40 people, raising €66M and reaching 3M users. Built a portfolio of clinically validated products in partnership with the NHS, Harvard, and Janssen.",
@@ -193,7 +194,8 @@
     "tags": [
       "Strategy",
       "Health",
-      "AI"
+      "AI",
+      "SaaS"
     ],
     "lede": "",
     "description": "Led a digital CBT product from concept through clinical trial with MGH and Harvard, achieving 90% treatment response, 55% symptom reduction, and 95% cost reduction versus traditional therapy.",
@@ -353,7 +355,8 @@
     "year": 2019,
     "priority": 999,
     "tags": [
-      "Health"
+      "Health",
+      "SaaS"
     ],
     "lede": "",
     "description": "Prototyped a concept that maps a person's emotional patterns to the places they frequent, testing whether spatial visualisation of mood data prompts more useful reflection than traditional self-report tools.",
@@ -486,7 +489,8 @@
     "year": 2014,
     "priority": 999,
     "tags": [
-      "Health"
+      "Health",
+      "SaaS"
     ],
     "lede": "",
     "description": "Designed a remote chronic disease management service across UK, Spain, and Brazil, grounded in ethnographic research with patients and nurses. Achieved a 48% reduction in mortality and 63% reduction in hospital readmissions.",
