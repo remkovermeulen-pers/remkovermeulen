@@ -200,10 +200,18 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
 .cs-metric p { font-size:14px; max-width:280px; margin:0; color:var(--muted-2); line-height:1.55; }
 
 @media (max-width:880px) {
-  .cs-body { grid-template-columns:1fr; gap:36px; margin-top:48px; }
+  .cs-body { grid-template-columns:1fr; gap:24px; margin-top:28px; }
   .cs-aside { position:static; }
-  .cs-content { gap:72px; }
+  .cs-toc-wrap { display:none; }
+  .cs-content { gap:40px; }
   .cs-metrics-row { gap:36px; flex-direction:column; }
+  .cs-hero { padding:20px 0 16px; }
+}
+@media (max-width:760px) {
+  .cs-hero__byline { gap:20px; flex-wrap:nowrap; overflow-x:auto; -webkit-overflow-scrolling:touch; padding-bottom:2px; }
+  .cs-hero__byline-block .metric { font-size:clamp(22px,7vw,32px); margin-bottom:6px; }
+  .cs-hero__byline-logos { padding-left:16px; border-left:1px solid var(--line); border-top:none; padding-top:0; width:auto; flex-shrink:0; }
+  .cs-hero__byline-logos img { height:28px; }
 }
 
 /* NEXT PROJECT */
@@ -461,7 +469,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
         var anchor = sec.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
         return '<li><span class="cs-toc__num">' + num + '</span><a href="#' + anchor + '">' + esc(sec.title) + '</a></li>';
       }).join('');
-      toc = '<h4>Contents</h4><ol class="cs-toc">' + tocItems + '</ol>';
+      toc = '<div class="cs-toc-wrap"><h4>Contents</h4><ol class="cs-toc">' + tocItems + '</ol></div>';
     }
 
     return toc +
@@ -668,6 +676,22 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
       if (e.key === 'ArrowLeft') goTo(cover, slides, cur - 1);
       if (e.key === 'ArrowRight') goTo(cover, slides, cur + 1);
     });
+
+    // Touch swipe
+    var touchStartX = 0;
+    document.addEventListener('touchstart', function(e) {
+      touchStartX = e.touches[0].clientX;
+    }, { passive: true });
+    document.addEventListener('touchend', function(e) {
+      var cover = document.querySelector('.cs-cover[data-slides]');
+      if (!cover) return;
+      var dx = e.changedTouches[0].clientX - touchStartX;
+      if (Math.abs(dx) < 40) return;
+      var slides = JSON.parse(cover.dataset.slides);
+      var cur = parseInt(cover.dataset.cur || '0', 10);
+      if (dx < 0) goTo(cover, slides, cur + 1);
+      else        goTo(cover, slides, cur - 1);
+    }, { passive: true });
 
     // Attach loader to the initial media element (covers first-load of videos)
     document.addEventListener('DOMContentLoaded', function() {
