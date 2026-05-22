@@ -299,8 +299,18 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
 
             filterBar.addEventListener('click', function(e){
               var chip = e.target.closest('.filter-chip');
-              if (chip) applyFilter(chip.dataset.tag);
+              if (!chip) return;
+              applyFilter(chip.dataset.tag);
+              var url = new URL(location.href);
+              if (chip.dataset.tag === 'All') { url.searchParams.delete('tag'); }
+              else { url.searchParams.set('tag', chip.dataset.tag); }
+              history.replaceState(null, '', url);
             });
+
+            // Apply tag from URL on load
+            var urlTag = new URLSearchParams(location.search).get('tag');
+            if (urlTag && allTags.indexOf(urlTag) !== -1) applyFilter(urlTag);
+            else applyFilter('All');
           }
 
           if (count) count.textContent = projects.length + ' Case Studies';
