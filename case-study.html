@@ -457,7 +457,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
 
   function buildSidebar(proj) {
     var chips = (proj.tags || []).map(function(t) {
-      return '<span class="tag">' + esc(t) + '</span>';
+      return '<a href="work.html?tag=' + encodeURIComponent(t) + '" class="tag">' + esc(t) + '</a>';
     }).join('');
 
     var meta = '';
