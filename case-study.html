@@ -166,6 +166,11 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
 .cs-cover__loader::before { content:''; display:block; width:32px; height:32px; border-radius:50%; border:2px solid rgba(255,255,255,0.25); border-top-color:#fff; animation:cs-spin .7s linear infinite; }
 @keyframes cs-spin { to { transform:rotate(360deg); } }
 
+/* GALLERY TRACK — CSS scroll snap, swipe handled natively by browser */
+.cs-cover__track { display:flex; overflow-x:auto; scroll-snap-type:x mandatory; scrollbar-width:none; -ms-overflow-style:none; }
+.cs-cover__track::-webkit-scrollbar { display:none; }
+.cs-cover__slide { flex:0 0 100%; scroll-snap-align:start; }
+
 /* BODY GRID */
 .cs-body { margin-top:64px; display:grid; grid-template-columns:220px 1fr; gap:48px; }
 .cs-aside { position:sticky; top:100px; align-self:start; }
@@ -210,8 +215,11 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
 @media (max-width:760px) {
   .cs-hero__byline { gap:20px; flex-wrap:nowrap; overflow-x:auto; -webkit-overflow-scrolling:touch; padding-bottom:2px; }
   .cs-hero__byline-block .metric { font-size:clamp(22px,7vw,32px); margin-bottom:6px; }
-  .cs-hero__byline-logos { padding-left:16px; border-left:1px solid var(--line); border-top:none; padding-top:0; width:auto; flex-shrink:0; }
+  .cs-hero__byline-logos { width:auto; flex-shrink:0; border-top:none; padding-top:0; }
+  .cs-hero__byline-logos:not(.cs-hero__byline-logos--first) { padding-left:16px; border-left:1px solid var(--line); }
+  .cs-hero__byline-logos--first { padding-left:0; border-left:none; }
   .cs-hero__byline-logos img { height:28px; }
+  .cs-cover__prev, .cs-cover__next { display:none; }
 }
 
 /* NEXT PROJECT */
@@ -387,11 +395,12 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
     }
     if (!ledeText) ledeText = proj.lede;
 
-    var slides = (proj.gallery && proj.gallery.length > 1) ? proj.gallery : null;
-    var prevBtn = slides ? '<button class="cs-cover__prev" aria-label="Previous"><svg width="18" height="14" viewBox="0 0 18 14" fill="none"><path d="M17 7H1m0 0l6-6M1 7l6 6" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg></button>' : '';
-    var nextBtn = slides ? '<button class="cs-cover__next" aria-label="Next"><svg width="18" height="14" viewBox="0 0 18 14" fill="none"><path d="M1 7h16m0 0l-6-6m6 6l-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg></button>' : '';
-    var dotsHtml = slides ? '<div class="cs-cover__dots">' + slides.map(function(_,i){ return '<span class="cs-cover__dot' + (i===0?' is-active':'') + '" data-idx="'+i+'"></span>'; }).join('') + '</div>' : '';
-    var slideData = slides ? ' data-slides="' + esc(JSON.stringify(slides)) + '"' : '';
+    var slideItems = (proj.gallery && proj.gallery.length) ? proj.gallery : (proj.coverImage ? [proj.coverImage] : []);
+    var hasMultiple = slideItems.length > 1;
+    var prevBtn = hasMultiple ? '<button class="cs-cover__prev" aria-label="Previous"><svg width="18" height="14" viewBox="0 0 18 14" fill="none"><path d="M17 7H1m0 0l6-6M1 7l6 6" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg></button>' : '';
+    var nextBtn = hasMultiple ? '<button class="cs-cover__next" aria-label="Next"><svg width="18" height="14" viewBox="0 0 18 14" fill="none"><path d="M1 7h16m0 0l-6-6m6 6l-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg></button>' : '';
+    var dotsHtml = hasMultiple ? '<div class="cs-cover__dots">' + slideItems.map(function(_,i){ return '<span class="cs-cover__dot' + (i===0?' is-active':'') + '" data-idx="'+i+'"></span>'; }).join('') + '</div>' : '';
+    var slideData = hasMultiple ? ' data-slides="' + esc(JSON.stringify(slideItems)) + '"' : '';
 
     main.innerHTML =
       pagerHtml +
@@ -402,9 +411,10 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
         '<p class="cs-hero__lede">' + esc(ledeText) + '</p>' +
         bylineHtml +
         '<div class="cs-cover"' + slideData + '>' +
-          '<div class="cs-cover__loader"></div>' +
+          '<div class="cs-cover__track">' +
+          slideItems.map(function(src) { return '<div class="cs-cover__slide">' + buildMediaEl(src, proj.title) + '</div>'; }).join('') +
+          '</div>' +
           prevBtn +
-          buildMediaEl(proj.coverImage, proj.title) +
           (getLogoFile(proj) ? '<img class="cs-cover__logo" src="' + logoUrl(getLogoFile(proj)) + '" alt="" onerror="this.remove()">' : '') +
           (proj.coverCaption ? '<div class="cs-cover__caption">' + esc(proj.coverCaption) + '</div>' : '') +
           dotsHtml +
@@ -580,7 +590,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
     return all[idx - 1];
   }
 
-  // Cover slideshow
+  // Cover gallery — scroll snap handles swipe natively; JS only drives buttons/dots/keyboard
   (function() {
     function sampleLuminance(el) {
       try {
@@ -600,63 +610,18 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
       cover.classList.toggle('cs-cover--light-bg', sampleLuminance(el) > 0.45);
     }
 
-    function showReady(el, loader, cover) {
-      var readyEvent = el.tagName === 'VIDEO' ? 'canplay' : 'load';
-      var fallback;
-      function onReady() {
-        clearTimeout(fallback);
-        el.removeEventListener(readyEvent, onReady);
-        if (loader) loader.classList.remove('is-loading');
-        el.style.opacity = '1';
-        if (cover) updateArrowColor(cover, el);
-      }
-      el.addEventListener(readyEvent, onReady);
-      fallback = setTimeout(onReady, 4000);
-    }
-
+    // Scroll track to slide idx and sync dots
     function goTo(cover, slides, idx) {
-      var loader = cover.querySelector('.cs-cover__loader');
       var cur = (idx + slides.length) % slides.length;
       cover.dataset.cur = cur;
-      var src = slides[cur];
-      var el = cover.querySelector('.cs-cover__img, .cs-cover__yt');
-      el.style.opacity = '0';
-      setTimeout(function() {
-        var needsYT    = isYouTube(src);
-        var needsVideo = !needsYT && isVideo(src);
-        var targetTag  = needsYT ? 'IFRAME' : (needsVideo ? 'VIDEO' : 'IMG');
-        if (el.tagName === 'VIDEO' && !needsVideo) el.pause();
-        if (el.tagName !== targetTag) {
-          var next;
-          if (needsYT) {
-            next = document.createElement('iframe');
-            next.className = 'cs-cover__yt';
-            next.setAttribute('allowfullscreen', '');
-            next.setAttribute('loading', 'lazy');
-          } else if (needsVideo) {
-            next = Object.assign(document.createElement('video'), { className:'cs-cover__img', autoplay:true, muted:true, loop:true });
-            next.setAttribute('playsinline', '');
-          } else {
-            next = Object.assign(document.createElement('img'), { className:'cs-cover__img', alt:'' });
-          }
-          el.parentNode.replaceChild(next, el);
-          el = next;
-        }
-        if (needsYT) {
-          el.src = ytEmbedUrl(src);
-          if (loader) loader.classList.remove('is-loading');
-          setTimeout(function() { el.style.opacity = '1'; }, 100);
-        } else {
-          if (loader) loader.classList.add('is-loading');
-          showReady(el, loader, cover);
-          el.src = src;
-        }
-        cover.querySelectorAll('.cs-cover__dot').forEach(function(d, i) {
-          d.classList.toggle('is-active', i === cur);
-        });
-      }, 300);
+      var track = cover.querySelector('.cs-cover__track');
+      if (track) track.scrollTo({ left: cur * track.offsetWidth, behavior: 'smooth' });
+      cover.querySelectorAll('.cs-cover__dot').forEach(function(d, i) {
+        d.classList.toggle('is-active', i === cur);
+      });
     }
 
+    // Arrow buttons and dot clicks
     document.addEventListener('click', function(e) {
       var cover = document.querySelector('.cs-cover[data-slides]');
       if (!cover) return;
@@ -668,6 +633,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
       if (dot) goTo(cover, slides, parseInt(dot.dataset.idx, 10));
     });
 
+    // Keyboard navigation
     document.addEventListener('keydown', function(e) {
       var cover = document.querySelector('.cs-cover[data-slides]');
       if (!cover) return;
@@ -677,36 +643,27 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
       if (e.key === 'ArrowRight') goTo(cover, slides, cur + 1);
     });
 
-    // Touch swipe
-    var touchStartX = 0;
-    document.addEventListener('touchstart', function(e) {
-      touchStartX = e.touches[0].clientX;
-    }, { passive: true });
-    document.addEventListener('touchend', function(e) {
+    // IntersectionObserver keeps dot state in sync when user swipes natively
+    document.addEventListener('DOMContentLoaded', function() {
       var cover = document.querySelector('.cs-cover[data-slides]');
       if (!cover) return;
-      var dx = e.changedTouches[0].clientX - touchStartX;
-      if (Math.abs(dx) < 40) return;
-      var slides = JSON.parse(cover.dataset.slides);
-      var cur = parseInt(cover.dataset.cur || '0', 10);
-      if (dx < 0) goTo(cover, slides, cur + 1);
-      else        goTo(cover, slides, cur - 1);
-    }, { passive: true });
-
-    // Attach loader to the initial media element (covers first-load of videos)
-    document.addEventListener('DOMContentLoaded', function() {
-      var cover = document.querySelector('.cs-cover');
-      if (!cover) return;
-      var el = cover.querySelector('.cs-cover__img, .cs-cover__yt');
-      var loader = cover.querySelector('.cs-cover__loader');
-      if (!el || !loader) return;
-      var ready = (el.tagName === 'VIDEO') ? el.readyState >= 3 : (el.tagName === 'IFRAME' ? true : el.complete);
-      if (ready) {
-        updateArrowColor(cover, el);
-      } else {
-        loader.classList.add('is-loading');
-        showReady(el, loader, cover);
-      }
+      var track = cover.querySelector('.cs-cover__track');
+      if (!track) return;
+      var slideEls = Array.from(track.querySelectorAll('.cs-cover__slide'));
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (!entry.isIntersecting) return;
+          var idx = slideEls.indexOf(entry.target);
+          if (idx === -1) return;
+          cover.dataset.cur = idx;
+          cover.querySelectorAll('.cs-cover__dot').forEach(function(d, i) {
+            d.classList.toggle('is-active', i === idx);
+          });
+          var img = entry.target.querySelector('.cs-cover__img');
+          if (img) updateArrowColor(cover, img);
+        });
+      }, { threshold: 0.5, root: track });
+      slideEls.forEach(function(s) { observer.observe(s); });
     });
   })();
 
