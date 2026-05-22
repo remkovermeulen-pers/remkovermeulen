@@ -498,7 +498,7 @@
     ],
     "lede": "",
     "description": "Led product and service design across 5 locations for Telefonica's global health and digital portfolio. Delivered a chronic disease service reducing mortality by 48%, Parkinson's voice detection at 78% precision, and pandemic prediction tools with WHO and Harvard.",
-    "coverImage": "https://www.youtube.com/watch?v=wYgzbqLfuVI",
+    "coverImage": "assets/projects/35f76183-7377-8167-aade-e9ceff1342ed--telefonica-o2/02.mov",
     "metrics": [
       {
         "value": "48%",
@@ -522,10 +522,6 @@
       {
         "name": "O2",
         "logo": "02.svg"
-      },
-      {
-        "name": "El Bulli",
-        "logo": "bullipedia.svg"
       }
     ]
   },
