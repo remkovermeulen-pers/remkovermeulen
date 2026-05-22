@@ -121,6 +121,12 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
   .journal-grid { grid-template-columns:1fr; }
   .article-card { min-height:0; padding:26px; }
 }
+
+/* FILTER BAR */
+.filter-bar { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:24px; }
+.filter-chip { display:inline-block; padding:7px 14px; font-size:10px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:var(--muted-2); border:1px solid var(--line); line-height:1; cursor:pointer; background:none; transition:color .2s, border-color .2s, background .2s; }
+.filter-chip:hover { color:var(--accent); border-color:var(--accent); }
+.filter-chip.is-active { color:var(--on-primary); background:var(--primary); border-color:var(--primary); }
 </style>
 <script>
   !function(){var i="analytics",analytics=window[i]=window[i]||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","screen","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware","register"];analytics.factory=function(e){return function(){if(window[i].initialized)return window[i][e].apply(window[i],arguments);var n=Array.prototype.slice.call(arguments);if(["track","screen","alias","group","page","identify"].indexOf(e)>-1){var c=document.querySelector("link[rel='canonical']");n.push({__t:"bpc",c:c&&c.getAttribute("href")||void 0,p:location.pathname,u:location.href,s:location.search,t:document.title,r:document.referrer})}n.unshift(e);analytics.push(n);return analytics}};for(var n=0;n<analytics.methods.length;n++){var key=analytics.methods[n];analytics[key]=analytics.factory(key)}analytics.load=function(key,n){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.setAttribute("data-global-segment-analytics-key",i);t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var r=document.getElementsByTagName("script")[0];r.parentNode.insertBefore(t,r);analytics._loadOptions=n};analytics._writeKey="CdQKoupxHnGYLIABbryRWUM9BnI3p8t6";;analytics.SNIPPET_VERSION="5.2.0";
@@ -159,14 +165,11 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
   </section>
 
   <section>
-    <div class="sec-head">
-      <div class="sec-head__title">
-        <span class="accent-mark"></span>
-        <h2>All Articles</h2>
-      </div>
+    <div style="display:flex;justify-content:flex-end;margin-bottom:16px;">
       <span class="label-xs" id="article-count"></span>
     </div>
 
+    <div class="filter-bar" id="filter-bar"></div>
     <div class="journal-grid" id="journal-grid">
       <!-- populated by JS from data/articles.json -->
     </div>
@@ -178,19 +181,64 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
         .then(function(r){ return r.json(); })
         .then(function(articles){
           var grid = document.getElementById('journal-grid');
+          var filterBar = document.getElementById('filter-bar');
           var count = document.getElementById('article-count');
           if (!grid) return;
-          if (count) count.textContent = articles.length + ' Articles';
+
           grid.innerHTML = articles.map(function(a){
             var href = a.notionId ? 'article.html?slug=' + slugify(a.title) : esc(a.url || '#');
             var target = a.notionId ? '' : ' target="_blank" rel="noopener"';
             var rt = a.readingTime ? a.readingTime + ' min' : a.year;
-            return '<a href="' + href + '"' + target + ' class="article-card">'
+            return '<a href="' + href + '"' + target + ' class="article-card" data-category="' + esc(a.category) + '">'
               + '<div><span class="article-card__tag">' + esc(a.category) + '</span>'
               + '<h3>' + esc(a.title) + '</h3></div>'
               + '<span class="article-card__year">' + esc(String(rt)) + '</span>'
               + '</a>';
           }).join('');
+
+          // Collect unique categories in order of first appearance
+          var allCats = [];
+          articles.forEach(function(a){
+            if (a.category && allCats.indexOf(a.category) === -1) allCats.push(a.category);
+          });
+
+          if (filterBar && allCats.length) {
+            filterBar.innerHTML = ['All'].concat(allCats).map(function(cat){
+              return '<button class="filter-chip' + (cat === 'All' ? ' is-active' : '') + '" data-cat="' + esc(cat) + '">' + esc(cat) + '</button>';
+            }).join('');
+
+            function applyFilter(cat) {
+              filterBar.querySelectorAll('.filter-chip').forEach(function(chip){
+                chip.classList.toggle('is-active', chip.dataset.cat === cat);
+              });
+              var cards = grid.querySelectorAll('.article-card');
+              var shown = 0;
+              cards.forEach(function(card){
+                var show = cat === 'All' || card.dataset.category === cat;
+                card.style.display = show ? '' : 'none';
+                if (show) shown++;
+              });
+              if (count) count.textContent = cat === 'All'
+                ? articles.length + ' Articles'
+                : shown + ' of ' + articles.length + ' Articles';
+            }
+
+            filterBar.addEventListener('click', function(e){
+              var chip = e.target.closest('.filter-chip');
+              if (!chip) return;
+              applyFilter(chip.dataset.cat);
+              var url = new URL(location.href);
+              if (chip.dataset.cat === 'All') { url.searchParams.delete('category'); }
+              else { url.searchParams.set('category', chip.dataset.cat); }
+              history.replaceState(null, '', url);
+            });
+
+            var urlCat = new URLSearchParams(location.search).get('category');
+            if (urlCat && allCats.indexOf(urlCat) !== -1) applyFilter(urlCat);
+            else applyFilter('All');
+          }
+
+          if (count) count.textContent = articles.length + ' Articles';
         })
         .catch(function(){});
     })();
