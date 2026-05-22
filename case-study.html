@@ -304,8 +304,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
 
   Promise.all([
     fetch('data/projects/' + id + '.json').then(function(r){ return r.json(); }),
-    fetch('data/projects.json').then(function(r){ return r.json(); }),
-    fetch('data/config.json').then(function(r){ return r.json(); }).catch(function(){ return {}; })
+    fetch('data/projects.json').then(function(r){ return r.json(); })
   ]).then(function(results) {
     var proj = results[0];
     var all  = results[1];
