@@ -4,7 +4,7 @@
 //   data/articles/{id}.json     — full content per article
 //   data/projects.json          — metadata list for project grids
 //   data/projects/{id}.json     — full content per project
-//   data/config.json            — runtime config (Brandfetch key etc.)
+//   data/config.json            — runtime config
 // Requires NOTION_TOKEN env var and Node 18+
 
 const fs = require('fs');
