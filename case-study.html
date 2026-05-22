@@ -89,7 +89,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
 
 /* FOOTER */
 .site-footer { background:#1b1c1c; color:#ffffff; margin-top:72px; }
-.site-footer__inner { display:flex; align-items:center; justify-content:space-between; padding:40px 0; gap:24px; flex-wrap:wrap; }
+.site-footer__inner { display:flex; align-items:center; justify-content:space-between; padding-top:40px; padding-bottom:40px; gap:24px; flex-wrap:wrap; }
 .site-footer__brand { font-family:var(--font-display); font-weight:700; font-size:22px; letter-spacing:-0.01em; }
 .site-footer__copy { font-size:13px; color:rgba(255,255,255,0.5); font-style:italic; }
 .site-footer__links { display:flex; gap:28px; }
@@ -97,7 +97,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
 .site-footer__link:hover { color:#ffffff; }
 @media (max-width:760px) {
   .site-footer { margin-top:60px; }
-  .site-footer__inner { padding:28px 0; flex-direction:column; align-items:flex-start; gap:18px; }
+  .site-footer__inner { padding-top:28px; padding-bottom:28px; flex-direction:column; align-items:flex-start; gap:18px; }
 }
 
 /* PROJECT PAGER */
@@ -495,11 +495,12 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
     if (!projs.length) return '';
     var items = projs.map(function(p) {
       var cover = p.coverImage || '';
-      var isVideo = /\.(mp4|mov|webm)$/i.test(cover);
+      var isVid = /\.(mp4|mov|webm)$/i.test(cover);
+      var thumbSrc = isYouTube(cover) ? ytThumbUrl(cover) : cover;
       var thumbHtml = cover
-        ? (isVideo
+        ? (isVid
             ? '<video src="' + esc(cover) + '" muted playsinline loop autoplay></video>'
-            : '<img src="' + esc(cover) + '" alt="" loading="lazy">')
+            : '<img src="' + esc(thumbSrc) + '" alt="" loading="lazy">')
         : '';
       return '<a href="case-study?id=' + esc(p.notionId || p.id) + '" class="cs-related-item">'
         + '<div class="cs-related-item__thumb">' + thumbHtml + '</div>'
@@ -668,6 +669,10 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
 
   function isVideo(src)   { return /\.(mov|mp4|webm|ogg)$/i.test(src || ''); }
   function isYouTube(src) { return /youtu\.?be/.test(src || ''); }
+  function ytThumbUrl(src) {
+    var m = (src || '').match(/(?:youtu\.be\/|[?&]v=)([A-Za-z0-9_-]{11})/);
+    return m ? 'https://img.youtube.com/vi/' + m[1] + '/hqdefault.jpg' : src;
+  }
   function ytEmbedUrl(src) {
     var m = src.match(/(?:youtu\.be\/|[?&]v=)([A-Za-z0-9_-]{11})/);
     if (!m) return src;

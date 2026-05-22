@@ -94,7 +94,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
 
 /* FOOTER */
 .site-footer { background:#1b1c1c; color:#ffffff; margin-top:72px; }
-.site-footer__inner { display:flex; align-items:center; justify-content:space-between; padding:40px 0; gap:24px; flex-wrap:wrap; }
+.site-footer__inner { display:flex; align-items:center; justify-content:space-between; padding-top:40px; padding-bottom:40px; gap:24px; flex-wrap:wrap; }
 .site-footer__brand { font-family:var(--font-display); font-weight:700; font-size:22px; letter-spacing:-0.01em; }
 .site-footer__copy { font-size:13px; color:rgba(255,255,255,0.5); font-style:italic; }
 .site-footer__links { display:flex; gap:28px; }
@@ -102,7 +102,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
 .site-footer__link:hover { color:#ffffff; }
 @media (max-width:760px) {
   .site-footer { margin-top:60px; }
-  .site-footer__inner { padding:28px 0; flex-direction:column; align-items:flex-start; gap:18px; }
+  .site-footer__inner { padding-top:28px; padding-bottom:28px; flex-direction:column; align-items:flex-start; gap:18px; }
 }
 
 /* HERO */
@@ -216,6 +216,10 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
     (function(){
       var arrow = '<svg width="14" height="10" viewBox="0 0 16 10" fill="none"><path d="M1 5h14m0 0L11 1m4 4l-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"/></svg>';
       function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+      function ytThumb(src) {
+        var m = (src || '').match(/(?:youtu\.be\/|[?&]v=)([A-Za-z0-9_-]{11})/);
+        return m ? 'https://img.youtube.com/vi/' + m[1] + '/hqdefault.jpg' : src;
+      }
       var LOGO_FILES = {
         'Toggl':            'toggl.com.svg',
         'Johnson & Johnson':'jandj.com.svg',
@@ -245,7 +249,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
             return '<a href="case-study?id=' + esc(p.notionId) + '" class="proj-card">'
               + '<div class="proj-card__img">'
               + '<span class="proj-card__chip">' + esc(p.sector) + '</span>'
-              + '<img class="bw-img" src="' + esc(p.coverImage) + '" alt="' + esc(p.title) + '" loading="lazy">'
+              + '<img class="bw-img" src="' + esc(ytThumb(p.coverImage)) + '" alt="' + esc(p.title) + '" loading="lazy">'
               + '</div>'
               + '<div class="proj-card__body">'
               + '<h3>' + esc(p.title) + '</h3>'
