@@ -141,12 +141,11 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
 .cs-hero__byline-block .metric { font-size:clamp(36px,4.4vw,56px); margin-bottom:10px; }
 .cs-hero__byline-block p { margin:0; font-size:13px; line-height:1.55; color:var(--muted-2); max-width:260px; }
 .cs-hero__byline-logos { display:flex; flex-direction:column; gap:12px; padding-left:40px; border-left:1px solid var(--line); }
-.cs-hero__byline-logos--first { padding-left:0; border-left:none; }
+.cs-hero__byline-logos.cs-hero__byline-logos--first { padding-left:0; border-left:none; }
 .cs-hero__byline-logos h5 { margin:0; font-size:10px; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color:var(--muted-2); }
 .cs-hero__byline-logos__imgs { display:flex; align-items:center; gap:24px; flex-wrap:wrap; }
 .cs-hero__byline-logos img { height:clamp(36px,4.4vw,56px); max-width:160px; width:auto; object-fit:contain;
   filter: brightness(0) saturate(100%) invert(63%) sepia(18%) saturate(400%) hue-rotate(340deg) brightness(95%); }
-@media (max-width:760px) { .cs-hero__byline { gap:28px; } .cs-hero__byline-logos { padding-left:0; border-left:none; border-top:1px solid var(--line); padding-top:20px; width:100%; } }
 
 .cs-cover { margin-top:32px; border:1px solid var(--primary); overflow:hidden; position:relative; }
 .cs-cover__img { width:100%; height:clamp(280px,42vw,560px); object-fit:cover; object-position:top; display:block; transition:opacity .3s ease; }
@@ -217,7 +216,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
   .cs-hero__byline-block { flex:1; min-width:0; }
   .cs-hero__byline-block .metric { font-size:clamp(20px,6vw,28px); margin-bottom:4px; }
   .cs-hero__byline-logos { flex-basis:100%; padding-left:0; border-left:none; padding-top:16px; border-top:1px solid var(--line); }
-  .cs-hero__byline-logos--first { border-top:none; padding-top:0; }
+  .cs-hero__byline-logos.cs-hero__byline-logos--first { border-top:none; padding-top:0; }
   .cs-hero__byline-logos img { height:26px; }
   .cs-cover__prev, .cs-cover__next { display:none; }
 }
