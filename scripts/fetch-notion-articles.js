@@ -13,8 +13,6 @@ const path = require('path');
 const ARTICLES_DB = 'f04c2f670a3f4239accf95486aa5336d';
 const PROJECTS_DB = 'cdc9f0e38efc478ab9bc6bd562c82454';
 const TOKEN = process.env.NOTION_TOKEN;
-const BRANDFETCH_KEY = process.env.BRANDFETCH_KEY || '';
-
 if (!TOKEN) { console.error('NOTION_TOKEN is not set'); process.exit(1); }
 
 const HEADERS = {
@@ -501,12 +499,6 @@ async function main() {
   await fetchArticles();
   await fetchProjects();
 
-  // Write runtime config for the static site
-  fs.writeFileSync(
-    path.join(__dirname, '..', 'data', 'config.json'),
-    JSON.stringify({ brandfetchKey: BRANDFETCH_KEY }, null, 2)
-  );
-  console.log('\nWrote data/config.json');
 }
 
 main().catch(err => { console.error(err); process.exit(1); });

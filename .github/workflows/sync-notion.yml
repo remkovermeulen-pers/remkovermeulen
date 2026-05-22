@@ -23,7 +23,6 @@ jobs:
       - name: Fetch articles and projects from Notion
         env:
           NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
-          BRANDFETCH_KEY: ${{ secrets.BRANDFETCH_KEY }}
         run: node scripts/fetch-notion-articles.js
 
       - name: Commit updated articles
