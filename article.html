@@ -173,10 +173,12 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
 .cs-section blockquote { margin:36px 0; padding:4px 0 4px 28px; border-left:2px solid var(--accent); font-family:var(--font-display); font-style:italic; font-weight:500; font-size:clamp(18px,2vw,22px); line-height:1.4; color:var(--primary); }
 
 @media (max-width:880px) {
-  .cs-body { grid-template-columns:1fr; gap:36px; margin-top:48px; }
+  .cs-body { grid-template-columns:1fr; gap:24px; margin-top:28px; }
   .cs-aside { position:static; }
-  .cs-content { gap:60px; }
+  .cs-toc-wrap { display:none; }
+  .cs-content { gap:40px; }
   .cs-section--lede > p:first-child::first-letter { font-size:60px; padding:6px 10px 0 0; }
+  .cs-hero { padding:20px 0 0; }
 }
 
 /* ===== NEXT ARTICLE ===== */
@@ -442,7 +444,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
           return '<span class="tag">' + esc(t) + '</span>';
         }).join('')
       + '</div>'
-      + (tocItems ? '<h4>In this article</h4><ol class="cs-toc">' + tocItems + '</ol>' : '')
+      + (tocItems ? '<div class="cs-toc-wrap"><h4>In this article</h4><ol class="cs-toc">' + tocItems + '</ol></div>' : '')
       + '</aside>'
 
       + '<div class="cs-content">' + sectionsHtml + '</div>'
