@@ -207,6 +207,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
   .cs-body { grid-template-columns:1fr; gap:24px; margin-top:28px; }
   .cs-aside { position:static; }
   .cs-toc-wrap { display:none; }
+  .cs-aside__tags-head { display:none; }
   .cs-content { gap:40px; }
   .cs-metrics-row { gap:36px; flex-direction:column; }
   .cs-hero { padding:20px 0 16px; }
@@ -482,7 +483,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
     }
 
     return toc +
-           (chips ? '<h4>Tags</h4><div class="chips">' + chips + '</div>' : '') +
+           (chips ? '<h4 class="cs-aside__tags-head">Tags</h4><div class="chips">' + chips + '</div>' : '') +
            (meta ? '<div class="cs-aside__meta">' + meta + '</div>' : '');
   }
 
