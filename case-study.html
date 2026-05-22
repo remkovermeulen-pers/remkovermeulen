@@ -406,7 +406,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
       pagerHtml +
 
       '<section class="cs-hero">' +
-        '<p class="cs-hero__crumb">' + esc(proj.sector) + ' &nbsp;/&nbsp; Case Study</p>' +
+        '<p class="cs-hero__crumb">Case Study</p>' +
         '<h1>' + esc(proj.title) + '</h1>' +
         '<p class="cs-hero__lede">' + esc(ledeText) + '</p>' +
         bylineHtml +
@@ -524,7 +524,6 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
       '<a href="case-study?id=' + esc(next.notionId) + '" class="next-proj__card">' +
         '<img class="bw-img" src="' + esc(next.coverImage || 'https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1200&q=80') + '" alt="' + esc(next.title) + '">' +
         '<div class="next-proj__text">' +
-          (next.sector ? '<span class="tag-line">' + esc(next.sector) + '</span>' : '') +
           '<h3>' + esc(next.title) +
             '<svg width="22" height="14" viewBox="0 0 22 14" fill="none"><path d="M1 7h19m0 0l-6-6m6 6l-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg>' +
           '</h3>' +
