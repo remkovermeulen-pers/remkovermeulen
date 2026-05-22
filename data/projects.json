@@ -180,7 +180,9 @@
     "priority": 5,
     "tags": [
       "Product",
-      "Research"
+      "Research",
+      "Health",
+      "AI"
     ],
     "lede": "",
     "description": "Designed an explainability layer for (clinical) ML models that translated opaque risk scores into readable reasoning, significantly increasing willingness to act on model outputs.",
@@ -303,7 +305,9 @@
     "priority": 999,
     "tags": [
       "Product",
-      "Research"
+      "Research",
+      "Health",
+      "AI"
     ],
     "lede": "",
     "description": "Built an ML model with NHS Birmingham predicting mental health crises four weeks in advance at 80% recall, giving clinicians enough lead time to intervene before patients reached crisis point.",
@@ -404,7 +408,8 @@
     "priority": 999,
     "tags": [
       "Design",
-      "Research"
+      "Research",
+      "Health"
     ],
     "lede": "",
     "description": "Explored whether interactive skin-surface displays could communicate detected mood state ambientally, using a Wizard of Oz prototype tested with couples to surface the privacy and transparency tensions any such system would face.",
@@ -622,7 +627,9 @@
     "tags": [
       "Strategy",
       "Design",
-      "Research"
+      "Research",
+      "Telco",
+      "AI"
     ],
     "lede": "",
     "description": "Led product and service design across 5 locations for Telefonica's global health and digital portfolio. Delivered a chronic disease service reducing mortality by 48%, Parkinson's voice detection at 78% precision, and pandemic prediction tools with WHO and Harvard.",

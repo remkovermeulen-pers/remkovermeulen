@@ -6,7 +6,9 @@
   "year": 2020,
   "tags": [
     "Product",
-    "Research"
+    "Research",
+    "Health",
+    "AI"
   ],
   "lede": "",
   "description": "Designed an explainability layer for (clinical) ML models that translated opaque risk scores into readable reasoning, significantly increasing willingness to act on model outputs.",
