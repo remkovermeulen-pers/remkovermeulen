@@ -5,7 +5,8 @@
   "year": 2021,
   "tags": [
     "Health",
-    "AI"
+    "AI",
+    "Telco"
   ],
   "lede": "",
   "description": "Built an ML model with NHS Birmingham predicting mental health crises four weeks in advance at 80% recall, giving clinicians enough lead time to intervene before patients reached crisis point.",

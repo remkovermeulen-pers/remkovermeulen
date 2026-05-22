@@ -5,7 +5,8 @@
   "year": 2016,
   "tags": [
     "Health",
-    "AI"
+    "AI",
+    "Telco"
   ],
   "lede": "",
   "description": "Developed a telephone-based Parkinson's detection service using voice analysis, achieving 78% accuracy with no specialist equipment — accessible to any patient with a mobile or landline phone.",

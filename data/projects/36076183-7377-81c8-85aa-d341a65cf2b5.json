@@ -5,7 +5,8 @@
   "year": 2016,
   "tags": [
     "Health",
-    "AI"
+    "AI",
+    "Telco"
   ],
   "lede": "",
   "description": "Designed a passive bipolar monitoring service using anonymised mobile network data, giving psychiatrists a continuous view of patient state between appointments without requiring any active input from patients.",
