@@ -182,7 +182,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
             var target = a.notionId ? '' : ' target="_blank" rel="noopener"';
             var rt = a.readingTime ? a.readingTime + ' min' : a.year;
             return '<a href="' + href + '"' + target + ' class="article-card">'
-              + '<div><span class="article-card__tag">' + esc(a.category) + '</span>'
+              + '<div><a href="work.html?tag=' + encodeURIComponent(a.category) + '" class="article-card__tag">' + esc(a.category) + '</a>'
               + '<h3>' + esc(a.title) + '</h3></div>'
               + '<span class="article-card__year">' + esc(String(rt)) + '</span>'
               + '</a>';

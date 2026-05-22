@@ -446,7 +446,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
       + '<h4>Topics</h4>'
       + '<div class="chips">'
       + (article.tags && article.tags.length ? article.tags : [article.category]).map(function(t) {
-          return '<span class="tag">' + esc(t) + '</span>';
+          return '<a href="work.html?tag=' + encodeURIComponent(t) + '" class="tag">' + esc(t) + '</a>';
         }).join('')
       + '</div>'
       + (tocItems ? '<div class="cs-toc-wrap"><h4>In this article</h4><ol class="cs-toc">' + tocItems + '</ol></div>' : '')
