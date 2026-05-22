@@ -213,12 +213,12 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
   .cs-hero { padding:20px 0 16px; }
 }
 @media (max-width:760px) {
-  .cs-hero__byline { gap:20px; flex-wrap:nowrap; overflow-x:auto; -webkit-overflow-scrolling:touch; padding-bottom:2px; }
-  .cs-hero__byline-block .metric { font-size:clamp(22px,7vw,32px); margin-bottom:6px; }
-  .cs-hero__byline-logos { width:auto; flex-shrink:0; border-top:none; padding-top:0; }
-  .cs-hero__byline-logos:not(.cs-hero__byline-logos--first) { padding-left:16px; border-left:1px solid var(--line); }
-  .cs-hero__byline-logos--first { padding-left:0; border-left:none; }
-  .cs-hero__byline-logos img { height:28px; }
+  .cs-hero__byline { gap:16px 20px; flex-wrap:wrap; }
+  .cs-hero__byline-block { flex:1; min-width:0; }
+  .cs-hero__byline-block .metric { font-size:clamp(20px,6vw,28px); margin-bottom:4px; }
+  .cs-hero__byline-logos { flex-basis:100%; padding-left:0; border-left:none; padding-top:16px; border-top:1px solid var(--line); }
+  .cs-hero__byline-logos--first { border-top:none; padding-top:0; }
+  .cs-hero__byline-logos img { height:26px; }
   .cs-cover__prev, .cs-cover__next { display:none; }
 }
 
@@ -694,6 +694,13 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
       .replace(/>/g,'&gt;')
       .replace(/"/g,'&quot;');
   }
+})();
+
+// Hamburger menu
+(function() {
+  var b = document.querySelector('.site-nav__burger');
+  var n = document.querySelector('.site-nav__links');
+  if (b && n) b.addEventListener('click', function() { n.classList.toggle('is-open'); });
 })();
 </script>
 
