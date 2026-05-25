@@ -191,10 +191,17 @@ async function fetchArticles() {
     if (existing?.coverImagePosition) meta.coverImagePosition = existing.coverImagePosition;
     if (existing?.linkedInEmbedUrl) meta.linkedInEmbedUrl = existing.linkedInEmbedUrl;
     if (existing?.youtubeVideoId) meta.youtubeVideoId = existing.youtubeVideoId;
-    metaList.push(meta);
+    metaList.push(meta); // meta.lede is set below after blocks fetch — object reference updates in place
 
     const blocks = await fetchAllBlocks(page.id);
     const content = blocksToHtml(blocks);
+
+    // Extract first paragraph as lede for SEO description
+    const firstPara = blocks.find(b => b.type === 'paragraph' && b.paragraph.rich_text.length);
+    const lede = firstPara
+      ? firstPara.paragraph.rich_text.map(t => t.plain_text).join('').slice(0, 200)
+      : '';
+    meta.lede = lede;
 
     fs.writeFileSync(
       path.join(articlesDir, `${page.id}.json`),
