@@ -148,6 +148,9 @@ async function fetchAllBlocks(pageId) {
 
 async function fetchArticles() {
   console.log('\nFetching articles…');
+  // Load manual cover overrides — these survive Notion syncs
+  const manualCoversPath = path.join(__dirname, '..', 'data', 'article-covers.json');
+  const manualCovers = fs.existsSync(manualCoversPath) ? JSON.parse(fs.readFileSync(manualCoversPath, 'utf8')) : {};
   const allPages = [];
   let cursor;
   do {
@@ -186,9 +189,10 @@ async function fetchArticles() {
     const existingPath = path.join(articlesDir, `${page.id}.json`);
     const existing = fs.existsSync(existingPath) ? JSON.parse(fs.readFileSync(existingPath, 'utf8')) : null;
 
-    // Notion page cover takes priority; fall back to manually curated value in existing JSON
+    // Cover priority: manual overrides file > Notion page cover > existing JSON
     const notionCover = page.cover?.external?.url || page.cover?.file?.url || null;
-    if (notionCover) meta.coverImage = notionCover;
+    if (manualCovers[page.id]) meta.coverImage = manualCovers[page.id];
+    else if (notionCover) meta.coverImage = notionCover;
     else if (existing?.coverImage) meta.coverImage = existing.coverImage;
     if (existing?.coverImagePosition) meta.coverImagePosition = existing.coverImagePosition;
     if (existing?.linkedInEmbedUrl) meta.linkedInEmbedUrl = existing.linkedInEmbedUrl;
