@@ -193,13 +193,6 @@ async function fetchArticles() {
     if (existing?.youtubeVideoId) meta.youtubeVideoId = existing.youtubeVideoId;
     metaList.push(meta);
 
-    // Preserve content for articles already written by Claude
-    if (existing?.contentSource === 'claude-written') {
-      fs.writeFileSync(existingPath, JSON.stringify({ ...existing, ...meta, tags }, null, 2));
-      console.log(`  ✓ ${meta.title} (preserved claude-written content)`);
-      continue;
-    }
-
     const blocks = await fetchAllBlocks(page.id);
     const content = blocksToHtml(blocks);
 
