@@ -1,0 +1,14 @@
+{
+  "notionId": "36b76183-7377-81be-b0de-f9800903b8e7",
+  "title": "How to build products quickly",
+  "category": "Product",
+  "year": "2022",
+  "readingTime": 3,
+  "url": "https://www.notion.so/How-to-build-products-quickly-36b76183737781beb0def9800903b8e7",
+  "tags": [
+    "Product",
+    "Strategy"
+  ],
+  "content": "<p>Speed is not an accident. It is a structural outcome. The organisations that build quickly are not necessarily smarter or better resourced — they have made deliberate choices about how they are organised.</p>\n<hr>\n<h2>Why structure determines speed</h2>\n<p>Most teams that move slowly do not have a talent problem. They have an architecture problem.</p>\n<p>Handoffs between teams, unclear ownership of decisions, approval chains that require sign-off from people who are not close to the work — these are the usual culprits. They accumulate gradually, often for good reasons, until the organisation is spending more time coordinating than building.</p>\n<p>The structure of your product organisation determines the rate at which decisions can be made and acted on. That rate is your speed.</p>\n<hr>\n<h2>What fast product teams have in common</h2>\n<p>A few patterns come up consistently in organisations that build and ship quickly:</p>\n<ul>\n<li><strong>Small, cross-functional teams with clear ownership.</strong> When one team can take an idea from concept to live without depending on three other teams, things move faster.</li>\n<li><strong>Decision rights that match the work.</strong> The people closest to the problem should be able to make the call. Escalation slows everything down and often produces worse decisions.</li>\n<li><strong>Short feedback loops from users.</strong> Speed only creates value if you are learning as you go. Teams that ship quickly but rarely talk to users just create waste faster.</li>\n<li><strong>Explicit priorities.</strong> Speed collapses when teams have to negotiate what to work on. A clear, ranked backlog removes that friction.</li>\n</ul>\n<hr>\n<h2>The real cost of slowness</h2>\n<p>Slow product development is not just an efficiency problem. It is a competitive risk.</p>\n<p>The longer the gap between identifying an opportunity and having something live, the more likely the market will have moved. A two-week sprint to invalidate an assumption is cheap. A six-month project to build something no one wants is not.</p>\n<p>Organisational speed is one of the few durable advantages available to product teams. It is worth treating as a strategic priority, not just an operational one.</p>",
+  "contentSource": "notion"
+}

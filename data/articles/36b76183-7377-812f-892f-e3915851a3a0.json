@@ -1,0 +1,14 @@
+{
+  "notionId": "36b76183-7377-812f-892f-e3915851a3a0",
+  "title": "Product management of AI products",
+  "category": "Product",
+  "year": "2022",
+  "readingTime": 4,
+  "url": "https://www.notion.so/Product-management-of-AI-products-36b761837377812f892fe3915851a3a0",
+  "tags": [
+    "Product",
+    "Strategy"
+  ],
+  "content": "<p>Working with data science and ML teams over the years, it is easy to forget that AI is just a tool. A very powerful one, but still a tool. The product has to create value for end users. The technology serves that — not the other way around.</p>\n<hr>\n<h2>The temptation of the capability</h2>\n<p>AI teams are often structured around capabilities rather than problems. A team gets good at a particular model type, or builds expertise in a particular data pipeline, and then looks for applications of that capability. This is backwards.</p>\n<p>Product thinking starts from the user's problem and works backwards to the technology. That applies as much to AI-powered products as to any other kind.</p>\n<hr>\n<h2>Where AI products differ from conventional products</h2>\n<p>There are a few genuine differences that product managers need to account for when working with AI:</p>\n<p><strong>Probabilistic outputs.</strong> Conventional software does what it is told. AI systems produce outputs that are probably right. That shifts how you handle errors, edge cases, and user trust. A 95% accuracy rate sounds good until you are the 5%.</p>\n<p><strong>Data dependency.</strong> AI products are only as good as the data they are trained on. This makes data quality and data governance product problems, not just engineering problems.</p>\n<p><strong>Explainability.</strong> In many contexts — healthcare, finance, legal — users and regulators need to understand why a system produced a given output. Black-box models that perform well may still be unusable if they cannot explain themselves.</p>\n<p><strong>Feedback loops.</strong> AI systems can be improved continuously as more data comes in. Product managers need to build mechanisms to capture that feedback and feed it back into the model — which adds a layer of complexity to post-launch operations.</p>\n<hr>\n<h2>What stays the same</h2>\n<p>The fundamentals do not change. You still need to understand the user. You still need to define what success looks like before you build. You still need a clear answer to why this product should exist and who benefits.</p>\n<p>AI does not remove those requirements. If anything, it makes them more important — because the technical complexity of what sits underneath the product can easily obscure whether anyone actually needs it.</p>",
+  "contentSource": "notion"
+}
