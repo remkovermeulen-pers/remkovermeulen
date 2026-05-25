@@ -264,7 +264,7 @@
       "AI"
     ],
     "lede": "",
-    "description": "Used mobile network mobility data to cut epidemic source detection from weeks to hours, and predict outbreak spread before clinical data surfaced — validated across Ebola and Zika in collaboration with WHO and Harvard.",
+    "description": "A proposal to use mobile network mobility data to potentially cut epidemic source detection from weeks to hours, and predict outbreak spread before clinical data surfaced. Developed in collaboration with WHO and Harvard, validated as a technical concept across Ebola and Zika scenarios.",
     "coverImage": "assets/projects/36076183-7377-8195-b39a-cfa1657491db--pandemic-prediction-zika-ebola/01.png",
     "metrics": [],
     "logoDomain": "",
