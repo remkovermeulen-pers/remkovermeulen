@@ -93,7 +93,7 @@ function blocksToHtml(blocks) {
         parts.push(`<li>${richTextToHtml(block.numbered_list_item.rich_text)}</li>`); break;
       case 'quote':
         parts.push(`<blockquote>${richTextToHtml(block.quote.rich_text)}</blockquote>`); break;
-      case 'divider':  parts.push('<hr>'); break;
+      case 'divider':  /* skip dividers */ break;
       case 'callout':
         parts.push(`<div class="callout">${richTextToHtml(block.callout.rich_text)}</div>`); break;
     }
@@ -186,8 +186,10 @@ async function fetchArticles() {
     const existingPath = path.join(articlesDir, `${page.id}.json`);
     const existing = fs.existsSync(existingPath) ? JSON.parse(fs.readFileSync(existingPath, 'utf8')) : null;
 
-    // Preserve coverImage, coverImagePosition, linkedInEmbedUrl, youtubeVideoId — manually curated
-    if (existing?.coverImage) meta.coverImage = existing.coverImage;
+    // Notion page cover takes priority; fall back to manually curated value in existing JSON
+    const notionCover = page.cover?.external?.url || page.cover?.file?.url || null;
+    if (notionCover) meta.coverImage = notionCover;
+    else if (existing?.coverImage) meta.coverImage = existing.coverImage;
     if (existing?.coverImagePosition) meta.coverImagePosition = existing.coverImagePosition;
     if (existing?.linkedInEmbedUrl) meta.linkedInEmbedUrl = existing.linkedInEmbedUrl;
     if (existing?.youtubeVideoId) meta.youtubeVideoId = existing.youtubeVideoId;
