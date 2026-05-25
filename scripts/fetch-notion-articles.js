@@ -146,89 +146,7 @@ async function fetchAllBlocks(pageId) {
   return all;
 }
 
-const YOUTUBE_CHANNEL_ID = 'UCsCKDRichUBYXNLAnWFugdw';
-
-async function fetchYouTubeVideos() {
-  try {
-    const res = await fetch(`https://www.youtube.com/feeds/videos.xml?channel_id=${YOUTUBE_CHANNEL_ID}`);
-    const xml = await res.text();
-    const ids    = [...xml.matchAll(/<yt:videoId>([^<]+)<\/yt:videoId>/g)].map(m => m[1]);
-    const titles = [...xml.matchAll(/<title>([^<]+)<\/title>/g)].map(m => m[1]).slice(1);
-    return ids.map((id, i) => ({ id, title: titles[i] || '' }));
-  } catch (e) {
-    console.warn('  YouTube RSS fetch failed:', e.message);
-    return [];
-  }
-}
-
-async function fetchTranscript(videoId) {
-  try {
-    // Fetch video page to get caption track URL
-    const page = await fetch(`https://www.youtube.com/watch?v=${videoId}`, {
-      headers: { 'User-Agent': 'Mozilla/5.0 (compatible)' }
-    }).then(r => r.text());
-
-    const m = page.match(/"baseUrl":"(https:\/\/www\.youtube\.com\/api\/timedtext[^"]*)"/);
-    if (!m) return null;
-    const captionUrl = m[1].replace(/\\u0026/g, '&') + '&fmt=json3';
-
-    const data = await fetch(captionUrl).then(r => r.json()).catch(() => null);
-    if (!data?.events) return null;
-
-    // Extract text segments and group into ~80-word paragraphs
-    const segments = data.events
-      .filter(e => e.segs)
-      .map(e => e.segs.map(s => s.utf8 || '').join('').replace(/\[.*?\]/g, '').trim())
-      .filter(Boolean);
-
-    const paragraphs = [];
-    let current = [], wordCount = 0;
-    for (const seg of segments) {
-      const words = seg.split(/\s+/);
-      current.push(...words);
-      wordCount += words.length;
-      if (wordCount >= 80 && /[.!?]$/.test(seg)) {
-        paragraphs.push(current.join(' '));
-        current = []; wordCount = 0;
-      }
-    }
-    if (current.length) paragraphs.push(current.join(' '));
-
-    // Build HTML: group 3 paragraphs per block
-    const esc = s => s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
-    const blocks = [];
-    for (let i = 0; i < paragraphs.length; i += 3) {
-      blocks.push(paragraphs.slice(i, i+3).map(p => `<p>${esc(p)}</p>`).join('\n'));
-    }
-    return blocks.join('\n');
-  } catch (e) {
-    console.warn(`  Transcript fetch failed for ${videoId}:`, e.message);
-    return null;
-  }
-}
-
-function normalizeTitle(str) {
-  return str.toLowerCase().replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, ' ').trim();
-}
-
-function matchVideo(articleTitle, videos) {
-  const na = normalizeTitle(articleTitle);
-  for (const v of videos) {
-    const nv = normalizeTitle(v.title);
-    if (na === nv || na.includes(nv) || nv.includes(na)) return v;
-    // Jaccard word overlap ≥ 0.5
-    const wa = new Set(na.split(' ').filter(w => w.length > 3));
-    const wv = new Set(nv.split(' ').filter(w => w.length > 3));
-    const overlap = [...wa].filter(w => wv.has(w)).length;
-    if (overlap / (new Set([...wa, ...wv]).size) >= 0.5) return v;
-  }
-  return null;
-}
-
 async function fetchArticles() {
-  console.log('\nFetching YouTube videos…');
-  const videos = await fetchYouTubeVideos();
-  console.log(`  Found ${videos.length} videos`);
   console.log('\nFetching articles…');
   const allPages = [];
   let cursor;
@@ -268,19 +186,11 @@ async function fetchArticles() {
     const existingPath = path.join(articlesDir, `${page.id}.json`);
     const existing = fs.existsSync(existingPath) ? JSON.parse(fs.readFileSync(existingPath, 'utf8')) : null;
 
-    // Preserve coverImage, coverImagePosition, linkedInEmbedUrl — not Notion properties, always manually curated
+    // Preserve coverImage, coverImagePosition, linkedInEmbedUrl, youtubeVideoId — manually curated
     if (existing?.coverImage) meta.coverImage = existing.coverImage;
     if (existing?.coverImagePosition) meta.coverImagePosition = existing.coverImagePosition;
     if (existing?.linkedInEmbedUrl) meta.linkedInEmbedUrl = existing.linkedInEmbedUrl;
-
-    const matched = matchVideo(meta.title, videos);
-    if (matched) {
-      meta.youtubeVideoId = matched.id;
-      console.log(`  🎬 Matched "${meta.title}" → ${matched.id}`);
-    } else if (existing?.youtubeVideoId) {
-      // Preserve explicit youtubeVideoId when title-based auto-match fails
-      meta.youtubeVideoId = existing.youtubeVideoId;
-    }
+    if (existing?.youtubeVideoId) meta.youtubeVideoId = existing.youtubeVideoId;
     metaList.push(meta);
 
     // Preserve content for articles already written by Claude
@@ -291,22 +201,11 @@ async function fetchArticles() {
     }
 
     const blocks = await fetchAllBlocks(page.id);
-    let content = blocksToHtml(blocks);
-    let contentSource = 'notion';
-
-    // If a YouTube video matched, use its transcript as content
-    if (matched) {
-      const transcript = await fetchTranscript(matched.id);
-      if (transcript) {
-        content = transcript;
-        contentSource = 'youtube-transcript';
-        console.log(`    📝 Using transcript as content`);
-      }
-    }
+    const content = blocksToHtml(blocks);
 
     fs.writeFileSync(
       path.join(articlesDir, `${page.id}.json`),
-      JSON.stringify({ ...meta, tags, content, contentSource }, null, 2)
+      JSON.stringify({ ...meta, tags, content, contentSource: 'notion' }, null, 2)
     );
     console.log(`  ✓ ${meta.title}`);
   }
