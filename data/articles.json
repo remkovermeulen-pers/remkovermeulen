@@ -142,7 +142,8 @@
     "year": "2022",
     "readingTime": 3,
     "url": "https://www.notion.so/Good-product-strategy-bad-product-strategy-35f76183737781ff99f2ffde409f0387",
-    "coverImage": "https://images.unsplash.com/photo-1529699211952-734e80c4d42b?w=1800&q=80"
+    "coverImage": "https://images.unsplash.com/photo-1529699211952-734e80c4d42b?w=1800&q=80",
+    "lede": "Once every while, every company will create or review their strategy again. An often taken route is that each department goes out and creates their own strategy: the Technology strategy, the Product s"
   },
   {
     "notionId": "36b76183-7377-812f-892f-e3915851a3a0",
@@ -150,7 +151,8 @@
     "category": "Product",
     "year": "2022",
     "readingTime": 4,
-    "url": "https://www.notion.so/Product-management-of-AI-products-36b761837377812f892fe3915851a3a0"
+    "url": "https://www.notion.so/Product-management-of-AI-products-36b761837377812f892fe3915851a3a0",
+    "lede": "Working with data science and ML teams over the years, it is easy to forget that AI is just a tool. A very powerful one, but still a tool. The product has to create value for end users. The technology"
   },
   {
     "notionId": "36b76183-7377-81be-b0de-f9800903b8e7",
@@ -158,7 +160,8 @@
     "category": "Product",
     "year": "2022",
     "readingTime": 3,
-    "url": "https://www.notion.so/How-to-build-products-quickly-36b76183737781beb0def9800903b8e7"
+    "url": "https://www.notion.so/How-to-build-products-quickly-36b76183737781beb0def9800903b8e7",
+    "lede": "Speed is not an accident. It is a structural outcome. The organisations that build quickly are not necessarily smarter or better resourced — they have made deliberate choices about how they are organi"
   },
   {
     "notionId": "36b76183-7377-81f8-aaff-e4ade6996d37",
@@ -166,7 +169,8 @@
     "category": "Strategy",
     "year": "2021",
     "readingTime": 3,
-    "url": "https://www.notion.so/Innovation-in-times-of-uncertainty-36b76183737781f8aaffe4ade6996d37"
+    "url": "https://www.notion.so/Innovation-in-times-of-uncertainty-36b76183737781f8aaffe4ade6996d37",
+    "lede": "Uncertainty is uncomfortable. But it is also one of the most reliable conditions for meaningful innovation."
   },
   {
     "notionId": "36b76183-7377-81e9-a656-f3b1ba0609c6",
@@ -174,7 +178,8 @@
     "category": "Research",
     "year": "2021",
     "readingTime": 2,
-    "url": "https://www.notion.so/Koa-Health-scientific-advisory-board-36b76183737781e9a656f3b1ba0609c6"
+    "url": "https://www.notion.so/Koa-Health-scientific-advisory-board-36b76183737781e9a656f3b1ba0609c6",
+    "lede": "At Koa Health, one of our core principles was that clinical and scientific rigour had to underpin every claim we made. That meant building a scientific advisory board capable of holding us to that sta"
   },
   {
     "notionId": "36b76183-7377-81f6-9732-f93f97d14e47",
@@ -182,7 +187,8 @@
     "category": "Research",
     "year": "2021",
     "readingTime": 3,
-    "url": "https://www.notion.so/Digital-therapeutics-and-pharmaceutical-collaboration-36b76183737781f69732f93f97d14e47"
+    "url": "https://www.notion.so/Digital-therapeutics-and-pharmaceutical-collaboration-36b76183737781f69732f93f97d14e47",
+    "lede": "Koa Health announced a collaboration with Janssen to research the use of digital cognitive behavioural therapy for treatment-resistant major depressive disorder patients."
   },
   {
     "notionId": "36b76183-7377-81b8-8e9c-e2f39e20aeb1",
@@ -190,7 +196,8 @@
     "category": "Strategy",
     "year": "2020",
     "readingTime": 4,
-    "url": "https://www.notion.so/How-an-innovation-factory-scales-product-breakthroughs-36b76183737781b88e9ce2f39e20aeb1"
+    "url": "https://www.notion.so/How-an-innovation-factory-scales-product-breakthroughs-36b76183737781b88e9ce2f39e20aeb1",
+    "lede": "It is a seductive thought that the grass is always greener on the other side. Startups want the resources of large companies. Large companies want the agility of startups. Design agencies wish their c"
   },
   {
     "notionId": "36b76183-7377-8183-a9c6-c59066f79e11",
@@ -198,7 +205,8 @@
     "category": "Design",
     "year": "2015",
     "readingTime": 3,
-    "url": "https://www.notion.so/Creating-patient-centred-services-36b7618373778183a9c6c59066f79e11"
+    "url": "https://www.notion.so/Creating-patient-centred-services-36b7618373778183a9c6c59066f79e11",
+    "lede": "Healthcare services are designed around the system, not the patient. That is the root of most of the friction people experience when trying to get care."
   },
   {
     "notionId": "36b76183-7377-81fd-b317-e7d3e5f58c60",
@@ -206,6 +214,7 @@
     "category": "Research",
     "year": "2015",
     "readingTime": 3,
-    "url": "https://www.notion.so/Health-consumers-in-search-of-authentic-experiences-36b76183737781fdb317e7d3e5f58c60"
+    "url": "https://www.notion.so/Health-consumers-in-search-of-authentic-experiences-36b76183737781fdb317e7d3e5f58c60",
+    "lede": "In the growing value-based era of healthcare, patients are looking for something that the system rarely delivers: the experience of being treated as a consumer."
   }
 ]
