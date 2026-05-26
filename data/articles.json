@@ -160,23 +160,13 @@
     "lede": "Speed is not an accident. It is a structural outcome. The organisations that build quickly are not necessarily smarter or better resourced — they have made deliberate choices about how they are organi"
   },
   {
-    "notionId": "36b76183-7377-81f8-aaff-e4ade6996d37",
-    "title": "Innovation in times of uncertainty",
-    "category": "Strategy",
-    "year": "2021",
-    "readingTime": 3,
-    "url": "https://www.notion.so/Innovation-in-times-of-uncertainty-36b76183737781f8aaffe4ade6996d37",
-    "coverImage": "https://images.unsplash.com/photo-1736201887746-2d6eaec30668?w=1200",
-    "lede": "Uncertainty is uncomfortable. But it is also one of the most reliable conditions for meaningful innovation."
-  },
-  {
     "notionId": "36b76183-7377-81e9-a656-f3b1ba0609c6",
     "title": "Koa Health scientific advisory board",
     "category": "Research",
     "year": "2021",
     "readingTime": 2,
     "url": "https://www.notion.so/Koa-Health-scientific-advisory-board-36b76183737781e9a656f3b1ba0609c6",
-    "coverImage": "https://raw.githubusercontent.com/remkovermeulen-pers/remkovermeulen/main/assets/articles/Thomas-Insel.jpeg",
+    "coverImage": "assets/articles/Thomas-Insel.jpg",
     "lede": "At Koa Health, one of our core principles was that clinical and scientific rigour had to underpin every claim we made. That meant building a scientific advisory board capable of holding us to that sta"
   },
   {
