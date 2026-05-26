@@ -148,9 +148,6 @@ async function fetchAllBlocks(pageId) {
 
 async function fetchArticles() {
   console.log('\nFetching articles…');
-  // Load manual cover overrides — these survive Notion syncs
-  const manualCoversPath = path.join(__dirname, '..', 'data', 'article-covers.json');
-  const manualCovers = fs.existsSync(manualCoversPath) ? JSON.parse(fs.readFileSync(manualCoversPath, 'utf8')) : {};
   const allPages = [];
   let cursor;
   do {
@@ -185,18 +182,19 @@ async function fetchArticles() {
     };
     if (!meta.title) continue;
 
-    // Read existing JSON early so we can preserve custom fields in meta (and articles.json)
-    const existingPath = path.join(articlesDir, `${page.id}.json`);
-    const existing = fs.existsSync(existingPath) ? JSON.parse(fs.readFileSync(existingPath, 'utf8')) : null;
+    // Media: single Notion URL field, type detected from value
+    const media = p['Media']?.url || '';
+    if (/youtube\.com|youtu\.be/.test(media)) {
+      const match = media.match(/(?:v=|youtu\.be\/)([^&?/]+)/);
+      meta.youtubeVideoId = match ? match[1] : '';
+    } else if (/linkedin\.com/.test(media)) {
+      meta.linkedInEmbedUrl = media;
+    } else if (/\.(mov|mp4|webm)$/i.test(media)) {
+      meta.coverVideo = media;
+    } else if (media) {
+      meta.coverImage = media;
+    }
 
-    // Cover priority: manual overrides file > Notion page cover > existing JSON
-    const notionCover = page.cover?.external?.url || page.cover?.file?.url || null;
-    if (manualCovers[page.id]) meta.coverImage = manualCovers[page.id];
-    else if (notionCover) meta.coverImage = notionCover;
-    else if (existing?.coverImage) meta.coverImage = existing.coverImage;
-    if (existing?.coverImagePosition) meta.coverImagePosition = existing.coverImagePosition;
-    if (existing?.linkedInEmbedUrl) meta.linkedInEmbedUrl = existing.linkedInEmbedUrl;
-    if (existing?.youtubeVideoId) meta.youtubeVideoId = existing.youtubeVideoId;
     metaList.push(meta); // meta.lede is set below after blocks fetch — object reference updates in place
 
     const blocks = await fetchAllBlocks(page.id);
