@@ -207,9 +207,16 @@ async function fetchArticles() {
       : '';
     meta.lede = lede;
 
+    // Preserve local-only fields that the sync should never overwrite
+    const articlePath = path.join(articlesDir, `${page.id}.json`);
+    const existing = fs.existsSync(articlePath) ? JSON.parse(fs.readFileSync(articlePath, 'utf8')) : {};
+    const LOCAL_ONLY = ['coverImagePosition'];
+    const preserved = {};
+    for (const key of LOCAL_ONLY) { if (existing[key] !== undefined) preserved[key] = existing[key]; }
+
     fs.writeFileSync(
-      path.join(articlesDir, `${page.id}.json`),
-      JSON.stringify({ ...meta, tags, content, contentSource: 'notion' }, null, 2)
+      articlePath,
+      JSON.stringify({ ...meta, tags, content, contentSource: 'notion', ...preserved }, null, 2)
     );
     console.log(`  ✓ ${meta.title}`);
   }
