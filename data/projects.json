@@ -276,6 +276,10 @@
       {
         "name": "Harvard",
         "logo": "harvard.svg"
+      },
+      {
+        "name": "Telefónica",
+        "logo": "telefonica.com.svg"
       }
     ]
   },
@@ -554,6 +558,10 @@
       {
         "name": "O2",
         "logo": "02.svg"
+      },
+      {
+        "name": "Telefónica",
+        "logo": "telefonica.com.svg"
       }
     ]
   },
