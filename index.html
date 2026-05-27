@@ -148,8 +148,10 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
 }
 
 /* LOGO STRIP */
-.logos-outer { margin-top:56px; border-top:1px solid var(--line); border-bottom:1px solid var(--line); overflow:hidden; cursor:ew-resize; user-select:none; }
-.logos { padding:40px 0; display:flex; flex-wrap:nowrap; align-items:center; gap:56px; width:max-content; will-change:transform; }
+@keyframes scroll-logos { from { transform:translateX(0) } to { transform:translateX(-50%) } }
+.logos-outer { margin-top:56px; border-top:1px solid var(--line); border-bottom:1px solid var(--line); overflow:hidden; }
+.logos { padding:40px 0; display:flex; flex-wrap:nowrap; align-items:center; gap:56px; width:max-content; will-change:transform; animation:scroll-logos 28s linear infinite; }
+.logos-outer:hover .logos { animation-play-state:paused; }
 .logo-mark { display:flex; height:56px; align-items:center; opacity:1; transition:opacity .25s; flex-shrink:0; }
 .logo-mark:hover { opacity:0.65; }
 .logo-mark img { height:100%; width:auto; max-width:196px; display:block; object-fit:contain; filter:brightness(0) invert(46%) sepia(100%) hue-rotate(338deg) saturate(98%); }
@@ -331,8 +333,8 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
   </section>
 
   <!-- LOGO STRIP -->
-  <div class="logos-outer" id="logos-outer">
-    <div class="logos" id="logos-track">
+  <div class="logos-outer">
+    <div class="logos" aria-hidden="true">
       <a class="logo-mark" href="case-study?id=35f76183-7377-81f2-9f5a-dbd1debf2fb1"><img src="assets/logos/toggl.svg" alt="Toggl"></a>
       <a class="logo-mark" href="case-study?id=35f76183-7377-8135-9dd1-d1b22dfa6da0"><img src="assets/logos/koa.health.com.png" alt="Koa Health"></a>
       <a class="logo-mark" href="case-study?id=35f76183-7377-816c-8a7f-e43d868da1c7"><img src="assets/logos/signassist.svg" alt="SignAssist"></a>
@@ -346,38 +348,22 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
       <a class="logo-mark" href="case-study?id=36076183-7377-814a-9f9c-f356f12270ef"><img src="assets/logos/bbc.svg" alt="BBC"></a>
       <a class="logo-mark" href="case-study?id=36076183-7377-81c6-9ab7-c49d505b389a"><img src="assets/logos/02.svg" alt="O2"></a>
       <a class="logo-mark" href="case-study?id=36076183-7377-812b-9600-f901966bdb08"><img src="assets/logos/vivo.svg" alt="Vivo"></a>
+      <!-- duplicate for seamless loop -->
+      <a class="logo-mark" href="case-study?id=35f76183-7377-81f2-9f5a-dbd1debf2fb1"><img src="assets/logos/toggl.svg" alt=""></a>
+      <a class="logo-mark" href="case-study?id=35f76183-7377-8135-9dd1-d1b22dfa6da0"><img src="assets/logos/koa.health.com.png" alt=""></a>
+      <a class="logo-mark" href="case-study?id=35f76183-7377-816c-8a7f-e43d868da1c7"><img src="assets/logos/signassist.svg" alt=""></a>
+      <a class="logo-mark" href="case-study?id=36076183-7377-8181-a326-c925904d52f8"><img src="assets/logos/telefonica.com.svg" alt=""></a>
+      <a class="logo-mark" href="case-study?id=35f76183-7377-8135-9dd1-d1b22dfa6da0"><img src="assets/logos/harvard.svg" alt=""></a>
+      <a class="logo-mark" href="case-study?id=36076183-7377-8195-b39a-cfa1657491db"><img src="assets/logos/un.svg" alt=""></a>
+      <a class="logo-mark" href="case-study?id=36076183-7377-81ad-ad56-ddcc3b80e04d"><img src="assets/logos/nhs.svg" alt=""></a>
+      <a class="logo-mark" href="case-study?id=35f76183-7377-812e-89c0-f80d125d898b"><img src="assets/logos/jandj.com.svg" alt=""></a>
+      <a class="logo-mark" href="case-study?id=36076183-7377-81ce-92bc-caa57a662ca6"><img src="assets/logos/royal-college-art.webp" alt=""></a>
+      <a class="logo-mark" href="case-study?id=36076183-7377-81ce-92bc-caa57a662ca6"><img src="assets/logos/telefonica-alpha.svg" alt=""></a>
+      <a class="logo-mark" href="case-study?id=36076183-7377-814a-9f9c-f356f12270ef"><img src="assets/logos/bbc.svg" alt=""></a>
+      <a class="logo-mark" href="case-study?id=36076183-7377-81c6-9ab7-c49d505b389a"><img src="assets/logos/02.svg" alt=""></a>
+      <a class="logo-mark" href="case-study?id=36076183-7377-812b-9600-f901966bdb08"><img src="assets/logos/vivo.svg" alt=""></a>
     </div>
   </div>
-  <script>
-  (function(){
-
-    var outer = document.getElementById('logos-outer');
-    var track = document.getElementById('logos-track');
-    var pos = 0, speed = 0, active = false;
-
-    outer.addEventListener('mouseenter', function(){ active = true; });
-    outer.addEventListener('mouseleave', function(){ active = false; speed = 0; });
-    outer.addEventListener('mousemove', function(e){
-      var rect = outer.getBoundingClientRect();
-      var rel = (e.clientX - rect.left) / rect.width;
-      var delta = rel - 0.5;
-      var dead = 0.2;
-      if(Math.abs(delta) < dead){ speed = 0; return; }
-      var sign = delta > 0 ? 1 : -1;
-      var mag = (Math.abs(delta) - dead) / (0.5 - dead);
-      speed = sign * mag * mag * 4;
-    });
-
-    (function loop(){
-      requestAnimationFrame(loop);
-      if(!active || speed === 0) return;
-      var maxScroll = track.offsetWidth - outer.offsetWidth;
-      if(maxScroll <= 0) return;
-      pos = Math.max(0, Math.min(maxScroll, pos + speed));
-      track.style.transform = 'translateX(-' + pos + 'px)';
-    })();
-  })();
-  </script>
 
   <!-- ARTICLES -->
   <section class="articles" id="journal">
