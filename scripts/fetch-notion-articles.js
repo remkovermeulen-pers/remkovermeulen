@@ -403,12 +403,62 @@ async function fetchProjects() {
     JSON.stringify(metaList, null, 2)
   );
   console.log(`\nWrote ${metaList.length} projects`);
+  return metaList;
+}
+
+function escHtml(s) {
+  return String(s)
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+
+function updateLogoBar(metaList) {
+  // Build a deduped list of orgs with local logos, in project priority order
+  const seenNames = new Set();
+  const seenFiles = new Set();
+  const logos = [];
+  for (const project of metaList) {
+    for (const org of (project.organisations || [])) {
+      if (!org.logo || org.logo.startsWith('http')) continue; // skip missing or external
+      if (seenNames.has(org.name) || seenFiles.has(org.logo)) continue;
+      seenNames.add(org.name);
+      seenFiles.add(org.logo);
+      logos.push({ href: `case-study?id=${project.notionId}`, src: `assets/logos/${org.logo}`, alt: org.name });
+    }
+  }
+
+  const indent = '      ';
+  const primary = logos.map(l =>
+    `${indent}<a class="logo-mark" href="${l.href}"><img src="${l.src}" alt="${escHtml(l.alt)}"></a>`
+  ).join('\n');
+  const dupes = logos.map(l =>
+    `${indent}<a class="logo-mark" href="${l.href}"><img src="${l.src}" alt=""></a>`
+  ).join('\n');
+
+  const generated =
+    `${indent}<!-- logos:start -->\n` +
+    primary + '\n' +
+    `${indent}<!-- duplicate for seamless loop -->\n` +
+    dupes + '\n' +
+    `${indent}<!-- logos:end -->`;
+
+  const indexPath = path.join(__dirname, '..', 'index.html');
+  let html = fs.readFileSync(indexPath, 'utf8');
+  const startTag = '<!-- logos:start -->';
+  const endTag   = '<!-- logos:end -->';
+  const s = html.indexOf(startTag);
+  const e = html.indexOf(endTag);
+  if (s === -1 || e === -1) { console.warn('  ⚠ Logo bar sentinels not found in index.html'); return; }
+  html = html.slice(0, s) + generated.trimStart() + html.slice(e + endTag.length);
+  // Remove the now-redundant trailing sentinel (already included in generated)
+  fs.writeFileSync(indexPath, html);
+  console.log(`  ✓ Updated logo bar in index.html (${logos.length} logos)`);
 }
 
 async function main() {
   await fetchArticles();
-  await fetchProjects();
-
+  const metaList = await fetchProjects();
+  updateLogoBar(metaList);
 }
 
 main().catch(err => { console.error(err); process.exit(1); });
