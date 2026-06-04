@@ -318,7 +318,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
             }).join('');
             return '<a href="case-study?id='+esc(p.notionId)+'" class="proj">'
               +'<div class="proj__img">'
-              +'<span class="proj__chip">'+esc(p.sector)+'</span>'
+              +((p.tags&&p.tags[0]) ? '<span class="proj__chip">'+esc(p.tags[0])+'</span>' : '')
               +'<img class="bw-img" src="'+esc(p.coverImage)+'" alt="'+esc(p.title)+'" loading="lazy">'
               +'</div>'
               +'<h3>'+esc(p.title)+'</h3>'

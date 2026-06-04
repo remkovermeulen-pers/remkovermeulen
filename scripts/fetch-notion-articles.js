@@ -406,6 +406,34 @@ async function fetchProjects() {
   return metaList;
 }
 
+function slugify(s) {
+  return String(s).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+}
+
+function generateSitemap(articles, projects) {
+  const BASE = 'https://remkovermeulen.com';
+  const today = new Date().toISOString().slice(0, 10);
+
+  const staticPages = ['/', '/work.html', '/about.html', '/articles.html'];
+
+  const urls = [
+    ...staticPages.map(p => ({ loc: `${BASE}${p}`, lastmod: today })),
+    ...articles.map(a => ({ loc: `${BASE}/article.html?slug=${slugify(a.title)}`, lastmod: today })),
+    ...projects.map(p => ({ loc: `${BASE}/case-study.html?id=${p.notionId}`, lastmod: today })),
+  ];
+
+  const xml = [
+    '<?xml version="1.0" encoding="UTF-8"?>',
+    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+    ...urls.map(u => `  <url>\n    <loc>${u.loc}</loc>\n    <lastmod>${u.lastmod}</lastmod>\n  </url>`),
+    '</urlset>',
+  ].join('\n');
+
+  const sitemapPath = path.join(__dirname, '..', 'sitemap.xml');
+  fs.writeFileSync(sitemapPath, xml + '\n');
+  console.log(`\n✓ sitemap.xml updated (${urls.length} URLs)`);
+}
+
 function escHtml(s) {
   return String(s)
     .replace(/&/g, '&amp;').replace(/</g, '&lt;')
@@ -459,6 +487,9 @@ async function main() {
   await fetchArticles();
   const metaList = await fetchProjects();
   updateLogoBar(metaList);
+
+  const articles = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'data', 'articles.json'), 'utf8'));
+  generateSitemap(articles, metaList);
 }
 
 main().catch(err => { console.error(err); process.exit(1); });
