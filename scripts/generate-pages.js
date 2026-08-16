@@ -22,6 +22,8 @@
  */
 const fs = require('fs');
 const path = require('path');
+const AR = require('./article-render');
+const CSR = require('./case-study-render');
 
 const ROOT = path.join(__dirname, '..');
 const BASE = 'https://remkovermeulen.com';
@@ -74,6 +76,11 @@ function fillMeta(html, { title, desc, image, url, titleTag }) {
   return html;
 }
 
+function bakeJsonLd(html, obj) {
+  const script = `<script type="application/ld+json">${JSON.stringify(obj)}</script>\n`;
+  return replaceOnce(html, '</head>', script + '</head>', 'jsonld </head>');
+}
+
 function writePage(relDir, html) {
   const dir = path.join(ROOT, relDir);
   fs.mkdirSync(dir, { recursive: true });
@@ -96,18 +103,26 @@ function generateArticles(template) {
 
     const url = `${BASE}/articles/${slug}/`;
     const desc = article.summary || article.lede || stripHtml(article.content).slice(0, 160);
-    const baked =
-      `<article class="baked-content">` +
-      `<h1>${escText(article.title)}</h1>` +
-      (article.content || `<p>${escText(desc)}</p>`) +
-      `</article>`;
+    // Bake the exact same markup the client would build, so first paint equals
+    // the hydrated layout (no flash/reflow).
+    const body = AR.buildArticleBody(article, articles);
 
     let html = withBase(template);
     html = fillMeta(html, { title: article.title, desc, image: article.coverImage, url, titleTag: '<title>Article — Remko Vermeulen</title>' });
+    html = bakeJsonLd(html, {
+      '@context': 'https://schema.org',
+      '@type': 'BlogPosting',
+      headline: article.title,
+      description: desc,
+      image: article.coverImage || DEFAULT_IMG,
+      url,
+      author: { '@type': 'Person', name: 'Remko Vermeulen', url: BASE },
+      publisher: { '@type': 'Person', name: 'Remko Vermeulen' },
+    });
     html = replaceOnce(
       html,
       '<main class="container" id="main-content">\n  <div class="art-loading" id="art-loading">Loading…</div>\n</main>',
-      `<script>window.__SLUG__ = ${JSON.stringify(slug)};</script>\n<main class="container" id="main-content">\n${baked}\n</main>`,
+      `<script>window.__SLUG__ = ${JSON.stringify(slug)}; window.__PREBAKED__ = true;</script>\n<main class="container" id="main-content">\n${body}\n</main>`,
       'article main'
     );
     writePage(path.join('articles', slug), html);
@@ -134,23 +149,27 @@ function generateProjects(template) {
     const url = `${BASE}/work/${slug}/`;
     const firstBody = proj.sections && proj.sections[0] ? stripHtml(proj.sections[0].body) : '';
     const desc = proj.description || firstBody.slice(0, 160) || proj.lede || '';
-    const sectionsHtml = (proj.sections || []).map(s =>
-      (s.heading ? `<h2>${escText(s.heading)}</h2>` : '') + (s.body || '')
-    ).join('\n');
-    const baked =
-      `<article class="baked-content">` +
-      `<h1>${escText(proj.title)}</h1>` +
-      (proj.lede ? `<p>${escText(proj.lede)}</p>` : '') +
-      sectionsHtml +
-      `</article>`;
     const image = proj.coverImage ? (proj.coverImage.startsWith('http') ? proj.coverImage : `${BASE}/${proj.coverImage}`) : '';
+    // Bake the exact same markup the client would build (no flash/reflow).
+    const body = CSR.buildCaseStudyBody(proj, projects);
 
     let html = withBase(template);
     html = fillMeta(html, { title: proj.title, desc, image, url, titleTag: '<title>Case Study — Remko Vermeulen</title>' });
+    html = bakeJsonLd(html, {
+      '@context': 'https://schema.org',
+      '@type': 'Article',
+      headline: proj.title,
+      description: desc,
+      image: image || DEFAULT_IMG,
+      url,
+      author: { '@type': 'Person', name: 'Remko Vermeulen', url: BASE },
+      publisher: { '@type': 'Person', name: 'Remko Vermeulen' },
+      datePublished: proj.year ? proj.year + '-01-01' : undefined,
+    });
     html = replaceOnce(
       html,
       '<main class="container" id="cs-main">\n  <div class="cs-loading">Loading…</div>\n</main>',
-      `<script>window.__ID__ = ${JSON.stringify(meta.notionId)};</script>\n<main class="container" id="cs-main">\n${baked}\n</main>`,
+      `<script>window.__ID__ = ${JSON.stringify(meta.notionId)}; window.__PREBAKED__ = true;</script>\n<main class="container" id="cs-main">\n${body}\n</main>`,
       'case-study main'
     );
     writePage(path.join('work', slug), html);
@@ -172,8 +191,11 @@ function fixPostStubs(articleSlugs) {
     const cur = fs.readFileSync(idxPath, 'utf8');
 
     let target = null;
-    const m = cur.match(/article\.html\?slug=([a-z0-9-]+)/i);
-    if (m && articleSlugs.has(m[1])) target = m[1];
+    // Already repointed to /articles/<slug>/ on a previous run — keep it stable.
+    const a = cur.match(/\/articles\/([a-z0-9-]+)\//);
+    if (a && articleSlugs.has(a[1])) target = a[1];
+    // Legacy stub that still points at article.html?slug=<slug>.
+    if (!target) { const m = cur.match(/article\.html\?slug=([a-z0-9-]+)/i); if (m && articleSlugs.has(m[1])) target = m[1]; }
     if (!target && articleSlugs.has(folder)) target = folder;
     if (!target) target = slugs.find(s => s.startsWith(folder) || folder.startsWith(s) || s.includes(folder) || folder.includes(s));
 
