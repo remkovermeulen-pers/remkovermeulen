@@ -418,8 +418,8 @@ function generateSitemap(articles, projects) {
 
   const urls = [
     ...staticPages.map(p => ({ loc: `${BASE}${p}`, lastmod: today })),
-    ...articles.map(a => ({ loc: `${BASE}/article.html?slug=${slugify(a.title)}`, lastmod: today })),
-    ...projects.map(p => ({ loc: `${BASE}/case-study.html?id=${p.notionId}`, lastmod: today })),
+    ...articles.filter(a => a.notionId).map(a => ({ loc: `${BASE}/articles/${slugify(a.title)}/`, lastmod: today })),
+    ...projects.filter(p => p.notionId).map(p => ({ loc: `${BASE}/work/${slugify(p.title)}/`, lastmod: today })),
   ];
 
   const xml = [
@@ -451,7 +451,7 @@ function updateLogoBar(metaList) {
       if (seenNames.has(org.name) || seenFiles.has(org.logo)) continue;
       seenNames.add(org.name);
       seenFiles.add(org.logo);
-      logos.push({ href: `case-study?id=${project.notionId}`, src: `assets/logos/${org.logo}`, alt: org.name });
+      logos.push({ href: `/work/${slugify(project.title)}/`, src: `assets/logos/${org.logo}`, alt: org.name });
     }
   }
 
@@ -490,6 +490,9 @@ async function main() {
 
   const articles = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'data', 'articles.json'), 'utf8'));
   generateSitemap(articles, metaList);
+
+  // Pre-render a unique, self-canonical static page per article and case study.
+  require('./generate-pages').generateAll();
 }
 
 main().catch(err => { console.error(err); process.exit(1); });

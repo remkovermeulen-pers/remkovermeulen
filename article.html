@@ -278,11 +278,11 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
 
   function esc(s) { return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
   function slugify(s) { return String(s).toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,''); }
-  function articleUrl(a) { return 'article.html?slug=' + slugify(a.title); }
+  function articleUrl(a) { return '/articles/' + slugify(a.title) + '/'; }
 
   var params = new URLSearchParams(location.search);
-  var slug = params.get('slug');
-  var idParam = params.get('id');
+  var slug = params.get('slug') || window.__SLUG__ || null;
+  var idParam = params.get('id') || window.__ID__ || null;
   var main = document.getElementById('main-content');
 
   if (!slug && !idParam) { location.href = 'articles.html'; return; }
@@ -293,7 +293,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
       meta = all.find(function(a) { return slugify(a.title) === slug; });
     } else {
       meta = all.find(function(a) { return a.notionId === idParam; });
-      if (meta) history.replaceState(null, '', 'article.html?slug=' + slugify(meta.title));
+      if (meta) history.replaceState(null, '', '/articles/' + slugify(meta.title) + '/');
     }
     if (!meta) throw new Error('not found');
     return fetch('data/articles/' + meta.notionId + '.json').then(function(r) {
@@ -307,7 +307,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
     document.title = article.title + ' — Remko Vermeulen';
     analytics.page(article.title);
     var artDesc = article.summary || article.lede || '';
-    var artUrl = 'https://remkovermeulen.com/article.html?slug=' + slugify(article.title);
+    var artUrl = 'https://remkovermeulen.com/articles/' + slugify(article.title) + '/';
     var artImg = article.coverImage || 'https://remkovermeulen.com/assets/remko.jpg';
     function setMeta(sel, attr, val) { var el = document.querySelector(sel); if (el && val) el.setAttribute(attr, val); }
     setMeta('meta[name="description"]', 'content', artDesc);
@@ -468,6 +468,13 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
   var b=document.querySelector('.site-nav__burger');
   var n=document.querySelector('.site-nav__links');
   if(b&&n) b.addEventListener('click',function(){ n.classList.toggle('is-open'); });
+  // In-page anchor scroll (works even when a <base> tag rewrites bare #fragment links)
+  document.addEventListener('click',function(e){
+    var a=e.target.closest && e.target.closest('a[href^="#"]');
+    if(!a) return;
+    var t=document.getElementById(a.getAttribute('href').slice(1));
+    if(t){ e.preventDefault(); t.scrollIntoView({behavior:'smooth'}); }
+  });
 })();
 </script>
 </body>

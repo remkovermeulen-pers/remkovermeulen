@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<base href="https://remkovermeulen.com/">
+<meta charset="UTF-8">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Throughout history, the periods we associate most with hardship — pandemics, depressions, wars — turn out to be the same periods that produced the most significant leaps in innovation. This is not a c">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Remko Vermeulen">
+<meta property="og:title" content="Uncertain times as drivers of innovation — Remko Vermeulen">
+<meta property="og:description" content="Throughout history, the periods we associate most with hardship — pandemics, depressions, wars — turn out to be the same periods that produced the most significant leaps in innovation. This is not a c">
+<meta property="og:image" content="https://remkovermeulen.com/assets/remko.jpg">
+<meta property="og:url" content="https://remkovermeulen.com/articles/uncertain-times-as-drivers-of-innovation/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Uncertain times as drivers of innovation — Remko Vermeulen">
+<meta name="twitter:description" content="Throughout history, the periods we associate most with hardship — pandemics, depressions, wars — turn out to be the same periods that produced the most significant leaps in innovation. This is not a c">
+<meta name="twitter:image" content="https://remkovermeulen.com/assets/remko.jpg">
+<link rel="canonical" href="https://remkovermeulen.com/articles/uncertain-times-as-drivers-of-innovation/">
+<title>Uncertain times as drivers of innovation — Remko Vermeulen</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" referrerpolicy="no-referrer">
+<style>
+:root {
+  --bg:          #fbf9f8;
+  --bg-card:     #ffffff;
+  --bg-elev:     #efeded;
+  --primary:     #1b1c1c;
+  --on-primary:  #ffffff;
+  --muted:       #444748;
+  --muted-2:     #65645f;
+  --muted-3:     #87847a;
+  --line:        rgba(27,28,28,0.12);
+  --accent:      #A68B77;
+  --font-display:'Fraunces',Georgia,serif;
+  --font-body:   'Hanken Grotesk','Inter',system-ui,sans-serif;
+  --pad-desktop: 64px;
+  --pad-mobile:  20px;
+}
+*,*::before,*::after { box-sizing:border-box; }
+html,body { margin:0; padding:0; }
+body {
+  background:var(--bg); color:var(--primary);
+  font-family:var(--font-body); font-size:16px; line-height:1.6;
+  -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+}
+img { display:block; max-width:100%; }
+a { color:inherit; text-decoration:none; }
+button { font:inherit; cursor:pointer; background:none; border:0; color:inherit; }
+.container { max-width:1280px; margin:0 auto; padding:0 var(--pad-desktop); }
+@media (max-width:760px) { .container { padding:0 var(--pad-mobile); } }
+
+.bw-img { filter:grayscale(100%) contrast(108%); transition:filter .6s cubic-bezier(.22,1,.36,1); }
+.bw-img:hover { filter:grayscale(0%) contrast(105%); }
+.tag { display:inline-block; padding:7px 12px; font-size:10px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:var(--accent); border:1px solid var(--accent); line-height:1; }
+.btn { display:inline-flex; align-items:center; gap:10px; padding:16px 28px; font-size:11px; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; border:1px solid var(--primary); background:var(--bg-card); color:var(--primary); transition:box-shadow .25s, transform .25s; }
+.btn:hover { box-shadow:4px 4px 0 0 var(--primary); transform:translate(-2px,-2px); }
+
+/* NAV */
+.site-nav { position:sticky; top:0; z-index:50; background:var(--bg); border-bottom:1px solid var(--line); }
+.site-nav__inner { display:flex; align-items:center; justify-content:space-between; height:76px; }
+.site-nav__brand { font-family:var(--font-display); font-weight:700; font-size:22px; letter-spacing:-0.01em; }
+.site-nav__links { display:flex; align-items:center; gap:36px; }
+.site-nav__link { font-size:13px; font-weight:500; letter-spacing:0.14em; text-transform:uppercase; color:var(--muted-2); padding-bottom:4px; transition:color .2s; }
+.site-nav__link:hover { color:var(--primary); }
+.site-nav__link.is-active { color:var(--primary); font-weight:600; border-bottom:1px solid var(--primary); }
+.site-nav__cta { background:var(--primary); color:var(--on-primary); padding:12px 22px; font-size:11px; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; border:1px solid var(--primary); transition:box-shadow .2s, transform .2s; }
+.site-nav__cta:hover { box-shadow:4px 4px 0 0 var(--primary); transform:translate(-2px,-2px); }
+.site-nav__burger { display:none; width:36px; height:36px; align-items:center; justify-content:center; border:1px solid var(--primary); }
+.site-nav__burger span,.site-nav__burger span::before,.site-nav__burger span::after { display:block; width:16px; height:1.5px; background:var(--primary); position:relative; }
+.site-nav__burger span::before { content:''; position:absolute; top:-5px; left:0; width:100%; height:100%; background:var(--primary); }
+.site-nav__burger span::after  { content:''; position:absolute; top:5px;  left:0; width:100%; height:100%; background:var(--primary); }
+@media (max-width:760px) {
+  .site-nav__inner { height:60px; }
+  .site-nav__brand { font-size:18px; }
+  .site-nav__links { display:none; }
+  .site-nav__links.is-open {
+    display:flex; flex-direction:column; gap:20px;
+    position:absolute; top:60px; left:0; right:0;
+    background:var(--bg); border-bottom:1px solid var(--line);
+    padding:20px var(--pad-mobile); z-index:49;
+  }
+
+  .site-nav__cta { padding:9px 14px; font-size:10px; letter-spacing:0.14em; }
+  .site-nav__burger { display:inline-flex; }
+}
+
+/* FOOTER */
+.site-footer { background:#1b1c1c; color:#ffffff; margin-top:96px; }
+.site-footer__inner { display:flex; align-items:center; justify-content:space-between; padding-top:40px; padding-bottom:40px; gap:24px; flex-wrap:wrap; }
+.site-footer__brand { font-family:var(--font-display); font-weight:700; font-size:22px; letter-spacing:-0.01em; }
+.site-footer__copy { font-size:13px; color:rgba(255,255,255,0.5); font-style:italic; }
+.site-footer__links { display:flex; gap:28px; }
+.site-footer__link { font-size:11px; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:rgba(255,255,255,0.5); transition:color .2s; }
+.site-footer__link:hover { color:#ffffff; }
+@media (max-width:760px) {
+  .site-footer { margin-top:60px; }
+  .site-footer__inner { padding-top:28px; padding-bottom:28px; flex-direction:column; align-items:flex-start; gap:18px; }
+}
+
+/* ===== HERO ===== */
+.cs-hero { padding:64px 0 0; }
+.cs-hero__crumb { font-size:11px; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color:var(--muted-2); margin:0 0 28px; }
+.cs-hero h1 { margin:0 0 24px; font-family:var(--font-display); font-weight:700; font-size:clamp(40px,6.5vw,84px); line-height:1.04; letter-spacing:-0.025em; max-width:980px; }
+.cs-hero__lede { margin:0 0 0; font-size:clamp(17px,1.6vw,20px); line-height:1.55; color:var(--muted); }
+.cs-hero__byline { margin-top:36px; padding-top:22px; border-top:1px solid var(--line); display:flex; flex-wrap:wrap; gap:56px; align-items:flex-start; }
+.cs-hero__byline-block h5 { margin:0 0 6px; font-size:10px; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color:var(--muted-2); }
+.cs-hero__byline-block p { margin:0; font-family:var(--font-display); font-weight:500; font-size:18px; line-height:1.25; color:var(--primary); }
+
+/* ===== COVER IMAGE ===== */
+.cs-cover { margin-top:48px; border:1px solid var(--primary); overflow:hidden; position:relative; }
+.cs-cover img { width:100%; height:clamp(280px,38vw,520px); object-fit:cover; display:block; }
+.cs-cover__caption { padding:14px 20px; border-top:1px solid var(--line); font-size:12px; color:var(--muted-2); font-style:italic; background:var(--bg-card); }
+.cs-cover__video { position:relative; width:100%; aspect-ratio:16/9; }
+.cs-cover__video iframe { position:absolute; inset:0; width:100%; height:100%; border:0; display:block; }
+/* LinkedIn compact embed: clip the title strip (~28px) and reactions bar (~35px) so only video shows */
+.cs-cover__video--linkedin { overflow:hidden; }
+.cs-cover__video--linkedin iframe { top:-28px; height:calc(100% + 63px); }
+
+/* ===== BODY GRID ===== */
+.cs-body { margin-top:96px; display:grid; grid-template-columns:220px 1fr; gap:64px; }
+.cs-aside { position:sticky; top:100px; align-self:start; }
+.cs-aside h4 { font-size:10px; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color:var(--muted-2); margin:0 0 14px; padding-bottom:14px; border-bottom:1px solid var(--line); }
+.cs-aside .chips { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:36px; }
+
+.cs-toc { list-style:none; margin:0 0 36px; padding:0; display:flex; flex-direction:column; gap:14px; }
+.cs-toc li { display:flex; align-items:baseline; gap:12px; }
+.cs-toc__num { font-family:var(--font-display); font-style:italic; font-size:14px; color:var(--accent); min-width:18px; }
+.cs-toc a { font-size:13px; color:var(--muted); line-height:1.45; transition:color .2s; }
+.cs-toc a:hover { color:var(--primary); }
+
+.cs-aside__meta { display:flex; flex-direction:column; gap:22px; }
+.cs-aside__meta-block h5 { margin:0 0 6px; font-size:10px; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color:var(--muted-2); }
+.cs-aside__meta-block p { margin:0; font-size:14px; line-height:1.5; color:var(--muted); }
+.cs-aside__meta-block a { color:var(--accent); }
+
+/* ===== ARTICLE CONTENT ===== */
+.cs-content { display:flex; flex-direction:column; gap:72px; }
+
+/* Numbered sections */
+.cs-section { max-width:760px; }
+.cs-section__head { display:flex; align-items:baseline; gap:18px; margin-bottom:28px; }
+.cs-section__num { font-family:var(--font-display); font-style:italic; font-weight:500; font-size:30px; color:var(--accent); }
+.cs-section h2 { margin:0; font-family:var(--font-display); font-weight:600; font-size:clamp(26px,3vw,38px); line-height:1.1; letter-spacing:-0.01em; }
+
+/* Prose inside sections */
+.cs-section p { margin:0 0 22px; font-size:17px; line-height:1.75; color:var(--muted); }
+.cs-section p:last-child { margin-bottom:0; }
+.cs-section ul, .cs-section ol { padding-left:28px; margin:0 0 22px; }
+.cs-section li { font-size:17px; line-height:1.75; color:var(--muted); margin-bottom:8px; }
+.cs-section strong { font-weight:600; color:var(--primary); }
+.cs-section a { color:var(--accent); text-decoration:underline; text-underline-offset:3px; }
+.cs-section code { font-family:monospace; background:var(--bg-elev); padding:2px 6px; font-size:14px; border-radius:2px; }
+.cs-section hr { border:0; border-top:1px solid var(--line); margin:48px 0; }
+.cs-section .callout { background:var(--bg-elev); border-left:3px solid var(--accent); padding:14px 20px; margin:0 0 22px; font-size:15px; }
+.cs-section h3 { font-family:var(--font-display); font-weight:500; font-size:clamp(20px,2.2vw,26px); line-height:1.2; margin:36px 0 14px; }
+
+/* Drop cap on first paragraph of first section */
+.cs-section--lede > p:first-child::first-letter {
+  font-family:var(--font-display); font-weight:700;
+  float:left; font-size:80px; line-height:0.85;
+  padding:8px 14px 0 0; color:var(--primary);
+}
+
+/* Pull quote */
+.pull-quote {
+  margin:36px 0; padding:28px 0 28px 32px;
+  border-left:2px solid var(--accent);
+  font-family:var(--font-display); font-style:italic; font-weight:500;
+  font-size:clamp(20px,2.4vw,28px); line-height:1.35; color:var(--primary);
+  letter-spacing:-0.005em;
+}
+.cs-section blockquote { margin:36px 0; padding:4px 0 4px 28px; border-left:2px solid var(--accent); font-family:var(--font-display); font-style:italic; font-weight:500; font-size:clamp(18px,2vw,22px); line-height:1.4; color:var(--primary); }
+
+@media (max-width:880px) {
+  .cs-body { grid-template-columns:1fr; gap:24px; margin-top:28px; }
+  .cs-aside { position:static; }
+  .cs-toc-wrap { display:none; }
+  .cs-content { gap:40px; }
+  .cs-section--lede > p:first-child::first-letter { font-size:60px; padding:6px 10px 0 0; }
+  .cs-hero { padding:20px 0 0; }
+}
+
+/* ===== NEXT ARTICLE ===== */
+.next-proj { margin-top:96px; padding-top:56px; border-top:1px solid var(--primary); }
+.next-proj__eyebrow { font-size:11px; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color:var(--muted-2); margin:0 0 28px; }
+.next-proj__card { display:grid; grid-template-columns:1fr 1fr; border:1px solid var(--primary); overflow:hidden; transition:transform .3s, box-shadow .3s; }
+.next-proj__card:hover { transform:translate(-3px,-3px); box-shadow:6px 6px 0 0 var(--primary); }
+.next-proj__card img { width:100%; height:100%; aspect-ratio:16/10; object-fit:cover; display:block; }
+.next-proj__text { padding:48px; display:flex; flex-direction:column; justify-content:center; background:var(--bg); gap:14px; }
+.next-proj__text .tag-line { font-size:10px; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color:var(--accent); }
+.next-proj__text h3 { margin:0; font-family:var(--font-display); font-weight:600; font-size:clamp(24px,3vw,36px); line-height:1.15; display:flex; align-items:center; gap:16px; }
+.next-proj__text p { margin:0; font-size:14px; color:var(--muted-2); }
+.next-proj__text svg { transition:transform .3s; flex-shrink:0; }
+.next-proj__card:hover .next-proj__text svg { transform:translateX(8px); }
+@media (max-width:760px) {
+  .next-proj { margin-top:72px; padding-top:36px; }
+  .next-proj__card { grid-template-columns:1fr; }
+  .next-proj__card img { aspect-ratio:16/8; }
+  .next-proj__text { padding:28px; }
+}
+
+/* PROJECT PAGER */
+.proj-pager { border-bottom:1px solid var(--line); padding:18px 0; display:grid; grid-template-columns:1fr auto 1fr; gap:24px; align-items:center; }
+.proj-pager__link { display:inline-flex; align-items:center; gap:14px; color:var(--primary); text-decoration:none; transition:color .2s; }
+.proj-pager__link:hover { color:var(--accent); }
+.proj-pager__link--next { justify-self:end; text-align:right; }
+.proj-pager__arrow { width:36px; height:36px; border:1px solid var(--primary); display:inline-flex; align-items:center; justify-content:center; flex-shrink:0; transition:background .25s, color .25s, transform .25s; }
+.proj-pager__link:hover .proj-pager__arrow { background:var(--primary); color:var(--on-primary); }
+.proj-pager__link--prev:hover .proj-pager__arrow { transform:translateX(-3px); }
+.proj-pager__link--next:hover .proj-pager__arrow { transform:translateX(3px); }
+.proj-pager__meta { display:flex; flex-direction:column; gap:4px; line-height:1.2; }
+.proj-pager__label { font-size:10px; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color:var(--muted-2); }
+.proj-pager__title { font-family:var(--font-display); font-weight:600; font-size:16px; color:var(--primary); letter-spacing:-0.01em; }
+.proj-pager__index { font-family:var(--font-display); font-style:italic; font-size:13px; color:var(--muted-2); letter-spacing:0.04em; padding:0 8px; white-space:nowrap; }
+@media (max-width:760px) {
+  .proj-pager { grid-template-columns:1fr 1fr; gap:14px; padding:14px 0; }
+  .proj-pager__index { display:none; }
+  .proj-pager__meta { display:none; }
+  .proj-pager__arrow { width:32px; height:32px; }
+  .proj-pager__link { gap:10px; }
+}
+
+/* LOADING */
+.art-loading { padding:96px 0; text-align:center; font-size:13px; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:var(--muted-2); }
+</style>
+<script>
+  !function(){var i="analytics",analytics=window[i]=window[i]||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","screen","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware","register"];analytics.factory=function(e){return function(){if(window[i].initialized)return window[i][e].apply(window[i],arguments);var n=Array.prototype.slice.call(arguments);if(["track","screen","alias","group","page","identify"].indexOf(e)>-1){var c=document.querySelector("link[rel='canonical']");n.push({__t:"bpc",c:c&&c.getAttribute("href")||void 0,p:location.pathname,u:location.href,s:location.search,t:document.title,r:document.referrer})}n.unshift(e);analytics.push(n);return analytics}};for(var n=0;n<analytics.methods.length;n++){var key=analytics.methods[n];analytics[key]=analytics.factory(key)}analytics.load=function(key,n){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.setAttribute("data-global-segment-analytics-key",i);t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var r=document.getElementsByTagName("script")[0];r.parentNode.insertBefore(t,r);analytics._loadOptions=n};analytics._writeKey="CdQKoupxHnGYLIABbryRWUM9BnI3p8t6";;analytics.SNIPPET_VERSION="5.2.0";
+  analytics.load("CdQKoupxHnGYLIABbryRWUM9BnI3p8t6");
+  // analytics.page() called after article title is resolved
+  }}();
+</script>
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="container site-nav__inner">
+    <a href="index.html" class="site-nav__brand">Remko Vermeulen</a>
+    <nav class="site-nav__links">
+      <a href="work.html" class="site-nav__link">Work</a>
+      <a href="articles.html" class="site-nav__link is-active">Articles</a>
+      <a href="/about.html" class="site-nav__link">About</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:14px;">
+      <a href="https://linkedin.com/in/remkovermeulen" class="site-nav__cta">Get in touch</a>
+      <button class="site-nav__burger" aria-label="Menu"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<script>window.__SLUG__ = "uncertain-times-as-drivers-of-innovation";</script>
+<main class="container" id="main-content">
+<article class="baked-content"><h1>Uncertain times as drivers of innovation</h1><p>Throughout history, the periods we associate most with hardship — pandemics, depressions, wars — turn out to be the same periods that produced the most significant leaps in innovation. This is not a coincidence. Changing conditions, urgency, and the collapse of old constraints create the forcing function that makes new solutions not just possible, but necessary.</p>
+<p>In this talk, delivered in collaboration with InProduct, I walked through three defining historical moments — the Black Death, the Great Depression, and World War II — to show how crisis and innovation have consistently gone hand in hand. And I drew a through-line to the present day, and what product teams and innovators can actually do with this insight.</p>
+<h2>The mental health backdrop</h2>
+<p>Before we get to history, it helps to understand the scale of what we are navigating right now. At Koa Health, our mission is to create simple, personal, and accessible mental health support. The numbers behind that mission are stark.</p>
+<p>Before COVID, 8.1% of the population was living with anxiety at any given moment, and 6.5% with depression. By June 2020, at the height of the pandemic, anxiety had surged to 25.5% — more than one in four people — and depression had risen to 24.3%. Suicidal ideation climbed from 4.3% to close to one in ten. These are not abstract statistics. They describe the people around us, our colleagues, our friends.</p>
+<p>And behind these numbers is a fundamental truth about human psychology: we handle actual bad news better than we handle uncertainty. My friend who was diagnosed with cancer told me that the worst part was not the diagnosis — it was the two weeks of waiting for the lab results to come back. Uncertainty is more corrosive than known adversity.</p>
+<h2>Three moments that changed everything</h2>
+<p>To understand why crisis drives innovation, I looked at three pivotal historical moments alongside data from my former professor of economics and innovation, Alfred Kleinknecht, who mapped patent filings from the 1750s to the 1980s. The peaks align almost precisely with periods of upheaval.</p>
+<h3>The Black Death (1348)</h3>
+<p>When the plague swept across the UK between 1348 and 1349, it killed between 40 and 60% of the population. The immediate practical consequence was a catastrophic shortage of agricultural workers. Landlords who had held absolute power over serfs — workers bound to the land, forced to pay taxes on everything they produced — suddenly found they had no one to work the fields.</p>
+<p>The peasants, for the first time, had leverage. The Peasants' Revolt of 1389 followed. Better pay, fewer taxes, improved conditions. A centuries-old power structure began to crack — not because of ideology, but because the conditions that sustained it had been destroyed.</p>
+<h3>The Great Depression (1929)</h3>
+<p>The stock market crash of 1929 put one quarter of American workers out of employment. Yet from that collapse came a wave of invention. The tampon was patented in 1930. The electric shaver arrived the same year. The car radio followed. These were not entirely new ideas — the underlying problems had existed for years — but the conditions had shifted. Men out of work meant women entered the workforce in unprecedented numbers, a 24% increase to 13 million workers. People with time and desperation and no employer to rely on started making their own jobs, their own products, their own solutions.</p>
+<h3>World War II</h3>
+<p>The radar had been invented in 1904 by Christian Hülsmeier, who found a way to detect ships in fog. Nobody was particularly interested. In 1922, two American radio scientists rediscovered the same principle and applied for $5,000 in US Navy funding. They were turned down. In 1930, one of the researchers discovered he could point his radio signals at the sky and detect planes — but again, military planners said that without results in under two years, it wasn't worth their time.</p>
+<p>Then on December 7th, 1941, 353 Japanese bombers attacked Pearl Harbor. The radar warning system was still being field tested. Two and a half thousand servicemen died. The technology that had been ignored for four decades became an overnight priority.</p>
+<p>The same pattern held for code-breaking. Alan Turing's team didn't invent the Bombe decryption machine — they bought the underlying design from Poland, where it already existed. The mathematics were known. What the war provided was urgency sufficient to actually deploy it. The work done to break Enigma is widely considered a precursor to modern computing and artificial intelligence.</p>
+<h2>What these cases have in common</h2>
+<p>None of these innovations solved problems that were new. The peasants' lack of rights was not a new problem in 1348. The need for faster and more discreet menstrual products was not a new problem in 1929. The inability to detect approaching aircraft was not a new problem in 1941. What changed was the combination of three things:</p>
+<ul>
+<li><strong>Changing conditions</strong> — fewer workers, mass unemployment, a world at war</li>
+<li><strong>New possibilities</strong> — often technological, sometimes political, sometimes demographic</li>
+<li><strong>Urgency</strong> — a sense that something had to change <em>now</em></li>
+</ul>
+<p>The Chinese word for crisis — <em>wēijī</em> (危機) — is often cited as meaning both "danger" and "opportunity". The etymology is debated, but the underlying observation holds: crisis forces a reckoning with conditions that previously seemed fixed.</p>
+<h2>Managing uncertainty, not eliminating it</h2>
+<p>The challenge with uncertainty is that it is not a problem to be solved — it is a permanent feature of the landscape. We are never going to know what our colleagues are studying, what disease we might develop, whether there will be an earthquake next year. Uncertainty is the baseline.</p>
+<p>At Koa Health, one of the techniques we use in our CBT-based programmes is called <em>Challenge Your Thoughts</em>. It is designed precisely for this: when anxiety kicks in and your mind starts spiralling — boss looked at you strangely, so you will be fired, so you will lose your house, so you will die alone under a bridge — this exercise asks you to slow down and ask: what is the actual evidence for this outcome? What is the evidence against it? Which of these scenarios is most realistic?</p>
+<p>The point is not to pretend there is no uncertainty. The point is to stop defaulting to the worst-case scenario as though it were the only scenario.</p>
+<h2>The future is already here</h2>
+<p>William Gibson's most quoted line is: <em>"The future is already here — it's just not very evenly distributed."</em> In the context of innovation, this is the key insight. For every problem we think is unsolved, someone somewhere is probably already working on a version of the answer. The car radio existed before it became mainstream. Working from home existed before COVID made it universal. The question is not whether a future scenario is possible, but which version of it is most likely to emerge.</p>
+<p>This is where future scenario planning becomes a practical tool. At the Royal College of Art, we set up a unit called Xploratory, explicitly designed to build out "what if" scenarios: what if we can have children when we're 70? What if trust in religious institutions continues to decline — can we design the parts people still want, without the institutional overhead? What if the vaccines never come?</p>
+<p>Charlie Brooker and Annabel Jones do the same thing with Black Mirror — sitting in a room, going back and forth, asking "what if this happens, and then what if that happens", building out scenario trees until a story crystallises. The negative version is Black Mirror. The positive version would be the same exercise run to find the optimistic route through the same conditions.</p>
+<h2>Designing for some certainty</h2>
+<p>Rather than framing our work as managing uncertainty, I'd suggest we reframe it as designing for <em>some certainty</em>. Because there is always some certainty. There is always a distribution of futures, and some of them are more probable than others. Decision trees, future scenario mapping, and honest examination of which trends are already in motion — these are the tools that let us stop spiralling and start building.</p>
+<p>The crises are coming. They always have been. The pattern from 1348 to 2020 is consistent: the teams and organisations that treat uncertain conditions not as a threat to survive, but as a signal that something previously fixed has come unstuck, are the ones that build the next wave of genuinely useful things.</p>
+<p>Design for changing realities. Innovate on top of that. Keep your mental health intact while you do it.</p></article>
+</main>
+
+<footer class="site-footer">
+  <div class="container site-footer__inner">
+    <div class="site-footer__brand">RV.</div>
+    <div class="site-footer__copy">© 2025 Remko Vermeulen.</div>
+    <div class="site-footer__links">
+      <a href="https://linkedin.com/in/remkovermeulen" class="site-footer__link">LinkedIn</a>
+      <a href="https://github.com/remkovermeulen-pers" class="site-footer__link">GitHub</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var COVER_IMAGES = {
+    'Strategy':   'https://images.unsplash.com/photo-1457369804613-52c61a468e7d?w=1800&q=80',
+    'Leadership': 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1800&q=80',
+    'Product':    'https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1800&q=80',
+    'Innovation': 'https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1800&q=80',
+    'Health':     'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=1800&q=80',
+    'Education':  'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1800&q=80',
+    'Technology': 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=1800&q=80',
+  };
+  var DEFAULT_COVER = 'https://images.unsplash.com/photo-1457369804613-52c61a468e7d?w=1800&q=80';
+
+  function esc(s) { return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+  function slugify(s) { return String(s).toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,''); }
+  function articleUrl(a) { return '/articles/' + slugify(a.title) + '/'; }
+
+  var params = new URLSearchParams(location.search);
+  var slug = params.get('slug') || window.__SLUG__ || null;
+  var idParam = params.get('id') || window.__ID__ || null;
+  var main = document.getElementById('main-content');
+
+  if (!slug && !idParam) { location.href = 'articles.html'; return; }
+
+  fetch('data/articles.json').then(function(r) { return r.json(); }).then(function(all) {
+    var meta;
+    if (slug) {
+      meta = all.find(function(a) { return slugify(a.title) === slug; });
+    } else {
+      meta = all.find(function(a) { return a.notionId === idParam; });
+      if (meta) history.replaceState(null, '', '/articles/' + slugify(meta.title) + '/');
+    }
+    if (!meta) throw new Error('not found');
+    return fetch('data/articles/' + meta.notionId + '.json').then(function(r) {
+      if (!r.ok) throw new Error('not found');
+      return r.json();
+    }).then(function(article) { return [article, all]; });
+  }).then(function(results) {
+    var article = results[0];
+    var all = results[1];
+
+    document.title = article.title + ' — Remko Vermeulen';
+    analytics.page(article.title);
+    var artDesc = article.summary || article.lede || '';
+    var artUrl = 'https://remkovermeulen.com/articles/' + slugify(article.title) + '/';
+    var artImg = article.coverImage || 'https://remkovermeulen.com/assets/remko.jpg';
+    function setMeta(sel, attr, val) { var el = document.querySelector(sel); if (el && val) el.setAttribute(attr, val); }
+    setMeta('meta[name="description"]', 'content', artDesc);
+    setMeta('meta[property="og:title"]', 'content', article.title + ' — Remko Vermeulen');
+    setMeta('meta[property="og:description"]', 'content', artDesc);
+    setMeta('meta[property="og:image"]', 'content', artImg);
+    setMeta('meta[property="og:url"]', 'content', artUrl);
+    setMeta('meta[name="twitter:title"]', 'content', article.title + ' — Remko Vermeulen');
+    setMeta('meta[name="twitter:description"]', 'content', artDesc);
+    setMeta('meta[name="twitter:image"]', 'content', artImg);
+    setMeta('link[rel="canonical"]', 'href', artUrl);
+    var ldScript = document.createElement('script');
+    ldScript.type = 'application/ld+json';
+    ldScript.text = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": article.title,
+      "description": artDesc,
+      "image": artImg,
+      "url": artUrl,
+      "author": { "@type": "Person", "name": "Remko Vermeulen", "url": "https://remkovermeulen.com" },
+      "publisher": { "@type": "Person", "name": "Remko Vermeulen" }
+    });
+    document.head.appendChild(ldScript);
+
+    // Parse content into DOM for TOC extraction + section wrapping
+    var tempDiv = document.createElement('div');
+    tempDiv.innerHTML = article.content || '';
+
+    // Build numbered sections from h2 boundaries
+    var nodes = Array.from(tempDiv.childNodes);
+    var sections = [];
+    var current = null;
+    nodes.forEach(function(node) {
+      if (node.nodeName === 'H2') {
+        current = { heading: node.textContent, html: '' };
+        sections.push(current);
+      } else if (current) {
+        var tmp = document.createElement('div');
+        tmp.appendChild(node.cloneNode(true));
+        current.html += tmp.innerHTML;
+      }
+    });
+
+    // TOC
+    var tocItems = sections.map(function(s, i) {
+      var num = (i + 1 < 10 ? '0' : '') + (i + 1);
+      var anchor = 'section-' + i;
+      return '<li><span class="cs-toc__num">' + num + '</span>'
+        + '<a href="#' + anchor + '">' + esc(s.heading) + '</a></li>';
+    }).join('');
+
+    // Section HTML
+    var sectionsHtml = sections.length
+      ? sections.map(function(s, i) {
+          var num = (i + 1 < 10 ? '0' : '') + (i + 1);
+          var anchor = 'section-' + i;
+          var ledeClass = i === 0 ? ' cs-section--lede' : '';
+          return '<section class="cs-section' + ledeClass + '" id="' + anchor + '">'
+            + '<div class="cs-section__head">'
+            + '<span class="cs-section__num">' + num + '</span>'
+            + '<h2>' + esc(s.heading) + '</h2>'
+            + '</div>'
+            + s.html
+            + '</section>';
+        }).join('')
+      : '<article style="max-width:760px">' + tempDiv.innerHTML + '</article>';
+
+    // Extract lede from first paragraph in content
+    var ledeEl = tempDiv.querySelector('p');
+    var lede = ledeEl ? ledeEl.textContent.trim() : '';
+
+    // Cover image
+    var coverSrc = article.coverImage || COVER_IMAGES[article.category] || DEFAULT_COVER;
+
+    // Pager
+    var idx = all.findIndex(function(a) { return a.notionId === article.notionId; });
+    var prev = idx > 0 ? all[idx - 1] : null;
+    var next = idx >= 0 ? all[(idx + 1) % all.length] : null;
+    if (next && next.notionId === article.notionId) next = null;
+
+    var counter = idx >= 0 ? (String(idx + 1).padStart(2,'0') + ' / ' + String(all.length).padStart(2,'0')) : '';
+    var prevLink = prev
+      ? '<a href="' + articleUrl(prev) + '" class="proj-pager__link proj-pager__link--prev">'
+        + '<span class="proj-pager__arrow"><svg width="16" height="12" viewBox="0 0 16 12" fill="none"><path d="M15 6H1m0 0l5-5m-5 5l5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></span>'
+        + '<span class="proj-pager__meta"><span class="proj-pager__label">Previous</span><span class="proj-pager__title">' + esc(prev.title) + '</span></span>'
+        + '</a>'
+      : '<span></span>';
+    var nextPagerLink = next
+      ? '<a href="' + articleUrl(next) + '" class="proj-pager__link proj-pager__link--next">'
+        + '<span class="proj-pager__meta"><span class="proj-pager__label">Next</span><span class="proj-pager__title">' + esc(next.title) + '</span></span>'
+        + '<span class="proj-pager__arrow"><svg width="16" height="12" viewBox="0 0 16 12" fill="none"><path d="M1 6h14m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></span>'
+        + '</a>'
+      : '<span></span>';
+    var pagerHtml = '<nav class="proj-pager">' + prevLink + '<span class="proj-pager__index">' + counter + '</span>' + nextPagerLink + '</nav>';
+
+    // Next article
+    var nextHtml = '';
+    if (next) {
+      var nextCover = next.coverImage || COVER_IMAGES[next.category] || DEFAULT_COVER;
+      nextHtml = '<section class="next-proj">'
+        + '<p class="next-proj__eyebrow">Next Article</p>'
+        + '<a href="' + articleUrl(next) + '" class="next-proj__card">'
+        + '<img class="bw-img" src="' + nextCover + '" alt="' + esc(next.title) + '">'
+        + '<div class="next-proj__text">'
+        + '<span class="tag-line">' + esc(next.category) + '</span>'
+        + '<h3>' + esc(next.title)
+        + '<svg width="22" height="14" viewBox="0 0 22 14" fill="none"><path d="M1 7h19m0 0l-6-6m6 6l-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg>'
+        + '</h3>'
+        + '<p>' + (next.readingTime ? next.readingTime + ' min read' : next.year) + '</p>'
+        + '</div>'
+        + '</a></section>';
+    }
+
+    main.innerHTML =
+      pagerHtml
+      + '<section class="cs-hero">'
+      + '<p class="cs-hero__crumb">Journal &nbsp;/&nbsp; ' + esc(article.category) + '</p>'
+      + '<h1>' + esc(article.title) + '</h1>'
+      + (lede ? '<p class="cs-hero__lede">' + esc(lede) + '</p>' : '')
+      + '<div class="cs-hero__byline">'
+      + '<div class="cs-hero__byline-block"><h5>Published</h5><p>' + esc(String(article.year)) + '</p></div>'
+      + (article.readingTime ? '<div class="cs-hero__byline-block"><h5>Reading time</h5><p>' + article.readingTime + ' minutes</p></div>' : '')
+      + '</div>'
+      + '<div class="cs-cover">'
+      + (article.youtubeVideoId
+          ? '<div class="cs-cover__video"><iframe src="https://www.youtube.com/embed/' + esc(article.youtubeVideoId) + '?rel=0" title="' + esc(article.title) + '" allowfullscreen loading="lazy"></iframe></div>'
+          : article.linkedInEmbedUrl
+            ? '<div class="cs-cover__video cs-cover__video--linkedin"><iframe src="' + esc(article.linkedInEmbedUrl) + '" title="' + esc(article.title) + '" allowfullscreen loading="lazy"></iframe></div>'
+            : '<img class="bw-img" src="' + coverSrc + '" alt="' + esc(article.title) + '"' + (article.coverImagePosition ? ' style="object-position:' + esc(article.coverImagePosition) + '"' : '') + '>')
+      + '</div>'
+      + '</section>'
+
+      + '<div class="cs-body">'
+      + '<aside class="cs-aside">'
+      + '<h4>Topics</h4>'
+      + '<div class="chips">'
+      + (article.tags && article.tags.length ? article.tags : [article.category]).map(function(t) {
+          return '<a href="articles.html?category=' + encodeURIComponent(t) + '" class="tag">' + esc(t) + '</a>';
+        }).join('')
+      + '</div>'
+      + (tocItems ? '<div class="cs-toc-wrap"><h4>In this article</h4><ol class="cs-toc">' + tocItems + '</ol></div>' : '')
+      + '</aside>'
+
+      + '<div class="cs-content">' + sectionsHtml + '</div>'
+      + '</div>'
+
+      + nextHtml;
+
+  }).catch(function() {
+    main.innerHTML = '<div class="art-loading">Article not found. <a href="articles.html" style="color:var(--accent)">Back to articles</a></div>';
+  });
+})();
+</script>
+
+<script>
+(function(){
+  var b=document.querySelector('.site-nav__burger');
+  var n=document.querySelector('.site-nav__links');
+  if(b&&n) b.addEventListener('click',function(){ n.classList.toggle('is-open'); });
+  // In-page anchor scroll (works even when a <base> tag rewrites bare #fragment links)
+  document.addEventListener('click',function(e){
+    var a=e.target.closest && e.target.closest('a[href^="#"]');
+    if(!a) return;
+    var t=document.getElementById(a.getAttribute('href').slice(1));
+    if(t){ e.preventDefault(); t.scrollIntoView({behavior:'smooth'}); }
+  });
+})();
+</script>
+</body>
+</html>

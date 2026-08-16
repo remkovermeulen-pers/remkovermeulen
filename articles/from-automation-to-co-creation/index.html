@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<base href="https://remkovermeulen.com/">
+<meta charset="UTF-8">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="The conversation around AI in product is mostly pointed in one direction: what can AI do for us? This article argues for flipping it. The more useful question is what UX can do for AI — how design sha">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Remko Vermeulen">
+<meta property="og:title" content="From automation to co-creation — Remko Vermeulen">
+<meta property="og:description" content="The conversation around AI in product is mostly pointed in one direction: what can AI do for us? This article argues for flipping it. The more useful question is what UX can do for AI — how design sha">
+<meta property="og:image" content="https://remkovermeulen.com/assets/remko.jpg">
+<meta property="og:url" content="https://remkovermeulen.com/articles/from-automation-to-co-creation/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="From automation to co-creation — Remko Vermeulen">
+<meta name="twitter:description" content="The conversation around AI in product is mostly pointed in one direction: what can AI do for us? This article argues for flipping it. The more useful question is what UX can do for AI — how design sha">
+<meta name="twitter:image" content="https://remkovermeulen.com/assets/remko.jpg">
+<link rel="canonical" href="https://remkovermeulen.com/articles/from-automation-to-co-creation/">
+<title>From automation to co-creation — Remko Vermeulen</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" referrerpolicy="no-referrer">
+<style>
+:root {
+  --bg:          #fbf9f8;
+  --bg-card:     #ffffff;
+  --bg-elev:     #efeded;
+  --primary:     #1b1c1c;
+  --on-primary:  #ffffff;
+  --muted:       #444748;
+  --muted-2:     #65645f;
+  --muted-3:     #87847a;
+  --line:        rgba(27,28,28,0.12);
+  --accent:      #A68B77;
+  --font-display:'Fraunces',Georgia,serif;
+  --font-body:   'Hanken Grotesk','Inter',system-ui,sans-serif;
+  --pad-desktop: 64px;
+  --pad-mobile:  20px;
+}
+*,*::before,*::after { box-sizing:border-box; }
+html,body { margin:0; padding:0; }
+body {
+  background:var(--bg); color:var(--primary);
+  font-family:var(--font-body); font-size:16px; line-height:1.6;
+  -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+}
+img { display:block; max-width:100%; }
+a { color:inherit; text-decoration:none; }
+button { font:inherit; cursor:pointer; background:none; border:0; color:inherit; }
+.container { max-width:1280px; margin:0 auto; padding:0 var(--pad-desktop); }
+@media (max-width:760px) { .container { padding:0 var(--pad-mobile); } }
+
+.bw-img { filter:grayscale(100%) contrast(108%); transition:filter .6s cubic-bezier(.22,1,.36,1); }
+.bw-img:hover { filter:grayscale(0%) contrast(105%); }
+.tag { display:inline-block; padding:7px 12px; font-size:10px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:var(--accent); border:1px solid var(--accent); line-height:1; }
+.btn { display:inline-flex; align-items:center; gap:10px; padding:16px 28px; font-size:11px; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; border:1px solid var(--primary); background:var(--bg-card); color:var(--primary); transition:box-shadow .25s, transform .25s; }
+.btn:hover { box-shadow:4px 4px 0 0 var(--primary); transform:translate(-2px,-2px); }
+
+/* NAV */
+.site-nav { position:sticky; top:0; z-index:50; background:var(--bg); border-bottom:1px solid var(--line); }
+.site-nav__inner { display:flex; align-items:center; justify-content:space-between; height:76px; }
+.site-nav__brand { font-family:var(--font-display); font-weight:700; font-size:22px; letter-spacing:-0.01em; }
+.site-nav__links { display:flex; align-items:center; gap:36px; }
+.site-nav__link { font-size:13px; font-weight:500; letter-spacing:0.14em; text-transform:uppercase; color:var(--muted-2); padding-bottom:4px; transition:color .2s; }
+.site-nav__link:hover { color:var(--primary); }
+.site-nav__link.is-active { color:var(--primary); font-weight:600; border-bottom:1px solid var(--primary); }
+.site-nav__cta { background:var(--primary); color:var(--on-primary); padding:12px 22px; font-size:11px; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; border:1px solid var(--primary); transition:box-shadow .2s, transform .2s; }
+.site-nav__cta:hover { box-shadow:4px 4px 0 0 var(--primary); transform:translate(-2px,-2px); }
+.site-nav__burger { display:none; width:36px; height:36px; align-items:center; justify-content:center; border:1px solid var(--primary); }
+.site-nav__burger span,.site-nav__burger span::before,.site-nav__burger span::after { display:block; width:16px; height:1.5px; background:var(--primary); position:relative; }
+.site-nav__burger span::before { content:''; position:absolute; top:-5px; left:0; width:100%; height:100%; background:var(--primary); }
+.site-nav__burger span::after  { content:''; position:absolute; top:5px;  left:0; width:100%; height:100%; background:var(--primary); }
+@media (max-width:760px) {
+  .site-nav__inner { height:60px; }
+  .site-nav__brand { font-size:18px; }
+  .site-nav__links { display:none; }
+  .site-nav__links.is-open {
+    display:flex; flex-direction:column; gap:20px;
+    position:absolute; top:60px; left:0; right:0;
+    background:var(--bg); border-bottom:1px solid var(--line);
+    padding:20px var(--pad-mobile); z-index:49;
+  }
+
+  .site-nav__cta { padding:9px 14px; font-size:10px; letter-spacing:0.14em; }
+  .site-nav__burger { display:inline-flex; }
+}
+
+/* FOOTER */
+.site-footer { background:#1b1c1c; color:#ffffff; margin-top:96px; }
+.site-footer__inner { display:flex; align-items:center; justify-content:space-between; padding-top:40px; padding-bottom:40px; gap:24px; flex-wrap:wrap; }
+.site-footer__brand { font-family:var(--font-display); font-weight:700; font-size:22px; letter-spacing:-0.01em; }
+.site-footer__copy { font-size:13px; color:rgba(255,255,255,0.5); font-style:italic; }
+.site-footer__links { display:flex; gap:28px; }
+.site-footer__link { font-size:11px; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:rgba(255,255,255,0.5); transition:color .2s; }
+.site-footer__link:hover { color:#ffffff; }
+@media (max-width:760px) {
+  .site-footer { margin-top:60px; }
+  .site-footer__inner { padding-top:28px; padding-bottom:28px; flex-direction:column; align-items:flex-start; gap:18px; }
+}
+
+/* ===== HERO ===== */
+.cs-hero { padding:64px 0 0; }
+.cs-hero__crumb { font-size:11px; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color:var(--muted-2); margin:0 0 28px; }
+.cs-hero h1 { margin:0 0 24px; font-family:var(--font-display); font-weight:700; font-size:clamp(40px,6.5vw,84px); line-height:1.04; letter-spacing:-0.025em; max-width:980px; }
+.cs-hero__lede { margin:0 0 0; font-size:clamp(17px,1.6vw,20px); line-height:1.55; color:var(--muted); }
+.cs-hero__byline { margin-top:36px; padding-top:22px; border-top:1px solid var(--line); display:flex; flex-wrap:wrap; gap:56px; align-items:flex-start; }
+.cs-hero__byline-block h5 { margin:0 0 6px; font-size:10px; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color:var(--muted-2); }
+.cs-hero__byline-block p { margin:0; font-family:var(--font-display); font-weight:500; font-size:18px; line-height:1.25; color:var(--primary); }
+
+/* ===== COVER IMAGE ===== */
+.cs-cover { margin-top:48px; border:1px solid var(--primary); overflow:hidden; position:relative; }
+.cs-cover img { width:100%; height:clamp(280px,38vw,520px); object-fit:cover; display:block; }
+.cs-cover__caption { padding:14px 20px; border-top:1px solid var(--line); font-size:12px; color:var(--muted-2); font-style:italic; background:var(--bg-card); }
+.cs-cover__video { position:relative; width:100%; aspect-ratio:16/9; }
+.cs-cover__video iframe { position:absolute; inset:0; width:100%; height:100%; border:0; display:block; }
+/* LinkedIn compact embed: clip the title strip (~28px) and reactions bar (~35px) so only video shows */
+.cs-cover__video--linkedin { overflow:hidden; }
+.cs-cover__video--linkedin iframe { top:-28px; height:calc(100% + 63px); }
+
+/* ===== BODY GRID ===== */
+.cs-body { margin-top:96px; display:grid; grid-template-columns:220px 1fr; gap:64px; }
+.cs-aside { position:sticky; top:100px; align-self:start; }
+.cs-aside h4 { font-size:10px; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color:var(--muted-2); margin:0 0 14px; padding-bottom:14px; border-bottom:1px solid var(--line); }
+.cs-aside .chips { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:36px; }
+
+.cs-toc { list-style:none; margin:0 0 36px; padding:0; display:flex; flex-direction:column; gap:14px; }
+.cs-toc li { display:flex; align-items:baseline; gap:12px; }
+.cs-toc__num { font-family:var(--font-display); font-style:italic; font-size:14px; color:var(--accent); min-width:18px; }
+.cs-toc a { font-size:13px; color:var(--muted); line-height:1.45; transition:color .2s; }
+.cs-toc a:hover { color:var(--primary); }
+
+.cs-aside__meta { display:flex; flex-direction:column; gap:22px; }
+.cs-aside__meta-block h5 { margin:0 0 6px; font-size:10px; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color:var(--muted-2); }
+.cs-aside__meta-block p { margin:0; font-size:14px; line-height:1.5; color:var(--muted); }
+.cs-aside__meta-block a { color:var(--accent); }
+
+/* ===== ARTICLE CONTENT ===== */
+.cs-content { display:flex; flex-direction:column; gap:72px; }
+
+/* Numbered sections */
+.cs-section { max-width:760px; }
+.cs-section__head { display:flex; align-items:baseline; gap:18px; margin-bottom:28px; }
+.cs-section__num { font-family:var(--font-display); font-style:italic; font-weight:500; font-size:30px; color:var(--accent); }
+.cs-section h2 { margin:0; font-family:var(--font-display); font-weight:600; font-size:clamp(26px,3vw,38px); line-height:1.1; letter-spacing:-0.01em; }
+
+/* Prose inside sections */
+.cs-section p { margin:0 0 22px; font-size:17px; line-height:1.75; color:var(--muted); }
+.cs-section p:last-child { margin-bottom:0; }
+.cs-section ul, .cs-section ol { padding-left:28px; margin:0 0 22px; }
+.cs-section li { font-size:17px; line-height:1.75; color:var(--muted); margin-bottom:8px; }
+.cs-section strong { font-weight:600; color:var(--primary); }
+.cs-section a { color:var(--accent); text-decoration:underline; text-underline-offset:3px; }
+.cs-section code { font-family:monospace; background:var(--bg-elev); padding:2px 6px; font-size:14px; border-radius:2px; }
+.cs-section hr { border:0; border-top:1px solid var(--line); margin:48px 0; }
+.cs-section .callout { background:var(--bg-elev); border-left:3px solid var(--accent); padding:14px 20px; margin:0 0 22px; font-size:15px; }
+.cs-section h3 { font-family:var(--font-display); font-weight:500; font-size:clamp(20px,2.2vw,26px); line-height:1.2; margin:36px 0 14px; }
+
+/* Drop cap on first paragraph of first section */
+.cs-section--lede > p:first-child::first-letter {
+  font-family:var(--font-display); font-weight:700;
+  float:left; font-size:80px; line-height:0.85;
+  padding:8px 14px 0 0; color:var(--primary);
+}
+
+/* Pull quote */
+.pull-quote {
+  margin:36px 0; padding:28px 0 28px 32px;
+  border-left:2px solid var(--accent);
+  font-family:var(--font-display); font-style:italic; font-weight:500;
+  font-size:clamp(20px,2.4vw,28px); line-height:1.35; color:var(--primary);
+  letter-spacing:-0.005em;
+}
+.cs-section blockquote { margin:36px 0; padding:4px 0 4px 28px; border-left:2px solid var(--accent); font-family:var(--font-display); font-style:italic; font-weight:500; font-size:clamp(18px,2vw,22px); line-height:1.4; color:var(--primary); }
+
+@media (max-width:880px) {
+  .cs-body { grid-template-columns:1fr; gap:24px; margin-top:28px; }
+  .cs-aside { position:static; }
+  .cs-toc-wrap { display:none; }
+  .cs-content { gap:40px; }
+  .cs-section--lede > p:first-child::first-letter { font-size:60px; padding:6px 10px 0 0; }
+  .cs-hero { padding:20px 0 0; }
+}
+
+/* ===== NEXT ARTICLE ===== */
+.next-proj { margin-top:96px; padding-top:56px; border-top:1px solid var(--primary); }
+.next-proj__eyebrow { font-size:11px; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color:var(--muted-2); margin:0 0 28px; }
+.next-proj__card { display:grid; grid-template-columns:1fr 1fr; border:1px solid var(--primary); overflow:hidden; transition:transform .3s, box-shadow .3s; }
+.next-proj__card:hover { transform:translate(-3px,-3px); box-shadow:6px 6px 0 0 var(--primary); }
+.next-proj__card img { width:100%; height:100%; aspect-ratio:16/10; object-fit:cover; display:block; }
+.next-proj__text { padding:48px; display:flex; flex-direction:column; justify-content:center; background:var(--bg); gap:14px; }
+.next-proj__text .tag-line { font-size:10px; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color:var(--accent); }
+.next-proj__text h3 { margin:0; font-family:var(--font-display); font-weight:600; font-size:clamp(24px,3vw,36px); line-height:1.15; display:flex; align-items:center; gap:16px; }
+.next-proj__text p { margin:0; font-size:14px; color:var(--muted-2); }
+.next-proj__text svg { transition:transform .3s; flex-shrink:0; }
+.next-proj__card:hover .next-proj__text svg { transform:translateX(8px); }
+@media (max-width:760px) {
+  .next-proj { margin-top:72px; padding-top:36px; }
+  .next-proj__card { grid-template-columns:1fr; }
+  .next-proj__card img { aspect-ratio:16/8; }
+  .next-proj__text { padding:28px; }
+}
+
+/* PROJECT PAGER */
+.proj-pager { border-bottom:1px solid var(--line); padding:18px 0; display:grid; grid-template-columns:1fr auto 1fr; gap:24px; align-items:center; }
+.proj-pager__link { display:inline-flex; align-items:center; gap:14px; color:var(--primary); text-decoration:none; transition:color .2s; }
+.proj-pager__link:hover { color:var(--accent); }
+.proj-pager__link--next { justify-self:end; text-align:right; }
+.proj-pager__arrow { width:36px; height:36px; border:1px solid var(--primary); display:inline-flex; align-items:center; justify-content:center; flex-shrink:0; transition:background .25s, color .25s, transform .25s; }
+.proj-pager__link:hover .proj-pager__arrow { background:var(--primary); color:var(--on-primary); }
+.proj-pager__link--prev:hover .proj-pager__arrow { transform:translateX(-3px); }
+.proj-pager__link--next:hover .proj-pager__arrow { transform:translateX(3px); }
+.proj-pager__meta { display:flex; flex-direction:column; gap:4px; line-height:1.2; }
+.proj-pager__label { font-size:10px; font-weight:700; letter-spacing:0.22em; text-transform:uppercase; color:var(--muted-2); }
+.proj-pager__title { font-family:var(--font-display); font-weight:600; font-size:16px; color:var(--primary); letter-spacing:-0.01em; }
+.proj-pager__index { font-family:var(--font-display); font-style:italic; font-size:13px; color:var(--muted-2); letter-spacing:0.04em; padding:0 8px; white-space:nowrap; }
+@media (max-width:760px) {
+  .proj-pager { grid-template-columns:1fr 1fr; gap:14px; padding:14px 0; }
+  .proj-pager__index { display:none; }
+  .proj-pager__meta { display:none; }
+  .proj-pager__arrow { width:32px; height:32px; }
+  .proj-pager__link { gap:10px; }
+}
+
+/* LOADING */
+.art-loading { padding:96px 0; text-align:center; font-size:13px; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:var(--muted-2); }
+</style>
+<script>
+  !function(){var i="analytics",analytics=window[i]=window[i]||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","screen","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware","register"];analytics.factory=function(e){return function(){if(window[i].initialized)return window[i][e].apply(window[i],arguments);var n=Array.prototype.slice.call(arguments);if(["track","screen","alias","group","page","identify"].indexOf(e)>-1){var c=document.querySelector("link[rel='canonical']");n.push({__t:"bpc",c:c&&c.getAttribute("href")||void 0,p:location.pathname,u:location.href,s:location.search,t:document.title,r:document.referrer})}n.unshift(e);analytics.push(n);return analytics}};for(var n=0;n<analytics.methods.length;n++){var key=analytics.methods[n];analytics[key]=analytics.factory(key)}analytics.load=function(key,n){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.setAttribute("data-global-segment-analytics-key",i);t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var r=document.getElementsByTagName("script")[0];r.parentNode.insertBefore(t,r);analytics._loadOptions=n};analytics._writeKey="CdQKoupxHnGYLIABbryRWUM9BnI3p8t6";;analytics.SNIPPET_VERSION="5.2.0";
+  analytics.load("CdQKoupxHnGYLIABbryRWUM9BnI3p8t6");
+  // analytics.page() called after article title is resolved
+  }}();
+</script>
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="container site-nav__inner">
+    <a href="index.html" class="site-nav__brand">Remko Vermeulen</a>
+    <nav class="site-nav__links">
+      <a href="work.html" class="site-nav__link">Work</a>
+      <a href="articles.html" class="site-nav__link is-active">Articles</a>
+      <a href="/about.html" class="site-nav__link">About</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:14px;">
+      <a href="https://linkedin.com/in/remkovermeulen" class="site-nav__cta">Get in touch</a>
+      <button class="site-nav__burger" aria-label="Menu"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<script>window.__SLUG__ = "from-automation-to-co-creation";</script>
+<main class="container" id="main-content">
+<article class="baked-content"><h1>From automation to co-creation</h1><p>The conversation around AI in product is mostly pointed in one direction: what can AI do for us? This article argues for flipping it. The more useful question is what UX can do <em>for</em> AI — how design shapes whether AI-powered products actually work for the people using them.</p>
+<h2>The problem: documents everywhere, insight nowhere</h2>
+<p>Real estate is a useful lens for this because it's a domain drowning in unstructured data.</p>
+<p>Behind every property transaction — rental, purchase, portfolio management — is a mountain of paperwork. Lease contracts, energy certificates, building licences, floor plans, compliance documents. These arrive as PDFs, images, API exports, WhatsApp messages, emails, files on shared drives, and occasionally a USB stick someone left in another office.</p>
+<p>One property manager described it well: "We have a folder culture. We meticulously create folders. We've been doing that for years." The documents are organised. They're just not useful. They sit there. They don't get analysed. They don't get updated. They don't surface anything.</p>
+<p>To extract meaningful data from a pile of 1,000 documents manually — assuming 15 minutes per document — takes around six weeks of solid reading. And once you've done it, someone will ask you to double-check it.</p>
+<p>The risk of getting it wrong ranges from charging too much rent, to regulatory fines, to litigation. In healthcare, the equivalent mistakes can harm patients or cost lives.</p>
+<p>There's clearly a problem worth solving. AI is an obvious candidate. But "obvious candidate" and "right solution" are not the same thing.</p>
+<h2>What AI is actually good at</h2>
+<p>Before reaching for AI, it's worth being honest about where it genuinely helps and where it doesn't.</p>
+<p><strong>AI is well-suited to:</strong></p>
+<ul>
+<li>Repeated, bounded tasks that a human could do in a few seconds</li>
+<li>Processing large volumes of text at scale — thousands or millions of documents</li>
+<li>Generating images, code, and text (a capability that has expanded dramatically in the last few years)</li>
+</ul>
+<p><strong>AI is not reliable for:</strong></p>
+<ul>
+<li>Legal and regulatory interpretation — Stanford's Human-Centred AI Institute found that one in six benchmark legal queries returns an incorrect answer</li>
+<li>Detecting its own mistakes — if the model was confident enough to give you a wrong answer, it's not going to flag it as wrong</li>
+<li>Situations where a user needs to know <em>why</em> an answer is what it is</li>
+</ul>
+<p>This matters because the failure mode isn't just that AI gets something wrong. It's that users start treating AI outputs as a source of truth. A customer once came to us after asking ChatGPT to calculate their maximum legal rental price, then querying why our answer differed. They'd taken the ChatGPT figure as the baseline.</p>
+<p>We removed AI-generated legal Q&amp;A from our product entirely. Not because AI couldn't approximate the answers, but because when it got it wrong — and it did — it undermined trust in everything else we built. A product that's right 83% of the time on legal questions isn't a legal product. It's a liability.</p>
+<h2>What customers actually want</h2>
+<p>Once you set aside the technology and ask what people are genuinely trying to achieve, three things emerge consistently:</p>
+<ol>
+<li><strong>Save time</strong> — eliminate manual form-filling, automate reviews, reduce the effort of checking things</li>
+<li><strong>Avoid mistakes</strong> — reduce manual data entry, ensure rules get applied consistently, flag issues before they become problems</li>
+<li><strong>Improve</strong> — understand what can be done better, spot issues earlier, act on them</li>
+</ol>
+<p>These are solvable problems. AI helps with all three. But the design of <em>how</em> it helps is what determines whether people trust it and use it.</p>
+<h2>Three features, and how UX makes the difference</h2>
+<h3>1. Document data extraction</h3>
+<p>The core workflow: upload a document, extract structured data from it automatically. For a lease contract, that might mean pulling the address, tenant details, rent, contract start date, and any specific clauses.</p>
+<p>The UX pattern that makes this trustworthy is simple: show the source. When a user hovers over an extracted field, highlight the corresponding text in the original document. They can see in two seconds whether the AI read the contract correctly. This transforms a black-box output into a verifiable one.</p>
+<p>Users who catch an error can correct it. That correction feeds back into the model through reinforcement learning — improving accuracy over time without requiring manual retraining. The human stays in the loop not as a bottleneck, but as a quality signal.</p>
+<h3>2. Automated compliance checking</h3>
+<p>Hundreds of rules and regulations apply to property management. Energy certificates expire. Rent indices update. Legal thresholds shift. No one can track all of it manually across a large portfolio.</p>
+<p>We apply these rules automatically to the data we have about each property and surface alerts when something needs attention — not a raw list of every regulation, but a plain-language explanation: <em>"Energy labels issued before 2021 without an energy index are invalid from 2025. This property is affected."</em></p>
+<p>The AI does the matching. The UX makes the output actionable. Someone reading that alert knows exactly what to do next.</p>
+<h3>3. Improvement recommendations</h3>
+<p>For property owners, this means knowing what changes would raise an energy rating, reduce running costs, or increase rental value. The AI identifies the relevant factors. The design presents them as prioritised, specific actions rather than a dump of scores and indices.</p>
+<h2>Explainability is not optional</h2>
+<p>Two examples from healthcare illustrate why explainability matters.</p>
+<p><strong>Mental health crisis prediction.</strong> We built a risk prediction tool with the NHS to identify patients most likely to experience a mental health crisis in the next two weeks. Clinicians received a list of high-risk patients. Some ignored it. One patient on the list had a crisis the following day and came in by ambulance. The nurse said: "If I'd known why they were on the list, I would have acted differently."</p>
+<p>The fix was straightforward. Instead of presenting the raw output, we surfaced the four or five data points with the highest weighting in the model: the time since last contact, the number of recent unplanned interactions, the history of previous crises. The full 178-feature model was still available for anyone who wanted it. But the default view gave clinicians enough to make a judgement call.</p>
+<p><strong>Radiology.</strong> An AI that flags anomalies in scans isn't replacing radiologists. It's making them faster and more accurate. The value is in highlighting what might otherwise be missed — a patch that has grown, a pattern that matches known risk factors — with enough context that the clinician can assess it properly. Circling the area on the scan and noting <em>why</em> it was flagged takes ten seconds to read and potentially changes an outcome.</p>
+<p><strong>House price prediction.</strong> A predicted value of €432,000 looks precise. But a prediction is not a fact. Showing an error bar — "this property is likely priced between €370,000 and €490,000" — is less satisfying but more honest. Users who understand uncertainty make better decisions than users who treat a single number as ground truth.</p>
+<p>The pattern across all three: AI produces an output. UX determines whether the person using it can evaluate, trust, and act on that output.</p>
+<h2>Designing for AI products: four principles</h2>
+<p><strong>Design for systems, not screens.</strong> AI-powered products operate across data pipelines, model outputs, feedback loops, and user interventions. The design work isn't just the interface — it's how all of those pieces connect.</p>
+<p><strong>Design for mistakes.</strong> AI will get things wrong. Design that assumes otherwise creates brittle products that lose user trust the first time something fails. Build correction mechanisms in from the start.</p>
+<p><strong>Design for explainability.</strong> If the output of an AI model can't be explained to the person using it in terms they can evaluate, the product has a trust problem waiting to happen. Show sources. Surface the reasoning. Give users enough context to know whether to act.</p>
+<p><strong>Design for trust.</strong> Transparency about what the system does — and what it doesn't do — is not a weakness. It's what makes people willing to rely on it over time.</p>
+<h2>The real opportunity</h2>
+<p>Saving time is a good product outcome. But the more interesting question is: what is the task that sits in the corner of someone's mind, that they keep putting off, that stresses them out just thinking about it?</p>
+<p>Those are the tasks worth designing for. Not because eliminating them saves minutes on a timesheet, but because removing them changes how someone feels about their work.</p>
+<p>That's what AI-powered products can do, when the design is right.</p></article>
+</main>
+
+<footer class="site-footer">
+  <div class="container site-footer__inner">
+    <div class="site-footer__brand">RV.</div>
+    <div class="site-footer__copy">© 2025 Remko Vermeulen.</div>
+    <div class="site-footer__links">
+      <a href="https://linkedin.com/in/remkovermeulen" class="site-footer__link">LinkedIn</a>
+      <a href="https://github.com/remkovermeulen-pers" class="site-footer__link">GitHub</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var COVER_IMAGES = {
+    'Strategy':   'https://images.unsplash.com/photo-1457369804613-52c61a468e7d?w=1800&q=80',
+    'Leadership': 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1800&q=80',
+    'Product':    'https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1800&q=80',
+    'Innovation': 'https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=1800&q=80',
+    'Health':     'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=1800&q=80',
+    'Education':  'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1800&q=80',
+    'Technology': 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=1800&q=80',
+  };
+  var DEFAULT_COVER = 'https://images.unsplash.com/photo-1457369804613-52c61a468e7d?w=1800&q=80';
+
+  function esc(s) { return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+  function slugify(s) { return String(s).toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,''); }
+  function articleUrl(a) { return '/articles/' + slugify(a.title) + '/'; }
+
+  var params = new URLSearchParams(location.search);
+  var slug = params.get('slug') || window.__SLUG__ || null;
+  var idParam = params.get('id') || window.__ID__ || null;
+  var main = document.getElementById('main-content');
+
+  if (!slug && !idParam) { location.href = 'articles.html'; return; }
+
+  fetch('data/articles.json').then(function(r) { return r.json(); }).then(function(all) {
+    var meta;
+    if (slug) {
+      meta = all.find(function(a) { return slugify(a.title) === slug; });
+    } else {
+      meta = all.find(function(a) { return a.notionId === idParam; });
+      if (meta) history.replaceState(null, '', '/articles/' + slugify(meta.title) + '/');
+    }
+    if (!meta) throw new Error('not found');
+    return fetch('data/articles/' + meta.notionId + '.json').then(function(r) {
+      if (!r.ok) throw new Error('not found');
+      return r.json();
+    }).then(function(article) { return [article, all]; });
+  }).then(function(results) {
+    var article = results[0];
+    var all = results[1];
+
+    document.title = article.title + ' — Remko Vermeulen';
+    analytics.page(article.title);
+    var artDesc = article.summary || article.lede || '';
+    var artUrl = 'https://remkovermeulen.com/articles/' + slugify(article.title) + '/';
+    var artImg = article.coverImage || 'https://remkovermeulen.com/assets/remko.jpg';
+    function setMeta(sel, attr, val) { var el = document.querySelector(sel); if (el && val) el.setAttribute(attr, val); }
+    setMeta('meta[name="description"]', 'content', artDesc);
+    setMeta('meta[property="og:title"]', 'content', article.title + ' — Remko Vermeulen');
+    setMeta('meta[property="og:description"]', 'content', artDesc);
+    setMeta('meta[property="og:image"]', 'content', artImg);
+    setMeta('meta[property="og:url"]', 'content', artUrl);
+    setMeta('meta[name="twitter:title"]', 'content', article.title + ' — Remko Vermeulen');
+    setMeta('meta[name="twitter:description"]', 'content', artDesc);
+    setMeta('meta[name="twitter:image"]', 'content', artImg);
+    setMeta('link[rel="canonical"]', 'href', artUrl);
+    var ldScript = document.createElement('script');
+    ldScript.type = 'application/ld+json';
+    ldScript.text = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": article.title,
+      "description": artDesc,
+      "image": artImg,
+      "url": artUrl,
+      "author": { "@type": "Person", "name": "Remko Vermeulen", "url": "https://remkovermeulen.com" },
+      "publisher": { "@type": "Person", "name": "Remko Vermeulen" }
+    });
+    document.head.appendChild(ldScript);
+
+    // Parse content into DOM for TOC extraction + section wrapping
+    var tempDiv = document.createElement('div');
+    tempDiv.innerHTML = article.content || '';
+
+    // Build numbered sections from h2 boundaries
+    var nodes = Array.from(tempDiv.childNodes);
+    var sections = [];
+    var current = null;
+    nodes.forEach(function(node) {
+      if (node.nodeName === 'H2') {
+        current = { heading: node.textContent, html: '' };
+        sections.push(current);
+      } else if (current) {
+        var tmp = document.createElement('div');
+        tmp.appendChild(node.cloneNode(true));
+        current.html += tmp.innerHTML;
+      }
+    });
+
+    // TOC
+    var tocItems = sections.map(function(s, i) {
+      var num = (i + 1 < 10 ? '0' : '') + (i + 1);
+      var anchor = 'section-' + i;
+      return '<li><span class="cs-toc__num">' + num + '</span>'
+        + '<a href="#' + anchor + '">' + esc(s.heading) + '</a></li>';
+    }).join('');
+
+    // Section HTML
+    var sectionsHtml = sections.length
+      ? sections.map(function(s, i) {
+          var num = (i + 1 < 10 ? '0' : '') + (i + 1);
+          var anchor = 'section-' + i;
+          var ledeClass = i === 0 ? ' cs-section--lede' : '';
+          return '<section class="cs-section' + ledeClass + '" id="' + anchor + '">'
+            + '<div class="cs-section__head">'
+            + '<span class="cs-section__num">' + num + '</span>'
+            + '<h2>' + esc(s.heading) + '</h2>'
+            + '</div>'
+            + s.html
+            + '</section>';
+        }).join('')
+      : '<article style="max-width:760px">' + tempDiv.innerHTML + '</article>';
+
+    // Extract lede from first paragraph in content
+    var ledeEl = tempDiv.querySelector('p');
+    var lede = ledeEl ? ledeEl.textContent.trim() : '';
+
+    // Cover image
+    var coverSrc = article.coverImage || COVER_IMAGES[article.category] || DEFAULT_COVER;
+
+    // Pager
+    var idx = all.findIndex(function(a) { return a.notionId === article.notionId; });
+    var prev = idx > 0 ? all[idx - 1] : null;
+    var next = idx >= 0 ? all[(idx + 1) % all.length] : null;
+    if (next && next.notionId === article.notionId) next = null;
+
+    var counter = idx >= 0 ? (String(idx + 1).padStart(2,'0') + ' / ' + String(all.length).padStart(2,'0')) : '';
+    var prevLink = prev
+      ? '<a href="' + articleUrl(prev) + '" class="proj-pager__link proj-pager__link--prev">'
+        + '<span class="proj-pager__arrow"><svg width="16" height="12" viewBox="0 0 16 12" fill="none"><path d="M15 6H1m0 0l5-5m-5 5l5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></span>'
+        + '<span class="proj-pager__meta"><span class="proj-pager__label">Previous</span><span class="proj-pager__title">' + esc(prev.title) + '</span></span>'
+        + '</a>'
+      : '<span></span>';
+    var nextPagerLink = next
+      ? '<a href="' + articleUrl(next) + '" class="proj-pager__link proj-pager__link--next">'
+        + '<span class="proj-pager__meta"><span class="proj-pager__label">Next</span><span class="proj-pager__title">' + esc(next.title) + '</span></span>'
+        + '<span class="proj-pager__arrow"><svg width="16" height="12" viewBox="0 0 16 12" fill="none"><path d="M1 6h14m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></span>'
+        + '</a>'
+      : '<span></span>';
+    var pagerHtml = '<nav class="proj-pager">' + prevLink + '<span class="proj-pager__index">' + counter + '</span>' + nextPagerLink + '</nav>';
+
+    // Next article
+    var nextHtml = '';
+    if (next) {
+      var nextCover = next.coverImage || COVER_IMAGES[next.category] || DEFAULT_COVER;
+      nextHtml = '<section class="next-proj">'
+        + '<p class="next-proj__eyebrow">Next Article</p>'
+        + '<a href="' + articleUrl(next) + '" class="next-proj__card">'
+        + '<img class="bw-img" src="' + nextCover + '" alt="' + esc(next.title) + '">'
+        + '<div class="next-proj__text">'
+        + '<span class="tag-line">' + esc(next.category) + '</span>'
+        + '<h3>' + esc(next.title)
+        + '<svg width="22" height="14" viewBox="0 0 22 14" fill="none"><path d="M1 7h19m0 0l-6-6m6 6l-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg>'
+        + '</h3>'
+        + '<p>' + (next.readingTime ? next.readingTime + ' min read' : next.year) + '</p>'
+        + '</div>'
+        + '</a></section>';
+    }
+
+    main.innerHTML =
+      pagerHtml
+      + '<section class="cs-hero">'
+      + '<p class="cs-hero__crumb">Journal &nbsp;/&nbsp; ' + esc(article.category) + '</p>'
+      + '<h1>' + esc(article.title) + '</h1>'
+      + (lede ? '<p class="cs-hero__lede">' + esc(lede) + '</p>' : '')
+      + '<div class="cs-hero__byline">'
+      + '<div class="cs-hero__byline-block"><h5>Published</h5><p>' + esc(String(article.year)) + '</p></div>'
+      + (article.readingTime ? '<div class="cs-hero__byline-block"><h5>Reading time</h5><p>' + article.readingTime + ' minutes</p></div>' : '')
+      + '</div>'
+      + '<div class="cs-cover">'
+      + (article.youtubeVideoId
+          ? '<div class="cs-cover__video"><iframe src="https://www.youtube.com/embed/' + esc(article.youtubeVideoId) + '?rel=0" title="' + esc(article.title) + '" allowfullscreen loading="lazy"></iframe></div>'
+          : article.linkedInEmbedUrl
+            ? '<div class="cs-cover__video cs-cover__video--linkedin"><iframe src="' + esc(article.linkedInEmbedUrl) + '" title="' + esc(article.title) + '" allowfullscreen loading="lazy"></iframe></div>'
+            : '<img class="bw-img" src="' + coverSrc + '" alt="' + esc(article.title) + '"' + (article.coverImagePosition ? ' style="object-position:' + esc(article.coverImagePosition) + '"' : '') + '>')
+      + '</div>'
+      + '</section>'
+
+      + '<div class="cs-body">'
+      + '<aside class="cs-aside">'
+      + '<h4>Topics</h4>'
+      + '<div class="chips">'
+      + (article.tags && article.tags.length ? article.tags : [article.category]).map(function(t) {
+          return '<a href="articles.html?category=' + encodeURIComponent(t) + '" class="tag">' + esc(t) + '</a>';
+        }).join('')
+      + '</div>'
+      + (tocItems ? '<div class="cs-toc-wrap"><h4>In this article</h4><ol class="cs-toc">' + tocItems + '</ol></div>' : '')
+      + '</aside>'
+
+      + '<div class="cs-content">' + sectionsHtml + '</div>'
+      + '</div>'
+
+      + nextHtml;
+
+  }).catch(function() {
+    main.innerHTML = '<div class="art-loading">Article not found. <a href="articles.html" style="color:var(--accent)">Back to articles</a></div>';
+  });
+})();
+</script>
+
+<script>
+(function(){
+  var b=document.querySelector('.site-nav__burger');
+  var n=document.querySelector('.site-nav__links');
+  if(b&&n) b.addEventListener('click',function(){ n.classList.toggle('is-open'); });
+  // In-page anchor scroll (works even when a <base> tag rewrites bare #fragment links)
+  document.addEventListener('click',function(e){
+    var a=e.target.closest && e.target.closest('a[href^="#"]');
+    if(!a) return;
+    var t=document.getElementById(a.getAttribute('href').slice(1));
+    if(t){ e.preventDefault(); t.scrollIntoView({behavior:'smooth'}); }
+  });
+})();
+</script>
+</body>
+</html>

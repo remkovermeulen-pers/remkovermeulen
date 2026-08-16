@@ -186,7 +186,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
           if (!grid) return;
 
           grid.innerHTML = articles.map(function(a){
-            var href = a.notionId ? 'article.html?slug=' + slugify(a.title) : esc(a.url || '#');
+            var href = a.notionId ? '/articles/' + slugify(a.title) + '/' : esc(a.url || '#');
             var target = a.notionId ? '' : ' target="_blank" rel="noopener"';
             var rt = a.readingTime ? a.readingTime + ' min' : a.year;
             return '<a href="' + href + '"' + target + ' class="article-card" data-category="' + esc(a.category) + '">'

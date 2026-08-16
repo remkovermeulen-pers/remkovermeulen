@@ -219,6 +219,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
     (function(){
       var arrow = '<svg width="14" height="10" viewBox="0 0 16 10" fill="none"><path d="M1 5h14m0 0L11 1m4 4l-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="square"/></svg>';
       function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+      function slugify(s){ return String(s).toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,''); }
       function ytThumb(src) {
         var m = (src || '').match(/(?:youtu\.be\/|[?&]v=)([A-Za-z0-9_-]{11})/);
         return m ? 'https://img.youtube.com/vi/' + m[1] + '/hqdefault.jpg' : src;
@@ -250,7 +251,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
             var tags = (p.tags || []).map(function(t){ return '<span class="tag">' + esc(t) + '</span>'; }).join('');
             var metrics = (p.metrics || []).filter(function(m){ return m.value; }).slice(0,2)
               .map(function(m){ return '<div class="proj-card__stat"><span class="metric">'+esc(m.value)+'</span><div class="metric-label">'+esc(m.label)+'</div></div>'; }).join('');
-            return '<a href="case-study?id=' + esc(p.notionId) + '" class="proj-card" data-tags="' + esc(JSON.stringify(p.tags || [])) + '">'
+            return '<a href="/work/' + slugify(p.title) + '/" class="proj-card" data-tags="' + esc(JSON.stringify(p.tags || [])) + '">'
               + '<div class="proj-card__img">'
               + '<img class="bw-img" src="' + esc(ytThumb(p.coverImage)) + '" alt="' + esc(p.title) + '" loading="lazy">'
               + '</div>'

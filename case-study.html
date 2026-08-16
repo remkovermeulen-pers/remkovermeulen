@@ -297,8 +297,10 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
 <script>
 (function () {
   var params = new URLSearchParams(location.search);
-  var id = params.get('id');
+  var id = params.get('id') || window.__ID__ || null;
   if (!id) { location.href = 'work.html'; return; }
+  function slugify(s) { return String(s).toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,''); }
+  function workUrl(p) { return '/work/' + slugify(p.title) + '/'; }
 
   var main = document.getElementById('cs-main');
 
@@ -351,7 +353,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
     analytics.page(proj.title);
     var projDesc = proj.description || (proj.sections && proj.sections[0] ? proj.sections[0].body.replace(/<[^>]+>/g,'').trim().slice(0,160) : '');
     var projImg = proj.coverImage ? 'https://remkovermeulen.com/' + proj.coverImage : 'https://remkovermeulen.com/assets/remko.jpg';
-    var projUrl = 'https://remkovermeulen.com/case-study?id=' + (proj.id || proj.notionId || '');
+    var projUrl = 'https://remkovermeulen.com/work/' + slugify(proj.title) + '/';
     function setMeta(sel, attr, val) { var el = document.querySelector(sel); if (el && val) el.setAttribute(attr, val); }
     setMeta('meta[name="description"]', 'content', projDesc);
     setMeta('meta[property="og:title"]', 'content', proj.title + ' — Remko Vermeulen');
@@ -502,7 +504,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
             ? '<video src="' + esc(cover) + '" muted playsinline loop autoplay></video>'
             : '<img src="' + esc(thumbSrc) + '" alt="" loading="lazy">')
         : '';
-      return '<a href="case-study?id=' + esc(p.notionId || p.id) + '" class="cs-related-item">'
+      return '<a href="' + workUrl(p) + '" class="cs-related-item">'
         + '<div class="cs-related-item__thumb">' + thumbHtml + '</div>'
         + '<div>'
         + '<div class="cs-related-item__title">' + esc(p.title) + '</div>'
@@ -520,7 +522,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
     if (!next) return '';
     return '<section class="next-proj">' +
       '<p class="next-proj__eyebrow">Next Project</p>' +
-      '<a href="case-study?id=' + esc(next.notionId) + '" class="next-proj__card">' +
+      '<a href="' + workUrl(next) + '" class="next-proj__card">' +
         '<img class="bw-img" src="' + esc(next.coverImage || 'https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1200&q=80') + '" alt="' + esc(next.title) + '">' +
         '<div class="next-proj__text">' +
           '<h3>' + esc(next.title) +
@@ -540,7 +542,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
       : '';
 
     var prevLink = prev
-      ? '<a href="case-study?id=' + esc(prev.notionId) + '" class="proj-pager__link proj-pager__link--prev">' +
+      ? '<a href="' + workUrl(prev) + '" class="proj-pager__link proj-pager__link--prev">' +
           '<span class="proj-pager__arrow"><svg width="16" height="12" viewBox="0 0 16 12" fill="none"><path d="M15 6H1m0 0l5-5m-5 5l5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></span>' +
           '<span class="proj-pager__meta">' +
             '<span class="proj-pager__label">Previous</span>' +
@@ -550,7 +552,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
       : '<span></span>';
 
     var nextLink = next
-      ? '<a href="case-study?id=' + esc(next.notionId) + '" class="proj-pager__link proj-pager__link--next">' +
+      ? '<a href="' + workUrl(next) + '" class="proj-pager__link proj-pager__link--next">' +
           '<span class="proj-pager__meta">' +
             '<span class="proj-pager__label">Next</span>' +
             '<span class="proj-pager__title">' + esc(next.title) + '</span>' +
@@ -704,6 +706,13 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
   var b = document.querySelector('.site-nav__burger');
   var n = document.querySelector('.site-nav__links');
   if (b && n) b.addEventListener('click', function() { n.classList.toggle('is-open'); });
+  // In-page anchor scroll (works even when a <base> tag rewrites bare #fragment links)
+  document.addEventListener('click', function(e) {
+    var a = e.target.closest && e.target.closest('a[href^="#"]');
+    if (!a) return;
+    var t = document.getElementById(a.getAttribute('href').slice(1));
+    if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth' }); }
+  });
 })();
 </script>
 
