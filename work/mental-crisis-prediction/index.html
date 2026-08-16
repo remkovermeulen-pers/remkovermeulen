@@ -261,6 +261,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
   // analytics.page() called after project title is resolved
   }}();
 </script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Mental crisis prediction","description":"Built an ML model with NHS Birmingham predicting mental health crises four weeks in advance at 80% recall, giving clinicians enough lead time to intervene before patients reached crisis point.","image":"https://remkovermeulen.com/assets/projects/36076183-7377-81ad-ad56-ddcc3b80e04d--mental-crisis-prediction/01.svg","url":"https://remkovermeulen.com/work/mental-crisis-prediction/","author":{"@type":"Person","name":"Remko Vermeulen","url":"https://remkovermeulen.com"},"publisher":{"@type":"Person","name":"Remko Vermeulen"},"datePublished":"2021-01-01"}</script>
 </head>
 <body>
 
@@ -279,19 +280,15 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
   </div>
 </header>
 
-<script>window.__ID__ = "36076183-7377-81ad-ad56-ddcc3b80e04d";</script>
+<script>window.__ID__ = "36076183-7377-81ad-ad56-ddcc3b80e04d"; window.__PREBAKED__ = true;</script>
 <main class="container" id="cs-main">
-<article class="baked-content"><h1>Mental crisis prediction</h1><p>Koa Health (Series B), in collaboration with Birmingham and Solihull NHS Foundation Trust. 1.2M patients covered. The project was part of the NHS Testbeds programme.</p>
-<p>Mental health crises are costly and traumatic — for patients and the health system. An unplanned hospital admission for a mental health crisis costs multiples of planned care. Clinicians had no early warning signal: by the time deterioration was visible, it was often too late for low-cost intervention. The business need was to demonstrate clinical and commercial value to NHS partners to secure ongoing contracts and investment.</p>
-<p>I directed the product team and the product manager responsible for this project, setting direction and overseeing delivery. My direct personal involvement was in the explainable AI layer — specifically how model outputs were surfaced to clinicians in a way they could understand and act on. Data science modelling was led by the technical team; information governance, data sharing agreements, and NHS relationship management were handled by the product and research team.</p>
-<p>The team began by researching how clinicians currently worked: their existing workflows, what a successful outcome looked like to them, and how they valued a tool like this. This informed both where the product could add the most meaningful improvement and how the alert logic should be designed to fit into clinical practice.</p>
-<p>The model used de-identified NHS Electronic Health Records (178 features, 1 million patients over 6 years, 20,000 mental health patients) as the primary training signal. The four-week prediction horizon was a deliberate clinical decision — long enough to enable a proactive response, short enough to be actionable. The alert logic was designed so that outputs were filtered to patients not already on an active crisis plan, avoiding alert fatigue.</p>
-<ul>
+<nav class="proj-pager"><a href="/work/pandemic-prediction-using-telephone-data/" class="proj-pager__link proj-pager__link--prev"><span class="proj-pager__arrow"><svg width="16" height="12" viewBox="0 0 16 12" fill="none"><path d="M15 6H1m0 0l5-5m-5 5l5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></span><span class="proj-pager__meta"><span class="proj-pager__label">Previous</span><span class="proj-pager__title">Pandemic prediction using telephone data</span></span></a><span class="proj-pager__index">09 / 20</span><a href="/work/johnson-johnson/" class="proj-pager__link proj-pager__link--next"><span class="proj-pager__meta"><span class="proj-pager__label">Next</span><span class="proj-pager__title">Johnson &amp; Johnson</span></span><span class="proj-pager__arrow"><svg width="16" height="12" viewBox="0 0 16 12" fill="none"><path d="M1 6h14m0 0l-5-5m5 5l-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></span></a></nav><section class="cs-hero"><p class="cs-hero__crumb">Case Study</p><h1>Mental crisis prediction</h1><p class="cs-hero__lede">Built an ML model with NHS Birmingham predicting mental health crises four weeks in advance at 80% recall, giving clinicians enough lead time to intervene before patients reached crisis point.</p><div class="cs-hero__byline"><div class="cs-hero__byline-block"><h5>accuracy predicting mental health crisis 4 weeks ahead</h5><span class="metric">75%</span></div><div class="cs-hero__byline-logos"><h5>Organisations</h5><div class="cs-hero__byline-logos__imgs"><img src="assets/logos/nhs.svg" alt="" onerror="this.remove()"></div></div></div><div class="cs-cover"><div class="cs-cover__track"><div class="cs-cover__slide"><img class="cs-cover__img" src="assets/projects/36076183-7377-81ad-ad56-ddcc3b80e04d--mental-crisis-prediction/01.svg" alt="Mental crisis prediction"></div></div></div></section><div class="cs-body"><aside class="cs-aside"><div class="cs-toc-wrap"><h4>Contents</h4><ol class="cs-toc"><li><span class="cs-toc__num">01</span><a href="#context">Context</a></li><li><span class="cs-toc__num">02</span><a href="#problem">Problem</a></li><li><span class="cs-toc__num">03</span><a href="#my-role">My role</a></li><li><span class="cs-toc__num">04</span><a href="#approach">Approach</a></li><li><span class="cs-toc__num">05</span><a href="#outcome">Outcome</a></li></ol></div><h4 class="cs-aside__tags-head">Tags</h4><div class="chips"><a href="work.html?tag=Health" class="tag">Health</a><a href="work.html?tag=AI" class="tag">AI</a><a href="work.html?tag=Telco" class="tag">Telco</a></div></aside><article class="cs-content"><section class="cs-section" id="context"><div class="cs-section__head"><span class="cs-section__num">01</span><h2>Context</h2></div><p>Koa Health (Series B), in collaboration with Birmingham and Solihull NHS Foundation Trust. 1.2M patients covered. The project was part of the NHS Testbeds programme.</p></section><section class="cs-section" id="problem"><div class="cs-section__head"><span class="cs-section__num">02</span><h2>Problem</h2></div><p>Mental health crises are costly and traumatic — for patients and the health system. An unplanned hospital admission for a mental health crisis costs multiples of planned care. Clinicians had no early warning signal: by the time deterioration was visible, it was often too late for low-cost intervention. The business need was to demonstrate clinical and commercial value to NHS partners to secure ongoing contracts and investment.</p></section><section class="cs-section" id="my-role"><div class="cs-section__head"><span class="cs-section__num">03</span><h2>My role</h2></div><p>I directed the product team and the product manager responsible for this project, setting direction and overseeing delivery. My direct personal involvement was in the explainable AI layer — specifically how model outputs were surfaced to clinicians in a way they could understand and act on. Data science modelling was led by the technical team; information governance, data sharing agreements, and NHS relationship management were handled by the product and research team.</p></section><section class="cs-section" id="approach"><div class="cs-section__head"><span class="cs-section__num">04</span><h2>Approach</h2></div><p>The team began by researching how clinicians currently worked: their existing workflows, what a successful outcome looked like to them, and how they valued a tool like this. This informed both where the product could add the most meaningful improvement and how the alert logic should be designed to fit into clinical practice.</p>
+<p>The model used de-identified NHS Electronic Health Records (178 features, 1 million patients over 6 years, 20,000 mental health patients) as the primary training signal. The four-week prediction horizon was a deliberate clinical decision — long enough to enable a proactive response, short enough to be actionable. The alert logic was designed so that outputs were filtered to patients not already on an active crisis plan, avoiding alert fatigue.</p></section><section class="cs-section" id="outcome"><div class="cs-section__head"><span class="cs-section__num">05</span><h2>Outcome</h2></div><ul>
 <li>Model achieved 75% accuracy (80% recall) predicting mental health crisis four weeks in advance</li>
 <li>Clinicians could schedule reviews, adjust medication, or increase support before patients reached crisis point</li>
 <li>The project contributed to the evidence base that helped Koa Health secure investment and NHS partnerships, including a subsequent contract with Janssen</li>
 <li>Findings were published in <a href="https://remkovermeulen.com/article.html?slug=machine-learning-algorithm-accurately-predicts-mental-health-crises" target="_blank" rel="noopener">Nature Medicine</a></li>
-</ul></article>
+</ul></section></article></div><section class="next-proj"><p class="next-proj__eyebrow">Next Project</p><a href="/work/johnson-johnson/" class="next-proj__card"><img class="bw-img" src="assets/projects/35f76183-7377-812e-89c0-f80d125d898b--johnson-johnson/01.jpg" alt="Johnson &amp; Johnson"><div class="next-proj__text"><h3>Johnson &amp; Johnson<svg width="22" height="14" viewBox="0 0 22 14" fill="none"><path d="M1 7h19m0 0l-6-6m6 6l-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg></h3><p></p></div></a></section>
 </main>
 
 
@@ -316,16 +313,23 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
 
   var main = document.getElementById('cs-main');
 
-  Promise.all([
-    fetch('data/projects/' + id + '.json').then(function(r){ return r.json(); }),
-    fetch('data/projects.json').then(function(r){ return r.json(); })
-  ]).then(function(results) {
-    var proj = results[0];
-    var all  = results[1];
-    render(proj, all);
-  }).catch(function() {
-    main.innerHTML = '<div class="cs-loading">Project not found. <a href="work.html">Back to work</a></div>';
-  });
+  // Pre-rendered static page: title, meta, JSON-LD and the full layout are all
+  // baked in. Skip the fetch/render — just record the pageview. The gallery
+  // wiring (defined below) still runs and drives the baked markup.
+  if (window.__PREBAKED__) {
+    if (window.analytics) analytics.page(document.title.replace(/ — Case Study — Remko Vermeulen$/, ''));
+  } else {
+    Promise.all([
+      fetch('data/projects/' + id + '.json').then(function(r){ return r.json(); }),
+      fetch('data/projects.json').then(function(r){ return r.json(); })
+    ]).then(function(results) {
+      var proj = results[0];
+      var all  = results[1];
+      render(proj, all);
+    }).catch(function() {
+      main.innerHTML = '<div class="cs-loading">Project not found. <a href="work.html">Back to work</a></div>';
+    });
+  }
 
   // Fallback mapping: project title → domain (used when Notion 'Logo Domain' property isn't set)
   var LOGO_FILES = {

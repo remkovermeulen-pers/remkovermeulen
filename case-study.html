@@ -304,16 +304,23 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
 
   var main = document.getElementById('cs-main');
 
-  Promise.all([
-    fetch('data/projects/' + id + '.json').then(function(r){ return r.json(); }),
-    fetch('data/projects.json').then(function(r){ return r.json(); })
-  ]).then(function(results) {
-    var proj = results[0];
-    var all  = results[1];
-    render(proj, all);
-  }).catch(function() {
-    main.innerHTML = '<div class="cs-loading">Project not found. <a href="work.html">Back to work</a></div>';
-  });
+  // Pre-rendered static page: title, meta, JSON-LD and the full layout are all
+  // baked in. Skip the fetch/render — just record the pageview. The gallery
+  // wiring (defined below) still runs and drives the baked markup.
+  if (window.__PREBAKED__) {
+    if (window.analytics) analytics.page(document.title.replace(/ — Case Study — Remko Vermeulen$/, ''));
+  } else {
+    Promise.all([
+      fetch('data/projects/' + id + '.json').then(function(r){ return r.json(); }),
+      fetch('data/projects.json').then(function(r){ return r.json(); })
+    ]).then(function(results) {
+      var proj = results[0];
+      var all  = results[1];
+      render(proj, all);
+    }).catch(function() {
+      main.innerHTML = '<div class="cs-loading">Project not found. <a href="work.html">Back to work</a></div>';
+    });
+  }
 
   // Fallback mapping: project title → domain (used when Notion 'Logo Domain' property isn't set)
   var LOGO_FILES = {
