@@ -184,7 +184,7 @@ function fixPostStubs(articleSlugs) {
   const postDir = path.join(ROOT, 'post');
   if (!fs.existsSync(postDir)) return;
   const slugs = [...articleSlugs];
-  let fixed = 0, removed = 0;
+  let fixed = 0, skipped = 0;
   for (const folder of fs.readdirSync(postDir)) {
     const idxPath = path.join(postDir, folder, 'index.html');
     if (!fs.existsSync(idxPath)) continue;
@@ -199,11 +199,9 @@ function fixPostStubs(articleSlugs) {
     if (!target && articleSlugs.has(folder)) target = folder;
     if (!target) target = slugs.find(s => s.startsWith(folder) || folder.startsWith(s) || s.includes(folder) || folder.includes(s));
 
-    if (!target) {
-      fs.rmSync(path.join(postDir, folder), { recursive: true, force: true });
-      removed++;
-      continue;
-    }
+    // Never delete a stub we can't resolve — a 404 is worse than a stale
+    // redirect, and deleting is not recoverable on the next sync.
+    if (!target) { skipped++; continue; }
     const dest = `${BASE}/articles/${target}/`;
     const stub =
       `<!DOCTYPE html>\n<html>\n<head>\n<meta charset="UTF-8">\n` +
@@ -215,7 +213,7 @@ function fixPostStubs(articleSlugs) {
     fs.writeFileSync(idxPath, stub);
     fixed++;
   }
-  console.log(`  ✓ /post/ stubs: ${fixed} repointed, ${removed} removed`);
+  console.log(`  ✓ /post/ stubs: ${fixed} repointed, ${skipped} left unresolved`);
 }
 
 function generateAll() {
