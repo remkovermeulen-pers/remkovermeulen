@@ -112,6 +112,8 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
 .ab-sec__head + .cv-entry { border-top:0; padding-top:0; }
 .cv-entry__meta { display:flex; flex-direction:column; gap:14px; }
 .cv-entry__dates { font-family:var(--font-display); font-style:italic; font-weight:500; font-size:20px; line-height:1.2; color:var(--primary); }
+.cv-entry__logo { display:block; height:28px; width:120px; background:var(--accent); -webkit-mask:var(--logo) left center/contain no-repeat; mask:var(--logo) left center/contain no-repeat; }
+.cv-entry__logo--lg { height:42px; width:160px; }
 .cv-entry__company { font-size:11px; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; color:var(--accent); line-height:1.5; }
 .cv-entry__body h3 { margin:0 0 6px; font-family:var(--font-display); font-weight:600; font-size:clamp(24px,2.6vw,30px); line-height:1.2; letter-spacing:-0.01em; }
 .cv-entry__sub { margin:0 0 22px; font-size:14px; color:var(--muted-2); font-style:italic; }
@@ -219,6 +221,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
 
     <div class="cv-entry">
       <div class="cv-entry__meta">
+        <span class="cv-entry__logo" role="img" aria-label="Swat.io logo" style="--logo:url(assets/logos/swat-io-icon.svg)"></span>
         <div class="cv-entry__dates">Jul 2026<br>— Present</div>
         <div class="cv-entry__company">Swat.io &nbsp;·&nbsp; Social media management</div>
       </div>
@@ -233,6 +236,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
 
     <div class="cv-entry">
       <div class="cv-entry__meta">
+        <span class="cv-entry__logo" role="img" aria-label="Toggl logo" style="--logo:url(assets/logos/toggl.svg)"></span>
         <div class="cv-entry__dates">Jan 2026<br>— Jul 2026</div>
         <div class="cv-entry__company">Toggl &nbsp;·&nbsp; Time tracking &amp; planning</div>
       </div>
@@ -249,6 +253,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
 
     <div class="cv-entry">
       <div class="cv-entry__meta">
+        <span class="cv-entry__logo" role="img" aria-label="SignAssist logo" style="--logo:url(assets/logos/signassist.svg)"></span>
         <div class="cv-entry__dates">Jan 2024<br>— Dec 2025</div>
         <div class="cv-entry__company">SignAssist &nbsp;·&nbsp; PropTech, Legal &amp; FinTech</div>
       </div>
@@ -268,6 +273,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
 
     <div class="cv-entry">
       <div class="cv-entry__meta">
+        <span class="cv-entry__logo cv-entry__logo--lg" role="img" aria-label="Koa Health logo" style="--logo:url(assets/logos/koa.health.com.png)"></span>
         <div class="cv-entry__dates">Nov 2020<br>— Jan 2023</div>
         <div class="cv-entry__company">Koa Health &nbsp;·&nbsp; Digital Mental Health</div>
       </div>
@@ -284,6 +290,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
 
     <div class="cv-entry">
       <div class="cv-entry__meta">
+        <span class="cv-entry__logo cv-entry__logo--lg" role="img" aria-label="Telefónica Alpha Health logo" style="--logo:url(assets/logos/telefonica-alpha.svg)"></span>
         <div class="cv-entry__dates">Jun 2016<br>— Oct 2021</div>
         <div class="cv-entry__company">Telefónica Alpha Health</div>
       </div>
@@ -302,6 +309,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
 
     <div class="cv-entry">
       <div class="cv-entry__meta">
+        <span class="cv-entry__logo" role="img" aria-label="Telefónica Innovation logo" style="--logo:url(assets/logos/telefonica.com.svg)"></span>
         <div class="cv-entry__dates">Apr 2015<br>— Jun 2016</div>
         <div class="cv-entry__company">Telefónica Innovation</div>
       </div>
@@ -320,6 +328,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
 
     <div class="cv-entry">
       <div class="cv-entry__meta">
+        <span class="cv-entry__logo cv-entry__logo--lg" role="img" aria-label="Telefónica Digital / O2 logo" style="--logo:url(assets/logos/02.svg)"></span>
         <div class="cv-entry__dates">Jun 2011<br>— Apr 2015</div>
         <div class="cv-entry__company">Telefónica Digital / O2</div>
       </div>
@@ -354,6 +363,7 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
 
     <div class="cv-entry">
       <div class="cv-entry__meta">
+        <span class="cv-entry__logo" role="img" aria-label="British Council logo" style="--logo:url(assets/logos/british-council-mask.svg)"></span>
         <div class="cv-entry__dates">Feb 2000<br>— Sep 2005</div>
         <div class="cv-entry__company">Electrolux · British Council · I-D Media · others</div>
       </div>
