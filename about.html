@@ -114,6 +114,8 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
 .cv-entry__dates { font-family:var(--font-display); font-style:italic; font-weight:500; font-size:20px; line-height:1.2; color:var(--primary); }
 .cv-entry__logo { display:block; height:28px; width:120px; background:var(--accent); -webkit-mask:var(--logo) left center/contain no-repeat; mask:var(--logo) left center/contain no-repeat; }
 .cv-entry__logo--lg { height:42px; width:160px; }
+.cv-entry__logos { display:flex; align-items:center; gap:14px; }
+.cv-entry__logo--sm { height:28px; width:90px; }
 .cv-entry__company { font-size:11px; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; color:var(--accent); line-height:1.5; }
 .cv-entry__body h3 { margin:0 0 6px; font-family:var(--font-display); font-weight:600; font-size:clamp(24px,2.6vw,30px); line-height:1.2; letter-spacing:-0.01em; }
 .cv-entry__sub { margin:0 0 22px; font-size:14px; color:var(--muted-2); font-style:italic; }
@@ -290,7 +292,10 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
 
     <div class="cv-entry">
       <div class="cv-entry__meta">
-        <span class="cv-entry__logo cv-entry__logo--lg" role="img" aria-label="Telefónica Alpha Health logo" style="--logo:url(assets/logos/telefonica-alpha.svg)"></span>
+        <div class="cv-entry__logos">
+          <span class="cv-entry__logo cv-entry__logo--lg" role="img" aria-label="Telefónica Alpha Health logo" style="--logo:url(assets/logos/telefonica-alpha.svg)"></span>
+          <span class="cv-entry__logo cv-entry__logo--sm" role="img" aria-label="Telefónica logo" style="--logo:url(assets/logos/telefonica.com.svg)"></span>
+        </div>
         <div class="cv-entry__dates">Jun 2016<br>— Oct 2021</div>
         <div class="cv-entry__company">Telefónica Alpha Health</div>
       </div>
