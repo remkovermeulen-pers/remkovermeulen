@@ -112,7 +112,7 @@
 
     return pagerHtml
       + '<section class="cs-hero">'
-      + '<p class="cs-hero__crumb">Journal &nbsp;/&nbsp; ' + esc(article.category) + '</p>'
+      + '<p class="cs-hero__crumb">Journal &nbsp;/&nbsp; ' + esc(article.category) + (article.series ? ' &nbsp;/&nbsp; ' + esc(article.series) : '') + '</p>'
       + '<h1>' + esc(article.title) + '</h1>'
       + (lede ? '<p class="cs-hero__lede">' + esc(lede) + '</p>' : '')
       + '<div class="cs-hero__byline">'
