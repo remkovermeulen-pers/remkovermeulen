@@ -451,7 +451,7 @@ function updateLogoBar(metaList) {
       if (seenNames.has(org.name) || seenFiles.has(org.logo)) continue;
       seenNames.add(org.name);
       seenFiles.add(org.logo);
-      logos.push({ href: `/work/${slugify(project.title)}/`, src: `assets/logos/${org.logo}`, alt: org.name });
+      logos.push({ href: `/work/${slugify(project.title)}/`, src: `assets/logos/${org.logo}?v=2`, alt: org.name });
     }
   }
 

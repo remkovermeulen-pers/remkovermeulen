@@ -27,7 +27,7 @@
     'British Council':              'british-council.svg',
   };
   function getLogoFile(proj) { return LOGO_FILES[proj.title] || ''; }
-  function logoUrl(filename) { return 'assets/logos/' + filename; }
+  function logoUrl(filename) { return 'assets/logos/' + filename + '?v=2'; }
   function buildLogos(proj, noMetrics) {
     var orgs = proj.organisations || [];
     var files = orgs.map(function(o) { return typeof o === 'string' ? o : o.logo; }).filter(Boolean);
@@ -35,7 +35,7 @@
     return '<div class="cs-hero__byline-logos' + (noMetrics ? ' cs-hero__byline-logos--first' : '') + '">'
       + '<h5>Organisations</h5>'
       + '<div class="cs-hero__byline-logos__imgs">'
-      + files.map(function(f) { return '<img src="assets/logos/' + esc(f) + '" alt="" onerror="this.remove()">'; }).join('')
+      + files.map(function(f) { return '<img src="assets/logos/' + esc(f) + '?v=2" alt="" onerror="this.remove()">'; }).join('')
       + '</div>'
       + '</div>';
   }

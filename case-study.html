@@ -345,14 +345,14 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
       + '<h5>Organisations</h5>'
       + '<div class="cs-hero__byline-logos__imgs">'
       + files.map(function(f) {
-          return '<img src="assets/logos/' + esc(f) + '" alt="" onerror="this.remove()">';
+          return '<img src="assets/logos/' + esc(f) + '?v=2" alt="" onerror="this.remove()">';
         }).join('')
       + '</div>'
       + '</div>';
   }
 
   function logoUrl(filename) {
-    return 'assets/logos/' + filename;
+    return 'assets/logos/' + filename + '?v=2';
   }
 
   function render(proj, all) {
