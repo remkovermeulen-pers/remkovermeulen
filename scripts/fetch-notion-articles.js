@@ -180,6 +180,8 @@ async function fetchArticles() {
       readingTime: p['Reading Time']?.number ?? null,
       url: p['Article URL']?.url ?? page.url,
     };
+    const series = extractText(p['Series']).trim();
+    if (series) meta.series = series;
     if (!meta.title) continue;
 
     // Media: single Notion URL field, type detected from value
