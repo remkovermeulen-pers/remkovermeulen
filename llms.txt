@@ -13,11 +13,11 @@ Remko Vermeulen is a senior product leader based in Europe. He has scaled produc
 
 ## Selected Projects
 
-- **Toggl** — Restructured product, design and engineering teams at a profitable SaaS company, cutting costs by 26% while increasing output by implementing an AI-based user insights and prototyping flow. Drove a 94% increase in first-time activation. [Case study](https://remkovermeulen.com/case-study?id=35f76183-7377-81f2-9f5a-dbd1debf2fb1)
-- **Koa Health** — Co-founded and scaled a digital mental health company from 1 to 40 people, raising €66M and reaching 3M users. Built a portfolio of clinically validated products in partnership with the NHS, Harvard, and Janssen. [Case study](https://remkovermeulen.com/case-study?id=35f76183-7377-8135-9dd1-d1b22dfa6da0)
-- **SignAssist** — Led product end-to-end at a PropTech SaaS startup, improving unit economics from 162% to 21% CAC/LTV and growing active users by 87% through better onboarding and AI-powered document tooling. [Case study](https://remkovermeulen.com/case-study?id=35f76183-7377-816c-8a7f-e43d868da1c7)
-- **Perspectives** — Led a digital CBT product from concept through clinical trial with MGH and Harvard, achieving 90% treatment response, 55% symptom reduction, and 95% cost reduction versus traditional therapy. [Case study](https://remkovermeulen.com/case-study?id=36076183-7377-812d-9aec-f4697182cf9d)
-- **Johnson & Johnson** — Led product definition and clinical trial for a digital therapeutic companion to Spravato (esketamine) for treatment-resistant depression, developed in partnership with Janssen / Johnson & Johnson. [Case study](https://remkovermeulen.com/case-study?id=35f76183-7377-812e-89c0-f80d125d898b)
+- **Toggl** — Restructured product, design and engineering teams at a profitable SaaS company, cutting costs by 26% while increasing output by implementing an AI-based user insights and prototyping flow. Drove a 94% increase in first-time activation. [Case study](https://remkovermeulen.com/work/toggl/)
+- **Koa Health** — Co-founded and scaled a digital mental health company from 1 to 40 people, raising €66M and reaching 3M users. Built a portfolio of clinically validated products in partnership with the NHS, Harvard, and Janssen. [Case study](https://remkovermeulen.com/work/koa-health/)
+- **SignAssist** — Led product end-to-end at a PropTech SaaS startup, improving unit economics from 162% to 21% CAC/LTV and growing active users by 87% through better onboarding and AI-powered document tooling. [Case study](https://remkovermeulen.com/work/signassist/)
+- **Perspectives** — Led a digital CBT product from concept through clinical trial with MGH and Harvard, achieving 90% treatment response, 55% symptom reduction, and 95% cost reduction versus traditional therapy. [Case study](https://remkovermeulen.com/work/perspectives/)
+- **Johnson & Johnson** — Led product definition and clinical trial for a digital therapeutic companion to Spravato (esketamine) for treatment-resistant depression, developed in partnership with Janssen / Johnson & Johnson. [Case study](https://remkovermeulen.com/work/johnson-johnson/)
 
 ## Writing
 

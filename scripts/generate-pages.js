@@ -155,16 +155,34 @@ function generateProjects(template) {
 
     let html = withBase(template);
     html = fillMeta(html, { title: proj.title, desc, image, url, titleTag: '<title>Case Study — Remko Vermeulen</title>' });
+    const person = { '@type': 'Person', '@id': `${BASE}/#person`, name: 'Remko Vermeulen', url: BASE, sameAs: ['https://linkedin.com/in/remkovermeulen'] };
     html = bakeJsonLd(html, {
       '@context': 'https://schema.org',
-      '@type': 'Article',
-      headline: proj.title,
-      description: desc,
-      image: image || DEFAULT_IMG,
-      url,
-      author: { '@type': 'Person', name: 'Remko Vermeulen', url: BASE },
-      publisher: { '@type': 'Person', name: 'Remko Vermeulen' },
-      datePublished: proj.year ? proj.year + '-01-01' : undefined,
+      '@graph': [
+        person,
+        {
+          '@type': 'Article',
+          '@id': `${url}#article`,
+          headline: proj.title,
+          description: desc,
+          image: image || DEFAULT_IMG,
+          url,
+          mainEntityOfPage: { '@type': 'WebPage', '@id': url },
+          inLanguage: 'en',
+          keywords: (proj.tags || []).join(', ') || undefined,
+          author: { '@id': person['@id'] },
+          publisher: { '@id': person['@id'] },
+          datePublished: proj.year ? proj.year + '-01-01' : undefined,
+        },
+        {
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Home', item: BASE + '/' },
+            { '@type': 'ListItem', position: 2, name: 'Work', item: BASE + '/work.html' },
+            { '@type': 'ListItem', position: 3, name: proj.title, item: url },
+          ],
+        },
+      ],
     });
     html = replaceOnce(
       html,

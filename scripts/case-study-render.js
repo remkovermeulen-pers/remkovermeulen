@@ -26,6 +26,22 @@
     'Renault':                      'renault.com.svg',
     'British Council':              'british-council.svg',
   };
+  var LOGO_META = {
+    'harvard.svg':[986,323,'Harvard'],'harvard.png':[986,323,'Harvard'],'mgh.svg':[1000,252,'Massachusetts General Hospital'],
+    'koa.health.com.png':[1920,900,'Koa Health'],'bbc.svg':[560,160,'BBC'],'british-council.svg':[1,1,'British Council'],
+    'bullipedia.svg':[114,26,'Bullipedia'],'ft.com.svg':[1,1,'Financial Times'],'hospital-clinic.svg':[430,181,'Hospital Clínic'],
+    'hospital-sant-pau.svg':[3959,750,'Hospital Sant Pau'],'jandj.com.svg':[577,54,'Johnson & Johnson'],'lse.svg':[234,80,'LSE'],
+    'mercedes-benz.svg':[422,140,'Mercedes-Benz'],'nhs.svg':[371,150,'NHS'],'renault.com.svg':[1,1,'Renault'],
+    'signassist.svg':[134,26,'SignAssist'],'swat-io-icon.svg':[40,38,'swat.io'],'swat-io.svg':[201,38,'swat.io'],
+    'telefonica-alpha.svg':[382,146,'Telefónica Alpha'],'telefonica.com.svg':[1042,250,'Telefónica'],'toggl.svg':[568,216,'Toggl'],
+    'un.svg':[470,400,'United Nations'],'vivo.svg':[620,193,'Vivo']
+  };
+  function logoImg(f, cls) {
+    var m = LOGO_META[f];
+    return '<img' + (cls ? ' class="' + cls + '"' : '') + ' src="assets/logos/' + esc(f) + '?v=2"'
+      + (m ? ' width="' + m[0] + '" height="' + m[1] + '" alt="' + esc(m[2]) + ' logo"' : ' alt=""')
+      + ' decoding="async" onerror="this.remove()">';
+  }
   function getLogoFile(proj) { return LOGO_FILES[proj.title] || ''; }
   function logoUrl(filename) { return 'assets/logos/' + filename + '?v=2'; }
   function buildLogos(proj, noMetrics) {
@@ -35,7 +51,7 @@
     return '<div class="cs-hero__byline-logos' + (noMetrics ? ' cs-hero__byline-logos--first' : '') + '">'
       + '<h5>Organisations</h5>'
       + '<div class="cs-hero__byline-logos__imgs">'
-      + files.map(function(f) { return '<img src="assets/logos/' + esc(f) + '?v=2" alt="" onerror="this.remove()">'; }).join('')
+      + files.map(function(f) { return logoImg(f); }).join('')
       + '</div>'
       + '</div>';
   }
@@ -211,7 +227,7 @@
           slideItems.map(function(src) { return '<div class="cs-cover__slide">' + buildMediaEl(src, proj.title) + '</div>'; }).join('') +
           '</div>' +
           prevBtn +
-          (getLogoFile(proj) ? '<img class="cs-cover__logo" src="' + logoUrl(getLogoFile(proj)) + '" alt="" onerror="this.remove()">' : '') +
+          (getLogoFile(proj) ? logoImg(getLogoFile(proj), 'cs-cover__logo') : '') +
           (proj.coverCaption ? '<div class="cs-cover__caption">' + esc(proj.coverCaption) + '</div>' : '') +
           dotsHtml +
           nextBtn +
