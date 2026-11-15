@@ -148,9 +148,10 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
 }
 
 /* LOGO STRIP */
-@keyframes scroll-logos { from { transform:translateX(0) } to { transform:translateX(-50%) } }
+@keyframes scroll-logos { from { transform:translate3d(0,0,0) } to { transform:translate3d(calc(var(--loop-w) * -1),0,0) } }
 .logos-outer { margin-top:56px; border-top:1px solid var(--line); border-bottom:1px solid var(--line); overflow:hidden; }
-.logos { padding:40px 0; display:flex; flex-wrap:nowrap; align-items:center; width:max-content; will-change:transform; animation:scroll-logos 28s linear infinite; }
+.logos { padding:40px 0; display:flex; flex-wrap:nowrap; align-items:center; width:max-content; will-change:transform; }
+.logos.is-ready { animation:scroll-logos var(--loop-t,28s) linear infinite; }
 .logos-outer:hover .logos { animation-play-state:paused; }
 .logo-mark { display:flex; height:56px; margin-right:56px; align-items:center; opacity:1; transition:opacity .25s; flex-shrink:0; }
 .logo-mark:hover { opacity:0.65; }
@@ -448,6 +449,28 @@ button { font:inherit; cursor:pointer; background:none; border:0; color:inherit;
 </footer>
 
 <script>
+(function(){
+  var el=document.querySelector('.logos');
+  if(!el) return;
+  var imgs=[].slice.call(el.querySelectorAll('img'));
+  function layout(){
+    var items=el.children, half=items.length/2;
+    if(!half||half%1) return;
+    var w=items[half].offsetLeft-items[0].offsetLeft;
+    if(!w) return;
+    el.classList.remove('is-ready');
+    el.style.setProperty('--loop-w',w+'px');
+    el.style.setProperty('--loop-t',(w/90)+'s');
+    void el.offsetWidth;
+    el.classList.add('is-ready');
+  }
+  var pending=imgs.filter(function(i){return !(i.complete&&i.naturalWidth)});
+  var left=pending.length;
+  function done(){ if(--left<=0) layout(); }
+  if(!left) layout();
+  else pending.forEach(function(i){ i.addEventListener('load',done); i.addEventListener('error',done); });
+  var t; window.addEventListener('resize',function(){ clearTimeout(t); t=setTimeout(layout,200); });
+})();
 (function(){
   var b=document.querySelector('.site-nav__burger');
   var n=document.querySelector('.site-nav__links');
