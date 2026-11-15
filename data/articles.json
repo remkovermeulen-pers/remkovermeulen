@@ -1,5 +1,16 @@
 [
   {
+    "notionId": "41976183-7377-8140-bbeb-c3685fa60a53",
+    "title": "Let AI help decide what to build next",
+    "category": "Product",
+    "year": "2026",
+    "readingTime": 6,
+    "url": "https://app.notion.com/p/Let-AI-help-decide-what-to-build-next-4197618373778140bbebc3685fa60a53",
+    "series": "The Bottleneck is moving",
+    "coverImage": "https://raw.githubusercontent.com/remkovermeulen-pers/remkovermeulen/main/assets/articles/impact-effort-mrr.jpg",
+    "lede": "Building has become fast. Deciding what to build has not. With coding agents, a team can ship more in a week than it used to in a month, which makes a wrong choice more expensive, not less. The bottle"
+  },
+  {
     "notionId": "41876183-7377-81c4-bd59-d35dd269a014",
     "title": "The product operating system, now with agents",
     "category": "Product",
